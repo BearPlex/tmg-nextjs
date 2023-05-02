@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Circular Std Bold';
+  src: url('../src/assets/fonts/CircularStd-Bold.eot');
+  src: url('../src/assets/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/CircularStd-Bold.woff2') format('woff2'),
+  url('../src/assets/fonts/CircularStd-Bold.woff') format('woff'),
+  url('../src/assets/fonts/CircularStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Circular Std Regular';
+  src: url('../src/assets/fonts/CircularSpotifyText-Light.eot');
+  src: url('../src/assets/fonts/CircularSpotifyText-Light.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/CircularSpotifyText-Light.woff2') format('woff2'),
+  url('../src/assets/fonts/CircularSpotifyText-Light.woff') format('woff'),
+  url('../src/assets/fonts/CircularSpotifyText-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std Medium';
+  src: url('../src/assets/fonts/CircularStd-Medium.eot');
+  src: url('../src/assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/CircularStd-Medium.woff2') format('woff2'),
+  url('../src/assets/fonts/CircularStd-Medium.woff') format('woff'),
+  url('../src/assets/fonts/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Bold';
+  src: url('../src/assets/fonts/SofiaPro-Bold.eot');
+  src: url('../src/assets/fonts/SofiaPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/SofiaPro-Bold.woff2') format('woff2'),
+  url('../src/assets/fonts/SofiaPro-Bold.woff') format('woff'),
+  url('../src/assets/fonts/SofiaPro-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sofia Sans';
+  src: url('../src/assets/fonts/SofiaSans-Regular.eot');
+  src: url('../src/assets/fonts/SofiaSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/SofiaSans-Regular.woff2') format('woff2'),
+  url('../src/assets/fonts/SofiaSans-Regular.woff') format('woff'),
+  url('../src/assets/fonts/SofiaSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .paragraph {
+    @apply leading-8 text-base font-circular-medium text-zinc-700;
+  }
+}
+
+
+
+html,
+body {
+  background: #ffffff;
+}
+.pink-color {
+  color: rgb(247, 78, 161);
+}
+.bgNav {
+  background-color: rgb(247, 78, 161);
+}
+.transparentColor {
+  color: rgba(0, 0, 0, 0.25);
+}
+.transparentBgColor {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#menuToggle {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45px;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+
+#menuToggle span {
+  width: 45px;
+  height: 5px;
+  margin-bottom: 8px;
+  background: #000000;
+  border-radius: 1px;
+  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+}
+
+#menuToggle #span1 {
+  transform-origin: 4px 0;
+}
+
+#menuToggle #span3 {
+  width: 30px !important;
+  margin-left: auto;
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: #ffffff;
+  transform: rotate(45deg) translate(8px);
+}
+#menuToggle input:checked ~ #span2 {
+  background-color: #ffffff;
+  transform: rotate(495deg) translate(4px);
+}
+#menuToggle input:checked ~ #span3 {
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+footer svg g {
+  stroke: rgb(255, 255, 255);
+  fill: transparent;
+  transition: stroke 0.2s ease-in-out 0s;
+}
+footer svg path {
+  fill: rgb(255, 255, 255);
+  transition: fill 0.2s ease-in-out 0s;
+}
+footer svg:hover g {
+  stroke: rgb(247, 78, 161);
+  transition: fill 0.2s ease-in-out 0s;
+}
+footer svg:hover path {
+  fill: rgb(247, 78, 161);
+  transition: fill 0.2s ease-in-out 0s;
+}
+
+
+.contact-wrapper svg {
+  width: 45px;
+  height: 45px;
+}
+.contact-wrapper svg:hover g {
+  /*stroke: gray;*/
+  fill: hotpink;
+  transition: stroke 0.2s ease-in-out 0s;
+}
+
+.contact-wrapper svg:hover path {
+  fill: rgb(255, 255, 255);
+  transition: fill 0.2s ease-in-out 0s;
+}
+
+
+.nav-footer svg g {
+  stroke: rgb(255, 255, 255);
+  fill: transparent;
+  transition: stroke 0.2s ease-in-out 0s;
+}
+.nav-footer svg path {
+  fill: rgb(255, 255, 255);
+  transition: fill 0.2s ease-in-out 0s;
+}
+
+.work-images {
+  transition: background-color 0.5s ease-in-out;
+}
+.work-images:hover:before {
+  content: "";
+  background-color: rgba(247, 78, 161, 0.4);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease-in;
+}
+.nav-footer {
+  width: calc(100% - 160px);
+}
+
+.tabs-wrapper {
+  position: relative;
+}
+.tabs-wrapper .react-tabs__tab-list {
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  left: 55%;
+  top: 140px;
+}
+
+.tabs-wrapper .react-tabs__tab {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 0;
+  border: 2px solid transparent;
+  position: static;
+}
+.tabs-wrapper .react-tabs__tab--selected {
+  border: 2px solid rgb(247, 78, 161);
+  color: rgb(247, 78, 161);
+}
+
+.tabs-wrapper.blog-tabs-wrapper .react-tabs__tab-list {
+  border-bottom: 1px solid transparent;
+  position: relative;
+  left: auto;
+  top: initial;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(247, 78, 161);
+  font-weight: 700;
+  font-family: "Sofia Pro Bold";
+}
+.file-upload::before {
+  content: "Upload File [pdf, jpeg, docx, ppt";
+  position: absolute;
+  top: -6px;
+  color: #4a5568;
+  opacity: 0.8;
+}
+.file-upload .file-icon {
+  top: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.file-upload:hover .file-icon {
+  top: -50px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.file-upload .hidden-icon {
+  top: 50px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.file-upload:hover .hidden-icon {
+  top: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.blog-banner:before {
+  content: '';
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card-wrapper {
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.card-wrapper:nth-child(3n) {
+  margin-right: 0;
+}
+.card-wrapper:nth-last-child(-n+1), .card-wrapper:nth-last-child(-n+2), .card-wrapper:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+
+.studio-video {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.play-button {
+  transition: fill 0.25s ease 0s, transform 0.25s ease 0s;
+}
+.play-button:hover {
+  border: 5px solid rgb(247, 78, 161);
+  transform: scale(1.3);
+}
+.play-button:hover > svg > path {
+  fill: rgb(247, 78, 161) !important;
+}
+
+.masonry-gallery > div:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 2;
+  height: 552px;
+}
+.masonry-gallery > div:nth-child(2) {
+  grid-area: 3 / 1 / 4 / 2;
+  height: 270px;
+}
+.masonry-gallery > div:nth-child(3) {
+  grid-area: 1 / 2 / 2 / 3;
+  height: 270px;
+}
+.masonry-gallery > div:nth-child(4) {
+  grid-area: 2 / 2 / 4 / 3;
+  height: 552px;
+}
+.masonry-gallery > div:nth-child(5) {
+  grid-area: 1 / 3 / 3 / 4;
+  height: 552px;
+}
+.masonry-gallery > div:nth-child(6) {
+  grid-area: 3 / 3 / 4 / 4;
+  height: 270px;
+}
+
+.transition-in-out {
+  transition: all 0.5s ease-in-out;
+}
