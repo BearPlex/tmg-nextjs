@@ -88,6 +88,11 @@ body {
 .transparentBgColor {
   background-color: rgba(0, 0, 0, 0.25);
 }
+.gradient{
+  mask-image: linear-gradient(to bottom, #7775D6, #E935C1);
+  
+
+}
 #menuToggle {
   overflow: hidden;
   display: flex;
@@ -333,4 +338,9 @@ footer svg:hover path {
 
 .transition-in-out {
   transition: all 0.5s ease-in-out;
+}
+.background-gradient{
+  background: url('../src//assets/images/background-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -12,8 +12,9 @@ import kotaTransparentImage from '../../assets/svg/Kota_logo_white-1.svg';
 
 const Footer = () => {
     return(
-        <footer className="mt-28 px-20 bg-zinc-800 py-28">
-            <div className="flex relative w-full">
+        <>
+        <footer className="pt-28 px-20 bg-zinc-800 py-28">
+            <div className="flex md:flex-row flex-col justify-center items-center relative w-full">
                 <ul className="pl-0 w-[15%]">
                     <li>
                         <Link href="/">
@@ -78,24 +79,8 @@ const Footer = () => {
                         </Link>
                     </li>
                 </ul>
-                <ul>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="tracking-wider uppercase no-underline inline-block text-pink-400 text-2xl leading-loose font-bold hover:transition hover:ease-in-out hover:delay-200">Offices</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">London</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">New York</a>
-                        </Link>
-                    </li>
-                </ul>
-                <div className="ml-auto">
+           
+                <div className="md:ml-auto">
                     <ul className="text-right">
                         <li className="mb-3">
                             <Link href="#">
@@ -118,8 +103,8 @@ const Footer = () => {
                         </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center pt-20">
-                <div className="flex gap-10 items-center">
+            <div className="flex flex-col md:flex-row md:justify-between items-center pt-20">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
                     <a href="#" className="inline-block">
                         <img src={danImage.src} alt="kota logo" className="w-[120px] object-cover" />
                     </a>
@@ -136,11 +121,16 @@ const Footer = () => {
                         <img src={designImage.src} alt="kota logo" className="w-[120px] object-cover" />
                     </a>
                 </div>
-                <a href="#" className="inline-block">
+                <a href="#" className="inline-block md:mt-0 mt-10">
                     <img src={kotaTransparentImage.src} alt="kota logo" className="w-[120px] h-16 object-contain" />
                 </a>
             </div>
         </footer>
+
+        </>
+
+
+
     )
 }
 export default Footer;

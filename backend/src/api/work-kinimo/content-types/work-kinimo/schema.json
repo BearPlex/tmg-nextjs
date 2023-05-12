@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_kinimos",
+  "info": {
+    "singularName": "work-kinimo",
+    "pluralName": "work-kinimos",
+    "displayName": "work kinimo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featured_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featured_title": {
+      "type": "string"
+    },
+    "gallery_first_title": {
+      "type": "string"
+    },
+    "gallery_first_description": {
+      "type": "richtext"
+    },
+    "gallery1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "gallery_second_title": {
+      "type": "string"
+    },
+    "gallery_second_description": {
+      "type": "richtext"
+    },
+    "gallery2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,11 +1,11 @@
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/Kota_logo.png";
+import kotaLogo from "../src/assets/images/services-logo.png";
 import HeadingThree from "../src/components/headings/HeadingThree";
 import Link from "next/link";
-import homePageImage from "../src/assets/images/homepage-sym.png";
-import developmentImage from "../src/assets/images/design-development.png";
-import digitalImage from "../src/assets/images/digital.png";
-import marketingImage from "../src/assets/images/marketing.png";
+import homePageImage from "../src/assets/images/social-media-marketing.png";
+import developmentImage from "../src/assets/images/brand-management.png";
+import digitalImage from "../src/assets/images/seo.png";
+import marketingImage from "../src/assets/images/tmg.png";
 import eCommerceImage from "../src/assets/images/e-commerce.png";
 import wordPressImage from "../src/assets/images/wordpress-4.png";
 import Footer from "../src/components/footer/Footer";
@@ -29,68 +29,67 @@ const Services = () => {
           </div>
           <div className="w-full">
             <p className="mb-6 text-black font-medium text-[1.16rem]">
-              Crafting{" "}
+              {/* Crafting{" "}
               <span className="text-pink-400">
                 standout websites and branding
-              </span>{" "}
-              using sound strategic thinking and eye-catching digital, that
-              creates instant impact and sparks emotion. To really see what we
-              can do, take a look at our full range of digital creative agency
-              services.
+              </span>{" "} */}
+              Fusing astounding visuals with compelling content  while backed by solid strategy, we assist our clients  in building a magnetic online presence to transform every click into a conversion.
+
             </p>
+            
+            <p className="text-black font-medium text-[1.16rem]">Explore our services to see how we can <span className="text-pink-400">transform your business into a brand.</span> </p>
             <ScrollspyNav
               scrollTargetIds={[
                 "web_design",
                 "web_development",
                 "branding",
                 "digital_marketing",
-                "e_commerce",
-                "wordpress",
+                // "e_commerce",
+                // "wordpress",
               ]}
               activeNavClass="is-active"
             >
-              <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%]">
+              <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
                 <a
                   href="#web_design"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 text-base font-medium text-black inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     className="text-pink-400 text-lg mr-3"
                   />
-                  Creative Web Design
+                  Social Media Marketing
                 </a>
                 <a
                   href="#web_development"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 text-base font-medium text-black inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     className="text-pink-400 text-lg mr-3"
                   />
-                  Web Development
+                  Search Engine Optimization
                 </a>
                 <a
                   href="#branding"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 text-base font-medium text-black inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     className="text-pink-400 text-lg mr-3"
                   />
-                  Branding
+                 Brand Management
                 </a>
                 <a
                   href="#digital_marketing"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 text-base font-medium text-black inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     className="text-pink-400 text-lg mr-3"
                   />
-                  Digital Marketing
-                </a>
-                <a
+Website Design & Dev.                </a>
+                {/* <a
                   href="#e_commerce"
                   className="w-1/2 text-lg font-medium text-black inline-block"
                 >
@@ -109,10 +108,20 @@ const Services = () => {
                     className="text-pink-400 text-lg mr-3"
                   />
                   WordPress
-                </a>
+                </a> */}
               </div>
             </ScrollspyNav>
+            <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+                    <div className="">
+                      <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                      <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                      <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                        Book Free <span className="text-pink-500"> Consultation Today</span>
+                      </p>
+                    </div>
+                  </button>
           </div>
+          
         </section>
 
         <div className="px-28">
@@ -122,12 +131,14 @@ const Services = () => {
           >
             <div className="w-[40%]">
               <HeadingThree
-                cssClass="text-[5rem]"
-                title="Creative Web Design"
+                cssClass="text-[4rem]"
+                title="Social Media Marketing"
               />
               <p className="mt-8 mb-14 font-medium text-xl text-black">
-                Bring your brand to life online with a bespoke website that
-                boosts engagement and brings a return on creativity.
+              Analyzing the market and consumer data 
+helps us provide customized solutions 
+to everyday business challenges.
+
               </p>
               <Link href="/webDesign">
                 <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
@@ -148,10 +159,12 @@ const Services = () => {
             className="flex items-center justify-between py-28"
           >
             <div className="w-[40%]">
-              <HeadingThree cssClass="text-[5rem]" title="Web development" />
+              <HeadingThree cssClass="text-[4rem]" title="Brand Management" />
               <p className="mt-8 mb-14 font-medium text-xl text-black">
-                We’ll build your site to suit your specific needs, creating the
-                custom functions to make it faster and more secure.
+              Analyzing the market and consumer data 
+helps us provide customized solutions 
+to everyday business challenges.
+
               </p>
               <Link href="/webDevelopment">
                 <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
@@ -172,11 +185,11 @@ const Services = () => {
             className="flex items-center justify-between py-28"
           >
             <div className="w-[40%]">
-              <HeadingThree cssClass="text-[5rem]" title="Branding" />
+              <HeadingThree cssClass="text-[4rem]" title="Search Engine Optimization" />
               <p className="mt-8 mb-14 font-medium text-xl text-black">
-                KOTA combines strategic direction with creative design to build
-                a unique brand identity that your customers want to be a part
-                of.
+              Through personal and digital mediums, 
+we provide fast and clear communication 
+to keep information flow open.
               </p>
               <Link href="/webDevelopment">
                 <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
@@ -197,11 +210,11 @@ const Services = () => {
             className="flex items-center justify-between py-28"
           >
             <div className="w-[40%]">
-              <HeadingThree cssClass="text-[5rem]" title="Digital Marketing" />
+              <HeadingThree cssClass="text-[4rem]" title="Website Design & Development" />
               <p className="mt-8 mb-14 font-medium text-xl text-black">
-                With a proven track record for game-changing results, our
-                marketing experts design digital campaigns that captivate and
-                convert.
+              Through personal and digital mediums, 
+we provide fast and clear communication 
+to keep information flow open.
               </p>
               <Link href="/webDevelopment">
                 <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
@@ -217,7 +230,7 @@ const Services = () => {
               />
             </div>
           </section>
-          <section
+          {/* <section
             id="e_commerce"
             className="flex items-center justify-between py-28"
           >
@@ -240,8 +253,8 @@ const Services = () => {
                 className="w-full h-100 shadow-2xl rounded-lg"
               />
             </div>
-          </section>
-          <section
+          </section> */}
+          {/* <section
             id="wordpress"
             className="flex items-center justify-between py-28"
           >
@@ -264,7 +277,7 @@ const Services = () => {
                 className="w-full h-100 shadow-2xl rounded-lg"
               />
             </div>
-          </section>
+          </section> */}
         </div>
       </section>
 

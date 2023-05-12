@@ -5,9 +5,54 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Expertise from "../src/components/expertise/Expertise";
 import Footer from "../src/components/footer/Footer";
+import { useEffect, useState } from "react";
+import axios from "axios";
+// export async function getStaticProps(context) {
+
+   
+//     var blogsData;
+   
+//     try {
+   
+    
+//       const res2 = await fetch("http://localhost:1337/api/works?populate=*");
+//       blogsData = await res2.json();
+    
+   
+//   console.log("Blogs",blogsData)
+     
+     
+  
+     
+//     } catch (error) {
+//       console.log("Error", error);
+   
+//       blogsData = null;
+//     }
+  
+//     return {
+//       props: { blogsData }, // props will be passed to the page
+//     };
+//   }
 const Work = () => {
+    const [work,setWork]=useState([])
+    // {console.log("Work",blogsData)}
+    useEffect(()=>{
+    axios.get("http://localhost:1337/api/works?populate=*").then((res)=>{
+        console.log("Res",res.data.data)
+    
+        axios.get("http://localhost:1337/api/work-kinimos?populate=*").then((res)=>{
+            console.log("Dataaaaaaaaaa",res.data.data)
+            setWork(res.data.data)
+        })
+    }).catch((err)=>{
+        console.log("Error",err)
+    })
+    },[])
     return(
         <>
+        {console.log("Wrok Array",work)}
+     
             <section className="pt-20">
                 <Header />
                 <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
@@ -25,7 +70,8 @@ const Work = () => {
                 <Tabs className="p-20 px-28 tabs-wrapper">
                     <TabList>
                         {
-                            work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
+                            // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
+                            // work.map((item, index) => <Tab key={index}>Hello</Tab>)
                         }
                     </TabList>
                     {

@@ -12,13 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "heading": {
-      "type": "richtext"
-    },
-    "description": {
-      "type": "text"
-    },
-    "workPic1": {
+    "workPic": {
       "type": "media",
       "multiple": false,
       "required": false,
