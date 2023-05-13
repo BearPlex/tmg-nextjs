@@ -16,11 +16,11 @@ const Footer = () => {
     return(
         <>
    
-   <footer className="relative bg-black pt-16 mt-16 pb-6">
+   <footer className="relative bg-[#1B1B1B] pt-16 mt-16 pb-6">
   <div className="container mx-auto px-4 text-white">
     <div className="flex flex-wrap text-left lg:text-left">
       <div className="w-full lg:w-6/12  text-right order-3">
-        <h4 className="text-3xl fonat-semibold text-blueGray-700">Follow</h4>
+        <h4 className="text-3xl font-bold text-blueGray-700 text-[#EE2760]">Follow</h4>
         <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
           Sign Up to our newsletter
         </h5>
@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full mt-5 lg:mt-1 ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
-            <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Offices</span>
+            <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 text-[#EE2760]">Offices</span>
             <ul className="list-unstyled">
               <li className="mb-1">
                 <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">New York</Link>
