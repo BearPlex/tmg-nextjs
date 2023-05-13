@@ -10,6 +10,7 @@ import awardsImage from '../../assets/images/awwwards-logo@2x.jpg';
 import designImage from '../../assets/images/css-design-awards-white.jpg';
 import kotaTransparentImage from '../../assets/svg/Kota_logo_white-1.svg';
 import groupBtn from "../../assets/images/Group.png"
+import tmg from "../../assets/images/tmg-log.png"
 
 const Footer = () => {
     return(
@@ -26,15 +27,7 @@ const Footer = () => {
         <a href="mailto:Info@themediagale.com" className="text-lg mt-0 mb-2 text-blueGray-600">
         Info@themediagale.com
         </a>
-        <div className="mt-6 lg:mb-0 mb-6 bg-white flex justify-end">
-          {/* <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-twitter"></i></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-facebook-square"></i></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-github"></i>
-          </button> */}
-          <img src={groupBtn.src}/>
-        </div>
+      
       </div>
       <div className="w-full lg:w-6/12 px-4">
         <div className="flex flex-wrap items-top mb-6">
@@ -76,7 +69,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full lg:w-6/12 xl:relative xl:right-16">
+          <div className="w-full mt-5 lg:mt-1 ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
             <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Offices</span>
             <ul className="list-unstyled">
               <li className="mb-1">
@@ -96,7 +89,19 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <hr className="my-6 border-blueGray-300"/>
+    <div className="mt-16 sm:mt-6 lg:mb-0 mb-6  flex justify-end  md:flex-row flex-col  md:justify-between md:items-center h-10 mx-5 md:mx-0">
+          {/* <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-twitter"></i></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-facebook-square"></i></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-github"></i>
+          </button> */}
+           <img src={tmg.src} className="w-20 md:w-[230px]"/>
+           <div className="bg-white w-52 md:w-80">
+          <img className="w-60 md:w-full" src={groupBtn.src}/>
+          </div>
+        </div>
+    <hr className="mt-16 mb-8 border-blueGray-300"/>
     <div className="flex flex-wrap items-center md:justify-between justify-center">
       <div className="w-full md:w-4/12 px-4 mx-auto text-center">
         <div className="text-sm text-blueGray-500 font-semibold py-1">
