@@ -67,7 +67,7 @@ const Work = () => {
                     <div className="w-full">
                         <h4 className="mb-6 text-7xl font-bold leading-tight">We are experts in bringing brands to life digitally.</h4>
                         <p className="text-black font-medium text-[1.16rem]">
-                            KOTA is a progressive and insightful design agency, technically and creatively skilled to translate your brand into its best digital self. Our design and development approach creates impactful,
+                            TMG is a progressive and insightful design agency, technically and creatively skilled to translate your brand into its best digital self. Our design and development approach creates impactful,
                             engaging brands and immersive digital experiences that bring you a return on creativity.
                         </p>
                     </div>
