@@ -1,7 +1,9 @@
 import {useState} from 'react';
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 import Link from "next/link";
-import logoIcon from '../../assets/svg/Kota_logo_black.svg';
+// import logoIcon from '../../assets/svg/Kota_logo_black.svg';
+
+import logoIcon from '../../assets/images/tmg-logo.png';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -11,7 +13,7 @@ const Header = () => {
                 <nav className="flex items-center justify-between">
                     <Link href="/">
                         <a className={showMenu ? 'hidden' : 'block'}>
-                            <img src={logoIcon.src} alt="logo" />
+                            <img className='w-36' src={logoIcon.src} alt="logo" />
                         </a>
                     </Link>
                     <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">

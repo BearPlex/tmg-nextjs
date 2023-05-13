@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
-import serviceBottle from "../../src/assets/images/service-bottle.png";
-import book from "../../src/assets/images/book.png";
-import mobile3 from "../../src/assets/images/connect.png";
-import mobile2 from "../../src/assets/images/mobile1.png";
+import brand1 from "../../src/assets/images/web1.png";
+import brand2 from "../../src/assets/images/web2.png";
+import book from "../../src/assets/images/design1.png";
+import mobile3 from "../../src/assets/images/design2.png";
+import mobile2 from "../../src/assets/images/design3.png";
 import tmg from "../../src/assets/images/TMG-pic.png";
 import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
@@ -13,7 +14,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 
-function socialmediamarketing() {
+function webDesign() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
   useEffect(() => {
@@ -35,13 +36,13 @@ function socialmediamarketing() {
       <section className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
         <div className="w-full text-center mt-10 xl:mt-10">
           <img
-            src={serviceBottle.src}
+            src={brand1.src}
             alt="kota canvas"
             loading="lazy"
             className="max-w-full "
           />
           <img
-            src={serviceBottle.src}
+            src={brand2.src}
             alt="kota canvas"
             loading="lazy"
             className="max-w-full mt-10"
@@ -49,12 +50,16 @@ function socialmediamarketing() {
         </div>
         <div className="w-full">
           <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-            Performance Driven Digital Marketing Services
+          Highly <span className="text-[#F79B60]"> Optimized </span>Converting Websites 
           </h4>
           <p className="text-2xl">
-            With proven game changing results, our award winning performance
-            experts ensure that all the leads turn into a
-            <span className="text-[#F79B60]"> profitable conversion.</span>{" "}
+          We have been helping our partners in creating responsive and eye-catching websites that leave every viewer in awe of their scale and seamlessness. Our team of certified developers with years of experience in multiple niches know what would stand out at the end of the day. <br/><br/>
+
+We strongly keep up with the latest trends in the development world, so you can be sure that your website will always be up to date and functional. Our team also works closely with you to fully grasp your vision and create a perfect landing site that you envisioned for your business.
+
+optimization 
+
+            {" "}
           </p>
           <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
@@ -77,32 +82,29 @@ function socialmediamarketing() {
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
-                  High Performance
+             Modern designs 
+that
+
                   <span className="text-orange_theme-400">
                     {" "}
-                    breakthrough campaigns
+                    creates
+identity
                   </span>{" "}
                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                  Getting noticed and remembered by the right audience is a slow
-                  delicate process. It takes multiple testing, creative input
-                  and high performing campaign structures to ensure better
-                  conversions.
-                  <br />
-                  <br />
-                  We specialize in performance marketing campaigns using content
-                  and audience building strategies that support our campaigns to
-                  perform well. With our in-house team of experienced and
-                  certified marketers, we ensure that your advertisement is well
-                  remembered.
-                  <br />
-                  <br />
-                  As a direct partnership or white labeled solutions, The
-                  MediaGale ensures to enhance visibility, drive deeper
-                  engagement and generate better quality conversions from social
-                  and search engine platforms.
+                A well-designed website will have a lasting impression
+on visitors, and can even increase conversion rates. 
+Everything from using attractive visuals, to writing 
+compelling content and delivering a top-notch 
+user experience holds its importance. We conduct 
+brainstorming sessions with you to make the most 
+out of our collaboration and provide you with the 
+best result that lands above your expectations.
+
+             
+      
                 </p>
               </div>
             </div>
@@ -116,40 +118,38 @@ function socialmediamarketing() {
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
                 <dd class="mt-10 text-white relative text-6xl top-6 max-w-xs">
-                  What makes us sooo good at it?
+                What 
+makes 
+us sooo 
+good at it?
+
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">Experience</dt>
+                <dt class="font-semibold text-white text-5xl">Expert
+                Development</dt>
                 <dd class="mt-6 text-white text-base ">
-                  We’ve worked with brands from a huge range of industries to
-                  showcase their differences through strategic design that
-                  positions them perfectly. 
+                User-centric designs, practical and result-oriented marketing tools, and in-house built features are among our exponential services we provide. 
                 </dd>
 
                 <dt class="font-semibold text-white text-5xl xl:mt-10">
-                  Strategy
+                Maintenance
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                  With our certified team, we ensure to create effective cost
-                  saving strategies that help campaigns perform well so you can
-                  focus more on counting sales.
+                We ensure to keep your backend updated after the completion of the project and provide instantaneous online support whenever you or your business requires. 
+
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl ">Creativity</dt>
+                <dt class="font-semibold text-white text-5xl ">Technology</dt>
                 <dd class="mt-6 text-white text-base">
-                  Guided by your vision and values, our branding services will
-                  bring your business to life with artistic flair and attention
-                  to detail, to create a brand that is unique and memorable.
+                We are extremely versed in technology upgrades. By utilizing the latest tools and following best practices, we deliver high-quality results.
                 </dd>
                 <dt class="font-semibold text-white text-5xl xl:mt-4">
-                  Sustainability
+                Functionality
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                  We ensure that the image that has been forged to the consumer
-                  mind stays on top with consistent artistic content to increase
-                  engagement and recall value.
+                A visually appealing and high functional website with regular updates can help your business grab the attention of visitors globally. We are open to provide custom functionality based solutions as per the need.
                 </dd>
               </div>
             </dl>
@@ -163,17 +163,12 @@ function socialmediamarketing() {
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                Ecommerce 
+Websites
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                 
+                If you're considering developing an e-Commerce website, it is time to let us take the lead and assist you in providing a seamless online shopping experience to your customers. We offer Shopify as a highly converting platform for businesses where you can simply focus on managing the inventory part of business and let us handle the entire "How to" process. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -208,17 +203,12 @@ function socialmediamarketing() {
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                Software as
+a Service
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                We offer Software-as-a-Service to clients in order to help them utilize resources more efficiently and make well-informed business decisions. Through better strategic planning and trend forecasting, our SaaS products help businesses grow exponentially and make their debut in untapped markets. We provide accurate guidance and hands-on assistance with the CMS implementation process. 
+                 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -239,17 +229,10 @@ function socialmediamarketing() {
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
-                </h1>
-                <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                Business
+Websites             </h1>
+                <p class="mt-6 text-xl leading-8 text-white font-normal">If you're considering developing a business website, it is time to let us take the lead and assist you in providing a seamless browsing experience to your leads. We offer Woo-commerce as a stable hosting CMS platform for businesses where you can simply focus on managing the service part of business and let us handle the entire "How to" process.  TMG provides content optimization services to help make your content more effective, and improve quality, making it more informative and engaging for your audience. We can also help you target specific keywords and topics to ensure that your content is being seen by the right people.
+              
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -284,17 +267,12 @@ function socialmediamarketing() {
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                What else?
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+               
+                As your dedicated SEO agency, we go a step further than just make your website perform well. We strategize with reasoning and depend on the market research so we can showcase the results to you, that would help your business get authentic traffic without 
+spending another dime on it. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -372,11 +350,11 @@ function socialmediamarketing() {
           </div>
         </div>
       </section>
-      <div className="mt-10">
+      {/* <div className="-mt-28">
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }
 
-export default socialmediamarketing;
+export default webDesign;

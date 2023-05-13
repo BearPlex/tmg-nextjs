@@ -25,7 +25,7 @@ export default function Home() {
     const [work,setWork]=useState([])
     // {console.log("Work",blogsData)}
     useEffect(()=>{
-    axios.get("http://localhost:1337/api/works?populate=*").then((res)=>{
+    axios.get("http://localhost:1337/api/work-kinimos?populate=*").then((res)=>{
         console.log("Res",res.data.data)
         setWork(res.data.data)
     }).catch((err)=>{

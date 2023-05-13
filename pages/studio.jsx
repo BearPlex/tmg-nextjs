@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Pagination, Navigation } from "swiper";
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/Kota_logo.png";
+import kotaLogo from "../src/assets/images/agency.png";
 import galleryImage1 from '../src/assets/images/studio1-1.png';
 import galleryImage2 from '../src/assets/images/studio2-1.png';
 import galleryImage3 from '../src/assets/images/studio3-1.png';
@@ -22,7 +22,7 @@ const Studio = () => {
     return(
         <section className="pt-20">
             <Header />
-            <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
+            {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
                 <div className="w-full text-center">
                     <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
@@ -32,6 +32,26 @@ const Studio = () => {
                         Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation. And then there’s Buddy, the French Bulldog.
                     </p>
                 </div>
+            </section> */}
+             <section className="grid grid-cols-2 px-20 gap-4 pt-12 items-center">
+                <div className="w-full text-center">
+                    <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
+                </div>
+                <div className="w-full">
+                    <h4 className="mb-6 text-7xl font-bold leading-tight">News, insights, and creative culture from TMG.</h4>
+                    <p className="text-2xl">Because it should never just be work, it should
+be<span className="text-[#F79B60]"> a work of art</span> </p>
+<button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+    <div className="">
+  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+    Book Free  {" "}<span className="text-pink-500">  {" "}Consultation Today</span>
+  </p>
+  </div>
+</button>
+                </div>
+        
             </section>
             <section className="mt-20">
                 <div className="relative">
@@ -82,8 +102,8 @@ const Studio = () => {
                     </div>
                 </div>
             </section>
-            <section className="pt-36 bg-zinc-800 mt-60">
-                <div className="flex items-center justify-between">
+            <section className="pt-36  bg-zinc-800 mt-60">
+                <div className="flex items-center justify-between pb-20">
                     <div className="w-[47%]">
                         <img src={mainImage.src} className="w-96 mx-auto" alt="work images" />
                     </div>
@@ -106,13 +126,23 @@ const Studio = () => {
                             <figure className="">
                                 <img src={teamMember.src} alt="team member" />
                                 <figcaption>
-                                    <p>ED</p>
-                                    <p>— Design Director</p>
+                                    <p className="text-white">ED</p>
+                                    <p className="text-white">— Design Director</p>
                                 </figcaption>
                             </figure>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>
+                    <div className="">
+                            <figure className="">
+                                <img src={teamMember.src} alt="team member" />
+                                <figcaption>
+                                    <p className="text-white">ED</p>
+                                    <p className="text-white">— Design Director</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </SwiperSlide>
                     <SwiperSlide>Slide 3</SwiperSlide>
                     <SwiperSlide>Slide 4</SwiperSlide>
                     <SwiperSlide>Slide 5</SwiperSlide>

@@ -2,7 +2,6 @@ import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
 const Card = (props) => {
     const {item} = props;
-    console.log("Blog PAge",item)
     const router = useRouter();
     const pushWork=(id)=>{
         router.push(`/blog-detail/${id}`)
@@ -12,7 +11,7 @@ const Card = (props) => {
         <div className="mt-16 flex justify-start flex-wrap ">
             {
                 item.map((blog, index) =>
-                    <div key={index} className="card-wrapper border border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300 w-[30%]"  onClick={()=>pushWork(item.id)}>
+                    <div key={index} className="card-wrapper border border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300 w-[30%]" onClick={()=>pushWork(blog.id)}>
                         <div className="h-min overflow-hidden">
                             <img src={`http://localhost:1337${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
                         </div>

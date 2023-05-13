@@ -12,8 +12,21 @@ import Footer from "../src/components/footer/Footer";
 import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-
+import { useRouter } from "next/router";
 const Services = () => {
+  const router = useRouter();
+  const pushServiceSocial=()=>{
+    router.push("/service/social-media-marketing")
+  }
+  const pushServiceBrand=()=>{
+    router.push("/service/brand-management")
+  }
+  const pushServiceSeo=()=>{
+    router.push("/service/seo")
+  }
+  const pushServiceDesign=()=>{
+    router.push("/service/web-design")
+  }
   return (
     <>
       <section className="pt-20">
@@ -50,9 +63,20 @@ const Services = () => {
               activeNavClass="is-active"
             >
               <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
+              {/* <Link href="/webDevelopment">
+                <a className="w-1/2 text-base font-medium text-black inline-block">
+                  Learn More
+                </a>
+              </Link>
+              <Link href="/webDevelopment">
+                <a className="w-1/2 text-base font-medium text-black inline-block">
+                  Learn More
+                </a>
+              </Link> */}
                 <a
                   href="#web_design"
                   className="w-1/2 text-base font-medium text-black inline-block"
+                
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
@@ -60,6 +84,7 @@ const Services = () => {
                   />
                   Social Media Marketing
                 </a>
+              
                 <a
                   href="#web_development"
                   className="w-1/2 text-base font-medium text-black inline-block"
@@ -88,7 +113,8 @@ const Services = () => {
                     icon={faAngleRight}
                     className="text-pink-400 text-lg mr-3"
                   />
-Website Design & Dev.                </a>
+Website Design & Dev.   
+             </a>
                 {/* <a
                   href="#e_commerce"
                   className="w-1/2 text-lg font-medium text-black inline-block"
@@ -127,7 +153,9 @@ Website Design & Dev.                </a>
         <div className="px-28">
           <section
             id="web_design"
-            className="flex items-center justify-between py-28"
+            className="flex items-center justify-between py-28 cursor-pointer"
+            onClick={pushServiceSocial}
+
           >
             <div className="w-[40%]">
               <HeadingThree
@@ -156,7 +184,8 @@ to everyday business challenges.
           </section>
           <section
             id="web_development"
-            className="flex items-center justify-between py-28"
+            className="flex items-center justify-between py-28 cursor-pointer"
+            onClick={pushServiceBrand}
           >
             <div className="w-[40%]">
               <HeadingThree cssClass="text-[4rem]" title="Brand Management" />
@@ -182,7 +211,8 @@ to everyday business challenges.
           </section>
           <section
             id="branding"
-            className="flex items-center justify-between py-28"
+            className="flex items-center justify-between py-28 cursor-pointer"
+            onClick={pushServiceSeo}
           >
             <div className="w-[40%]">
               <HeadingThree cssClass="text-[4rem]" title="Search Engine Optimization" />
@@ -207,7 +237,8 @@ to keep information flow open.
           </section>
           <section
             id="digital_marketing"
-            className="flex items-center justify-between py-28"
+            className="flex items-center justify-between py-28 cursor-pointer"
+            onClick={pushServiceDesign}
           >
             <div className="w-[40%]">
               <HeadingThree cssClass="text-[4rem]" title="Website Design & Development" />

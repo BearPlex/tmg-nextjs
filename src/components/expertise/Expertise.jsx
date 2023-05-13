@@ -12,11 +12,12 @@ console.log("Id",id)
 }
     return(
         <>
+        <div className="max-w-7xl mx-auto">
             <div className="flex mt-14 items-center justify-between flex-wrap">
                 {
                     list.map((item, index) =>
                     
-                        <div key={index} className="w-[47%] mb-16" onClick={()=>pushWork(item.id)}>
+                        <div key={index} className="w-[47%] mb-16 cursor-pointer" onClick={()=>pushWork(item.id)}>
                             {console.log("List",item)}
                             <div>
                                 <div className="relative work-images h-full">
@@ -37,6 +38,7 @@ console.log("Id",id)
                         </div>
                     )
                 }
+            </div>
             </div>
         </>
     )

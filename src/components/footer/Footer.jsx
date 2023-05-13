@@ -9,123 +9,105 @@ import clutchImage from '../../assets/images/glutch@2x.jpg';
 import awardsImage from '../../assets/images/awwwards-logo@2x.jpg';
 import designImage from '../../assets/images/css-design-awards-white.jpg';
 import kotaTransparentImage from '../../assets/svg/Kota_logo_white-1.svg';
+import groupBtn from "../../assets/images/Group.png"
 
 const Footer = () => {
     return(
         <>
-        <footer className="pt-28 px-20 bg-zinc-800 py-28">
-            <div className="flex md:flex-row flex-col justify-center items-center relative w-full">
-                <ul className="pl-0 w-[15%]">
-                    <li>
-                        <Link href="/">
-                            <a className="relative before:absolute before:w-full before:top-[80%] no-underline before:border-b-2 before:border-gray-400 inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Home</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/work">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Work</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/services">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Services</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/studio">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Studio</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/blog">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Blog</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Contact</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/privacy-policy">
-                            <a className="no-underline inline-block text-white text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Privacy Policy</a>
-                        </Link>
-                    </li>
-                </ul>
-                <ul className="w-[28%] px-4">
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="tracking-wider uppercase no-underline inline-block text-pink-400 text-2xl leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:delay-200">Experts In</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Hospitality</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Property and Architecture</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Film and Television</a>
-                        </Link>
-                    </li>
-                    <li className="mb-3">
-                        <Link href="#">
-                            <a className="no-underline inline-block text-white text-lg leading-loose font-bold hover:text-pink-400 hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Business to Business</a>
-                        </Link>
-                    </li>
-                </ul>
-           
-                <div className="md:ml-auto">
-                    <ul className="text-right">
-                        <li className="mb-3">
-                            <Link href="#">
-                                <a className="tracking-wider uppercase no-underline inline-block text-pink-400 text-2xl leading-loose font-bold hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Follow</a>
-                            </Link>
-                        </li>
-                    </ul>
-                    <div className="flex gap-6 justify-end">
-                        <a href="#" className="inline-block">{twitterSvg()}</a>
-                        <a href="#" className="inline-block">{instagramSvg()}</a>
-                        <a href="#" className="inline-block">{facebookSvg()}</a>
-                        <a href="#" className="inline-block">{linkedinSvg()}</a>
-                    </div>
-                    <Link href="#">
-                        <a className="mt-8 w-full text-right tracking-wider no-underline inline-block text-white text-lg leading-loose font-bold hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">Signup to our newsletter</a>
-                    </Link>
-                        <div className="mt-8 group">
-                            <a href="mailto:hello@kota.co.uk" className="inline-block text-white font-bold text-4xl hover:transition hover:ease-in-out hover:text-pink-400 hover:delay-200">hello@kota.co.uk</a>
-                            <h6 className="w-full text-right text-white hidden cursor-pointer group-hover:block group-hover:text-pink-400 font-bold">Copy to clipboard...</h6>
-                        </div>
-                </div>
-            </div>
-            <div className="flex flex-col md:flex-row md:justify-between items-center pt-20">
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
-                    <a href="#" className="inline-block">
-                        <img src={danImage.src} alt="kota logo" className="w-[120px] object-cover" />
-                    </a>
-                    <a href="#" className="inline-block">
-                        <img src={drumImage.src} alt="kota logo" className="w-[120px] object-cover" />
-                    </a>
-                    <a href="#" className="inline-block">
-                        <img src={clutchImage.src} alt="kota logo" className="w-[120px] object-cover" />
-                    </a>
-                    <a href="#" className="inline-block">
-                        <img src={awardsImage.src} alt="kota logo" className="w-[120px] object-cover" />
-                    </a>
-                    <a href="#" className="inline-block">
-                        <img src={designImage.src} alt="kota logo" className="w-[120px] object-cover" />
-                    </a>
-                </div>
-                <a href="#" className="inline-block md:mt-0 mt-10">
-                    <img src={kotaTransparentImage.src} alt="kota logo" className="w-[120px] h-16 object-contain" />
-                </a>
-            </div>
-        </footer>
+   
+   <footer className="relative bg-black pt-16 mt-16 pb-6">
+  <div className="container mx-auto px-4 text-white">
+    <div className="flex flex-wrap text-left lg:text-left">
+      <div className="w-full lg:w-6/12  text-right order-3">
+        <h4 className="text-3xl fonat-semibold text-blueGray-700">Follow</h4>
+        <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+          Sign Up to our newsletter
+        </h5>
+        <a href="mailto:Info@themediagale.com" className="text-lg mt-0 mb-2 text-blueGray-600">
+        Info@themediagale.com
+        </a>
+        <div className="mt-6 lg:mb-0 mb-6 bg-white flex justify-end">
+          {/* <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-twitter"></i></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-facebook-square"></i></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-github"></i>
+          </button> */}
+          <img src={groupBtn.src}/>
+        </div>
+      </div>
+      <div className="w-full lg:w-6/12 px-4">
+        <div className="flex flex-wrap items-top mb-6">
+          <div className="w-full lg:w-6/12 px-4 ml-auto">
+           {/* <span className="mb-2"><Link href="/" className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 ">Home</Link></span>  */}
+            <ul className="list-unstyled">
+              {/* <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">Work</a>
+              </li>
+              <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Services</a>
+              </li>
+              <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Blog</a>
+              </li>
+              <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Contact</a>
+              </li>
+              <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Privacy Policy</a>
+              </li> */}
+              <li  className="mb-2">
+              <Link href="/" className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 ">Home</Link>
+              </li>
+                 <li  className="mb-2">
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3  text-base" href="/work">Work</Link>
+              </li>
+              <li  className="mb-2">
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base" href="/services">Services</Link>
+              </li>
+              <li  className="mb-2">
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base" href="/blog">Blog</Link>
+              </li>
+              <li className="mb-2">
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 mt-3 text-base" href="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base" href="/privacy-policy">Privacy Policy</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="w-full lg:w-6/12 xl:relative xl:right-16">
+            <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Offices</span>
+            <ul className="list-unstyled">
+              <li className="mb-1">
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">New York</Link>
+              </li>
+              {/* <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+              </li> */}
+              <li>
+                <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Lahore</Link>
+              </li>
+              {/* <li>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+              </li> */}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr className="my-6 border-blueGray-300"/>
+    <div className="flex flex-wrap items-center md:justify-between justify-center">
+      <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div className="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank"> TMG</a>
+          {/* <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>. */}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
         </>
 
@@ -134,3 +116,6 @@ const Footer = () => {
     )
 }
 export default Footer;
+
+
+

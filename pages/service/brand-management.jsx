@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
-import serviceBottle from "../../src/assets/images/service-bottle.png";
-import book from "../../src/assets/images/book.png";
-import mobile3 from "../../src/assets/images/connect.png";
-import mobile2 from "../../src/assets/images/mobile1.png";
+import brand1 from "../../src/assets/images/brand1.png";
+import brand2 from "../../src/assets/images/brand2.png";
+import book from "../../src/assets/images/on-seo.png";
+import mobile3 from "../../src/assets/images/off-seo.png";
+import mobile2 from "../../src/assets/images/content-opt.png";
 import tmg from "../../src/assets/images/TMG-pic.png";
 import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
@@ -13,7 +14,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 
-function socialmediamarketing() {
+function seo() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
   useEffect(() => {
@@ -32,16 +33,18 @@ function socialmediamarketing() {
       <div className="pt-20">
         <Header />
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
+      <section className="">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
         <div className="w-full text-center mt-10 xl:mt-10">
           <img
-            src={serviceBottle.src}
+            src={brand1.src}
             alt="kota canvas"
             loading="lazy"
             className="max-w-full "
           />
           <img
-            src={serviceBottle.src}
+            src={brand2.src}
             alt="kota canvas"
             loading="lazy"
             className="max-w-full mt-10"
@@ -49,12 +52,17 @@ function socialmediamarketing() {
         </div>
         <div className="w-full">
           <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-            Performance Driven Digital Marketing Services
+          Performance Driven SEO Services
           </h4>
           <p className="text-2xl">
-            With proven game changing results, our award winning performance
-            experts ensure that all the leads turn into a
-            <span className="text-[#F79B60]"> profitable conversion.</span>{" "}
+          A highly optimized website is essential for a 
+business to generate new leads and sales 
+on the internet. However, to achieve this requires 
+a website to have a content strategy, technically 
+proficient and conform to the latest search engine 
+optimization <span className="text-[#F79B60]"> recommendations</span> and <span className="text-[#F79B60]"> best-practices.</span>
+
+            {" "}
           </p>
           <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
@@ -67,6 +75,8 @@ function socialmediamarketing() {
             </div>
           </button>
         </div>
+        </div>
+        </div>
       </section>
 
       <section>
@@ -77,32 +87,30 @@ function socialmediamarketing() {
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
-                  High Performance
+                  Content strategy 
+that 
+
                   <span className="text-orange_theme-400">
                     {" "}
-                    breakthrough campaigns
+                    increases 
+visibility
                   </span>{" "}
                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                  Getting noticed and remembered by the right audience is a slow
-                  delicate process. It takes multiple testing, creative input
-                  and high performing campaign structures to ensure better
-                  conversions.
+                We provide On Page and Off Page solutions that help 
+increase your website search rank so you do not need 
+to pay a dime for traffic. 
                   <br />
                   <br />
-                  We specialize in performance marketing campaigns using content
-                  and audience building strategies that support our campaigns to
-                  perform well. With our in-house team of experienced and
-                  certified marketers, we ensure that your advertisement is well
-                  remembered.
+                  Our SEO packages include content marketing, 
+local seo, technical audits, social media presence, 
+link building, guest posting and on site optimization 
+which is expert-led service that enhances both credibility
                   <br />
                   <br />
-                  As a direct partnership or white labeled solutions, The
-                  MediaGale ensures to enhance visibility, drive deeper
-                  engagement and generate better quality conversions from social
-                  and search engine platforms.
+                  on Google and domain authority. 
                 </p>
               </div>
             </div>
@@ -116,40 +124,37 @@ function socialmediamarketing() {
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
                 <dd class="mt-10 text-white relative text-6xl top-6 max-w-xs">
-                  What makes us sooo good at it?
+                What 
+makes 
+us sooo 
+good at it?
+
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">Experience</dt>
+                <dt class="font-semibold text-white text-5xl">Expert
+Analysis</dt>
                 <dd class="mt-6 text-white text-base ">
-                  We’ve worked with brands from a huge range of industries to
-                  showcase their differences through strategic design that
-                  positions them perfectly. 
+                We make sure to analyze the market competition landscape.This helps us form accurate predictions about how we are going to rank your business on Google rankings.   
                 </dd>
 
                 <dt class="font-semibold text-white text-5xl xl:mt-10">
-                  Strategy
+                Smart Audit
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                  With our certified team, we ensure to create effective cost
-                  saving strategies that help campaigns perform well so you can
-                  focus more on counting sales.
+                We make sure to diagnose your website so we know what we are operating.  This helps us drive a result oriented strategy that eliminates loose ends on your website and performs better. 
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl ">Creativity</dt>
+                <dt class="font-semibold text-white text-5xl ">Keyword Search</dt>
                 <dd class="mt-6 text-white text-base">
-                  Guided by your vision and values, our branding services will
-                  bring your business to life with artistic flair and attention
-                  to detail, to create a brand that is unique and memorable.
+                We do a comprehensive keyword search relevant to your business and shortlist top traffic driving search terms with less competition. This helps us to map and optimize the website.  
                 </dd>
                 <dt class="font-semibold text-white text-5xl xl:mt-4">
-                  Sustainability
+                Growth
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                  We ensure that the image that has been forged to the consumer
-                  mind stays on top with consistent artistic content to increase
-                  engagement and recall value.
+                We aim to strive for growth oriented results. With our expert-led optimisation, we ensure that your website ranks on the highest search result with the right targeting.
                 </dd>
               </div>
             </dl>
@@ -163,17 +168,12 @@ function socialmediamarketing() {
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                On Page
+SEO 
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                 
+                  While search engine rankings are driven from link building campaigns, ongoing on-page optimization of your website hosting, code, content is foundational when it comes to user experience. That is why we ensure to optimize your pages which include Meta Title and Descriptions, Title Tags and Creating GMB Profile.
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -208,17 +208,11 @@ function socialmediamarketing() {
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                Off Page SEO
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                Link Building and Content Marketing is essential to scale your website and to drive meaningful traffic to perform action. Our package includes Content Marketing, Link Building on good websites, Guest Posting, Increasing Social Media Presence and Removing Toxic Links to help increase authority and website credibility on Google. 
+                 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -239,17 +233,11 @@ function socialmediamarketing() {
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
-                </h1>
+                Content 
+Optimization                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+                TMG provides content optimization services to help make your content more effective, and improve quality, making it more informative and engaging for your audience. We can also help you target specific keywords and topics to ensure that your content is being seen by the right people.
+              
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -284,17 +272,12 @@ function socialmediamarketing() {
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                  Brand Name
+                What else?
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                  Building a brand image is one of the most important aspects of
-                  any business. It is what sets your company apart from the
-                  competition and helps you build a loyal customer base.
-                  <br />
-                  <br />
-                  Your brand image should be consistent and should stand out
-                  across all channels - from your website to your social media
-                  accounts and your physical collateral. 
+               
+                As your dedicated SEO agency, we go a step further than just make your website perform well. We strategize with reasoning and depend on the market research so we can showcase the results to you, that would help your business get authentic traffic without 
+spending another dime on it. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -372,11 +355,11 @@ function socialmediamarketing() {
           </div>
         </div>
       </section>
-      <div className="mt-10">
+      {/* <div className="-mt-28">
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }
 
-export default socialmediamarketing;
+export default seo;

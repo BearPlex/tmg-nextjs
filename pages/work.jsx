@@ -1,5 +1,6 @@
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/Kota_logo.png";
+// import kotaLogo from "../src/assets/images/Kota_logo.png";
+import kotaLogo from "../src/assets/images/tmg-logo.png";
 import {work} from "../src/helpers/Helpers";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -55,7 +56,11 @@ const Work = () => {
      
             <section className="pt-20">
                 <Header />
-                <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
+                <section className="">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid grid-cols-2 px-28 gap-10 pt-12 items-center">
+
+                       
                     <div className="w-full text-center">
                         <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                     </div>
@@ -65,6 +70,8 @@ const Work = () => {
                             KOTA is a progressive and insightful design agency, technically and creatively skilled to translate your brand into its best digital self. Our design and development approach creates impactful,
                             engaging brands and immersive digital experiences that bring you a return on creativity.
                         </p>
+                    </div>
+                    </div>
                     </div>
                 </section>
                 <Tabs className="p-20 px-28 tabs-wrapper">

@@ -16,47 +16,47 @@ const NavigationMenu = () => {
             <div>
                 <ul className="max-w-[60%] mx-auto relative">
                     <li className="group">
-                        <Link href="#"><a className="transparentColor hover:text-white inline-block text-[5rem] font-bold leading-none">Work</a></Link>
-                        <div className="hidden group-hover:block">
+                        <Link href="/work"><a className="transparentColor hover:text-white inline-block text-[5rem] font-bold leading-none">Work</a></Link>
+                        {/* <div className="hidden group-hover:block">
                             <ul className="absolute top-10 w-[15rem] right-[100px]">
                                 <Link href="#"><a className="transparentColor hover:text-white px-3 text-left text-4xl inline-block font-bold leading-normal">Work</a></Link>
                             </ul>
-                        </div>
+                        </div> */}
                     </li>
                     <li className="group">
                         <Link href="#"><a className="inline-block text-[5rem] font-bold leading-none transparentColor hover:text-white">Services</a></Link>
                         <div className="hidden group-hover:block">
                             <ul className="absolute top-[50%] translate-y-[-50%]  left-[310px] flex flex-col">
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Creative Web Design</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Web Development</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Branding</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Digital Marketing</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">E-Commerce</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">WordPress</a></Link>
+                                <Link href="/service/social-media-marketing"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Social Media Marketing</a></Link>
+                                <Link href="/service/web-design"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Web Development & Design</a></Link>
+                                <Link href="/service/brand-management"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Branding</a></Link>
+                                <Link href="/seo"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Seo</a></Link>
+                                {/* <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">E-Commerce</a></Link>
+                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">WordPress</a></Link> */}
                             </ul>
                         </div>
                     </li>
                     <li className="group">
-                        <Link href="#"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Studio</a></Link>
+                        <Link href="/studio"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Studio</a></Link>
                         <div className="hidden group-hover:block">
-                            <ul className="absolute top-[50%] translate-y-[-50%]  left-[310px] flex flex-col">
+                            {/* <ul className="absolute top-[50%] translate-y-[-50%]  left-[310px] flex flex-col">
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Web Development</a></Link>
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Digital Marketing</a></Link>
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">E-Commerce</a></Link>
-                            </ul>
+                            </ul> */}
                         </div>
                     </li>
                     <li className="group">
-                        <Link href="#"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Blog</a></Link>
-                        <div className="hidden group-hover:block">
+                        <Link href="/blog"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Blog</a></Link>
+                        {/* <div className="hidden group-hover:block">
                             <ul className="absolute top-[50%] translate-y-[-50%]  right-[100px] flex flex-col">
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">E-Commerce</a></Link>
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">WordPress</a></Link>
                             </ul>
-                        </div>
+                        </div> */}
                     </li>
                     <li className="group">
-                        <Link href="#"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Contact</a></Link>
+                        <Link href="/contact"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Contact</a></Link>
                         {/* <div className="hidden group-hover:block">
                             <ul className="absolute top-[50%] translate-y-[-50%]  right-[100px] flex flex-col">
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Creative Web Design</a></Link>
