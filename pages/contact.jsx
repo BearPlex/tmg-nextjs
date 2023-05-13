@@ -3,6 +3,7 @@ import Input from "../src/components/input/Input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileZipper } from "@fortawesome/free-solid-svg-icons";
 import {facebookSvg, instagramSvg, linkedinSvg, twitterSvg} from "../src/helpers/Helpers";
+import Footer from "../src/components/footer/Footer";
 
 const Contact = () => {
   return (
@@ -133,7 +134,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
+  
   );
 };
 export default Contact;

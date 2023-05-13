@@ -17,6 +17,7 @@ import galleryImage6 from '../src/assets/images/studio6.png';
 import mainImage from "../src/assets/svg/home_work_logo.svg";
 import teamMember from '../src/assets/images/james-h.png';
 import HeadingThree from "../src/components/headings/HeadingThree";
+import Footer from "../src/components/footer/Footer";
 
 const Studio = () => {
     return(
@@ -151,8 +152,9 @@ be<span className="text-[#F79B60]"> a work of art</span> </p>
                     <SwiperSlide>Slide 8</SwiperSlide>
                     <SwiperSlide>Slide 9</SwiperSlide>
                 </Swiper>
-
+                <Footer/>
             </section>
+          
         </section>
     )
 }

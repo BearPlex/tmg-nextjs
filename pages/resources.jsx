@@ -208,7 +208,7 @@ to everyday business challenges.
         </div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

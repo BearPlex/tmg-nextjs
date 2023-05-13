@@ -1,6 +1,7 @@
 import HeadingThree from "../src/components/headings/HeadingThree";
 import blogImage from '../src/assets/images/blog-img.png';
 import HeadingTwo from "../src/components/headings/HeadingTwo";
+import Footer from "../src/components/footer/Footer";
 
 const blogDetail = () => {
     return(
@@ -41,6 +42,7 @@ const blogDetail = () => {
                     <p>It follows the principles of the Sustainable Web Manifesto, which calls for an internet that is:</p>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -15,15 +15,7 @@ const NavigationMenu = () => {
             </Link>
             <div>
                 <ul className="max-w-[60%] mx-auto relative">
-                    <li className="group">
-                        <Link href="/work"><a className="transparentColor hover:text-white inline-block text-[5rem] font-bold leading-none">Work</a></Link>
-                        {/* <div className="hidden group-hover:block">
-                            <ul className="absolute top-10 w-[15rem] right-[100px]">
-                                <Link href="#"><a className="transparentColor hover:text-white px-3 text-left text-4xl inline-block font-bold leading-normal">Work</a></Link>
-                            </ul>
-                        </div> */}
-                    </li>
-                    <li className="group">
+                <li className="group">
                         <Link href="#"><a className="inline-block text-[5rem] font-bold leading-none transparentColor hover:text-white">Services</a></Link>
                         <div className="hidden group-hover:block">
                             <ul className="absolute top-[50%] translate-y-[-50%]  left-[310px] flex flex-col">
@@ -36,6 +28,16 @@ const NavigationMenu = () => {
                             </ul>
                         </div>
                     </li>
+                    <li className="group">
+                        <Link href="/work"><a className="transparentColor hover:text-white inline-block text-[5rem] font-bold leading-none">Work</a></Link>
+                        {/* <div className="hidden group-hover:block">
+                            <ul className="absolute top-10 w-[15rem] right-[100px]">
+                                <Link href="#"><a className="transparentColor hover:text-white px-3 text-left text-4xl inline-block font-bold leading-normal">Work</a></Link>
+                            </ul>
+                        </div> */}
+                    </li>
+                   
+                
                     <li className="group">
                         <Link href="/studio"><a className="inline-block font-bold text-[5rem] leading-none transparentColor hover:text-white">Studio</a></Link>
                         <div className="hidden group-hover:block">
@@ -64,6 +66,10 @@ const NavigationMenu = () => {
                                 <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal transparentColor hover:text-white">Branding</a></Link>
                             </ul>
                         </div> */}
+                    </li>
+                    <li className="group">
+                        <Link href="/resources"><a className="transparentColor hover:text-white inline-block text-[5rem] font-bold leading-none">Resources</a></Link>
+                       
                     </li>
                 </ul>
             </div>

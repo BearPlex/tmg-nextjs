@@ -355,9 +355,10 @@ spending another dime on it. 
           </div>
         </div>
       </section>
-      {/* <div className="-mt-28">
+      <div className="-mt-28">
         <Footer />
-      </div> */}
+      </div>
+    
     </>
   );
 }
