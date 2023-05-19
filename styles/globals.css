@@ -173,7 +173,7 @@ footer svg:hover path {
 }
 .contact-wrapper svg:hover g {
   /*stroke: gray;*/
-  fill: hotpink;
+  fill: #F58460;
   transition: stroke 0.2s ease-in-out 0s;
 }
 
