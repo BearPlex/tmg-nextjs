@@ -26,7 +26,7 @@ const Contact = () => {
           <p className="mt-10">
             <a
               href="tel:+44(0)20 3951 0562"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
              +1 (917) 970-1353
             </a>
@@ -34,25 +34,25 @@ const Contact = () => {
           <p className="group mt-10 relative">
             <a
               href="mailto:info@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
               info@themediagale.com
             </a>
             <a
               href="mailto:info@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
              support@themediagale.com
             </a>
             <a
-              href="mailto:info@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+              href="mailto: contacus@themediagale.com"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400 transition-all"
             >
              contacus@themediagale.com
             </a>
-            <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
+            {/* <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
               Copy to clipboard
-            </span>
+            </span> */}
           </p>
             <div className="flex gap-6 mt-20 justify-start contact-wrapper">
               <a href="#" className="inline-block">{twitterSvg()}</a>
@@ -77,7 +77,7 @@ const Contact = () => {
           <p className="mt-10">
             <a
               href="tel:+1 833 502 0267"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
              +1 (917) 970-1353
             </a>
