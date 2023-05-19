@@ -8,7 +8,7 @@ function section2Image(props) {
 <div className='flex flex-col justify-center items-center'>
     {work?.gallery1.data.map((data)=>{
       return(
-        <img src={`http://localhost:1337${data?.attributes.url}`} className="mb-10 "/>
+        <img src={`http://localhost:1337${data?.attributes.url}`} className="my-10 "/>
       )
     })}
 </div>

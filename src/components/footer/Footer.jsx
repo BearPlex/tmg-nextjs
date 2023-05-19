@@ -96,7 +96,7 @@ const Footer = () => {
             <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
             <i className="fab fa-github"></i>
           </button> */}
-           <img src={tmg.src} className="w-20 md:w-[230px]"/>
+          <Link href="/"><img src={tmg.src} className="w-20 md:w-[230px] cursor-pointer"/></Link> 
            <div className="bg-white w-52 md:w-80">
           <img className="w-60 md:w-full" src={groupBtn.src}/>
           </div>

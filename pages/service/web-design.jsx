@@ -33,7 +33,11 @@ function webDesign() {
       <div className="pt-20">
         <Header />
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
+      <section >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
+
+        
         <div className="w-full text-center mt-10 xl:mt-10">
           <img
             src={brand1.src}
@@ -50,7 +54,7 @@ function webDesign() {
         </div>
         <div className="w-full">
           <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-          Highly <span className="text-[#F79B60]"> Optimized </span>Converting Websites 
+          Highly <span className="text-orange_theme-500"> Optimized </span>Converting Websites 
           </h4>
           <p className="text-2xl">
           We have been helping our partners in creating responsive and eye-catching websites that leave every viewer in awe of their scale and seamlessness. Our team of certified developers with years of experience in multiple niches know what would stand out at the end of the day. <br/><br/>
@@ -67,10 +71,12 @@ optimization
               <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
               <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                 Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
+                <span className="text-pink-500 relative ml-[5px]"> Consultation Today</span>
               </p>
             </div>
           </button>
+        </div>
+        </div>
         </div>
       </section>
 
@@ -85,7 +91,7 @@ optimization
              Modern designs 
 that
 
-                  <span className="text-orange_theme-400">
+                  <span className="text-orange_theme-500">
                     {" "}
                     creates
 identity
@@ -176,7 +182,7 @@ Websites
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -216,7 +222,7 @@ a Service
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -240,7 +246,7 @@ Websites             </h1>
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -280,7 +286,7 @@ spending another dime on it. 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>

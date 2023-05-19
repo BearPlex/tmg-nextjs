@@ -99,7 +99,7 @@ Why waste and settle for something less?<br/><br/>With user-centric designs, res
 
             <div className="p-20 pt-4 ">
                 <h2 className=" max-w-6xl text-center  pb-16 font-bold font-sofia-bold text-zinc-700 text-secondary-size leading-tight">
-                Our team bootstraps the growth of your business using these  <span className="text-orange_theme-500">4 Elements</span>
+                Our team bootstraps the growth of your business using these  <span className="text-orange_theme-500">4<span className="text-orange_theme-400">Elements</span> </span>
                 </h2>
                 <Agency />
             </div>

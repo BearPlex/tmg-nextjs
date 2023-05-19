@@ -46,8 +46,8 @@ const Studio = () => {
                     <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
                 <div className="w-full">
-                    <h4 className="mb-6 text-7xl font-bold leading-tight">Let's make your <span className="text-[#F79B60]"> digital 
-dreams a reality.</span></h4>
+                    <h4 className="mb-6 text-7xl font-bold leading-tight">Let's make your <span className="text-orange_theme-500"> digital 
+dreams<span className="text-orange_theme-400"> a reality.</span> </span></h4>
                     <p className="text-2xl">We create the best customer experiences across your 
 brand’s journey, transforming the way brands connect with their audiences by 
 be<span className="text-[#F79B60]"> crafting engaging and impactful digital experiences that inspire action and drive growth.</span> </p>
@@ -56,7 +56,7 @@ be<span className="text-[#F79B60]"> crafting engaging and impactful digital expe
   <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
   <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
   <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-    Book Free  {" "}<span className="text-pink-500">  {" "}Consultation Today</span>
+    Book Free  {" "}<span className="text-pink-500 relative left-[5px]">  {" "}Consultation Today</span>
   </p>
   </div>
 </button>
@@ -89,7 +89,7 @@ be<span className="text-[#F79B60]"> crafting engaging and impactful digital expe
                 {/* <p className="paragraph mb-10">
                     By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
                 </p> */}
-                <button className="max-w-[205px] h-14 w-full border-2 border-pink-400 text-pink-400 font-circular-medium font-medium text-xs rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-pink-400 hover:transition-all">View Our Services</button>
+                <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-xs rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-orange_theme-400 hover:transition-all">View Our Services</button>
             </div>
            
             {/* <section className="pt-20 px-28 max-w-[80%]">

@@ -13,7 +13,7 @@ const Header = () => {
                 <nav className="flex items-center justify-between">
                     <Link href="/">
                         <a className={showMenu ? 'hidden' : 'block'}>
-                            <img className='w-36' src={logoIcon.src} alt="logo" />
+                            <img className='w-36 cursor-pointer' src={logoIcon.src} alt="logo" />
                         </a>
                     </Link>
                     <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">

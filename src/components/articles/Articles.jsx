@@ -44,7 +44,7 @@ const Articles = () => {
             </div>
             <div className="text-center w-full mt-28">
                 <Link href="#">
-                    <a className="border-2 border-pink-400 rounded-full px-6 py-4 font-bold text-pink-400 bg-white hover:bg-pink-400 hover:text-white transition-in-out hover:transition-in-out uppercase">View All Blog Posts</a>
+                    <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase">View All Blog Posts</a>
                 </Link>
             </div>
 

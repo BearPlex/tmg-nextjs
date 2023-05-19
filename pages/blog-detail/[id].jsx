@@ -10,6 +10,8 @@ import Section4card from '../../src/components/works/section4card'
 import Footer from '../../src/components/footer/Footer';
 import HeadingThree from "../../src/components/headings/HeadingThree";
 import HeadingTwo from '../../src/components/headings/HeadingTwo';
+
+import ReactMark from "react-markdown";
 function blogDetail() {
     const router = useRouter();
   
@@ -75,8 +77,8 @@ function blogDetail() {
               /> */}
           </div>
             <div className="max-w-2xl w-full mx-auto">
-                <HeadingThree title="Introduction." cssClass="text-pink-400" />
-                <p className="text-zinc-700 pb-20">
+                <HeadingThree title="Introduction." cssClass="text-orange_theme-400" />
+                <p className="text-zinc-700 pb-20  mt-3">
                     Did you know that if the internet was a country, it would be the world’s 7th biggest polluter, emitting 1.6 billion annual tons in greenhouse gas emissions?
 
                     As a planet, we are currently facing unprecedented levels of climate change, and the internet plays a sizeable part in this problem. From websites to cryptocurrencies, it consumes large amounts of electricity in data centres, telecom networks, and end-user devices.
@@ -84,7 +86,10 @@ function blogDetail() {
                     Find out how web technology can still be efficient with low-carbon digital products and services.
                 </p>
             
-              <p className='text-zinc-700 pb-20'>{work?.attributes?.blog_content}</p>
+             
+                <ReactMark className='text-zinc-700 pb-20'>
+                {work?.attributes?.blog_content}
+                </ReactMark>
                 {/* <HeadingThree title="Understanding your digital footprint." className="text-pink-400 pb-10" />
                 <p className="text-zinc-400 text-base">
                     As organisations produce more content, such as launching websites and hosting viral workshops, their digital footprint grows and expands. It can be seen that while many organisations assess the environmental impact of their office space, supply chain, or business practices, it’s not common for them to evaluate the carbon footprint of their online properties.  Considering the rate at which the internet is expanding, this is a problem that needs to be addressed.

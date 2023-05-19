@@ -23,7 +23,7 @@ const Resources = () => {
                     <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
                 <div className="w-full">
-                    <h4 className="mb-6 text-5xl sm:text-7xl font-bold leading-tight">Dedicated Resource <span className="text-pink-500">Allocation</span></h4>
+                    <h4 className="mb-6 text-5xl sm:text-7xl font-bold leading-tight">Dedicated Resource <span className="text-orange_theme-500">Allocation</span></h4>
                     <p className="text-2xl">We offer 360-degree marketing solutions such as PPC 
 Advertisement, Search Engine Optimisation and Web 
 Development Services. Our team is technically and 
@@ -62,7 +62,7 @@ to everyday business challenges.
 
               </p>
               <Link href="/webDesign">
-                <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
                   Learn More
                 </a>
               </Link>
@@ -90,7 +90,7 @@ to everyday business challenges.
 
               </p>
               <Link href="/webDevelopment">
-                <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
                   Learn More
                 </a>
               </Link>
@@ -117,7 +117,7 @@ to everyday business challenges.
 
               </p>
               <Link href="/webDevelopment">
-                <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
                   Learn More
                 </a>
               </Link>
@@ -144,7 +144,7 @@ to everyday business challenges.
 
               </p>
               <Link href="/webDevelopment">
-                <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
                   Learn More
                 </a>
               </Link>

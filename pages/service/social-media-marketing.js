@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
 import serviceBottle from "../../src/assets/images/service-bottle.png";
-import book from "../../src/assets/images/book.png";
-import mobile3 from "../../src/assets/images/connect.png";
+import body from "../../src/assets/images/body-img.png";
+import book from "../../src/assets/images/social2-img.png";
+import mobile3 from "../../src/assets/images/social1-img.png";
 import mobile2 from "../../src/assets/images/mobile1.png";
 import tmg from "../../src/assets/images/TMG-pic.png";
 import hand from "../../src/assets/images/hand.png";
@@ -32,40 +33,54 @@ function socialmediamarketing() {
       <div className="pt-20">
         <Header />
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-        <div className="w-full text-center mt-10 xl:mt-10">
-          <img
-            src={serviceBottle.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full "
-          />
-          <img
-            src={serviceBottle.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full mt-10"
-          />
-        </div>
-        <div className="w-full">
-          <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-            Performance Driven Digital Marketing Services
-          </h4>
-          <p className="text-2xl">
-            With proven game changing results, our award winning performance
-            experts ensure that all the leads turn into a
-            <span className="text-[#F79B60]"> profitable conversion.</span>{" "}
-          </p>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
-              </p>
+      <section>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
+            <div className="w-full text-center mt-10 xl:mt-10">
+              <img
+                src={body.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full "
+              />
+              <img
+                src={serviceBottle.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full mt-10"
+              />
             </div>
-          </button>
+            <div className="w-full">
+              <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+                Performance Driven Digital Marketing Services
+              </h4>
+              <p className="text-2xl">
+                With proven game changing results, our award winning performance
+                experts ensure that all the leads turn into a
+                <span className="text-orange_theme-500">
+                  {" "}
+                  profitable
+                  <span className="text-orange_theme-400">
+                    {" "}
+                    conversion.
+                  </span>{" "}
+                </span>{" "}
+              </p>
+              <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+                <div className="">
+                  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                    Book Free{" "}
+                    <span className="text-pink-500 relative ml-[6px]">
+                      {" "}
+                      Consultation Today
+                    </span>
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -78,9 +93,10 @@ function socialmediamarketing() {
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
                   High Performance
-                  <span className="text-orange_theme-400">
+                  <span className="text-orange_theme-500">
                     {" "}
-                    breakthrough campaigns
+                    breakthrough{" "}
+                    <span className="text-orange_theme-400">campaigns</span>
                   </span>{" "}
                 </h1>
               </div>
@@ -181,7 +197,11 @@ function socialmediamarketing() {
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -226,7 +246,11 @@ function socialmediamarketing() {
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -257,7 +281,11 @@ function socialmediamarketing() {
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -302,7 +330,11 @@ function socialmediamarketing() {
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>

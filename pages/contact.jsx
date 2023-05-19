@@ -11,34 +11,46 @@ const Contact = () => {
       <Header />
       <div className="flex gap-x-5 justify-between px-28">
         <div className="w-[30%]">
-          <h4 className="text-pink-400 font-bold text-5xl mb-6 uppercase">
-            London
+          <h4 className=" font-bold text-5xl mb-6 uppercase">
+            Lahore
           </h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
-            KOTA
+          Brooklyn,
             <br />
-            1-5 Clerkenwell Road
+            New York,
             <br />
-            London
-            <br />
-            EC1M 5PA
+            USA,
+            {/* <br />
+            EC1M 5PA */}
           </p>
           <p className="mt-10">
             <a
               href="tel:+44(0)20 3951 0562"
-              className="inline-block text-pink-400 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
             >
-              +44(0)20 3951 0562
+             +1 (917) 970-1353
             </a>
           </p>
           <p className="group mt-10 relative">
             <a
-              href="mailto:hello@kota.co.uk"
-              className="inline-block text-pink-400 font-bold text-2xl hover:text-black transition-all"
+              href="mailto:info@themediagale.com"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
             >
-              hello@kota.co.uk
+              info@themediagale.com
             </a>
-            <span className="absolute hidden text-pink-400 text-lg font-bold cursor-pointer group-hover:block">
+            <a
+              href="mailto:info@themediagale.com"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+            >
+             support@themediagale.com
+            </a>
+            <a
+              href="mailto:info@themediagale.com"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
+            >
+             contacus@themediagale.com
+            </a>
+            <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
               Copy to clipboard
             </span>
           </p>
@@ -50,24 +62,24 @@ const Contact = () => {
             </div>
         </div>
         <div className="w-[30%]">
-          <h4 className="text-pink-400 font-bold text-5xl mb-6 uppercase">
+          <h4 className=" font-bold text-5xl mb-6 uppercase">
             New York
           </h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
-            477 Madison Ave,
+          Dha Phase-5,
             <br />
-            Midtown Manhattan,
+            Lahore,
             <br />
-            6th Floor,
-            <br />
-            NY 10022
+            Pakistan,
+            {/* <br />
+            NY 10022 */}
           </p>
           <p className="mt-10">
             <a
               href="tel:+1 833 502 0267"
-              className="inline-block text-pink-400 font-bold text-2xl hover:text-black transition-all"
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-black transition-all"
             >
-              +1 833 502 0267
+             +1 (917) 970-1353
             </a>
           </p>
         </div>
@@ -128,7 +140,7 @@ const Contact = () => {
                            className="text-xs font-medium text-zinc-700 leading-4">I understand that KOTA will securely hold my data in accordance with their privacy policy.</label>
                   </li>
                 </ul>
-                <button className="border-2 border-pink-400 float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-pink-400 bg-white hover:bg-pink-400 hover:text-white transition hover:transition-all uppercase">Submit</button>
+                <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-[#F58460] hover:text-white transition hover:transition-all uppercase">Submit</button>
               </div>
             </div>
           </div>

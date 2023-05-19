@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
-import brand1 from "../../src/assets/images/brand1.png";
-import brand2 from "../../src/assets/images/brand2.png";
-import book from "../../src/assets/images/on-seo.png";
-import mobile3 from "../../src/assets/images/off-seo.png";
-import mobile2 from "../../src/assets/images/content-opt.png";
+import brand1 from "../../src/assets/images/brand-img.png";
+import brand2 from "../../src/assets/images/brand-img2.png";
+import book from "../../src/assets/images/brand1-brand.png";
+import mobile3 from "../../src/assets/images/brand2-brand.png";
+import mobile2 from "../../src/assets/images/brand3-brand.png";
 import tmg from "../../src/assets/images/TMG-pic.png";
 import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
@@ -52,15 +52,11 @@ function seo() {
         </div>
         <div className="w-full">
           <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-          Performance Driven SEO Services
+ <span className="text-orange_theme-500"> Brand<span className="text-orange_theme-400"> Identity</span> </span>    and Creative Management Services
           </h4>
           <p className="text-2xl">
-          A highly optimized website is essential for a 
-business to generate new leads and sales 
-on the internet. However, to achieve this requires 
-a website to have a content strategy, technically 
-proficient and conform to the latest search engine 
-optimization <span className="text-[#F79B60]"> recommendations</span> and <span className="text-[#F79B60]"> best-practices.</span>
+          TMG combines strategic directions with 
+creative designs to ensure <span className="text-orange_theme-500">unique brand identity.</span>
 
             {" "}
           </p>
@@ -87,30 +83,37 @@ optimization <span className="text-[#F79B60]"> recommendations</span> and <span 
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
-                  Content strategy 
-that 
+     Specialized branding
+services that 
 
-                  <span className="text-orange_theme-400">
+                  <span className="text-orange_theme-500">
                     {" "}
-                    increases 
-visibility
+                    creates 
+trust
                   </span>{" "}
                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                We provide On Page and Off Page solutions that help 
-increase your website search rank so you do not need 
-to pay a dime for traffic. 
+                Every brand must have a distinctive design, 
+coherence and a story that keeps the audience engaged. 
                   <br />
                   <br />
-                  Our SEO packages include content marketing, 
-local seo, technical audits, social media presence, 
-link building, guest posting and on site optimization 
-which is expert-led service that enhances both credibility
+                  From brand positioning, logo design, design collaterals, 
+and packaging, we collaborate closely with your team 
+to ensure your branding embraces the essence of your 
+business.
                   <br />
                   <br />
-                  on Google and domain authority. 
+                
+Our branding packages include   <span className="text-orange_theme-400">
+                    {" "}
+                    Brand Image Creation, Social Presence and Tone of Voice;
+                  </span>
+ each delivering an 
+expert-led service that starts with discovery and ends 
+with the fundamental elements your business needs to 
+become unmissable.
                 </p>
               </div>
             </div>
@@ -132,30 +135,26 @@ good at it?
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">Expert
-Analysis</dt>
+                <dt class="font-semibold text-white text-5xl">
+Experience</dt>
                 <dd class="mt-6 text-white text-base ">
-                We make sure to analyze the market competition landscape.This helps us form accurate predictions about how we are going to rank your business on Google rankings.   
-                </dd>
+                We’ve worked with brands from a huge range of industries to showcase their differences through strategic design that positions them perfectly.                 </dd>
 
                 <dt class="font-semibold text-white text-5xl xl:mt-10">
-                Smart Audit
+                Strategy
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                We make sure to diagnose your website so we know what we are operating.  This helps us drive a result oriented strategy that eliminates loose ends on your website and performs better. 
-                </dd>
+                With our certified team, we ensure to create effective cost saving strategies that help campaigns perform well so you can focus more on counting sales.                </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl ">Keyword Search</dt>
+                <dt class="font-semibold text-white text-5xl ">Creativity</dt>
                 <dd class="mt-6 text-white text-base">
-                We do a comprehensive keyword search relevant to your business and shortlist top traffic driving search terms with less competition. This helps us to map and optimize the website.  
-                </dd>
+                Guided by your vision and values, our branding services will bring your business to life with artistic flair and attention to detail, to create a brand that is unique and memorable.                </dd>
                 <dt class="font-semibold text-white text-5xl xl:mt-4">
-                Growth
+                Sustainability
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                We aim to strive for growth oriented results. With our expert-led optimisation, we ensure that your website ranks on the highest search result with the right targeting.
-                </dd>
+                We ensure that the image that has been forged to the consumer mind stays on top with consistent artistic content to increase engagement and recall value.                </dd>
               </div>
             </dl>
           </div>
@@ -168,12 +167,19 @@ Analysis</dt>
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                On Page
-SEO 
+       Brand Image
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
                  
-                  While search engine rankings are driven from link building campaigns, ongoing on-page optimization of your website hosting, code, content is foundational when it comes to user experience. That is why we ensure to optimize your pages which include Meta Title and Descriptions, Title Tags and Creating GMB Profile.
+                Building a brand image is one of the most important 
+aspects of any business. It is what sets your company 
+apart from the competition and helps you build a 
+loyal customer base.
+<br/>
+<br/>
+Your brand image should be consistent and should 
+stand out across all channels - from your website 
+to your social media accounts and your physical collateral. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -181,7 +187,7 @@ SEO 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -208,11 +214,16 @@ SEO 
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Off Page SEO
+                Social Presence
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                Link Building and Content Marketing is essential to scale your website and to drive meaningful traffic to perform action. Our package includes Content Marketing, Link Building on good websites, Guest Posting, Increasing Social Media Presence and Removing Toxic Links to help increase authority and website credibility on Google. 
-                 
+                The internet has massively impacted the way businesses operate and reach their customer base. To build a strong social presence, businesses need to have an effective brand strategy that helps them dig their feet further into the existing industry and stick 
+around for longer. 
+<br/>
+<br/>
+
+We create customized branding solutions  which are 
+designed to help businesses reach their target audience and achieve their desired results.                 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -220,7 +231,7 @@ SEO 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -233,11 +244,10 @@ SEO 
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Content 
-Optimization                 </h1>
+                Tone of 
+Voice             </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                TMG provides content optimization services to help make your content more effective, and improve quality, making it more informative and engaging for your audience. We can also help you target specific keywords and topics to ensure that your content is being seen by the right people.
-              
+                A unique tone of voice helps brands build trust and become memorable in the minds of their audience. We’ll collaborate with your team to devise a tone that resonates with your customers and inspires them to action.              
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -245,7 +255,7 @@ Optimization                 </h1>
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
@@ -285,7 +295,7 @@ spending another dime on it. 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500"> More</span>
+                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
                       </p>
                     </div>
                   </button>
