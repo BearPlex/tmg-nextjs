@@ -19,12 +19,12 @@ const Header = () => {
                     <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
                         <li className={showMenu ? 'hidden' : 'block'}>
                             <Link href="/work">
-                                <a className="text-3xl font-sofia-bold font-bold text-black no-underline mix-blend-multiply hover:text-pink-400 hover:transition-all">Work</a>
+                                <a className="text-3xl font-sofia-bold font-bold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all">Work</a>
                             </Link>
                         </li>
                         <li className={showMenu ? 'hidden' : 'block'}>
                             <Link href="/contact">
-                                <a className="text-3xl font-sofia-bold text-black no-underline font-bold inline-block mix-blend-multiply hover:text-pink-400 hover:transition-all">Contact</a>
+                                <a className="text-3xl font-sofia-bold text-black no-underline font-bold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all">Contact</a>
                             </Link>
                         </li>
                         <li>
