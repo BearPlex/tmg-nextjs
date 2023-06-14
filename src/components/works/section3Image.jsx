@@ -17,9 +17,8 @@ function section3Image(props) {
                 <div className='flex justify-center'>
     {work?.gallery2.data.map((data)=>{
       return(
-        // <img key={data?.attributes.id} src={`http://localhost:1337${data?.attributes.url}`} className="pb-12"/>
-   <>
-   </>
+        <img key={data?.attributes.id} src={`http://localhost:1337${data?.attributes.url}`} className="pb-12"/>
+   
         )
     })}
 </div>

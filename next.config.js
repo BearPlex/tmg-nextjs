@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  unoptimized: true,
   images: {
     // domains: ["seal-app-fizgj.ondigitalocean.app"], // Add your domain here
     // domains: ["localhost"],
