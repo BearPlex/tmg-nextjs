@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import designDevelopmentImage from "../../assets/images/design-development.png";
 import digitalImage from "../../assets/images/digital.png";
@@ -68,10 +69,10 @@ const Services = () => {
             Digital Marketing
           </h3>
           <a
-            href="#"
+            href="/services"
             className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bg-white hover:text-fuchsia-500 font-medium"
           >
-            View All Services
+             View All Services
           </a>
         </div>
         <div>

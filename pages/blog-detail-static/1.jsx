@@ -10,8 +10,14 @@ import Section4card from '../../src/components/works/section4card'
 import Footer from '../../src/components/footer/Footer';
 import HeadingThree from "../../src/components/headings/HeadingThree";
 import HeadingTwo from '../../src/components/headings/HeadingTwo';
-
+import blog1 from "../../src/assets/images/blog-1.png"
 import ReactMark from "react-markdown";
+const blogsStatic=[{
+    title:"Migrating to Linear 101",
+    sub_title:"Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    blog_featured_image:blog1,
+    blog_content:"                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi assumenda officiis labore, quam ab quia quos delectus eligendi nihil odit deserunt cum rem corrupti expedita voluptatem optio! Maxime vel optio, nobis, necessitatibus magnam architecto officiis minima tempora inventore perferendis sunt dolorem. Culpa provident tempore sunt, aliquam perferendis non repudiandae earum quibusdam molestias id adipisci at temporibus dolorum labore mollitia voluptatem quis quo in! Ipsam ad dignissimos corporis soluta cupiditate minima, laboriosam, commodi aliquid quibusdam ratione blanditiis quam molestiae assumenda.    "
+}]
 function blogDetail() {
     const router = useRouter();
   
@@ -23,27 +29,28 @@ function blogDetail() {
       id,
    
     };
-    const [work,setWork]=useState([])
-    // {console.log("Work",blogsData)}
-    useEffect(()=>{
-    axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then((res)=>{
-        console.log("Res",res.data.data)
-        setWork(res.data.data)
-    }).catch((err)=>{
-        console.log("Error",err)
-    })
-    },[])
+    // const [work,setWork]=useState([])
+    // // {console.log("Work",blogsData)}
+    // useEffect(()=>{
+    // axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then((res)=>{
+    //     console.log("Res",res.data.data)
+    //     setWork(res.data.data)
+    // }).catch((err)=>{
+    //     console.log("Error",err)
+    // })
+    // },[])
+    console.log("Blog Static",blogsStatic)
   return (
    <>
     <section className="pt-20">
                 <Header />
-                {console.log("Image Check",work?.attributes?.blog_featured_image.data.attributes.url)}
+                {/* {console.log("Image Check",work?.attributes?.blog_featured_image.data.attributes.url)} */}
                 
                 <div className="pt-20 px-10 md:px-28">
-            <span className="text-pink-400 text-base font-medium tracking-widest">{work?.attributes?.date}</span>
-            <HeadingTwo title={work?.attributes?.title} />
+            {/* <span className="text-pink-400 text-base font-medium tracking-widest">{work?.attributes?.date}</span> */}
+            <HeadingTwo title={blogsStatic[0].title} />
             <br/>
-            <p>{work?.attributes?.sub_title}</p>
+            <p>{blogsStatic[0].sub_title}</p>
             {/* <div>
                 <img src="" className="w-[50px] h-[50px] rounded-full "/>
                 <span className="text-base text-pink-400 uppercase mt-3">BY IZZY</span>
@@ -67,7 +74,7 @@ function blogDetail() {
               width={500}
               height={500}
             /> */}
-             <img src={`http://localhost:1337${work?.attributes?.blog_featured_image.data.attributes.url}`} alt="blog image"  className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl" />
+             <img src={blogsStatic[0].blog_featured_image.src} alt="blog image"  className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl" />
             {/* <Image
                 className=" absolute w-[80%]  md:w-[85%]    object-contain md:mr-3 rounded-3xl max-w-7xl mx-auto"
                 src={manPic}
@@ -87,9 +94,9 @@ function blogDetail() {
                 </p>
             
              
-                <ReactMark className='text-zinc-700 pb-20'>
-                {work?.attributes?.blog_content}
-                </ReactMark>
+                <p className='text-zinc-700 pb-20'>
+                {blogsStatic[0].blog_content}
+                </p>
                 {/* <HeadingThree title="Understanding your digital footprint." className="text-pink-400 pb-10" />
                 <p className="text-zinc-400 text-base">
                     As organisations produce more content, such as launching websites and hosting viral workshops, their digital footprint grows and expands. It can be seen that while many organisations assess the environmental impact of their office space, supply chain, or business practices, it’s not common for them to evaluate the carbon footprint of their online properties.  Considering the rate at which the internet is expanding, this is a problem that needs to be addressed.

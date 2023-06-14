@@ -46,10 +46,10 @@ const Studio = () => {
                     <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
                 <div className="w-full">
-                    <h4 className="mb-6 text-7xl font-bold leading-tight">Let's make your <span className="text-orange_theme-500"> digital 
+                    <h4 className="mb-6 text-7xl font-bold leading-tight">Lets make your <span className="text-orange_theme-500"> digital 
 dreams<span className="text-orange_theme-400"> a reality.</span> </span></h4>
                     <p className="text-2xl">We create the best customer experiences across your 
-brand’s journey, transforming the way brands connect with their audiences by 
+brands journey, transforming the way brands connect with their audiences by 
 be<span className="text-[#F79B60]"> crafting engaging and impactful digital experiences that inspire action and drive growth.</span> </p>
 <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
     <div className="">

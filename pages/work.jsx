@@ -8,6 +8,24 @@ import Expertise from "../src/components/expertise/Expertise";
 import Footer from "../src/components/footer/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import workFeaturedImage from "../src/assets/images/work-featured-1.png"
+import workGallery1 from "../src/assets/images/work-gall-1.png"
+import workGallery2 from "../src/assets/images/work-gall-2.png"
+import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
+// import "swiper/css/bundle";
+// import "./styles.css";
+const workStatic=[
+    {
+        featured_image:workFeaturedImage,
+        featured_title:"KINIMO COSMETICS",
+        gallery_first_title:"The Brief",
+        gallery_first_description:"Meet Kinimo Cosmetics: A Pakistani beauty brand founded in 2019, that focuses on the new age definition of beauty, offering high-quality natural products that inspire confidence and passion in everyone.They reached out to us for content creation, and website development along with SEO and since then our connection has been fruitful.",
+        gallery1:workGallery1,
+        gallery_second_title:"",
+        gallery_second_description:"",
+        gallery2:workGallery2
+    }
+]
 // export async function getStaticProps(context) {
 
    
@@ -39,14 +57,10 @@ const Work = () => {
     const [work,setWork]=useState([])
     // {console.log("Work",blogsData)}
     useEffect(()=>{
-    axios.get("http://localhost:1337/api/works?populate=*").then((res)=>{
-        console.log("Res",res.data.data)
-    
         axios.get("http://localhost:1337/api/work-kinimos?populate=*").then((res)=>{
             console.log("Dataaaaaaaaaa",res.data.data)
             setWork(res.data.data)
-        })
-    }).catch((err)=>{
+        }).catch((err)=>{
         console.log("Error",err)
     })
     },[])
@@ -82,7 +96,14 @@ const Work = () => {
                         }
                     </TabList>
                     {
-                        work.map((item, index) => <TabPanel key={index}> <Expertise list={work} cssClass="text-black" /></TabPanel>)
+                     work==""?   <ExpertiseStatic list={workStatic} cssClass="text-black"/>:   work.map((item, index) => <TabPanel key={index}> 
+                         {
+            
+                  
+                    <Expertise list={work} cssClass="text-black" />
+                 
+                }
+                        </TabPanel>)
                     }
                 </Tabs>
             </section>

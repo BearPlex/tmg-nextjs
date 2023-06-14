@@ -4,12 +4,20 @@ import bannerImage from '../src/assets/images/header-image-1.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import {blogs} from "../src/helpers/Helpers";
 import Card from "../src/components/card/Card";
+import CardStatic from "../src/components/card/CardStatic";
 import Footer from "../src/components/footer/Footer";
+import blog1 from "../src/assets/images/blog-1.png"
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+// import CardStatic from "../src/components/card/CardStatic";
 // {console.log("Work",blogsData)}
-
+const blogsStatic=[{
+    title:"Migrating to Linear 101",
+    sub_title:"Linear helps streamline software projects, sprints, tasks, and bug tracking. Heres how to get started.",
+    blog_featured_image:blog1,
+    blog_content:""
+}]
 const Blog = () => {
     const [blogs,setBlogs]=useState([])
 useEffect(()=>{
@@ -18,6 +26,7 @@ axios.get("http://localhost:1337/api/blogs?populate=*").then((res)=>{
     setBlogs(res.data.data)
 }).catch((err)=>{
     console.log("Error",err)
+    // setBlogs(blogsStatic)
 })
 },[])
     return(
@@ -57,14 +66,15 @@ be<span className="text-[#F79B60]"> a work of art</span> </p>
             </div>
             <div className="mt-4">
                 <Tabs className="p-20 px-28 tabs-wrapper blog-tabs-wrapper w-full">
-                    <TabList>
+                    {/* <TabList>
                              <Tab>All</Tab>
                              <Tab>Expertise</Tab>
                              <Tab>Inspiration</Tab>
                              <Tab>Our Work</Tab>
                              <Tab>Studio</Tab>
-                    </TabList>
+                    </TabList> */}
                     {
+                        blogs==""?<TabPanel> <CardStatic  item={blogsStatic}/></TabPanel> :
                         blogs.map((item, index) => <TabPanel key={index}>
                             <Card item={blogs} />
                         </TabPanel>

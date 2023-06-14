@@ -2,8 +2,8 @@ import React from 'react'
 
 function section1(props) {
     const {featureImage,title1st,title2nd,workHeading,workDescription1st,workDescription2nd,work}=props
-    console.log("Work",work)
-    console.log("Work Image",work?.gallery1.data)
+    // console.log("Work",work)
+    // console.log("Work Image",work?.gallery1.data)
   return (
    <>
    <section className='max-w-7xl mx-auto'>

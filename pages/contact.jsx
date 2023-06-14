@@ -126,7 +126,7 @@ const Contact = () => {
                     </li>
                     <li className="ml-8">
                       <label htmlFor="flexRadioDefault10"
-                             className="text-xs leading-none text-base font-medium text-zinc-700">I'm happy to receive a seriously cool monthly newsletter from KOTA.</label>
+                             className="text-xs leading-none text-base font-medium text-zinc-700">Im happy to receive a seriously cool monthly newsletter from KOTA.</label>
                     </li>
                   </ul>
                 <ul className="form-check mb-4 d-flex items-center pl-0">
