@@ -27,8 +27,8 @@ const Articles = () => {
             <div className="flex gap-14">
                 {
                     articles.map((article, index) =>
-                        <div className="border w-[352px] border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300" onClick={()=>pushWork(article.id)}>
-                            <div className="h-min overflow-hidden" key={article?.attributes.id}>
+                        <div className="border w-[352px] border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300" onClick={()=>pushWork(article.id)}  key={article.id}>
+                            <div className="h-min overflow-hidden">
                                
                                 <img src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
                             </div>
