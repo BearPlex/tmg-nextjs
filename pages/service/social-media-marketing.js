@@ -14,7 +14,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 
-function socialmediamarketing() {
+function Socialmediamarketing() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
   useEffect(() => {
@@ -411,4 +411,4 @@ function socialmediamarketing() {
   );
 }
 
-export default socialmediamarketing;
+export default Socialmediamarketing;

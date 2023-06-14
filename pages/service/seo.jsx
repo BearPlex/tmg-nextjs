@@ -14,7 +14,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 
-function brandManagement() {
+function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
   useEffect(() => {
@@ -364,4 +364,4 @@ spending another dime on it. 
   );
 }
 
-export default brandManagement;
+export default BrandManagement;

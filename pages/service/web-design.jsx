@@ -14,7 +14,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 
-function webDesign() {
+function WebDesign() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
   useEffect(() => {
@@ -363,4 +363,4 @@ spending another dime on it. 
   );
 }
 
-export default webDesign;
+export default WebDesign;
