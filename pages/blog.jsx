@@ -78,7 +78,7 @@ be<span className="text-[#F79B60]"> a work of art</span> </p>
                              <Tab>Studio</Tab>
                     </TabList> */}
                     {
-                        !blogs?<TabPanel> <CardStatic  item={blogsStatic}/></TabPanel> :
+                        blogs==""?<TabPanel> <CardStatic  item={blogsStatic}/></TabPanel> :
                         blogs.map((item, index) => <TabPanel key={index}>
                             <Card item={blogs} />
                         </TabPanel>

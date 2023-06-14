@@ -22,6 +22,7 @@ import workFeaturedImage from "../src/assets/images/work-featured-1.png"
 import workGallery1 from "../src/assets/images/work-gall-1.png"
 import workGallery2 from "../src/assets/images/work-gall-2.png"
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
+import Image from "next/image";
 // import "swiper/css/bundle";
 // import "./styles.css";
 const workStatic=[
@@ -56,7 +57,8 @@ export default function Home() {
           <section className="px-20 pt-12">
             <div className="w-full flex justify-between items-center">
                 <div className="w-[50%] text-center">
-                    <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
+                    {/* <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" /> */}
+                    <Image width={500} height={150} src={kotaLogo} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
                 <div className="w-[40%]">
                     {/* <HeadingOne title="Transforming Businesses into
