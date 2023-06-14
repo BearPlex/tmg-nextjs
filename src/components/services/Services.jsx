@@ -68,12 +68,12 @@ const Services = () => {
           >
             Digital Marketing
           </h3>
-          <a
+          {/* <a
             href="/services"
             className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bg-white hover:text-fuchsia-500 font-medium"
           >
              View All Services
-          </a>
+          </a> */}
         </div>
         <div>
           <img src={`${handleGetImages().img}`} alt="images" loading="lazy" />

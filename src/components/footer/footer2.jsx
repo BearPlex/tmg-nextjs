@@ -58,6 +58,7 @@ function footer2() {
                     className="text-[#848484]  text-[16px] "
                     href="https://twitter.com/bearplexdigital"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src={twitterSvg.src}
@@ -70,6 +71,7 @@ function footer2() {
                     className="text-[#848484] text-[16px] "
                     href="https://www.linkedin.com/company/bearplex/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src={linkedinSvg.src}
@@ -82,6 +84,7 @@ function footer2() {
                     className="text-[#848484] text-[16px] "
                     href="https://www.facebook.com/BearPlex/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src={facebookSvg.src}

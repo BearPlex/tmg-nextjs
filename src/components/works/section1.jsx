@@ -9,7 +9,7 @@ function section1(props) {
    <>
    <section className='max-w-7xl mx-auto'>
     <div className='flex justify-center mt-20'>
-    {/* <img src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
+    <img src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/>
     {/* <Image width={500} height={500} src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
     </div>
     <h1 className='text-center text-[50px] font-bold text-orange_theme-500'>{work?.featured_title} </h1>
