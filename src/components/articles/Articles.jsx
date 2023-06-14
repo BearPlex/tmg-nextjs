@@ -28,7 +28,7 @@ const Articles = () => {
                 {
                     articles.map((article, index) =>
                         <div className="border border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300" onClick={()=>pushWork(article.id)}>
-                            <div className="h-min overflow-hidden">
+                            <div className="h-min overflow-hidden" key={article?.attributes.id}>
                                
                                 <img src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
                             </div>
