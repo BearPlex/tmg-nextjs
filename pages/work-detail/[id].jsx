@@ -8,7 +8,7 @@ import axios from 'axios'
 import Section3Image from '../../src/components/works/section3Image'
 import Section4card from '../../src/components/works/section4card'
 import Footer from '../../src/components/footer/Footer';
-function workDetail() {
+function WorkDetail() {
     const router = useRouter();
   
     const {
@@ -43,4 +43,4 @@ function workDetail() {
   )
 }
 
-export default workDetail
+export default WorkDetail

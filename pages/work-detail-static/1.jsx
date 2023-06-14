@@ -26,7 +26,7 @@ const work=[
         gallery2:workGallery2
     }
 ]
-function workDetail() {
+function WorkDetail() {
     const router = useRouter();
   
     const {
@@ -61,4 +61,4 @@ function workDetail() {
   )
 }
 
-export default workDetail
+export default WorkDetail

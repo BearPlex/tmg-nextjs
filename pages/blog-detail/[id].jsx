@@ -12,7 +12,7 @@ import HeadingThree from "../../src/components/headings/HeadingThree";
 import HeadingTwo from '../../src/components/headings/HeadingTwo';
 
 import ReactMark from "react-markdown";
-function blogDetail() {
+function BlogDetail() {
     const router = useRouter();
   
     const {
@@ -116,4 +116,4 @@ function blogDetail() {
   )
 }
 
-export default blogDetail
+export default BlogDetail

@@ -18,7 +18,7 @@ const blogsStatic=[{
     blog_featured_image:blog1,
     blog_content:"                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi assumenda officiis labore, quam ab quia quos delectus eligendi nihil odit deserunt cum rem corrupti expedita voluptatem optio! Maxime vel optio, nobis, necessitatibus magnam architecto officiis minima tempora inventore perferendis sunt dolorem. Culpa provident tempore sunt, aliquam perferendis non repudiandae earum quibusdam molestias id adipisci at temporibus dolorum labore mollitia voluptatem quis quo in! Ipsam ad dignissimos corporis soluta cupiditate minima, laboriosam, commodi aliquid quibusdam ratione blanditiis quam molestiae assumenda.    "
 }]
-function blogDetail() {
+function BlogDetail() {
     const router = useRouter();
   
     const {
@@ -123,4 +123,4 @@ function blogDetail() {
   )
 }
 
-export default blogDetail
+export default BlogDetail
