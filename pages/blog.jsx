@@ -10,6 +10,7 @@ import blog1 from "../src/assets/images/blog-1.png"
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
 // import CardStatic from "../src/components/card/CardStatic";
 // {console.log("Work",blogsData)}
 const blogsStatic=[{
@@ -55,7 +56,10 @@ be<span className="text-[#F79B60]"> a work of art</span> </p>
            
             <div className="px-28 pt-20 h-[570px]">
                 <a href="" className="relative blog-banner w-full h-full">
-                    <img src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
+                    {/* <img src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
+                    <br/> */}
+                    <Image src={bannerImage} alt="banner" width={1300} height={550} objectFit="cover" />
+
                     <div className="absolute left-10 bottom-10">
                         <span className="text-pink-400 inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">Featured News</span>
                         <h3 className="text-white max-w-[55%] font-sofia-bold text-[50px] leading-none">
@@ -74,7 +78,7 @@ be<span className="text-[#F79B60]"> a work of art</span> </p>
                              <Tab>Studio</Tab>
                     </TabList> */}
                     {
-                        blogs==""?<TabPanel> <CardStatic  item={blogsStatic}/></TabPanel> :
+                        !blogs?<TabPanel> <CardStatic  item={blogsStatic}/></TabPanel> :
                         blogs.map((item, index) => <TabPanel key={index}>
                             <Card item={blogs} />
                         </TabPanel>
