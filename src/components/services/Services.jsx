@@ -39,7 +39,7 @@ const Services = () => {
 
   return (
     <section className="px-20 py-28 bg-black">
-      <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider">
+      <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
         Our Services
       </span>
       <div className="grid grid-cols-2 gap-4">

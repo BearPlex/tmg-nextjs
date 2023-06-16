@@ -172,9 +172,14 @@ const Services = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDesign">
-              <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
@@ -197,9 +202,14 @@ const Services = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
@@ -225,9 +235,14 @@ const Services = () => {
               communication to keep information flow open.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
@@ -253,9 +268,14 @@ const Services = () => {
               communication to keep information flow open.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className="w-[55%]">

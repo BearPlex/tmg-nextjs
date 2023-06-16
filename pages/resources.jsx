@@ -67,9 +67,14 @@ const Resources = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDesign">
-              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className="w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
@@ -91,9 +96,14 @@ const Resources = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
@@ -115,9 +125,14 @@ const Resources = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
@@ -139,9 +154,14 @@ const Resources = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDevelopment">
-              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                Learn More
+              <a className="border-2 rounded-full font-bold uppercase gradient-button">
+                <span className="w-full h-full mx-0 my-0 gradient-span">
+                  Learn More
+                </span>
               </a>
+              {/* <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a> */}
             </Link>
           </div>
           <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">

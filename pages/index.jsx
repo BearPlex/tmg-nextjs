@@ -73,12 +73,12 @@ export default function Home() {
           <div className="w-[40%]">
             {/* <HeadingOne title="Transforming Businesses into Brands" cssClass="mb-6" /> */}
             <h1
-              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-primary-size`}
+              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
             >
               Transforming Businesses into
               <span className="gradient-text"> Brands</span>{" "}
             </h1>
-            <p className="text-zinc-700 font-circular-medium font-medium text-[1.375rem]">
+            <p className="text-zinc-700 font-circular-medium font-medium text-style">
               We offer 360-degree marketing solutions such as PPC Advertisement,
               Search Engine Optimization and Web Development Services. Our team
               is technically and professionally equipped to make every{" "}
@@ -140,7 +140,7 @@ export default function Home() {
                 Providing Exponential
                 <span className="gradient-text"> User Experience</span>
               </h1>
-              <p class="mt-6 text-zinc-700 font-circular-medium font-medium text-[1.375rem]">
+              <p class="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
                 Let’s face it, first impressions matter. Why waste and settle
                 for something less?
                 <br />
@@ -168,7 +168,7 @@ export default function Home() {
 
       <div className="p-20 pt-4 ">
         <div className="w-full flex items-center justify-center pb-16">
-          <h2 className="w-4/5 text-center font-bold font-sofia-bold text-zinc-700 heading-style leading-tight">
+          <h2 className="w-4/5 text-center font-bold font-sofia-bold heading-style leading-tight">
             Our team bootstraps the growth of your business using these{" "}
             <span className="gradient-text">4 Elements</span>
           </h2>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <div className="w-[47%] pt-64">
             <HeadingTwo
-              cssClass="text-white"
+              cssClass="text-white text-style-colorless"
               title="Shit-hot work for hot-shot brands"
             />
           </div>

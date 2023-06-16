@@ -57,10 +57,18 @@ const Articles = () => {
         ))}
       </div>
       <div className="text-center w-full mt-28">
+        {/* <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase"> */}
         <Link href="/blog">
-          <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase">
-            View All Blog Posts
+          <a className="border-2 rounded-full font-bold uppercase gradient-button">
+            <span className="w-full h-full mx-0 my-0 gradient-span">
+              View All Blog Posts
+            </span>
           </a>
+          {/* <a className="border-2 rounded-full font-bold uppercase gradient-button">
+            <span className="w-full h-full mx-0 my-0 gradient-span">
+              View All Blog Posts
+            </span>
+          </a> */}
         </Link>
       </div>
     </div>
