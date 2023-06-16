@@ -49,12 +49,12 @@ const Blog = () => {
           />
         </div>
         <div className="w-full">
-          <h4 className="mb-6 text-7xl font-bold leading-tight">
+          <h4 className="mb-6 heading-style font-bold leading-tight">
             News, insights, and creative culture from TMG.
           </h4>
-          <p className="text-2xl">
+          <p className="text-style">
             Because it should never just be work, it should be
-            <span className="text-[#F79B60]"> a work of art</span>{" "}
+            <span className="gradient-text"> a work of art</span>{" "}
           </p>
           <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
@@ -82,7 +82,7 @@ const Blog = () => {
           />
 
           <div className="absolute left-10 bottom-10">
-            <span className="text-pink-400 inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">
+            <span className="gradient-text inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">
               Featured News
             </span>
             <h3 className="text-white max-w-[55%] font-sofia-bold text-[50px] leading-none">

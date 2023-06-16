@@ -54,18 +54,14 @@ const Studio = () => {
           />
         </div>
         <div className="w-full">
-          <h4 className="mb-6 text-7xl font-bold leading-tight">
+          <h4 className="mb-6 heading-style font-bold leading-tight">
             Lets make your{" "}
-            <span className="text-orange_theme-500">
-              {" "}
-              digital dreams
-              <span className="text-orange_theme-400"> a reality.</span>{" "}
-            </span>
+            <span className="gradient-text"> digital dreams a reality.</span>
           </h4>
-          <p className="text-2xl">
+          <p className="text-style">
             We create the best customer experiences across your brands journey,
             transforming the way brands connect with their audiences by be
-            <span className="text-[#F79B60]">
+            <span className="gradient-text">
               {" "}
               crafting engaging and impactful digital experiences that inspire
               action and drive growth.
@@ -122,9 +118,9 @@ const Studio = () => {
       <div className="flex justify-center flex-col items-center">
         <h1 className=" text-[45px] text-center font-sofia-bold font-bold leading-tight relative top-10">
           Innovators by heart, <br />
-          <span className="text-[#F79B60]">Creators</span> by mind.
+          <span className="gradient-text">Creators</span> by mind.
         </h1>
-        <p className="paragraph mb-5 text-center mt-14 max-w-4xl mx-10">
+        <p className="paragraph mb-5 text-center mt-14 max-w-4xl mx-10 text-style">
           With a team of smart and passionate professionals, our agency
           specializes in all elements of digital marketing, from social media
           management to search engine optimization. We are always on the cutting

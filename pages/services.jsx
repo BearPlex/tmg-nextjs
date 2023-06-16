@@ -164,7 +164,7 @@ const Services = () => {
         >
           <div className="w-[40%]">
             <HeadingThree
-              cssClass="text-[4rem]"
+              cssClass="heading-style"
               title="Social Media Marketing"
             />
             <p className="mt-8 mb-14 font-medium text-xl text-black">
@@ -191,7 +191,7 @@ const Services = () => {
           onClick={pushServiceBrand}
         >
           <div className="w-[40%]">
-            <HeadingThree cssClass="text-[4rem]" title="Brand Management" />
+            <HeadingThree cssClass="heading-style" title="Brand Management" />
             <p className="mt-8 mb-14 font-medium text-xl text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
@@ -217,7 +217,7 @@ const Services = () => {
         >
           <div className="w-[40%]">
             <HeadingThree
-              cssClass="text-[4rem]"
+              cssClass="heading-style"
               title="Search Engine Optimization"
             />
             <p className="mt-8 mb-14 font-medium text-xl text-black">
@@ -245,7 +245,7 @@ const Services = () => {
         >
           <div className="w-[40%]">
             <HeadingThree
-              cssClass="text-[4rem]"
+              cssClass="heading-style"
               title="Website Design & Development"
             />
             <p className="mt-8 mb-14 font-medium text-xl text-black">

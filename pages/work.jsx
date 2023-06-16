@@ -81,7 +81,7 @@ const Work = () => {
               />
             </div>
             <div className="w-full">
-              <h4 className="mb-6 text-7xl font-bold leading-tight">
+              <h4 className="mb-6 heading-style font-bold leading-tight">
                 We are experts in bringing brands to life digitally.
               </h4>
               <p className="text-black font-medium text-[1.16rem]">

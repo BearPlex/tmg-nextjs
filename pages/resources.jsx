@@ -29,23 +29,22 @@ const Resources = () => {
           />
         </div>
         <div className="w-full">
-          <h4 className="mb-6 text-5xl sm:text-7xl font-bold leading-tight">
-            Dedicated Resource{" "}
-            <span className="text-orange_theme-500">Allocation</span>
+          <h4 className="mb-6 heading-style font-bold leading-tight">
+            Dedicated Resource <span className="gradient-text">Allocation</span>
           </h4>
-          <p className="text-2xl">
+          <p className="text-style">
             We offer 360-degree marketing solutions such as PPC Advertisement,
             Search Engine Optimisation and Web Development Services. Our team is
             technically and professionally equipped to make every be
-            <span className="text-[#F79B60]"> brand a success story.</span>{" "}
+            <span className="gradient-text"> brand a success story.</span>{" "}
           </p>
           <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
               <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
               <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+              <p class="absolute inset-0 flex items-center justify-center font-medium gradient-text">
                 Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
+                <span className="gradient-text"> Consultation Today</span>
               </p>
             </div>
           </button>
@@ -59,11 +58,11 @@ const Resources = () => {
         >
           <div className=" md:w-[40%]">
             <HeadingThree
-              cssClass="text-[4rem]"
+              cssClass="heading-style"
               title="SEO 
                 Resource"
             />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <p className="mt-8 mb-14 font-medium text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
@@ -86,8 +85,8 @@ const Resources = () => {
           className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
         >
           <div className="md:w-[40%]">
-            <HeadingThree cssClass="text-[4rem]" title="PPC Resource" />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <HeadingThree cssClass="heading-style" title="PPC Resource" />
+            <p className="mt-8 mb-14 font-medium text-style">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
@@ -110,8 +109,8 @@ const Resources = () => {
           className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
         >
           <div className="md:w-[40%]">
-            <HeadingThree cssClass="text-[4rem]" title="Design Resource" />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <HeadingThree cssClass="heading-style" title="Design Resource" />
+            <p className="mt-8 mb-14 font-medium text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
@@ -134,8 +133,8 @@ const Resources = () => {
           className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
         >
           <div className="md:w-[40%]">
-            <HeadingThree cssClass="text-[4rem]" title="Content Resource" />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <HeadingThree cssClass="heading-style" title="Content Resource" />
+            <p className="mt-8 mb-14 font-medium text-style">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
