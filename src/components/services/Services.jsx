@@ -48,21 +48,24 @@ const Services = () => {
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "design" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("design")}>
+            onClick={() => setType("design")}
+          >
             Web Design & Development
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "branding" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("branding")}>
+            onClick={() => setType("branding")}
+          >
             Branding
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "digital" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("digital")}>
+            onClick={() => setType("digital")}
+          >
             Digital Marketing
           </h3>
           {/* <a
@@ -71,15 +74,10 @@ const Services = () => {
           >
              View All Services
           </a> */}
-          <a
-            href="#"
-            className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bg-white hover:text-fuchsia-500 font-medium">
-            View All Services
-          </a>
         </div>
         <div>
           <img src={`${handleGetImages().img}`} alt="images" loading="lazy" />
-          <p className="text-lg text-white font-normal mt-10 leading-loose">
+          <p className="text-lg text-white font-medium mt-10 leading-loose">
             {handleGetImages().detail}
           </p>
         </div>

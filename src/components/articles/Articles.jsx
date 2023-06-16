@@ -1,7 +1,7 @@
 import HeadingTwo from "../headings/HeadingTwo";
 import HeadingThree from "../headings/HeadingThree";
 import { articles } from "../../helpers/Helpers";
-import Link from "next/link";
+import Link from 'next/link'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -47,29 +47,8 @@ const Articles = () => {
                     <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase">View All Blog Posts</a>
                 </Link>
             </div>
-            <div className="p-9">
-              {
-                <span className="pink-color font-medium text-base uppercase inline-block group-hover:transition-all group-hover:delay-150 group-hover:text-black">
-                  {article.attributes.title}
-                </span>
-              }
 
-              <HeadingThree
-                title={article.attributes.sub_title}
-                cssClass="text-2xl mt-4 group-hover:text-white transition-all"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="text-center w-full mt-28">
-        <Link href="#">
-          <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-gradient-to-r from-[#F79B60] to-[#EE245F] hover:text-white transition-in-out hover:transition-in-out uppercase text-base">
-            View All Blog Posts
-          </a>
-        </Link>
-      </div>
-    </div>
-  );
-};
+        </div>
+    )
+}
 export default Articles;
