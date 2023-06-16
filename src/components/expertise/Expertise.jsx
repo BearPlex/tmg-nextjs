@@ -1,9 +1,8 @@
 import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
 const Expertise = (props) => {
-    const {list, cssClass } = props;
-    const router = useRouter();
-  
+  const { list, cssClass } = props;
+  const router = useRouter();
 
   
 const pushWork=(id)=>{
@@ -40,8 +39,10 @@ console.log("Expertise Called")
                     )
                 }
             </div>
-            </div>
-        </>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 export default Expertise;

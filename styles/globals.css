@@ -69,8 +69,12 @@
     @apply leading-8 text-base font-circular-medium text-zinc-700;
   }
 }
-
-
+.text-style{
+  @apply text-zinc-700 font-normal  text-xl;
+}
+.heading-style{
+  @apply font-sofia-bold font-black leading-10 text-zinc-700 text-4xl;
+}
 
 html,
 body {
