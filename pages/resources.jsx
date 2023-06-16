@@ -16,148 +16,144 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 const Resources = () => {
   return (
     <>
-      <section className="pt-20">
+      <section className="pt-20 mb-16">
         <Header />
-        <section className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-20 gap-4 pt-20 md:pt-12 items-center ">
-                <div className="w-full text-center">
-                    <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
-                </div>
-                <div className="w-full">
-                    <h4 className="mb-6 text-5xl sm:text-7xl font-bold leading-tight">Dedicated Resource <span className="text-orange_theme-500">Allocation</span></h4>
-                    <p className="text-2xl">We offer 360-degree marketing solutions such as PPC 
-Advertisement, Search Engine Optimisation and Web 
-Development Services. Our team is technically and 
-professionally equipped to make every
+      </section>
+      <section className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-20 gap-4 pt-20 md:pt-12 items-center ">
+        <div className="w-full text-center">
+          <img
+            src={kotaLogo.src}
+            alt="kota canvas"
+            loading="lazy"
+            className="max-w-full"
+          />
+        </div>
+        <div className="w-full">
+          <h4 className="mb-6 text-5xl sm:text-7xl font-bold leading-tight">
+            Dedicated Resource{" "}
+            <span className="text-orange_theme-500">Allocation</span>
+          </h4>
+          <p className="text-2xl">
+            We offer 360-degree marketing solutions such as PPC Advertisement,
+            Search Engine Optimisation and Web Development Services. Our team is
+            technically and professionally equipped to make every be
+            <span className="text-[#F79B60]"> brand a success story.</span>{" "}
+          </p>
+          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+            <div className="">
+              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                Book Free{" "}
+                <span className="text-pink-500"> Consultation Today</span>
+              </p>
+            </div>
+          </button>
+        </div>
+      </section>
 
-be<span className="text-[#F79B60]">  brand a success story.</span> </p>
-<button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-    <div className="">
-  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-    Book Free  {" "}<span className="text-pink-500">  {" "}Consultation Today</span>
-  </p>
-  </div>
-</button>
-                </div>
-        
-            </section>
-
-        <div className="px-10 md:px-28">
-          <section
-            id="web_design"
-            className="flex flex-col md:flex-row md:items-center justify-between py-28"
-          >
-            <div className=" md:w-[40%]">
-              <HeadingThree
-                cssClass="text-[4rem]"
-                title="SEO 
+      <div className="px-10 md:px-28">
+        <section
+          id="web_design"
+          className="flex flex-col md:flex-row md:items-center justify-between py-28"
+        >
+          <div className=" md:w-[40%]">
+            <HeadingThree
+              cssClass="text-[4rem]"
+              title="SEO 
                 Resource"
-              />
-              <p className="mt-8 mb-14 font-medium text-xl text-black">
-              Analyzing the market and consumer data 
-helps us provide customized solutions 
-to everyday business challenges.
-
-
-              </p>
-              <Link href="/webDesign">
-                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                  Learn More
-                </a>
-              </Link>
-            </div>
-            <div className="w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
-              <img
-                src={homePageImage.src}
-                alt="services images"
-                className="w-full min-w-full h-100 shadow-2xl rounded-lg"
-              />
-            </div>
-          </section>
-          <section
-            id="web_development"
-            className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-          >
-            <div className="md:w-[40%]">
-              <HeadingThree cssClass="text-[4rem]" title="PPC 
-Resource" />
-              <p className="mt-8 mb-14 font-medium text-xl text-black">
-              Analyzing the market and consumer data 
-helps us provide customized solutions 
-to everyday business challenges.
-
-
-              </p>
-              <Link href="/webDevelopment">
-                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                  Learn More
-                </a>
-              </Link>
-            </div>
-            <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
-              <img
-                src={developmentImage.src}
-                alt="services images"
-                className="w-full h-100 shadow-2xl rounded-lg"
-              />
-            </div>
-          </section>
-          <section
-            id="branding"
-            className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-          >
-            <div className="md:w-[40%]">
-              <HeadingThree cssClass="text-[4rem]" title="Design 
-Resource" />
-              <p className="mt-8 mb-14 font-medium text-xl text-black">
-              Analyzing the market and consumer data 
-helps us provide customized solutions 
-to everyday business challenges.
-
-              </p>
-              <Link href="/webDevelopment">
-                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                  Learn More
-                </a>
-              </Link>
-            </div>
-            <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
-              <img
-                src={digitalImage.src}
-                alt="services images"
-                className="w-full h-100 shadow-2xl rounded-lg"
-              />
-            </div>
-          </section>
-          <section
-            id="digital_marketing"
-            className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-          >
-            <div className="md:w-[40%]">
-              <HeadingThree cssClass="text-[4rem]" title="Content 
-Resource" />
-              <p className="mt-8 mb-14 font-medium text-xl text-black">
-              Analyzing the market and consumer data 
-helps us provide customized solutions 
-to everyday business challenges.
-
-              </p>
-              <Link href="/webDevelopment">
-                <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
-                  Learn More
-                </a>
-              </Link>
-            </div>
-            <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
-              <img
-                src={marketingImage.src}
-                alt="services images"
-                className="w-full h-100 shadow-2xl rounded-lg"
-              />
-            </div>
-          </section>
-          {/* <section
+            />
+            <p className="mt-8 mb-14 font-medium text-xl text-black">
+              Analyzing the market and consumer data helps us provide customized
+              solutions to everyday business challenges.
+            </p>
+            <Link href="/webDesign">
+              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a>
+            </Link>
+          </div>
+          <div className="w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
+            <img
+              src={homePageImage.src}
+              alt="services images"
+              className="w-full min-w-full h-100 shadow-2xl rounded-lg"
+            />
+          </div>
+        </section>
+        <section
+          id="web_development"
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
+        >
+          <div className="md:w-[40%]">
+            <HeadingThree cssClass="text-[4rem]" title="PPC Resource" />
+            <p className="mt-8 mb-14 font-medium text-xl text-black">
+              Analyzing the market and consumer data helps us provide customized
+              solutions to everyday business challenges.
+            </p>
+            <Link href="/webDevelopment">
+              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a>
+            </Link>
+          </div>
+          <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
+            <img
+              src={developmentImage.src}
+              alt="services images"
+              className="w-full h-100 shadow-2xl rounded-lg"
+            />
+          </div>
+        </section>
+        <section
+          id="branding"
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
+        >
+          <div className="md:w-[40%]">
+            <HeadingThree cssClass="text-[4rem]" title="Design Resource" />
+            <p className="mt-8 mb-14 font-medium text-xl text-black">
+              Analyzing the market and consumer data helps us provide customized
+              solutions to everyday business challenges.
+            </p>
+            <Link href="/webDevelopment">
+              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a>
+            </Link>
+          </div>
+          <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
+            <img
+              src={digitalImage.src}
+              alt="services images"
+              className="w-full h-100 shadow-2xl rounded-lg"
+            />
+          </div>
+        </section>
+        <section
+          id="digital_marketing"
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
+        >
+          <div className="md:w-[40%]">
+            <HeadingThree cssClass="text-[4rem]" title="Content Resource" />
+            <p className="mt-8 mb-14 font-medium text-xl text-black">
+              Analyzing the market and consumer data helps us provide customized
+              solutions to everyday business challenges.
+            </p>
+            <Link href="/webDevelopment">
+              <a className="text-orange_theme-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-orange_theme-400 border-2 border-orange_theme-400 hover:text-white hover:transition-all">
+                Learn More
+              </a>
+            </Link>
+          </div>
+          <div className=" w-[300px] sm:w-[400px] md:w-[55%] mt-16 md:mt-0">
+            <img
+              src={marketingImage.src}
+              alt="services images"
+              className="w-full h-100 shadow-2xl rounded-lg"
+            />
+          </div>
+        </section>
+        {/* <section
             id="e_commerce"
             className="flex items-center justify-between py-28"
           >
@@ -181,7 +177,7 @@ to everyday business challenges.
               />
             </div>
           </section> */}
-          {/* <section
+        {/* <section
             id="wordpress"
             className="flex items-center justify-between py-28"
           >
@@ -205,8 +201,7 @@ to everyday business challenges.
               />
             </div>
           </section> */}
-        </div>
-      </section>
+      </div>
 
       <Footer />
     </>

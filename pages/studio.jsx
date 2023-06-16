@@ -8,29 +8,32 @@ import "swiper/css/navigation";
 import { FreeMode, Pagination, Navigation } from "swiper";
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/agency.png";
-import galleryImage1 from '../src/assets/images/studio1-1.png';
-import galleryImage2 from '../src/assets/images/studio2-1.png';
-import galleryImage3 from '../src/assets/images/studio3-1.png';
-import galleryImage4 from '../src/assets/images/studio4b.png';
-import galleryImage5 from '../src/assets/images/studio5-1.png';
-import galleryImage6 from '../src/assets/images/studio6.png';
+import galleryImage1 from "../src/assets/images/studio1-1.png";
+import galleryImage2 from "../src/assets/images/studio2-1.png";
+import galleryImage3 from "../src/assets/images/studio3-1.png";
+import galleryImage4 from "../src/assets/images/studio4b.png";
+import galleryImage5 from "../src/assets/images/studio5-1.png";
+import galleryImage6 from "../src/assets/images/studio6.png";
 // import mainImage from "../src/assets/svg/home_work_logo.svg";
 import mainImage from "../src/assets/images/team.png";
-import teamMember from '../src/assets/images/james-h.png';
+import teamMember from "../src/assets/images/james-h.png";
 import HeadingThree from "../src/components/headings/HeadingThree";
 import Footer from "../src/components/footer/Footer";
-import member1 from "../src/assets/images/member1.png"
-import member2 from "../src/assets/images/member2.png"
-import member3 from "../src/assets/images/member3.png"
-import member4 from "../src/assets/images/member4.png"
-import member5 from "../src/assets/images/member5.png"
-import member6 from "../src/assets/images/member6.png"
+import member1 from "../src/assets/images/member1.png";
+import member2 from "../src/assets/images/member2.png";
+import member3 from "../src/assets/images/member3.png";
+import member4 from "../src/assets/images/member4.png";
+import member5 from "../src/assets/images/member5.png";
+import member6 from "../src/assets/images/member6.png";
 
 const Studio = () => {
-    return(
-        <section className="pt-20">
-            <Header />
-            {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
+  return (
+    <>
+      <section className="pt-20 mb-16">
+        <Header />
+      </section>
+
+      {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
                 <div className="w-full text-center">
                     <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
@@ -41,103 +44,173 @@ const Studio = () => {
                     </p>
                 </div>
             </section> */}
-             <section className="grid grid-cols-2 px-20 gap-4 pt-12 items-center">
-                <div className="w-full text-center">
-                    <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
-                </div>
-                <div className="w-full">
-                    <h4 className="mb-6 text-7xl font-bold leading-tight">Lets make your <span className="text-orange_theme-500"> digital 
-dreams<span className="text-orange_theme-400"> a reality.</span> </span></h4>
-                    <p className="text-2xl">We create the best customer experiences across your 
-brands journey, transforming the way brands connect with their audiences by 
-be<span className="text-[#F79B60]"> crafting engaging and impactful digital experiences that inspire action and drive growth.</span> </p>
-<button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-    <div className="">
-  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-    Book Free  {" "}<span className="text-pink-500 relative left-[5px]">  {" "}Consultation Today</span>
-  </p>
-  </div>
-</button>
-                </div>
-        
-            </section>
-            <section className="mt-20">
-                <div className="relative">
-                    <video className="studio-video" autoPlay="true" loop="true"  controls="false">
-                        <source src="/video/hp.mp4" type="video/mp4" />
-                        <source src="/video/hp.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="absolute top-[50%] left[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                        <div className="play-button border-4 border-white rounded-full w-[140px] h-[140px]">
-                            <svg className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]" width="25" height="25" viewBox="0 0 26.139 37.458" xmlns="http://www.w3.org/2000/svg">
-                                <path id="Path_184" data-name="Path 184" d="M-1422.6-322.813v37.458l26.139-19.137Z" transform="translate(1422.604 322.813)" fill="#fff">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div className="flex justify-center flex-col items-center">
-            <h1 className=" text-[45px] text-center font-sofia-bold font-bold leading-tight relative top-10">Innovators by heart, <br/>
-<span className="text-[#F79B60]">Creators</span> by mind.</h1>
-<p className="paragraph mb-5 text-center mt-14 max-w-4xl mx-10">
-                With a team of smart and passionate professionals, our agency specializes in all elements of digital marketing, from social media management to search engine optimization. We are always on the cutting edge of industry trends and innovations, ensuring that our clients stay ahead of the competition and get the greatest results possible.
-                </p>
-                {/* <p className="paragraph mb-10">
+      <section className="grid grid-cols-2 px-20 gap-4 pt-12 items-center">
+        <div className="w-full text-center">
+          <img
+            src={kotaLogo.src}
+            alt="kota canvas"
+            loading="lazy"
+            className="max-w-full"
+          />
+        </div>
+        <div className="w-full">
+          <h4 className="mb-6 text-7xl font-bold leading-tight">
+            Lets make your{" "}
+            <span className="text-orange_theme-500">
+              {" "}
+              digital dreams
+              <span className="text-orange_theme-400"> a reality.</span>{" "}
+            </span>
+          </h4>
+          <p className="text-2xl">
+            We create the best customer experiences across your brands journey,
+            transforming the way brands connect with their audiences by be
+            <span className="text-[#F79B60]">
+              {" "}
+              crafting engaging and impactful digital experiences that inspire
+              action and drive growth.
+            </span>{" "}
+          </p>
+          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+            <div className="">
+              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                Book Free{" "}
+                <span className="text-pink-500 relative left-[5px]">
+                  {" "}
+                  Consultation Today
+                </span>
+              </p>
+            </div>
+          </button>
+        </div>
+      </section>
+      <section className="mt-20">
+        <div className="relative">
+          <video
+            className="studio-video"
+            autoPlay="true"
+            loop="true"
+            controls="false"
+          >
+            <source src="/video/hp.mp4" type="video/mp4" />
+            <source src="/video/hp.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute top-[50%] left[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+            <div className="play-button border-4 border-white rounded-full w-[140px] h-[140px]">
+              <svg
+                className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                width="25"
+                height="25"
+                viewBox="0 0 26.139 37.458"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="Path_184"
+                  data-name="Path 184"
+                  d="M-1422.6-322.813v37.458l26.139-19.137Z"
+                  transform="translate(1422.604 322.813)"
+                  fill="#fff"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="flex justify-center flex-col items-center">
+        <h1 className=" text-[45px] text-center font-sofia-bold font-bold leading-tight relative top-10">
+          Innovators by heart, <br />
+          <span className="text-[#F79B60]">Creators</span> by mind.
+        </h1>
+        <p className="paragraph mb-5 text-center mt-14 max-w-4xl mx-10">
+          With a team of smart and passionate professionals, our agency
+          specializes in all elements of digital marketing, from social media
+          management to search engine optimization. We are always on the cutting
+          edge of industry trends and innovations, ensuring that our clients
+          stay ahead of the competition and get the greatest results possible.
+        </p>
+        {/* <p className="paragraph mb-10">
                     By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
                 </p> */}
-                <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-xs rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-orange_theme-400 hover:transition-all">View Our Services</button>
-            </div>
-           
-            {/* <section className="pt-20 px-28 max-w-[80%]">
+        <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-xs rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-orange_theme-400 hover:transition-all">
+          View Our Services
+        </button>
+      </div>
+
+      {/* <section className="pt-20 px-28 max-w-[80%]">
 
                 
             </section> */}
-            <section className="mt-20 px-28">
-                <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage1.src} />
-                    </div>
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage4.src} />
-                    </div>
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage2.src} />
-                    </div>
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage5.src} />
-                    </div>
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage3.src} />
-                    </div>
-                    <div className="mb-4">
-                        <img className="h-full object-cover w-full" src={galleryImage2.src} />
-                    </div>
-                </div>
-            </section>
-            <section className="pt-36  bg-zinc-800 mt-60">
-                <div className="flex items-center justify-between pb-20">
-                    <div className="w-[47%]">
-                        <img src={mainImage.src} className="w-96 mx-auto" alt="work images" />
-                    </div>
-                    <div className="w-[47%] pt-64 flex justify-center">
-                        <div className="max-w-md">
-                            <HeadingThree cssClass="text-white text-base leading-relaxed" title="You will find our team working across Creative Web Design, Web Development, Branding, and Digital Marketing." />
-                        </div>
-                    </div>
-                </div>
-                <Swiper
-                    slidesPerView={4}
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    navigation={true}
-                    modules={[Navigation]}
-                    className="mySwiper"
-                >
-                    {/* <SwiperSlide>
+      <section className="mt-20 px-28">
+        <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage1.src}
+            />
+          </div>
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage4.src}
+            />
+          </div>
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage2.src}
+            />
+          </div>
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage5.src}
+            />
+          </div>
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage3.src}
+            />
+          </div>
+          <div className="mb-4">
+            <img
+              className="h-full object-cover w-full"
+              src={galleryImage2.src}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="pt-36  bg-zinc-800 mt-60 pb-10">
+        <div className="flex items-center justify-between pb-20">
+          <div className="w-[47%]">
+            <img
+              src={mainImage.src}
+              className="w-96 mx-auto"
+              alt="work images"
+            />
+          </div>
+          <div className="w-[47%] pt-64 flex justify-center">
+            <div className="max-w-md">
+              <HeadingThree
+                cssClass="text-white text-base leading-relaxed"
+                title="You will find our team working across Creative Web Design, Web Development, Branding, and Digital Marketing."
+              />
+            </div>
+          </div>
+        </div>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          centeredSlides={true}
+          initialSlide={1}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          {/* <SwiperSlide>
                         <div className="">
                             <figure className="">
                                 <img src={teamMember.src} alt="team member" />
@@ -159,56 +232,54 @@ be<span className="text-[#F79B60]"> crafting engaging and impactful digital expe
                             </figure>
                         </div>
                     </SwiperSlide> */}
-                    <SwiperSlide> <div className="">
-                            <figure className="">
-                                <img src={member1.src} alt="team member" />
-                               
-                            </figure>
-                        </div></SwiperSlide>
-                    <SwiperSlide><div className="">
-                            <figure className="">
-                                <img src={member2.src} alt="team member" />
-                               
-                            </figure>
-                        </div></SwiperSlide>
-                    <SwiperSlide>
-                    <div className="">
-                            <figure className="">
-                                <img src={member3.src} alt="team member" />
-                               
-                            </figure>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className="">
-                            <figure className="">
-                                <img src={member4.src} alt="team member" />
-                               
-                            </figure>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className="">
-                            <figure className="">
-                                <img src={member5.src} alt="team member" />
-                               
-                            </figure>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className="">
-                            <figure className="">
-                                <img src={member6.src} alt="team member" />
-                               
-                            </figure>
-                        </div>
-                    </SwiperSlide>
-                    {/* <SwiperSlide>Slide 9</SwiperSlide> */}
-                </Swiper>
-                <Footer/>
-            </section>
-          
-        </section>
-    )
-}
+          <SwiperSlide>
+            {" "}
+            <div className="">
+              <figure className="">
+                <img src={member1.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <figure className="">
+                <img src={member2.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <figure className="">
+                <img src={member3.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <figure className="">
+                <img src={member4.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <figure className="">
+                <img src={member5.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <figure className="">
+                <img src={member6.src} alt="team member" />
+              </figure>
+            </div>
+          </SwiperSlide>
+          {/* <SwiperSlide>Slide 9</SwiperSlide> */}
+        </Swiper>
+      </section>
+      <Footer />
+    </>
+  );
+};
 export default Studio;

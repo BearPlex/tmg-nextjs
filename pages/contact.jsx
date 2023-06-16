@@ -2,20 +2,25 @@ import Header from "../src/components/header/Header";
 import Input from "../src/components/input/Input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileZipper } from "@fortawesome/free-solid-svg-icons";
-import {facebookSvg, instagramSvg, linkedinSvg, twitterSvg} from "../src/helpers/Helpers";
+import {
+  facebookSvg,
+  instagramSvg,
+  linkedinSvg,
+  twitterSvg,
+} from "../src/helpers/Helpers";
 import Footer from "../src/components/footer/Footer";
 
 const Contact = () => {
   return (
-    <div className="pt-40">
-      <Header />
-      <div className="flex gap-x-5 justify-between px-28">
+    <>
+      <div className="pt-40 mb-16">
+        <Header />
+      </div>
+      <div className="flex gap-x-5 justify-between mb-10 px-28">
         <div className="w-[30%]">
-          <h4 className=" font-bold text-5xl mb-6 uppercase">
-            Lahore
-          </h4>
+          <h4 className=" font-bold text-5xl mb-6 uppercase">Lahore</h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
-          Brooklyn,
+            Brooklyn,
             <br />
             New York,
             <br />
@@ -28,7 +33,7 @@ const Contact = () => {
               href="tel:+44(0)20 3951 0562"
               className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
-             +1 (917) 970-1353
+              +1 (917) 970-1353
             </a>
           </p>
           <p className="group mt-10 relative">
@@ -42,31 +47,37 @@ const Contact = () => {
               href="mailto:info@themediagale.com"
               className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
-             support@themediagale.com
+              support@themediagale.com
             </a>
             <a
               href="mailto: contacus@themediagale.com"
               className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400 transition-all"
             >
-             contacus@themediagale.com
+              contacus@themediagale.com
             </a>
             {/* <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
               Copy to clipboard
             </span> */}
           </p>
-            <div className="flex gap-6 mt-20 justify-start contact-wrapper">
-              <a href="#" className="inline-block">{twitterSvg()}</a>
-              <a href="#" className="inline-block">{instagramSvg()}</a>
-              <a href="#" className="inline-block">{facebookSvg()}</a>
-              <a href="#" className="inline-block">{linkedinSvg()}</a>
-            </div>
+          <div className="flex gap-6 mt-20 justify-start contact-wrapper">
+            <a href="#" className="inline-block">
+              {twitterSvg()}
+            </a>
+            <a href="#" className="inline-block">
+              {instagramSvg()}
+            </a>
+            <a href="#" className="inline-block">
+              {facebookSvg()}
+            </a>
+            <a href="#" className="inline-block">
+              {linkedinSvg()}
+            </a>
+          </div>
         </div>
         <div className="w-[30%]">
-          <h4 className=" font-bold text-5xl mb-6 uppercase">
-            New York
-          </h4>
+          <h4 className=" font-bold text-5xl mb-6 uppercase">New York</h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
-          Dha Phase-5,
+            Dha Phase-5,
             <br />
             Lahore,
             <br />
@@ -79,7 +90,7 @@ const Contact = () => {
               href="tel:+1 833 502 0267"
               className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
             >
-             +1 (917) 970-1353
+              +1 (917) 970-1353
             </a>
           </p>
         </div>
@@ -99,16 +110,16 @@ const Contact = () => {
                 <input type="file" className="relative w-full opacity-0" />
                 <div className="file-icon right-2 absolute z-0">
                   <FontAwesomeIcon
-                      icon={faFileZipper}
-                      className="text-pink-400 text-xl"
+                    icon={faFileZipper}
+                    className="text-pink-400 text-xl"
                   />
                 </div>
-                 <div className="hidden-icon right-2 absolute z-0">
-                   <FontAwesomeIcon
-                       icon={faFileZipper}
-                       className="text-pink-400  text-xl"
-                   />
-                 </div>
+                <div className="hidden-icon right-2 absolute z-0">
+                  <FontAwesomeIcon
+                    icon={faFileZipper}
+                    className="text-pink-400  text-xl"
+                  />
+                </div>
               </div>
             </div>
             <div className="w-full">
@@ -118,37 +129,54 @@ const Contact = () => {
               ></textarea>
 
               <div className="mt-6">
-                  <ul className="form-check mb-4 d-flex items-center pl-0">
-                    <li>
-                      <input
-                          className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
-                          type="radio" name="flexRadioDefault" id="flexRadioDefault10" />
-                    </li>
-                    <li className="ml-8">
-                      <label htmlFor="flexRadioDefault10"
-                             className="text-xs leading-none text-base font-medium text-zinc-700">Im happy to receive a seriously cool monthly newsletter from KOTA.</label>
-                    </li>
-                  </ul>
                 <ul className="form-check mb-4 d-flex items-center pl-0">
                   <li>
                     <input
-                        className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
-                        type="radio" name="flexRadioDefault" id="flexRadioDefault20" />
+                      className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault10"
+                    />
                   </li>
                   <li className="ml-8">
-                    <label htmlFor="flexRadioDefault20"
-                           className="text-xs font-medium text-zinc-700 leading-4">I understand that KOTA will securely hold my data in accordance with their privacy policy.</label>
+                    <label
+                      htmlFor="flexRadioDefault10"
+                      className="text-xs leading-none text-base font-medium text-zinc-700"
+                    >
+                      Im happy to receive a seriously cool monthly newsletter
+                      from KOTA.
+                    </label>
                   </li>
                 </ul>
-                <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-[#F58460] hover:text-white transition hover:transition-all uppercase">Submit</button>
+                <ul className="form-check mb-4 d-flex items-center pl-0">
+                  <li>
+                    <input
+                      className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault20"
+                    />
+                  </li>
+                  <li className="ml-8">
+                    <label
+                      htmlFor="flexRadioDefault20"
+                      className="text-xs font-medium text-zinc-700 leading-4"
+                    >
+                      I understand that KOTA will securely hold my data in
+                      accordance with their privacy policy.
+                    </label>
+                  </li>
+                </ul>
+                <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-[#F58460] hover:text-white transition hover:transition-all uppercase">
+                  Submit
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
-    </div>
-  
+      <Footer />
+    </>
   );
 };
 export default Contact;

@@ -404,7 +404,7 @@ function Socialmediamarketing() {
           </div>
         </div>
       </section>
-      <div className="mt-10">
+      <div className="mt-0">
         <Footer />
       </div>
     </>

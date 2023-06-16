@@ -1,64 +1,67 @@
 @font-face {
-  font-family: 'Circular Std Bold';
-  src: url('../src/assets/fonts/CircularStd-Bold.eot');
-  src: url('../src/assets/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../src/assets/fonts/CircularStd-Bold.woff2') format('woff2'),
-  url('../src/assets/fonts/CircularStd-Bold.woff') format('woff'),
-  url('../src/assets/fonts/CircularStd-Bold.ttf') format('truetype');
+  font-family: "Circular Std Bold";
+  src: url("../src/assets/fonts/CircularStd-Bold.eot");
+  src: url("../src/assets/fonts/CircularStd-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/CircularStd-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/CircularStd-Bold.woff") format("woff"),
+    url("../src/assets/fonts/CircularStd-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Circular Std Regular';
-  src: url('../src/assets/fonts/CircularSpotifyText-Light.eot');
-  src: url('../src/assets/fonts/CircularSpotifyText-Light.eot?#iefix') format('embedded-opentype'),
-  url('../src/assets/fonts/CircularSpotifyText-Light.woff2') format('woff2'),
-  url('../src/assets/fonts/CircularSpotifyText-Light.woff') format('woff'),
-  url('../src/assets/fonts/CircularSpotifyText-Light.ttf') format('truetype');
+@font-face {
+  font-family: "Circular Std Regular";
+  src: url("../src/assets/fonts/CircularSpotifyText-Light.eot");
+  src: url("../src/assets/fonts/CircularSpotifyText-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/CircularSpotifyText-Light.woff2") format("woff2"),
+    url("../src/assets/fonts/CircularSpotifyText-Light.woff") format("woff"),
+    url("../src/assets/fonts/CircularSpotifyText-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Circular Std Medium';
-  src: url('../src/assets/fonts/CircularStd-Medium.eot');
-  src: url('../src/assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../src/assets/fonts/CircularStd-Medium.woff2') format('woff2'),
-  url('../src/assets/fonts/CircularStd-Medium.woff') format('woff'),
-  url('../src/assets/fonts/CircularStd-Medium.ttf') format('truetype');
+  font-family: "Circular Std Medium";
+  src: url("../src/assets/fonts/CircularStd-Medium.eot");
+  src: url("../src/assets/fonts/CircularStd-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/CircularStd-Medium.woff2") format("woff2"),
+    url("../src/assets/fonts/CircularStd-Medium.woff") format("woff"),
+    url("../src/assets/fonts/CircularStd-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Sofia Pro Bold';
-  src: url('../src/assets/fonts/SofiaPro-Bold.eot');
-  src: url('../src/assets/fonts/SofiaPro-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../src/assets/fonts/SofiaPro-Bold.woff2') format('woff2'),
-  url('../src/assets/fonts/SofiaPro-Bold.woff') format('woff'),
-  url('../src/assets/fonts/SofiaPro-Bold.ttf') format('truetype');
+  font-family: "Sofia Pro Bold";
+  src: url("../src/assets/fonts/SofiaPro-Bold.eot");
+  src: url("../src/assets/fonts/SofiaPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/SofiaPro-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/SofiaPro-Bold.woff") format("woff"),
+    url("../src/assets/fonts/SofiaPro-Bold.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Sofia Sans';
-  src: url('../src/assets/fonts/SofiaSans-Regular.eot');
-  src: url('../src/assets/fonts/SofiaSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../src/assets/fonts/SofiaSans-Regular.woff2') format('woff2'),
-  url('../src/assets/fonts/SofiaSans-Regular.woff') format('woff'),
-  url('../src/assets/fonts/SofiaSans-Regular.ttf') format('truetype');
+  font-family: "Sofia Sans";
+  src: url("../src/assets/fonts/SofiaSans-Regular.eot");
+  src: url("../src/assets/fonts/SofiaSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/SofiaSans-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/SofiaSans-Regular.woff") format("woff"),
+    url("../src/assets/fonts/SofiaSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-
 
 @tailwind base;
 @tailwind components;
@@ -69,8 +72,6 @@
     @apply leading-8 text-base font-circular-medium text-zinc-700;
   }
 }
-
-
 
 html,
 body {
@@ -88,23 +89,27 @@ body {
 .transparentBgColor {
   background-color: rgba(0, 0, 0, 0.25);
 }
-.gradient{
-  mask-image: linear-gradient(to bottom, #7775D6, #E935C1);
-  
-
+.gradient {
+  mask-image: linear-gradient(to bottom, #7775d6, #e935c1);
 }
+.gradient-text {
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #menuToggle {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45px;
+  width: 35px;
 }
 
 #menuToggle input {
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 33px;
   position: absolute;
   cursor: pointer;
   opacity: 0;
@@ -112,9 +117,9 @@ body {
 }
 
 #menuToggle span {
-  width: 45px;
-  height: 5px;
-  margin-bottom: 8px;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 6px;
   background: #000000;
   border-radius: 1px;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
@@ -129,18 +134,18 @@ body {
 }
 
 #menuToggle #span3 {
-  width: 30px !important;
+  width: 25px !important;
   margin-left: auto;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 #menuToggle input:checked ~ #span1 {
   background-color: #ffffff;
-  transform: rotate(45deg) translate(8px);
+  transform: rotate(45deg) translate(5px);
 }
 #menuToggle input:checked ~ #span2 {
   background-color: #ffffff;
-  transform: rotate(495deg) translate(4px);
+  transform: rotate(495deg) translate(5px);
 }
 #menuToggle input:checked ~ #span3 {
   background-color: #ffffff;
@@ -166,14 +171,13 @@ footer svg:hover path {
   transition: fill 0.2s ease-in-out 0s;
 }
 
-
 .contact-wrapper svg {
   width: 45px;
   height: 45px;
 }
 .contact-wrapper svg:hover g {
   /*stroke: gray;*/
-  fill: #F58460;
+  fill: #f58460;
   transition: stroke 0.2s ease-in-out 0s;
 }
 
@@ -181,7 +185,6 @@ footer svg:hover path {
   fill: rgb(255, 255, 255);
   transition: fill 0.2s ease-in-out 0s;
 }
-
 
 .nav-footer svg g {
   stroke: rgb(255, 255, 255);
@@ -273,7 +276,7 @@ footer svg:hover path {
   transition: all 0.3s ease-in-out;
 }
 .blog-banner:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 220px;
   position: absolute;
@@ -289,10 +292,11 @@ footer svg:hover path {
 .card-wrapper:nth-child(3n) {
   margin-right: 0;
 }
-.card-wrapper:nth-last-child(-n+1), .card-wrapper:nth-last-child(-n+2), .card-wrapper:nth-last-child(-n+3) {
+.card-wrapper:nth-last-child(-n + 1),
+.card-wrapper:nth-last-child(-n + 2),
+.card-wrapper:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
 
 .studio-video {
   height: 430px;
@@ -339,8 +343,20 @@ footer svg:hover path {
 .transition-in-out {
   transition: all 0.5s ease-in-out;
 }
-.background-gradient{
-  background: url('../src//assets/images/background-image.png');
+.background-gradient {
+  background: url("../src//assets/images/background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.swiper-button-prev {
+  color: white !important;
+}
+.swiper-button-next {
+  color: white !important;
+}
+.text-style {
+  @apply text-zinc-700 font-normal  text-xl;
+}
+.heading-style {
+  @apply font-sofia-bold font-black leading-10 text-zinc-700 text-4xl;
 }

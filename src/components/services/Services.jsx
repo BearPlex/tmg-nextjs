@@ -77,7 +77,7 @@ const Services = () => {
         </div>
         <div>
           <img src={`${handleGetImages().img}`} alt="images" loading="lazy" />
-          <p className="text-lg text-white font-medium mt-10 leading-loose">
+          <p className="text-lg text-white font-normal mt-10 leading-loose">
             {handleGetImages().detail}
           </p>
         </div>

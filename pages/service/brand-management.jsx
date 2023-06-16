@@ -36,42 +36,50 @@ function Seo() {
       <section className="">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-        <div className="w-full text-center mt-10 xl:mt-10">
-          <img
-            src={brand1.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full "
-          />
-          <img
-            src={brand2.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full mt-10"
-          />
-        </div>
-        <div className="w-full">
-          <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
- <span className="text-orange_theme-500"> Brand<span className="text-orange_theme-400"> Identity</span> </span>    and Creative Management Services
-          </h4>
-          <p className="text-2xl">
-          TMG combines strategic directions with 
-creative designs to ensure <span className="text-orange_theme-500">unique brand identity.</span>
-
-            {" "}
-          </p>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
-              </p>
+            <div className="w-full text-center mt-10 xl:mt-10">
+              <img
+                src={brand1.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full "
+              />
+              <img
+                src={brand2.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full mt-10"
+              />
             </div>
-          </button>
-        </div>
-        </div>
+            <div className="w-full">
+              <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+                <span className="text-orange_theme-500">
+                  {" "}
+                  Brand<span className="text-orange_theme-400">
+                    {" "}
+                    Identity
+                  </span>{" "}
+                </span>{" "}
+                and Creative Management Services
+              </h4>
+              <p className="text-2xl">
+                TMG combines strategic directions with creative designs to
+                ensure{" "}
+                <span className="text-orange_theme-500">
+                  unique brand identity.
+                </span>{" "}
+              </p>
+              <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+                <div className="">
+                  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                    Book Free{" "}
+                    <span className="text-pink-500"> Consultation Today</span>
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -83,37 +91,32 @@ creative designs to ensure <span className="text-orange_theme-500">unique brand 
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
-     Specialized branding
-services that 
-
+                  Specialized branding services that
                   <span className="text-orange_theme-500">
                     {" "}
-                    creates 
-trust
+                    creates trust
                   </span>{" "}
                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                Every brand must have a distinctive design, 
-coherence and a story that keeps the audience engaged. 
+                  Every brand must have a distinctive design, coherence and a
+                  story that keeps the audience engaged. 
                   <br />
                   <br />
-                  From brand positioning, logo design, design collaterals, 
-and packaging, we collaborate closely with your team 
-to ensure your branding embraces the essence of your 
-business.
+                  From brand positioning, logo design, design collaterals, and
+                  packaging, we collaborate closely with your team to ensure
+                  your branding embraces the essence of your business.
                   <br />
                   <br />
-                
-Our branding packages include   <span className="text-orange_theme-400">
+                  Our branding packages include{" "}
+                  <span className="text-orange_theme-400">
                     {" "}
                     Brand Image Creation, Social Presence and Tone of Voice;
                   </span>
- each delivering an 
-expert-led service that starts with discovery and ends 
-with the fundamental elements your business needs to 
-become unmissable.
+                  each delivering an expert-led service that starts with
+                  discovery and ends with the fundamental elements your business
+                  needs to become unmissable.
                 </p>
               </div>
             </div>
@@ -127,34 +130,41 @@ become unmissable.
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
                 <dd class="mt-10 text-white relative text-6xl top-6 max-w-xs">
-                What 
-makes 
-us sooo 
-good at it?
-
+                  What makes us sooo good at it?
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">
-Experience</dt>
+                <dt class="font-semibold text-white text-5xl">Experience</dt>
                 <dd class="mt-6 text-white text-base ">
-                We’ve worked with brands from a huge range of industries to showcase their differences through strategic design that positions them perfectly.                 </dd>
+                  We’ve worked with brands from a huge range of industries to
+                  showcase their differences through strategic design that
+                  positions them perfectly. {" "}
+                </dd>
 
                 <dt class="font-semibold text-white text-5xl xl:mt-10">
-                Strategy
+                  Strategy
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                With our certified team, we ensure to create effective cost saving strategies that help campaigns perform well so you can focus more on counting sales.                </dd>
+                  With our certified team, we ensure to create effective cost
+                  saving strategies that help campaigns perform well so you can
+                  focus more on counting sales.{" "}
+                </dd>
               </div>
               <div>
                 <dt class="font-semibold text-white text-5xl ">Creativity</dt>
                 <dd class="mt-6 text-white text-base">
-                Guided by your vision and values, our branding services will bring your business to life with artistic flair and attention to detail, to create a brand that is unique and memorable.                </dd>
+                  Guided by your vision and values, our branding services will
+                  bring your business to life with artistic flair and attention
+                  to detail, to create a brand that is unique and memorable.{" "}
+                </dd>
                 <dt class="font-semibold text-white text-5xl xl:mt-4">
-                Sustainability
+                  Sustainability
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                We ensure that the image that has been forged to the consumer mind stays on top with consistent artistic content to increase engagement and recall value.                </dd>
+                  We ensure that the image that has been forged to the consumer
+                  mind stays on top with consistent artistic content to increase
+                  engagement and recall value.{" "}
+                </dd>
               </div>
             </dl>
           </div>
@@ -167,19 +177,17 @@ Experience</dt>
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-       Brand Image
+                  Brand Image
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                 
-                Building a brand image is one of the most important 
-aspects of any business. It is what sets your company 
-apart from the competition and helps you build a 
-loyal customer base.
-<br/>
-<br/>
-Your brand image should be consistent and should 
-stand out across all channels - from your website 
-to your social media accounts and your physical collateral. 
+                  Building a brand image is one of the most important aspects of
+                  any business. It is what sets your company apart from the
+                  competition and helps you build a loyal customer base.
+                  <br />
+                  <br />
+                  Your brand image should be consistent and should stand out
+                  across all channels - from your website to your social media
+                  accounts and your physical collateral. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -187,7 +195,11 @@ to your social media accounts and your physical collateral. 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -214,16 +226,19 @@ to your social media accounts and your physical collateral. 
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Social Presence
+                  Social Presence
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                The internet has massively impacted the way businesses operate and reach their customer base. To build a strong social presence, businesses need to have an effective brand strategy that helps them dig their feet further into the existing industry and stick 
-around for longer. 
-<br/>
-<br/>
-
-We create customized branding solutions  which are 
-designed to help businesses reach their target audience and achieve their desired results.                 
+                  The internet has massively impacted the way businesses operate
+                  and reach their customer base. To build a strong social
+                  presence, businesses need to have an effective brand strategy
+                  that helps them dig their feet further into the existing
+                  industry and stick around for longer. 
+                  <br />
+                  <br />
+                  We create customized branding solutions  which are designed to
+                  help businesses reach their target audience and achieve their
+                  desired results.  
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -231,7 +246,11 @@ designed to help businesses reach their target audience and achieve their desire
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -244,10 +263,13 @@ designed to help businesses reach their target audience and achieve their desire
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Tone of 
-Voice             </h1>
+                  Tone of Voice{" "}
+                </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                A unique tone of voice helps brands build trust and become memorable in the minds of their audience. We’ll collaborate with your team to devise a tone that resonates with your customers and inspires them to action.              
+                  A unique tone of voice helps brands build trust and become
+                  memorable in the minds of their audience. We’ll collaborate
+                  with your team to devise a tone that resonates with your
+                  customers and inspires them to action.
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -255,7 +277,11 @@ Voice             </h1>
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -282,12 +308,14 @@ Voice             </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                What else?
+                  What else?
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-               
-                As your dedicated SEO agency, we go a step further than just make your website perform well. We strategize with reasoning and depend on the market research so we can showcase the results to you, that would help your business get authentic traffic without 
-spending another dime on it. 
+                  As your dedicated SEO agency, we go a step further than just
+                  make your website perform well. We strategize with reasoning
+                  and depend on the market research so we can showcase the
+                  results to you, that would help your business get authentic
+                  traffic without spending another dime on it. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -295,7 +323,11 @@ spending another dime on it. 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative ml-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative ml-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -323,7 +355,7 @@ spending another dime on it. 
         </Tabs>
       </section>
 
-      <section className="background-gradient">
+      <section className="background-gradient pb-16">
         <div class="relative isolate ">
           <div class="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
             <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -368,7 +400,6 @@ spending another dime on it. 
       <div className="-mt-28">
         <Footer />
       </div>
-    
     </>
   );
 }

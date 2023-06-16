@@ -33,51 +33,49 @@ function BrandManagement() {
       <div className="pt-20">
         <Header />
       </div>
-      <section >
+      <section>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-
-        
-        <div className="w-full text-center mt-10 xl:mt-10">
-          <img
-            src={brand1.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full "
-          />
-          <img
-            src={brand2.src}
-            alt="kota canvas"
-            loading="lazy"
-            className="max-w-full mt-10"
-          />
-        </div>
-        <div className="w-full">
-          <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-          Performance Driven <span className="text-orange_theme-500">SEO</span> Services
-          </h4>
-          <p className="text-2xl">
-          A highly optimized website is essential for a 
-business to generate new leads and sales 
-on the internet. However, to achieve this requires 
-a website to have a content strategy, technically 
-proficient and conform to the latest search engine 
-optimization <span className="text-[#F79B60]"> recommendations</span> and <span className="text-[#F79B60]"> best-practices.</span>
-
-            {" "}
-          </p>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
-              </p>
+            <div className="w-full text-center mt-10 xl:mt-10">
+              <img
+                src={brand1.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full "
+              />
+              <img
+                src={brand2.src}
+                alt="kota canvas"
+                loading="lazy"
+                className="max-w-full mt-10"
+              />
             </div>
-          </button>
-        </div>
-        </div>
+            <div className="w-full">
+              <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+                Performance Driven{" "}
+                <span className="text-orange_theme-500">SEO</span> Services
+              </h4>
+              <p className="text-2xl">
+                A highly optimized website is essential for a business to
+                generate new leads and sales on the internet. However, to
+                achieve this requires a website to have a content strategy,
+                technically proficient and conform to the latest search engine
+                optimization{" "}
+                <span className="text-[#F79B60]"> recommendations</span> and{" "}
+                <span className="text-[#F79B60]"> best-practices.</span>{" "}
+              </p>
+              <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+                <div className="">
+                  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                    Book Free{" "}
+                    <span className="text-pink-500"> Consultation Today</span>
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -89,27 +87,24 @@ optimization <span className="text-[#F79B60]"> recommendations</span> and <span 
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
-                  Content strategy 
-that 
-
+                  Content strategy that
                   <span className="text-orange_theme-500">
                     {" "}
-                    increases 
-visibility
+                    increases visibility
                   </span>{" "}
                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                We provide On Page and Off Page solutions that help 
-increase your website search rank so you do not need 
-to pay a dime for traffic. 
+                  We provide On Page and Off Page solutions that help increase
+                  your website search rank so you do not need to pay a dime for
+                  traffic. 
                   <br />
                   <br />
-                  Our SEO packages include content marketing, 
-local seo, technical audits, social media presence, 
-link building, guest posting and on site optimization 
-which is expert-led service that enhances both credibility
+                  Our SEO packages include content marketing, local seo,
+                  technical audits, social media presence, link building, guest
+                  posting and on site optimization which is expert-led service
+                  that enhances both credibility
                   <br />
                   <br />
                   on Google and domain authority. 
@@ -126,37 +121,45 @@ which is expert-led service that enhances both credibility
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
                 <dd class="mt-10 text-white relative text-6xl top-6 max-w-xs">
-                What 
-makes 
-us sooo 
-good at it?
-
+                  What makes us sooo good at it?
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">Expert
-Analysis</dt>
+                <dt class="font-semibold text-white text-5xl">
+                  Expert Analysis
+                </dt>
                 <dd class="mt-6 text-white text-base ">
-                We make sure to analyze the market competition landscape.This helps us form accurate predictions about how we are going to rank your business on Google rankings.   
+                  We make sure to analyze the market competition landscape.This
+                  helps us form accurate predictions about how we are going to
+                  rank your business on Google rankings.   
                 </dd>
 
                 <dt class="font-semibold text-white text-5xl xl:mt-10">
-                Smart Audit
+                  Smart Audit
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                We make sure to diagnose your website so we know what we are operating.  This helps us drive a result oriented strategy that eliminates loose ends on your website and performs better. 
+                  We make sure to diagnose your website so we know what we are
+                  operating.  This helps us drive a result oriented strategy
+                  that eliminates loose ends on your website and performs
+                  better. 
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl ">Keyword Search</dt>
-                <dd class="mt-6 text-white text-base">
-                We do a comprehensive keyword search relevant to your business and shortlist top traffic driving search terms with less competition. This helps us to map and optimize the website.  
-                </dd>
-                <dt class="font-semibold text-white text-5xl xl:mt-4">
-                Growth
+                <dt class="font-semibold text-white text-5xl ">
+                  Keyword Search
                 </dt>
                 <dd class="mt-6 text-white text-base">
-                We aim to strive for growth oriented results. With our expert-led optimisation, we ensure that your website ranks on the highest search result with the right targeting.
+                  We do a comprehensive keyword search relevant to your business
+                  and shortlist top traffic driving search terms with less
+                  competition. This helps us to map and optimize the website.  
+                </dd>
+                <dt class="font-semibold text-white text-5xl xl:mt-4">
+                  Growth
+                </dt>
+                <dd class="mt-6 text-white text-base">
+                  We aim to strive for growth oriented results. With our
+                  expert-led optimisation, we ensure that your website ranks on
+                  the highest search result with the right targeting.
                 </dd>
               </div>
             </dl>
@@ -170,12 +173,15 @@ Analysis</dt>
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                On Page
-SEO 
+                  On Page SEO 
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                 
-                  While search engine rankings are driven from link building campaigns, ongoing on-page optimization of your website hosting, code, content is foundational when it comes to user experience. That is why we ensure to optimize your pages which include Meta Title and Descriptions, Title Tags and Creating GMB Profile.
+                  While search engine rankings are driven from link building
+                  campaigns, ongoing on-page optimization of your website
+                  hosting, code, content is foundational when it comes to user
+                  experience. That is why we ensure to optimize your pages which
+                  include Meta Title and Descriptions, Title Tags and Creating
+                  GMB Profile.
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -183,7 +189,11 @@ SEO 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative left-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative left-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -210,11 +220,15 @@ SEO 
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Off Page SEO
+                  Off Page SEO
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                Link Building and Content Marketing is essential to scale your website and to drive meaningful traffic to perform action. Our package includes Content Marketing, Link Building on good websites, Guest Posting, Increasing Social Media Presence and Removing Toxic Links to help increase authority and website credibility on Google. 
-                 
+                  Link Building and Content Marketing is essential to scale your
+                  website and to drive meaningful traffic to perform action. Our
+                  package includes Content Marketing, Link Building on good
+                  websites, Guest Posting, Increasing Social Media Presence and
+                  Removing Toxic Links to help increase authority and website
+                  credibility on Google.   
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -222,7 +236,11 @@ SEO 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative left-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative left-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -235,11 +253,14 @@ SEO 
             <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                Content 
-Optimization                 </h1>
+                  Content Optimization {" "}
+                </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-                TMG provides content optimization services to help make your content more effective, and improve quality, making it more informative and engaging for your audience. We can also help you target specific keywords and topics to ensure that your content is being seen by the right people.
-              
+                  TMG provides content optimization services to help make your
+                  content more effective, and improve quality, making it more
+                  informative and engaging for your audience. We can also help
+                  you target specific keywords and topics to ensure that your
+                  content is being seen by the right people.
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -247,7 +268,11 @@ Optimization                 </h1>
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative left-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative left-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -274,12 +299,14 @@ Optimization                 </h1>
               </div>
               <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                 <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
-                What else?
+                  What else?
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white font-normal">
-               
-                As your dedicated SEO agency, we go a step further than just make your website perform well. We strategize with reasoning and depend on the market research so we can showcase the results to you, that would help your business get authentic traffic without 
-spending another dime on it. 
+                  As your dedicated SEO agency, we go a step further than just
+                  make your website perform well. We strategize with reasoning
+                  and depend on the market research so we can showcase the
+                  results to you, that would help your business get authentic
+                  traffic without spending another dime on it. 
                 </p>
                 <div class=" flex items-center gap-x-6">
                   <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
@@ -287,7 +314,11 @@ spending another dime on it. 
                       <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
                       <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn <span className="text-pink-500 relative left-[5px]"> More</span>
+                        Learn{" "}
+                        <span className="text-pink-500 relative left-[5px]">
+                          {" "}
+                          More
+                        </span>
                       </p>
                     </div>
                   </button>
@@ -315,7 +346,7 @@ spending another dime on it. 
         </Tabs>
       </section>
 
-      <section className="background-gradient">
+      <section className="background-gradient pb-16">
         <div class="relative isolate ">
           <div class="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
             <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
