@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -25,6 +26,7 @@ import member3 from "../src/assets/images/member3.png";
 import member4 from "../src/assets/images/member4.png";
 import member5 from "../src/assets/images/member5.png";
 import member6 from "../src/assets/images/member6.png";
+import Image from "../src/components/Image/Image";
 
 const Studio = () => {
   return (
@@ -35,7 +37,7 @@ const Studio = () => {
 
       {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
                 <div className="w-full text-center">
-                    <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
+                    <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
                 </div>
                 <div className="w-full">
                     <h4 className="mb-6 text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
@@ -46,7 +48,9 @@ const Studio = () => {
             </section> */}
       <section className="grid grid-cols-2 px-20 gap-4 pt-12 items-center">
         <div className="w-full text-center">
-          <img
+          <Image
+            width={500}
+            height={300}
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
@@ -67,11 +71,11 @@ const Studio = () => {
               action and drive growth.
             </span>{" "}
           </p>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                 Book Free{" "}
                 <span className="text-pink-500 relative left-[5px]">
                   {" "}
@@ -84,7 +88,7 @@ const Studio = () => {
       </section>
       <section className="mt-20">
         <div className="relative">
-          <video
+          {/* <video
             className="studio-video"
             autoPlay="true"
             loop="true"
@@ -93,7 +97,7 @@ const Studio = () => {
             <source src="/video/hp.mp4" type="video/mp4" />
             <source src="/video/hp.ogg" type="video/ogg" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
           <div className="absolute top-[50%] left[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
             <div className="play-button border-4 border-white rounded-full w-[140px] h-[140px]">
               <svg
@@ -142,37 +146,55 @@ const Studio = () => {
       <section className="mt-20 px-28">
         <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage1"
               className="h-full object-cover w-full"
               src={galleryImage1.src}
             />
           </div>
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage4"
               className="h-full object-cover w-full"
               src={galleryImage4.src}
             />
           </div>
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
             />
           </div>
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage5"
               className="h-full object-cover w-full"
               src={galleryImage5.src}
             />
           </div>
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage3"
               className="h-full object-cover w-full"
               src={galleryImage3.src}
             />
           </div>
           <div className="mb-4">
-            <img
+            <Image
+              width={500}
+              height={300}
+              alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
             />
@@ -182,7 +204,9 @@ const Studio = () => {
       <section className="pt-36  bg-zinc-800 mt-60 pb-10">
         <div className="flex items-center justify-between pb-20">
           <div className="w-[47%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={mainImage.src}
               className="w-96 mx-auto"
               alt="work images"
@@ -209,7 +233,7 @@ const Studio = () => {
           {/* <SwiperSlide>
                         <div className="">
                             <figure className="">
-                                <img src={teamMember.src} alt="team member" />
+                                <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
                                 <figcaption>
                                     <p className="text-white">ED</p>
                                     <p className="text-white">— Design Director</p>
@@ -220,7 +244,7 @@ const Studio = () => {
                     <SwiperSlide>
                     <div className="">
                             <figure className="">
-                                <img src={teamMember.src} alt="team member" />
+                                <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
                                 <figcaption>
                                     <p className="text-white">ED</p>
                                     <p className="text-white">— Design Director</p>
@@ -232,42 +256,72 @@ const Studio = () => {
             {" "}
             <div className="">
               <figure className="">
-                <img src={member1.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member1.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
               <figure className="">
-                <img src={member2.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member2.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
               <figure className="">
-                <img src={member3.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member3.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
               <figure className="">
-                <img src={member4.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member4.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
               <figure className="">
-                <img src={member5.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member5.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
               <figure className="">
-                <img src={member6.src} alt="team member" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={member6.src}
+                  alt="team member"
+                />
               </figure>
             </div>
           </SwiperSlide>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Link from "next/link";
 import { twitterSvg } from "../../helpers/Helpers";
 import { instagramSvg } from "../../helpers/Helpers";
@@ -11,7 +12,7 @@ import designImage from "../../assets/images/css-design-awards-white.jpg";
 import kotaTransparentImage from "../../assets/svg/Kota_logo_white-1.svg";
 import groupBtn from "../../assets/images/Group.png";
 import tmg from "../../assets/images/tmg-log.png";
-
+import Image from "../Image/Image";
 const Footer = () => {
   return (
     <>
@@ -140,10 +141,22 @@ const Footer = () => {
             <i className="fab fa-github"></i>
           </button> */}
             <Link href="/">
-              <img src={tmg.src} className="w-20 md:w-[230px] cursor-pointer" />
+              <Image
+                width={500}
+                height={300}
+                src={tmg.src}
+                alt="tmg"
+                className="w-20 md:w-[230px] cursor-pointer"
+              />
             </Link>
             <div className="bg-white w-52 md:w-80">
-              <img className="w-60 md:w-full" src={groupBtn.src} />
+              <Image
+                width={500}
+                height={300}
+                className="w-60 md:w-full"
+                alt="group"
+                src={groupBtn.src}
+              />
             </div>
           </div>
           <hr className="mt-16 mb-8 border-blueGray-300" />

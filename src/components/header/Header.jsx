@@ -1,8 +1,9 @@
+/* eslint-disable */
 import { useState } from "react";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 import Link from "next/link";
 // import logoIcon from '../../assets/svg/Kota_logo_black.svg';
-
+import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
 
 const Header = () => {
@@ -12,27 +13,29 @@ const Header = () => {
       <header className="fixed top-16 w-full px-10 z-20">
         <nav className="flex items-center justify-between">
           <Link href="/">
-            <a className={showMenu ? "hidden" : "block"}>
-              <img
-                className="w-36 cursor-pointer"
-                src={logoIcon.src}
-                alt="logo"
-              />
-            </a>
+            {/* <a className={showMenu ? "hidden" : "block"}> */}
+            <Image
+              width={500}
+              height={300}
+              className="w-36 cursor-pointer"
+              src={logoIcon.src}
+              alt="logo"
+            />
+            {/* </a> */}
           </Link>
           <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
             <li className={showMenu ? "hidden" : "block"}>
               <Link href="/work">
-                <a className="text-xl font-sofia-extrabold font-extrabold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all">
-                  Work
-                </a>
+                {/* <a className="text-xl font-sofia-extrabold font-extrabold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"> */}
+                Work
+                {/* </a> */}
               </Link>
             </li>
             <li className={showMenu ? "hidden" : "block"}>
               <Link href="/contact">
-                <a className="text-xl font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all">
-                  Contact
-                </a>
+                {/* <a className="text-xl font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"> */}
+                Contact
+                {/* </a> */}
               </Link>
             </li>
             <li>

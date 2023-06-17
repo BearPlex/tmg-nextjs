@@ -1,9 +1,10 @@
+/* eslint-disable */
 import Link from "next/link";
 import { useState } from "react";
 import designDevelopmentImage from "../../assets/images/design-development.png";
 import digitalImage from "../../assets/images/digital.png";
 import marketingImage from "../../assets/images/marketing.png";
-
+import Image from "../Image/Image";
 const Services = () => {
   const [type, setType] = useState("design");
   const servicesData = {
@@ -76,7 +77,13 @@ const Services = () => {
           </a> */}
         </div>
         <div>
-          <img src={`${handleGetImages().img}`} alt="images" loading="lazy" />
+          <Image
+            width={500}
+            height={300}
+            src={`${handleGetImages().img}`}
+            alt="images"
+            loading="lazy"
+          />
           <p className="text-lg text-white font-normal mt-10 leading-loose">
             {handleGetImages().detail}
           </p>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/services-logo.png";
 import HeadingThree from "../src/components/headings/HeadingThree";
@@ -13,6 +14,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
+import Image from "../src/components/Image/Image";
 const Services = () => {
   const router = useRouter();
   const pushServiceSocial = () => {
@@ -34,7 +36,9 @@ const Services = () => {
       </section>
       <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
         <div className="w-full text-center">
-          <img
+          <Image
+            width={500}
+            height={300}
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
@@ -143,11 +147,11 @@ const Services = () => {
                 </a> */}
             </div>
           </ScrollspyNav>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                 Book Free{" "}
                 <span className="text-pink-500"> Consultation Today</span>
               </p>
@@ -172,18 +176,20 @@ const Services = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDesign">
-              <a className="border-2 rounded-full font-bold uppercase gradient-button">
-                <span className="w-full h-full mx-0 my-0 gradient-span">
-                  Learn More
-                </span>
-              </a>
+              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
+              <span className="w-full h-full mx-0 my-0 gradient-span">
+                Learn More
+              </span>
+              {/* </a> */}
               {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
                 Learn More
               </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={homePageImage.src}
               alt="services images"
               className="w-full h-100 shadow-2xl rounded-lg"
@@ -202,18 +208,20 @@ const Services = () => {
               solutions to everyday business challenges.
             </p>
             <Link href="/webDevelopment">
-              <a className="border-2 rounded-full font-bold uppercase gradient-button">
-                <span className="w-full h-full mx-0 my-0 gradient-span">
-                  Learn More
-                </span>
-              </a>
+              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
+              <span className="w-full h-full mx-0 my-0 gradient-span">
+                Learn More
+              </span>
+              {/* </a> */}
               {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
                 Learn More
               </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={developmentImage.src}
               alt="services images"
               className="w-full h-100 shadow-2xl rounded-lg"
@@ -235,18 +243,20 @@ const Services = () => {
               communication to keep information flow open.
             </p>
             <Link href="/webDevelopment">
-              <a className="border-2 rounded-full font-bold uppercase gradient-button">
-                <span className="w-full h-full mx-0 my-0 gradient-span">
-                  Learn More
-                </span>
-              </a>
+              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
+              <span className="w-full h-full mx-0 my-0 gradient-span">
+                Learn More
+              </span>
+              {/* </a> */}
               {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
                 Learn More
               </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={digitalImage.src}
               alt="services images"
               className="w-full h-100 shadow-2xl rounded-lg"
@@ -268,18 +278,20 @@ const Services = () => {
               communication to keep information flow open.
             </p>
             <Link href="/webDevelopment">
-              <a className="border-2 rounded-full font-bold uppercase gradient-button">
-                <span className="w-full h-full mx-0 my-0 gradient-span">
-                  Learn More
-                </span>
-              </a>
+              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
+              <span className="w-full h-full mx-0 my-0 gradient-span">
+                Learn More
+              </span>
+              {/* </a> */}
               {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
                 Learn More
               </a> */}
             </Link>
           </div>
           <div className="w-[55%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={marketingImage.src}
               alt="services images"
               className="w-full h-100 shadow-2xl rounded-lg"
@@ -303,7 +315,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="w-[55%]">
-              <img
+              <Image decoding="async" width={500} height={300}
                 src={eCommerceImage.src}
                 alt="services images"
                 className="w-full h-100 shadow-2xl rounded-lg"
@@ -327,7 +339,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="w-[55%]">
-              <img
+              <Image decoding="async" width={500} height={300}
                 src={wordPressImage.src}
                 alt="services images"
                 className="w-full h-100 shadow-2xl rounded-lg"

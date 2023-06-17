@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
 import brand1 from "../../src/assets/images/web1.png";
@@ -13,7 +14,7 @@ import "react-tabs/style/react-tabs.css";
 import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
-
+import Image from "../src/components/Image/Image";
 function WebDesign() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -37,13 +38,17 @@ function WebDesign() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
             <div className="w-full text-center mt-10 xl:mt-10">
-              <img
+              <Image
+                width={500}
+                height={300}
                 src={brand1.src}
                 alt="kota canvas"
                 loading="lazy"
                 className="max-w-full "
               />
-              <img
+              <Image
+                width={500}
+                height={300}
                 src={brand2.src}
                 alt="kota canvas"
                 loading="lazy"
@@ -70,11 +75,11 @@ function WebDesign() {
                 fully grasp your vision and create a perfect landing site that
                 you envisioned for your business. optimization{" "}
               </p>
-              <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+              <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
                 <div className="">
-                  <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                  <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                  <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                  <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                  <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                  <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                     Book Free{" "}
                     <span className="text-pink-500 relative ml-[5px]">
                       {" "}
@@ -89,10 +94,10 @@ function WebDesign() {
       </section>
 
       <section>
-        <div class="bg-white">
-          <div class="relative isolate ">
-            <div class="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
-              <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+        <div className="bg-white">
+          <div className="relative isolate ">
+            <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
+              <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <h1
                   className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                 >
@@ -103,8 +108,8 @@ function WebDesign() {
                   </span>{" "}
                 </h1>
               </div>
-              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <p class="mt-6 text-lg leading-8 text-gray-600">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <p className="mt-6 text-lg leading-8 text-gray-600">
                   A well-designed website will have a lasting impression on
                   visitors, and can even increase conversion rates. Everything
                   from using attractive visuals, to writing compelling content
@@ -120,44 +125,46 @@ function WebDesign() {
       </section>
 
       <section>
-        <div class="background-gradient py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="background-gradient py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
-                <dd class="mt-10 text-white relative text-6xl top-6 max-w-xs">
+                <dd className="mt-10 text-white relative text-6xl top-6 max-w-xs">
                   What makes us sooo good at it?
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl">
+                <dt className="font-semibold text-white text-5xl">
                   Expert Development
                 </dt>
-                <dd class="mt-6 text-white text-base ">
+                <dd className="mt-6 text-white text-base ">
                   User-centric designs, practical and result-oriented marketing
                   tools, and in-house built features are among our exponential
                   services we provide. 
                 </dd>
 
-                <dt class="font-semibold text-white text-5xl xl:mt-10">
+                <dt className="font-semibold text-white text-5xl xl:mt-10">
                   Maintenance
                 </dt>
-                <dd class="mt-6 text-white text-base">
+                <dd className="mt-6 text-white text-base">
                   We ensure to keep your backend updated after the completion of
                   the project and provide instantaneous online support whenever
                   you or your business requires. 
                 </dd>
               </div>
               <div>
-                <dt class="font-semibold text-white text-5xl ">Technology</dt>
-                <dd class="mt-6 text-white text-base">
+                <dt className="font-semibold text-white text-5xl ">
+                  Technology
+                </dt>
+                <dd className="mt-6 text-white text-base">
                   We are extremely versed in technology upgrades. By utilizing
                   the latest tools and following best practices, we deliver
                   high-quality results.
                 </dd>
-                <dt class="font-semibold text-white text-5xl xl:mt-4">
+                <dt className="font-semibold text-white text-5xl xl:mt-4">
                   Functionality
                 </dt>
-                <dd class="mt-6 text-white text-base">
+                <dd className="mt-6 text-white text-base">
                   A visually appealing and high functional website with regular
                   updates can help your business grab the attention of visitors
                   globally. We are open to provide custom functionality based
@@ -170,14 +177,14 @@ function WebDesign() {
       </section>
 
       <section>
-        <div class="bg-black">
-          <div class="relative isolate pt-14">
-            <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+        <div className="bg-black">
+          <div className="relative isolate pt-14">
+            <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                   Ecommerce Websites
                 </h1>
-                <p class="mt-6 text-xl leading-8 text-white font-normal">
+                <p className="mt-6 text-xl leading-8 text-white font-normal">
                   If you're considering developing an e-Commerce website, it is
                   time to let us take the lead and assist you in providing a
                   seamless online shopping experience to your customers. We
@@ -185,12 +192,12 @@ function WebDesign() {
                   where you can simply focus on managing the inventory part of
                   business and let us handle the entire "How to" process. 
                 </p>
-                <div class=" flex items-center gap-x-6">
-                  <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                <div className=" flex items-center gap-x-6">
+                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
-                      <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                         Learn{" "}
                         <span className="text-pink-500 relative ml-[5px]">
                           {" "}
@@ -201,30 +208,34 @@ function WebDesign() {
                   </button>
                 </div>
               </div>
-              <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                <img
+              <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <Image
+                  width={500}
+                  height={300}
                   src={book.src}
-                  alt=""
+                  alt="book"
                   className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
                 />
               </div>
             </div>
           </div>
 
-          <div class="relative isolate ">
-            <div class="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-              <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                <img
+          <div className="relative isolate ">
+            <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
+              <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <Image
+                  width={500}
+                  height={300}
                   src={mobile3.src}
-                  alt=""
+                  alt="mobile3"
                   className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
                 />
               </div>
-              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                   Software as a Service
                 </h1>
-                <p class="mt-6 text-xl leading-8 text-white font-normal">
+                <p className="mt-6 text-xl leading-8 text-white font-normal">
                   We offer Software-as-a-Service to clients in order to help
                   them utilize resources more efficiently and make well-informed
                   business decisions. Through better strategic planning and
@@ -233,12 +244,12 @@ function WebDesign() {
                   provide accurate guidance and hands-on assistance with the CMS
                   implementation process.   
                 </p>
-                <div class=" flex items-center gap-x-6">
-                  <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                <div className=" flex items-center gap-x-6">
+                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
-                      <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                         Learn{" "}
                         <span className="text-pink-500 relative ml-[5px]">
                           {" "}
@@ -252,13 +263,13 @@ function WebDesign() {
             </div>
           </div>
 
-          <div class="relative isolate pt-14">
-            <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+          <div className="relative isolate pt-14">
+            <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                   Business Websites{" "}
                 </h1>
-                <p class="mt-6 text-xl leading-8 text-white font-normal">
+                <p className="mt-6 text-xl leading-8 text-white font-normal">
                   If you're considering developing a business website, it is
                   time to let us take the lead and assist you in providing a
                   seamless browsing experience to your leads. We offer
@@ -271,12 +282,12 @@ function WebDesign() {
                   you target specific keywords and topics to ensure that your
                   content is being seen by the right people.
                 </p>
-                <div class=" flex items-center gap-x-6">
-                  <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                <div className=" flex items-center gap-x-6">
+                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
-                      <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                         Learn{" "}
                         <span className="text-pink-500 relative ml-[5px]">
                           {" "}
@@ -287,42 +298,46 @@ function WebDesign() {
                   </button>
                 </div>
               </div>
-              <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                <img
+              <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <Image
+                  width={500}
+                  height={300}
                   src={mobile2.src}
-                  alt=""
+                  alt="mobile2"
                   className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
                 />
               </div>
             </div>
           </div>
 
-          <div class="relative isolate ">
-            <div class="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-              <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                <img
+          <div className="relative isolate ">
+            <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
+              <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <Image
+                  width={500}
+                  height={300}
                   src={tmg.src}
-                  alt=""
+                  alt="tmg"
                   className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
                 />
               </div>
-              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                   What else?
                 </h1>
-                <p class="mt-6 text-xl leading-8 text-white font-normal">
+                <p className="mt-6 text-xl leading-8 text-white font-normal">
                   As your dedicated SEO agency, we go a step further than just
                   make your website perform well. We strategize with reasoning
                   and depend on the market research so we can showcase the
                   results to you, that would help your business get authentic
                   traffic without spending another dime on it. 
                 </p>
-                <div class=" flex items-center gap-x-6">
-                  <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                <div className=" flex items-center gap-x-6">
+                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
-                      <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                         Learn{" "}
                         <span className="text-pink-500 relative ml-[5px]">
                           {" "}
@@ -356,20 +371,22 @@ function WebDesign() {
       </section>
 
       <section className="background-gradient pb-16">
-        <div class="relative isolate ">
-          <div class="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-            <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-              <img
+        <div className="relative isolate ">
+          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
+            <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+              <Image
+                width={500}
+                height={300}
                 src={hand.src}
-                alt=""
+                alt="hand"
                 className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
               />
             </div>
-            <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-              <h1 class="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+              <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                 Dedicated Resource Allocation
               </h1>
-              <p class="mt-6 text-xl leading-8 text-white font-normal">
+              <p className="mt-6 text-xl leading-8 text-white font-normal">
                 At TMG, we understand that your brand is much more than just a
                 logo or a name. It is the overall look and feel that a customer
                 experiences - from your website and marketing materials to the
@@ -382,12 +399,12 @@ function WebDesign() {
                 Experts - we make sure that your daily work requirement is
                 fulfilled remotely.
               </p>
-              <div class=" flex items-center gap-x-6">
-                {/* <button class="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+              <div className=" flex items-center gap-x-6">
+                {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                   <div className="">
-                    <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                    <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                    <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+                    <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+                    <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+                    <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                       Learn <span className="text-pink-500"> More</span>
                     </p>
                   </div>

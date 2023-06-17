@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "../src/components/Image/Image";
 function section1(props) {
   const {
     featureImage,
@@ -16,7 +16,12 @@ function section1(props) {
     <>
       <section className="max-w-7xl mx-auto">
         <div className="flex justify-center mt-20">
-          <img src={work[0].featured_image.src} />
+          <Image
+            width={500}
+            height={300}
+            alt="featured"
+            src={work[0].featured_image.src}
+          />
         </div>
         <h1 className="text-center text-[50px] font-bold text-orange_theme-500">
           {work[0].featured_title}{" "}

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Header from "../src/components/header/Header";
 // import kotaLogo from "../src/assets/images/Kota_logo.png";
 import kotaLogo from "../src/assets/images/tmg-logo.png";
@@ -9,11 +10,12 @@ import Footer from "../src/components/footer/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import workFeaturedImage from "../src/assets/images/work-featured-1.png";
-import workGallery1 from "../src/assets/images/work-gall-1.png";
-import workGallery2 from "../src/assets/images/work-gall-2.png";
+// import workGallery1 from "../src/assets/images/work-gall-1.png";
+// import workGallery2 from "../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 // import "swiper/css/bundle";
 // import "./styles.css";
+import Image from "../src/components/Image/Image";
 const workStatic = [
   {
     featured_image: workFeaturedImage,
@@ -21,10 +23,10 @@ const workStatic = [
     gallery_first_title: "The Brief",
     gallery_first_description:
       "Meet Kinimo Cosmetics: A Pakistani beauty brand founded in 2019, that focuses on the new age definition of beauty, offering high-quality natural products that inspire confidence and passion in everyone.They reached out to us for content creation, and website development along with SEO and since then our connection has been fruitful.",
-    gallery1: workGallery1,
+    // gallery1: workGallery1,
     gallery_second_title: "",
     gallery_second_description: "",
-    gallery2: workGallery2,
+    // gallery2: workGallery2,
   },
 ];
 // export async function getStaticProps(context) {
@@ -73,7 +75,9 @@ const Work = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 px-28 gap-10 pt-12 items-center">
             <div className="w-full text-center">
-              <img
+              <Image
+                width={500}
+                height={300}
                 src={kotaLogo.src}
                 alt="kota canvas"
                 loading="lazy"

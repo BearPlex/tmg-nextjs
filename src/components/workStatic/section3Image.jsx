@@ -1,5 +1,6 @@
 import React from "react";
 import approch from "../../assets/images/approch1.png";
+import Image from "../src/components/Image/Image";
 function section3Image(props) {
   const { work } = props;
   console.log("Approch Data", work);
@@ -24,7 +25,13 @@ function section3Image(props) {
 
       <div className="flex justify-center">
         <div className="flex justify-center">
-          <img src={work[0]?.gallery2.src} className="pb-12" />
+          <Image
+            width={500}
+            height={300}
+            alt="galary"
+            src={work[0]?.gallery2.src}
+            className="pb-12"
+          />
         </div>
       </div>
     </>

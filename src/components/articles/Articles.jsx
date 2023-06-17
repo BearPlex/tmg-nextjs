@@ -1,3 +1,4 @@
+/* eslint-disable */
 import HeadingTwo from "../headings/HeadingTwo";
 import HeadingThree from "../headings/HeadingThree";
 import { articles } from "../../helpers/Helpers";
@@ -35,11 +36,13 @@ const Articles = () => {
             key={article.id}
           >
             <div className="h-min overflow-hidden">
-              <img
+              {/* <Image
+                width={500}
+                height={300}
                 src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`}
                 alt="blog images"
                 className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500"
-              />
+              /> */}
             </div>
             <div className="p-9">
               {
@@ -59,11 +62,11 @@ const Articles = () => {
       <div className="text-center w-full mt-28">
         {/* <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase"> */}
         <Link href="/blog">
-          <a className="border-2 rounded-full font-bold uppercase gradient-button">
-            <span className="w-full h-full mx-0 my-0 gradient-span">
-              View All Blog Posts
-            </span>
-          </a>
+          {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
+          <span className="w-full h-full mx-0 my-0 gradient-span">
+            View All Blog Posts
+          </span>
+          {/* </a> */}
           {/* <a className="border-2 rounded-full font-bold uppercase gradient-button">
             <span className="w-full h-full mx-0 my-0 gradient-span">
               View All Blog Posts

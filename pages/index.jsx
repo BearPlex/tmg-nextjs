@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/tmg-logo.png";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
@@ -19,10 +20,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import hero from "../src/assets/images/hero-1.png";
 import workFeaturedImage from "../src/assets/images/work-featured-1.png";
-import workGallery1 from "../src/assets/images/work-gall-1.png";
-import workGallery2 from "../src/assets/images/work-gall-2.png";
+// import workGallery1 from "../src/assets/images/work-gall-1.png";
+// import workGallery2 from "../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
-import Image from "next/image";
+import Image from "../src/components/Image/Image";
 // import "swiper/css/bundle";
 // import "./styles.css";
 const workStatic = [
@@ -32,10 +33,10 @@ const workStatic = [
     gallery_first_title: "The Brief",
     gallery_first_description:
       "Meet Kinimo Cosmetics: A Pakistani beauty brand founded in 2019, that focuses on the new age definition of beauty, offering high-quality natural products that inspire confidence and passion in everyone.They reached out to us for content creation, and website development along with SEO and since then our connection has been fruitful.",
-    gallery1: workGallery1,
+    // gallery1: workGallery1,
     gallery_second_title: "",
     gallery_second_description: "",
-    gallery2: workGallery2,
+    // gallery2: workGallery2,
   },
 ];
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
       <section className="px-20 pt-16">
         <div className="w-full flex justify-between items-center">
           <div className="w-[50%] text-center">
-            {/* <img src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" /> */}
+            {/* <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" /> */}
             <Image
               width={500}
               height={150}
@@ -87,31 +88,41 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center gap-6">
-          <img
+          <Image
+            width={500}
+            height={300}
             src={danLogo.src}
             alt="dan logo"
             loading="lazy"
             className="w-[100px] object-contain"
           />
-          <img
+          <Image
+            width={500}
+            height={300}
             src={drumLogo.src}
             alt="the drum logo"
             loading="lazy"
             className="w-[100px] object-contain"
           />
-          <img
+          <Image
+            width={500}
+            height={300}
             src={clutchLogo.src}
             alt="clutch logo"
             loading="lazy"
             className="w-[100px] object-contain"
           />
-          <img
+          <Image
+            width={500}
+            height={300}
             src={awardLogo.src}
             alt="award logo"
             loading="lazy"
             className="w-[100px] object-contain"
           />
-          <img
+          <Image
+            width={500}
+            height={300}
             src={cssDesignLogo.src}
             alt="award logo"
             loading="lazy"
@@ -123,7 +134,7 @@ export default function Home() {
       {/* making brands better section*/}
       {/* <section className="flex justify-between items-center pt-20 pr-20 gap-4">
                 <div className="video-wrapper w-[50%]">
-                    <img src={kotaLogo.src} alt="video here" />
+                    <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="video here" />
                 </div>
                 <div className="w-[40%]">
                     <HeadingTwo title="Making brands a damn site better" cssClass="mb-6 text-zinc-700" />
@@ -133,14 +144,14 @@ export default function Home() {
 
       {/* new hero section */}
       <section>
-        <div class="relative isolate overflow-hidden bg-white">
-          <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-              <h1 class="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
+        <div className="relative isolate overflow-hidden bg-white">
+          <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+              <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
                 Providing Exponential
                 <span className="gradient-text"> User Experience</span>
               </h1>
-              <p class="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
+              <p className="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
                 Let’s face it, first impressions matter. Why waste and settle
                 for something less?
                 <br />
@@ -150,13 +161,15 @@ export default function Home() {
                 your Business and e-Commerce ventures.
               </p>
             </div>
-            <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-              <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-                <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                  <img
+            <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+              <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+                <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+                  <Image
+                    width={500}
+                    height={300}
                     src={hero.src}
                     alt="App screenshot"
-                    class="w-[40rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                    className="w-[40rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
                   />
                 </div>
               </div>
@@ -173,13 +186,15 @@ export default function Home() {
             <span className="gradient-text">4 Elements</span>
           </h2>
         </div>
-        <Agency />
+        {/* <Agency /> */}
       </div>
 
       <section className="bg-zinc-800 px-20 py-28 mt-16">
         <div className="flex items-center justify-between">
           <div className="w-[47%]">
-            <img
+            <Image
+              width={500}
+              height={300}
               src={mainImage.src}
               className="w-96 mx-auto"
               alt="work images"

@@ -1,9 +1,10 @@
+/* eslint-disable */
 import React, { useEffect } from "react";
 // import { agency } from '../../helpers/Helpers';
 import agencyImage1 from "../../assets/images/homepage-lovebrands.png";
 import agencyImage2 from "../../assets/images/homepage-tribepad.png";
 import agencyImage3 from "../../assets/images/homepage-sym.png";
-
+import Image from "../Image/Image";
 const Agency = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -73,11 +74,13 @@ const Agency = () => {
         </div>
       </div>
       <div className="w-1/2 sticky top-32">
-        <img
+        {/* <Image
+          width={500}
+          height={300}
           id="imageRef"
           alt="agency images"
           className="rounded-lg shadow-2xl"
-        />
+        /> */}
       </div>
     </div>
   );

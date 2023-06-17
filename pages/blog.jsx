@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/Blog-pic.png";
 import bannerImage from "../src/assets/images/header-image-1.png";
@@ -10,7 +11,7 @@ import blog1 from "../src/assets/images/blog-1.png";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Image from "next/image";
+import Image from "../src/components/Image/Image";
 // import CardStatic from "../src/components/card/CardStatic";
 // {console.log("Work",blogsData)}
 const blogsStatic = [
@@ -41,7 +42,9 @@ const Blog = () => {
       <Header />
       <section className="grid grid-cols-2 px-20 gap-4 pt-12 items-center">
         <div className="w-full text-center">
-          <img
+          <Image
+            width={500}
+            height={300}
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
@@ -56,11 +59,11 @@ const Blog = () => {
             Because it should never just be work, it should be
             <span className="gradient-text"> a work of art</span>{" "}
           </p>
-          <button class="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
             <div className="">
-              <div class="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div class="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p class="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
+              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
                 Book Free{" "}
                 <span className="text-pink-500"> Consultation Today</span>
               </p>
@@ -71,7 +74,7 @@ const Blog = () => {
 
       <div className="px-28 pt-20 h-[570px]">
         <a href="" className="relative blog-banner w-full h-full">
-          {/* <img src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
+          {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}
           <Image
             src={bannerImage}

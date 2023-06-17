@@ -1,64 +1,67 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable */
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Header from '../../src/components/header/Header';
-import Section1 from "../../src/components/works/section1"
-import ScreenShot from "../../src/assets/images/kinimo-ss1.png"
-import Section2Image from "../../src/components/works/section2Image"
-import axios from 'axios'
-import Section3Image from '../../src/components/works/section3Image'
-import Section4card from '../../src/components/works/section4card'
-import Footer from '../../src/components/footer/Footer';
+import Header from "../../src/components/header/Header";
+import Section1 from "../../src/components/works/section1";
+import ScreenShot from "../../src/assets/images/kinimo-ss1.png";
+import Section2Image from "../../src/components/works/section2Image";
+import axios from "axios";
+import Section3Image from "../../src/components/works/section3Image";
+import Section4card from "../../src/components/works/section4card";
+import Footer from "../../src/components/footer/Footer";
 import HeadingThree from "../../src/components/headings/HeadingThree";
-import HeadingTwo from '../../src/components/headings/HeadingTwo';
-import blog1 from "../../src/assets/images/blog-1.png"
+import HeadingTwo from "../../src/components/headings/HeadingTwo";
+import blog1 from "../../src/assets/images/blog-1.png";
 import ReactMark from "react-markdown";
-const blogsStatic=[{
-    title:"Migrating to Linear 101",
-    sub_title:"Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-    blog_featured_image:blog1,
-    blog_content:"                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi assumenda officiis labore, quam ab quia quos delectus eligendi nihil odit deserunt cum rem corrupti expedita voluptatem optio! Maxime vel optio, nobis, necessitatibus magnam architecto officiis minima tempora inventore perferendis sunt dolorem. Culpa provident tempore sunt, aliquam perferendis non repudiandae earum quibusdam molestias id adipisci at temporibus dolorum labore mollitia voluptatem quis quo in! Ipsam ad dignissimos corporis soluta cupiditate minima, laboriosam, commodi aliquid quibusdam ratione blanditiis quam molestiae assumenda.    "
-}]
+import Image from "../src/components/Image/Image";
+const blogsStatic = [
+  {
+    title: "Migrating to Linear 101",
+    sub_title:
+      "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    blog_featured_image: blog1,
+    blog_content:
+      "                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi assumenda officiis labore, quam ab quia quos delectus eligendi nihil odit deserunt cum rem corrupti expedita voluptatem optio! Maxime vel optio, nobis, necessitatibus magnam architecto officiis minima tempora inventore perferendis sunt dolorem. Culpa provident tempore sunt, aliquam perferendis non repudiandae earum quibusdam molestias id adipisci at temporibus dolorum labore mollitia voluptatem quis quo in! Ipsam ad dignissimos corporis soluta cupiditate minima, laboriosam, commodi aliquid quibusdam ratione blanditiis quam molestiae assumenda.    ",
+  },
+];
 function BlogDetail() {
-    const router = useRouter();
-  
-    const {
-      query: { id  },
-    } = router;
-    const props = {
-     
-      id,
-   
-    };
-    // const [work,setWork]=useState([])
-    // // {console.log("Work",blogsData)}
-    // useEffect(()=>{
-    // axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then((res)=>{
-    //     console.log("Res",res.data.data)
-    //     setWork(res.data.data)
-    // }).catch((err)=>{
-    //     console.log("Error",err)
-    // })
-    // },[])
-    console.log("Blog Static",blogsStatic)
+  const router = useRouter();
+
+  const {
+    query: { id },
+  } = router;
+  const props = {
+    id,
+  };
+  // const [work,setWork]=useState([])
+  // // {console.log("Work",blogsData)}
+  // useEffect(()=>{
+  // axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then((res)=>{
+  //     console.log("Res",res.data.data)
+  //     setWork(res.data.data)
+  // }).catch((err)=>{
+  //     console.log("Error",err)
+  // })
+  // },[])
+  console.log("Blog Static", blogsStatic);
   return (
-   <>
-    <section className="pt-20">
-                <Header />
-                {/* {console.log("Image Check",work?.attributes?.blog_featured_image.data.attributes.url)} */}
-                
-                <div className="pt-20 px-10 md:px-28">
-            {/* <span className="text-pink-400 text-base font-medium tracking-widest">{work?.attributes?.date}</span> */}
-            <HeadingTwo title={blogsStatic[0].title} />
-            <br/>
-            <p>{blogsStatic[0].sub_title}</p>
-            {/* <div>
-                <img src="" className="w-[50px] h-[50px] rounded-full "/>
+    <>
+      <section className="pt-20">
+        <Header />
+        {/* {console.log("Image Check",work?.attributes?.blog_featured_image.data.attributes.url)} */}
+
+        <div className="pt-20 px-10 md:px-28">
+          {/* <span className="text-pink-400 text-base font-medium tracking-widest">{work?.attributes?.date}</span> */}
+          <HeadingTwo title={blogsStatic[0].title} />
+          <br />
+          <p>{blogsStatic[0].sub_title}</p>
+          {/* <div>
+                <Image decoding="async" width={500} height={300} src="" className="w-[50px] h-[50px] rounded-full "/>
                 <span className="text-base text-pink-400 uppercase mt-3">BY IZZY</span>
             </div> */}
-                                
-                                <div className="w-full  mb-20">
-                               
-            {/* <Image
+
+          <div className="w-full  mb-20">
+            {/* <Image decoding="async" width={500} height={300}
               className=" absolute w-[80%]  md:w-[85%]    object-contain md:mr-3 rounded-3xl max-w-7xl mx-auto"
               src={manPic}
               alt="Man Pic"
@@ -67,15 +70,21 @@ function BlogDetail() {
             /> */}
           </div>
           <div className="w-full my-10 xl:-ml-3">
-            {/* <Image
+            {/* <Image decoding="async" width={500} height={300}
               className="   "
               src={props.url ? props.url : manPic}
               alt="Man Pic"
               width={500}
               height={500}
             /> */}
-             <img src={blogsStatic[0].blog_featured_image.src} alt="blog image"  className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl" />
-            {/* <Image
+            <Image
+              width={500}
+              height={300}
+              src={blogsStatic[0].blog_featured_image.src}
+              alt="blog image"
+              className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl"
+            />
+            {/* <Image decoding="async" width={500} height={300}
                 className=" absolute w-[80%]  md:w-[85%]    object-contain md:mr-3 rounded-3xl max-w-7xl mx-auto"
                 src={manPic}
                 alt="Man Pic"
@@ -83,28 +92,31 @@ function BlogDetail() {
                 height={500}
               /> */}
           </div>
-            <div className="max-w-2xl w-full mx-auto">
-                <HeadingThree title="Introduction." cssClass="text-orange_theme-400" />
-                <p className="text-zinc-700 pb-20  mt-3">
-                    Did you know that if the internet was a country, it would be the worlds 7th biggest polluter, emitting 1.6 billion annual tons in greenhouse gas emissions?
+          <div className="max-w-2xl w-full mx-auto">
+            <HeadingThree
+              title="Introduction."
+              cssClass="text-orange_theme-400"
+            />
+            <p className="text-zinc-700 pb-20  mt-3">
+              Did you know that if the internet was a country, it would be the
+              worlds 7th biggest polluter, emitting 1.6 billion annual tons in
+              greenhouse gas emissions? As a planet, we are currently facing
+              unprecedented levels of climate change, and the internet plays a
+              sizeable part in this problem. From websites to cryptocurrencies,
+              it consumes large amounts of electricity in data centres, telecom
+              networks, and end-user devices. Find out how web technology can
+              still be efficient with low-carbon digital products and services.
+            </p>
 
-                    As a planet, we are currently facing unprecedented levels of climate change, and the internet plays a sizeable part in this problem. From websites to cryptocurrencies, it consumes large amounts of electricity in data centres, telecom networks, and end-user devices.
-
-                    Find out how web technology can still be efficient with low-carbon digital products and services.
-                </p>
-            
-             
-                <p className='text-zinc-700 pb-20'>
-                {blogsStatic[0].blog_content}
-                </p>
-                {/* <HeadingThree title="Understanding your digital footprint." className="text-pink-400 pb-10" />
+            <p className="text-zinc-700 pb-20">{blogsStatic[0].blog_content}</p>
+            {/* <HeadingThree title="Understanding your digital footprint." className="text-pink-400 pb-10" />
                 <p className="text-zinc-400 text-base">
                     As organisations produce more content, such as launching websites and hosting viral workshops, their digital footprint grows and expands. It can be seen that while many organisations assess the environmental impact of their office space, supply chain, or business practices, it’s not common for them to evaluate the carbon footprint of their online properties.  Considering the rate at which the internet is expanding, this is a problem that needs to be addressed.
 
                     <span className="text-pink-400 text-base">Digital Beacon</span> is a great tool for calculating the environmental impact of your website, analysing the breakdown and learning what measures can be taken to improve it. You can enter any website URL and receive a score rating and breakdown of the areas that are causing the most impact and how much extra C02 is contributing to the atmosphere. We highly recommend everyone do this as a starter.
                 </p>
                 <div>
-                    <img src={`http://localhost:1337${work?.attributes?.blog_featured_image.data.attributes.url}`} alt="blog image" />
+                    <Image decoding="async" width={500} height={300} src={`http://localhost:1337${work?.attributes?.blog_featured_image.data.attributes.url}`} alt="blog image" />
                     <p className="text-base">
                         Sustainable web design is the process of designing digital products that put people and the planet first. Tom Greenwood, author of <span className="text-pink-400">Sustainable Web Design</span> explains
                     </p>
@@ -116,11 +128,11 @@ function BlogDetail() {
                     </p>
                     <p>It follows the principles of the Sustainable Web Manifesto, which calls for an internet that is:</p>
                 </div> */}
-            </div>
+          </div>
         </div>
-  </section>
-   </>
-  )
+      </section>
+    </>
+  );
 }
 
-export default BlogDetail
+export default BlogDetail;

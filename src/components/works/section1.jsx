@@ -1,4 +1,5 @@
-import Image from "next/image";
+/* eslint-disable */
+import Image from "../src/components/Image/Image";
 import React from "react";
 
 function section1(props) {
@@ -17,10 +18,13 @@ function section1(props) {
     <>
       <section className="max-w-7xl mx-auto">
         <div className="flex justify-center mt-20">
-          <img
+          <Image
+            width={500}
+            height={300}
+            alt="attributes"
             src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}
           />
-          {/* <Image width={500} height={500} src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
+          {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
         </div>
         <h1 className="text-center text-[50px] font-bold text-orange_theme-500">
           {work?.featured_title}{" "}

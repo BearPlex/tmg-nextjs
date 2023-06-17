@@ -1,18 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {twitterSvg} from '../../helpers/Helpers';
-import {instagramSvg} from '../../helpers/Helpers';
-import {facebookSvg} from '../../helpers/Helpers';
-import {linkedinSvg} from '../../helpers/Helpers';
+/* eslint-disable */
+import React from "react";
+import { Link } from "react-router-dom";
+import { twitterSvg } from "../../helpers/Helpers";
+import { instagramSvg } from "../../helpers/Helpers";
+import { facebookSvg } from "../../helpers/Helpers";
+import { linkedinSvg } from "../../helpers/Helpers";
 // import danImage from '../../assets/images/dan-global-logo@2x.jpg';
 // import drumImage from '../../assets/images/the-drum-logo.jpg';
 // import clutchImage from '../../assets/images/glutch@2x.jpg';
 // import awardsImage from '../../assets/images/awwwards-logo@2x.jpg';
 // import designImage from '../../assets/images/css-design-awards-white.jpg';
+import Image from "../src/components/Image/Image";
 function footer2() {
   return (
     <>
-    <div className="px-6 pt-14 pb-5 bg-white dark:bg-zinc-900">
+      <div className="px-6 pt-14 pb-5 bg-white dark:bg-zinc-900">
         <div className=" bg-zinc-900 dark:bg-zinc-800 pt-20 md:pt-28 pb-10 rounded-3xl">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center md:text-center flex flex-col items-center">
@@ -23,9 +25,7 @@ function footer2() {
                 You have Got This far Ready to Get Started?
               </p>
 
-              <button className="nv-button-primary" >
-                Get In Touch
-              </button>
+              <button className="nv-button-primary">Get In Touch</button>
             </div>
 
             <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
@@ -60,8 +60,11 @@ function footer2() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
+                    <Image
+                      width={500}
+                      height={300}
                       src={twitterSvg.src}
+                      alt="twitterSvg"
                       className="hover:rotate-6 duration-300 transition ease-in-out"
                     />
                   </Link>
@@ -73,7 +76,10 @@ function footer2() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="linkedinSvg"
                       src={linkedinSvg.src}
                       className="hover:rotate-6 duration-300 transition ease-in-out"
                     />
@@ -86,7 +92,10 @@ function footer2() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="facebookSvg"
                       src={facebookSvg.src}
                       className="hover:rotate-6 duration-300 transition ease-in-out"
                     />
@@ -96,7 +105,7 @@ function footer2() {
               <div className="order-1 md:order-1 my-4 hover:-translate-y-1 cursor-pointer duration-300 ease-in-out transition">
                 <Link href="/">
                   {" "}
-                  {/* <Image src={lightSmall} alt="Small Light Pic" /> */}
+                  {/* <Image decoding="async" width={500} height={300} src={lightSmall} alt="Small Light Pic" /> */}
                 </Link>
               </div>
             </div>
@@ -130,7 +139,7 @@ function footer2() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default footer2
+export default footer2;
