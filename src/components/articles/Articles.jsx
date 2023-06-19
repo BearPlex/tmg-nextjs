@@ -14,7 +14,7 @@ const Articles = () => {
     axios
       .get("http://localhost:1337/api/blogs?populate=*")
       .then((res) => {
-        console.log("Res Blogs", res.data.data);
+        // console.log("Res Blogs", res.data.data);
         setArticles(res.data.data);
       })
       .catch((err) => {
@@ -23,7 +23,7 @@ const Articles = () => {
   }, []);
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
-    console.log("Id", id);
+    // console.log("Id", id);
   };
   return (
     <div className="px-20 pb-10">

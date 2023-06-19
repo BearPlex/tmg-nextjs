@@ -13,7 +13,7 @@ import HeadingThree from "../../src/components/headings/HeadingThree";
 import HeadingTwo from "../../src/components/headings/HeadingTwo";
 import blog1 from "../../src/assets/images/blog-1.png";
 import ReactMark from "react-markdown";
-import Image from "../src/components/Image/Image";
+import Image from "../../src/components/Image/Image";
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -43,7 +43,7 @@ function BlogDetail() {
   //     console.log("Error",err)
   // })
   // },[])
-  console.log("Blog Static", blogsStatic);
+  // console.log("Blog Static", blogsStatic);
   return (
     <>
       <section className="pt-20">

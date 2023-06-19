@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 import arrowUp from "../../assets/images/arrow-up.png";
 function section4card() {
   return (

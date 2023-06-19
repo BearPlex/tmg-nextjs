@@ -14,7 +14,7 @@ import "react-tabs/style/react-tabs.css";
 import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
-import Image from "../src/components/Image/Image";
+import Image from "../../src/components/Image/Image";
 function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}

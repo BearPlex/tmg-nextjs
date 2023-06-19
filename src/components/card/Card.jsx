@@ -1,12 +1,12 @@
 import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 const Card = (props) => {
   const { item } = props;
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
-    console.log("Id", id);
+    // console.log("Id", id);
   };
   return (
     <div className="mt-16 flex justify-start flex-wrap ">
@@ -17,10 +17,10 @@ const Card = (props) => {
           onClick={() => pushWork(blog.id)}
         >
           <div className="h-min overflow-hidden">
-            {console.log(
+            {/* {console.log(
               "Bloggggs",
               blog.attributes.blog_featured_image.data.attributes.url
-            )}
+            )} */}
             {/* <Image decoding="async" width={500} height={300} src={`http://localhost:1337${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" /> */}
             <Image
               width={340}

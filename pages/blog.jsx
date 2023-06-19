@@ -29,7 +29,7 @@ const Blog = () => {
     axios
       .get("http://localhost:1337/api/blogs?populate=*")
       .then((res) => {
-        console.log("Res Blogs", res.data.data);
+        // console.log("Res Blogs", res.data.data);
         setBlogs(res.data.data);
       })
       .catch((err) => {

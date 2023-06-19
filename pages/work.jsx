@@ -57,7 +57,7 @@ const Work = () => {
     axios
       .get("http://localhost:1337/api/work-kinimos?populate=*")
       .then((res) => {
-        console.log("Dataaaaaaaaaa", res.data.data);
+        // console.log("Dataaaaaaaaaa", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {
@@ -66,7 +66,7 @@ const Work = () => {
   }, []);
   return (
     <>
-      {console.log("Wrok Array", work)}
+      {/* {console.log("Wrok Array", work)} */}
 
       <section className="pt-20 mb-16">
         <Header />

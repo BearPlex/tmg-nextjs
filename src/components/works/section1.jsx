@@ -1,5 +1,5 @@
 /* eslint-disable */
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 import React from "react";
 
 function section1(props) {

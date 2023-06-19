@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 function section1(props) {
   const {
     featureImage,
@@ -10,7 +10,7 @@ function section1(props) {
     workDescription2nd,
     work,
   } = props;
-  console.log("Work", work);
+  // console.log("Work", work);
   // console.log("Work Image",work?.gallery1.data)
   return (
     <>

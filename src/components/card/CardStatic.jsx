@@ -1,12 +1,12 @@
 import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 const CardStatic = (props) => {
   const { item } = props;
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/blog-detail-static/1`);
-    console.log("Id", id);
+    // console.log("Id", id);
   };
   return (
     <div className="mt-16 flex justify-start flex-wrap ">

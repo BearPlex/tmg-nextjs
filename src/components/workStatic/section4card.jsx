@@ -1,6 +1,6 @@
 import React from "react";
 import arrowUp from "../../assets/images/arrow-up.png";
-import Image from "../src/components/Image/Image";
+import Image from "../Image/Image";
 function section4card() {
   return (
     <>

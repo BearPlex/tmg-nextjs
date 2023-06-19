@@ -8,9 +8,9 @@ const Expertise = (props) => {
 
   const pushWork = (id) => {
     router.push(`/work-detail/${id}`);
-    console.log("Id", id);
+    // console.log("Id", id);
   };
-  console.log("Expertise Called");
+  // console.log("Expertise Called");
   return (
     <>
       <div className="max-w-7xl mx-auto">
@@ -21,7 +21,7 @@ const Expertise = (props) => {
               className="w-[47%] mb-16 cursor-pointer"
               onClick={() => pushWork(item.id)}
             >
-              {console.log("List", item)}
+              {/* {console.log("List", item)} */}
               <div>
                 <div className="relative work-images h-full">
                   {/* <Image

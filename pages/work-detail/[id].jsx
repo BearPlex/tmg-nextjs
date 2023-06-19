@@ -24,7 +24,7 @@ function WorkDetail() {
     axios
       .get(`http://localhost:1337/api/work-kinimos/${id}?populate=*`)
       .then((res) => {
-        console.log("Res", res.data.data);
+        // console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {

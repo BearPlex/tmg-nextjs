@@ -14,7 +14,7 @@ import "react-tabs/style/react-tabs.css";
 import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
-import Image from "../src/components/Image/Image";
+import Image from "../../src/components/Image/Image";
 function WebDesign() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -22,7 +22,7 @@ function WebDesign() {
     axios
       .get("http://localhost:1337/api/work-kinimos?populate=*")
       .then((res) => {
-        console.log("Res", res.data.data);
+        // console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {
@@ -354,7 +354,7 @@ function WebDesign() {
       </section>
 
       <section>
-        <Tabs className="p-20 px-28 tabs-wrapper">
+        <Tabs className="mb-20 px-28 tabs-wrapper">
           <TabList>
             {
               // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)

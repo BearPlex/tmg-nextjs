@@ -146,58 +146,58 @@ const Studio = () => {
       <section className="mt-20 px-28">
         <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage1"
               className="h-full object-cover w-full"
               src={galleryImage1.src}
-            />
+            /> */}
           </div>
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage4"
               className="h-full object-cover w-full"
               src={galleryImage4.src}
-            />
+            /> */}
           </div>
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
-            />
+            /> */}
           </div>
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage5"
               className="h-full object-cover w-full"
               src={galleryImage5.src}
-            />
+            /> */}
           </div>
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage3"
               className="h-full object-cover w-full"
               src={galleryImage3.src}
-            />
+            /> */}
           </div>
           <div className="mb-4">
-            <Image
+            {/* <Image
               width={500}
               height={300}
               alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
-            />
+            /> */}
           </div>
         </div>
       </section>

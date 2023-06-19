@@ -11,7 +11,7 @@ import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
 import HeadingThree from "../../src/components/headings/HeadingThree";
 import HeadingTwo from "../../src/components/headings/HeadingTwo";
-import Image from "../src/components/Image/Image";
+import Image from "../../src/components/Image/Image";
 import ReactMark from "react-markdown";
 function BlogDetail() {
   const router = useRouter();
@@ -28,7 +28,7 @@ function BlogDetail() {
     axios
       .get(`http://localhost:1337/api/blogs/${id}?populate=*`)
       .then((res) => {
-        console.log("Res", res.data.data);
+        // console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {
@@ -39,10 +39,10 @@ function BlogDetail() {
     <>
       <section className="pt-20">
         <Header />
-        {console.log(
+        {/* {console.log(
           "Image Check",
           work?.attributes?.blog_featured_image.data.attributes.url
-        )}
+        )} */}
 
         <div className="pt-20 px-10 md:px-28">
           <span className="text-pink-400 text-base font-medium tracking-widest">

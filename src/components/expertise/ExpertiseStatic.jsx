@@ -11,9 +11,9 @@ const ExpertiseStatic = (props) => {
     router.push(`/work-detail-static/1`);
     // console.log("Id",id)
   };
-  console.log("Expertise Static Called");
+  // console.log("Expertise Static Called");
   useEffect(() => {
-    console.log("List", list);
+    // console.log("List", list);
   }, []);
   return (
     <>
@@ -25,7 +25,7 @@ const ExpertiseStatic = (props) => {
               className="w-[47%] mb-16 cursor-pointer"
               onClick={() => pushWork(item.id)}
             >
-              {console.log("List", item)}
+              {/* {console.log("List", item)} */}
               <div>
                 <div className="relative work-images h-full">
                   {/* <Image
