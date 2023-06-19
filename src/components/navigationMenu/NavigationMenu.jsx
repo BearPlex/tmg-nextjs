@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { useState, useEffect } from "react";
 import Link from "next/link";
 // import kotaTransparentImage from '../../assets/svg/Kota_logo_white-1.svg';
 import kotaTransparentImage from "../../assets/images/tmg-logo.png";
@@ -8,133 +9,108 @@ import { instagramSvg } from "../../helpers/Helpers";
 import { linkedinSvg } from "../../helpers/Helpers";
 import Image from "../Image/Image";
 const NavigationMenu = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredOverUL, setIsHoveredOverUL] = useState(false);
+  let timer;
+  useEffect(() => {
+    if (isHovered) {
+      timer = setTimeout(() => {
+        setIsHovered(false);
+      }, 1500);
+    }
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [isHovered]);
+
   return (
     <div className="background-gradient z-10 w-full h-full px-20 py-16 fixed top-0">
-      <Link href="/">
-        {/* <a className="inline-block "> */}
-        <Image
-          width={500}
-          height={300}
-          src={kotaTransparentImage.src}
-          alt="kota logo"
-          className="inline-block w-40 cursor-pointer"
-        />
-        {/* </a> */}
-      </Link>
+      <div className="inline-block w-56 cursor-pointer"></div>
       <div>
         <ul className="max-w-[60%] mx-auto relative">
-          <li className="group">
+          <li className="group" onMouseEnter={() => setIsHovered(true)}>
             <Link
               href="/services"
-              className="text-[#FFCBC2] inline-block text-[4.7rem] font-bold leading-none  hover:text-white">
-              {/* <a className="text-[#FFCBC2] inline-block text-[4.7rem] font-bold leading-none  hover:text-white"> */}
+              className="text-[#FFCBC2] inline-block text-[4.7rem] font-bold leading-none  hover:text-white"
+            >
               Services
-              {/* </a> */}
             </Link>
-            <div className="hidden group-hover:block">
-              <ul className="absolute top-[50%] translate-y-[-50%]  left-[350px] flex flex-col">
-                <Link
-                  href="/service/social-media-marketing"
-                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
-                  {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
-                  Social Media Marketing
-                  {/* </a> */}
-                </Link>
-                <Link
-                  href="/service/web-design"
-                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
-                  {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
-                  Web Development & Design
-                  {/* </a> */}
-                </Link>
-                <Link
-                  href="/service/brand-management"
-                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
-                  {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
-                  Branding
-                  {/* </a> */}
-                </Link>
-                <Link
-                  href="/service/seo"
-                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
-                  {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
-                  Seo
-                  {/* </a> */}
-                </Link>
-                {/* <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">E-Commerce</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">WordPress</a></Link> */}
-              </ul>
-            </div>
+            {(isHovered || isHoveredOverUL) && (
+              <div
+                className="block"
+                onMouseEnter={() => setIsHoveredOverUL(true)}
+                onMouseLeave={() => setIsHoveredOverUL(false)}
+              >
+                <ul className="absolute top-[50%] translate-y-[-50%]  left-[350px] flex flex-col">
+                  <Link
+                    href="/service/social-media-marketing"
+                    className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                  >
+                    Social Media Marketing
+                  </Link>
+                  <Link
+                    href="/service/web-design"
+                    className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                  >
+                    Web Development & Design
+                  </Link>
+                  <Link
+                    href="/service/brand-management"
+                    className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                  >
+                    Branding
+                  </Link>
+                  <Link
+                    href="/service/seo"
+                    className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                  >
+                    SEO
+                  </Link>
+                </ul>
+              </div>
+            )}
           </li>
           <li className="group">
             <Link
               href="/work"
-              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none">
-              {/* <a className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"> */}
+              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"
+            >
               Work
-              {/* </a> */}
             </Link>
-            {/* <div className="hidden group-hover:block">
-                            <ul className="absolute top-10 w-[15rem] right-[100px]">
-                                <Link href="#"><a className="text-[#FFCBC2] hover:text-white px-3 text-left text-4xl inline-block font-bold leading-normal">Work</a></Link>
-                            </ul>
-                        </div> */}
           </li>
 
           <li className="group">
             <Link
               href="/studio"
-              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
-              {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"
+            >
               Studio
-              {/* </a> */}
             </Link>
-            <div className="hidden group-hover:block">
-              {/* <ul className="absolute top-[50%] translate-y-[-50%]  left-[310px] flex flex-col">
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">Web Development</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">Digital Marketing</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">E-Commerce</a></Link>
-                            </ul> */}
-            </div>
+            <div className="hidden group-hover:block"></div>
           </li>
           <li className="group">
             <Link
               href="/blog"
-              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
-              {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"
+            >
               Blog
-              {/* </a> */}
             </Link>
-            {/* <div className="hidden group-hover:block">
-                            <ul className="absolute top-[50%] translate-y-[-50%]  right-[100px] flex flex-col">
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">E-Commerce</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">WordPress</a></Link>
-                            </ul>
-                        </div> */}
           </li>
           <li className="group">
             <Link
               href="/contact"
-              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
-              {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"
+            >
               Contact
-              {/* </a> */}
             </Link>
-            {/* <div className="hidden group-hover:block">
-                            <ul className="absolute top-[50%] translate-y-[-50%]  right-[100px] flex flex-col">
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">Creative Web Design</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">Web Development</a></Link>
-                                <Link href="#"><a className="px-3 text-left text-4xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">Branding</a></Link>
-                            </ul>
-                        </div> */}
           </li>
           <li className="group">
             <Link
               href="/resources"
-              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none">
-              {/* <a className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"> */}
+              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"
+            >
               Resources
-              {/* </a> */}
             </Link>
           </li>
         </ul>

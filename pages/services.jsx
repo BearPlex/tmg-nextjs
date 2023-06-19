@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import Image from "../src/components/Image/Image";
+import GradientButton from "../src/components/button/GradientButton";
 const Services = () => {
   const router = useRouter();
   const pushServiceSocial = () => {
@@ -42,7 +43,7 @@ const Services = () => {
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
-            className="max-w-full"
+            className="w-[480px]"
           />
         </div>
         <div className="w-full">
@@ -71,7 +72,8 @@ const Services = () => {
               // "e_commerce",
               // "wordpress",
             ]}
-            activeNavClass="is-active">
+            activeNavClass="is-active"
+          >
             <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
               {/* <Link href="/webDevelopment">
                 <a className="w-1/2 text-base font-medium text-black inline-block">
@@ -85,7 +87,8 @@ const Services = () => {
               </Link> */}
               <a
                 href="#web_design"
-                className="w-1/2 text-base font-medium text-black inline-block">
+                className="w-1/2 text-base font-medium text-black inline-block"
+              >
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -95,7 +98,8 @@ const Services = () => {
 
               <a
                 href="#web_development"
-                className="w-1/2 text-base font-medium text-black inline-block">
+                className="w-1/2 text-base font-medium text-black inline-block"
+              >
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -104,7 +108,8 @@ const Services = () => {
               </a>
               <a
                 href="#branding"
-                className="w-1/2 text-base font-medium text-black inline-block">
+                className="w-1/2 text-base font-medium text-black inline-block"
+              >
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -113,7 +118,8 @@ const Services = () => {
               </a>
               <a
                 href="#digital_marketing"
-                className="w-1/2 text-base font-medium text-black inline-block">
+                className="w-1/2 text-base font-medium text-black inline-block"
+              >
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -142,16 +148,10 @@ const Services = () => {
                 </a> */}
             </div>
           </ScrollspyNav>
-
-          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden ">
-            <div className="">
-              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p className="absolute inset-0 flex items-center justify-center font-medium gradient-text  ">
-                Book Free Consultation Today
-              </p>
-            </div>
-          </button>
+          <GradientButton
+            text="Book Free Consultation Today"
+            route="/contact"
+          />
         </div>
       </section>
 
@@ -159,7 +159,8 @@ const Services = () => {
         <section
           id="web_design"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceSocial}>
+          onClick={pushServiceSocial}
+        >
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
@@ -169,18 +170,7 @@ const Services = () => {
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link
-              href="/webDesign"
-              className="border-2 rounded-full font-normal uppercase gradient-button">
-              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
-              <span className="w-full h-full mx-0 my-0 gradient-span">
-                Learn More
-              </span>
-              {/* </a> */}
-              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
-              </a> */}
-            </Link>
+            <GradientButton text="Learn More" route="/webDesign" />
           </div>
           <div className="w-[55%]">
             <Image
@@ -188,32 +178,22 @@ const Services = () => {
               height={300}
               src={homePageImage.src}
               alt="services images"
-              className="w-full h-100 shadow-2xl rounded-lg"
+              className="w-[669px] h-[435px] shadow-2xl rounded-lg"
             />
           </div>
         </section>
         <section
           id="web_development"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceBrand}>
+          onClick={pushServiceBrand}
+        >
           <div className="w-[40%]">
             <HeadingThree cssClass="heading-style" title="Brand Management" />
             <p className="mt-8 mb-14 text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link
-              href="/webDevelopment"
-              className="border-2 rounded-full font-normal uppercase gradient-button">
-              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
-              <span className="w-full h-full mx-0 my-0 gradient-span">
-                Learn More
-              </span>
-              {/* </a> */}
-              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
-              </a> */}
-            </Link>
+            <GradientButton text="Learn More" route="/webDevelopment" />
           </div>
           <div className="w-[55%]">
             <Image
@@ -221,14 +201,15 @@ const Services = () => {
               height={300}
               src={developmentImage.src}
               alt="services images"
-              className="w-full h-100 shadow-2xl rounded-lg"
+              className="w-[669px] h-[435px] shadow-2xl rounded-lg"
             />
           </div>
         </section>
         <section
           id="branding"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceSeo}>
+          onClick={pushServiceSeo}
+        >
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
@@ -238,18 +219,7 @@ const Services = () => {
               Through personal and digital mediums, we provide fast and clear
               communication to keep information flow open.
             </p>
-            <Link
-              href="/webDevelopment"
-              className="border-2 rounded-full font-normal uppercase gradient-button">
-              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
-              <span className="w-full h-full  mx-0 my-0 gradient-span">
-                Learn More
-              </span>
-              {/* </a> */}
-              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
-              </a> */}
-            </Link>
+            <GradientButton text="Learn More" route="/webDevelopment" />
           </div>
           <div className="w-[55%]">
             <Image
@@ -257,14 +227,15 @@ const Services = () => {
               height={300}
               src={digitalImage.src}
               alt="services images"
-              className="w-full h-100 shadow-2xl rounded-lg"
+              className="w-[669px] h-[435px] shadow-2xl rounded-lg"
             />
           </div>
         </section>
         <section
           id="digital_marketing"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceDesign}>
+          onClick={pushServiceDesign}
+        >
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
@@ -274,18 +245,7 @@ const Services = () => {
               Through personal and digital mediums, we provide fast and clear
               communication to keep information flow open.
             </p>
-            <Link
-              href="/webDevelopment"
-              className="border-2 rounded-full font-normal uppercase gradient-button">
-              {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
-              <span className="w-full h-full mx-0 my-0 gradient-span">
-                Learn More
-              </span>
-              {/* </a> */}
-              {/* <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-                Learn More
-              </a> */}
-            </Link>
+            <GradientButton text="Learn More" route="/webDevelopment" />
           </div>
           <div className="w-[55%]">
             <Image
@@ -293,7 +253,7 @@ const Services = () => {
               height={300}
               src={marketingImage.src}
               alt="services images"
-              className="w-full h-100 shadow-2xl rounded-lg"
+              className="w-[669px] h-[435px] shadow-2xl rounded-lg"
             />
           </div>
         </section>

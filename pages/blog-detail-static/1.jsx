@@ -82,7 +82,7 @@ function BlogDetail() {
               height={300}
               src={blogsStatic[0].blog_featured_image.src}
               alt="blog image"
-              className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl"
+              className="rounded-3xl w-5/6 h-[550px] object-cover mx-auto max-w-7xl"
             />
             {/* <Image decoding="async" width={500} height={300}
                 className=" absolute w-[80%]  md:w-[85%]    object-contain md:mr-3 rounded-3xl max-w-7xl mx-auto"

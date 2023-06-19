@@ -15,6 +15,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
+import GradientButton from "../../src/components/button/GradientButton";
 function Socialmediamarketing() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -44,7 +45,7 @@ function Socialmediamarketing() {
                 src={body.src}
                 alt="kota canvas"
                 loading="lazy"
-                className="max-w-full "
+                className="w-[466px] h-[303px] "
               />
               <Image
                 width={500}
@@ -52,7 +53,7 @@ function Socialmediamarketing() {
                 src={serviceBottle.src}
                 alt="kota canvas"
                 loading="lazy"
-                className="max-w-full mt-10"
+                className="w-[466px] h-[303px] mt-10"
               />
             </div>
             <div className="w-full">
@@ -62,28 +63,12 @@ function Socialmediamarketing() {
               <p className="text-2xl">
                 With proven game changing results, our award winning performance
                 experts ensure that all the leads turn into a
-                <span className="text-orange_theme-500">
-                  {" "}
-                  profitable
-                  <span className="text-orange_theme-400">
-                    {" "}
-                    conversion.
-                  </span>{" "}
-                </span>{" "}
+                <span className="gradient-text">profitable conversion.</span>{" "}
               </p>
-              <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-                <div className="">
-                  <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                  <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                  <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                    Book Free{" "}
-                    <span className="text-pink-500 relative ml-[6px]">
-                      {" "}
-                      Consultation Today
-                    </span>
-                  </p>
-                </div>
-              </button>
+              <GradientButton
+                text="Book Free Consultation Today"
+                route="/contact"
+              />
             </div>
           </div>
         </div>
@@ -95,12 +80,13 @@ function Socialmediamarketing() {
             <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <h1
-                  className={`mb-6 font-sofia-bold font-black leading-none text-[#383434] text-3xl md:text-6xl max-w-xl`}>
+                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
+                >
                   High Performance
-                  <span className="text-orange_theme-500">
+                  <span className="gradient-text">
                     {" "}
                     breakthrough{" "}
-                    <span className="text-orange_theme-400">campaigns</span>
+                    <span className="gradient-text">campaigns</span>
                   </span>{" "}
                 </h1>
               </div>
@@ -200,19 +186,7 @@ function Socialmediamarketing() {
                   accounts and your physical collateral. 
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative ml-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -221,7 +195,7 @@ function Socialmediamarketing() {
                   height={300}
                   src={book.src}
                   alt="book"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[724px] drop-shadow-xl"
                 />
               </div>
             </div>
@@ -235,7 +209,7 @@ function Socialmediamarketing() {
                   height={300}
                   src={mobile3.src}
                   alt="mobile"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[390px] drop-shadow-xl"
                 />
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
@@ -253,19 +227,7 @@ function Socialmediamarketing() {
                   accounts and your physical collateral. 
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative ml-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
             </div>
@@ -288,19 +250,7 @@ function Socialmediamarketing() {
                   accounts and your physical collateral. 
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative ml-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -309,7 +259,7 @@ function Socialmediamarketing() {
                   height={300}
                   src={mobile2.src}
                   alt="mobile2"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[702px] drop-shadow-xl"
                 />
               </div>
             </div>
@@ -323,7 +273,7 @@ function Socialmediamarketing() {
                   height={300}
                   src={tmg.src}
                   alt="tmg"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[359px] drop-shadow-xl"
                 />
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
@@ -341,7 +291,8 @@ function Socialmediamarketing() {
                   accounts and your physical collateral. 
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                  <GradientButton text="Learn More" route="/" />
+                  {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
                       <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                       <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
@@ -353,7 +304,7 @@ function Socialmediamarketing() {
                         </span>
                       </p>
                     </div>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -380,14 +331,14 @@ function Socialmediamarketing() {
 
       <section className="background-gradient">
         <div className="relative isolate ">
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
+          <div className="max-w-7xl   lg:flex lg:items-center lg:gap-x-10">
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
               <Image
                 width={500}
                 height={300}
                 src={hand.src}
                 alt="hand"
-                className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                className="w-[658px] h-[836px] drop-shadow-xl"
               />
             </div>
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">

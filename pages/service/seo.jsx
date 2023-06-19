@@ -15,6 +15,7 @@ import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
+import GradientButton from "../../src/components/button/GradientButton";
 function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -44,7 +45,7 @@ function BrandManagement() {
                 src={brand1.src}
                 alt="kota canvas"
                 loading="lazy"
-                className="max-w-full "
+                className="w-[466px] h-[303px]"
               />
               <Image
                 width={500}
@@ -52,13 +53,13 @@ function BrandManagement() {
                 src={brand2.src}
                 alt="kota canvas"
                 loading="lazy"
-                className="max-w-full mt-10"
+                className="w-[466px] h-[303px] mt-10"
               />
             </div>
             <div className="w-full">
               <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
-                Performance Driven{" "}
-                <span className="text-orange_theme-500">SEO</span> Services
+                Performance Driven <span className="gradient-text">SEO</span>{" "}
+                Services
               </h4>
               <p className="text-2xl">
                 A highly optimized website is essential for a business to
@@ -66,19 +67,13 @@ function BrandManagement() {
                 achieve this requires a website to have a content strategy,
                 technically proficient and conform to the latest search engine
                 optimization{" "}
-                <span className="text-[#F79B60]"> recommendations</span> and{" "}
-                <span className="text-[#F79B60]"> best-practices.</span>{" "}
+                <span className="gradient-text"> recommendations</span> and{" "}
+                <span className="gradient-text"> best-practices.</span>{" "}
               </p>
-              <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-                <div className="">
-                  <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                  <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                  <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                    Book Free{" "}
-                    <span className="text-pink-500"> Consultation Today</span>
-                  </p>
-                </div>
-              </button>
+              <GradientButton
+                text="Book Free Consultation Today"
+                route="/contact"
+              />
             </div>
           </div>
         </div>
@@ -90,9 +85,10 @@ function BrandManagement() {
             <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <h1
-                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}>
+                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
+                >
                   Content strategy that
-                  <span className="text-orange_theme-500">
+                  <span className="gradient-text">
                     {" "}
                     increases visibility
                   </span>{" "}
@@ -102,16 +98,13 @@ function BrandManagement() {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   We provide On Page and Off Page solutions that help increase
                   your website search rank so you do not need to pay a dime for
-                  traffic. 
+                  traffic.
                   <br />
                   <br />
                   Our SEO packages include content marketing, local seo,
                   technical audits, social media presence, link building, guest
                   posting and on site optimization which is expert-led service
-                  that enhances both credibility
-                  <br />
-                  <br />
-                  on Google and domain authority. 
+                  that enhances both credibility on Google and domain authority.
                 </p>
               </div>
             </div>
@@ -135,7 +128,7 @@ function BrandManagement() {
                 <dd className="mt-6 text-white text-base ">
                   We make sure to analyze the market competition landscape.This
                   helps us form accurate predictions about how we are going to
-                  rank your business on Google rankings.   
+                  rank your business on Google rankings.
                 </dd>
 
                 <dt className="font-semibold text-white text-5xl xl:mt-10">
@@ -143,9 +136,8 @@ function BrandManagement() {
                 </dt>
                 <dd className="mt-6 text-white text-base">
                   We make sure to diagnose your website so we know what we are
-                  operating.  This helps us drive a result oriented strategy
-                  that eliminates loose ends on your website and performs
-                  better. 
+                  operating. This helps us drive a result oriented strategy that
+                  eliminates loose ends on your website and performs better.
                 </dd>
               </div>
               <div>
@@ -155,7 +147,7 @@ function BrandManagement() {
                 <dd className="mt-6 text-white text-base">
                   We do a comprehensive keyword search relevant to your business
                   and shortlist top traffic driving search terms with less
-                  competition. This helps us to map and optimize the website.  
+                  competition. This helps us to map and optimize the website.
                 </dd>
                 <dt className="font-semibold text-white text-5xl xl:mt-4">
                   Growth
@@ -188,19 +180,7 @@ function BrandManagement() {
                   GMB Profile.
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative left-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -209,7 +189,7 @@ function BrandManagement() {
                   height={300}
                   src={book.src}
                   alt="book"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[704px] drop-shadow-xl"
                 />
               </div>
             </div>
@@ -223,7 +203,7 @@ function BrandManagement() {
                   height={300}
                   src={mobile3.src}
                   alt="mobile3"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[704px] drop-shadow-xl"
                 />
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
@@ -236,22 +216,10 @@ function BrandManagement() {
                   package includes Content Marketing, Link Building on good
                   websites, Guest Posting, Increasing Social Media Presence and
                   Removing Toxic Links to help increase authority and website
-                  credibility on Google.   
+                  credibility on Google.
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative left-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
             </div>
@@ -271,19 +239,7 @@ function BrandManagement() {
                   content is being seen by the right people.
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative left-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -292,7 +248,7 @@ function BrandManagement() {
                   height={300}
                   src={mobile2.src}
                   alt="mobile2"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[704px] drop-shadow-xl"
                 />
               </div>
             </div>
@@ -306,7 +262,7 @@ function BrandManagement() {
                   height={300}
                   src={tmg.src}
                   alt="tmg"
-                  className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                  className="w-[528px] h-[359px] drop-shadow-xl"
                 />
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
@@ -321,19 +277,7 @@ function BrandManagement() {
                   traffic without spending another dime on it. 
                 </p>
                 <div className=" flex items-center gap-x-6">
-                  <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative left-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button>
+                  <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
             </div>
@@ -360,14 +304,14 @@ function BrandManagement() {
 
       <section className="background-gradient pb-16">
         <div className="relative isolate ">
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
+          <div className="max-w-7xl lg:flex lg:items-center lg:gap-x-10">
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
               <Image
                 width={500}
                 height={300}
                 src={hand.src}
                 alt="hand"
-                className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+                className="w-[658px] h-[836px] drop-shadow-xl"
               />
             </div>
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">

@@ -27,7 +27,7 @@ import member4 from "../src/assets/images/member4.png";
 import member5 from "../src/assets/images/member5.png";
 import member6 from "../src/assets/images/member6.png";
 import Image from "../src/components/Image/Image";
-
+import GradientButton from "../src/components/button/GradientButton";
 const Studio = () => {
   return (
     <>
@@ -54,7 +54,7 @@ const Studio = () => {
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
-            className="max-w-full"
+            className="w-[410px] h-[237px]"
           />
         </div>
         <div className="w-full">
@@ -71,24 +71,15 @@ const Studio = () => {
               action and drive growth.
             </span>{" "}
           </p>
-          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            <div className="">
-              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500 relative left-[5px]">
-                  {" "}
-                  Consultation Today
-                </span>
-              </p>
-            </div>
-          </button>
+          <GradientButton
+            text="Book Free Consultation Today"
+            route="/contact"
+          />
         </div>
       </section>
       <section className="mt-20">
         <div className="relative">
-          {/* <video
+          <video
             className="studio-video"
             autoPlay="true"
             loop="true"
@@ -97,7 +88,7 @@ const Studio = () => {
             <source src="/video/hp.mp4" type="video/mp4" />
             <source src="/video/hp.ogg" type="video/ogg" />
             Your browser does not support the video tag.
-          </video> */}
+          </video>
           <div className="absolute top-[50%] left[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
             <div className="play-button border-4 border-white rounded-full w-[140px] h-[140px]">
               <svg
@@ -105,13 +96,15 @@ const Studio = () => {
                 width="25"
                 height="25"
                 viewBox="0 0 26.139 37.458"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   id="Path_184"
                   data-name="Path 184"
                   d="M-1422.6-322.813v37.458l26.139-19.137Z"
                   transform="translate(1422.604 322.813)"
-                  fill="#fff"></path>
+                  fill="#fff"
+                ></path>
               </svg>
             </div>
           </div>
@@ -132,9 +125,7 @@ const Studio = () => {
         {/* <p className="paragraph mb-10">
                     By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
                 </p> */}
-        <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-sm rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:transition-all">
-          View Our Services
-        </button>
+        <GradientButton text="View Our Services" route="/services" />
       </div>
 
       {/* <section className="pt-20 px-28 max-w-[80%]">
@@ -144,58 +135,58 @@ const Studio = () => {
       <section className="mt-20 px-28">
         <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage1"
               className="h-full object-cover w-full"
               src={galleryImage1.src}
-            /> */}
+            />
           </div>
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage4"
               className="h-full object-cover w-full"
               src={galleryImage4.src}
-            /> */}
+            />
           </div>
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
-            /> */}
+            />
           </div>
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage5"
               className="h-full object-cover w-full"
               src={galleryImage5.src}
-            /> */}
+            />
           </div>
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage3"
               className="h-full object-cover w-full"
               src={galleryImage3.src}
-            /> */}
+            />
           </div>
           <div className="mb-4">
-            {/* <Image
+            <Image
               width={500}
               height={300}
               alt="galleryImage2"
               className="h-full object-cover w-full"
               src={galleryImage2.src}
-            /> */}
+            />
           </div>
         </div>
       </section>
@@ -206,7 +197,7 @@ const Studio = () => {
               width={500}
               height={300}
               src={mainImage.src}
-              className="w-96 mx-auto"
+              className="w-[462px] h-[450px] mx-auto"
               alt="work images"
             />
           </div>
@@ -226,7 +217,8 @@ const Studio = () => {
           initialSlide={1}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper">
+          className="mySwiper"
+        >
           {/* <SwiperSlide>
                         <div className="">
                             <figure className="">
@@ -258,6 +250,7 @@ const Studio = () => {
                   height={300}
                   src={member1.src}
                   alt="team member"
+                  className="w-[313px] h-[440px]"
                 />
               </figure>
             </div>
@@ -270,6 +263,7 @@ const Studio = () => {
                   height={300}
                   src={member2.src}
                   alt="team member"
+                  className="w-[313px] h-[440px]"
                 />
               </figure>
             </div>
@@ -282,6 +276,7 @@ const Studio = () => {
                   height={300}
                   src={member3.src}
                   alt="team member"
+                  className="w-[313px] h-[440px]"
                 />
               </figure>
             </div>
@@ -292,6 +287,7 @@ const Studio = () => {
                 <Image
                   width={500}
                   height={300}
+                  className="w-[313px] h-[440px]"
                   src={member4.src}
                   alt="team member"
                 />
@@ -304,6 +300,7 @@ const Studio = () => {
                 <Image
                   width={500}
                   height={300}
+                  className="w-[313px] h-[440px]"
                   src={member5.src}
                   alt="team member"
                 />
@@ -315,6 +312,7 @@ const Studio = () => {
               <figure className="">
                 <Image
                   width={500}
+                  className="w-[313px] h-[440px]"
                   height={300}
                   src={member6.src}
                   alt="team member"

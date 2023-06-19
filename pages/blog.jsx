@@ -12,6 +12,7 @@ import blog1 from "../src/assets/images/blog-1.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "../src/components/Image/Image";
+import GradientButton from "../src/components/button/GradientButton";
 // import CardStatic from "../src/components/card/CardStatic";
 // {console.log("Work",blogsData)}
 const blogsStatic = [
@@ -48,7 +49,7 @@ const Blog = () => {
             src={kotaLogo.src}
             alt="kota canvas"
             loading="lazy"
-            className="max-w-full"
+            className="w-[522px] h-[406px]"
           />
         </div>
         <div className="w-full">
@@ -59,19 +60,14 @@ const Blog = () => {
             Because it should never just be work, it should be
             <span className="gradient-text"> a work of art</span>{" "}
           </p>
-          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            {/* <div className=""> */}
-            <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-            <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-            <p className="absolute inset-0 flex items-center justify-center font-medium gradient-text  ">
-              Book Free Consultation Today
-            </p>
-            {/* </div> */}
-          </button>
+          <GradientButton
+            text="Book Free Consultation Today"
+            route="/contact"
+          />
         </div>
       </section>
 
-      <div className="px-28 pt-20 h-[570px]">
+      <div className="px-28 pt-20">
         <a href="" className="relative blog-banner w-full h-full">
           {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}

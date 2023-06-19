@@ -39,31 +39,39 @@ const Services = () => {
   };
 
   return (
-    <section className="px-20 py-28 bg-[#171717]">
+    <section
+      className="px-20 py-28"
+      style={{
+        backgroundImage: "linear-gradient(91.87deg, #F79B60 0%, #EE245F 100%)",
+      }}
+    >
       <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
         Our Services
       </span>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h3
-            className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
-              type === "design" ? "text-white" : "text-gray-400"
+            className={`mb-6 text-[5.5rem] font-bold text-white cursor-pointer transition-opacity leading-none ${
+              type === "design" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("design")}>
+            onClick={() => setType("design")}
+          >
             Web Design & Development
           </h3>
           <h3
-            className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
-              type === "branding" ? "text-white" : "text-gray-400"
+            className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
+              type === "branding" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("branding")}>
+            onClick={() => setType("branding")}
+          >
             Branding
           </h3>
           <h3
-            className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
-              type === "digital" ? "text-white" : "text-gray-400"
+            className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
+              type === "digital" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("digital")}>
+            onClick={() => setType("digital")}
+          >
             Digital Marketing
           </h3>
           {/* <a
@@ -75,11 +83,12 @@ const Services = () => {
         </div>
         <div>
           <Image
-            width={500}
+            width={100}
             height={300}
             src={`${handleGetImages().img}`}
             alt="images"
             loading="lazy"
+            className="w-[100%]"
           />
           <p className="text-lg text-white font-normal mt-10 leading-loose">
             {handleGetImages().detail}

@@ -1,0 +1,17 @@
+import React from "react";
+import { useRouter } from "next/router";
+
+const GradientButton = (props) => {
+  const router = useRouter();
+  const { route, text } = props;
+  return (
+    <button
+      className="border-2 rounded-full font-bold uppercase gradient-button"
+      onClick={() => router.push(`${route}`)}
+    >
+      <span className="w-full h-full mx-0 my-0 gradient-span">{text}</span>
+    </button>
+  );
+};
+
+export default GradientButton;

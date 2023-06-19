@@ -3,6 +3,7 @@ import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/tmg-logo.png";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";
+import group from "../src/assets/images/Group.png";
 import clutchLogo from "../src/assets/images/Clutch_grey@2x.png";
 import awardLogo from "../src/assets/images/awward_grey@2x.png";
 import cssDesignLogo from "../src/assets/images/css-design-awards.png";
@@ -74,7 +75,8 @@ export default function Home() {
           <div className="w-[40%]">
             {/* <HeadingOne title="Transforming Businesses into Brands" cssClass="mb-6" /> */}
             <h1
-              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}>
+              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
+            >
               Transforming Businesses into
               <span className="gradient-text"> Brands</span>{" "}
             </h1>
@@ -90,42 +92,10 @@ export default function Home() {
           <Image
             width={500}
             height={300}
-            src={danLogo.src}
-            alt="dan logo"
-            loading="lazy"
-            className="w-[100px] object-contain"
-          />
-          <Image
-            width={500}
-            height={300}
-            src={drumLogo.src}
+            src={group.src}
             alt="the drum logo"
             loading="lazy"
-            className="w-[100px] object-contain"
-          />
-          <Image
-            width={500}
-            height={300}
-            src={clutchLogo.src}
-            alt="clutch logo"
-            loading="lazy"
-            className="w-[100px] object-contain"
-          />
-          <Image
-            width={500}
-            height={300}
-            src={awardLogo.src}
-            alt="award logo"
-            loading="lazy"
-            className="w-[100px] object-contain"
-          />
-          <Image
-            width={500}
-            height={300}
-            src={cssDesignLogo.src}
-            alt="award logo"
-            loading="lazy"
-            className="w-[100px] object-contain"
+            className="w-[50%] object-contain"
           />
         </div>
       </section>
@@ -168,7 +138,7 @@ export default function Home() {
                     height={300}
                     src={hero.src}
                     alt="App screenshot"
-                    className="w-[40rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                    className=" rounded-md shadow-2xl ring-1 ring-gray-900/10"
                   />
                 </div>
               </div>
@@ -188,7 +158,7 @@ export default function Home() {
         {/* <Agency /> */}
       </div>
 
-      <section className="bg-[#171717] px-20 py-28 mt-16">
+      <section className="bg-zinc-800 px-20 py-28 mt-16">
         <div className="flex items-center justify-between">
           <div className="w-[47%]">
             <Image
@@ -201,7 +171,7 @@ export default function Home() {
           </div>
           <div className="w-[47%] pt-64">
             <HeadingTwo
-              cssClass="text-white text-style-colorless "
+              cssClass="text-white text-style-colorless"
               title="Shit-hot work for hot-shot brands"
             />
           </div>

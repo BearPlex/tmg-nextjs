@@ -17,7 +17,11 @@ const Header = () => {
             <Image
               width={500}
               height={300}
-              className="w-36 cursor-pointer"
+              className={
+                showMenu
+                  ? "inline-block w-40 cursor-pointer"
+                  : "w-36 cursor-pointer"
+              }
               src={logoIcon.src}
               alt="logo"
             />
@@ -25,17 +29,19 @@ const Header = () => {
           </Link>
           <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
             <li className={showMenu ? "hidden" : "block"}>
-              <Link href="/work">
-                {/* <a className="text-xl font-sofia-extrabold font-extrabold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"> */}
+              <Link
+                className="text-xl font-sofia-extrabold font-extrabold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                href="/work"
+              >
                 Work
-                {/* </a> */}
               </Link>
             </li>
             <li className={showMenu ? "hidden" : "block"}>
-              <Link href="/contact">
-                {/* <a className="text-xl font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"> */}
+              <Link
+                className="text-xl font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                href="/contact"
+              >
                 Contact
-                {/* </a> */}
               </Link>
             </li>
             <li>

@@ -53,9 +53,10 @@ const blogDetail = () => {
         <div>
           <Image
             decoding="async"
-            width={500}
-            height={300}
+            width={0}
+            height={0}
             src={blogImage}
+            objectFit="cover"
             alt="blog image"
           />
           <p className="text-base">

@@ -32,8 +32,8 @@ const ImageComponent = (props) => {
       <Image
         id="imageRef"
         alt={props.alt}
-        width="500"
-        height="300"
+        width={props?.width ? props?.width : "500"}
+        height={props?.height ? props?.height : "500"}
         src={props.src}
         className={`${props.className}`}
         decoding="async"

@@ -26,7 +26,7 @@ function section1(props) {
           />
           {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
         </div>
-        <h1 className="text-center text-[50px] font-bold text-orange_theme-500">
+        <h1 className="text-center text-[50px] font-bold gradient-text">
           {work?.featured_title}{" "}
         </h1>
         <div className="flex justify-center">
