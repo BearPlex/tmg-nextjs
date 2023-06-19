@@ -71,8 +71,7 @@ const Services = () => {
               // "e_commerce",
               // "wordpress",
             ]}
-            activeNavClass="is-active"
-          >
+            activeNavClass="is-active">
             <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
               {/* <Link href="/webDevelopment">
                 <a className="w-1/2 text-base font-medium text-black inline-block">
@@ -86,8 +85,7 @@ const Services = () => {
               </Link> */}
               <a
                 href="#web_design"
-                className="w-1/2 text-base font-medium text-black inline-block"
-              >
+                className="w-1/2 text-base font-medium text-black inline-block">
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -97,8 +95,7 @@ const Services = () => {
 
               <a
                 href="#web_development"
-                className="w-1/2 text-base font-medium text-black inline-block"
-              >
+                className="w-1/2 text-base font-medium text-black inline-block">
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -107,8 +104,7 @@ const Services = () => {
               </a>
               <a
                 href="#branding"
-                className="w-1/2 text-base font-medium text-black inline-block"
-              >
+                className="w-1/2 text-base font-medium text-black inline-block">
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -117,8 +113,7 @@ const Services = () => {
               </a>
               <a
                 href="#digital_marketing"
-                className="w-1/2 text-base font-medium text-black inline-block"
-              >
+                className="w-1/2 text-base font-medium text-black inline-block">
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   className="text-pink-400 text-lg mr-3"
@@ -147,13 +142,13 @@ const Services = () => {
                 </a> */}
             </div>
           </ScrollspyNav>
-          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
+
+          <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden ">
             <div className="">
               <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
               <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
+              <p className="absolute inset-0 flex items-center justify-center font-medium gradient-text  ">
+                Book Free Consultation Today
               </p>
             </div>
           </button>
@@ -164,18 +159,19 @@ const Services = () => {
         <section
           id="web_design"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceSocial}
-        >
+          onClick={pushServiceSocial}>
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
               title="Social Media Marketing"
             />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <p className="mt-8 mb-14 text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDesign">
+            <Link
+              href="/webDesign"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More
@@ -199,15 +195,16 @@ const Services = () => {
         <section
           id="web_development"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceBrand}
-        >
+          onClick={pushServiceBrand}>
           <div className="w-[40%]">
             <HeadingThree cssClass="heading-style" title="Brand Management" />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <p className="mt-8 mb-14 text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More
@@ -231,20 +228,21 @@ const Services = () => {
         <section
           id="branding"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceSeo}
-        >
+          onClick={pushServiceSeo}>
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
               title="Search Engine Optimization"
             />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <p className="mt-8 mb-14 text-style text-black">
               Through personal and digital mediums, we provide fast and clear
               communication to keep information flow open.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
-              <span className="w-full h-full mx-0 my-0 gradient-span">
+              <span className="w-full h-full  mx-0 my-0 gradient-span">
                 Learn More
               </span>
               {/* </a> */}
@@ -266,18 +264,19 @@ const Services = () => {
         <section
           id="digital_marketing"
           className="flex items-center justify-between py-28 cursor-pointer"
-          onClick={pushServiceDesign}
-        >
+          onClick={pushServiceDesign}>
           <div className="w-[40%]">
             <HeadingThree
               cssClass="heading-style"
               title="Website Design & Development"
             />
-            <p className="mt-8 mb-14 font-medium text-xl text-black">
+            <p className="mt-8 mb-14 text-style text-black">
               Through personal and digital mediums, we provide fast and clear
               communication to keep information flow open.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More

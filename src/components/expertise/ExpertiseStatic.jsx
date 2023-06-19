@@ -23,8 +23,7 @@ const ExpertiseStatic = (props) => {
             <div
               key={index}
               className="w-[47%] mb-16 cursor-pointer"
-              onClick={() => pushWork(item.id)}
-            >
+              onClick={() => pushWork(item.id)}>
               {/* {console.log("List", item)} */}
               <div>
                 <div className="relative work-images h-full">
@@ -45,9 +44,9 @@ const ExpertiseStatic = (props) => {
                   }
                   <HeadingThree
                     title={item.featured_title}
-                    cssClass={`my-4 text-2xl ${cssClass} transition group-hover:text-pink-400 group-hover:transition-all`}
+                    cssClass={`my-4 text-4xl ${cssClass} transition group-hover:text-pink-400 group-hover:transition-all`}
                   />
-                  <p className={`${cssClass} text-md font-medium max-w-[90%]`}>
+                  <p className={`${cssClass} text-xl font-medium max-w-[90%]`}>
                     {item.gallery_first_description}
                   </p>
                 </div>

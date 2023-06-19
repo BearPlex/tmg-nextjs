@@ -88,7 +88,7 @@ const Work = () => {
               <h4 className="mb-6 heading-style font-bold leading-tight">
                 We are experts in bringing brands to life digitally.
               </h4>
-              <p className="text-black font-medium text-[1.16rem]">
+              <p className="text-black text-style">
                 TMG is a progressive and insightful design agency, technically
                 and creatively skilled to translate your brand into its best
                 digital self. Our design and development approach creates

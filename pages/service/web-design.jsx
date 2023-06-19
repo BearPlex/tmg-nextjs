@@ -99,8 +99,7 @@ function WebDesign() {
             <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <h1
-                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
-                >
+                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}>
                   Modern designs that
                   <span className="text-orange_theme-500">
                     {" "}
@@ -177,7 +176,7 @@ function WebDesign() {
       </section>
 
       <section>
-        <div className="bg-black">
+        <div className="bg-[#212121]">
           <div className="relative isolate pt-14">
             <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">

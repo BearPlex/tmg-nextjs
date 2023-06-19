@@ -60,14 +60,13 @@ const Blog = () => {
             <span className="gradient-text"> a work of art</span>{" "}
           </p>
           <button className="relative w-72  h-14 mt-12 rounded-full overflow-hidden">
-            <div className="">
-              <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-              <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-              <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                Book Free{" "}
-                <span className="text-pink-500"> Consultation Today</span>
-              </p>
-            </div>
+            {/* <div className=""> */}
+            <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
+            <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
+            <p className="absolute inset-0 flex items-center justify-center font-medium gradient-text  ">
+              Book Free Consultation Today
+            </p>
+            {/* </div> */}
           </button>
         </div>
       </section>

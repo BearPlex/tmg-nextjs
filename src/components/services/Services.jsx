@@ -39,7 +39,7 @@ const Services = () => {
   };
 
   return (
-    <section className="px-20 py-28 bg-black">
+    <section className="px-20 py-28 bg-[#171717]">
       <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
         Our Services
       </span>
@@ -49,24 +49,21 @@ const Services = () => {
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "design" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("design")}
-          >
+            onClick={() => setType("design")}>
             Web Design & Development
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "branding" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("branding")}
-          >
+            onClick={() => setType("branding")}>
             Branding
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] font-bold cursor-pointer transition-opacity leading-none ${
               type === "digital" ? "text-white" : "text-gray-400"
             }`}
-            onClick={() => setType("digital")}
-          >
+            onClick={() => setType("digital")}>
             Digital Marketing
           </h3>
           {/* <a

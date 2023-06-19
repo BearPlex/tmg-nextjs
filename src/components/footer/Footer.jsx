@@ -26,8 +26,7 @@ const Footer = () => {
               </h5>
               <a
                 href="mailto:Info@themediagale.com"
-                className="text-lg mt-0 mb-2 text-blueGray-600"
-              >
+                className="text-lg mt-0 mb-2 text-blueGray-600">
                 Info@themediagale.com
               </a>
             </div>
@@ -51,66 +50,59 @@ const Footer = () => {
               <li>
                 <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Privacy Policy</a>
               </li> */}
-                    <li className="mb-2">
+                    <li className="mb-4">
                       <Link
                         href="/"
-                        className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 "
-                      >
+                        className="block uppercase text-blueGray-500 text-sm font-extrabold mb-2 ">
                         Home
                       </Link>
                     </li>
                     <li className="mb-2">
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3  text-base"
-                        href="/work"
-                      >
+                        href="/work">
                         Work
                       </Link>
                     </li>
                     <li className="mb-2">
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base"
-                        href="/services"
-                      >
+                        href="/services">
                         Services
                       </Link>
                     </li>
                     <li className="mb-2">
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base"
-                        href="/blog"
-                      >
+                        href="/blog">
                         Blog
                       </Link>
                     </li>
                     <li className="mb-2">
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 mt-3 text-base"
-                        href="/contact"
-                      >
+                        href="/contact">
                         Contact
                       </Link>
                     </li>
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-base"
-                        href="/privacy-policy"
-                      >
+                        href="/privacy-policy">
                         Privacy Policy
                       </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="w-full mt-5 lg:mt-1 ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
-                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 text-[#EE2760]">
+                  <span className="block uppercase text-blueGray-500 text-sm font-extrabold bold mb-2 text-[#EE2760]">
                     Offices
                   </span>
                   <ul className="list-unstyled">
                     <li className="mb-1">
                       <Link
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
-                      >
+                        className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-2 text-sm"
+                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">
                         New York
                       </Link>
                     </li>
@@ -119,9 +111,8 @@ const Footer = () => {
               </li> */}
                     <li>
                       <Link
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=njs-profile"
-                      >
+                        className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-2 text-sm"
+                        href="https://creative-tim.com/privacy?ref=njs-profile">
                         Lahore
                       </Link>
                     </li>
@@ -168,8 +159,7 @@ const Footer = () => {
                   href="https://www.creative-tim.com/product/notus-js"
                   className="text-blueGray-500 hover:text-gray-800"
                   target="_blank"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
                   {" "}
                   TMG
                 </a>

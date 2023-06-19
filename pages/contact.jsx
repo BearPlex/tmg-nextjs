@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
       <div className="flex gap-x-5 justify-between mb-10 px-28">
         <div className="w-[30%]">
-          <h4 className=" font-bold text-5xl mb-6 uppercase">Lahore</h4>
+          <h4 className=" font-bold text-4xl mb-6 uppercase">Lahore</h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
             Brooklyn,
             <br />
@@ -31,28 +31,24 @@ const Contact = () => {
           <p className="mt-10">
             <a
               href="tel:+44(0)20 3951 0562"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
-            >
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all">
               +1 (917) 970-1353
             </a>
           </p>
           <p className="group mt-10 relative">
             <a
               href="mailto:info@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
-            >
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all">
               info@themediagale.com
             </a>
             <a
               href="mailto:info@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
-            >
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all">
               support@themediagale.com
             </a>
             <a
               href="mailto: contacus@themediagale.com"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400 transition-all"
-            >
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400 transition-all">
               contacus@themediagale.com
             </a>
             {/* <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
@@ -75,7 +71,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-[30%]">
-          <h4 className=" font-bold text-5xl mb-6 uppercase">New York</h4>
+          <h4 className=" font-bold text-4xl mb-6 uppercase">New York</h4>
           <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
             Dha Phase-5,
             <br />
@@ -88,8 +84,7 @@ const Contact = () => {
           <p className="mt-10">
             <a
               href="tel:+1 833 502 0267"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
-            >
+              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all">
               +1 (917) 970-1353
             </a>
           </p>
@@ -125,8 +120,7 @@ const Contact = () => {
             <div className="w-full">
               <textarea
                 className="w-full px-3 py-2 border placeholder-gray-700::placeholder border-black resize-none h-24"
-                placeholder="Message"
-              ></textarea>
+                placeholder="Message"></textarea>
 
               <div className="mt-6">
                 <ul className="form-check mb-4 d-flex items-center pl-0">
@@ -141,8 +135,7 @@ const Contact = () => {
                   <li className="ml-8">
                     <label
                       htmlFor="flexRadioDefault10"
-                      className="text-xs leading-none text-base font-medium text-zinc-700"
-                    >
+                      className="text-xs leading-none  font-medium text-zinc-700">
                       Im happy to receive a seriously cool monthly newsletter
                       from KOTA.
                     </label>
@@ -160,14 +153,13 @@ const Contact = () => {
                   <li className="ml-8">
                     <label
                       htmlFor="flexRadioDefault20"
-                      className="text-xs font-medium text-zinc-700 leading-4"
-                    >
+                      className="text-xs font-medium text-zinc-700 leading-4">
                       I understand that KOTA will securely hold my data in
                       accordance with their privacy policy.
                     </label>
                   </li>
                 </ul>
-                <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-[#F58460] hover:text-white transition hover:transition-all uppercase">
+                <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
                   Submit
                 </button>
               </div>

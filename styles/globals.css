@@ -398,13 +398,13 @@ footer svg:hover path {
   color: white !important;
 }
 .text-style {
-  @apply text-zinc-700 font-normal  text-xl;
+  @apply text-[#454545] font-normal  text-xl;
 }
 .text-style-colorless {
   @apply font-normal  text-xl;
 }
 .heading-style {
-  @apply font-sofia-bold font-black leading-10 text-zinc-700 text-4xl;
+  @apply font-sofia-bold font-black leading-10 text-[#383434] text-4xl;
 }
 .heading-style-colorless {
   @apply font-sofia-bold font-black leading-10 text-4xl;

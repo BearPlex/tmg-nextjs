@@ -105,15 +105,13 @@ const Studio = () => {
                 width="25"
                 height="25"
                 viewBox="0 0 26.139 37.458"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   id="Path_184"
                   data-name="Path 184"
                   d="M-1422.6-322.813v37.458l26.139-19.137Z"
                   transform="translate(1422.604 322.813)"
-                  fill="#fff"
-                ></path>
+                  fill="#fff"></path>
               </svg>
             </div>
           </div>
@@ -124,7 +122,7 @@ const Studio = () => {
           Innovators by heart, <br />
           <span className="gradient-text">Creators</span> by mind.
         </h1>
-        <p className="paragraph mb-5 text-center mt-14 max-w-4xl mx-10 text-style">
+        <p className=" mb-5 text-center mt-14 max-w-4xl mx-10 text-style ">
           With a team of smart and passionate professionals, our agency
           specializes in all elements of digital marketing, from social media
           management to search engine optimization. We are always on the cutting
@@ -134,7 +132,7 @@ const Studio = () => {
         {/* <p className="paragraph mb-10">
                     By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
                 </p> */}
-        <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-xs rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-orange_theme-400 hover:transition-all">
+        <button className="max-w-[205px] h-14 w-full border-2 border-orange_theme-400 text-orange_theme-400 font-circular-medium font-medium text-sm rounded-full inline-flex items-center justify-center uppercase hover:text-white hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:transition-all">
           View Our Services
         </button>
       </div>
@@ -228,8 +226,7 @@ const Studio = () => {
           initialSlide={1}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
-        >
+          className="mySwiper">
           {/* <SwiperSlide>
                         <div className="">
                             <figure className="">

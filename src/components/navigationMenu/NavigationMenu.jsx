@@ -24,29 +24,39 @@ const NavigationMenu = () => {
       <div>
         <ul className="max-w-[60%] mx-auto relative">
           <li className="group">
-            <Link href="/services">
+            <Link
+              href="/services"
+              className="text-[#FFCBC2] inline-block text-[4.7rem] font-bold leading-none  hover:text-white">
               {/* <a className="text-[#FFCBC2] inline-block text-[4.7rem] font-bold leading-none  hover:text-white"> */}
               Services
               {/* </a> */}
             </Link>
             <div className="hidden group-hover:block">
               <ul className="absolute top-[50%] translate-y-[-50%]  left-[350px] flex flex-col">
-                <Link href="/service/social-media-marketing">
+                <Link
+                  href="/service/social-media-marketing"
+                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
                   {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
                   Social Media Marketing
                   {/* </a> */}
                 </Link>
-                <Link href="/service/web-design">
+                <Link
+                  href="/service/web-design"
+                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
                   {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
                   Web Development & Design
                   {/* </a> */}
                 </Link>
-                <Link href="/service/brand-management">
+                <Link
+                  href="/service/brand-management"
+                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
                   {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
                   Branding
                   {/* </a> */}
                 </Link>
-                <Link href="/service/seo">
+                <Link
+                  href="/service/seo"
+                  className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white">
                   {/* <a className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"> */}
                   Seo
                   {/* </a> */}
@@ -57,7 +67,9 @@ const NavigationMenu = () => {
             </div>
           </li>
           <li className="group">
-            <Link href="/work">
+            <Link
+              href="/work"
+              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none">
               {/* <a className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"> */}
               Work
               {/* </a> */}
@@ -70,7 +82,9 @@ const NavigationMenu = () => {
           </li>
 
           <li className="group">
-            <Link href="/studio">
+            <Link
+              href="/studio"
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
               {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
               Studio
               {/* </a> */}
@@ -84,7 +98,9 @@ const NavigationMenu = () => {
             </div>
           </li>
           <li className="group">
-            <Link href="/blog">
+            <Link
+              href="/blog"
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
               {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
               Blog
               {/* </a> */}
@@ -97,7 +113,9 @@ const NavigationMenu = () => {
                         </div> */}
           </li>
           <li className="group">
-            <Link href="/contact">
+            <Link
+              href="/contact"
+              className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white">
               {/* <a className="inline-block font-bold text-[4.7rem] pt-3 leading-none text-[#FFCBC2] hover:text-white"> */}
               Contact
               {/* </a> */}
@@ -111,7 +129,9 @@ const NavigationMenu = () => {
                         </div> */}
           </li>
           <li className="group">
-            <Link href="/resources">
+            <Link
+              href="/resources"
+              className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none">
               {/* <a className="text-[#FFCBC2] hover:text-white inline-block text-[4.7rem] pt-3 font-bold leading-none"> */}
               Resources
               {/* </a> */}
@@ -128,7 +148,7 @@ const NavigationMenu = () => {
         </div>
         <div className="flex items-center">
           <h4 className="text-white font-bold text-2xl py-5 border-r-2 border-white pr-6">
-            Let/'s get cracking
+            Let's get cracking
           </h4>
           <button className="transparentBgColor ml-6 uppercase hover:bg-white hover:text-orange_theme-400 text-white font-bold py-4 px-6 rounded-full hover:transition hover:transition-all">
             Start Your project

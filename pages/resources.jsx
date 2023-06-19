@@ -58,8 +58,7 @@ const Resources = () => {
       <div className="px-10 md:px-28">
         <section
           id="web_design"
-          className="flex flex-col md:flex-row md:items-center justify-between py-28"
-        >
+          className="flex flex-col md:flex-row md:items-center justify-between py-28">
           <div className=" md:w-[40%]">
             <HeadingThree
               cssClass="heading-style"
@@ -70,7 +69,9 @@ const Resources = () => {
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDesign">
+            <Link
+              href="/webDesign"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More
@@ -93,15 +94,16 @@ const Resources = () => {
         </section>
         <section
           id="web_development"
-          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-        >
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center">
           <div className="md:w-[40%]">
             <HeadingThree cssClass="heading-style" title="PPC Resource" />
             <p className="mt-8 mb-14 font-medium text-style">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More
@@ -124,15 +126,16 @@ const Resources = () => {
         </section>
         <section
           id="branding"
-          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-        >
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center">
           <div className="md:w-[40%]">
             <HeadingThree cssClass="heading-style" title="Design Resource" />
             <p className="mt-8 mb-14 font-medium text-style text-black">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More
@@ -155,15 +158,16 @@ const Resources = () => {
         </section>
         <section
           id="digital_marketing"
-          className="flex  justify-between py-28  flex-col md:flex-row md:items-center"
-        >
+          className="flex  justify-between py-28  flex-col md:flex-row md:items-center">
           <div className="md:w-[40%]">
             <HeadingThree cssClass="heading-style" title="Content Resource" />
             <p className="mt-8 mb-14 font-medium text-style">
               Analyzing the market and consumer data helps us provide customized
               solutions to everyday business challenges.
             </p>
-            <Link href="/webDevelopment">
+            <Link
+              href="/webDevelopment"
+              className="border-2 rounded-full font-normal uppercase gradient-button">
               {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
               <span className="w-full h-full mx-0 my-0 gradient-span">
                 Learn More

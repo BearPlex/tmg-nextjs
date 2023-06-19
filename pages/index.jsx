@@ -74,8 +74,7 @@ export default function Home() {
           <div className="w-[40%]">
             {/* <HeadingOne title="Transforming Businesses into Brands" cssClass="mb-6" /> */}
             <h1
-              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
-            >
+              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}>
               Transforming Businesses into
               <span className="gradient-text"> Brands</span>{" "}
             </h1>
@@ -189,7 +188,7 @@ export default function Home() {
         {/* <Agency /> */}
       </div>
 
-      <section className="bg-zinc-800 px-20 py-28 mt-16">
+      <section className="bg-[#171717] px-20 py-28 mt-16">
         <div className="flex items-center justify-between">
           <div className="w-[47%]">
             <Image
@@ -202,7 +201,7 @@ export default function Home() {
           </div>
           <div className="w-[47%] pt-64">
             <HeadingTwo
-              cssClass="text-white text-style-colorless"
+              cssClass="text-white text-style-colorless "
               title="Shit-hot work for hot-shot brands"
             />
           </div>

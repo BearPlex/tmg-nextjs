@@ -33,8 +33,7 @@ const Articles = () => {
           <div
             className="border w-[352px] border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300"
             onClick={() => pushWork(article.id)}
-            key={article.id}
-          >
+            key={article.id}>
             <div className="h-min overflow-hidden">
               {/* <Image
                 width={500}
@@ -61,7 +60,9 @@ const Articles = () => {
       </div>
       <div className="text-center w-full mt-28">
         {/* <a className="border-2 border-orange_theme-400 rounded-full px-6 py-4 font-bold text-orange_theme-400 bg-white hover:bg-orange_theme-400 hover:text-white transition-in-out hover:transition-in-out uppercase"> */}
-        <Link href="/blog">
+        <Link
+          href="/blog"
+          className="border-2 rounded-full font-bold uppercase gradient-button">
           {/* <a className="border-2 rounded-full font-bold uppercase gradient-button"> */}
           <span className="w-full h-full mx-0 my-0 gradient-span">
             View All Blog Posts
