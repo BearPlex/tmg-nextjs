@@ -16,6 +16,7 @@ import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 // import "swiper/css/bundle";
 // import "./styles.css";
 import Image from "../src/components/Image/Image";
+import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 const workStatic = [
   {
     featured_image: workFeaturedImage,
@@ -66,58 +67,50 @@ const Work = () => {
   }, []);
   return (
     <>
-      {/* {console.log("Wrok Array", work)} */}
-
-      <section className="pt-20 mb-16">
-        <Header />
-      </section>
-      <section className="">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 px-28 gap-10 pt-12 items-center">
-            <div className="w-full text-center">
-              <Image
-                width={500}
-                height={300}
-                src={kotaLogo.src}
-                alt="kota canvas"
-                loading="lazy"
-                className="max-w-full"
-              />
-            </div>
-            <div className="w-full">
-              <h4 className="mb-6 heading-style font-bold leading-tight">
-                We are experts in bringing brands to life digitally.
-              </h4>
-              <p className="text-black text-style">
-                TMG is a progressive and insightful design agency, technically
-                and creatively skilled to translate your brand into its best
-                digital self. Our design and development approach creates
-                impactful, engaging brands and immersive digital experiences
-                that bring you a return on creativity.
-              </p>
-            </div>
+      <PageWrapper>
+        <section className="grid grid-cols-2 px-32 gap-10 pt-12 items-center">
+          <div className="w-full text-center">
+            <Image
+              width={500}
+              height={300}
+              src={kotaLogo.src}
+              alt="kota canvas"
+              loading="lazy"
+              className="max-w-full"
+            />
           </div>
-        </div>
-      </section>
-      <Tabs className="p-20 px-28 tabs-wrapper">
-        <TabList>
-          {
-            // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
-            // work.map((item, index) => <Tab key={index}>Hello</Tab>)
-          }
-        </TabList>
-        {work == "" ? (
-          <ExpertiseStatic list={workStatic} cssClass="text-black" />
-        ) : (
-          work.map((item, index) => (
-            <TabPanel key={index}>
-              {<Expertise list={work} cssClass="text-black" />}
-            </TabPanel>
-          ))
-        )}
-      </Tabs>
-
-      <Footer />
+          <div className="w-full">
+            <h4 className="mb-6 heading-style font-bold leading-tight">
+              We are experts in bringing brands to life digitally.
+            </h4>
+            <p className="text-black text-style">
+              TMG is a progressive and insightful design agency, technically and
+              creatively skilled to translate your brand into its best digital
+              self. Our design and development approach creates impactful,
+              engaging brands and immersive digital experiences that bring you a
+              return on creativity.
+            </p>
+          </div>
+        </section>
+        <Tabs className="p-20 px-32 tabs-wrapper">
+          <TabList>
+            {
+              // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
+              // work.map((item, index) => <Tab key={index}>Hello</Tab>)
+            }
+          </TabList>
+          {work == "" ? (
+            <ExpertiseStatic list={workStatic} cssClass="text-black" />
+          ) : (
+            work.map((item, index) => (
+              <TabPanel key={index}>
+                {<Expertise list={work} cssClass="text-black" />}
+              </TabPanel>
+            ))
+          )}
+        </Tabs>
+        <Footer />
+      </PageWrapper>
     </>
   );
 };

@@ -39,12 +39,7 @@ const Services = () => {
   };
 
   return (
-    <section
-      className="px-20 py-28 background-gradient"
-      // style={{
-      //   backgroundImage: "linear-gradient(91.87deg, #F79B60 0%, #EE245F 100%)",
-      // }}
-    >
+    <section className="px-32 gap-10 py-28 background-gradient">
       <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
         Our Services
       </span>
@@ -54,21 +49,24 @@ const Services = () => {
             className={`mb-6 text-[5.5rem] font-bold text-white cursor-pointer transition-opacity leading-none ${
               type === "design" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("design")}>
+            onClick={() => setType("design")}
+          >
             Web Design & Development
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
               type === "branding" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("branding")}>
+            onClick={() => setType("branding")}
+          >
             Branding
           </h3>
           <h3
             className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
               type === "digital" ? "text-[35px]" : "text-3xl"
             }`}
-            onClick={() => setType("digital")}>
+            onClick={() => setType("digital")}
+          >
             Digital Marketing
           </h3>
           {/* <a
@@ -87,7 +85,7 @@ const Services = () => {
             loading="lazy"
             className="w-[100%]"
           />
-          <p className="text-lg text-white font-normal mt-10 leading-loose">
+          <p className="text-xl text-white font-normal mt-10 leading-loose">
             {handleGetImages().detail}
           </p>
         </div>

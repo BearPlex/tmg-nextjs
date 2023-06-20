@@ -27,7 +27,7 @@ const Articles = () => {
     // console.log("Id", id);
   };
   return (
-    <div className="px-20 pb-10">
+    <div className="px-32 pb-10">
       <HeadingTwo title="Latest Articles" cssClass="mb-20 text-zinc-700" />
       <div className="flex gap-14">
         {articles.map((article, index) => (

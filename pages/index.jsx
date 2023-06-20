@@ -17,13 +17,14 @@ import Expertise from "../src/components/expertise/Expertise";
 import Agency from "../src/components/agency/Agency";
 import { work } from "../src/helpers/Helpers";
 import mainImage from "../src/assets/svg/home_work_logo.svg";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import hero from "../src/assets/images/hero-1.png";
 import workFeaturedImage from "../src/assets/images/work-featured-1.png";
 import workGallery1 from "../src/assets/images/work-gall-1.png";
 import workGallery2 from "../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
+import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import Image from "../src/components/Image/Image";
 // import "swiper/css/bundle";
 // import "./styles.css";
@@ -55,138 +56,124 @@ export default function Home() {
       });
   }, []);
   return (
-    <>
-      <div className="pt-20 mb-16">
-        <Header />
-      </div>
-      <section className="px-20 pt-16">
-        <div className="w-full flex justify-between items-center">
-          <div className="w-[50%] text-center">
-            {/* <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" /> */}
-            <Image
-              width={500}
-              height={150}
-              src={kotaLogo}
-              alt="kota canvas"
-              loading="lazy"
-              className="max-w-full"
-            />
-          </div>
-          <div className="w-[40%]">
-            {/* <HeadingOne title="Transforming Businesses into Brands" cssClass="mb-6" /> */}
-            <h1
-              className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
-            >
-              Transforming Businesses into
-              <span className="gradient-text"> Brands</span>{" "}
-            </h1>
-            <p className="text-zinc-700 font-circular-medium font-medium text-style">
-              We offer 360-degree marketing solutions such as PPC Advertisement,
-              Search Engine Optimization and Web Development Services. Our team
-              is technically and professionally equipped to make every{" "}
-              <span className="gradient-text">brand a success story.</span>
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-6">
-          <Image
-            width={500}
-            height={300}
-            src={group.src}
-            alt="the drum logo"
-            loading="lazy"
-            className="w-[50%] object-contain"
-          />
-        </div>
-      </section>
-
-      {/* making brands better section*/}
-      {/* <section className="flex justify-between items-center pt-20 pr-20 gap-4">
-                <div className="video-wrapper w-[50%]">
-                    <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="video here" />
-                </div>
-                <div className="w-[40%]">
-                    <HeadingTwo title="Making brands a damn site better" cssClass="mb-6 text-zinc-700" />
-                    <p className="paragraph">Let’s face it, first impressions matter. Your website’s an opportunity to wow your audience, so why waste it with bad design? Because brands win new fans when they’re brave enough to go beyond their creative comfort zone.</p>
-                </div>
-            </section> */}
-
-      {/* new hero section */}
-      <section>
-        <div className="relative isolate overflow-hidden bg-white">
-          <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-              <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
-                Providing Exponential
-                <span className="gradient-text"> User Experience</span>
-              </h1>
-              <p className="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
-                Let’s face it, first impressions matter. Why waste and settle
-                for something less?
-                <br />
-                <br />
-                With user-centric designs, result oriented designing tools, and
-                in-house built features, we help increase sales and add value to
-                your Business and e-Commerce ventures.
-              </p>
-            </div>
-            <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-              <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-                <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+    <React.Fragment>
+      <PageWrapper>
+        <div>
+          <section className="w-full">
+            <div className="px-32">
+              <div className="flex justify-between items-center gap-10">
+                <div className="text-center w-full ">
+                  <Image
+                    width={500}
+                    height={150}
+                    src={kotaLogo}
+                    alt="kota canvas"
+                    loading="lazy"
+                    className="max-w-full"
+                  />
                   <Image
                     width={500}
                     height={300}
-                    src={hero.src}
-                    alt="App screenshot"
-                    className=" rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                    src={group.src}
+                    alt="the drum logo"
+                    loading="lazy"
+                    className="w-[90%] object-contain"
                   />
+                </div>
+                <div className="w-full">
+                  <h1
+                    className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
+                  >
+                    Transforming Businesses into
+                    <span className="gradient-text"> Brands</span>{" "}
+                  </h1>
+                  <p className="text-zinc-700 font-circular-medium font-medium text-style">
+                    We offer 360-degree marketing solutions such as PPC
+                    Advertisement, Search Engine Optimization and Web
+                    Development Services. Our team is technically and
+                    professionally equipped to make every{" "}
+                    <span className="gradient-text">
+                      brand a success story.
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      {/* creative digital agency section*/}
+          </section>
 
-      <div className="p-20 pt-4 ">
-        <div className="w-full flex items-center justify-center pb-16">
-          <h2 className="w-4/5 text-center font-bold font-sofia-bold heading-style leading-tight">
-            Our team bootstraps the growth of your business using these{" "}
-            <span className="gradient-text">4 Elements</span>
-          </h2>
-        </div>
-        {/* <Agency /> */}
-      </div>
+          <section className="w-full bg-white overflow-x-hidden">
+            <div className="px-24 flex flex-row gap-10 pl-32 pt-10 sm:pb-32 lg:py-40">
+              {/* <div className=""> */}
+              <div className="w-1/2 h-[500px] flex flex-col justify-center">
+                <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
+                  Providing Exponential
+                  <span className="gradient-text"> User Experience</span>
+                </h1>
+                <p className="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
+                  Let’s face it, first impressions matter. Why waste and settle
+                  for something less?
+                  <br />
+                  <br />
+                  With user-centric designs, result oriented designing tools,
+                  and in-house built features, we help increase sales and add
+                  value to your Business and e-Commerce ventures.
+                </p>
+              </div>
+              <div className="w-1/2 relative ">
+                <div className="absolute inset-[-100px] left-0 flex items-center justify-center">
+                  <Image
+                    width={1000}
+                    height={400}
+                    src={hero.src}
+                    alt="App screenshot"
+                    className="w-full h-full ring-1 ring-gray-900/10"
+                  />
+                </div>
+              </div>
+              {/* </div> */}
+            </div>
+          </section>
 
-      <section className="bg-zinc-800 px-20 py-28 mt-16">
-        <div className="flex items-center justify-between">
-          <div className="w-[47%]">
-            <Image
-              width={500}
-              height={300}
-              src={mainImage.src}
-              className="w-96 mx-auto"
-              alt="work images"
-            />
+          <div className="p-20 pt-16 ">
+            <div className="w-full flex items-center justify-center pb-16">
+              <h2 className="w-4/5 text-center font-bold font-sofia-bold heading-style leading-tight">
+                Our team bootstraps the growth of your business using these{" "}
+                <span className="gradient-text">4 Elements</span>
+              </h2>
+            </div>
           </div>
-          <div className="w-[47%] pt-64">
-            <HeadingTwo
-              cssClass="text-white text-style-colorless"
-              title="Shit-hot work for hot-shot brands"
-            />
-          </div>
-        </div>
 
-        {work == "" ? (
-          <ExpertiseStatic list={workStatic} cssClass="text-white" />
-        ) : (
-          <Expertise list={work} cssClass="text-white" />
-        )}
-      </section>
-      <Services />
-      <Clients />
-      <Articles />
-      <Footer />
-    </>
+          <section className="bg-zinc-800 px-32 py-28 mt-16">
+            <div className="flex items-center gap-10 justify-between">
+              <div className="w-[50%]">
+                <Image
+                  width={0}
+                  height={0}
+                  src={mainImage.src}
+                  className="w-96"
+                  alt="work images"
+                />
+              </div>
+              <div className="w-[50%] flex items-center">
+                <HeadingTwo
+                  cssClass="text-white text-style-colorless"
+                  title="Shit-hot work for hot-shot brands"
+                />
+              </div>
+            </div>
+
+            {/* {work && work.length ? (
+              <ExpertiseStatic list={workStatic} cssClass="text-white" />
+            ) : (
+              <Expertise list={work} cssClass="text-white" />
+            )} */}
+          </section>
+          <Services />
+          <Clients />
+          <Articles />
+          <Footer />
+        </div>
+      </PageWrapper>
+    </React.Fragment>
   );
 }

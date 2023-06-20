@@ -120,6 +120,7 @@ body {
   color: transparent;
   border-radius:;
   border-color: #ee2760;
+  /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
 }
 .gradient-button::before {
   content: "";

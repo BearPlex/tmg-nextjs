@@ -3,7 +3,7 @@ import { clients } from "../../helpers/Helpers";
 
 const Clients = () => {
   return (
-    <div className="px-20 py-28 max-w-6xl mx-auto text-center">
+    <div className="px-32 py-28 text-center">
       <HeadingTwo title="Our Clients" />
       {/* <div className="pt-20 flex item-center flex-wrap">
                     {

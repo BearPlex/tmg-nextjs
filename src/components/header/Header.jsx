@@ -10,7 +10,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <header className="fixed top-16 w-full px-10 z-20">
+      <header className="fixed w-full px-32 z-20 py-11">
         <nav className="flex items-center justify-between">
           <Link href="/">
             {/* <a className={showMenu ? "hidden" : "block"}> */}
