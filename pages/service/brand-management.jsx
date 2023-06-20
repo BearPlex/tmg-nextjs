@@ -57,11 +57,11 @@ function Seo() {
               />
             </div>
             <div className="w-full">
-              <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+              <h4 className="mb-6  heading-style">
                 <span className="gradient-text">Brand Identity</span> and
                 Creative Management Services
               </h4>
-              <p className="text-2xl">
+              <p className="text-style mb-6">
                 TMG combines strategic directions with creative designs to
                 ensure{" "}
                 <span className="gradient-text">unique brand identity.</span>{" "}
@@ -81,14 +81,13 @@ function Seo() {
             <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <h1
-                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
-                >
+                  className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-5xl max-w-xl`}>
                   Specialized branding services that
                   <span className="gradient-text"> creates trust</span>{" "}
                 </h1>
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-style">
                   Every brand must have a distinctive design, coherence and a
                   story that keeps the audience engaged. 
                   <br />
@@ -118,21 +117,19 @@ function Seo() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               <div>
-                <dd className="mt-10 text-white relative text-6xl top-6 max-w-xs">
+                <dd className="mt-10 text-white relative text-6xl font-bold top-6 max-w-xs">
                   What makes us sooo good at it?
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-white text-5xl">
-                  Experience
-                </dt>
+                <dt className="font-bold text-white text-5xl">Experience</dt>
                 <dd className="mt-6 text-white text-base ">
                   We’ve worked with brands from a huge range of industries to
                   showcase their differences through strategic design that
                   positions them perfectly. {" "}
                 </dd>
 
-                <dt className="font-semibold text-white text-5xl xl:mt-10">
+                <dt className="font-bold text-white text-5xl xl:mt-10">
                   Strategy
                 </dt>
                 <dd className="mt-6 text-white text-base">
@@ -142,15 +139,13 @@ function Seo() {
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-white text-5xl ">
-                  Creativity
-                </dt>
+                <dt className="font-bold text-white text-5xl ">Creativity</dt>
                 <dd className="mt-6 text-white text-base">
                   Guided by your vision and values, our branding services will
                   bring your business to life with artistic flair and attention
                   to detail, to create a brand that is unique and memorable.{" "}
                 </dd>
-                <dt className="font-semibold text-white text-5xl xl:mt-4">
+                <dt className="font-bold text-white text-5xl xl:mt-4">
                   Sustainability
                 </dt>
                 <dd className="mt-6 text-white text-base">
@@ -182,7 +177,7 @@ function Seo() {
                   across all channels - from your website to your social media
                   accounts and your physical collateral. 
                 </p>
-                <div className=" flex items-center gap-x-6">
+                <div className=" flex items-center gap-x-6 mt-8">
                   <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
@@ -210,7 +205,7 @@ function Seo() {
                 />
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-[35px]">
                   Social Presence
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -225,7 +220,7 @@ function Seo() {
                   help businesses reach their target audience and achieve their
                   desired results.  
                 </p>
-                <div className=" flex items-center gap-x-6">
+                <div className=" flex items-center gap-x-6 mt-8">
                   <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
@@ -244,7 +239,7 @@ function Seo() {
                   with your team to devise a tone that resonates with your
                   customers and inspires them to action.
                 </p>
-                <div className=" flex items-center gap-x-6">
+                <div className=" flex items-center gap-x-6 mt-8">
                   <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
@@ -282,7 +277,7 @@ function Seo() {
                   results to you, that would help your business get authentic
                   traffic without spending another dime on it. 
                 </p>
-                <div className=" flex items-center gap-x-6">
+                <div className=" flex items-center gap-x-6 mt-8">
                   <GradientButton text="Learn More" route="/" />
                 </div>
               </div>
@@ -321,7 +316,7 @@ function Seo() {
               />
             </div>
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-              <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-[35px]">
                 Dedicated Resource Allocation
               </h1>
               <p className="mt-6 text-xl leading-8 text-white font-normal">
