@@ -68,7 +68,7 @@ const Work = () => {
   return (
     <>
       <PageWrapper>
-        <section className="grid grid-cols-2 px-32 gap-10 pt-12 items-center">
+        <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
           <div className="w-full text-center">
             <Image
               width={500}
@@ -92,7 +92,7 @@ const Work = () => {
             </p>
           </div>
         </section>
-        <Tabs className="p-20 px-32 tabs-wrapper">
+        <Tabs className="p-20 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 tabs-wrapper">
           <TabList>
             {
               // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)

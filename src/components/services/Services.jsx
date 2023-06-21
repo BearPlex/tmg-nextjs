@@ -39,31 +39,37 @@ const Services = () => {
   };
 
   return (
-    <section className="px-32 gap-10 py-28 background-gradient">
+    <section className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 py-28 background-gradient">
       <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
         Our Services
       </span>
       <div className="grid grid-cols-2 gap-4">
-        <div>
+        <div className="flex flex-col justify-center">
           <h3
-            className={`mb-6 text-[5.5rem] font-bold text-white cursor-pointer transition-opacity leading-none ${
-              type === "design" ? "text-[35px]" : "text-3xl"
+            className={`mb-6 font-bold text-white cursor-pointer transition-opacity leading-none ${
+              type === "design"
+                ? " text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
+                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
             }`}
             onClick={() => setType("design")}
           >
             Web Design & Development
           </h3>
           <h3
-            className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
-              type === "branding" ? "text-[35px]" : "text-3xl"
+            className={`mb-6 text-white font-bold cursor-pointer transition-opacity leading-none ${
+              type === "branding"
+                ? "text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
+                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
             }`}
             onClick={() => setType("branding")}
           >
             Branding
           </h3>
           <h3
-            className={`mb-6 text-[5.5rem] text-white font-bold cursor-pointer transition-opacity leading-none ${
-              type === "digital" ? "text-[35px]" : "text-3xl"
+            className={`mb-6 text-white font-bold cursor-pointer transition-opacity leading-none ${
+              type === "digital"
+                ? "text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
+                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
             }`}
             onClick={() => setType("digital")}
           >

@@ -43,9 +43,7 @@ const workStatic = [
 ];
 export default function Home() {
   const [work, setWork] = useState([]);
-  {
-    console.log("Work", work);
-  }
+  console.log("Work", work);
   useEffect(() => {
     axios
       .get("http://localhost:1337/api/work-kinimos?populate=*")
@@ -62,7 +60,7 @@ export default function Home() {
       <PageWrapper>
         <div>
           <section className="w-full">
-            <div className="px-32">
+            <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
               <div className="flex justify-between items-center gap-10">
                 <div className="text-center w-full ">
                   <Image
@@ -104,7 +102,7 @@ export default function Home() {
           </section>
 
           <section className="w-full bg-white overflow-x-hidden">
-            <div className="px-24 flex flex-row gap-10 pl-32 pt-10 sm:pb-32 lg:py-40">
+            <div className="px-24 flex flex-row gap-10 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 pt-10 sm:pb-32 lg:py-40">
               {/* <div className=""> */}
               <div className="w-1/2 h-[500px] flex flex-col justify-center">
                 <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
@@ -143,24 +141,31 @@ export default function Home() {
                 <span className="gradient-text">4 Elements</span>
               </h2>
             </div>
+            {/* <Agency /> */}
           </div>
+          <Services />
 
-          <section className="bg-zinc-800 px-32 py-28 mt-16">
+          <section className="bg-zinc-800 h-auto px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-28 pt-36 ">
             <div className="flex items-center gap-10 justify-between">
               <div className="w-[50%]">
-                <Image
-                  width={0}
-                  height={0}
-                  src={mainImage.src}
-                  className="w-96"
-                  alt="work images"
-                />
+                <div className="w-4/6 mr-auto">
+                  <Image
+                    width={0}
+                    height={0}
+                    src={mainImage.src}
+                    // className="w-96"
+                    layout="responsive"
+                    objectFit="cover"
+                    alt="work images"
+                  />
+                </div>
               </div>
               <div className="w-[50%] flex items-center">
-                <HeadingTwo
-                  cssClass="text-white text-style-colorless"
-                  title="Shit-hot work for hot-shot brands"
-                />
+                <div className="w-5/6">
+                  <p className="text-white text-7xl font-bold">
+                    Collaborating with trending brands
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -170,7 +175,7 @@ export default function Home() {
               <Expertise list={work} cssClass="text-white" />
             )}
           </section>
-          <Services />
+
           <Clients />
           <Articles />
           <Footer />

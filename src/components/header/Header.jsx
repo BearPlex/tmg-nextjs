@@ -10,7 +10,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <header className="fixed w-full px-32 z-20 py-11">
+      <header className="fixed w-full px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 z-20 py-11">
         <nav className="flex items-center justify-between">
           <Link href="/">
             {/* <a className={showMenu ? "hidden" : "block"}> */}
@@ -30,7 +30,7 @@ const Header = () => {
           <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
             <li className={showMenu ? "hidden" : "block"}>
               <Link
-                className="text-xl font-sofia-extrabold font-extrabold text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                className="text-xl font-sofia-extrabold font-extrabold  text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
                 href="/work"
               >
                 Work

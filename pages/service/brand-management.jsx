@@ -118,7 +118,7 @@ function Seo() {
 
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="px-32">
+              <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
                 <dl className="mt-16 grid grid-cols-1 gap-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
                     <dd className="mt-10 text-white relative text-6xl font-bold top-6">
@@ -171,7 +171,7 @@ function Seo() {
           <section>
             <div className="bg-[#212121]">
               <div className="w-full pt-14">
-                <div className="px-32 py-16 sm:py-24 flex items-center gap-10  lg:py-20">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-10  lg:py-20">
                   <div className="w-1/2 lg:mx-0 lg:flex-auto">
                     <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Image
@@ -206,7 +206,7 @@ function Seo() {
               </div>
 
               <div className="w-full">
-                <div className="px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
                   <div className="w-1/2 mt-16 sm:mt-24 lg:mt-0 ">
                     <Image
                       width={0}
@@ -242,7 +242,7 @@ function Seo() {
               </div>
 
               <div className="w-full pt-14">
-                <div className="px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Tone of Voice{" "}
@@ -272,7 +272,7 @@ function Seo() {
               </div>
 
               <div className="relative isolate ">
-                <div className="px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
                   <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}

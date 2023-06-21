@@ -66,7 +66,7 @@ const Studio = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <section className="grid grid-cols-2 px-32 gap-10 pt-12 items-center">
+          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
             <div className="w-full text-center">
               <Image
                 width={500}
@@ -197,7 +197,7 @@ const Studio = () => {
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="mt-20 px-32">
+          <section className="mt-20 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
             <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
               <div className="mb-4">
                 <Image
@@ -256,7 +256,7 @@ const Studio = () => {
             </div>
           </section>
           <section className="pt-36 bg-zinc-800 mt-60 pb-10">
-            <div className="flex items-center px-32 justify-between gap-10 pb-20">
+            <div className="flex items-center px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 justify-between gap-10 pb-20">
               <div className="w-[50%]">
                 <Image
                   width={500}

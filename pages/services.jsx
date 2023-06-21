@@ -35,7 +35,7 @@ const Services = () => {
     <>
       <PageWrapper>
         <section>
-          <section className="grid grid-cols-2 px-32 gap-10 pt-12 items-center">
+          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
             <div className="w-full text-center">
               <Image
                 width={500}
@@ -153,7 +153,7 @@ const Services = () => {
             </div>
           </section>
 
-          <div className="px-32">
+          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
             <section
               id="web_design"
               className="flex items-center justify-between gap-10 py-28 cursor-pointer"

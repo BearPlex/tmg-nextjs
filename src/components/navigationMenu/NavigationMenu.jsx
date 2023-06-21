@@ -24,7 +24,7 @@ const NavigationMenu = () => {
   }, [isHovered]);
 
   return (
-    <div className="background-gradient z-10 w-full h-full px-20 py-36 fixed top-0">
+    <div className="background-gradient z-10 w-full h-full px-20 py-[10vh] fixed top-0">
       <div className="inline-block w-56 cursor-pointer"></div>
       <div className="">
         <ul className="max-w-[60%] mx-auto relative">

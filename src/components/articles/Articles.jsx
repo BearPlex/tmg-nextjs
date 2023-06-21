@@ -16,7 +16,7 @@ const Articles = () => {
     axios
       .get("http://localhost:1337/api/blogs?populate=*")
       .then((res) => {
-        // console.log("Res Blogs", res.data.data);
+        console.log("Res Blogs", res.data.data);
         setArticles(res.data.data);
       })
       .catch((err) => {
@@ -28,7 +28,7 @@ const Articles = () => {
     // console.log("Id", id);
   };
   return (
-    <div className="px-32 pb-10">
+    <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-10">
       <HeadingTwo title="Latest Articles" cssClass="mb-20 text-zinc-700" />
       <div className="flex gap-14">
         {articles.map((article, index) => (
@@ -46,7 +46,7 @@ const Articles = () => {
                 className="object-cover overflow-hidden scale-100 group-hover:scale-110"
               />
             </div>
-            <div className="p-9">
+            <div className="py-9 px-6">
               {
                 <span className="pink-color font-medium text-base uppercase inline-block  group-hover:text-black">
                   {article.attributes.title}

@@ -42,7 +42,7 @@ const Blog = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <section className="grid grid-cols-2 px-32 gap-10 pt-12 items-center">
+          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
             <div className="w-full text-center">
               <Image
                 width={500}
@@ -70,7 +70,7 @@ const Blog = () => {
             </div>
           </section>
 
-          <div className="px-32 pt-20">
+          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pt-20">
             <a href="" className="relative blog-banner w-full h-full">
               {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}

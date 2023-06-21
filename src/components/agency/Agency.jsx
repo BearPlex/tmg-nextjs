@@ -1,31 +1,51 @@
 /* eslint-disable */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import { agency } from '../../helpers/Helpers';
 import agencyImage1 from "../../assets/images/homepage-lovebrands.png";
 import agencyImage2 from "../../assets/images/homepage-tribepad.png";
 import agencyImage3 from "../../assets/images/homepage-sym.png";
 import Image from "../Image/Image";
 const Agency = () => {
+  const [imageSrc, setImageSrc] = useState(agencyImage1.src);
   useEffect(() => {
+    const handleScroll = () => {
+      const beautyRef = document.getElementById("beautyRef");
+      const thoughRef = document.getElementById("thoughRef");
+      let newImageSrc = agencyImage1.src;
+
+      if (
+        beautyRef.getBoundingClientRect().top < 0 &&
+        thoughRef.getBoundingClientRect().top > 0
+      ) {
+        newImageSrc = agencyImage2.src;
+      } else if (thoughRef.getBoundingClientRect().top < 0) {
+        newImageSrc = agencyImage3.src;
+      }
+
+      if (newImageSrc !== imageSrc) {
+        setImageSrc(newImageSrc);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, [imageSrc]);
 
-  const handleScroll = () => {
-    const image = document.getElementById("imageRef");
-    const beautyRef = document.getElementById("beautyRef");
-    const thoughRef = document.getElementById("thoughRef");
-    if (
-      beautyRef.getBoundingClientRect().top < 0 &&
-      thoughRef.getBoundingClientRect().top > 0
-    ) {
-      image.src = agencyImage2.src;
-    } else if (thoughRef.getBoundingClientRect().top < 0) {
-      image.src = agencyImage3.src;
-    } else image.src = agencyImage1.src;
-  };
+  // const handleScroll = () => {
+  //   const image = document.getElementById("imageRef");
+  //   const beautyRef = document.getElementById("beautyRef");
+  //   const thoughRef = document.getElementById("thoughRef");
+  //   if (
+  //     beautyRef.getBoundingClientRect().top < 0 &&
+  //     thoughRef.getBoundingClientRect().top > 0
+  //   ) {
+  //     image.src = agencyImage2.src;
+  //   } else if (thoughRef.getBoundingClientRect().top < 0) {
+  //     image.src = agencyImage3.src;
+  //   } else image.src = agencyImage1.src;
+  // };
 
   return (
     <div className="pt-20 flex items-start justify-between">
@@ -73,14 +93,15 @@ const Agency = () => {
           </p>
         </div>
       </div>
-      <div className="w-1/2 sticky top-32">
-        {/* <Image
+      <div className="w-1/2 sticky">
+        <Image
           width={500}
           height={300}
           id="imageRef"
+          src={imageSrc}
           alt="agency images"
           className="rounded-lg shadow-2xl"
-        /> */}
+        />
       </div>
     </div>
   );

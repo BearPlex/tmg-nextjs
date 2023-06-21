@@ -21,7 +21,7 @@ const Resources = () => {
     <>
       <PageWrapper>
         <section>
-          <section className="grid grid-cols-1 md:grid-cols-2 px-32 gap-10 pt-20 md:pt-12 items-center ">
+          <section className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-20 md:pt-12 items-center ">
             <div className="w-full text-center">
               <Image
                 width={500}
@@ -56,7 +56,7 @@ const Resources = () => {
             </div>
           </section>
 
-          <div className="px-32">
+          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
             <section
               id="web_design"
               className="flex flex-col md:flex-row md:items-center gap-10 justify-between py-28"
