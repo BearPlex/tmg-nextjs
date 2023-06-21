@@ -43,7 +43,9 @@ const workStatic = [
 ];
 export default function Home() {
   const [work, setWork] = useState([]);
-  // {console.log("Work",blogsData)}
+  {
+    console.log("Work", work);
+  }
   useEffect(() => {
     axios
       .get("http://localhost:1337/api/work-kinimos?populate=*")
@@ -162,11 +164,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* {work && work.length ? (
+            {work && work.length ? (
               <ExpertiseStatic list={workStatic} cssClass="text-white" />
             ) : (
               <Expertise list={work} cssClass="text-white" />
-            )} */}
+            )}
           </section>
           <Services />
           <Clients />

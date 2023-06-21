@@ -13,8 +13,8 @@ const Expertise = (props) => {
   // console.log("Expertise Called");
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex mt-14 items-center justify-between flex-wrap">
+      <div className="w-full">
+        <div className="flex mt-14 items-center gap-10 justify-between flex-wrap">
           {list.map((item, index) => (
             <div
               key={index}
@@ -24,13 +24,13 @@ const Expertise = (props) => {
               {/* {console.log("List", item)} */}
               <div>
                 <div className="relative work-images h-full">
-                  {/* <Image
+                  <Image
                     width={500}
                     height={300}
                     src={`http://localhost:1337${item.attributes?.featured_image.data.attributes?.url}`}
                     alt="work images"
                     className="h-full block max-w-full object-cover"
-                  /> */}
+                  />
                 </div>
                 {/* {console.log("UR", item.attributes)} */}
                 <div className="group">

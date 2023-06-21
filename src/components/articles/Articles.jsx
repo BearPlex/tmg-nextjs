@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import GradientButton from "../button/GradientButton";
 import { useRouter } from "next/router";
+import Image from "../Image/Image";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   // {console.log("Work",blogsData)}
@@ -32,29 +33,29 @@ const Articles = () => {
       <div className="flex gap-14">
         {articles.map((article, index) => (
           <div
-            className="border w-[352px] border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300"
+            className="border w-[352px] border-black h-full group overflow-hidden hover:bg-pink-400"
             onClick={() => pushWork(article.id)}
             key={article.id}
           >
             <div className="h-min overflow-hidden">
-              {/* <Image
+              <Image
                 width={500}
                 height={300}
                 src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`}
                 alt="blog images"
-                className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500"
-              /> */}
+                className="object-cover overflow-hidden scale-100 group-hover:scale-110"
+              />
             </div>
             <div className="p-9">
               {
-                <span className="pink-color font-medium text-base uppercase inline-block group-hover:transition-all group-hover:delay-150 group-hover:text-black">
+                <span className="pink-color font-medium text-base uppercase inline-block  group-hover:text-black">
                   {article.attributes.title}
                 </span>
               }
 
               <HeadingThree
                 title={article.attributes.sub_title}
-                cssClass="text-2xl mt-4 group-hover:text-white transition-all"
+                cssClass="text-2xl mt-4 group-hover:text-white"
               />
             </div>
           </div>

@@ -14,10 +14,16 @@ const blogDetail = () => {
       </span>
       <HeadingTwo title="Designing more sustainable websites." />
       <div>
-        {/* <Image decoding="async" width={500} height={300} src="" className="w-[50px] h-[50px] rounded-full " /> */}
+        {/* <Image
+          decoding="async"
+          width={500}
+          height={300}
+          src=""
+          className="w-[50px] h-[50px] rounded-full "
+        /> */}
         <span className="text-base text-pink-400 uppercase mt-3">BY IZZY</span>
       </div>
-      {/* <Image decoding="async" width={500} height={300} src="" /> */}
+      <Image decoding="async" width={500} height={300} src="" />
       <div className="max-w-2xl w-full mx-auto">
         <HeadingThree title="Introduction." cssClass="text-pink-400" />
         <p className="text-zinc-700 pb-20">

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../../src/components/header/Header";
@@ -24,7 +23,7 @@ function WorkDetail() {
     axios
       .get(`http://localhost:1337/api/work-kinimos/${id}?populate=*`)
       .then((res) => {
-        // console.log("Res", res.data.data);
+        console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {

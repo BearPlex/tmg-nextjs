@@ -26,17 +26,24 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-const ImageComponent = (props) => {
+const ImageComponent = ({
+  alt,
+  width = 500,
+  height = 500,
+  src,
+  className,
+  ...otherProps
+}) => {
   return (
     <ErrorBoundary>
       <Image
-        id="imageRef"
-        alt={props.alt}
-        width={props?.width ? props?.width : "500"}
-        height={props?.height ? props?.height : "500"}
-        src={props.src}
-        className={`${props.className}`}
+        alt={alt}
+        width={width ? width : "500"}
+        height={height ? height : "500"}
+        src={src}
+        className={`${className}`}
         decoding="async"
+        {...otherProps}
       />
     </ErrorBoundary>
   );

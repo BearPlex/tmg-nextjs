@@ -33,17 +33,20 @@ function BlogDetail() {
   const props = {
     id,
   };
-  // const [work,setWork]=useState([])
-  // // {console.log("Work",blogsData)}
-  // useEffect(()=>{
-  // axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then((res)=>{
-  //     console.log("Res",res.data.data)
-  //     setWork(res.data.data)
-  // }).catch((err)=>{
-  //     console.log("Error",err)
-  // })
-  // },[])
-  // console.log("Blog Static", blogsStatic);
+  const [work, setWork] = useState([]);
+  // {console.log("Work",blogsData)}
+  useEffect(() => {
+    axios
+      .get(`http://localhost:1337/api/blogs/${id}?populate=*`)
+      .then((res) => {
+        console.log("Res", res.data.data);
+        setWork(res.data.data);
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
+  }, []);
+  console.log("Blog Static", blogsStatic);
   return (
     <>
       <section className="pt-20">
