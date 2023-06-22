@@ -20,7 +20,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="relative bg-[#1B1B1B] pt-16 pb-12">
+      <footer className="relative bg-[#1B1B1B] pt-20 pb-12">
         <div className="w-full">
           <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 text-white">
             <div className="flex flex-wrap text-left lg:text-left">
@@ -66,7 +66,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 text-[18px] hover:text-blueGray-800 font-extrabold block pb-3  text-base"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3  "
                           href="/work"
                         >
                           Work
@@ -74,7 +74,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 text-[18px] hover:text-blueGray-800 font-extrabold block pb-3 text-base"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 "
                           href="/services"
                         >
                           Services
@@ -82,7 +82,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 text-[18px] hover:text-blueGray-800 font-extrabold block pb-3 text-base"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 "
                           href="/blog"
                         >
                           Blog
@@ -90,7 +90,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 text-[18px] hover:text-blueGray-800 font-extrabold block pb-3 mt-3 text-base"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 mt-3 "
                           href="/contact"
                         >
                           Contact
@@ -98,7 +98,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          className="text-blueGray-600 text-[18px] hover:text-blueGray-800 font-extrabold block pb-3 text-base"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 "
                           href="/privacy-policy"
                         >
                           Privacy Policy
