@@ -8,7 +8,7 @@ const Clients = () => {
       <HeadingTwo title="Our Clients" />
       <div className="pt-20 flex item-center flex-wrap">
         {clients.map((item, index) => (
-          <div className="w-1/5 inline-flex justify-center mb-14">
+          <div key={index} className="w-1/5 inline-flex justify-center mb-14">
             <Image
               decoding="async"
               width={500}
