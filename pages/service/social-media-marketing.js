@@ -63,9 +63,7 @@ function Socialmediamarketing() {
                   <p className="text-2xl">
                     With proven game changing results, our award winning
                     performance experts ensure that all the leads turn into a
-                    <span className="gradient-text">
-                      profitable conversion.
-                    </span>{" "}
+                    <span className="gradientText">profitable conversion.</span>{" "}
                   </p>
                   <GradientButton
                     text="Book Free Consultation Today"
@@ -77,7 +75,7 @@ function Socialmediamarketing() {
           </section>
 
           <section>
-            <div className="bg-white">
+            <div className="bgWhite">
               <div className="relative isolate ">
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -85,10 +83,10 @@ function Socialmediamarketing() {
                       className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
                     >
                       High Performance
-                      <span className="gradient-text">
+                      <span className="gradientText">
                         {" "}
                         breakthrough{" "}
-                        <span className="gradient-text">campaigns</span>
+                        <span className="gradientText">campaigns</span>
                       </span>{" "}
                     </h1>
                   </div>

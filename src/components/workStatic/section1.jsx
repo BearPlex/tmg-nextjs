@@ -23,7 +23,7 @@ function section1(props) {
             src={work[0].featured_image.src}
           />
         </div>
-        <h1 className="text-center text-[50px] font-bold gradient-text">
+        <h1 className="text-center text-[50px] font-bold gradientText">
           {work[0].featured_title}{" "}
         </h1>
         <div className="flex justify-center">

@@ -28,6 +28,7 @@ import member6 from "../src/assets/images/member6.png";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
+import HeroContainer from "../src/components/containers/HeroContainer";
 // {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
 //           <div className="w-full text-center">
 //               <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
@@ -84,30 +85,17 @@ const Studio = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
-            <div className="w-full text-center">
-              <Image
-                width={500}
-                height={300}
-                src={kotaLogo.src}
-                alt="kota canvas"
-                loading="lazy"
-                className="w-[410px] h-[237px]"
-              />
-            </div>
+          <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
               <h4 className="mb-6 heading-style font-bold leading-tight">
                 Lets make your{" "}
-                <span className="gradient-text">
-                  {" "}
-                  digital dreams a reality.
-                </span>
+                <span className="gradientText"> digital dreams a reality.</span>
               </h4>
               <p className="text-style">
                 We create the best customer experiences across your brands
                 journey, transforming the way brands connect with their
                 audiences by be
-                <span className="gradient-text">
+                <span className="gradientText">
                   {" "}
                   crafting engaging and impactful digital experiences that
                   inspire action and drive growth.
@@ -120,7 +108,7 @@ const Studio = () => {
                 />
               </div>
             </div>
-          </section>
+          </HeroContainer>
           <section className="mt-20">
             <div className="relative h-[581px]">
               <video
@@ -199,7 +187,7 @@ const Studio = () => {
           <div className="flex mt-10 justify-center flex-col items-center">
             <h1 className=" text-[45px] text-center font-sofia-bold font-bold leading-tight relative top-10">
               Innovators by heart, <br />
-              <span className="gradient-text">Creators</span> by mind.
+              <span className="gradientText">Creators</span> by mind.
             </h1>
             <p className=" mb-5 text-center mt-14 max-w-4xl mx-10 text-style ">
               With a team of smart and passionate professionals, our agency
@@ -273,7 +261,7 @@ const Studio = () => {
               </div>
             </div>
           </section>
-          <section className="pt-36 h-auto bg-zinc-800 mt-60 pb-10">
+          <section className="pt-36 h-auto bgBlack mt-60 pb-10">
             <div className="flex items-center px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 justify-between gap-10 pb-20">
               <div className="w-[50%]">
                 <Image

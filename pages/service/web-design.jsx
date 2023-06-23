@@ -58,7 +58,7 @@ function WebDesign() {
                 </div>
                 <div className="w-full">
                   <h4 className="mb-6  text-[#454545] heading-style leading-tight">
-                    Highly <span className="gradient-text"> Optimized </span>
+                    Highly <span className="gradientText"> Optimized </span>
                     Converting Websites 
                   </h4>
                   <p className="text-style mb-20">
@@ -86,7 +86,7 @@ function WebDesign() {
           </section>
 
           <section>
-            <div className="bg-white">
+            <div className="bgWhite">
               <div className="relative isolate ">
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-12 lg:flex-shrink-0 lg:flex-grow">
@@ -94,7 +94,7 @@ function WebDesign() {
                       className={`mb-6 font-sofia-bold font-black leading-snug  text-[#454545] text-5xl max-w-sm`}
                     >
                       Modern designs that
-                      <span className="gradient-text">
+                      <span className="gradientText">
                         {" "}
                         creates identity
                       </span>{" "}

@@ -68,9 +68,106 @@
 @tailwind utilities;
 
 @layer components {
-  .paragraph {
-    @apply leading-8 text-base font-circular-medium text-zinc-700;
+  /* TEXT STARTS */
+  .font {
+    font-family: "Sofia Sans", sans-serif;
   }
+  .fontBold {
+    font-family: "Sofia Pro Bold", sans-serif;
+  }
+  .blackHeadingText {
+    color: #1b1b1b !important;
+  }
+  .blackDescriptionText {
+    color: #454545 !important;
+  }
+  .whiteHeadingText {
+    color: #ffffff !important;
+  }
+  .whiteDescriptionText {
+    color: #f8f8f8 !important;
+  }
+  .text50 {
+    font-size: 50px;
+    @media (max-width: 1023px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 24px;
+    }
+  }
+  .text36 {
+    font-size: 36px;
+    @media (max-width: 1023px) {
+      font-size: 28px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+    @media (max-width: 639px) {
+      font-size: 20px;
+    }
+  }
+  .text20 {
+    font-size: 20px;
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 639px) {
+      font-size: 12px;
+    }
+  }
+  .gradientText {
+    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .largeHeading {
+    @apply font-sofia-bold text50;
+  }
+  .heading {
+    @apply font-sofia-bold text36;
+  }
+  .paragraph {
+    @apply font text20;
+  }
+  .largeHeadingBlack {
+    @apply blackHeadingText largeHeading;
+  }
+  .largeHeadingWhite {
+    @apply whiteHeadingText largeHeading;
+  }
+  .headingBlack {
+    @apply blackHeadingText heading;
+  }
+  .headingWhite {
+    @apply whiteHeadingText heading;
+  }
+  .paragraphBlack {
+    @apply blackDescriptionText paragraph;
+  }
+  .paragraphWhite {
+    @apply whiteDescriptionText paragraph;
+  }
+  /* TEXT END */
+  /*  */
+  /*  */
+  /* BACKGROUND COLOR STARTs */
+  .bgWhite {
+    background-color: #ffffff;
+  }
+  .bgBlack {
+    background-color: #1b1b1b;
+  }
+  /* BACKGROUND COLOR END */
 }
 
 html,
@@ -89,14 +186,7 @@ body {
 .transparentBgColor {
   background-color: rgba(0, 0, 0, 0.25);
 }
-.gradient {
-  mask-image: linear-gradient(to bottom, #7775d6, #e935c1);
-}
-.gradient-text {
-  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .gradient-span {
   height: 55px;
   min-width: 250px;
@@ -113,6 +203,7 @@ body {
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 .gradient-button {
   position: relative;
@@ -133,12 +224,14 @@ body {
   z-index: -1;
   background-clip: border-box;
   -webkit-background-clip: padding-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .gradient-button:hover {
   color: white;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   /* border-color: transparent; */
+  transition: all 0.3s ease-in-out !important;
 }
 
 #menuToggle {

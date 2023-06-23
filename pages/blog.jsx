@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
+import HeroContainer from "../src/components/containers/HeroContainer";
 // import CardStatic from "../src/components/card/CardStatic";
 // {console.log("Work",blogsData)}
 const blogsStatic = [
@@ -42,24 +43,14 @@ const Blog = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
-            <div className="w-full text-center">
-              <Image
-                width={500}
-                height={300}
-                src={kotaLogo.src}
-                alt="kota canvas"
-                loading="lazy"
-                className="w-[522px] h-[406px]"
-              />
-            </div>
+          <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
               <h4 className="mb-6 heading-style font-bold leading-tight">
                 News, insights, and creative culture from TMG.
               </h4>
               <p className="text-style">
                 Because it should never just be work, it should be
-                <span className="gradient-text"> a work of art</span>{" "}
+                <span className="gradientText"> a work of art</span>{" "}
               </p>
               <div className="mt-10">
                 <GradientButton
@@ -68,7 +59,7 @@ const Blog = () => {
                 />
               </div>
             </div>
-          </section>
+          </HeroContainer>
 
           <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pt-20">
             <a href="" className="relative blog-banner w-full h-full">
@@ -79,11 +70,12 @@ const Blog = () => {
                 alt="banner"
                 width={1300}
                 height={550}
+                layout="responsive"
                 objectFit="cover"
               />
 
               <div className="absolute left-10 bottom-10">
-                <span className="gradient-text inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">
+                <span className="gradientText inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">
                   Featured News
                 </span>
                 <h3 className="text-white max-w-[55%] font-sofia-bold text-[50px] leading-none">

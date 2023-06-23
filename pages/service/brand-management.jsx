@@ -58,15 +58,13 @@ function Seo() {
                 </div>
                 <div className="w-full">
                   <h4 className="mb-6  heading-style">
-                    <span className="gradient-text">Brand Identity</span> and
+                    <span className="gradientText">Brand Identity</span> and
                     Creative Management Services
                   </h4>
                   <p className="text-style mb-6">
                     TMG combines strategic directions with creative designs to
                     ensure{" "}
-                    <span className="gradient-text">
-                      unique brand identity.
-                    </span>{" "}
+                    <span className="gradientText">unique brand identity.</span>{" "}
                   </p>
                   <GradientButton
                     text="Book Free Consultation Today"
@@ -78,7 +76,7 @@ function Seo() {
           </section>
 
           <section>
-            <div className="bg-white py-20">
+            <div className="bgWhite py-20">
               <div className="relative isolate ">
                 <div className="px-32 py-10 sm:py-10 lg:flex lg:items-center gap-10 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
@@ -86,7 +84,7 @@ function Seo() {
                       className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-5xl`}
                     >
                       Specialized branding services that
-                      <span className="gradient-text"> creates trust</span>{" "}
+                      <span className="gradientText"> creates trust</span>{" "}
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-1/2">
@@ -102,7 +100,7 @@ function Seo() {
                       <br />
                       <br />
                       Our branding packages include{" "}
-                      <span className="gradient-text">
+                      <span className="gradientText">
                         {" "}
                         Brand Image Creation, Social Presence and Tone of Voice;
                       </span>

@@ -43,7 +43,7 @@ const Footer = () => {
                   </div>
                 </h4>
                 <h5 className="text-[18px] mt-0 mb-5 text-blueGray-600 font-bold">
-                  Sign Up to our newsletter
+                  Sign Up to our news letter
                 </h5>
                 <a
                   href="mailto:Info@themediagale.com"
@@ -107,17 +107,15 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className="w-full ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
-                    {/* <ul className="list-unstyled"> */}
-                    {/* </ul> */}
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <span className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]">
+                        <span className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3"
                           href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
                         >
                           New York
@@ -125,7 +123,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]"
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3"
                           href="https://creative-tim.com/privacy?ref=njs-profile"
                         >
                           Lahore
@@ -142,7 +140,7 @@ const Footer = () => {
               href="/"
               className="w-full flex justify-end  md:flex-row flex-row  md:justify-between md:items-center mx-5 md:mx-0"
             >
-              <div className="bg-white">
+              <div className="bgWhite">
                 <Image
                   width={500}
                   height={300}

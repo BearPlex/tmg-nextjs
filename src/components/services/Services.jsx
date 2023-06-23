@@ -72,7 +72,7 @@ const Services = () => {
             </h3>
             {/* <a
             href="/services"
-            className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bg-white hover:text-fuchsia-500 font-medium"
+            className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bgWhite hover:text-fuchsia-500 font-medium"
           >
              View All Services
           </a> */}

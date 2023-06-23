@@ -17,6 +17,7 @@ import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 // import "./styles.css";
 import Image from "../src/components/Image/Image";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
+import HeroContainer from "../src/components/containers/HeroContainer";
 const workStatic = [
   {
     featured_image: workFeaturedImage,
@@ -68,17 +69,7 @@ const Work = () => {
   return (
     <>
       <PageWrapper>
-        <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
-          <div className="w-full text-center">
-            <Image
-              width={500}
-              height={300}
-              src={kotaLogo.src}
-              alt="kota canvas"
-              loading="lazy"
-              className="max-w-full"
-            />
-          </div>
+        <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
             <h4 className="mb-6 heading-style font-bold leading-tight">
               We are experts in bringing brands to life digitally.
@@ -91,7 +82,7 @@ const Work = () => {
               return on creativity.
             </p>
           </div>
-        </section>
+        </HeroContainer>
         <Tabs className="p-20 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 tabs-wrapper">
           <TabList>
             {

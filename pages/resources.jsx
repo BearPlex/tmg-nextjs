@@ -16,33 +16,24 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
+import HeroContainer from "../src/components/containers/HeroContainer";
 const Resources = () => {
   return (
     <>
       <PageWrapper>
         <section>
-          <section className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-20 md:pt-12 items-center ">
-            <div className="w-full text-center">
-              <Image
-                width={500}
-                height={300}
-                src={kotaLogo.src}
-                alt="kota canvas"
-                loading="lazy"
-                className="w-[538px] h-[239px]"
-              />
-            </div>
+          <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
               <h4 className="mb-6 heading-style font-bold leading-tight">
                 Dedicated Resource{" "}
-                <span className="gradient-text">Allocation</span>
+                <span className="gradientText">Allocation</span>
               </h4>
               <p className="text-style">
                 We offer 360-degree marketing solutions such as PPC
                 Advertisement, Search Engine Optimisation and Web Development
                 Services. Our team is technically and professionally equipped to
                 make every be
-                <span className="gradient-text">
+                <span className="gradientText">
                   {" "}
                   brand a success story.
                 </span>{" "}
@@ -54,7 +45,7 @@ const Resources = () => {
                 />
               </div>
             </div>
-          </section>
+          </HeroContainer>
 
           <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
             <section

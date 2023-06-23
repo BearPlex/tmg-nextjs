@@ -1,9 +1,8 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/tmg-logo.png";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";
-import group from "../src/assets/images/Group.png";
+import kotaLogo from "../src/assets/images/tmg-logo.png";
 import clutchLogo from "../src/assets/images/Clutch_grey@2x.png";
 import awardLogo from "../src/assets/images/awward_grey@2x.png";
 import cssDesignLogo from "../src/assets/images/css-design-awards.png";
@@ -26,6 +25,7 @@ import workGallery2 from "../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import Image from "../src/components/Image/Image";
+import HeroContainer from "../src/components/containers/HeroContainer";
 // import "swiper/css/bundle";
 // import "./styles.css";
 const workStatic = [
@@ -59,55 +59,31 @@ export default function Home() {
     <React.Fragment>
       <PageWrapper>
         <div>
-          <section className="w-full h-[60vh] 3xl:max-w-7xl 3xl:mx-auto">
-            <div className="px-10 h-full flex items-center md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0 3xl:pl-0">
-              <div className="flex justify-between items-center gap-10">
-                <div className="text-center w-full ">
-                  <Image
-                    width={500}
-                    height={150}
-                    src={kotaLogo}
-                    alt="kota canvas"
-                    loading="lazy"
-                    className="max-w-full"
-                  />
-                  <Image
-                    width={500}
-                    height={300}
-                    src={group.src}
-                    alt="the drum logo"
-                    loading="lazy"
-                    className="w-[90%] object-contain"
-                  />
-                </div>
-                <div className="w-full">
-                  <h1
-                    className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 heading-style`}
-                  >
-                    Transforming Businesses into
-                    <span className="gradient-text"> Brands</span>{" "}
-                  </h1>
-                  <p className="text-zinc-700 font-circular-medium font-medium text-style">
-                    We offer 360-degree marketing solutions such as PPC
-                    Advertisement, Search Engine Optimization and Web
-                    Development Services. Our team is technically and
-                    professionally equipped to make every{" "}
-                    <span className="gradient-text">
-                      brand a success story.
-                    </span>
-                  </p>
-                </div>
-              </div>
+          <HeroContainer imageSrc={kotaLogo} landingPage={true}>
+            <div className="w-full">
+              <h1 className="headingBlack">
+                Transforming Businesses into
+                <span className="gradientText heading"> Brands</span>{" "}
+              </h1>
+              <p className="paragraphBlack">
+                We offer 360-degree marketing solutions such as PPC
+                Advertisement, Search Engine Optimization and Web Development
+                Services. Our team is technically and professionally equipped to
+                make every{" "}
+                <span className="gradientText paragraph">
+                  brand a success story.
+                </span>
+              </p>
             </div>
-          </section>
+          </HeroContainer>
 
-          <section className="w-full bg-white overflow-x-hidden">
+          <section className="w-full bgWhite overflow-x-hidden">
             <div className="px-24 flex flex-row gap-10 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
               {/* <div className=""> */}
               <div className="w-1/2 h-[500px] flex flex-col justify-center">
-                <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
+                <h1 className="headingBlack">
                   Providing Exponential
-                  <span className="gradient-text"> User Experience</span>
+                  <span className="gradientText"> User Experience</span>
                 </h1>
                 <p className="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
                   Let’s face it, first impressions matter. Why waste and settle
@@ -138,14 +114,14 @@ export default function Home() {
             <div className="w-full flex items-center justify-center pb-16">
               <h2 className="w-4/5 text-center font-bold font-sofia-bold heading-style leading-tight">
                 Our team bootstraps the growth of your business using these{" "}
-                <span className="gradient-text">4 Elements</span>
+                <span className="gradientText">4 Elements</span>
               </h2>
             </div>
             {/* <Agency /> */}
           </div>
           <Services />
 
-          <section className="bg-zinc-800 h-auto  ">
+          <section className="bgBlack h-auto  ">
             <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-28 pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
               <div className="flex items-center gap-10 justify-between">
                 <div className="w-[50%]">

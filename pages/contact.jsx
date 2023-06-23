@@ -131,7 +131,7 @@ const Contact = () => {
                   <ul className="form-check mb-4 d-flex items-center pl-0">
                     <li>
                       <input
-                        className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                        className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bgWhite checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
                         type="radio"
                         name="flexRadioDefault"
                         id="flexRadioDefault10"
@@ -150,7 +150,7 @@ const Contact = () => {
                   <ul className="form-check mb-4 d-flex items-center pl-0">
                     <li>
                       <input
-                        className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bg-white checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                        className="form-check-input mt-2 appearance-none rounded-full h-4 w-4 border border-gray-400 bgWhite checked:bg-pink-400 checked:border-gray-400 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
                         type="radio"
                         name="flexRadioDefault"
                         id="flexRadioDefault20"
@@ -167,7 +167,7 @@ const Contact = () => {
                     </li>
                   </ul>
                   <GradientButton text="Submit" route="/" />
-                  {/* <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bg-white hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
+                  {/* <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bgWhite hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
                   Submit
                 </button> */}
                 </div>

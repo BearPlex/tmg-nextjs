@@ -124,7 +124,7 @@ const NavigationMenu = () => {
           <h4 className="text-white font-bold text-2xl py-5 pr-6">
             Let's get cracking
           </h4>
-          <button className="transparentBgColor ml-6 uppercase hover:bg-white hover:text-orange_theme-400 text-white font-bold py-4 px-6 rounded-full hover:transition hover:transition-all">
+          <button className="transparentBgColor ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-4 px-6 rounded-full">
             Start Your project
           </button>
         </div>

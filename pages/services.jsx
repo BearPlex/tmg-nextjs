@@ -17,6 +17,8 @@ import { useRouter } from "next/router";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
+import HeroContainer from "../src/components/containers/HeroContainer";
+
 const Services = () => {
   const router = useRouter();
   const pushServiceSocial = () => {
@@ -35,17 +37,7 @@ const Services = () => {
     <>
       <PageWrapper>
         <section>
-          <section className="grid grid-cols-2 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 pt-12 items-center">
-            <div className="w-full text-center">
-              <Image
-                width={500}
-                height={300}
-                src={kotaLogo.src}
-                alt="kota canvas"
-                loading="lazy"
-                className="w-[480px]"
-              />
-            </div>
+          <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
               <p className="mb-6 text-black font-medium text-[1.16rem]">
                 Fusing astounding visuals with compelling content while backed
@@ -151,8 +143,7 @@ const Services = () => {
                 />
               </div>
             </div>
-          </section>
-
+          </HeroContainer>
           <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
             <section
               id="web_design"
