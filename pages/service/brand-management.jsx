@@ -171,8 +171,8 @@ function Seo() {
           <section>
             <div className="bg-[#212121]">
               <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-10  lg:py-20">
-                  <div className="w-1/2 lg:mx-0 lg:flex-auto">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Image
                     </h1>
@@ -187,11 +187,11 @@ function Seo() {
                       across all channels - from your website to your social
                       media accounts and your physical collateral. 
                     </p>
-                    <div className=" flex items-center gap-x-6 mt-8">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
-                  <div className="mt-16 w-1/2 sm:mt-24 lg:mt-0 ">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
@@ -206,8 +206,8 @@ function Seo() {
               </div>
 
               <div className="w-full">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
-                  <div className="w-1/2 mt-16 sm:mt-24 lg:mt-0 ">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={0}
                       height={0}
@@ -218,7 +218,7 @@ function Seo() {
                       className="drop-shadow-xl"
                     />
                   </div>
-                  <div className="w-1/2 lg:mx-0 lg:flex-auto">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-[35px]">
                       Social Presence
                     </h1>
@@ -234,7 +234,7 @@ function Seo() {
                       designed to help businesses reach their target audience
                       and achieve their desired results.  
                     </p>
-                    <div className=" flex items-center gap-x-6 mt-8">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
@@ -242,7 +242,7 @@ function Seo() {
               </div>
 
               <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Tone of Voice{" "}
@@ -253,7 +253,7 @@ function Seo() {
                       collaborate with your team to devise a tone that resonates
                       with your customers and inspires them to action.
                     </p>
-                    <div className=" flex items-center gap-x-6 mt-8">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
@@ -272,7 +272,7 @@ function Seo() {
               </div>
 
               <div className="relative isolate ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-10 lg:py-16">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}

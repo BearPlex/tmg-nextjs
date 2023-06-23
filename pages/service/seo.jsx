@@ -168,10 +168,10 @@ function BrandManagement() {
 
           <section>
             <div className="bg-[#212121]">
-              <div className="relative isolate pt-14">
-                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <div className="w-full pt-14">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
+                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       On Page SEO 
                     </h1>
                     <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -182,35 +182,39 @@ function BrandManagement() {
                       pages which include Meta Title and Descriptions, Title
                       Tags and Creating GMB Profile.
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className=" flex items-center gap-x-6 pt-10">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={book.src}
                       alt="book"
-                      className="w-[528px] h-[704px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="relative isolate ">
-                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+              <div className="w-full">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={mobile3.src}
                       alt="mobile3"
-                      className="w-[528px] h-[704px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
+                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Off Page SEO
                     </h1>
                     <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -221,17 +225,17 @@ function BrandManagement() {
                       Social Media Presence and Removing Toxic Links to help
                       increase authority and website credibility on Google.
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className=" flex items-center gap-x-6 pt-10">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="relative isolate pt-14">
-                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <div className="w-full">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
+                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Content Optimization {" "}
                     </h1>
                     <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -242,35 +246,39 @@ function BrandManagement() {
                       ensure that your content is being seen by the right
                       people.
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className=" flex items-center gap-x-6 pt-10">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={mobile2.src}
                       alt="mobile2"
-                      className="w-[528px] h-[704px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="relative isolate ">
-                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+              <div className="w-full">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={tmg.src}
                       alt="tmg"
-                      className="w-[528px] h-[359px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
+                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       What else?
                     </h1>
                     <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -281,7 +289,7 @@ function BrandManagement() {
                       get authentic traffic without spending another dime on
                       it. 
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className=" flex items-center gap-x-6 pt-10">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>

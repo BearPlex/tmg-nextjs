@@ -92,7 +92,7 @@ function Socialmediamarketing() {
                       </span>{" "}
                     </h1>
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                       Getting noticed and remembered by the right audience is a
                       slow delicate process. It takes multiple testing, creative
@@ -172,10 +172,10 @@ function Socialmediamarketing() {
 
           <section>
             <div className="bg-[#212121]">
-              <div className="relative isolate pt-14">
-                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+              <div className="w-full pt-14">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
+                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
                     <p className="mt-6 text-xl leading-8 text-white font-normal">
@@ -189,34 +189,38 @@ function Socialmediamarketing() {
                       across all channels - from your website to your social
                       media accounts and your physical collateral. 
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={book.src}
                       alt="book"
-                      className="w-[528px] h-[724px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="relative isolate ">
-                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={mobile3.src}
                       alt="mobile"
-                      className="w-[528px] h-[390px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
@@ -231,7 +235,7 @@ function Socialmediamarketing() {
                       across all channels - from your website to your social
                       media accounts and your physical collateral. 
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
@@ -239,8 +243,8 @@ function Socialmediamarketing() {
               </div>
 
               <div className="relative isolate pt-14">
-                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
@@ -255,34 +259,38 @@ function Socialmediamarketing() {
                       across all channels - from your website to your social
                       media accounts and your physical collateral. 
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                     </div>
                   </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={mobile2.src}
                       alt="mobile2"
-                      className="w-[528px] h-[702px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="relative isolate ">
-                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
+                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
                     <Image
                       width={500}
                       height={300}
                       src={tmg.src}
                       alt="tmg"
-                      className="w-[528px] h-[359px] drop-shadow-xl"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="drop-shadow-xl"
                     />
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
                     <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
@@ -297,7 +305,7 @@ function Socialmediamarketing() {
                       across all channels - from your website to your social
                       media accounts and your physical collateral. 
                     </p>
-                    <div className=" flex items-center gap-x-6">
+                    <div className="flex items-center gap-x-6 mt-8">
                       <GradientButton text="Learn More" route="/" />
                       {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                     <div className="">
@@ -348,7 +356,7 @@ function Socialmediamarketing() {
                     className="w-[658px] h-[836px] drop-shadow-xl"
                   />
                 </div>
-                <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <div className="lg:mx-0 w-1/2 lg:flex-auto">
                   <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
                     Dedicated Resource Allocation
                   </h1>

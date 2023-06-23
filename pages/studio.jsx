@@ -1,17 +1,13 @@
 /* eslint-disable */
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/free-mode";
-// import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import required modules
-
-import { FreeMode, Pagination, Navigation } from "swiper";
-import Header from "../src/components/header/Header";
+import SwiperCore, { Navigation } from "swiper";
 import React, { useRef, useState } from "react";
 
 import kotaLogo from "../src/assets/images/agency.png";
+import arrowBack from "../src/assets/images/arrowBack.png";
+import arrowNext from "../src/assets/images/arrowNext.png";
 import galleryImage1 from "../src/assets/images/studio1-1.png";
 import galleryImage2 from "../src/assets/images/studio2-1.png";
 import galleryImage3 from "../src/assets/images/studio3-1.png";
@@ -43,10 +39,32 @@ import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 //               </p>
 //           </div>
 //       </section> */}
+// {/* <SwiperSlide>
+//           <div className="">
+//               <figure className="">
+//                   <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
+//                   <figcaption>
+//                       <p className="text-white">ED</p>
+//                       <p className="text-white">— Design Director</p>
+//                   </figcaption>
+//               </figure>
+//           </div>
+//       </SwiperSlide>
+//       <SwiperSlide>
+//       <div className="">
+//               <figure className="">
+//                   <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
+//                   <figcaption>
+//                       <p className="text-white">ED</p>
+//                       <p className="text-white">— Design Director</p>
+//                   </figcaption>
+//               </figure>
+//           </div>
+//       </SwiperSlide> */}
 const Studio = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
-
+  const memberImages = [member1, member2, member3, member4, member5, member6];
   const handlePlayPause = () => {
     if (videoRef.current) {
       console.log(isPlaying); // Check the current state
@@ -255,7 +273,7 @@ const Studio = () => {
               </div>
             </div>
           </section>
-          <section className="pt-36 bg-zinc-800 mt-60 pb-10">
+          <section className="pt-36 h-auto bg-zinc-800 mt-60 pb-10">
             <div className="flex items-center px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 justify-between gap-10 pb-20">
               <div className="w-[50%]">
                 <Image
@@ -273,118 +291,75 @@ const Studio = () => {
                 />
               </div>
             </div>
-            <Swiper
-              slidesPerView={4}
-              spaceBetween={30}
-              centeredSlides={true}
-              initialSlide={1}
-              navigation={true}
-              modules={[Navigation]}
-              className="mySwiper"
-            >
-              {/* <SwiperSlide>
-                        <div className="">
-                            <figure className="">
-                                <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
-                                <figcaption>
-                                    <p className="text-white">ED</p>
-                                    <p className="text-white">— Design Director</p>
-                                </figcaption>
-                            </figure>
-                        </div>
+
+            <div className="flex flex-col h-auto items-center">
+              <div className="w-full px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 ">
+                <Swiper
+                  slidesPerView={4}
+                  spaceBetween={30}
+                  centeredSlides={false}
+                  initialSlide={0}
+                  navigation={true}
+                  navigation={{
+                    nextEl: ".swiper-button-next-custom",
+                    prevEl: ".swiper-button-prev-custom",
+                  }}
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    1280: {
+                      slidesPerView: 3,
+                    },
+                    1556: {
+                      slidesPerView: 4,
+                    },
+                  }}
+                  modules={[Navigation]}
+                  className="swiper"
+                >
+                  {memberImages.map((member, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="">
+                        <figure className="">
+                          <Image
+                            width={500}
+                            height={300}
+                            src={member.src}
+                            alt="team member"
+                            className="w-[313px] h-[440px]"
+                          />
+                        </figure>
+                      </div>
                     </SwiperSlide>
-                    <SwiperSlide>
-                    <div className="">
-                            <figure className="">
-                                <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
-                                <figcaption>
-                                    <p className="text-white">ED</p>
-                                    <p className="text-white">— Design Director</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </SwiperSlide> */}
-              <SwiperSlide>
-                {" "}
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={member1.src}
-                      alt="team member"
-                      className="w-[313px] h-[440px]"
-                    />
-                  </figure>
+                  ))}
+                </Swiper>
+              </div>
+
+              <div className="flex flex-row items-end w-full pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
+                <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
+                  <Image
+                    width={500}
+                    height={300}
+                    src={arrowBack.src}
+                    alt="team member"
+                    className="w-[22px]"
+                  />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={member2.src}
-                      alt="team member"
-                      className="w-[313px] h-[440px]"
-                    />
-                  </figure>
+                <div className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer ">
+                  <Image
+                    width={500}
+                    height={300}
+                    src={arrowNext.src}
+                    alt="team member"
+                    className="w-[22px]"
+                  />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={member3.src}
-                      alt="team member"
-                      className="w-[313px] h-[440px]"
-                    />
-                  </figure>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      height={300}
-                      className="w-[313px] h-[440px]"
-                      src={member4.src}
-                      alt="team member"
-                    />
-                  </figure>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      height={300}
-                      className="w-[313px] h-[440px]"
-                      src={member5.src}
-                      alt="team member"
-                    />
-                  </figure>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="">
-                  <figure className="">
-                    <Image
-                      width={500}
-                      className="w-[313px] h-[440px]"
-                      height={300}
-                      src={member6.src}
-                      alt="team member"
-                    />
-                  </figure>
-                </div>
-              </SwiperSlide>
-              {/* <SwiperSlide>Slide 9</SwiperSlide> */}
-            </Swiper>
+              </div>
+            </div>
           </section>
         </section>
         <Footer />

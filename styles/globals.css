@@ -118,7 +118,6 @@ body {
   position: relative;
   display: inline-block;
   color: transparent;
-  border-radius:;
   border-color: #ee2760;
   /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
 }
@@ -140,7 +139,6 @@ body {
   color: white;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   /* border-color: transparent; */
-
 }
 
 #menuToggle {
@@ -400,7 +398,7 @@ footer svg:hover path {
   color: white !important;
 }
 .text-style {
-  @apply text-[#454545] font-normal  text-xl leading-7 ;
+  @apply text-[#454545] font-normal  text-xl leading-7;
 }
 .text-style-colorless {
   @apply font-normal  text-xl;
@@ -410,4 +408,10 @@ footer svg:hover path {
 }
 .heading-style-colorless {
   @apply font-sofia-bold font-black leading-10 text-4xl;
+}
+.swiper-button-prev {
+  display: none !important;
+}
+.swiper-button-next {
+  display: none !important;
 }

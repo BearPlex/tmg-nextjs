@@ -59,8 +59,8 @@ export default function Home() {
     <React.Fragment>
       <PageWrapper>
         <div>
-          <section className="w-full">
-            <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
+          <section className="w-full h-[60vh]">
+            <div className="px-10 h-full flex items-center md:px-10 lg:px-14 xl:px-20 2xl:px-32">
               <div className="flex justify-between items-center gap-10">
                 <div className="text-center w-full ">
                   <Image

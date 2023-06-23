@@ -43,6 +43,7 @@ const ImageComponent = ({
         src={src}
         className={`${className}`}
         decoding="async"
+        loading="lazy"
         {...otherProps}
       />
     </ErrorBoundary>

@@ -52,9 +52,9 @@ const Footer = () => {
                   Info@themediagale.com
                 </a>
               </div>
-              <div className="w-6/12 px-4">
+              <div className="w-6/12">
                 <div className="flex flex-wrap items-top mb-6">
-                  <div className="w-full lg:w-6/12 px-4 ml-auto">
+                  <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
                       <li className="mb-4">
                         <Link

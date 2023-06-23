@@ -16,12 +16,12 @@ const Services = () => {
     branding: {
       img: digitalImage.src,
       detail:
-        "campaigns that earn attention, spark emotion & increase conversions.",
+        "Campaigns that earn attention, spark emotion & increase conversions.",
     },
     digital: {
       img: marketingImage.src,
       detail:
-        "eye-catching online marketing campaigns that earn attention, spark emotion & increase conversions.",
+        "Eye-catching online marketing campaigns that earn attention, spark emotion & increase conversions.",
     },
   };
   const handleGetImages = () => {
@@ -46,30 +46,24 @@ const Services = () => {
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col justify-center">
           <h3
-            className={`mb-6 font-bold text-white cursor-pointer transition-opacity leading-none ${
-              type === "design"
-                ? " text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
-                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
+            className={`mb-6 font-bold  cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
+              type === "design" ? " text-white" : "text-gray-800"
             }`}
             onClick={() => setType("design")}
           >
             Web Design & Development
           </h3>
           <h3
-            className={`mb-6 text-white font-bold cursor-pointer transition-opacity leading-none ${
-              type === "branding"
-                ? "text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
-                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
+            className={`mb-6 text-white font-bold cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
+              type === "branding" ? "text-white" : "text-gray-800"
             }`}
             onClick={() => setType("branding")}
           >
             Branding
           </h3>
           <h3
-            className={`mb-6 text-white font-bold cursor-pointer transition-opacity leading-none ${
-              type === "digital"
-                ? "text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
-                : "text-5xl md:text-5xl lg:text-5xl xl:text-7xl"
+            className={`mb-6 text-white font-bold cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
+              type === "digital" ? "text-white" : "text-gray-800"
             }`}
             onClick={() => setType("digital")}
           >
@@ -83,15 +77,17 @@ const Services = () => {
           </a> */}
         </div>
         <div>
-          <Image
-            width={100}
-            height={300}
-            src={`${handleGetImages().img}`}
-            alt="images"
-            loading="lazy"
-            className="w-[100%]"
-          />
-          <p className="text-xl text-white font-normal mt-10 leading-loose">
+          <div>
+            <Image
+              width={100}
+              height={300}
+              src={`${handleGetImages().img}`}
+              alt="images"
+              loading="lazy"
+              className="w-[100%]"
+            />
+          </div>
+          <p className="text-xl text-white font-normal mt-10 leading-loose min-h-[120px]">
             {handleGetImages().detail}
           </p>
         </div>
