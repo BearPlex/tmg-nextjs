@@ -35,7 +35,7 @@ const Articles = () => {
     // console.log("Id", id);
   };
   return (
-    <div className="px-10 h-auto md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-20">
+    <div className="px-10 h-auto md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
       <HeadingTwo title="Latest Articles" cssClass="mb-20 text-zinc-700" />
       <div className="">
         <div className="h-auto w-full">

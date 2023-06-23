@@ -21,8 +21,8 @@ const Footer = () => {
   return (
     <>
       <footer className="relative bg-[#1B1B1B] pt-20 pb-12">
-        <div className="w-full">
-          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 text-white">
+        <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 text-white 3xl:px-0 3xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className=" w-6/12 text-right order-3">
                 <h4 className="text-[18px] mb-3 font-bold text-[#EE2760]">
@@ -56,17 +56,17 @@ const Footer = () => {
                 <div className="flex flex-wrap items-top mb-6">
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
-                      <li className="mb-4">
+                      <li className="mb-2">
                         <Link
                           href="/"
-                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold mb-2 "
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3"
                         >
                           Home
                         </Link>
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3  "
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 "
                           href="/work"
                         >
                           Work
@@ -90,13 +90,13 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 mt-3 "
+                          className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3"
                           href="/contact"
                         >
                           Contact
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-2">
                         <Link
                           className="block uppercase text-blueGray-500 text-[18px] font-extrabold pb-3 "
                           href="/privacy-policy"
@@ -106,22 +106,26 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="w-full mt-5 lg:mt-1 ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
-                    <span className="block uppercase text-[18px] font-extrabold bold mb-2 text-[#EE2760]">
-                      Offices
-                    </span>
+                  <div className="w-full ml-4 lg:ml-0 lg:w-6/12 xl:relative xl:right-16">
+                    {/* <ul className="list-unstyled"> */}
+                    {/* </ul> */}
                     <ul className="list-unstyled">
-                      <li className="mb-1">
+                      <li className="mb-2">
+                        <span className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]">
+                          Offices
+                        </span>
+                      </li>
+                      <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-2 text-[18px]"
+                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]"
                           href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
                         >
                           New York
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-2">
                         <Link
-                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-2 text-[18px]"
+                          className="text-blueGray-600 hover:text-blueGray-800 font-extrabold block pb-3 text-[18px]"
                           href="https://creative-tim.com/privacy?ref=njs-profile"
                         >
                           Lahore

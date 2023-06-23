@@ -26,6 +26,9 @@ module.exports = {
         "third-size": "3.125rem",
         "text-medium": "1.375rem",
       },
+      screens: {
+        "3xl": "2200px",
+      },
 
       // transition: {
       //     'transition-in-out': 'all 0.3s ease-in-out'

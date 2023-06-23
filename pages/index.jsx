@@ -59,8 +59,8 @@ export default function Home() {
     <React.Fragment>
       <PageWrapper>
         <div>
-          <section className="w-full h-[60vh]">
-            <div className="px-10 h-full flex items-center md:px-10 lg:px-14 xl:px-20 2xl:px-32">
+          <section className="w-full h-[60vh] 3xl:max-w-7xl 3xl:mx-auto">
+            <div className="px-10 h-full flex items-center md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0 3xl:pl-0">
               <div className="flex justify-between items-center gap-10">
                 <div className="text-center w-full ">
                   <Image
@@ -102,7 +102,7 @@ export default function Home() {
           </section>
 
           <section className="w-full bg-white overflow-x-hidden">
-            <div className="px-24 flex flex-row gap-10 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 pt-10 sm:pb-32 lg:py-40">
+            <div className="px-24 flex flex-row gap-10 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
               {/* <div className=""> */}
               <div className="w-1/2 h-[500px] flex flex-col justify-center">
                 <h1 className="mt-10 font-sofia-bold font-bold heading-style leading-none text-zinc-700">
@@ -145,35 +145,37 @@ export default function Home() {
           </div>
           <Services />
 
-          <section className="bg-zinc-800 h-auto px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-28 pt-36 ">
-            <div className="flex items-center gap-10 justify-between">
-              <div className="w-[50%]">
-                <div className="w-4/6 mr-auto">
-                  <Image
-                    width={0}
-                    height={0}
-                    src={mainImage.src}
-                    // className="w-96"
-                    layout="responsive"
-                    objectFit="cover"
-                    alt="work images"
-                  />
+          <section className="bg-zinc-800 h-auto  ">
+            <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-28 pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+              <div className="flex items-center gap-10 justify-between">
+                <div className="w-[50%]">
+                  <div className="w-4/6 mr-auto">
+                    <Image
+                      width={0}
+                      height={0}
+                      src={mainImage.src}
+                      // className="w-96"
+                      layout="responsive"
+                      objectFit="cover"
+                      alt="work images"
+                    />
+                  </div>
+                </div>
+                <div className="w-[50%] flex items-center">
+                  <div className="w-5/6">
+                    <p className="text-white text-7xl font-bold">
+                      Collaborating with trending brands
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-[50%] flex items-center">
-                <div className="w-5/6">
-                  <p className="text-white text-7xl font-bold">
-                    Collaborating with trending brands
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            {work && work.length ? (
-              <ExpertiseStatic list={workStatic} cssClass="text-white" />
-            ) : (
-              <Expertise list={work} cssClass="text-white" />
-            )}
+              {work && work.length ? (
+                <ExpertiseStatic list={workStatic} cssClass="text-white" />
+              ) : (
+                <Expertise list={work} cssClass="text-white" />
+              )}
+            </div>
           </section>
 
           <Clients />
