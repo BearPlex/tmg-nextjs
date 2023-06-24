@@ -71,10 +71,10 @@ const Work = () => {
       <PageWrapper>
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
-            <h4 className="mb-6 heading-style font-bold leading-tight">
+            <h4 className="mb-6 headingBlack leading-tight">
               We are experts in bringing brands to life digitally.
             </h4>
-            <p className="text-black text-style">
+            <p className="paragraphBlack">
               TMG is a progressive and insightful design agency, technically and
               creatively skilled to translate your brand into its best digital
               self. Our design and development approach creates impactful,
@@ -91,12 +91,10 @@ const Work = () => {
             }
           </TabList>
           {work == "" ? (
-            <ExpertiseStatic list={workStatic} cssClass="text-black" />
+            <ExpertiseStatic list={workStatic} />
           ) : (
             work.map((item, index) => (
-              <TabPanel key={index}>
-                {<Expertise list={work} cssClass="text-black" />}
-              </TabPanel>
+              <TabPanel key={index}>{<Expertise list={work} />}</TabPanel>
             ))
           )}
         </Tabs>

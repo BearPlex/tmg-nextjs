@@ -42,25 +42,25 @@ const NavigationMenu = () => {
                     {/* <> */}
                     <Link
                       href="/service/social-media-marketing"
-                      className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-3 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
                     >
                       Social Media Marketing
                     </Link>
                     <Link
                       href="/service/web-design"
-                      className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-3 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
                     >
                       Web Development & Design
                     </Link>
                     <Link
                       href="/service/brand-management"
-                      className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-3 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
                     >
                       Branding
                     </Link>
                     <Link
                       href="/service/seo"
-                      className="px-3 text-left text-3xl inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-3 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
                     >
                       SEO
                     </Link>
@@ -121,7 +121,7 @@ const NavigationMenu = () => {
           <Link href="#">{linkedinSvg()}</Link>
         </div>
         <div className="flex items-center">
-          <h4 className="text-white font-bold text-2xl py-5 pr-6">
+          <h4 className="text-white font-bold largeParagraph py-5 pr-6">
             Let's get cracking
           </h4>
           <button className="transparentBgColor ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-4 px-6 rounded-full">

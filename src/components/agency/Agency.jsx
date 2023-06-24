@@ -55,7 +55,7 @@ const Agency = () => {
             id="beautyRef"
             className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"
           >
-            <sup className="text-sm text-pink-400 font-medium inline-block absolute top-3 left-0">
+            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
               01
             </sup>{" "}
             Beauty
@@ -70,7 +70,7 @@ const Agency = () => {
             id="thoughRef"
             className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"
           >
-            <sup className="text-sm text-pink-400 font-medium inline-block absolute top-3 left-0">
+            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
               02
             </sup>{" "}
             Thought
@@ -82,7 +82,7 @@ const Agency = () => {
         </div>
         <div className="pb-60 max-w-[80%]">
           <h2 className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6">
-            <sup className="text-sm text-pink-400 font-medium inline-block absolute top-3 left-0">
+            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
               03
             </sup>{" "}
             Impact

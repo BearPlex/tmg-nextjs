@@ -6,8 +6,6 @@ import kotaLogo from "../src/assets/images/tmg-logo.png";
 import clutchLogo from "../src/assets/images/Clutch_grey@2x.png";
 import awardLogo from "../src/assets/images/awward_grey@2x.png";
 import cssDesignLogo from "../src/assets/images/css-design-awards.png";
-import HeadingOne from "../src/components/headings/HeadingOne";
-import HeadingTwo from "../src/components/headings/HeadingTwo";
 import Services from "../src/components/services/Services";
 import Clients from "../src/components/clients/Clients";
 import Articles from "../src/components/articles/Articles";
@@ -79,13 +77,12 @@ export default function Home() {
 
           <section className="w-full bgWhite overflow-x-hidden">
             <div className="px-24 flex flex-row gap-10 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-              {/* <div className=""> */}
               <div className="w-1/2 h-[500px] flex flex-col justify-center">
                 <h1 className="headingBlack">
                   Providing Exponential
-                  <span className="gradientText"> User Experience</span>
+                  <span className="gradientText heading"> User Experience</span>
                 </h1>
-                <p className="mt-6 text-zinc-700 font-circular-medium font-medium text-style">
+                <p className="mt-6 paragraphBlack">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
                   <br />
@@ -106,13 +103,12 @@ export default function Home() {
                   />
                 </div>
               </div>
-              {/* </div> */}
             </div>
           </section>
 
           <div className="p-20 pt-16 ">
             <div className="w-full flex items-center justify-center pb-16">
-              <h2 className="w-4/5 text-center font-bold font-sofia-bold heading-style leading-tight">
+              <h2 className="w-4/5 text-center headingBlack">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>
               </h2>
@@ -130,7 +126,6 @@ export default function Home() {
                       width={0}
                       height={0}
                       src={mainImage.src}
-                      // className="w-96"
                       layout="responsive"
                       objectFit="cover"
                       alt="work images"
@@ -139,7 +134,7 @@ export default function Home() {
                 </div>
                 <div className="w-[50%] flex items-center">
                   <div className="w-5/6">
-                    <p className="text-white text-7xl font-bold">
+                    <p className="largeHeadingWhite">
                       Collaborating with trending brands
                     </p>
                   </div>

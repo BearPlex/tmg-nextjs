@@ -1,4 +1,3 @@
-import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
 const CardStatic = (props) => {
@@ -35,10 +34,9 @@ const CardStatic = (props) => {
             <span className="pink-color font-medium text-base uppercase inline-block group-hover:text-black">
               {blog.title}
             </span>
-            <HeadingThree
-              title={blog.sub_title}
-              cssClass="text-2xl mt-4 group-hover:text-white"
-            />
+            <div className="largeParagraph mt-4 group-hover:text-white">
+              {blog.sub_title}
+            </div>
           </div>
         </div>
       ))}
@@ -56,7 +54,7 @@ const CardStatic = (props) => {
                                      <span className="pink-color font-medium text-base uppercase inline-block group-hover:transition-all group-hover:delay-150 group-hover:text-black">{blog.attributes.title}</span>
                                 }
                               
-                                <HeadingThree title={blog.attributes.sub_title} cssClass="text-2xl mt-4 group-hover:text-white transition-all" />
+                                <HeadingThree title={blog.attributes.sub_title} cssClass="largeParagraph mt-4 group-hover:text-white transition-all" />
                             </div>
                         </div>)
                 } */}

@@ -1,11 +1,10 @@
-import HeadingTwo from "../headings/HeadingTwo";
 import { clients } from "../../helpers/Helpers";
 import Image from "../Image/Image";
 
 const Clients = () => {
   return (
     <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-28 text-center 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-      <HeadingTwo title="Our Clients" />
+      <div className="headingBlack">Our Clients</div>
       <div className="pt-20 flex item-center flex-wrap">
         {clients.map((item, index) => (
           <div key={index} className="w-1/5 inline-flex justify-center mb-14">

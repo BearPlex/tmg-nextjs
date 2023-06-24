@@ -21,7 +21,7 @@ function footer2() {
               <h2 className="text-base font-semibold leading-7 text-[#299C84]">
                 Contact Us
               </h2>
-              <p className="my-6 text-3xl sm:text-5xl text-gray-200 mx-auto text-center">
+              <p className="my-6 smallHeading sm:text-5xl text-gray-200 mx-auto text-center">
                 You have Got This far Ready to Get Started?
               </p>
 

@@ -87,6 +87,21 @@
   .whiteDescriptionText {
     color: #f8f8f8 !important;
   }
+  .text72 {
+    font-size: 72px;
+
+    @media (max-width: 1023px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 28px;
+    }
+  }
   .text50 {
     font-size: 50px;
     @media (max-width: 1023px) {
@@ -101,6 +116,18 @@
       font-size: 24px;
     }
   }
+  .text48 {
+    font-size: 48px;
+    @media (max-width: 1023px) {
+      font-size: 34px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+    @media (max-width: 639px) {
+      font-size: 22px;
+    }
+  }
   .text36 {
     font-size: 36px;
     @media (max-width: 1023px) {
@@ -113,8 +140,24 @@
       font-size: 20px;
     }
   }
+  .text24 {
+    font-size: 24px;
+    font-weight: 600;
+    @media (max-width: 1023px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 16px;
+    }
+  }
   .text20 {
     font-size: 20px;
+    line-height: 27px;
     @media (max-width: 1023px) {
       font-size: 16px;
     }
@@ -125,10 +168,26 @@
       font-size: 12px;
     }
   }
+  .text16 {
+    font-size: 16px;
+    line-height: 17px;
+    @media (max-width: 1023px) {
+      font-size: 14px;
+    }
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+    @media (max-width: 639px) {
+      font-size: 10px;
+    }
+  }
   .gradientText {
     background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .extraLargeHeading {
+    @apply font-sofia-bold text72;
   }
   .largeHeading {
     @apply font-sofia-bold text50;
@@ -136,8 +195,17 @@
   .heading {
     @apply font-sofia-bold text36;
   }
+  .smallHeading {
+    @apply font-sofia-bold text36;
+  }
+  .largeParagraph {
+    @apply font text24;
+  }
   .paragraph {
     @apply font text20;
+  }
+  .smallText {
+    @apply font text16;
   }
   .largeHeadingBlack {
     @apply blackHeadingText largeHeading;
@@ -160,7 +228,7 @@
   /* TEXT END */
   /*  */
   /*  */
-  /* BACKGROUND COLOR STARTs */
+  /* BACKGROUND COLOR START */
   .bgWhite {
     background-color: #ffffff;
   }
@@ -491,16 +559,16 @@ footer svg:hover path {
   color: white !important;
 }
 .text-style {
-  @apply text-[#454545] font-normal  text-xl leading-7;
+  @apply text-[#454545] font-normal  paragraph leading-7;
 }
 .text-style-colorless {
-  @apply font-normal  text-xl;
+  @apply font-normal  paragraph;
 }
 .heading-style {
-  @apply font-sofia-bold font-black leading-10 text-[#383434] text-4xl;
+  @apply font-sofia-bold font-black leading-10 text-[#383434] heading;
 }
 .heading-style-colorless {
-  @apply font-sofia-bold font-black leading-10 text-4xl;
+  @apply font-sofia-bold font-black leading-10 heading;
 }
 .swiper-button-prev {
   display: none !important;

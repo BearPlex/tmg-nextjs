@@ -45,10 +45,10 @@ const Blog = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 heading-style font-bold leading-tight">
+              <h4 className="mb-6 headingBlack font-bold leading-tight">
                 News, insights, and creative culture from TMG.
               </h4>
-              <p className="text-style">
+              <p className="paragraphBlack">
                 Because it should never just be work, it should be
                 <span className="gradientText"> a work of art</span>{" "}
               </p>
@@ -75,10 +75,10 @@ const Blog = () => {
               />
 
               <div className="absolute left-10 bottom-10">
-                <span className="gradientText inline-block text-sm uppercase tracking-[1.5px] font-circular-medium pb-5">
+                <span className="gradientText inline-block smallText uppercase tracking-[1.5px] font-circular-medium pb-5">
                   Featured News
                 </span>
-                <h3 className="text-white max-w-[55%] font-sofia-bold text-[50px] leading-none">
+                <h3 className="text-white max-w-[55%] font-sofia-bold largeHeading leading-none">
                   5 examples of great E-Commerce product pages.
                 </h3>
               </div>

@@ -81,7 +81,7 @@ function Seo() {
                 <div className="px-32 py-10 sm:py-10 lg:flex lg:items-center gap-10 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
                     <h1
-                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-5xl`}
+                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 smallHeading md:text-5xl`}
                     >
                       Specialized branding services that
                       <span className="gradientText"> creates trust</span>{" "}
@@ -171,10 +171,10 @@ function Seo() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Image
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Building a brand image is one of the most important
                       aspects of any business. It is what sets your company
                       apart from the competition and helps you build a loyal
@@ -217,10 +217,10 @@ function Seo() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
                       Social Presence
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       The internet has massively impacted the way businesses
                       operate and reach their customer base. To build a strong
                       social presence, businesses need to have an effective
@@ -242,10 +242,10 @@ function Seo() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Tone of Voice{" "}
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       A unique tone of voice helps brands build trust and become
                       memorable in the minds of their audience. We’ll
                       collaborate with your team to devise a tone that resonates
@@ -283,10 +283,10 @@ function Seo() {
                     />
                   </div>
                   <div className="w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       What else?
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       As your dedicated SEO agency, we go a step further than
                       just make your website perform well. We strategize with
                       reasoning and depend on the market research so we can
@@ -333,10 +333,10 @@ function Seo() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg heading font-bold tracking-tight text-white sm:text-[35px]">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 text-xl leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

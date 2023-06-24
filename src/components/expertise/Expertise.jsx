@@ -1,5 +1,4 @@
 /* eslint-disable */
-import HeadingThree from "../headings/HeadingThree";
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
 const Expertise = (props) => {
@@ -39,11 +38,10 @@ const Expertise = (props) => {
                     // )
                     // <span  className="inline-block mt-4 text-pink-400 uppercase text-md font-medium mr-4 tracking-widest">{    item.attributes?.work1Keyword1} {item.attributes?.work1Keyword2} {item.attributes?.work1Keyword3}</span>
                   }
-                  <HeadingThree
-                    title={item.attributes?.featured_title}
-                    cssClass={`my-4 text-2xl ${cssClass} transition group-hover:text-pink-400 group-hover:transition-all`}
-                  />
-                  <p className={`${cssClass} text-md font-medium max-w-[90%]`}>
+                  <div className="my-4 heading leading-tight tracking-[-0.075rem] transition group-hover:text-pink-400 group-hover:transition-all">
+                    {item.attributes?.featured_title}
+                  </div>
+                  <p className={`${cssClass} paragraph max-w-[90%]`}>
                     {item.attributes?.gallery_first_description}
                   </p>
                 </div>

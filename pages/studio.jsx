@@ -17,7 +17,7 @@ import galleryImage6 from "../src/assets/images/studio6.png";
 // import mainImage from "../src/assets/svg/home_work_logo.svg";
 import mainImage from "../src/assets/images/team.png";
 import teamMember from "../src/assets/images/james-h.png";
-import HeadingThree from "../src/components/headings/HeadingThree";
+import Clients from "../src/components/clients/Clients";
 import Footer from "../src/components/footer/Footer";
 import member1 from "../src/assets/images/member1.png";
 import member2 from "../src/assets/images/member2.png";
@@ -87,11 +87,11 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 heading-style font-bold leading-tight">
+              <h4 className="mb-6 headingBlack font-bold leading-tight">
                 Lets make your{" "}
                 <span className="gradientText"> digital dreams a reality.</span>
               </h4>
-              <p className="text-style">
+              <p className="paragraphBlack">
                 We create the best customer experiences across your brands
                 journey, transforming the way brands connect with their
                 audiences by be
@@ -185,11 +185,11 @@ const Studio = () => {
             </div> */}
           </section>
           <div className="flex mt-10 justify-center flex-col items-center">
-            <h1 className=" text-[45px] text-center font-sofia-bold font-bold leading-tight relative top-10">
+            <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>
-            <p className=" mb-5 text-center mt-14 max-w-4xl mx-10 text-style ">
+            <p className=" mb-5 text-center mt-14 max-w-4xl mx-10 paragraphBlack ">
               With a team of smart and passionate professionals, our agency
               specializes in all elements of digital marketing, from social
               media management to search engine optimization. We are always on
@@ -273,10 +273,10 @@ const Studio = () => {
                 />
               </div>
               <div className="w-[50%] flex justify-center">
-                <HeadingThree
-                  cssClass="text-white text-base leading-relaxed"
-                  title="You will find our team working across Creative Web Design, Web Development, Branding, and Digital Marketing."
-                />
+                <div className="largeHeading whiteHeadingText leading-relaxed">
+                  Our team is 360 degree working in every aspect of digital
+                  marketing.
+                </div>
               </div>
             </div>
 
@@ -350,6 +350,7 @@ const Studio = () => {
             </div>
           </section>
         </section>
+        <Clients />
         <Footer />
       </PageWrapper>
     </>

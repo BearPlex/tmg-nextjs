@@ -9,8 +9,6 @@ import axios from "axios";
 import Section3Image from "../../src/components/works/section3Image";
 import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
-import HeadingThree from "../../src/components/headings/HeadingThree";
-import HeadingTwo from "../../src/components/headings/HeadingTwo";
 import blog1 from "../../src/assets/images/blog-1.png";
 import ReactMark from "react-markdown";
 import Image from "../../src/components/Image/Image";
@@ -55,7 +53,7 @@ function BlogDetail() {
 
         <div className="pt-20 px-10 md:px-28">
           {/* <span className="text-pink-400 text-base font-medium tracking-widest">{work?.attributes?.date}</span> */}
-          <HeadingTwo title={blogsStatic[0].title} />
+          <div className="headingBlack">{blogsStatic[0].title}</div>
           <br />
           <p>{blogsStatic[0].sub_title}</p>
           {/* <div>
@@ -96,10 +94,7 @@ function BlogDetail() {
               /> */}
           </div>
           <div className="max-w-2xl w-full mx-auto">
-            <HeadingThree
-              title="Introduction."
-              cssClass="text-orange_theme-400"
-            />
+            <div className="text-orange_theme-400 heading">Introduction.</div>
             <p className="text-zinc-700 pb-20  mt-3">
               Did you know that if the internet was a country, it would be the
               worlds 7th biggest polluter, emitting 1.6 billion annual tons in

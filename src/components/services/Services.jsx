@@ -41,30 +41,32 @@ const Services = () => {
   return (
     <section className="background-gradient">
       <div className="w-full px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 gap-10 py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-        <span className="block mb-16 uppercase text-white font-bold text-base tracking-wider heading-style-colorless">
+        <span className="block mb-16 uppercase tracking-wider headingWhite">
           Our Services
         </span>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col justify-center">
             <h3
-              className={`mb-6 font-bold  cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
-                type === "design" ? " text-white" : "text-gray-800"
+              className={`mb-6 font-bold  cursor-pointer transition-opacity extraLargeHeading ${
+                type === "design" ? " whiteHeadingText" : "blackDescriptionText"
               }`}
               onClick={() => setType("design")}
             >
               Web Design & Development
             </h3>
             <h3
-              className={`mb-6 text-white font-bold cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
-                type === "branding" ? "text-white" : "text-gray-800"
+              className={`mb-6  font-bold cursor-pointer transition-opacity extraLargeHeading ${
+                type === "branding"
+                  ? "whiteHeadingText"
+                  : "blackDescriptionText"
               }`}
               onClick={() => setType("branding")}
             >
               Branding
             </h3>
             <h3
-              className={`mb-6 text-white font-bold cursor-pointer transition-opacity text-5xl md:text-5xl lg:text-5xl xl:text-7xl leading-none ${
-                type === "digital" ? "text-white" : "text-gray-800"
+              className={`mb-6 font-bold cursor-pointer transition-opacity extraLargeHeading ${
+                type === "digital" ? "whiteHeadingText" : "blackDescriptionText"
               }`}
               onClick={() => setType("digital")}
             >
@@ -88,7 +90,7 @@ const Services = () => {
                 className="w-[100%]"
               />
             </div>
-            <p className="text-xl text-white font-normal mt-10 leading-loose min-h-[120px]">
+            <p className="paragraphWhite mt-10 leading-loose min-h-[120px]">
               {handleGetImages().detail}
             </p>
           </div>

@@ -17,8 +17,8 @@ const Contact = () => {
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-10 px-28">
           <div className="w-[30%]">
-            <h4 className=" font-bold text-4xl mb-6 uppercase">new york</h4>
-            <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
+            <h4 className=" headingBlack mb-6 uppercase">new york</h4>
+            <p className="font-bold leading-tight text-black largeParagraph captilize whitespace-pre-wrap">
               Brooklyn,
               <br />
               New York,
@@ -30,7 +30,7 @@ const Contact = () => {
             <p className="mt-10">
               <a
                 href="tel:+44(0)20 3951 0562"
-                className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
+                className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
               >
                 +1 (917) 970-1353
               </a>
@@ -38,23 +38,23 @@ const Contact = () => {
             <p className="group mt-10 relative">
               <a
                 href="mailto:info@themediagale.com"
-                className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
+                className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
               >
                 info@themediagale.com
               </a>
               <a
                 href="mailto:info@themediagale.com"
-                className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
+                className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
               >
                 support@themediagale.com
               </a>
               <a
                 href="mailto:contacus@themediagale.com"
-                className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400 transition-all"
+                className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all"
               >
                 contact@themediagale.com
               </a>
-              {/* <span className="absolute hidden text-orange_theme-500 text-lg font-bold cursor-pointer group-hover:block">
+              {/* <span className="absolute hidden text-orange_theme-500 smallText font-bold cursor-pointer group-hover:block">
               Copy to clipboard
             </span> */}
             </p>
@@ -74,8 +74,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-[30%]">
-            <h4 className=" font-bold text-4xl mb-6 uppercase">Lahore</h4>
-            <p className="font-bold leading-tight text-black text-2xl captilize whitespace-pre-wrap">
+            <h4 className=" headingBlack mb-6 uppercase">Lahore</h4>
+            <p className="font-bold leading-tight text-black largeParagraph captilize whitespace-pre-wrap">
               Dha Phase-5,
               <br />
               Lahore,
@@ -87,7 +87,7 @@ const Contact = () => {
             {/* <p className="mt-10">
             <a
               href="tel:+1 833 502 0267"
-              className="inline-block text-orange_theme-500 font-bold text-2xl hover:text-orange_theme-400  transition-all"
+              className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
             >
               +1 (917) 970-1353
             </a>
@@ -110,13 +110,13 @@ const Contact = () => {
                   <div className="file-icon right-2 absolute z-0">
                     <FontAwesomeIcon
                       icon={faFileZipper}
-                      className="text-pink-400 text-xl"
+                      className="text-pink-400 paragraph"
                     />
                   </div>
                   <div className="hidden-icon right-2 absolute z-0">
                     <FontAwesomeIcon
                       icon={faFileZipper}
-                      className="text-pink-400  text-xl"
+                      className="text-pink-400  paragraph"
                     />
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Contact = () => {
                     <li className="ml-8">
                       <label
                         htmlFor="flexRadioDefault10"
-                        className="text-xs leading-none  font-medium text-zinc-700"
+                        className="paragraph leading-none  font-medium text-zinc-700"
                       >
                         Im happy to receive a seriously cool monthly newsletter
                         from KOTA.
@@ -159,7 +159,7 @@ const Contact = () => {
                     <li className="ml-8">
                       <label
                         htmlFor="flexRadioDefault20"
-                        className="text-xs font-medium text-zinc-700 leading-4"
+                        className="paragraph font-medium text-zinc-700 leading-4"
                       >
                         I understand that KOTA will securely hold my data in
                         accordance with their privacy policy.
@@ -167,7 +167,7 @@ const Contact = () => {
                     </li>
                   </ul>
                   <GradientButton text="Submit" route="/" />
-                  {/* <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold text-xs text-[#F58460] bgWhite hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
+                  {/* <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold paragraph text-[#F58460] bgWhite hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
                   Submit
                 </button> */}
                 </div>

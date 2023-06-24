@@ -57,10 +57,10 @@ function Socialmediamarketing() {
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+                  <h4 className="mb-6 smallHeading md:ext-7xl font-bold leading-tight">
                     Performance Driven Digital Marketing Services
                   </h4>
-                  <p className="text-2xl">
+                  <p className="largeParagraph">
                     With proven game changing results, our award winning
                     performance experts ensure that all the leads turn into a
                     <span className="gradientText">profitable conversion.</span>{" "}
@@ -80,7 +80,7 @@ function Socialmediamarketing() {
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                     <h1
-                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
+                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 smallHeading md:text-6xl max-w-xl`}
                     >
                       High Performance
                       <span className="gradientText">
@@ -91,7 +91,7 @@ function Socialmediamarketing() {
                     </h1>
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="mt-6 smallText leading-8 text-gray-600">
                       Getting noticed and remembered by the right audience is a
                       slow delicate process. It takes multiple testing, creative
                       input and high performing campaign structures to ensure
@@ -173,10 +173,10 @@ function Socialmediamarketing() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Building a brand image is one of the most important
                       aspects of any business. It is what sets your company
                       apart from the competition and helps you build a loyal
@@ -219,10 +219,10 @@ function Socialmediamarketing() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Building a brand image is one of the most important
                       aspects of any business. It is what sets your company
                       apart from the competition and helps you build a loyal
@@ -243,10 +243,10 @@ function Socialmediamarketing() {
               <div className="relative isolate pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Building a brand image is one of the most important
                       aspects of any business. It is what sets your company
                       apart from the competition and helps you build a loyal
@@ -289,10 +289,10 @@ function Socialmediamarketing() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Brand Name
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Building a brand image is one of the most important
                       aspects of any business. It is what sets your company
                       apart from the competition and helps you build a loyal
@@ -355,10 +355,10 @@ function Socialmediamarketing() {
                   />
                 </div>
                 <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 text-xl leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

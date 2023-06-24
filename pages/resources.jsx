@@ -1,7 +1,6 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/resource-word.png";
-import HeadingThree from "../src/components/headings/HeadingThree";
 import Link from "next/link";
 import homePageImage from "../src/assets/images/seo-resource.png";
 import developmentImage from "../src/assets/images/ppc-resource.png";
@@ -53,7 +52,7 @@ const Resources = () => {
               className="flex flex-col md:flex-row md:items-center gap-10 justify-between py-28"
             >
               <div className="w-[50%]">
-                <HeadingThree cssClass="heading-style" title="SEO Resource" />
+                <div className="headingBlack">SEO Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style text-black">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -75,7 +74,7 @@ const Resources = () => {
               className="flex  justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
             >
               <div className="w-[50%]">
-                <HeadingThree cssClass="heading-style" title="PPC Resource" />
+                <div className="headingBlack">PPC Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -97,10 +96,7 @@ const Resources = () => {
               className="flex justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
             >
               <div className="w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Design Resource"
-                />
+                <div className="headingBlack">Design Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style text-black">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -122,10 +118,7 @@ const Resources = () => {
               className="flex justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
             >
               <div className="md:w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Content Resource"
-                />
+                <div className="headingBlack">Content Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -157,7 +150,7 @@ export default Resources;
 // >
 // <div className="w-[40%]">
 //   <HeadingThree cssClass="text-[5rem]" title="E-Commerce" />
-//   <p className="mt-8 mb-14 font-medium text-xl text-black">
+//   <p className="mt-8 mb-14 font-medium paragraph text-black">
 //     Reinvent your online store with an expert team who know what it
 //     takes to turn clicks into customers and keep them coming back.
 //   </p>
@@ -181,7 +174,7 @@ export default Resources;
 // >
 // <div className="w-[40%]">
 //   <HeadingThree cssClass="text-[5rem]" title="WordPress" />
-//   <p className="mt-8 mb-14 font-medium text-xl text-black">
+//   <p className="mt-8 mb-14 font-medium paragraph text-black">
 //     Our approach decouples WordPress CMS from the front end
 //     technology to tighten security and improve overall speed.
 //   </p>

@@ -174,10 +174,10 @@ function WebDesign() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Ecommerce Websites
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       If you're considering developing an e-Commerce website, it
                       is time to let us take the lead and assist you in
                       providing a seamless online shopping experience to your
@@ -218,10 +218,10 @@ function WebDesign() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
                       Software as a Service
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       We offer Software-as-a-Service to clients in order to help
                       them utilize resources more efficiently and make
                       well-informed business decisions. Through better strategic
@@ -241,10 +241,10 @@ function WebDesign() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
                       Business Websites{" "}
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       If you're considering developing a business website, it is
                       time to let us take the lead and assist you in providing a
                       seamless browsing experience to your leads. We offer
@@ -290,10 +290,10 @@ function WebDesign() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
                       What else?
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       As your dedicated SEO agency, we go a step further than
                       just make your website perform well. We strategize with
                       reasoning and depend on the market research so we can
@@ -340,10 +340,10 @@ function WebDesign() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg heading font-bold tracking-tight text-white sm:text-[35px]">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 text-xl leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

@@ -1,7 +1,6 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/services-logo.png";
-import HeadingThree from "../src/components/headings/HeadingThree";
 import Link from "next/link";
 import homePageImage from "../src/assets/images/social-media-marketing.png";
 import developmentImage from "../src/assets/images/brand-management.png";
@@ -39,13 +38,13 @@ const Services = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <p className="mb-6 text-black font-medium text-[1.16rem]">
+              <p className="mb-6 paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
                 by solid strategy, we assist our clients in building a magnetic
                 online presence to transform every click into a conversion.
               </p>
 
-              <p className="text-black font-medium text-[1.16rem]">
+              <p className="paragraphBlack">
                 Explore our services to see how we can{" "}
                 <span className="text-pink-400">
                   transform your business into a brand.
@@ -64,73 +63,73 @@ const Services = () => {
               >
                 <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
                   {/* <Link href="/webDevelopment">
-                <a className="w-1/2 text-base font-medium text-black inline-block">
+                <a className="w-1/2 font-medium paragraphBlack inline-block">
                   Learn More
                 </a>
               </Link>
               <Link href="/webDevelopment">
-                <a className="w-1/2 text-base font-medium text-black inline-block">
+                <a className="w-1/2 font-medium paragraphBlack inline-block">
                   Learn More
                 </a>
               </Link> */}
                   <a
                     href="#web_design"
-                    className="w-1/2 text-base font-medium text-black inline-block"
+                    className="w-1/2 font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 text-lg mr-3"
+                      className="text-pink-400 smallText mr-3"
                     />
                     Social Media Marketing
                   </a>
 
                   <a
                     href="#web_development"
-                    className="w-1/2 text-base font-medium text-black inline-block"
+                    className="w-1/2 font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 text-lg mr-3"
+                      className="text-pink-400 smallText mr-3"
                     />
                     Search Engine Optimization
                   </a>
                   <a
                     href="#branding"
-                    className="w-1/2 text-base font-medium text-black inline-block"
+                    className="w-1/2 font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 text-lg mr-3"
+                      className="text-pink-400 smallText mr-3"
                     />
                     Brand Management
                   </a>
                   <a
                     href="#digital_marketing"
-                    className="w-1/2 text-base font-medium text-black inline-block"
+                    className="w-1/2 font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 text-lg mr-3"
+                      className="text-pink-400 smallText mr-3"
                     />
                     Website Design & Dev.
                   </a>
                   {/* <a
                   href="#e_commerce"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 smallText font-medium paragraphBlack inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
-                    className="text-pink-400 text-lg mr-3"
+                    className="text-pink-400 smallText mr-3"
                   />
                   E-Commerce
                 </a>
                 <a
                   href="#wordpress"
-                  className="w-1/2 text-lg font-medium text-black inline-block"
+                  className="w-1/2 smallText font-medium paragraphBlack inline-block"
                 >
                   <FontAwesomeIcon
                     icon={faAngleRight}
-                    className="text-pink-400 text-lg mr-3"
+                    className="text-pink-400 smallText mr-3"
                   />
                   WordPress
                 </a> */}
@@ -151,10 +150,7 @@ const Services = () => {
               onClick={pushServiceSocial}
             >
               <div className="w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Social Media Marketing"
-                />
+                <div className="headingBlack">Social Media Marketing</div>
                 <p className="mt-8 mb-14 text-style text-black">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -177,10 +173,7 @@ const Services = () => {
               onClick={pushServiceBrand}
             >
               <div className="w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Brand Management"
-                />
+                <div className="headingBlack">Brand Management</div>
                 <p className="mt-8 mb-14 text-style text-black">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
@@ -203,10 +196,7 @@ const Services = () => {
               onClick={pushServiceSeo}
             >
               <div className="w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Search Engine Optimization"
-                />
+                <div className="headingBlack">Search Engine Optimization</div>
                 <p className="mt-8 mb-14 text-style text-black">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
@@ -229,10 +219,7 @@ const Services = () => {
               onClick={pushServiceDesign}
             >
               <div className="w-[50%]">
-                <HeadingThree
-                  cssClass="heading-style"
-                  title="Website Design & Development"
-                />
+                <div className="headingBlack">Website Design & Development</div>
                 <p className="mt-8 mb-14 text-style text-black">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
@@ -264,7 +251,7 @@ export default Services;
 // >
 //   <div className="w-[40%]">
 //     <HeadingThree cssClass="text-[5rem]" title="E-Commerce" />
-//     <p className="mt-8 mb-14 font-medium text-xl text-black">
+//     <p className="mt-8 mb-14 font-medium paragraph text-black">
 //       Reinvent your online store with an expert team who know what it
 //       takes to turn clicks into customers and keep them coming back.
 //     </p>
@@ -288,7 +275,7 @@ export default Services;
 // >
 //   <div className="w-[40%]">
 //     <HeadingThree cssClass="text-[5rem]" title="WordPress" />
-//     <p className="mt-8 mb-14 font-medium text-xl text-black">
+//     <p className="mt-8 mb-14 font-medium paragraph text-black">
 //       Our approach decouples WordPress CMS from the front end
 //       technology to tighten security and improve overall speed.
 //     </p>

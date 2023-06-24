@@ -57,11 +57,11 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6 text-3xl md:ext-7xl font-bold leading-tight">
+                  <h4 className="mb-6 smallHeading md:ext-7xl font-bold leading-tight">
                     Performance Driven <span className="gradientText">SEO</span>{" "}
                     Services
                   </h4>
-                  <p className="text-2xl">
+                  <p className="largeParagraph">
                     A highly optimized website is essential for a business to
                     generate new leads and sales on the internet. However, to
                     achieve this requires a website to have a content strategy,
@@ -84,9 +84,7 @@ function BrandManagement() {
               <div className="relative isolate ">
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                    <h1
-                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 text-3xl md:text-6xl max-w-xl`}
-                    >
+                    <h1 className={`mb-6 leading-none largeHeading  max-w-xl`}>
                       Content strategy that
                       <span className="gradientText">
                         {" "}
@@ -95,7 +93,7 @@ function BrandManagement() {
                     </h1>
                   </div>
                   <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="mt-6 paragraphBlack leading-8 ">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
@@ -171,10 +169,10 @@ function BrandManagement() {
               <div className="w-full pt-14">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       On Page SEO 
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       While search engine rankings are driven from link building
                       campaigns, ongoing on-page optimization of your website
                       hosting, code, content is foundational when it comes to
@@ -214,10 +212,10 @@ function BrandManagement() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Off Page SEO
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       Link Building and Content Marketing is essential to scale
                       your website and to drive meaningful traffic to perform
                       action. Our package includes Content Marketing, Link
@@ -235,10 +233,10 @@ function BrandManagement() {
               <div className="w-full">
                 <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       Content Optimization {" "}
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       TMG provides content optimization services to help make
                       your content more effective, and improve quality, making
                       it more informative and engaging for your audience. We can
@@ -278,10 +276,10 @@ function BrandManagement() {
                     />
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                       What else?
                     </h1>
-                    <p className="mt-6 text-xl leading-8 text-white font-normal">
+                    <p className="mt-6 paragraph leading-8 text-white font-normal">
                       As your dedicated SEO agency, we go a step further than
                       just make your website perform well. We strategize with
                       reasoning and depend on the market research so we can
@@ -328,10 +326,10 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg text-3xl font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 text-xl leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

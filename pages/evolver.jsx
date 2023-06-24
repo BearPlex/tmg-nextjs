@@ -25,11 +25,11 @@ function evolver() {
 </svg>
 
 
-      <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity today.</h2>
-      <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+      <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">Boost your productivity today.</h2>
+      <p className="mx-auto mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
       <div className="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-        <a href="#" className="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+        <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 smallText font-semibold blackDescriptionText shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+        <a href="#" className="smallText font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
       </div>
      
     </div>
@@ -48,10 +48,10 @@ function evolver() {
             />
           </div>
 
-          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">
             Try QUANTUMiND risk-free for 20 days you can even keep the bottles
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+          <p className="mx-auto mt-6 max-w-xl paragraph leading-8 blackHeadingText">
             if QUANTUMIND doesn’t transform your life or you don’t feel the
             difference for up to 20 days since your purchase, email our support
             team and we’ll give you a complete refund - no questions asked. You
@@ -83,12 +83,12 @@ function evolver() {
               </div>
             </div>
             {/* <div className="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-[#F9FAFB] ">
-                            <h3 id="tier-enterprise" className=" font-bold text-4xl leading-9 text-[#1B1B1B]">
+                            <h3 id="tier-enterprise" className=" font-bold heading leading-9 text-[#1B1B1B]">
                             QUANTUMiND
 
                             </h3>
                             <div>
-                            <p className="mt-4 text-base leading-7 text-gray-700 font-bold">
+                            <p className="mt-4 text-base leading-7 blackDescriptionText font-bold">
                             20 Servings
 
                             </p>
@@ -97,11 +97,11 @@ function evolver() {
 
                             </span>
                             </div>
-                            <p className="mt-4 text-base leading-5 text-gray-700 font-semibold">
+                            <p className="mt-4 text-base leading-5 blackDescriptionText font-semibold">
                             Price for facebook and instagram<br/> users today:
 
                             </p>
-                            <div className="text-[#1B1B1B] font-semibold text-4xl mt-2">
+                            <div className="text-[#1B1B1B] font-semibold heading mt-2">
                           $48.74 
                           </div>
                          
@@ -110,7 +110,7 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal text-sm text-gray-700 ">
+                  <p className="font-normal smallText blackDescriptionText ">
                   One-time payment SAVE 20%
                   </p>
         
@@ -120,7 +120,7 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal text-sm text-gray-700 ">
+                  <p className="font-normal smallText blackDescriptionText ">
                   20-DAY Money back guarantee for first - time orders
                   </p>
         
@@ -130,30 +130,30 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal text-sm text-gray-700 ">
+                  <p className="font-normal smallText blackDescriptionText ">
                   Subscribe & Save + Free Shipping
 
                   </p>
         
                       </div>
-                                            <a href="https://youtube.com" id="subscribe-button" className="mt-5 block  py-2.5 px-3.5 text-center text-sm lg:text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-6 bg-[#12B76A] text-white shadow-sm rounded-full hover:bg-[#0f9cb9] lg:py-4">Try Risk Free</a>
+                                            <a href="https://youtube.com" id="subscribe-button" className="mt-5 block  py-2.5 px-3.5 text-center smallText lg:smallText font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-6 bg-[#12B76A] text-white shadow-sm rounded-full hover:bg-[#0f9cb9] lg:py-4">Try Risk Free</a>
 
                         
                           </div> */}
             <div className="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-[#F9FAFB] ">
               <h3
                 id="tier-enterprise"
-                className=" font-bold text-4xl leading-9 text-[#1B1B1B]"
+                className=" font-bold headingBlack leading-9"
               >
                 EQUILIBRIUM
               </h3>
 
-              <p className="mt-4 text-base leading-7 text-gray-700">
+              <p className="mt-4 leading-7 paragraphBlack">
                 Premium adaptogenic blend for a calmer, more stress-resilient
                 brain. Take 2-3 capsules per day.
               </p>
               <div className="mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-normal text-base text-[#1F2937] flex justify-between items-center">
+                <div className="font-normal text-base blackDescriptionText flex justify-between items-center">
                   Subscribe &amp; save 25% + free shipping:
                   <input
                     type="radio"
@@ -165,12 +165,12 @@ function evolver() {
                   />
                 </div>
 
-                <div className="text-[#1B1B1B] font-semibold text-4xl mt-2">
+                <div className="headingBlack font-semibold heading mt-2">
                   $48.74
                 </div>
               </div>
               <div className="mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-normal text-base text-[#1F2937] flex justify-between">
+                <div className="font-normal text-base blackDescriptionText flex justify-between">
                   One-time purchase:
                   <input
                     type="radio"
@@ -180,9 +180,7 @@ function evolver() {
                     onclick="updateButton()"
                   />
                 </div>
-                <div className="text-[#1B1B1B] font-semibold text-4xl mt-2">
-                  $64.99
-                </div>
+                <div className="font-semibold headingBlack mt-2">$64.99</div>
               </div>
               <div className="flex gap-2 items-center mt-4">
                 <div className="">
@@ -210,20 +208,20 @@ function evolver() {
                           role="tooltip"
                           className="z-20 w-64 absolute transition duration-150 ease-in-out left-0 mt-40 shadow-lg bg-[#FFFFFF] p-4 rounded-[25px] tooltip hidden"
                         >
-                          <p className="text-sm font-medium text-[#1B1B1B] pb-1">
+                          <p className="font-medium paragra pb-1">
                             How subscription works?
                           </p>
-                          <p className="text-xs leading-4 text-[#1F2937] pb-3">
+                          <p className="paragraph leading-4 blackDescriptionText pb-3">
                             Products are automatically delivered on your
                             schedule. No obligation, modify or cancel your
                             subscription anytime.
                           </p>
-                          <p className="text-xs leading-4 text-[#1F2937] pb-3">
+                          <p className="paragraph leading-4 blackDescriptionText pb-3">
                             <b>Note: </b> 30-Days Money Back Guarantee only
                             applies on first purchase.
                           </p>
                         </div>
-                        <div className="font-normal text-sm text-gray-700 whitespace-nowrap cursor-pointer">
+                        <div className="font-normal smallText blackDescriptionText whitespace-nowrap cursor-pointer">
                           Subscription Details
                         </div>
                       </a>
@@ -236,7 +234,7 @@ function evolver() {
               <a
                 href="https://youtube.com"
                 id="subscribe-button"
-                className="mt-5 block  py-2.5 px-3.5 text-center text-sm lg:text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-6 bg-[#12ABC9] text-white shadow-sm rounded-full hover:bg-[#0f9cb9] lg:py-4"
+                className="mt-5 block  py-2.5 px-3.5 text-center smallText lg:smallText font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-6 bg-[#12ABC9] text-white shadow-sm rounded-full hover:bg-[#0f9cb9] lg:py-4"
               >
                 Subscribe Now
               </a>
@@ -249,7 +247,7 @@ function evolver() {
                   alt="evolvere-repo"
                 />
 
-                <p className="font-normal text-sm text-gray-700 ">
+                <p className="font-normal smallText blackDescriptionText ">
                   20-day Money Back Guarantee on First Purchase
                 </p>
               </div>
@@ -330,7 +328,7 @@ function evolver() {
                 />
               </svg>
             </div>
-            <blockquote className="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
+            <blockquote className="mt-10 paragraph font-semibold leading-8 tracking-tight text-gray-900 sm:largeParagraph sm:leading-9">
               <p>
                 “I’ve taken Adderall when I was in college and this is the best
                 clean supplement you take every single day that enhances your
@@ -342,8 +340,8 @@ function evolver() {
             </blockquote>
             <figcaption className="mt-10 flex justify-between gap-x-6">
               {/* <Image decoding="async" width={500} height={300} className="h-12 w-12 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt=""/> */}
-              <div className="text-sm leading-6">
-                <div className=" text-gray-900 text-lg font-bold">
+              <div className="smallText leading-6">
+                <div className=" text-gray-900 smallText font-bold">
                   Mounir L.
                 </div>
                 <div className="mt-0.5 text-gray-600">United States</div>

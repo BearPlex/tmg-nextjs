@@ -32,7 +32,7 @@ const Header = () => {
               <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
                 <li className={showMenu ? "hidden" : "block"}>
                   <Link
-                    className="text-xl font-sofia-extrabold font-extrabold  text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                    className="paragraph font-sofia-extrabold font-extrabold  text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
                     href="/work"
                   >
                     Work
@@ -40,7 +40,7 @@ const Header = () => {
                 </li>
                 <li className={showMenu ? "hidden" : "block"}>
                   <Link
-                    className="text-xl font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                    className="paragraph font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
                     href="/contact"
                   >
                     Contact

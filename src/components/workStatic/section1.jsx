@@ -32,7 +32,7 @@ function section1(props) {
               id="beautyRef"
               className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"
             >
-              <sup className="text-sm text-pink-400 font-medium inline-block absolute top-3 left-0">
+              <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
                 01
               </sup>{" "}
               {work[0].gallery_first_title}
