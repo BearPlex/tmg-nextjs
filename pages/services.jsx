@@ -17,7 +17,7 @@ import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
-
+import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 const Services = () => {
   const router = useRouter();
   const pushServiceSocial = () => {
@@ -46,7 +46,7 @@ const Services = () => {
 
               <p className="paragraphBlack">
                 Explore our services to see how we can{" "}
-                <span className="text-pink-400">
+                <span className="gradientText">
                   transform your business into a brand.
                 </span>{" "}
               </p>
@@ -143,99 +143,68 @@ const Services = () => {
               </div>
             </div>
           </HeroContainer>
-          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
-            <section
+          <div className="pagePaddingX">
+            <TextWithImageContainer
               id="web_design"
-              className="flex items-center justify-between gap-10 py-28 cursor-pointer"
-              onClick={pushServiceSocial}
+              imageSrc={homePageImage.src}
+              imageAlt="services images"
+              selectRoute={pushServiceSocial}
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">Social Media Marketing</div>
-                <p className="mt-8 mb-14 text-style text-black">
+                <p className="mt-8 mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDesign" />
+                <GradientButton text="Learn More" route="/service/web-design" />
               </div>
-              <div className="w-[50%]">
-                <Image
-                  width={500}
-                  height={300}
-                  src={homePageImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+
+            <TextWithImageContainer
               id="web_development"
-              className="flex items-center justify-between gap-10 py-28 cursor-pointer"
-              onClick={pushServiceBrand}
+              imageSrc={developmentImage.src}
+              imageAlt="services images"
+              selectRoute={pushServiceBrand}
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">Brand Management</div>
-                <p className="mt-8 mb-14 text-style text-black">
+                <p className="mt-8 mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%]">
-                <Image
-                  width={500}
-                  height={300}
-                  src={developmentImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+            <TextWithImageContainer
               id="branding"
-              className="flex items-center justify-between gap-10 py-28 cursor-pointer"
-              onClick={pushServiceSeo}
+              imageSrc={digitalImage.src}
+              imageAlt="services images"
+              selectRoute={pushServiceSeo}
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">Search Engine Optimization</div>
-                <p className="mt-8 mb-14 text-style text-black">
+                <p className="mt-8 mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%]">
-                <Image
-                  width={500}
-                  height={300}
-                  src={digitalImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+            <TextWithImageContainer
               id="digital_marketing"
-              className="flex items-center gap-10 justify-between py-28 cursor-pointer"
-              onClick={pushServiceDesign}
+              imageSrc={marketingImage.src}
+              imageAlt="services images"
+              selectRoute={pushServiceDesign}
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">Website Design & Development</div>
-                <p className="mt-8 mb-14 text-style text-black">
+                <p className="mt-8 mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%]">
-                <Image
-                  width={500}
-                  height={300}
-                  src={marketingImage.src}
-                  alt="services images"
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </section>
+            </TextWithImageContainer>
           </div>
           <Footer />
         </section>

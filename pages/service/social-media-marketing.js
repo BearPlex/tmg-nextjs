@@ -17,6 +17,7 @@ import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 function Socialmediamarketing() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -169,159 +170,107 @@ function Socialmediamarketing() {
           </section>
 
           <section>
-            <div className="bg-[#212121]">
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Brand Name
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Building a brand image is one of the most important
-                      aspects of any business. It is what sets your company
-                      apart from the competition and helps you build a loyal
-                      customer base.
-                      <br />
-                      <br />
-                      Your brand image should be consistent and should stand out
-                      across all channels - from your website to your social
-                      media accounts and your physical collateral. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={book.src}
-                      alt="book"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+            <div className="bgBlack w-full">
+              <TextWithImageContainer
+                imageSrc={book.src}
+                imageAlt="book"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Brand Name
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Building a brand image is one of the most important aspects
+                    of any business. It is what sets your company apart from the
+                    competition and helps you build a loyal customer base.
+                    <br />
+                    <br />
+                    Your brand image should be consistent and should stand out
+                    across all channels - from your website to your social media
+                    accounts and your physical collateral. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="relative isolate ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile3.src}
-                      alt="mobile"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Brand Name
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Building a brand image is one of the most important
-                      aspects of any business. It is what sets your company
-                      apart from the competition and helps you build a loyal
-                      customer base.
-                      <br />
-                      <br />
-                      Your brand image should be consistent and should stand out
-                      across all channels - from your website to your social
-                      media accounts and your physical collateral. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile3.src}
+                imageAlt="mobile3"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Brand Name
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Building a brand image is one of the most important aspects
+                    of any business. It is what sets your company apart from the
+                    competition and helps you build a loyal customer base.
+                    <br />
+                    <br />
+                    Your brand image should be consistent and should stand out
+                    across all channels - from your website to your social media
+                    accounts and your physical collateral. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="relative isolate pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Brand Name
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Building a brand image is one of the most important
-                      aspects of any business. It is what sets your company
-                      apart from the competition and helps you build a loyal
-                      customer base.
-                      <br />
-                      <br />
-                      Your brand image should be consistent and should stand out
-                      across all channels - from your website to your social
-                      media accounts and your physical collateral. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile2.src}
-                      alt="mobile2"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile2.src}
+                imageAlt="mobile2"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Brand Name
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Building a brand image is one of the most important aspects
+                    of any business. It is what sets your company apart from the
+                    competition and helps you build a loyal customer base.
+                    <br />
+                    <br />
+                    Your brand image should be consistent and should stand out
+                    across all channels - from your website to your social media
+                    accounts and your physical collateral. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="relative isolate ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={tmg.src}
-                      alt="tmg"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Brand Name
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Building a brand image is one of the most important
-                      aspects of any business. It is what sets your company
-                      apart from the competition and helps you build a loyal
-                      customer base.
-                      <br />
-                      <br />
-                      Your brand image should be consistent and should stand out
-                      across all channels - from your website to your social
-                      media accounts and your physical collateral. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                      {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                    <div className="">
-                      <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                      <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                      <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                        Learn{" "}
-                        <span className="text-pink-500 relative ml-[5px]">
-                          {" "}
-                          More
-                        </span>
-                      </p>
-                    </div>
-                  </button> */}
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={tmg.src}
+                imageAlt="tmg"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Brand Name
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Building a brand image is one of the most important aspects
+                    of any business. It is what sets your company apart from the
+                    competition and helps you build a loyal customer base.
+                    <br />
+                    <br />
+                    Your brand image should be consistent and should stand out
+                    across all channels - from your website to your social media
+                    accounts and your physical collateral. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
 

@@ -189,7 +189,7 @@ const Studio = () => {
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>
-            <p className=" mb-5 text-center mt-14 max-w-4xl mx-10 paragraphBlack ">
+            <p className=" mb-5 text-center mt-14 max-w-4xl paragraphBlack ">
               With a team of smart and passionate professionals, our agency
               specializes in all elements of digital marketing, from social
               media management to search engine optimization. We are always on
@@ -203,7 +203,7 @@ const Studio = () => {
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="mt-20 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
+          <section className="mt-20 pagePaddingX">
             <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
               <div className="mb-4">
                 <Image
@@ -262,7 +262,7 @@ const Studio = () => {
             </div>
           </section>
           <section className="pt-36 h-auto bgBlack mt-60 pb-10">
-            <div className="flex items-center px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 justify-between gap-10 pb-20">
+            <div className="flex items-center pagePaddingX justify-between gap-10 pb-20">
               <div className="w-[50%]">
                 <Image
                   width={500}
@@ -281,9 +281,9 @@ const Studio = () => {
             </div>
 
             <div className="flex flex-col h-auto items-center">
-              <div className="w-full px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 ">
+              <div className="w-full pagePaddingX ">
                 <Swiper
-                  slidesPerView={4}
+                  slidesPerView={1}
                   spaceBetween={30}
                   centeredSlides={false}
                   initialSlide={0}

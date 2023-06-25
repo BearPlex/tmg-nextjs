@@ -33,12 +33,12 @@ const Articles = () => {
     // console.log("Id", id);
   };
   return (
-    <div className="px-10 h-auto md:px-10 lg:px-14 xl:px-20 2xl:px-32 pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+    <div className="h-auto pagePaddingX pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
       <div className="mb-20 headingBlack">Latest Articles</div>
       <div className="">
         <div className="h-auto w-full">
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             spaceBetween={20}
             centeredSlides={false}
             initialSlide={0}

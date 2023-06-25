@@ -83,7 +83,7 @@ const Work = () => {
             </p>
           </div>
         </HeroContainer>
-        <Tabs className="p-20 px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 tabs-wrapper">
+        <Tabs className="pagePaddingX tabs-wrapper">
           <TabList>
             {
               // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)

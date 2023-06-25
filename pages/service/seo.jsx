@@ -17,6 +17,7 @@ import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -165,134 +166,97 @@ function BrandManagement() {
           </section>
 
           <section>
-            <div className="bg-[#212121]">
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      On Page SEO 
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      While search engine rankings are driven from link building
-                      campaigns, ongoing on-page optimization of your website
-                      hosting, code, content is foundational when it comes to
-                      user experience. That is why we ensure to optimize your
-                      pages which include Meta Title and Descriptions, Title
-                      Tags and Creating GMB Profile.
-                    </p>
-                    <div className=" flex items-center gap-x-6 pt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={book.src}
-                      alt="book"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+            <div className="bgBlack w-full">
+              <TextWithImageContainer
+                imageSrc={book.src}
+                imageAlt="book"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    On Page SEO 
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    While search engine rankings are driven from link building
+                    campaigns, ongoing on-page optimization of your website
+                    hosting, code, content is foundational when it comes to user
+                    experience. That is why we ensure to optimize your pages
+                    which include Meta Title and Descriptions, Title Tags and
+                    Creating GMB Profile.
+                  </p>
+                  <div className=" flex items-center gap-x-6 pt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile3.src}
-                      alt="mobile3"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Off Page SEO
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Link Building and Content Marketing is essential to scale
-                      your website and to drive meaningful traffic to perform
-                      action. Our package includes Content Marketing, Link
-                      Building on good websites, Guest Posting, Increasing
-                      Social Media Presence and Removing Toxic Links to help
-                      increase authority and website credibility on Google.
-                    </p>
-                    <div className=" flex items-center gap-x-6 pt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile3.src}
+                imageAlt="mobile3"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Off Page SEO
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Link Building and Content Marketing is essential to scale
+                    your website and to drive meaningful traffic to perform
+                    action. Our package includes Content Marketing, Link
+                    Building on good websites, Guest Posting, Increasing Social
+                    Media Presence and Removing Toxic Links to help increase
+                    authority and website credibility on Google.
+                  </p>
+                  <div className=" flex items-center gap-x-6 pt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Content Optimization {" "}
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      TMG provides content optimization services to help make
-                      your content more effective, and improve quality, making
-                      it more informative and engaging for your audience. We can
-                      also help you target specific keywords and topics to
-                      ensure that your content is being seen by the right
-                      people.
-                    </p>
-                    <div className=" flex items-center gap-x-6 pt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile2.src}
-                      alt="mobile2"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile2.src}
+                imageAlt="mobile2"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Content Optimization {" "}
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    TMG provides content optimization services to help make your
+                    content more effective, and improve quality, making it more
+                    informative and engaging for your audience. We can also help
+                    you target specific keywords and topics to ensure that your
+                    content is being seen by the right people.
+                  </p>
+                  <div className=" flex items-center gap-x-6 pt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={tmg.src}
-                      alt="tmg"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      What else?
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      As your dedicated SEO agency, we go a step further than
-                      just make your website perform well. We strategize with
-                      reasoning and depend on the market research so we can
-                      showcase the results to you, that would help your business
-                      get authentic traffic without spending another dime on
-                      it. 
-                    </p>
-                    <div className=" flex items-center gap-x-6 pt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={tmg.src}
+                imageAlt="tmg"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    What else?
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    As your dedicated SEO agency, we go a step further than just
+                    make your website perform well. We strategize with reasoning
+                    and depend on the market research so we can showcase the
+                    results to you, that would help your business get authentic
+                    traffic without spending another dime on it. 
+                  </p>
+                  <div className=" flex items-center gap-x-6 pt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
 

@@ -15,10 +15,10 @@ const Contact = () => {
   return (
     <>
       <PageWrapper>
-        <div className="flex gap-x-5 justify-between mb-10 px-28">
+        <div className="flex gap-x-5 justify-between mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[30%]">
             <h4 className=" headingBlack mb-6 uppercase">new york</h4>
-            <p className="font-bold leading-tight text-black largeParagraph captilize whitespace-pre-wrap">
+            <p className="leading-tight blackHeadingText largeParagraph captilize whitespace-pre-wrap">
               Brooklyn,
               <br />
               New York,
@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
           <div className="w-[30%]">
             <h4 className=" headingBlack mb-6 uppercase">Lahore</h4>
-            <p className="font-bold leading-tight text-black largeParagraph captilize whitespace-pre-wrap">
+            <p className="font-bold leading-tight blackHeadingText largeParagraph captilize whitespace-pre-wrap">
               Dha Phase-5,
               <br />
               Lahore,
@@ -93,7 +93,7 @@ const Contact = () => {
             </a>
           </p> */}
           </div>
-          <div className="w-[40%] px-14">
+          <div className="w-[40%]">
             <div className="flex flex-wrap justify-between gap-6 gap-y-8">
               <div className="w-[45%]">
                 <Input title="First Name" type="text" />

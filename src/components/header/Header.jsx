@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <div className="fixed w-screen z-50">
         <div className="w-full">
-          <header className=" 3xl:max-w-7xl 3xl:mx-auto px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-11 3xl:px-0 3xl:pl-0 ">
+          <header className=" 3xl:max-w-7xl 3xl:mx-auto pagePaddingX py-11 3xl:px-0 3xl:pl-0 ">
             <nav className="flex items-center justify-between">
               <Link href="/">
                 {/* <a className={showMenu ? "hidden" : "block"}> */}

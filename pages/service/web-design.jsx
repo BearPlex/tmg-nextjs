@@ -17,6 +17,7 @@ import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 function WebDesign() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -170,143 +171,104 @@ function WebDesign() {
           </section>
 
           <section>
-            <div className="bg-[#212121]">
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Ecommerce Websites
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      If you're considering developing an e-Commerce website, it
-                      is time to let us take the lead and assist you in
-                      providing a seamless online shopping experience to your
-                      customers. We offer Shopify as a highly converting
-                      platform for businesses where you can simply focus on
-                      managing the inventory part of business and let us handle
-                      the entire "How to" process. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={book.src}
-                      alt="book"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+            <div className="bgBlack">
+              <TextWithImageContainer
+                imageSrc={book.src}
+                imageAlt="book"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Ecommerce Websites
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    If you're considering developing an e-Commerce website, it
+                    is time to let us take the lead and assist you in providing
+                    a seamless online shopping experience to your customers. We
+                    offer Shopify as a highly converting platform for businesses
+                    where you can simply focus on managing the inventory part of
+                    business and let us handle the entire "How to" process. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile3.src}
-                      alt="mobile3"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
-                      Software as a Service
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      We offer Software-as-a-Service to clients in order to help
-                      them utilize resources more efficiently and make
-                      well-informed business decisions. Through better strategic
-                      planning and trend forecasting, our SaaS products help
-                      businesses grow exponentially and make their debut in
-                      untapped markets. We provide accurate guidance and
-                      hands-on assistance with the CMS implementation process. 
-                       
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8 mt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile3.src}
+                imageAlt="mobile3"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
+                    Software as a Service
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    We offer Software-as-a-Service to clients in order to help
+                    them utilize resources more efficiently and make
+                    well-informed business decisions. Through better strategic
+                    planning and trend forecasting, our SaaS products help
+                    businesses grow exponentially and make their debut in
+                    untapped markets. We provide accurate guidance and hands-on
+                    assistance with the CMS implementation process.   
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8 mt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
-                      Business Websites{" "}
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      If you're considering developing a business website, it is
-                      time to let us take the lead and assist you in providing a
-                      seamless browsing experience to your leads. We offer
-                      Woo-commerce as a stable hosting CMS platform for
-                      businesses where you can simply focus on managing the
-                      service part of business and let us handle the entire "How
-                      to" process.  TMG provides content optimization services
-                      to help make your content more effective, and improve
-                      quality, making it more informative and engaging for your
-                      audience. We can also help you target specific keywords
-                      and topics to ensure that your content is being seen by
-                      the right people.
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8 mt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile2.src}
-                      alt="mobile2"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile2.src}
+                imageAlt="mobile2"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
+                    Business Websites{" "}
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    If you're considering developing a business website, it is
+                    time to let us take the lead and assist you in providing a
+                    seamless browsing experience to your leads. We offer
+                    Woo-commerce as a stable hosting CMS platform for businesses
+                    where you can simply focus on managing the service part of
+                    business and let us handle the entire "How to" process.  TMG
+                    provides content optimization services to help make your
+                    content more effective, and improve quality, making it more
+                    informative and engaging for your audience. We can also help
+                    you target specific keywords and topics to ensure that your
+                    content is being seen by the right people.
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8 mt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={tmg.src}
-                      alt="tmg"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
-                      What else?
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      As your dedicated SEO agency, we go a step further than
-                      just make your website perform well. We strategize with
-                      reasoning and depend on the market research so we can
-                      showcase the results to you, that would help your business
-                      get authentic traffic without spending another dime on
-                      it. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8 mt-10">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={tmg.src}
+                imageAlt="tmg"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
+                    What else?
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    As your dedicated SEO agency, we go a step further than just
+                    make your website perform well. We strategize with reasoning
+                    and depend on the market research so we can showcase the
+                    results to you, that would help your business get authentic
+                    traffic without spending another dime on it. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8 mt-10">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
 

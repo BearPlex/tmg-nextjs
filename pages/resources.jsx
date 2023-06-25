@@ -16,6 +16,7 @@ import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
+import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 const Resources = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const Resources = () => {
                 Dedicated Resource{" "}
                 <span className="gradientText">Allocation</span>
               </h4>
-              <p className="text-style">
+              <p className="paragraphBlack">
                 We offer 360-degree marketing solutions such as PPC
                 Advertisement, Search Engine Optimisation and Web Development
                 Services. Our team is technically and professionally equipped to
@@ -46,34 +47,27 @@ const Resources = () => {
             </div>
           </HeroContainer>
 
-          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
-            <section
+          <div className="pagePaddingX">
+            <TextWithImageContainer
               id="web_design"
-              className="flex flex-col md:flex-row md:items-center gap-10 justify-between py-28"
+              imageSrc={homePageImage.src}
+              imageAlt="services images"
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">SEO Resource</div>
-                <p className="mt-8 mb-14 font-medium text-style text-black">
+                <p className="mt-8 mb-14 font-medium paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
                 <GradientButton text="Learn More" route="/webDesign" />
               </div>
-              <div className="w-[300px] sm:w-[400px] md:w-[50%] mt-16 md:mt-0">
-                <Image
-                  width={500}
-                  height={300}
-                  src={homePageImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+            <TextWithImageContainer
               id="web_development"
-              className="flex  justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
+              imageSrc={developmentImage.src}
+              imageAlt="services images"
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">PPC Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
@@ -81,43 +75,27 @@ const Resources = () => {
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%] mt-16 md:mt-0">
-                <Image
-                  width={500}
-                  height={300}
-                  src={developmentImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+            <TextWithImageContainer
               id="branding"
-              className="flex justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
+              imageSrc={digitalImage.src}
+              imageAlt="services images"
             >
-              <div className="w-[50%]">
+              <div>
                 <div className="headingBlack">Design Resource</div>
-                <p className="mt-8 mb-14 font-medium text-style text-black">
+                <p className="mt-8 mb-14 font-medium paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%] mt-16 md:mt-0">
-                <Image
-                  width={500}
-                  height={300}
-                  src={digitalImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
-            <section
+            </TextWithImageContainer>
+            <TextWithImageContainer
               id="digital_marketing"
-              className="flex justify-between py-28 gap-10 flex-col md:flex-row md:items-center"
+              imageSrc={marketingImage.src}
+              imageAlt="services images"
             >
-              <div className="md:w-[50%]">
+              <div>
                 <div className="headingBlack">Content Resource</div>
                 <p className="mt-8 mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
@@ -125,16 +103,7 @@ const Resources = () => {
                 </p>
                 <GradientButton text="Learn More" route="/webDevelopment" />
               </div>
-              <div className="w-[50%] mt-16 md:mt-0 ">
-                <Image
-                  width={500}
-                  height={300}
-                  src={marketingImage.src}
-                  alt="services images"
-                  className="w-full h-auto shadow-2xl rounded-lg"
-                />
-              </div>
-            </section>
+            </TextWithImageContainer>
           </div>
         </section>
         <Footer />

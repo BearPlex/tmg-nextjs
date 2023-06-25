@@ -61,7 +61,7 @@ const Blog = () => {
             </div>
           </HeroContainer>
 
-          <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 pt-20">
+          <div className="pagePaddingX pt-20">
             <a href="" className="relative blog-banner w-full h-full">
               {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}

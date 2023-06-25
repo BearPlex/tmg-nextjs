@@ -17,6 +17,8 @@ import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
+
 function Seo() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -116,7 +118,7 @@ function Seo() {
 
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32">
+              <div className="pagePaddingX">
                 <dl className="mt-16 grid grid-cols-1 gap-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
                     <dd className="mt-10 text-white relative text-6xl font-bold top-6">
@@ -167,139 +169,102 @@ function Seo() {
           </section>
 
           <section>
-            <div className="bg-[#212121]">
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-16 sm:py-24 flex items-center gap-20 lg:py-20">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Brand Image
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      Building a brand image is one of the most important
-                      aspects of any business. It is what sets your company
-                      apart from the competition and helps you build a loyal
-                      customer base.
-                      <br />
-                      <br />
-                      Your brand image should be consistent and should stand out
-                      across all channels - from your website to your social
-                      media accounts and your physical collateral. 
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={book.src}
-                      alt="book"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+            <div className="bgBlack w-full">
+              <TextWithImageContainer
+                imageSrc={book.src}
+                imageAlt="book"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Brand Image
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    Building a brand image is one of the most important aspects
+                    of any business. It is what sets your company apart from the
+                    competition and helps you build a loyal customer base.
+                    <br />
+                    <br />
+                    Your brand image should be consistent and should stand out
+                    across all channels - from your website to your social media
+                    accounts and your physical collateral. 
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={0}
-                      height={0}
-                      src={mobile3.src}
-                      alt="mobile3"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
-                      Social Presence
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      The internet has massively impacted the way businesses
-                      operate and reach their customer base. To build a strong
-                      social presence, businesses need to have an effective
-                      brand strategy that helps them dig their feet further into
-                      the existing industry and stick around for longer. 
-                      <br />
-                      <br />
-                      We create customized branding solutions  which are
-                      designed to help businesses reach their target audience
-                      and achieve their desired results.  
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile3.src}
+                imageAlt="mobile3"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
+                    Social Presence
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    The internet has massively impacted the way businesses
+                    operate and reach their customer base. To build a strong
+                    social presence, businesses need to have an effective brand
+                    strategy that helps them dig their feet further into the
+                    existing industry and stick around for longer. 
+                    <br />
+                    <br />
+                    We create customized branding solutions  which are designed
+                    to help businesses reach their target audience and achieve
+                    their desired results.  
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="w-full pt-14">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      Tone of Voice{" "}
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      A unique tone of voice helps brands build trust and become
-                      memorable in the minds of their audience. We’ll
-                      collaborate with your team to devise a tone that resonates
-                      with your customers and inspires them to action.
-                    </p>
-                    <div className="flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
-                  </div>
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={mobile2.src}
-                      alt="mobile 2"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={mobile2.src}
+                imageAlt="mobile2"
+                blackContainer={true}
+                imageRight={true}
+              >
+                <div>
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    Tone of Voice{" "}
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    A unique tone of voice helps brands build trust and become
+                    memorable in the minds of their audience. We’ll collaborate
+                    with your team to devise a tone that resonates with your
+                    customers and inspires them to action.
+                  </p>
+                  <div className="flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
-
-              <div className="relative isolate ">
-                <div className="px-10 md:px-10 lg:px-14 xl:px-20 2xl:px-32 py-12 sm:py-14 flex items-center gap-20 lg:py-16">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 w-1/2">
-                    <Image
-                      width={500}
-                      height={300}
-                      src={tmg.src}
-                      alt="tmg"
-                      layout="responsive"
-                      objectFit="cover"
-                      className="drop-shadow-xl"
-                    />
-                  </div>
-                  <div className="w-1/2 lg:flex-auto">
-                    <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                      What else?
-                    </h1>
-                    <p className="mt-6 paragraph leading-8 text-white font-normal">
-                      As your dedicated SEO agency, we go a step further than
-                      just make your website perform well. We strategize with
-                      reasoning and depend on the market research so we can
-                      showcase the results to you, that would help your business
-                      get authentic traffic without spending another dime on
-                      it. 
-                    </p>
-                    <div className=" flex items-center gap-x-6 mt-8">
-                      <GradientButton text="Learn More" route="/" />
-                    </div>
+              </TextWithImageContainer>
+              <TextWithImageContainer
+                imageSrc={tmg.src}
+                imageAlt="tmg"
+                blackContainer={true}
+                imageRight={false}
+              >
+                <div>
+                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                    What else?
+                  </h1>
+                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                    As your dedicated SEO agency, we go a step further than just
+                    make your website perform well. We strategize with reasoning
+                    and depend on the market research so we can showcase the
+                    results to you, that would help your business get authentic
+                    traffic without spending another dime on it. 
+                  </p>
+                  <div className=" flex items-center gap-x-6 mt-8">
+                    <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
 

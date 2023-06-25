@@ -236,6 +236,11 @@
     background-color: #1b1b1b;
   }
   /* BACKGROUND COLOR END */
+  /* MARGIN PADDING START */
+  .pagePaddingX {
+    @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0;
+  }
+  /* MARGIN PADDING END */
 }
 
 html,
