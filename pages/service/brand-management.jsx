@@ -104,7 +104,7 @@ function Seo() {
                       Our branding packages include{" "}
                       <span className="gradientText">
                         {" "}
-                        Brand Image Creation, Social Presence and Tone of Voice;
+                        Brand Image Creation, Social Presence and Tone of Voice{" "}
                       </span>
                       each delivering an expert-led service that starts with
                       discovery and ends with the fundamental elements your

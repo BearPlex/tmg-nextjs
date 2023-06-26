@@ -63,7 +63,7 @@ function Socialmediamarketing() {
                   </h4>
                   <p className="largeParagraph">
                     With proven game changing results, our award winning
-                    performance experts ensure that all the leads turn into a
+                    performance experts ensure that all the leads turn into a{" "}
                     <span className="gradientText">profitable conversion.</span>{" "}
                   </p>
                   <GradientButton

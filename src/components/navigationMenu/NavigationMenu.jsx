@@ -114,7 +114,7 @@ const NavigationMenu = () => {
         </ul>
       </div>
       <div className="nav-footer fixed bottom-5 flex justify-between items-center">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 contact-wrapper">
           <Link href="#">{twitterSvg()}</Link>
           <Link href="#">{facebookSvg()}</Link>
           <Link href="#">{instagramSvg()}</Link>

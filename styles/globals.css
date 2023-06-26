@@ -196,7 +196,7 @@
     @apply font-sofia-bold text36;
   }
   .smallHeading {
-    @apply font-sofia-bold text36;
+    @apply font-sofia-bold text24;
   }
   .largeParagraph {
     @apply font text24;
@@ -362,7 +362,7 @@ body {
   opacity: 0;
 }
 
-footer svg g {
+/* footer svg g {
   stroke: rgb(255, 255, 255);
   fill: transparent;
   transition: stroke 0.2s ease-in-out 0s;
@@ -378,21 +378,45 @@ footer svg:hover g {
 footer svg:hover path {
   fill: rgb(247, 78, 161);
   transition: fill 0.2s ease-in-out 0s;
-}
+} */
 
-.contact-wrapper svg {
+/* .contact-wrapper svg {
   width: 45px;
   height: 45px;
 }
 .contact-wrapper svg:hover g {
-  /*stroke: gray;*/
-  fill: #f58460;
+  fill: #ee2760;
   transition: stroke 0.2s ease-in-out 0s;
 }
 
 .contact-wrapper svg:hover path {
   fill: rgb(255, 255, 255);
   transition: fill 0.2s ease-in-out 0s;
+} */
+footer svg g,
+footer svg path {
+  fill: #fff;
+  stroke: #fff;
+  transition: fill 0.2s ease-in-out 0s, stroke 0.2s ease-in-out 0s;
+}
+
+footer svg:hover g,
+footer svg:hover path {
+  fill: #f74ea1;
+  stroke: #f74ea1;
+  transition: fill 0.2s ease-in-out 0s, stroke 0.2s ease-in-out 0s;
+}
+
+.contact-wrapper svg {
+  width: 45px;
+  height: 45px;
+}
+
+.contact-wrapper svg:hover g,
+.contact-wrapper svg:hover path {
+  fill: #ee2760;
+  stroke: #ee2760;
+  transition: fill 0.2s ease-in-out 0s, stroke 0.2s ease-in-out 0s;
 }
 
 .nav-footer svg g {

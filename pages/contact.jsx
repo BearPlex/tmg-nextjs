@@ -18,12 +18,12 @@ const Contact = () => {
         <div className="flex gap-x-5 justify-between mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[30%]">
             <h4 className=" headingBlack mb-6 uppercase">new york</h4>
-            <p className="leading-tight blackHeadingText largeParagraph captilize whitespace-pre-wrap">
+            <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
               Brooklyn,
               <br />
               New York,
               <br />
-              USA,
+              U.S.A.
               {/* <br />
             EC1M 5PA */}
             </p>
@@ -58,7 +58,7 @@ const Contact = () => {
               Copy to clipboard
             </span> */}
             </p>
-            <div className="flex gap-6 mt-20 justify-start contact-wrapper">
+            <div className="flex gap-6 mt-20 justify-start contact-wrapper text-[#EE2760]">
               <a href="#" className="inline-block">
                 {twitterSvg()}
               </a>
@@ -75,12 +75,12 @@ const Contact = () => {
           </div>
           <div className="w-[30%]">
             <h4 className=" headingBlack mb-6 uppercase">Lahore</h4>
-            <p className="font-bold leading-tight blackHeadingText largeParagraph captilize whitespace-pre-wrap">
-              Dha Phase-5,
+            <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
+              DHA Phase 5,
               <br />
               Lahore,
               <br />
-              Pakistan,
+              Pakistan
               {/* <br />
             NY 10022 */}
             </p>
