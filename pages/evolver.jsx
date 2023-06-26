@@ -211,12 +211,12 @@ function evolver() {
                           <p className="font-medium paragra pb-1">
                             How subscription works?
                           </p>
-                          <p className="paragraph leading-4 blackDescriptionText pb-3">
+                          <p className="paragraph leading-4 blackDescriptionText pb-0 md:pb-3">
                             Products are automatically delivered on your
                             schedule. No obligation, modify or cancel your
                             subscription anytime.
                           </p>
-                          <p className="paragraph leading-4 blackDescriptionText pb-3">
+                          <p className="paragraph leading-4 blackDescriptionText pb-0 md:pb-3">
                             <b>Note: </b> 30-Days Money Back Guarantee only
                             applies on first purchase.
                           </p>

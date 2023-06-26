@@ -6,7 +6,7 @@ const Input = ({ title, type }) => {
           type={type}
           name={title}
           id={title}
-          className="block px-2 w-full border-0 border-b border-transparent text-md focus:ring-0 placeholder-gray-700::placeholder focus-within:outline-0 focus:border-transprent pb-3"
+          className="block px-2 w-full border-0 border-b border-transparent text-md focus:ring-0 placeholder-gray-700::placeholder focus-within:outline-0 focus:border-transprent pb-0 md:pb-3"
           placeholder={title}
         />
       </div>

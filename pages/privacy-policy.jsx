@@ -17,7 +17,9 @@ const PrivacyPolicy = () => {
             Our registered office is at 74 Great Eastern St.
           </p>
           <div className="my-5">
-            <div className="heading text-pink-500 pb-4">Introduction</div>
+            <div className="heading text-pink-500 pb-0 md:pb-3">
+              Introduction
+            </div>
             <ol
               type="1"
               className="marker:smallText list-decimal list-outside pl-3"
@@ -81,7 +83,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               The bases on which we process information about you
             </div>
             <p className="paragraphBlack font-circular-medium">
@@ -99,7 +101,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information we process because we have a contractual obligation
               with you
             </div>
@@ -178,7 +180,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information we process with your consent
             </div>
             <ol
@@ -241,7 +243,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information we process for the purposes of legitimate interests
             </div>
             <ol
@@ -327,7 +329,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information we process because we have a legal obligation
             </div>
             <ol type="1" className="marker:smallText list-decimal list-outside">
@@ -353,12 +355,12 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Specific uses of information you provide to use
             </div>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information provided on the understanding that it will be shared
               with a third party
             </div>
@@ -458,7 +460,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Complaints regarding content on our website
             </div>
             <ol
@@ -499,7 +501,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Job application and employment
             </div>
             <ol
@@ -516,7 +518,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Sending a message to our support team
             </div>
             <ol
@@ -547,7 +549,9 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">Complaining</div>
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
+              Complaining
+            </div>
             <ol
               type="1"
               className="marker:smallText list-decimal list-outside pl-3"
@@ -583,7 +587,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">Cookies</div>
+            <div className="text-pink-500 pb-0 md:pb-3 heading">Cookies</div>
             <ol
               type="1"
               className="marker:smallText list-decimal list-outside pl-3"
@@ -675,7 +679,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Personal identifiers from your browsing activity
             </div>
             <ol
@@ -715,7 +719,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Our use of re-marketing
             </div>
             <ol
@@ -741,12 +745,12 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Disclosure and sharing of your information
             </div>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Information we obtain from third parties
             </div>
             <ol
@@ -769,7 +773,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Third party advertising on our website
             </div>
             <ol
@@ -802,7 +806,9 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">Credit reference</div>
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
+              Credit reference
+            </div>
             <ol
               type="1"
               className="marker:smallText list-decimal list-outside pl-3"
@@ -820,7 +826,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Data may be processed outside the European Union
             </div>
             <ol
@@ -886,7 +892,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Access to your own information
             </div>
             <ol
@@ -906,7 +912,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Access to your personal information
             </div>
             <ol
@@ -937,7 +943,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Removal of your information
             </div>
             <ol
@@ -959,7 +965,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Verification of your information
             </div>
             <ol
@@ -978,10 +984,12 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">Other matters</div>
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
+              Other matters
+            </div>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Use of site by children
             </div>
             <ol
@@ -1017,7 +1025,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Encryption of data sent between us
             </div>
             <ol
@@ -1041,7 +1049,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               How you can complain
             </div>
             <ol
@@ -1073,7 +1081,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Retention period for personal data
             </div>
             <ol
@@ -1110,7 +1118,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Compliance with the law
             </div>
             <ol
@@ -1134,7 +1142,7 @@ const PrivacyPolicy = () => {
             </ol>
           </div>
           <div className="my-5">
-            <div className="text-pink-500 pb-4 heading">
+            <div className="text-pink-500 pb-0 md:pb-3 heading">
               Review of this privacy policy
             </div>
             <ol

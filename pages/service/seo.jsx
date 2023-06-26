@@ -18,6 +18,7 @@ import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
+import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
 function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -36,7 +37,30 @@ function BrandManagement() {
     <>
       <PageWrapper>
         <section className="w-full">
-          <section>
+          <TextWithVideoContainer>
+            <div className="w-full">
+              <h4 className="mb-2 md:mb-6  heading blackDescriptionText ">
+                Performance Driven <span className="gradientText">SEO</span>{" "}
+                Services
+              </h4>
+              <p className="paragraph blackDescriptionText">
+                A highly optimized website is essential for a business to
+                generate new leads and sales on the internet. However, to
+                achieve this requires a website to have a content strategy,
+                technically proficient and conform to the latest search engine
+                optimization{" "}
+                <span className="gradientText"> recommendations</span> and{" "}
+                <span className="gradientText"> best-practices.</span>{" "}
+              </p>
+              <div className="mt-4 md:mt-10">
+                <GradientButton
+                  text="Book Free Consultation Today"
+                  route="/contact"
+                />
+              </div>
+            </div>
+          </TextWithVideoContainer>
+          {/* <section>
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
                 <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
@@ -59,37 +83,16 @@ function BrandManagement() {
                     objectFit="cover"
                   />
                 </div>
-                <div className="w-full">
-                  <h4 className="mb-m md:mb-6  heading blackDescriptionText ">
-                    Performance Driven <span className="gradientText">SEO</span>{" "}
-                    Services
-                  </h4>
-                  <p className="paragraph blackDescriptionText">
-                    A highly optimized website is essential for a business to
-                    generate new leads and sales on the internet. However, to
-                    achieve this requires a website to have a content strategy,
-                    technically proficient and conform to the latest search
-                    engine optimization{" "}
-                    <span className="gradientText"> recommendations</span> and{" "}
-                    <span className="gradientText"> best-practices.</span>{" "}
-                  </p>
-                  <GradientButton
-                    text="Book Free Consultation Today"
-                    route="/contact"
-                  />
-                </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section>
-            <div className="bgWhite">
-              <div className="relative isolate ">
-                <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                    <h1
-                      className={`mb-m md:mb-6  blackDescriptionText  largeHeading  max-w-xl`}
-                    >
+            <div className="bgWhite py-10 md:py-20 w-full">
+              <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+                <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
+                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                    <h1 className="blackDescriptionText largeHeading">
                       Content strategy that
                       <span className="gradientText">
                         {" "}
@@ -97,8 +100,8 @@ function BrandManagement() {
                       </span>{" "}
                     </h1>
                   </div>
-                  <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText ">
+                  <div className="lg:flex-auto w-full md:w-1/2">
+                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
@@ -180,7 +183,7 @@ function BrandManagement() {
                     which include Meta Title and Descriptions, Title Tags and
                     Creating GMB Profile.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -203,7 +206,7 @@ function BrandManagement() {
                     Media Presence and Removing Toxic Links to help increase
                     authority and website credibility on Google.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -225,7 +228,7 @@ function BrandManagement() {
                     you target specific keywords and topics to ensure that your
                     content is being seen by the right people.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -247,7 +250,7 @@ function BrandManagement() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -272,10 +275,10 @@ function BrandManagement() {
             </Tabs>
           </section>
 
-          <section className="background-gradient pb-16">
-            <div className="relative isolate ">
-              <div className="max-w-7xl lg:flex lg:items-center lg:gap-x-10">
-                <div className="lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+          <section className="background-gradient pb-16 md:pb-0">
+            <div className="w-full py-5 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 ">
+                <div className="w-full md:w-1/2">
                   <Image
                     width={500}
                     height={300}
@@ -284,8 +287,8 @@ function BrandManagement() {
                     className="w-[658px] h-[836px] drop-shadow-xl"
                   />
                 </div>
-                <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-4 md:mt-10 max-w-lg largeHeading whiteHeadingText">
+                <div className="pagePaddingX w-full md:w-1/2  ">
+                  <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
                   <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
@@ -300,8 +303,8 @@ function BrandManagement() {
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
-                  <div className=" flex items-center gap-x-6">
-                    {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                  {/* <div className="flex items-center gap-x-6 mt-3 md:mt-8">
+                    <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                   <div className="">
                     <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                     <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
@@ -309,8 +312,8 @@ function BrandManagement() {
                       Learn <span className="text-pink-500"> More</span>
                     </p>
                   </div>
-                </button> */}
-                  </div>
+                </button> 
+                  </div> */}
                 </div>
               </div>
             </div>

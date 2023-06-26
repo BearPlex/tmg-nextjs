@@ -34,7 +34,7 @@ import HeroContainer from "../src/components/containers/HeroContainer";
 //               <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
 //           </div>
 //           <div className="w-full">
-//               <h4 className="mb-m md:mb-6  text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
+//               <h4 className="mb-2 md:mb-6  text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
 //               <p className="text-black font-medium text-[1.16rem]">
 //                   Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation. And then there’s Buddy, the French Bulldog.
 //               </p>
@@ -87,7 +87,7 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-m md:mb-6  headingBlack font-bold leading-tight capitalize">
+              <h4 className="mb-2 md:mb-6  headingBlack font-bold leading-tight capitalize">
                 Lets make your{" "}
                 <span className="gradientText"> digital dreams a reality.</span>
               </h4>

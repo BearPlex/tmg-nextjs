@@ -18,6 +18,7 @@ import Image from "../../src/components/Image/Image";
 import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
+import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
 
 function Seo() {
   const [work, setWork] = useState([]);
@@ -37,7 +38,24 @@ function Seo() {
     <>
       <PageWrapper>
         <setcion className="w-full">
-          <section className="">
+          <TextWithVideoContainer>
+            <div className="w-full">
+              <h4 className="mb-2 md:mb-6 heading blackDescriptionText">
+                <span className="gradientText">Brand Identity</span> And
+                Creative Management Services
+              </h4>
+              <p className="paragraph blackDescriptionText mb-6">
+                TMG combines strategic directions with creative designs to
+                ensure{" "}
+                <span className="gradientText">unique brand identity.</span>{" "}
+              </p>
+              <GradientButton
+                text="Book Free Consultation Today"
+                route="/contact"
+              />
+            </div>
+          </TextWithVideoContainer>
+          {/* <section className="">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
                 <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
@@ -60,38 +78,21 @@ function Seo() {
                     objectFit="cover"
                   />
                 </div>
-                <div className="w-full">
-                  <h4 className="mb-m md:mb-6   heading blackDescriptionText">
-                    <span className="gradientText">Brand Identity</span> And
-                    Creative Management Services
-                  </h4>
-                  <p className="paragraph blackDescriptionText mb-6">
-                    TMG combines strategic directions with creative designs to
-                    ensure{" "}
-                    <span className="gradientText">unique brand identity.</span>{" "}
-                  </p>
-                  <GradientButton
-                    text="Book Free Consultation Today"
-                    route="/contact"
-                  />
-                </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section>
-            <div className="bgWhite py-20">
-              <div className="relative isolate ">
-                <div className="pagePaddingX py-10 sm:py-10 lg:flex lg:items-center componentsMainGap lg:py-10">
-                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
-                    <h1
-                      className={`mb-m md:mb-6   blackDescriptionText  largeHeading max-w-xl`}
-                    >
+            <div className="bgWhite py-10 md:py-20 w-full">
+              <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+                <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
+                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                    <h1 className="blackDescriptionText largeHeading">
                       Specialized branding services that
                       <span className="gradientText"> creates trust</span>{" "}
                     </h1>
                   </div>
-                  <div className="lg:flex-auto w-1/2">
+                  <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. 
@@ -118,7 +119,7 @@ function Seo() {
 
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="pagePaddingX">
+              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="mt-5 md:mt-16 grid grid-cols-1 componentsMainGap  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
                   <div>
                     <dd className="mt-4 md:mt-10  relative  top-6 extraLargeHeadingWhite">
@@ -277,10 +278,10 @@ function Seo() {
             </Tabs>
           </section> */}
 
-          <section className="background-gradient pb-16">
-            <div className="relative isolate ">
-              <div className="max-w-7xl lg:flex lg:items-center lg:gap-x-10">
-                <div className="lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+          <section className="background-gradient pb-16 md:pb-0">
+            <div className="w-full py-5 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 ">
+                <div className="w-full md:w-1/2">
                   <Image
                     width={500}
                     height={300}
@@ -289,8 +290,8 @@ function Seo() {
                     className="w-[658px] h-[836px] drop-shadow-xl"
                   />
                 </div>
-                <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-4 md:mt-10 max-w-lg largeHeading whiteHeadingText">
+                <div className="pagePaddingX w-full md:w-1/2  ">
+                  <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
                   <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
@@ -298,15 +299,15 @@ function Seo() {
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
-                    That/'s why we offer dedicated resources based on needs that
+                    That's why we offer dedicated resources based on needs that
                     fit your job requirement.
                     <br />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
-                  <div className=" flex items-center gap-x-6">
-                    {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
+                  {/* <div className="flex items-center gap-x-6 mt-3 md:mt-8">
+                    <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                   <div className="">
                     <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
                     <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
@@ -314,8 +315,8 @@ function Seo() {
                       Learn <span className="text-pink-500"> More</span>
                     </p>
                   </div>
-                </button> */}
-                  </div>
+                </button> 
+                  </div> */}
                 </div>
               </div>
             </div>

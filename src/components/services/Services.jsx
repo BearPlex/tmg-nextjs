@@ -47,7 +47,7 @@ const Services = () => {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col justify-center">
             <h3
-              className={`mb-m md:mb-6    cursor-pointer transition-opacity xl2Heading ${
+              className={`mb-2 md:mb-6    cursor-pointer transition-opacity xl2Heading ${
                 type === "design" ? " whiteHeadingText" : "blackDescriptionText"
               }`}
               onClick={() => setType("design")}
@@ -55,7 +55,7 @@ const Services = () => {
               Web Design & Development
             </h3>
             <h3
-              className={`mb-m md:mb-6   font-bold cursor-pointer transition-opacity xl2Heading ${
+              className={`mb-2 md:mb-6   font-bold cursor-pointer transition-opacity xl2Heading ${
                 type === "branding"
                   ? "whiteHeadingText"
                   : "blackDescriptionText"
@@ -65,7 +65,7 @@ const Services = () => {
               Branding
             </h3>
             <h3
-              className={`mb-m md:mb-6  font-bold cursor-pointer transition-opacity xl2Heading ${
+              className={`mb-2 md:mb-6  font-bold cursor-pointer transition-opacity xl2Heading ${
                 type === "digital" ? "whiteHeadingText" : "blackDescriptionText"
               }`}
               onClick={() => setType("digital")}

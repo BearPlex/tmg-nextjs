@@ -8,7 +8,7 @@ const Card = (props) => {
     // console.log("Id", id);
   };
   return (
-    <div className="mt-5 md:mt-16 flex justify-start flex-wrap ">
+    <div className="mt-5 md:mt-16 flex justify-start flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
       {item.map((blog, index) => (
         <div
           key={index}

@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="pagePaddingX text-white 3xl:px-0 3xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className=" w-6/12 text-right order-3">
-                <h4 className="paragraph mb-3 font-bold text-[#EE2760]">
+                <h4 className="paragraph font-bold text-[#EE2760]">
                   Follow
                   <div className="flex gap-x-2 justify-end contact-wrapper">
                     <a href="#" className="inline-block">
@@ -42,12 +42,12 @@ const Footer = () => {
                     </a>
                   </div>
                 </h4>
-                <h5 className="paragraph mt-0 mb-5 text-blueGray-600 font-bold">
+                <h5 className="paragraph mt-0 mb-2 whiteHeadingText font-bold">
                   Sign Up to our news letter
                 </h5>
                 <a
                   href="mailto:Info@themediagale.com"
-                  className="mb-2 text-blueGray-600 heading font-bold"
+                  className="mb-2 whiteHeadingText smallHeading font-bold"
                 >
                   Info@themediagale.com
                 </a>
@@ -59,14 +59,14 @@ const Footer = () => {
                       <li className="mb-2">
                         <Link
                           href="/"
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3"
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
                         >
                           Home
                         </Link>
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3 "
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
                           href="/work"
                         >
                           Work
@@ -74,7 +74,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3 "
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
                           href="/services"
                         >
                           Services
@@ -82,7 +82,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3 "
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
                           href="/blog"
                         >
                           Blog
@@ -90,7 +90,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3"
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
                           href="/contact"
                         >
                           Contact
@@ -98,7 +98,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3 "
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
                           href="/privacy-policy"
                         >
                           Privacy Policy
@@ -109,13 +109,13 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <span className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3">
+                        <span className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3"
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
                           href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
                         >
                           New York
@@ -123,7 +123,7 @@ const Footer = () => {
                       </li>
                       <li className="mb-2">
                         <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-3"
+                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
                           href="https://creative-tim.com/privacy?ref=njs-profile"
                         >
                           Lahore
@@ -135,7 +135,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-16 sm:mt-2 md:mt-6 lg:mb-0 mb-m md:mb-6   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
+          <div className="w-full mt-16 sm:mt-2 md:mt-6 lg:mb-0 mb-2 md:mb-6   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
             <Link
               href="/"
               className="w-full flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0"

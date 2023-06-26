@@ -17,7 +17,7 @@ const Contact = () => {
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[30%]">
-            <h4 className=" headingBlack mb-m md:mb-6  uppercase">new york</h4>
+            <h4 className=" headingBlack mb-2 md:mb-6  uppercase">new york</h4>
             <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
               Brooklyn,
               <br />
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-[30%]">
-            <h4 className=" headingBlack mb-m md:mb-6  uppercase">Lahore</h4>
+            <h4 className=" headingBlack mb-2 md:mb-6  uppercase">Lahore</h4>
             <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
               DHA Phase 5,
               <br />

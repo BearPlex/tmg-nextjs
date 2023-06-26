@@ -76,7 +76,7 @@ export default function Home() {
           </HeroContainer>
 
           <section className="w-full bgWhite overflow-x-hidden">
-            <div className="flex flex-col md:flex-row componentsMainGap pagePaddingX pt-4 md:pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
+            <div className="flex flex-col md:flex-row componentsMainGap pagePaddingX pt-0 md:pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
               <div className="w-full md:w-1/2 md:h-[500px] flex flex-col justify-center">
                 <h1 className="heading  blackHeading">
                   Providing Exponential

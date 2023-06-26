@@ -38,7 +38,7 @@ const Services = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <p className="mb-m md:mb-6  paragraphBlack">
+              <p className="mb-2 md:mb-6  paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
                 by solid strategy, we assist our clients in building a magnetic
                 online presence to transform every click into a conversion.

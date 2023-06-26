@@ -45,7 +45,7 @@ const Blog = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-m md:mb-6  headingBlack ">
+              <h4 className="mb-2 md:mb-6  headingBlack ">
                 News, insights, and creative culture from TMG.
               </h4>
               <p className="paragraphBlack">
@@ -61,7 +61,7 @@ const Blog = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX pt-7 md:pt-20">
+          <div className="pagePaddingX pt-7 md:pt-20 w-full 3xl:max-w-7xl 3xl:mx-auto">
             <a href="" className="relative blog-banner w-full h-full">
               {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}
@@ -75,7 +75,7 @@ const Blog = () => {
               />
 
               <div className="absolute left-10 bottom-10">
-                <span className="gradientText inline-block smallText uppercase tracking-[1.5px] font-circular-medium pb-5">
+                <span className="gradientText inline-block smallText uppercase tracking-[1.5px] font-circular-medium pb-1 md:pb-5">
                   Featured News
                 </span>
                 <h3 className="text-white max-w-[55%] font-sofia-bold largeHeading leading-none">
@@ -85,7 +85,7 @@ const Blog = () => {
             </a>
           </div>
           <div className="mt-4">
-            <Tabs className="p-20 px-32 tabs-wrapper blog-tabs-wrapper w-full">
+            <Tabs className="py-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper w-full">
               {/* <TabList>
                              <Tab>All</Tab>
                              <Tab>Expertise</Tab>

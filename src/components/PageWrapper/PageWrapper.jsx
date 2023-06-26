@@ -5,7 +5,7 @@ const PageWrapper = (props) => {
   return (
     <section className="max-w-screen overflow-x-hidden">
       <Header />
-      <section className="pt-44 w-screen">{children}</section>
+      <section className="pt-32 md:pt-44 w-screen">{children}</section>
     </section>
   );
 };
