@@ -119,7 +119,7 @@ function WebDesign() {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-24 sm:py-32">
+            <div className="background-gradient py-12 sm:py-28 md:py-40">
               <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -212,7 +212,7 @@ function WebDesign() {
                     untapped markets. We provide accurate guidance and hands-on
                     assistance with the CMS implementation process.   
                   </p>
-                  <div className="flex items-center gap-x-6  mt:4 md:mt-10">
+                  <div className="flex items-center gap-x-6  mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -257,7 +257,7 @@ function WebDesign() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it.  
                   </p>
-                  <div className="flex items-center gap-x-6  mt-3 md:mt-8">
+                  <div className="flex items-center gap-x-6  mt-3 md:mt-8 mb-10 md:mb-16">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>

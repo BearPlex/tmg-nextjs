@@ -202,7 +202,9 @@ const Services = () => {
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <div className="mb-10">
+                  <GradientButton text="Learn More" route="/webDevelopment" />
+                </div>
               </div>
             </TextWithImageContainer>
           </div>

@@ -118,7 +118,7 @@ function BrandManagement() {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-24 sm:py-32">
+            <div className="background-gradient py-12 sm:py-28 md:py-40">
               <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -188,7 +188,7 @@ function BrandManagement() {
                     which include Meta Title and Descriptions, Title Tags and
                     Creating GMB Profile.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ function BrandManagement() {
                     Media Presence and Removing Toxic Links to help increase
                     authority and website credibility on Google.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -233,7 +233,7 @@ function BrandManagement() {
                     you target specific keywords and topics to ensure that your
                     content is being seen by the right people.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -255,7 +255,7 @@ function BrandManagement() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 md:pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10 mb-10 md:mb-16">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>

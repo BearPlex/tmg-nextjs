@@ -101,7 +101,9 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <div className="mb-10">
+                  <GradientButton text="Learn More" route="/webDevelopment" />
+                </div>
               </div>
             </TextWithImageContainer>
           </div>

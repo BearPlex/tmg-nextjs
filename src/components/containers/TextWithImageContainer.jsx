@@ -48,7 +48,7 @@ const TextWithImageContainer = ({
         >
           <section
             id={id}
-            className="rounded-lg flex flex-col md:flex-row items-center justify-between componentsMainGap py-10 3xl:py-28 lg:py-14 cursor-pointer"
+            className="rounded-lg flex flex-col md:flex-row items-center justify-between componentsMainGap py-5 3xl:py-28 lg:py-14 cursor-pointer"
             onClick={selectRoute ? selectRoute : null}
           >
             <div className="w-full md:w-[50%] order-1">
