@@ -45,7 +45,7 @@ const Blog = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 headingBlack font-bold leading-tight">
+              <h4 className="mb-6 headingBlack ">
                 News, insights, and creative culture from TMG.
               </h4>
               <p className="paragraphBlack">

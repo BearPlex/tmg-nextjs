@@ -87,7 +87,7 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 headingBlack font-bold leading-tight">
+              <h4 className="mb-6 headingBlack font-bold leading-tight capitalize">
                 Lets make your{" "}
                 <span className="gradientText"> digital dreams a reality.</span>
               </h4>
@@ -115,8 +115,7 @@ const Studio = () => {
                 ref={videoRef}
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 loop={true}
-                controls={false}
-              >
+                controls={false}>
                 <source src="/video/hp.mp4" type="video/mp4" />
                 <source src="/video/hp.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
@@ -124,27 +123,23 @@ const Studio = () => {
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <button
                   className=" play-button border-4 border-white  rounded-full w-[140px] h-[140px] flex items-center justify-center"
-                  onClick={handlePlayPause}
-                >
+                  onClick={handlePlayPause}>
                   <svg
                     className={isPlaying ? "hidden" : "w-10 h-10"}
                     viewBox="0 0 26.139 37.458"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       id="Path_184"
                       data-name="Path 184"
                       d="M-1422.6-322.813v37.458l26.139-19.137Z"
                       transform="translate(1422.604 322.813)"
-                      fill="#fff"
-                    ></path>
+                      fill="#fff"></path>
                   </svg>
                   {/* Add your Pause SVG icon here, it will be displayed when the video is playing */}
                   <svg
                     className={isPlaying ? "w-10 h-10" : "hidden"}
                     viewBox="0 0 40 40"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     {/* Your Pause SVG icon paths go here */}
                   </svg>
                 </button>
@@ -307,8 +302,7 @@ const Studio = () => {
                     },
                   }}
                   modules={[Navigation]}
-                  className="swiper"
-                >
+                  className="swiper">
                   {memberImages.map((member, index) => (
                     <SwiperSlide key={index}>
                       <div className="">

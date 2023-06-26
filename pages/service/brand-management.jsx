@@ -59,11 +59,11 @@ function Seo() {
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6  heading-style">
-                    <span className="gradientText">Brand Identity</span> and
+                  <h4 className="mb-6  heading blackDescriptionText">
+                    <span className="gradientText">Brand Identity</span> And
                     Creative Management Services
                   </h4>
-                  <p className="text-style mb-6">
+                  <p className="paragraph blackDescriptionText mb-6">
                     TMG combines strategic directions with creative designs to
                     ensure{" "}
                     <span className="gradientText">unique brand identity.</span>{" "}
@@ -83,14 +83,13 @@ function Seo() {
                 <div className="px-32 py-10 sm:py-10 lg:flex lg:items-center gap-10 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
                     <h1
-                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 smallHeading md:text-5xl`}
-                    >
+                      className={`mb-6  blackDescriptionText  largeHeading max-w-xl`}>
                       Specialized branding services that
                       <span className="gradientText"> creates trust</span>{" "}
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-1/2">
-                    <p className="mt-6 text-style">
+                    <p className="mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. 
                       <br />
@@ -119,45 +118,39 @@ function Seo() {
           <section>
             <div className="background-gradient py-24 sm:py-32">
               <div className="pagePaddingX">
-                <dl className="mt-16 grid grid-cols-1 gap-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <dl className="mt-16 grid grid-cols-1 gap-10  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
                   <div>
-                    <dd className="mt-10 text-white relative text-6xl font-bold top-6">
+                    <dd className="mt-10  relative  top-6 extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-bold text-white text-5xl">
-                      Experience
-                    </dt>
-                    <dd className="mt-6 text-white text-base ">
+                    <dt className="largeHeadingWhite">Experience</dt>
+                    <dd className="mt-6 smallTextWhite ">
                       We’ve worked with brands from a huge range of industries
                       to showcase their differences through strategic design
                       that positions them perfectly. {" "}
                     </dd>
 
-                    <dt className="font-bold text-white text-5xl xl:mt-10">
-                      Strategy
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="  largeHeadingWhite xl:mt-10">Strategy</dt>
+                    <dd className="mt-6 smallTextWhite">
                       With our certified team, we ensure to create effective
                       cost saving strategies that help campaigns perform well so
                       you can focus more on counting sales.{" "}
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-bold text-white text-5xl ">
-                      Creativity
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="largeHeadingWhite ">Creativity</dt>
+                    <dd className="mt-6 smallTextWhite">
                       Guided by your vision and values, our branding services
                       will bring your business to life with artistic flair and
                       attention to detail, to create a brand that is unique and
                       memorable.{" "}
                     </dd>
-                    <dt className="font-bold text-white text-5xl xl:mt-4">
+                    <dt className="largeHeadingWhite xl:mt-4">
                       Sustainability
                     </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dd className="mt-6 smallTextWhite">
                       We ensure that the image that has been forged to the
                       consumer mind stays on top with consistent artistic
                       content to increase engagement and recall value.{" "}
@@ -174,13 +167,12 @@ function Seo() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 heading whiteHeadingText">
                     Brand Image
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
                     competition and helps you build a loyal customer base.
@@ -199,13 +191,12 @@ function Seo() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 heading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 heading whiteHeadingText">
                     Social Presence
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     The internet has massively impacted the way businesses
                     operate and reach their customer base. To build a strong
                     social presence, businesses need to have an effective brand
@@ -226,13 +217,12 @@ function Seo() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
                     Tone of Voice{" "}
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     A unique tone of voice helps brands build trust and become
                     memorable in the minds of their audience. We’ll collaborate
                     with your team to devise a tone that resonates with your
@@ -247,13 +237,12 @@ function Seo() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    What else?
+                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                    What Else?
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -298,10 +287,10 @@ function Seo() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg heading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

@@ -23,8 +23,7 @@ const ExpertiseStatic = (props) => {
             <div
               key={index}
               className="w-[100%] my-16 cursor-pointer"
-              onClick={() => pushWork(item.id)}
-            >
+              onClick={() => pushWork(item.id)}>
               {/* {console.log("List", item)} */}
               <div className="w-full flex flex-row gap-10">
                 <div className="relative w-1/2">
@@ -34,7 +33,7 @@ const ExpertiseStatic = (props) => {
                     src={item.featured_image.src}
                     alt="work images"
                     objectFit="cover"
-                    alt="blog image"
+
                     // className="h-full block max-w-full object-cover"
                   />
                 </div>
@@ -49,8 +48,7 @@ const ExpertiseStatic = (props) => {
                     {item.featured_title}
                   </div>
                   <p
-                    className={`${cssClass} paragraph font-medium max-w-[90%]`}
-                  >
+                    className={`${cssClass} paragraph font-medium max-w-[90%]`}>
                     {item.gallery_first_description}
                   </p>
                 </div>

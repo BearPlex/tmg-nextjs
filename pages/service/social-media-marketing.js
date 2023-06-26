@@ -58,13 +58,17 @@ function Socialmediamarketing() {
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6 smallHeading md:ext-7xl font-bold leading-tight">
-                    Performance Driven Digital Marketing Services
+                  <h4 className="mb-6 heading blackDescriptionText  ">
+                    Performance Driven{" "}
+                    <span className="gradientText ">Digital Marketing</span>{" "}
+                    Services
                   </h4>
-                  <p className="largeParagraph">
+                  <p className="paragraph blackDescriptionText">
                     With proven game changing results, our award winning
                     performance experts ensure that all the leads turn into a{" "}
-                    <span className="gradientText">profitable conversion.</span>{" "}
+                    <span className="gradientText ">
+                      profitable conversion.
+                    </span>{" "}
                   </p>
                   <GradientButton
                     text="Book Free Consultation Today"
@@ -81,8 +85,7 @@ function Socialmediamarketing() {
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                     <h1
-                      className={`mb-6 font-sofia-bold font-black leading-none text-zinc-700 smallHeading md:text-6xl max-w-xl`}
-                    >
+                      className={`mb-6   blackDescriptionText  largeHeading max-w-xl`}>
                       High Performance
                       <span className="gradientText">
                         {" "}
@@ -92,7 +95,7 @@ function Socialmediamarketing() {
                     </h1>
                   </div>
                   <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                    <p className="mt-6 smallText leading-8 text-gray-600">
+                    <p className="mt-6 paragraph  blackDescriptionText">
                       Getting noticed and remembered by the right audience is a
                       slow delicate process. It takes multiple testing, creative
                       input and high performing campaign structures to ensure
@@ -120,45 +123,39 @@ function Socialmediamarketing() {
           <section>
             <div className="background-gradient py-24 sm:py-32">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
-                    <dd className="mt-10 text-white relative text-6xl top-6 max-w-xs">
+                    <dd className="mt-10  relative  top-6 max-w-xs   extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-semibold text-white text-5xl">
-                      Experience
-                    </dt>
-                    <dd className="mt-6 text-white text-base ">
+                    <dt className="largeHeadingWhite">Experience</dt>
+                    <dd className="mt-6 smallTextWhite  ">
                       We’ve worked with brands from a huge range of industries
                       to showcase their differences through strategic design
                       that positions them perfectly. 
                     </dd>
 
-                    <dt className="font-semibold text-white text-5xl xl:mt-10">
-                      Strategy
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className=" largeHeadingWhite xl:mt-10">Strategy</dt>
+                    <dd className="mt-6 smallTextWhite ">
                       With our certified team, we ensure to create effective
                       cost saving strategies that help campaigns perform well so
                       you can focus more on counting sales.
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-semibold text-white text-5xl ">
-                      Creativity
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="largeHeadingWhite ">Creativity</dt>
+                    <dd className="mt-6 smallTextWhite ">
                       Guided by your vision and values, our branding services
                       will bring your business to life with artistic flair and
                       attention to detail, to create a brand that is unique and
                       memorable.
                     </dd>
-                    <dt className="font-semibold text-white text-5xl xl:mt-4">
+                    <dt className="largeHeadingWhite  xl:mt-4">
                       Sustainability
                     </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dd className="mt-6 smallTextWhite ">
                       We ensure that the image that has been forged to the
                       consumer mind stays on top with consistent artistic
                       content to increase engagement and recall value.
@@ -175,21 +172,16 @@ function Socialmediamarketing() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    Brand Name
+                  <h1 className="mt-10 heading whiteHeadingText ">
+                    Creative Campaigns
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
-                    Building a brand image is one of the most important aspects
-                    of any business. It is what sets your company apart from the
-                    competition and helps you build a loyal customer base.
-                    <br />
-                    <br />
-                    Your brand image should be consistent and should stand out
-                    across all channels - from your website to your social media
-                    accounts and your physical collateral. 
+                  <p className="mt-6 paragraph whiteDescriptionText">
+                    From creating modern design content to animated videos, we
+                    create high performing campaigns to create a long lasting
+                    impact that truly reflects your brand and resonates with
+                    your target market. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-8">
                     <GradientButton text="Learn More" route="/" />
@@ -200,21 +192,17 @@ function Socialmediamarketing() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    Brand Name
+                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                    Emails & Workflows
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
-                    Building a brand image is one of the most important aspects
-                    of any business. It is what sets your company apart from the
-                    competition and helps you build a loyal customer base.
-                    <br />
-                    <br />
-                    Your brand image should be consistent and should stand out
-                    across all channels - from your website to your social media
-                    accounts and your physical collateral. 
+                  <p className="mt-6 paragraph whiteDescriptionText">
+                    At TMG, our creative and design team work together to
+                    deliver email campaigns that are both visually appealing and
+                    highly effective. We pay close attention to every detail,
+                    from the layout and design to the messaging, call to action
+                    and workflow management. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-8">
                     <GradientButton text="Learn More" route="/" />
@@ -225,21 +213,17 @@ function Socialmediamarketing() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    Brand Name
+                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                    Social Media Management
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
-                    Building a brand image is one of the most important aspects
-                    of any business. It is what sets your company apart from the
-                    competition and helps you build a loyal customer base.
-                    <br />
-                    <br />
-                    Your brand image should be consistent and should stand out
-                    across all channels - from your website to your social media
-                    accounts and your physical collateral. 
+                  <p className="mt-6 paragraph whiteDescriptionText">
+                    We offer a comprehensive suite of social media management
+                    services that are designed to help businesses connect with
+                    their customers and build a strong online presence. We
+                    handle everything from building social media strategy and
+                    planning to creating content and community management.  
                   </p>
                   <div className="flex items-center gap-x-6 mt-8">
                     <GradientButton text="Learn More" route="/" />
@@ -250,21 +234,19 @@ function Socialmediamarketing() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    Brand Name
+                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                    What Else?
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
-                    Building a brand image is one of the most important aspects
-                    of any business. It is what sets your company apart from the
-                    competition and helps you build a loyal customer base.
-                    <br />
-                    <br />
-                    Your brand image should be consistent and should stand out
-                    across all channels - from your website to your social media
-                    accounts and your physical collateral. 
+                  <p className="mt-6 paragraph whiteDescriptionText">
+                    As a 360 digital agency, we also specialize in search engine
+                    optimization which keeps our clients ahead of the
+                    competition. To help you reach a wide organic audience, our
+                    SEO experts craft specific needs to optimize your website
+                    and rank highest in the Google search results. This leads to
+                    increase in traffic - helping your business get more
+                    visibility.
                   </p>
                   <div className="flex items-center gap-x-6 mt-8">
                     <GradientButton text="Learn More" route="/" />
@@ -304,21 +286,18 @@ function Socialmediamarketing() {
                   />
                 </div>
                 <div className="lg:mx-0 w-1/2 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteHeadingText ">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.
-                    <br />
-                    <br />
-                    From Website Developers, Content Creators and Managers to
-                    SEO Experts - we make sure that your daily work requirement
-                    is fulfilled remotely.
+                    fit your job requirement. From Website Developers, Content
+                    Creators and Managers to SEO Experts - we make sure that
+                    your daily work requirement is fulfilled remotely.
                   </p>
                   <div className=" flex items-center gap-x-6">
                     {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">

@@ -58,11 +58,11 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6 smallHeading md:ext-7xl font-bold leading-tight">
+                  <h4 className="mb-6 heading blackDescriptionText ">
                     Performance Driven <span className="gradientText">SEO</span>{" "}
                     Services
                   </h4>
-                  <p className="largeParagraph">
+                  <p className="paragraph blackDescriptionText">
                     A highly optimized website is essential for a business to
                     generate new leads and sales on the internet. However, to
                     achieve this requires a website to have a content strategy,
@@ -85,7 +85,8 @@ function BrandManagement() {
               <div className="relative isolate ">
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-                    <h1 className={`mb-6 leading-none largeHeading  max-w-xl`}>
+                    <h1
+                      className={`mb-6 blackDescriptionText  largeHeading  max-w-xl`}>
                       Content strategy that
                       <span className="gradientText">
                         {" "}
@@ -94,7 +95,7 @@ function BrandManagement() {
                     </h1>
                   </div>
                   <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <p className="mt-6 paragraphBlack leading-8 ">
+                    <p className="mt-6 paragraph  blackDescriptionText ">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
@@ -115,26 +116,22 @@ function BrandManagement() {
           <section>
             <div className="background-gradient py-24 sm:py-32">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
-                    <dd className="mt-10 text-white relative text-6xl top-6 max-w-xs">
+                    <dd className="mt-10  relative top-6 max-w-xs  extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-semibold text-white text-5xl">
-                      Expert Analysis
-                    </dt>
-                    <dd className="mt-6 text-white text-base ">
+                    <dt className="largeHeadingWhite">Expert Analysis</dt>
+                    <dd className="mt-6 smallTextWhite  ">
                       We make sure to analyze the market competition
                       landscape.This helps us form accurate predictions about
                       how we are going to rank your business on Google rankings.
                     </dd>
 
-                    <dt className="font-semibold text-white text-5xl xl:mt-10">
-                      Smart Audit
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="largeHeadingWhite xl:mt-10">Smart Audit</dt>
+                    <dd className="mt-6 smallTextWhite">
                       We make sure to diagnose your website so we know what we
                       are operating. This helps us drive a result oriented
                       strategy that eliminates loose ends on your website and
@@ -142,19 +139,15 @@ function BrandManagement() {
                     </dd>
                   </div>
                   <div>
-                    <dt className="font-semibold text-white text-5xl ">
-                      Keyword Search
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="largeHeadingWhite ">Keyword Search</dt>
+                    <dd className="mt-6 smallTextWhite">
                       We do a comprehensive keyword search relevant to your
                       business and shortlist top traffic driving search terms
                       with less competition. This helps us to map and optimize
                       the website.
                     </dd>
-                    <dt className="font-semibold text-white text-5xl xl:mt-4">
-                      Growth
-                    </dt>
-                    <dd className="mt-6 text-white text-base">
+                    <dt className="largeHeadingWhite ">Growth</dt>
+                    <dd className="mt-6 smallTextWhite">
                       We aim to strive for growth oriented results. With our
                       expert-led optimisation, we ensure that your website ranks
                       on the highest search result with the right targeting.
@@ -171,13 +164,12 @@ function BrandManagement() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 heading whiteHeadingText">
                     On Page SEO 
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     While search engine rankings are driven from link building
                     campaigns, ongoing on-page optimization of your website
                     hosting, code, content is foundational when it comes to user
@@ -194,13 +186,12 @@ function BrandManagement() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 heading whiteHeadingText">
                     Off Page SEO
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     Link Building and Content Marketing is essential to scale
                     your website and to drive meaningful traffic to perform
                     action. Our package includes Content Marketing, Link
@@ -217,13 +208,12 @@ function BrandManagement() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}
-              >
+                imageRight={true}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 heading whiteHeadingText">
                     Content Optimization {" "}
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteDescriptionText">
                     TMG provides content optimization services to help make your
                     content more effective, and improve quality, making it more
                     informative and engaging for your audience. We can also help
@@ -239,13 +229,10 @@ function BrandManagement() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}
-              >
+                imageRight={false}>
                 <div>
-                  <h1 className="mt-10 smallHeading font-bold tracking-tight text-white sm:text-[35px]">
-                    What else?
-                  </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <h1 className="mt-10 heading whiteHeadingText">What Else?</h1>
+                  <p className="mt-6 paragraph whiteDescriptionText ">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -290,10 +277,10 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg smallHeading font-bold tracking-tight text-white sm:text-[35px]">
+                  <h1 className="mt-10 max-w-lg largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph leading-8 text-white font-normal">
+                  <p className="mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

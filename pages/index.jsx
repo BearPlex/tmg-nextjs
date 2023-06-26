@@ -59,11 +59,11 @@ export default function Home() {
         <div>
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
             <div className="w-full">
-              <h1 className="headingBlack">
+              <h1 className="heading  blackHeading">
                 Transforming Businesses into
                 <span className="gradientText heading"> Brands</span>{" "}
               </h1>
-              <p className="paragraphBlack">
+              <p className="paragraph blackDescriptionText ">
                 We offer 360-degree marketing solutions such as PPC
                 Advertisement, Search Engine Optimization and Web Development
                 Services. Our team is technically and professionally equipped to
@@ -78,11 +78,11 @@ export default function Home() {
           <section className="w-full bgWhite overflow-x-hidden">
             <div className="flex flex-col md:flex-row gap-10 pagePaddingX pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
               <div className="w-full md:w-1/2 md:h-[500px] flex flex-col justify-center">
-                <h1 className="headingBlack">
+                <h1 className="heading  blackHeading">
                   Providing Exponential
                   <span className="gradientText heading"> User Experience</span>
                 </h1>
-                <p className="mt-6 paragraphBlack">
+                <p className="mt-6 paragraph blackDescriptionText">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
                   <br />
@@ -107,7 +107,7 @@ export default function Home() {
 
           <div className="py-20 pt-16 ">
             <div className="w-full flex items-center justify-center pb-16">
-              <h2 className="md:w-4/5 w-full text-center headingBlack">
+              <h2 className="md:w-4/5 w-full text-center heading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>
               </h2>

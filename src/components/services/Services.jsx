@@ -41,17 +41,16 @@ const Services = () => {
   return (
     <section className="background-gradient">
       <div className="w-full pagePaddingX gap-10 py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-        <span className="block mb-16 uppercase tracking-wider headingWhite">
+        <span className="block mb-16 uppercase smallText whiteHeadingText ">
           Our Services
         </span>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col justify-center">
             <h3
-              className={`mb-6 font-bold  cursor-pointer transition-opacity extraLargeHeading ${
+              className={`mb-6   cursor-pointer transition-opacity heading ${
                 type === "design" ? " whiteHeadingText" : "blackDescriptionText"
               }`}
-              onClick={() => setType("design")}
-            >
+              onClick={() => setType("design")}>
               Web Design & Development
             </h3>
             <h3
@@ -60,16 +59,14 @@ const Services = () => {
                   ? "whiteHeadingText"
                   : "blackDescriptionText"
               }`}
-              onClick={() => setType("branding")}
-            >
+              onClick={() => setType("branding")}>
               Branding
             </h3>
             <h3
               className={`mb-6 font-bold cursor-pointer transition-opacity extraLargeHeading ${
                 type === "digital" ? "whiteHeadingText" : "blackDescriptionText"
               }`}
-              onClick={() => setType("digital")}
-            >
+              onClick={() => setType("digital")}>
               Digital Marketing
             </h3>
             {/* <a

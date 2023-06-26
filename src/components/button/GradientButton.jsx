@@ -6,9 +6,11 @@ const GradientButton = (props) => {
   const { route, text } = props;
   return (
     <button
-      className="border-2 rounded-full font-bold uppercase gradient-button"
+      className="border-2 rounded-full  uppercase gradient-button"
       onClick={() => router.push(`${route}`)}>
-      <span className="w-full h-full mx-0 my-0 gradient-span">{text}</span>
+      <span className="w-full h-full mx-0 my-0 gradient-span text-base ">
+        {text}
+      </span>
     </button>
   );
 };

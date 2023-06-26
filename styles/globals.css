@@ -78,6 +78,9 @@
   .blackHeadingText {
     color: #1b1b1b !important;
   }
+  .blackHeading {
+    color:#383434
+  }
   .blackDescriptionText {
     color: #454545 !important;
   }
@@ -87,23 +90,28 @@
   .whiteDescriptionText {
     color: #f8f8f8 !important;
   }
-  .text72 {
-    font-size: 72px;
-
+  .text60 {
+    font-size: 60px;
+line-height: 70px;
+font-size: 800;
     @media (max-width: 1023px) {
-      font-size: 50px;
+      font-size: 40px;
+      line-height: 50px;
     }
 
     @media (max-width: 767px) {
-      font-size: 36px;
+      font-size: 24px;
+      line-height: 30px;
     }
 
     @media (max-width: 639px) {
-      font-size: 28px;
+      font-size: 24px;
+
     }
   }
   .text50 {
     font-size: 50px;
+    font-weight: 800;
     @media (max-width: 1023px) {
       font-size: 36px;
     }
@@ -130,6 +138,8 @@
   }
   .text36 {
     font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
     @media (max-width: 1023px) {
       font-size: 28px;
     }
@@ -170,7 +180,7 @@
   }
   .text16 {
     font-size: 16px;
-    line-height: 17px;
+    line-height: 20px;
     @media (max-width: 1023px) {
       font-size: 14px;
     }
@@ -187,7 +197,7 @@
     -webkit-text-fill-color: transparent;
   }
   .extraLargeHeading {
-    @apply font-sofia-bold text72;
+    @apply font-sofia-bold text60;
   }
   .largeHeading {
     @apply font-sofia-bold text50;
@@ -202,7 +212,7 @@
     @apply font text24;
   }
   .paragraph {
-    @apply font text20;
+    @apply font font-normal text20;
   }
   .smallText {
     @apply font text16;
@@ -212,6 +222,9 @@
   }
   .largeHeadingWhite {
     @apply whiteHeadingText largeHeading;
+  }
+  .extraLargeHeadingWhite {
+    @apply extraLargeHeading whiteHeadingText;
   }
   .headingBlack {
     @apply blackHeadingText heading;
@@ -224,6 +237,9 @@
   }
   .paragraphWhite {
     @apply whiteDescriptionText paragraph;
+  }
+  .smallTextWhite{
+@apply smallText whiteHeadingText;
   }
   /* TEXT END */
   /*  */
