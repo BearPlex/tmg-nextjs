@@ -48,7 +48,7 @@ const Services = () => {
           <div className="flex flex-col justify-center">
             <h3
               className={`mb-2 md:mb-6    cursor-pointer transition-opacity xl2Heading ${
-                type === "design" ? " whiteHeadingText" : "blackDescriptionText"
+                type === "design" ? " whiteHeadingText" : "text-[#FFCBC2]"
               }`}
               onClick={() => setType("design")}
             >
@@ -56,9 +56,7 @@ const Services = () => {
             </h3>
             <h3
               className={`mb-2 md:mb-6   font-bold cursor-pointer transition-opacity xl2Heading ${
-                type === "branding"
-                  ? "whiteHeadingText"
-                  : "blackDescriptionText"
+                type === "branding" ? "whiteHeadingText" : "text-[#FFCBC2]"
               }`}
               onClick={() => setType("branding")}
             >
@@ -66,7 +64,7 @@ const Services = () => {
             </h3>
             <h3
               className={`mb-2 md:mb-6  font-bold cursor-pointer transition-opacity xl2Heading ${
-                type === "digital" ? "whiteHeadingText" : "blackDescriptionText"
+                type === "digital" ? "whiteHeadingText" : "text-[#FFCBC2]"
               }`}
               onClick={() => setType("digital")}
             >
