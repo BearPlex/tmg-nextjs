@@ -141,7 +141,7 @@ const Footer = () => {
               className="w-full flex justify-end flex-row   md:justify-between md:items-center md:mx-0"
               // className="w-full flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
+              <div className="flex items-center pl-4 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
                 {/* <div className="order-2 md:order-1 flex items-center pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32"> */}
                 <div className="h-[45px] w-[90%] bgWhite">
                   <Image
@@ -153,7 +153,7 @@ const Footer = () => {
                   />
                 </div>
               </div>
-              <div className=" pr-10 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32">
+              <div className="pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
                 {/* <div className=" order-1 md:order-2 pr-10 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32"> */}
                 <div className="w-[180px] md:w-[150px] lg:w-[280px]">
                   <Image
