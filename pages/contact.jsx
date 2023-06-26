@@ -127,7 +127,7 @@ const Contact = () => {
                   placeholder="Message"
                 ></textarea>
 
-                <div className="mt-2 md:mt-6">
+                <div className="mt-0 md:mt-2 lg:mt-6">
                   <ul className="form-check mb-4 d-flex items-center pl-0">
                     <li>
                       <input

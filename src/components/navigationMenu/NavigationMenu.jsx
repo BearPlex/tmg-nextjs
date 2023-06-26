@@ -95,30 +95,30 @@ const NavigationMenu = () => {
             <div className="w-1/2">
               {(isHovered || mediumscreen) && (
                 <div className="block ml-0 md:ml-8">
-                  <ul className="flex flex-col items-start justify-between h-[180px] md:h-[250px]">
+                  <ul className="flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
                     {/* <ul className="absolute w-[250px] md:w-[380px] h-[180px] md:h-[250px] top-[50%] translate-y-[-50%]  left-[35vw] lg:left-[300px] xl:left-[480px] flex flex-col justify-between"> */}
                     {/* <> */}
                     <Link
                       href="/service/social-media-marketing"
-                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                     >
                       Social Media Marketing
                     </Link>
                     <Link
                       href="/service/web-design"
-                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                     >
                       Web Development & Design
                     </Link>
                     <Link
                       href="/service/brand-management"
-                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                     >
                       Branding
                     </Link>
                     <Link
                       href="/service/seo"
-                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold leading-normal text-[#FFCBC2] hover:text-white"
+                      className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                     >
                       SEO
                     </Link>

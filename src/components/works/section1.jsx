@@ -30,7 +30,7 @@ function section1(props) {
           {work?.featured_title}{" "}
         </h1>
         <div className="flex justify-center">
-          <div className="pb-60 max-w-[80%] mt-5 md:mt-16">
+          <div className="pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
             <h2
               id="beautyRef"
               className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"

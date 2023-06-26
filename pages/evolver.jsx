@@ -26,7 +26,7 @@ function evolver() {
 
 
       <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">Boost your productivity today.</h2>
-      <p className="mx-auto mt-2 md:mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+      <p className="mx-auto mt-0 md:mt-2 lg:mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
       <div className="mt-4 md:mt-10 flex items-center justify-center gap-x-6">
         <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 smallText font-semibold blackDescriptionText shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
         <a href="#" className="smallText font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
@@ -51,7 +51,7 @@ function evolver() {
           <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">
             Try QUANTUMiND risk-free for 20 days you can even keep the bottles
           </h2>
-          <p className="mx-auto mt-2 md:mt-6 max-w-xl paragraph leading-8 blackHeadingText">
+          <p className="mx-auto mt-0 md:mt-2 lg:mt-6 max-w-xl paragraph leading-8 blackHeadingText">
             if QUANTUMIND doesn’t transform your life or you don’t feel the
             difference for up to 20 days since your purchase, email our support
             team and we’ll give you a complete refund - no questions asked. You
@@ -152,7 +152,7 @@ function evolver() {
                 Premium adaptogenic blend for a calmer, more stress-resilient
                 brain. Take 2-3 capsules per day.
               </p>
-              <div className="mt-2 md:mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
+              <div className="mt-0 md:mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
                 <div className="font-normal text-base blackDescriptionText flex justify-between items-center">
                   Subscribe &amp; save 25% + free shipping:
                   <input
@@ -169,7 +169,7 @@ function evolver() {
                   $48.74
                 </div>
               </div>
-              <div className="mt-2 md:mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
+              <div className="mt-0 md:mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
                 <div className="font-normal text-base blackDescriptionText flex justify-between">
                   One-time purchase:
                   <input

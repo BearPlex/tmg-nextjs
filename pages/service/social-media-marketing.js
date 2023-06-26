@@ -88,7 +88,7 @@ function Socialmediamarketing() {
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       High Performance
                       <span className="gradientText">
@@ -99,7 +99,7 @@ function Socialmediamarketing() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Getting noticed and remembered by the right audience is a
                       slow delicate process. It takes multiple testing, creative
                       input and high performing campaign structures to ensure
@@ -123,44 +123,46 @@ function Socialmediamarketing() {
           </section>
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                  <div>
-                    <dd className="mt-4 md:mt-10  relative  top-6 max-w-xs   extraLargeHeadingWhite">
+              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+                <dl className="flex flex-col lg:flex-row componentsMainGap">
+                  <div className="mx-auto items-center">
+                    <dd className="relative  extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div>
-                    <dt className="largeHeadingWhite">Experience</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite  ">
-                      We’ve worked with brands from a huge range of industries
-                      to showcase their differences through strategic design
-                      that positions them perfectly. 
-                    </dd>
+                  <div className="flex flex-col md:flex-row componentsMainGap">
+                    <div>
+                      <dt className="largeHeadingWhite">Experience</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                        We’ve worked with brands from a huge range of industries
+                        to showcase their differences through strategic design
+                        that positions them perfectly. 
+                      </dd>
 
-                    <dt className=" largeHeadingWhite xl:mt-10">Strategy</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite ">
-                      With our certified team, we ensure to create effective
-                      cost saving strategies that help campaigns perform well so
-                      you can focus more on counting sales.
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="largeHeadingWhite ">Creativity</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite ">
-                      Guided by your vision and values, our branding services
-                      will bring your business to life with artistic flair and
-                      attention to detail, to create a brand that is unique and
-                      memorable.
-                    </dd>
-                    <dt className="largeHeadingWhite  xl:mt-4">
-                      Sustainability
-                    </dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite ">
-                      We ensure that the image that has been forged to the
-                      consumer mind stays on top with consistent artistic
-                      content to increase engagement and recall value.
-                    </dd>
+                      <dt className=" largeHeadingWhite xl:mt-10">Strategy</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        With our certified team, we ensure to create effective
+                        cost saving strategies that help campaigns perform well
+                        so you can focus more on counting sales.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="largeHeadingWhite ">Creativity</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        Guided by your vision and values, our branding services
+                        will bring your business to life with artistic flair and
+                        attention to detail, to create a brand that is unique
+                        and memorable.
+                      </dd>
+                      <dt className="largeHeadingWhite  xl:mt-4">
+                        Sustainability
+                      </dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We ensure that the image that has been forged to the
+                        consumer mind stays on top with consistent artistic
+                        content to increase engagement and recall value.
+                      </dd>
+                    </div>
                   </div>
                 </dl>
               </div>
@@ -179,7 +181,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText ">
                     Creative Campaigns
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     From creating modern design content to animated videos, we
                     create high performing campaigns to create a long lasting
                     impact that truly reflects your brand and resonates with
@@ -200,7 +202,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
                     Emails & Workflows
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     At TMG, our creative and design team work together to
                     deliver email campaigns that are both visually appealing and
                     highly effective. We pay close attention to every detail,
@@ -222,7 +224,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
                     Social Media Management
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer a comprehensive suite of social media management
                     services that are designed to help businesses connect with
                     their customers and build a strong online presence. We
@@ -244,7 +246,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As a 360 digital agency, we also specialize in search engine
                     optimization which keeps our clients ahead of the
                     competition. To help you reach a wide organic audience, our
@@ -294,7 +296,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

@@ -91,7 +91,7 @@ function BrandManagement() {
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       Content strategy that
                       <span className="gradientText">
@@ -101,7 +101,7 @@ function BrandManagement() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
@@ -117,46 +117,51 @@ function BrandManagement() {
               </div>
             </div>
           </section>
-
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                  <div>
-                    <dd className="mt-4 md:mt-10  relative top-6 max-w-xs  extraLargeHeadingWhite">
+              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+                <dl className="flex flex-col lg:flex-row componentsMainGap">
+                  <div className="mx-auto items-center">
+                    <dd className="relative  extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div>
-                    <dt className="largeHeadingWhite">Expert Analysis</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite  ">
-                      We make sure to analyze the market competition
-                      landscape.This helps us form accurate predictions about
-                      how we are going to rank your business on Google rankings.
-                    </dd>
+                  <div className="flex flex-col md:flex-row componentsMainGap">
+                    <div>
+                      <dt className="largeHeadingWhite">Expert Analysis</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                        We make sure to analyze the market competition
+                        landscape.This helps us form accurate predictions about
+                        how we are going to rank your business on Google
+                        rankings.
+                      </dd>
 
-                    <dt className="largeHeadingWhite xl:mt-10">Smart Audit</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      We make sure to diagnose your website so we know what we
-                      are operating. This helps us drive a result oriented
-                      strategy that eliminates loose ends on your website and
-                      performs better.
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="largeHeadingWhite ">Keyword Search</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      We do a comprehensive keyword search relevant to your
-                      business and shortlist top traffic driving search terms
-                      with less competition. This helps us to map and optimize
-                      the website.
-                    </dd>
-                    <dt className="largeHeadingWhite ">Growth</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      We aim to strive for growth oriented results. With our
-                      expert-led optimisation, we ensure that your website ranks
-                      on the highest search result with the right targeting.
-                    </dd>
+                      <dt className=" largeHeadingWhite xl:mt-10">
+                        Smart Audit
+                      </dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We make sure to diagnose your website so we know what we
+                        are operating. This helps us drive a result oriented
+                        strategy that eliminates loose ends on your website and
+                        performs better.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="largeHeadingWhite ">Keyword Search</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We do a comprehensive keyword search relevant to your
+                        business and shortlist top traffic driving search terms
+                        with less competition. This helps us to map and optimize
+                        the website.
+                      </dd>
+                      <dt className="largeHeadingWhite  xl:mt-4">Growth</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We aim to strive for growth oriented results. With our
+                        expert-led optimisation, we ensure that your website
+                        ranks on the highest search result with the right
+                        targeting.
+                      </dd>
+                    </div>
                   </div>
                 </dl>
               </div>
@@ -175,7 +180,7 @@ function BrandManagement() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     On Page SEO 
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     While search engine rankings are driven from link building
                     campaigns, ongoing on-page optimization of your website
                     hosting, code, content is foundational when it comes to user
@@ -198,7 +203,7 @@ function BrandManagement() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Off Page SEO
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     Link Building and Content Marketing is essential to scale
                     your website and to drive meaningful traffic to perform
                     action. Our package includes Content Marketing, Link
@@ -221,7 +226,7 @@ function BrandManagement() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Content Optimization {" "}
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     TMG provides content optimization services to help make your
                     content more effective, and improve quality, making it more
                     informative and engaging for your audience. We can also help
@@ -243,7 +248,7 @@ function BrandManagement() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText ">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText ">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -291,7 +296,7 @@ function BrandManagement() {
                   <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

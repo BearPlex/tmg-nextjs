@@ -93,7 +93,7 @@ function WebDesign() {
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       Modern designs that
                       <span className="gradientText">
@@ -103,7 +103,7 @@ function WebDesign() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.
                       Everything from using attractive visuals, to writing
@@ -118,49 +118,50 @@ function WebDesign() {
               </div>
             </div>
           </section>
-
           <section>
             <div className="background-gradient py-24 sm:py-32">
-              <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                  <div>
-                    <dd className="mt-4 md:mt-10  relative  top-6 max-w-xs extraLargeHeadingWhite ">
+              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+                <dl className="flex flex-col lg:flex-row componentsMainGap">
+                  <div className="mx-auto items-center">
+                    <dd className="relative  extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div>
-                    <dt className="largeHeadingWhite">Development</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite ">
-                      User-centric designs, practical and result-oriented
-                      marketing tools, and in-house built features are among our
-                      exponential services we provide. 
-                    </dd>
+                  <div className="flex flex-col md:flex-row componentsMainGap">
+                    <div>
+                      <dt className="largeHeadingWhite">Development</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                        User-centric designs, practical and result-oriented
+                        marketing tools, and in-house built features are among
+                        our exponential services we provide.
+                      </dd>
 
-                    <dt className="largeHeadingWhite xl:mt-10">Maintenance</dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      We ensure to keep your backend updated after the
-                      completion of the project and provide instantaneous online
-                      support whenever you or your business requires. 
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="font-bold text-white text-5xl ">
-                      Technology
-                    </dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      We are extremely versed in technology upgrades. By
-                      utilizing the latest tools and following best practices,
-                      we deliver high-quality results.
-                    </dd>
-                    <dt className="font-bold text-white text-5xl xl:mt-9">
-                      Functionality
-                    </dt>
-                    <dd className="mt-2 md:mt-6 smallTextWhite">
-                      A visually appealing and high functional website with
-                      regular updates can help your business grab the attention
-                      of visitors globally. We are open to provide custom
-                      functionality based solutions as per the need.
-                    </dd>
+                      <dt className=" largeHeadingWhite xl:mt-10">
+                        Maintenance
+                      </dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We ensure to keep your backend updated after the
+                        completion of the project and provide instantaneous
+                        online support whenever you or your business requires.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="largeHeadingWhite ">Technology</dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        We are extremely versed in technology upgrades. By
+                        utilizing the latest tools and following best practices,
+                        we deliver high-quality results.
+                      </dd>
+                      <dt className="largeHeadingWhite  xl:mt-4">
+                        Functionality
+                      </dt>
+                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                        A visually appealing and high functional website with
+                        regular updates can help your business grab the
+                        attention of visitors globally. We are open to provide
+                        custom functionality based solutions as per the need.
+                      </dd>
+                    </div>
                   </div>
                 </dl>
               </div>
@@ -179,7 +180,7 @@ function WebDesign() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Ecommerce Websites
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing an e-Commerce website, it
                     is time to let us take the lead and assist you in providing
                     a seamless online shopping experience to your customers. We
@@ -202,7 +203,7 @@ function WebDesign() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Software As A Service
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer Software-as-a-Service to clients in order to help
                     them utilize resources more efficiently and make
                     well-informed business decisions. Through better strategic
@@ -226,7 +227,7 @@ function WebDesign() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Business Websites{" "}
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing a business website, it is
                     time to let us take the lead and assist you in providing a
                     seamless browsing experience to your leads. We offer
@@ -249,7 +250,7 @@ function WebDesign() {
                   <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     What else?
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -297,7 +298,7 @@ function WebDesign() {
                   <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

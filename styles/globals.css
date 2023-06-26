@@ -261,7 +261,7 @@
     @apply whiteDescriptionText paragraph;
   }
   .smallTextWhite {
-    @apply smallText whiteHeadingText;
+    @apply smallText whiteDescriptionText;
   }
   /* TEXT END */
   /*  */

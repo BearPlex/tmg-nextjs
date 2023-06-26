@@ -82,7 +82,7 @@ export default function Home() {
                   Providing Exponential
                   <span className="gradientText heading"> User Experience</span>
                 </h1>
-                <p className="mt-2 md:mt-6 paragraph blackDescriptionText">
+                <p className="mt-0 md:mt-2 lg:mt-6 paragraph blackDescriptionText">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
                   <br />
