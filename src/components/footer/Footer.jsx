@@ -20,7 +20,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="relative bg-[#1B1B1B] pt-20 pb-12">
+      <footer className="relative bg-[#1B1B1B] pt-7 md:pt-20 pb-12">
         <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
           <div className="pagePaddingX text-white 3xl:px-0 3xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
@@ -135,7 +135,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-16 sm:mt-6 lg:mb-0 mb-6  flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
+          <div className="w-full mt-16 sm:mt-2 md:mt-6 lg:mb-0 mb-m md:mb-6   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
             <Link
               href="/"
               className="w-full flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0"

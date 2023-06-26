@@ -29,23 +29,27 @@ const Header = () => {
                 />
                 {/* </a> */}
               </Link>
-              <ul className="pl-0 ml-auto flex item-center gap-[4.5rem] justify-end py-3">
-                <li className={showMenu ? "hidden" : "block"}>
-                  <Link
-                    className="paragraph font-sofia-extrabold font-extrabold  text-black no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
-                    href="/work"
-                  >
-                    Work
-                  </Link>
-                </li>
-                <li className={showMenu ? "hidden" : "block"}>
-                  <Link
-                    className="paragraph font-sofia-extrabold text-black no-underline font-extrabold inline-block mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
-                    href="/contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
+              <ul className="pl-0 flex item-center gap-[4.5rem] justify-end py-3">
+                <div className="hidden md:block">
+                  <li className={showMenu ? "hidden" : "block"}>
+                    <Link
+                      className="paragraph font-sofia-extrabold font-extrabold  blackHeadingText no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                      href="/work"
+                    >
+                      Work
+                    </Link>
+                  </li>
+                </div>
+                <div className="hidden md:block">
+                  <li className={showMenu ? "hidden" : "block"}>
+                    <Link
+                      className="paragraph font-sofia-extrabold blackHeadingText no-underline font-extrabold mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                      href="/contact"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </div>
                 <li>
                   <div id="menuToggle" onClick={() => setShowMenu(!showMenu)}>
                     <input type="checkbox" />

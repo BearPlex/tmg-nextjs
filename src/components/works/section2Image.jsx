@@ -15,7 +15,7 @@ function section2Image(props) {
                 height={300}
                 alt="attributes"
                 src={`http://localhost:1337${data?.attributes.url}`}
-                className="my-10 "
+                className="my-4 md:my-10 "
               />
             </>
           );

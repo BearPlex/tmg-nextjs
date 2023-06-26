@@ -26,8 +26,8 @@ function evolver() {
 
 
       <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">Boost your productivity today.</h2>
-      <p className="mx-auto mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-      <div className="mt-10 flex items-center justify-center gap-x-6">
+      <p className="mx-auto mt-2 md:mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+      <div className="mt-4 md:mt-10 flex items-center justify-center gap-x-6">
         <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 smallText font-semibold blackDescriptionText shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
         <a href="#" className="smallText font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
       </div>
@@ -51,7 +51,7 @@ function evolver() {
           <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">
             Try QUANTUMiND risk-free for 20 days you can even keep the bottles
           </h2>
-          <p className="mx-auto mt-6 max-w-xl paragraph leading-8 blackHeadingText">
+          <p className="mx-auto mt-2 md:mt-6 max-w-xl paragraph leading-8 blackHeadingText">
             if QUANTUMIND doesn’t transform your life or you don’t feel the
             difference for up to 20 days since your purchase, email our support
             team and we’ll give you a complete refund - no questions asked. You
@@ -152,7 +152,7 @@ function evolver() {
                 Premium adaptogenic blend for a calmer, more stress-resilient
                 brain. Take 2-3 capsules per day.
               </p>
-              <div className="mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
+              <div className="mt-2 md:mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
                 <div className="font-normal text-base blackDescriptionText flex justify-between items-center">
                   Subscribe &amp; save 25% + free shipping:
                   <input
@@ -169,7 +169,7 @@ function evolver() {
                   $48.74
                 </div>
               </div>
-              <div className="mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
+              <div className="mt-2 md:mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
                 <div className="font-normal text-base blackDescriptionText flex justify-between">
                   One-time purchase:
                   <input
@@ -263,7 +263,7 @@ function evolver() {
       {/* Testmonials Section */}
 
       <section className="bgWhite px-6 py-24 sm:py-32 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex justify-between gap-20">
+        <div className="flex justify-between componentsMainGap">
           <figure className="">
             <p className="sr-only">5 out of 5 stars</p>
             <div className="flex gap-x-1 text-yellow-500">
@@ -328,7 +328,7 @@ function evolver() {
                 />
               </svg>
             </div>
-            <blockquote className="mt-10 paragraph font-semibold leading-8 tracking-tight text-gray-900 sm:largeParagraph sm:leading-9">
+            <blockquote className="mt-4 md:mt-10 paragraph font-semibold leading-8 tracking-tight text-gray-900 sm:largeParagraph sm:leading-9">
               <p>
                 “I’ve taken Adderall when I was in college and this is the best
                 clean supplement you take every single day that enhances your
@@ -338,7 +338,7 @@ function evolver() {
                 bold claim here”
               </p>
             </blockquote>
-            <figcaption className="mt-10 flex justify-between gap-x-6">
+            <figcaption className="mt-4 md:mt-10 flex justify-between gap-x-6">
               {/* <Image decoding="async" width={500} height={300} className="h-12 w-12 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt=""/> */}
               <div className="smallText leading-6">
                 <div className=" text-gray-900 smallText font-bold">

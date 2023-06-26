@@ -15,7 +15,7 @@ function footer2() {
   return (
     <>
       <div className="px-6 pt-14 pb-5 bgWhite ">
-        <div className=" bgBlack pt-20 md:pt-28 pb-10 rounded-3xl">
+        <div className=" bgBlack pt-7 md:pt-20 md:pt-28 pb-10 rounded-3xl">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center md:text-center flex flex-col items-center">
               <h2 className="text-base font-semibold leading-7 text-[#299C84]">

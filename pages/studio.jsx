@@ -34,7 +34,7 @@ import HeroContainer from "../src/components/containers/HeroContainer";
 //               <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
 //           </div>
 //           <div className="w-full">
-//               <h4 className="mb-6 text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
+//               <h4 className="mb-m md:mb-6  text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
 //               <p className="text-black font-medium text-[1.16rem]">
 //                   Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation. And then there’s Buddy, the French Bulldog.
 //               </p>
@@ -87,7 +87,7 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 headingBlack font-bold leading-tight capitalize">
+              <h4 className="mb-m md:mb-6  headingBlack font-bold leading-tight capitalize">
                 Lets make your{" "}
                 <span className="gradientText"> digital dreams a reality.</span>
               </h4>
@@ -101,7 +101,7 @@ const Studio = () => {
                   inspire action and drive growth.
                 </span>{" "}
               </p>
-              <div className="mt-10">
+              <div className="mt-4 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -109,13 +109,14 @@ const Studio = () => {
               </div>
             </div>
           </HeroContainer>
-          <section className="mt-20">
+          <section className="mt-9 md:mt-20">
             <div className="relative h-[581px]">
               <video
                 ref={videoRef}
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 loop={true}
-                controls={false}>
+                controls={false}
+              >
                 <source src="/video/hp.mp4" type="video/mp4" />
                 <source src="/video/hp.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
@@ -123,23 +124,27 @@ const Studio = () => {
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <button
                   className=" play-button border-4 border-white  rounded-full w-[140px] h-[140px] flex items-center justify-center"
-                  onClick={handlePlayPause}>
+                  onClick={handlePlayPause}
+                >
                   <svg
                     className={isPlaying ? "hidden" : "w-10 h-10"}
                     viewBox="0 0 26.139 37.458"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       id="Path_184"
                       data-name="Path 184"
                       d="M-1422.6-322.813v37.458l26.139-19.137Z"
                       transform="translate(1422.604 322.813)"
-                      fill="#fff"></path>
+                      fill="#fff"
+                    ></path>
                   </svg>
                   {/* Add your Pause SVG icon here, it will be displayed when the video is playing */}
                   <svg
                     className={isPlaying ? "w-10 h-10" : "hidden"}
                     viewBox="0 0 40 40"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     {/* Your Pause SVG icon paths go here */}
                   </svg>
                 </button>
@@ -179,7 +184,7 @@ const Studio = () => {
               </div>
             </div> */}
           </section>
-          <div className="flex mt-10 justify-center flex-col items-center">
+          <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
@@ -192,13 +197,13 @@ const Studio = () => {
               our clients stay ahead of the competition and get the greatest
               results possible.
             </p>
-            {/* <p className="paragraph mb-10">
+            {/* <p className="paragraph mb-4 md:mb-10">
                     By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
                 </p> */}
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="mt-20 pagePaddingX">
+          <section className="mt-9 md:mt-20 pagePaddingX">
             <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
               <div className="mb-4">
                 <Image
@@ -256,8 +261,8 @@ const Studio = () => {
               </div>
             </div>
           </section>
-          <section className="pt-36 h-auto bgBlack mt-60 pb-10">
-            <div className="flex items-center pagePaddingX justify-between gap-10 pb-20">
+          <section className="pt-14 md:pt-36 h-auto bgBlack mt-60 pb-10">
+            <div className="flex items-center pagePaddingX justify-between componentsMainGap pb-7 md:pb-20">
               <div className="w-[50%]">
                 <Image
                   width={500}
@@ -302,7 +307,8 @@ const Studio = () => {
                     },
                   }}
                   modules={[Navigation]}
-                  className="swiper">
+                  className="swiper"
+                >
                   {memberImages.map((member, index) => (
                     <SwiperSlide key={index}>
                       <div className="">
@@ -321,7 +327,7 @@ const Studio = () => {
                 </Swiper>
               </div>
 
-              <div className="flex flex-row items-end w-full pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
+              <div className="flex flex-row items-end w-full pt-7 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
                 <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
                   <Image
                     width={500}

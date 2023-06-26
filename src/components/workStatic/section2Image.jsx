@@ -11,7 +11,7 @@ function section2Image(props) {
           height={300}
           alt="galary"
           src={work[0].gallery1.src}
-          className="my-10 "
+          className="my-4 md:my-10 "
         />
       </div>
     </>

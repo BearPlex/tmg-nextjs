@@ -38,15 +38,16 @@ function WebDesign() {
         <section className="w-full">
           <section>
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-                <div className="w-full text-center mt-10 xl:mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
+                <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
                   <Image
                     width={0}
                     height={0}
                     src={brand1.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px] "
+                    layout="responsive"
+                    objectFit="cover"
                   />
                   <Image
                     width={0}
@@ -54,21 +55,21 @@ function WebDesign() {
                     src={brand2.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px] mt-10"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6  heading blackDescriptionText">
+                  <h4 className="mb-m md:mb-6   heading blackDescriptionText">
                     Highly <span className="gradientText "> Optimized </span>
                     Converting Websites 
                   </h4>
-                  <p className="paragraph blackDescriptionText mb-20">
+                  <p className="paragraph blackDescriptionText mb-9 md:mb-20">
                     We have been helping our partners in creating responsive and
                     eye-catching websites that leave every viewer in awe of
                     their scale and seamlessness. Our team of certified
                     developers with years of experience in multiple niches know
                     what would stand out at the end of the day. 
-                    <br />
                     <br />
                     We strongly keep up with the latest trends in the
                     development world, so you can be sure that your website will
@@ -92,7 +93,8 @@ function WebDesign() {
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-12 lg:flex-shrink-0 lg:flex-grow">
                     <h1
-                      className={`mb-6 blackDescriptionText  largeHeading max-w-sm`}>
+                      className={`mb-m md:mb-6  blackDescriptionText  largeHeading max-w-sm`}
+                    >
                       Modern designs that
                       <span className="gradientText">
                         {" "}
@@ -101,7 +103,7 @@ function WebDesign() {
                     </h1>
                   </div>
                   <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <p className="mt-6  paragraph  blackDescriptionText">
+                    <p className="mt-2 md:mt-6  paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.
                       Everything from using attractive visuals, to writing
@@ -122,20 +124,20 @@ function WebDesign() {
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
-                    <dd className="mt-10  relative  top-6 max-w-xs extraLargeHeadingWhite ">
+                    <dd className="mt-4 md:mt-10  relative  top-6 max-w-xs extraLargeHeadingWhite ">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
                     <dt className="largeHeadingWhite">Development</dt>
-                    <dd className="mt-6 smallTextWhite ">
+                    <dd className="mt-2 md:mt-6 smallTextWhite ">
                       User-centric designs, practical and result-oriented
                       marketing tools, and in-house built features are among our
                       exponential services we provide. 
                     </dd>
 
                     <dt className="largeHeadingWhite xl:mt-10">Maintenance</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We ensure to keep your backend updated after the
                       completion of the project and provide instantaneous online
                       support whenever you or your business requires. 
@@ -145,7 +147,7 @@ function WebDesign() {
                     <dt className="font-bold text-white text-5xl ">
                       Technology
                     </dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We are extremely versed in technology upgrades. By
                       utilizing the latest tools and following best practices,
                       we deliver high-quality results.
@@ -153,7 +155,7 @@ function WebDesign() {
                     <dt className="font-bold text-white text-5xl xl:mt-9">
                       Functionality
                     </dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       A visually appealing and high functional website with
                       regular updates can help your business grab the attention
                       of visitors globally. We are open to provide custom
@@ -171,12 +173,13 @@ function WebDesign() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Ecommerce Websites
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing an e-Commerce website, it
                     is time to let us take the lead and assist you in providing
                     a seamless online shopping experience to your customers. We
@@ -184,7 +187,7 @@ function WebDesign() {
                     where you can simply focus on managing the inventory part of
                     business and let us handle the entire "How to" process. 
                   </p>
-                  <div className="flex items-center gap-x-6  mt-8">
+                  <div className="flex items-center gap-x-6  mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -193,12 +196,13 @@ function WebDesign() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Software As A Service
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     We offer Software-as-a-Service to clients in order to help
                     them utilize resources more efficiently and make
                     well-informed business decisions. Through better strategic
@@ -207,7 +211,7 @@ function WebDesign() {
                     untapped markets. We provide accurate guidance and hands-on
                     assistance with the CMS implementation process.   
                   </p>
-                  <div className="flex items-center gap-x-6  mt-10">
+                  <div className="flex items-center gap-x-6  mt:4 md:mt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -216,12 +220,13 @@ function WebDesign() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Business Websites{" "}
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing a business website, it is
                     time to let us take the lead and assist you in providing a
                     seamless browsing experience to your leads. We offer
@@ -229,7 +234,7 @@ function WebDesign() {
                     where you can simply focus on managing the service part of
                     business and let us handle the entire "How to" process. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-8 ">
+                  <div className="flex items-center gap-x-6 mt-3 md:mt-8 ">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -238,17 +243,20 @@ function WebDesign() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">What else?</h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
+                    What else?
+                  </h1>
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it.  
                   </p>
-                  <div className="flex items-center gap-x-6  mt-8">
+                  <div className="flex items-center gap-x-6  mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -257,7 +265,7 @@ function WebDesign() {
           </section>
 
           <section>
-            <Tabs className="mb-20 px-28 tabs-wrapper">
+            <Tabs className="mb-9 md:mb-20 px-28 tabs-wrapper">
               <TabList>
                 {
                   // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
@@ -286,10 +294,10 @@ function WebDesign() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg  largeHeading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 max-w-lg  largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing
@@ -297,12 +305,11 @@ function WebDesign() {
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
                     <br />
-                    <br />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
-                  <div className="flex items-center gap-x-6 mt-8">
+                  <div className="flex items-center gap-x-6 mt-3 md:mt-8">
                     {/* <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
                   <div className="">
                     <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
@@ -317,7 +324,7 @@ function WebDesign() {
               </div>
             </div>
           </section>
-          <div className="-mt-28">
+          <div className="mt-0">
             <Footer />
           </div>
         </section>

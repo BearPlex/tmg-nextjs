@@ -79,7 +79,7 @@
     color: #1b1b1b !important;
   }
   .blackHeading {
-    color:#383434
+    color: #383434;
   }
   .blackDescriptionText {
     color: #454545 !important;
@@ -90,10 +90,27 @@
   .whiteDescriptionText {
     color: #f8f8f8 !important;
   }
+  .text72 {
+    font-size: 72px;
+    line-height: 70px;
+    font-size: 800;
+
+    @media (max-width: 1023px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 28px;
+    }
+  }
   .text60 {
     font-size: 60px;
-line-height: 70px;
-font-size: 800;
+    line-height: 70px;
+    font-size: 800;
     @media (max-width: 1023px) {
       font-size: 40px;
       line-height: 50px;
@@ -106,7 +123,6 @@ font-size: 800;
 
     @media (max-width: 639px) {
       font-size: 24px;
-
     }
   }
   .text50 {
@@ -164,6 +180,9 @@ font-size: 800;
     @media (max-width: 639px) {
       font-size: 16px;
     }
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
   }
   .text20 {
     font-size: 20px;
@@ -195,6 +214,9 @@ font-size: 800;
     background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .xl2Heading {
+    @apply font-sofia-bold text60;
   }
   .extraLargeHeading {
     @apply font-sofia-bold text60;
@@ -238,8 +260,8 @@ font-size: 800;
   .paragraphWhite {
     @apply whiteDescriptionText paragraph;
   }
-  .smallTextWhite{
-@apply smallText whiteHeadingText;
+  .smallTextWhite {
+    @apply smallText whiteHeadingText;
   }
   /* TEXT END */
   /*  */
@@ -255,6 +277,9 @@ font-size: 800;
   /* MARGIN PADDING START */
   .pagePaddingX {
     @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0;
+  }
+  .componentsMainGap {
+    @apply gap-10 lg:gap-14 3xl:gap-20;
   }
   /* MARGIN PADDING END */
 }
@@ -287,6 +312,21 @@ body {
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 1023px) {
+    height: 40px;
+    min-width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    height: 35px;
+    min-width: 130px;
+  }
+
+  @media (max-width: 639px) {
+    height: 30px;
+    min-width: 100px;
+    padding: 0px 10px;
+  }
 }
 .gradient-span:hover {
   background: white;
@@ -345,7 +385,8 @@ body {
   width: 35px;
   height: 3px;
   margin-bottom: 6px;
-  background: #000000;
+  /* color: #1b1b1b !important; */
+  background: #1b1b1b !important;
   border-radius: 1px;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
@@ -356,25 +397,30 @@ body {
 
 #menuToggle #span1 {
   transform-origin: 4px 0;
+  /* color: #1b1b1b; */
 }
 
 #menuToggle #span3 {
   width: 25px !important;
   margin-left: auto;
+  color: #1b1b1b;
   transform-origin: bottom left;
 }
 
 #menuToggle input:checked ~ #span1 {
   background-color: #ffffff;
   transform: rotate(45deg) translate(5px);
+  background: #fff !important;
 }
 #menuToggle input:checked ~ #span2 {
   background-color: #ffffff;
   transform: rotate(495deg) translate(5px);
+  background: #fff !important;
 }
 #menuToggle input:checked ~ #span3 {
   background-color: #ffffff;
   transform: rotate(45deg);
+  background: #fff !important;
   opacity: 0;
 }
 
@@ -426,6 +472,15 @@ footer svg:hover path {
 .contact-wrapper svg {
   width: 45px;
   height: 45px;
+  @media (max-width: 1023px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .contact-wrapper svg:hover g,
@@ -458,7 +513,7 @@ footer svg:hover path {
   transition: background-color 0.5s ease-in;
 }
 .nav-footer {
-  width: calc(100% - 160px);
+  /* width: calc(100% - 160px); */
 }
 
 .tabs-wrapper {

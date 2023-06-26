@@ -8,7 +8,7 @@ const CardStatic = (props) => {
     // console.log("Id", id);
   };
   return (
-    <div className="mt-16 flex justify-start flex-wrap ">
+    <div className="mt-5 md:mt-16 flex justify-start flex-wrap ">
       {item.map((blog, index) => (
         <div
           key={index}

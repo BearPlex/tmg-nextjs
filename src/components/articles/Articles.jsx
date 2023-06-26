@@ -33,8 +33,8 @@ const Articles = () => {
     // console.log("Id", id);
   };
   return (
-    <div className="h-auto pagePaddingX pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-      <div className="mb-20 headingBlack">Latest Articles</div>
+    <div className="h-auto pagePaddingX pb-7 md:pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+      <div className="mb-9 md:mb-20 headingBlack">Latest Articles</div>
       <div className="">
         <div className="h-auto w-full">
           <Swiper
@@ -100,7 +100,7 @@ const Articles = () => {
           </Swiper>
         </div>
 
-        <div className="flex flex-row pt-20 ">
+        <div className="flex flex-row pt-7 md:pt-20 ">
           <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
             {`<-`}
             <Image
@@ -123,7 +123,7 @@ const Articles = () => {
           </div>
         </div>
       </div>
-      <div className="text-center w-full mt-28">
+      <div className="text-center w-full mt-10 md:mt-28">
         <GradientButton text="View All Blog Posts" route="/blog" />
       </div>
     </div>

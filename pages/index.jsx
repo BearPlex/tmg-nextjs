@@ -76,13 +76,13 @@ export default function Home() {
           </HeroContainer>
 
           <section className="w-full bgWhite overflow-x-hidden">
-            <div className="flex flex-col md:flex-row gap-10 pagePaddingX pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
+            <div className="flex flex-col md:flex-row componentsMainGap pagePaddingX pt-4 md:pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
               <div className="w-full md:w-1/2 md:h-[500px] flex flex-col justify-center">
                 <h1 className="heading  blackHeading">
                   Providing Exponential
                   <span className="gradientText heading"> User Experience</span>
                 </h1>
-                <p className="mt-6 paragraph blackDescriptionText">
+                <p className="mt-2 md:mt-6 paragraph blackDescriptionText">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
                   <br />
@@ -105,8 +105,8 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="py-20 pt-16 ">
-            <div className="w-full flex items-center justify-center pb-16">
+          <div className="py-9 pt-7 md:py-20 md:pt-16">
+            <div className="w-full flex items-center justify-center pb-7 md:pb-16">
               <h2 className="md:w-4/5 w-full text-center heading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>
@@ -117,8 +117,8 @@ export default function Home() {
           <Services />
 
           <section className="bgBlack h-auto  ">
-            <div className="pagePaddingX pb-28 pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-              <div className="flex items-center flex-col md:flex-row gap-10 justify-between">
+            <div className="pagePaddingX pb-12 pt-14 md:pb-28 md:pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+              <div className="flex items-center flex-col md:flex-row componentsMainGap justify-between">
                 <div className="md:w-[50%]">
                   <div className="md:w-4/5 w-full md:mr-auto">
                     <Image
@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
                 <div className="md:w-[50%] flex items-center">
                   <div className="md:w-5/6">
-                    <p className="largeHeadingWhite mt-10 md:mt-0">
+                    <p className="largeHeadingWhite mt:4 md:mt-10 md:mt-0">
                       Collaborating with trending brands
                     </p>
                   </div>

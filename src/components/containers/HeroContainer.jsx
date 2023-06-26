@@ -4,7 +4,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
   return (
     <section className="w-full md:h-[55vh] 3xl:max-w-7xl 3xl:mx-auto">
       <div className="h-full flex items-center pagePaddingX">
-        <div className="w-full flex items-center gap-10 flex-col md:flex-row">
+        <div className="w-full flex items-center componentsMainGap flex-col md:flex-row">
           <div className="text-center w-full h-auto">
             <Image
               width={0}

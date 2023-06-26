@@ -17,7 +17,7 @@ function section1(props) {
   return (
     <>
       <section className="max-w-7xl mx-auto">
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-9 md:mt-20">
           <Image
             width={500}
             height={300}
@@ -30,7 +30,7 @@ function section1(props) {
           {work?.featured_title}{" "}
         </h1>
         <div className="flex justify-center">
-          <div className="pb-60 max-w-[80%] mt-16">
+          <div className="pb-60 max-w-[80%] mt-5 md:mt-16">
             <h2
               id="beautyRef"
               className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"

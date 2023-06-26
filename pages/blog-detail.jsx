@@ -5,7 +5,7 @@ import Image from "../src/components/Image/Image";
 
 const blogDetail = () => {
   return (
-    <div className="pt-20 px-28">
+    <div className="pt-7 md:pt-20 px-28">
       <span className="text-pink-400 smallText font-medium tracking-widest">
         05ht August 2022
       </span>
@@ -23,7 +23,7 @@ const blogDetail = () => {
       {/* <Image decoding="async" width={500} height={300} src="" /> */}
       <div className="max-w-2xl w-full mx-auto">
         <div className="heading text-pink-400">Introduction</div>
-        <p className="paragraphBlack pb-20">
+        <p className="paragraphBlack pb-7 md:pb-20">
           Did you know that if the internet was a country, it would be the
           world’s 7th biggest polluter, emitting 1.6 billion annual tons in
           greenhouse gas emissions? As a planet, we are currently facing

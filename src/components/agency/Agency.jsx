@@ -48,7 +48,7 @@ const Agency = () => {
   // };
 
   return (
-    <div className="pt-20 flex items-start justify-between">
+    <div className="pt-7 md:pt-20 flex items-start justify-between">
       <div className="w-1/2">
         <div className="pb-60 max-w-[80%]">
           <h2

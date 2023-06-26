@@ -40,33 +40,36 @@ const Services = () => {
 
   return (
     <section className="background-gradient">
-      <div className="w-full pagePaddingX gap-10 py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-        <span className="block mb-16 uppercase smallText whiteHeadingText ">
+      <div className="w-full pagePaddingX componentsMainGap py-10 md:py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+        <span className="block mb-4 md:mb-10 uppercase smallText whiteHeadingText ">
           Our Services
         </span>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col justify-center">
             <h3
-              className={`mb-6   cursor-pointer transition-opacity heading ${
+              className={`mb-m md:mb-6    cursor-pointer transition-opacity xl2Heading ${
                 type === "design" ? " whiteHeadingText" : "blackDescriptionText"
               }`}
-              onClick={() => setType("design")}>
+              onClick={() => setType("design")}
+            >
               Web Design & Development
             </h3>
             <h3
-              className={`mb-6  font-bold cursor-pointer transition-opacity extraLargeHeading ${
+              className={`mb-m md:mb-6   font-bold cursor-pointer transition-opacity xl2Heading ${
                 type === "branding"
                   ? "whiteHeadingText"
                   : "blackDescriptionText"
               }`}
-              onClick={() => setType("branding")}>
+              onClick={() => setType("branding")}
+            >
               Branding
             </h3>
             <h3
-              className={`mb-6 font-bold cursor-pointer transition-opacity extraLargeHeading ${
+              className={`mb-m md:mb-6  font-bold cursor-pointer transition-opacity xl2Heading ${
                 type === "digital" ? "whiteHeadingText" : "blackDescriptionText"
               }`}
-              onClick={() => setType("digital")}>
+              onClick={() => setType("digital")}
+            >
               Digital Marketing
             </h3>
             {/* <a
@@ -87,7 +90,7 @@ const Services = () => {
                 className="w-[100%]"
               />
             </div>
-            <p className="paragraphWhite mt-10 leading-loose min-h-[120px]">
+            <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
               {handleGetImages().detail}
             </p>
           </div>

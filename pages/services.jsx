@@ -38,7 +38,7 @@ const Services = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <p className="mb-6 paragraphBlack">
+              <p className="mb-m md:mb-6  paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
                 by solid strategy, we assist our clients in building a magnetic
                 online presence to transform every click into a conversion.
@@ -61,7 +61,7 @@ const Services = () => {
                 ]}
                 activeNavClass="is-active"
               >
-                <div className="flex flex-wrap gap-y-8 justify-between max-w-[85%] mt-5">
+                <div className="flex flex-wrap gap-y-8 justify-between w-full md:max-w-[85%] mt-5">
                   {/* <Link href="/webDevelopment">
                 <a className="w-1/2 font-medium paragraphBlack inline-block">
                   Learn More
@@ -135,7 +135,7 @@ const Services = () => {
                 </a> */}
                 </div>
               </ScrollspyNav>
-              <div className="mt-10">
+              <div className="mt-4 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -152,7 +152,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Social Media Marketing</div>
-                <p className="mt-8 mb-14 paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -168,7 +168,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Brand Management</div>
-                <p className="mt-8 mb-14 paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -183,7 +183,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Search Engine Optimization</div>
-                <p className="mt-8 mb-14 paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
@@ -198,7 +198,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Website Design & Development</div>
-                <p className="mt-8 mb-14 paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
@@ -216,11 +216,11 @@ export default Services;
 
 //   {/* <section
 //   id="e_commerce"
-//   className="flex items-center justify-between py-28"
+//   className="flex items-center justify-between py-10 md:py-28"
 // >
 //   <div className="w-[40%]">
 //     <HeadingThree cssClass="text-[5rem]" title="E-Commerce" />
-//     <p className="mt-8 mb-14 font-medium paragraph text-black">
+//     <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
 //       Reinvent your online store with an expert team who know what it
 //       takes to turn clicks into customers and keep them coming back.
 //     </p>
@@ -240,11 +240,11 @@ export default Services;
 // </section> */}
 //   {/* <section
 //   id="wordpress"
-//   className="flex items-center justify-between py-28"
+//   className="flex items-center justify-between py-10 md:py-28"
 // >
 //   <div className="w-[40%]">
 //     <HeadingThree cssClass="text-[5rem]" title="WordPress" />
-//     <p className="mt-8 mb-14 font-medium paragraph text-black">
+//     <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
 //       Our approach decouples WordPress CMS from the front end
 //       technology to tighten security and improve overall speed.
 //     </p>

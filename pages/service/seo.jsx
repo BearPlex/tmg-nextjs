@@ -38,15 +38,16 @@ function BrandManagement() {
         <section className="w-full">
           <section>
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-                <div className="w-full text-center mt-10 xl:mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
+                <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
                   <Image
                     width={500}
                     height={300}
                     src={brand1.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px]"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                   <Image
                     width={500}
@@ -54,11 +55,12 @@ function BrandManagement() {
                     src={brand2.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px] mt-10"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6 heading blackDescriptionText ">
+                  <h4 className="mb-m md:mb-6  heading blackDescriptionText ">
                     Performance Driven <span className="gradientText">SEO</span>{" "}
                     Services
                   </h4>
@@ -86,7 +88,8 @@ function BrandManagement() {
                 <div className="mx-auto max-w-7xl px-6 py-10 sm:py-10 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                     <h1
-                      className={`mb-6 blackDescriptionText  largeHeading  max-w-xl`}>
+                      className={`mb-m md:mb-6  blackDescriptionText  largeHeading  max-w-xl`}
+                    >
                       Content strategy that
                       <span className="gradientText">
                         {" "}
@@ -95,11 +98,10 @@ function BrandManagement() {
                     </h1>
                   </div>
                   <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                    <p className="mt-6 paragraph  blackDescriptionText ">
+                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText ">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
-                      <br />
                       <br />
                       Our SEO packages include content marketing, local seo,
                       technical audits, social media presence, link building,
@@ -118,20 +120,20 @@ function BrandManagement() {
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   <div>
-                    <dd className="mt-10  relative top-6 max-w-xs  extraLargeHeadingWhite">
+                    <dd className="mt-4 md:mt-10  relative top-6 max-w-xs  extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
                     <dt className="largeHeadingWhite">Expert Analysis</dt>
-                    <dd className="mt-6 smallTextWhite  ">
+                    <dd className="mt-2 md:mt-6 smallTextWhite  ">
                       We make sure to analyze the market competition
                       landscape.This helps us form accurate predictions about
                       how we are going to rank your business on Google rankings.
                     </dd>
 
                     <dt className="largeHeadingWhite xl:mt-10">Smart Audit</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We make sure to diagnose your website so we know what we
                       are operating. This helps us drive a result oriented
                       strategy that eliminates loose ends on your website and
@@ -140,14 +142,14 @@ function BrandManagement() {
                   </div>
                   <div>
                     <dt className="largeHeadingWhite ">Keyword Search</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We do a comprehensive keyword search relevant to your
                       business and shortlist top traffic driving search terms
                       with less competition. This helps us to map and optimize
                       the website.
                     </dd>
                     <dt className="largeHeadingWhite ">Growth</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We aim to strive for growth oriented results. With our
                       expert-led optimisation, we ensure that your website ranks
                       on the highest search result with the right targeting.
@@ -164,12 +166,13 @@ function BrandManagement() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     On Page SEO 
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     While search engine rankings are driven from link building
                     campaigns, ongoing on-page optimization of your website
                     hosting, code, content is foundational when it comes to user
@@ -177,7 +180,7 @@ function BrandManagement() {
                     which include Meta Title and Descriptions, Title Tags and
                     Creating GMB Profile.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-10">
+                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -186,12 +189,13 @@ function BrandManagement() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Off Page SEO
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     Link Building and Content Marketing is essential to scale
                     your website and to drive meaningful traffic to perform
                     action. Our package includes Content Marketing, Link
@@ -199,7 +203,7 @@ function BrandManagement() {
                     Media Presence and Removing Toxic Links to help increase
                     authority and website credibility on Google.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-10">
+                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -208,19 +212,20 @@ function BrandManagement() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Content Optimization {" "}
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     TMG provides content optimization services to help make your
                     content more effective, and improve quality, making it more
                     informative and engaging for your audience. We can also help
                     you target specific keywords and topics to ensure that your
                     content is being seen by the right people.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-10">
+                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -229,17 +234,20 @@ function BrandManagement() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">What Else?</h1>
-                  <p className="mt-6 paragraph whiteDescriptionText ">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
+                    What Else?
+                  </h1>
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText ">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-10">
+                  <div className=" flex items-center gap-x-6 pt-4 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -248,7 +256,7 @@ function BrandManagement() {
           </section>
 
           <section>
-            <Tabs className="p-20 px-28 tabs-wrapper">
+            <Tabs className="  tabs-wrapper">
               <TabList>
                 {
                   // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
@@ -267,7 +275,7 @@ function BrandManagement() {
           <section className="background-gradient pb-16">
             <div className="relative isolate ">
               <div className="max-w-7xl lg:flex lg:items-center lg:gap-x-10">
-                <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <div className="lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                   <Image
                     width={500}
                     height={300}
@@ -277,17 +285,16 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg largeHeading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 max-w-lg largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <br />
                     <br />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
@@ -308,7 +315,7 @@ function BrandManagement() {
               </div>
             </div>
           </section>
-          <div className="-mt-28">
+          <div className="mt-0">
             <Footer />
           </div>
         </section>

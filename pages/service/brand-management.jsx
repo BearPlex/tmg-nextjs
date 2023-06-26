@@ -39,15 +39,16 @@ function Seo() {
         <setcion className="w-full">
           <section className="">
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 px-20 gap-4 pt-12 items-center">
-                <div className="w-full text-center mt-10 xl:mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
+                <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
                   <Image
                     width={500}
                     height={300}
                     src={brand1.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px]"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                   <Image
                     width={500}
@@ -55,11 +56,12 @@ function Seo() {
                     src={brand2.src}
                     alt="kota canvas"
                     loading="lazy"
-                    className="w-[466px] h-[303px] mt-10"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-6  heading blackDescriptionText">
+                  <h4 className="mb-m md:mb-6   heading blackDescriptionText">
                     <span className="gradientText">Brand Identity</span> And
                     Creative Management Services
                   </h4>
@@ -80,25 +82,24 @@ function Seo() {
           <section>
             <div className="bgWhite py-20">
               <div className="relative isolate ">
-                <div className="px-32 py-10 sm:py-10 lg:flex lg:items-center gap-10 lg:py-10">
-                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
+                <div className="pagePaddingX py-10 sm:py-10 lg:flex lg:items-center componentsMainGap lg:py-10">
+                  <div className="mt-5 md:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-1/2 lg:flex-grow">
                     <h1
-                      className={`mb-6  blackDescriptionText  largeHeading max-w-xl`}>
+                      className={`mb-m md:mb-6   blackDescriptionText  largeHeading max-w-xl`}
+                    >
                       Specialized branding services that
                       <span className="gradientText"> creates trust</span>{" "}
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-1/2">
-                    <p className="mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-2 md:mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. 
-                      <br />
                       <br />
                       From brand positioning, logo design, design collaterals,
                       and packaging, we collaborate closely with your team to
                       ensure your branding embraces the essence of your
                       business.
-                      <br />
                       <br />
                       Our branding packages include{" "}
                       <span className="gradientText">
@@ -118,22 +119,22 @@ function Seo() {
           <section>
             <div className="background-gradient py-24 sm:py-32">
               <div className="pagePaddingX">
-                <dl className="mt-16 grid grid-cols-1 gap-10  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+                <dl className="mt-5 md:mt-16 grid grid-cols-1 componentsMainGap  leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
                   <div>
-                    <dd className="mt-10  relative  top-6 extraLargeHeadingWhite">
+                    <dd className="mt-4 md:mt-10  relative  top-6 extraLargeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div>
                     <dt className="largeHeadingWhite">Experience</dt>
-                    <dd className="mt-6 smallTextWhite ">
+                    <dd className="mt-2 md:mt-6 smallTextWhite ">
                       We’ve worked with brands from a huge range of industries
                       to showcase their differences through strategic design
                       that positions them perfectly. {" "}
                     </dd>
 
                     <dt className="  largeHeadingWhite xl:mt-10">Strategy</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       With our certified team, we ensure to create effective
                       cost saving strategies that help campaigns perform well so
                       you can focus more on counting sales.{" "}
@@ -141,7 +142,7 @@ function Seo() {
                   </div>
                   <div>
                     <dt className="largeHeadingWhite ">Creativity</dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       Guided by your vision and values, our branding services
                       will bring your business to life with artistic flair and
                       attention to detail, to create a brand that is unique and
@@ -150,7 +151,7 @@ function Seo() {
                     <dt className="largeHeadingWhite xl:mt-4">
                       Sustainability
                     </dt>
-                    <dd className="mt-6 smallTextWhite">
+                    <dd className="mt-2 md:mt-6 smallTextWhite">
                       We ensure that the image that has been forged to the
                       consumer mind stays on top with consistent artistic
                       content to increase engagement and recall value.{" "}
@@ -167,22 +168,22 @@ function Seo() {
                 imageSrc={book.src}
                 imageAlt="book"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Brand Image
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
                     competition and helps you build a loyal customer base.
-                    <br />
                     <br />
                     Your brand image should be consistent and should stand out
                     across all channels - from your website to your social media
                     accounts and your physical collateral. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-8">
+                  <div className="flex items-center gap-x-6 mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -191,24 +192,24 @@ function Seo() {
                 imageSrc={mobile3.src}
                 imageAlt="mobile3"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
                     Social Presence
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     The internet has massively impacted the way businesses
                     operate and reach their customer base. To build a strong
                     social presence, businesses need to have an effective brand
                     strategy that helps them dig their feet further into the
                     existing industry and stick around for longer. 
                     <br />
-                    <br />
                     We create customized branding solutions  which are designed
                     to help businesses reach their target audience and achieve
                     their desired results.  
                   </p>
-                  <div className="flex items-center gap-x-6 mt-8">
+                  <div className="flex items-center gap-x-6 mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -217,18 +218,19 @@ function Seo() {
                 imageSrc={mobile2.src}
                 imageAlt="mobile2"
                 blackContainer={true}
-                imageRight={true}>
+                imageRight={true}
+              >
                 <div>
-                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
                     Tone of Voice{" "}
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     A unique tone of voice helps brands build trust and become
                     memorable in the minds of their audience. We’ll collaborate
                     with your team to devise a tone that resonates with your
                     customers and inspires them to action.
                   </p>
-                  <div className="flex items-center gap-x-6 mt-8">
+                  <div className="flex items-center gap-x-6 mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -237,19 +239,20 @@ function Seo() {
                 imageSrc={tmg.src}
                 imageAlt="tmg"
                 blackContainer={true}
-                imageRight={false}>
+                imageRight={false}
+              >
                 <div>
-                  <h1 className="mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 md:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className=" flex items-center gap-x-6 mt-8">
+                  <div className=" flex items-center gap-x-6 mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -257,8 +260,8 @@ function Seo() {
             </div>
           </section>
 
-          <section>
-            <Tabs className="p-20 px-28 tabs-wrapper">
+          {/* <section>
+            <Tabs className="  tabs-wrapper">
               <TabList>
                 {
                   // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
@@ -272,12 +275,12 @@ function Seo() {
                 </TabPanel>
               ))}
             </Tabs>
-          </section>
+          </section> */}
 
           <section className="background-gradient pb-16">
             <div className="relative isolate ">
               <div className="max-w-7xl lg:flex lg:items-center lg:gap-x-10">
-                <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                <div className="lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                   <Image
                     width={500}
                     height={300}
@@ -287,17 +290,16 @@ function Seo() {
                   />
                 </div>
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                  <h1 className="mt-10 max-w-lg largeHeading whiteHeadingText">
+                  <h1 className="mt-4 md:mt-10 max-w-lg largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 md:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That/'s why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <br />
                     <br />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
@@ -318,7 +320,7 @@ function Seo() {
               </div>
             </div>
           </section>
-          <div className="-mt-28">
+          <div className="mt-0">
             <Footer />
           </div>
         </setcion>

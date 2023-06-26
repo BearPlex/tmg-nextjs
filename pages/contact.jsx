@@ -15,9 +15,9 @@ const Contact = () => {
   return (
     <>
       <PageWrapper>
-        <div className="flex gap-x-5 justify-between mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+        <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[30%]">
-            <h4 className=" headingBlack mb-6 uppercase">new york</h4>
+            <h4 className=" headingBlack mb-m md:mb-6  uppercase">new york</h4>
             <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
               Brooklyn,
               <br />
@@ -27,7 +27,7 @@ const Contact = () => {
               {/* <br />
             EC1M 5PA */}
             </p>
-            <p className="mt-10">
+            <p className="mt-4 md:mt-10">
               <a
                 href="tel:+44(0)20 3951 0562"
                 className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
@@ -35,7 +35,7 @@ const Contact = () => {
                 +1 (917) 970-1353
               </a>
             </p>
-            <p className="group mt-10 relative">
+            <p className="group mt:4 md:mt-10 relative">
               <a
                 href="mailto:info@themediagale.com"
                 className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
@@ -58,7 +58,7 @@ const Contact = () => {
               Copy to clipboard
             </span> */}
             </p>
-            <div className="flex gap-6 mt-20 justify-start contact-wrapper text-[#EE2760]">
+            <div className="flex gap-6 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
               <a href="#" className="inline-block">
                 {twitterSvg()}
               </a>
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-[30%]">
-            <h4 className=" headingBlack mb-6 uppercase">Lahore</h4>
+            <h4 className=" headingBlack mb-m md:mb-6  uppercase">Lahore</h4>
             <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
               DHA Phase 5,
               <br />
@@ -84,7 +84,7 @@ const Contact = () => {
               {/* <br />
             NY 10022 */}
             </p>
-            {/* <p className="mt-10">
+            {/* <p className="mt-4 md:mt-10">
             <a
               href="tel:+1 833 502 0267"
               className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
@@ -127,7 +127,7 @@ const Contact = () => {
                   placeholder="Message"
                 ></textarea>
 
-                <div className="mt-6">
+                <div className="mt-2 md:mt-6">
                   <ul className="form-check mb-4 d-flex items-center pl-0">
                     <li>
                       <input

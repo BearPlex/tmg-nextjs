@@ -45,14 +45,14 @@ const Blog = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 headingBlack ">
+              <h4 className="mb-m md:mb-6  headingBlack ">
                 News, insights, and creative culture from TMG.
               </h4>
               <p className="paragraphBlack">
                 Because it should never just be work, it should be
                 <span className="gradientText"> a work of art</span>{" "}
               </p>
-              <div className="mt-10">
+              <div className="mt-4 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -61,7 +61,7 @@ const Blog = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX pt-20">
+          <div className="pagePaddingX pt-7 md:pt-20">
             <a href="" className="relative blog-banner w-full h-full">
               {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
                     <br/> */}

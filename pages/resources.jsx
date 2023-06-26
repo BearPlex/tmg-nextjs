@@ -24,7 +24,7 @@ const Resources = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-6 heading-style font-bold leading-tight">
+              <h4 className="mb-m md:mb-6  heading-style font-bold leading-tight">
                 Dedicated Resource{" "}
                 <span className="gradientText">Allocation</span>
               </h4>
@@ -38,7 +38,7 @@ const Resources = () => {
                   brand a success story.
                 </span>{" "}
               </p>
-              <div className="mt-10">
+              <div className="mt-4 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -55,7 +55,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">SEO Resource</div>
-                <p className="mt-8 mb-14 font-medium paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -69,7 +69,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">PPC Resource</div>
-                <p className="mt-8 mb-14 font-medium text-style">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -83,7 +83,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Design Resource</div>
-                <p className="mt-8 mb-14 font-medium paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -97,7 +97,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Content Resource</div>
-                <p className="mt-8 mb-14 font-medium text-style">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -115,11 +115,11 @@ export default Resources;
 
 // {/* <section
 // id="e_commerce"
-// className="flex items-center justify-between py-28"
+// className="flex items-center justify-between py-10 md:py-28"
 // >
 // <div className="w-[40%]">
 //   <HeadingThree cssClass="text-[5rem]" title="E-Commerce" />
-//   <p className="mt-8 mb-14 font-medium paragraph text-black">
+//   <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
 //     Reinvent your online store with an expert team who know what it
 //     takes to turn clicks into customers and keep them coming back.
 //   </p>
@@ -139,11 +139,11 @@ export default Resources;
 // </section> */}
 // {/* <section
 // id="wordpress"
-// className="flex items-center justify-between py-28"
+// className="flex items-center justify-between py-10 md:py-28"
 // >
 // <div className="w-[40%]">
 //   <HeadingThree cssClass="text-[5rem]" title="WordPress" />
-//   <p className="mt-8 mb-14 font-medium paragraph text-black">
+//   <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
 //     Our approach decouples WordPress CMS from the front end
 //     technology to tighten security and improve overall speed.
 //   </p>

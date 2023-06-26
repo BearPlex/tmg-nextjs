@@ -18,14 +18,15 @@ const ExpertiseStatic = (props) => {
   return (
     <>
       <div className="w-full">
-        <div className="flex mt-14 items-center justify-between flex-wrap">
+        <div className="flex mt-4 md:mt-14 items-center justify-between flex-wrap">
           {list.map((item, index) => (
             <div
               key={index}
               className="w-[100%] my-16 cursor-pointer"
-              onClick={() => pushWork(item.id)}>
+              onClick={() => pushWork(item.id)}
+            >
               {/* {console.log("List", item)} */}
-              <div className="w-full flex flex-row gap-10">
+              <div className="w-full flex flex-row componentsMainGap">
                 <div className="relative w-1/2">
                   <Image
                     width={500}
@@ -48,7 +49,8 @@ const ExpertiseStatic = (props) => {
                     {item.featured_title}
                   </div>
                   <p
-                    className={`${cssClass} paragraph font-medium max-w-[90%]`}>
+                    className={`${cssClass} paragraph font-medium max-w-[90%]`}
+                  >
                     {item.gallery_first_description}
                   </p>
                 </div>

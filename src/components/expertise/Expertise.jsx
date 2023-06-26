@@ -13,11 +13,11 @@ const Expertise = (props) => {
   return (
     <>
       <div className="w-full">
-        <div className="flex mt-14 items-center gap-10 justify-between flex-wrap">
+        <div className="flex mt-4 md:mt-14 items-center componentsMainGap justify-between flex-wrap">
           {list.map((item, index) => (
             <div
               key={index}
-              className="w-[47%] mb-16 cursor-pointer"
+              className="w-[47%] mb-4 md:mb-10 cursor-pointer"
               onClick={() => pushWork(item.id)}
             >
               {/* {console.log("List", item)} */}
