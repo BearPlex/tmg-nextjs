@@ -38,7 +38,7 @@ const NavigationMenu = () => {
         <div className="inline-block w-56 cursor-pointer"></div>
         <div className="">
           <ul className="relative flex items-center justify-between">
-            <div className="w-1/2 flex md:justify-center mt-[5vh]">
+            <div className="w-1/2 flex md:justify-center pl-7 md:pl-0 mt-[5vh]">
               <div className="w-1/6">
                 <li className="group" onMouseEnter={() => setIsHovered(true)}>
                   <Link
@@ -94,7 +94,7 @@ const NavigationMenu = () => {
             </div>
             <div className="w-1/2">
               {(isHovered || mediumscreen) && (
-                <div className="block">
+                <div className="block ml-0 md:ml-8">
                   <ul className="flex flex-col items-start justify-between h-[180px] md:h-[250px]">
                     {/* <ul className="absolute w-[250px] md:w-[380px] h-[180px] md:h-[250px] top-[50%] translate-y-[-50%]  left-[35vw] lg:left-[300px] xl:left-[480px] flex flex-col justify-between"> */}
                     {/* <> */}

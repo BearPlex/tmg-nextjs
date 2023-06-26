@@ -31,9 +31,9 @@ const TextWithImageContainer = ({
           className="rounded-lg flex flex-col md:flex-row componentsMainGap py-0  3xl:py-28 lg:py-14 cursor-pointer"
           //   onClick={selectRoute ? selectRoute : null}
         >
-          <div className="w-full md:w-[50%] h-[35vh]">
+          <div className="w-full md:w-[50%] h-auto">
             {/* <video ref={videoRef} className="absolute top-0 left-0 w-full h-full object-cover" loop={true} controls={false}> */}
-            <div className="relative h-[35vh] md:h-[581px]">
+            <div className="relative h-auto md:h-auto">
               <video
                 ref={videoRef}
                 className="object-cover"

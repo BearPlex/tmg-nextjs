@@ -279,7 +279,7 @@ function Seo() {
           </section> */}
 
           <section className="background-gradient pb-16 md:pb-0">
-            <div className="w-full py-5 3xl:max-w-7xl 3xl:mx-auto">
+            <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
               <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 ">
                 <div className="w-full md:w-1/2">
                   <Image
