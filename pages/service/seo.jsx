@@ -91,7 +91,7 @@ function BrandManagement() {
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       Content strategy that
                       <span className="gradientText">
@@ -188,7 +188,7 @@ function BrandManagement() {
                     which include Meta Title and Descriptions, Title Tags and
                     Creating GMB Profile.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ function BrandManagement() {
                     Media Presence and Removing Toxic Links to help increase
                     authority and website credibility on Google.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>
@@ -233,7 +233,7 @@ function BrandManagement() {
                     you target specific keywords and topics to ensure that your
                     content is being seen by the right people.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-0 pt-3 md:pt-10">
+                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton text="Learn More" route="/" />
                   </div>
                 </div>

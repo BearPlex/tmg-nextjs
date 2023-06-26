@@ -93,7 +93,7 @@ function WebDesign() {
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       Modern designs that
                       <span className="gradientText">
@@ -210,7 +210,7 @@ function WebDesign() {
                     planning and trend forecasting, our SaaS products help
                     businesses grow exponentially and make their debut in
                     untapped markets. We provide accurate guidance and hands-on
-                    assistance with the CMS implementation process.   
+                    assistance with the CMS implementation process.
                   </p>
                   <div className="flex items-center gap-x-6  mt-3 md:mt-8">
                     <GradientButton text="Learn More" route="/" />

@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
                 <div className="md:w-[50%] flex items-center">
                   <div className="md:w-5/6">
-                    <p className="largeHeadingWhite mt:4 md:mt-10 md:mt-0">
+                    <p className="largeHeadingWhite mt:4 md:mt-10">
                       Collaborating with trending brands
                     </p>
                   </div>
