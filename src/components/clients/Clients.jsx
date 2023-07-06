@@ -11,7 +11,7 @@ const Clients = () => {
         {clients.map((item, index) => (
           <div
             key={index}
-            className="w-1/5 inline-flex justify-center mb-4 md:mb-10"
+            className="w-1/2 md:w-1/5 inline-flex justify-center my-10 md:my-0 md:mb-10"
           >
             <Image
               decoding="async"

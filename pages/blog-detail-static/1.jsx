@@ -95,7 +95,7 @@ function BlogDetail() {
           </div>
           <div className="max-w-2xl w-full mx-auto">
             <div className="text-orange_theme-400 heading">Introduction.</div>
-            <p className="text-zinc-700 pb-7 md:pb-20  mt-3">
+            <p className="blackDescriptionText pb-7 md:pb-20  mt-3">
               Did you know that if the internet was a country, it would be the
               worlds 7th biggest polluter, emitting 1.6 billion annual tons in
               greenhouse gas emissions? As a planet, we are currently facing
@@ -106,7 +106,7 @@ function BlogDetail() {
               still be efficient with low-carbon digital products and services.
             </p>
 
-            <p className="text-zinc-700 pb-7 md:pb-20">
+            <p className="blackDescriptionText pb-7 md:pb-20">
               {blogsStatic[0].blog_content}
             </p>
             {/* <HeadingThree title="Understanding your digital footprint." className="text-pink-400 pb-10" />

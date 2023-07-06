@@ -58,7 +58,7 @@ const Articles = () => {
                 slidesPerView: 3,
               },
               1556: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
             }}
             modules={[Navigation]}
@@ -79,7 +79,9 @@ const Articles = () => {
                           height={300}
                           src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`}
                           alt="blog images"
-                          className="object-cover overflow-hidden scale-100 group-hover:scale-110"
+                          loading="lazy"
+                          layout="responsive"
+                          objectFit="cover"
                         />
                       </div>
                       <div className="py-9 px-6">

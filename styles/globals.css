@@ -334,6 +334,38 @@ body {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
+.gradient-span-bgBlack {
+  height: 55px;
+  min-width: 250px;
+  padding: 0px 15px;
+  text-align: center;
+  display: flex;
+  border: transparent !important;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%); */
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: #fff;
+  /* border-image: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) 5; */
+
+  /* -webkit-text-fill-color: transparent; */
+  /* background: white; */
+  @media (max-width: 1023px) {
+    height: 40px;
+    min-width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    height: 35px;
+    min-width: 130px;
+  }
+
+  @media (max-width: 639px) {
+    height: 30px;
+    min-width: 100px;
+    padding: 0px 10px;
+  }
+}
 .gradient-button {
   position: relative;
   display: inline-block;
@@ -362,6 +394,20 @@ body {
   /* border-color: transparent; */
   transition: all 0.3s ease-in-out !important;
 }
+.gradient-button-bgBlack {
+  position: relative;
+  display: inline-block;
+  /* color: transparent; */
+  border-color: transparent;
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
+}
+
+/* .gradient-button-bgBlack:hover {
+  color: white;
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  transition: all 0.3s ease-in-out !important;
+} */
 
 #menuToggle {
   overflow: hidden;
@@ -663,12 +709,6 @@ footer svg:hover path {
 }
 .text-style-colorless {
   @apply font-normal  paragraph;
-}
-.heading-style {
-  @apply font-sofia-bold font-black leading-10 text-[#383434] heading;
-}
-.heading-style-colorless {
-  @apply font-sofia-bold font-black leading-10 heading;
 }
 .swiper-button-prev {
   display: none !important;

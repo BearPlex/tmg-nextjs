@@ -10,14 +10,14 @@ function section3Image(props) {
         <div className="pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
           <h2
             id="beautyRef"
-            className="heading-style mb-5 font-bold text-zinc-700 leading-none relative pl-6"
+            className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
           >
             <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
               02
             </sup>
             {work[0].gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium font-circular-medium text-zinc-700 pl-5">
+          <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
             {work[0].gallery_second_description}
           </p>
         </div>

@@ -8,11 +8,11 @@ import { facebookSvg } from "../../helpers/Helpers";
 import { instagramSvg } from "../../helpers/Helpers";
 import { linkedinSvg } from "../../helpers/Helpers";
 import Image from "../Image/Image";
-let mediumscreen = false;
 const NavigationMenu = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredOverUL, setIsHoveredOverUL] = useState(false);
   let timer;
+  let mediumscreen = false;
   if (window.innerWidth < 1024) {
     mediumscreen = true;
     console.log("Window width is less than 1024");

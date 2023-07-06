@@ -24,7 +24,7 @@ const Resources = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  heading-style font-bold leading-tight">
+              <h4 className="mb-2 md:mb-6  heading font-bold leading-tight">
                 Dedicated Resource{" "}
                 <span className="gradientText">Allocation</span>
               </h4>

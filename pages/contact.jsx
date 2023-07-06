@@ -143,7 +143,7 @@ const Contact = () => {
                       <li className="ml-8">
                         <label
                           htmlFor="flexRadioDefault10"
-                          className="paragraph leading-none  font-medium text-zinc-700"
+                          className="paragraph leading-none  font-medium blackDescriptionText"
                         >
                           Im happy to receive a seriously cool monthly
                           newsletter from KOTA.
@@ -162,7 +162,7 @@ const Contact = () => {
                       <li className="ml-8">
                         <label
                           htmlFor="flexRadioDefault20"
-                          className="paragraph font-medium text-zinc-700 leading-4"
+                          className="paragraph font-medium blackDescriptionText leading-4"
                         >
                           I understand that KOTA will securely hold my data in
                           accordance with their privacy policy.

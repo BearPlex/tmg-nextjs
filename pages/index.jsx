@@ -13,7 +13,6 @@ import Footer from "../src/components/footer/Footer";
 import Expertise from "../src/components/expertise/Expertise";
 import Agency from "../src/components/agency/Agency";
 import { work } from "../src/helpers/Helpers";
-import mainImage from "../src/assets/svg/home_work_logo.svg";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import hero from "../src/assets/images/hero-1.png";
@@ -24,21 +23,23 @@ import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import Image from "../src/components/Image/Image";
 import HeroContainer from "../src/components/containers/HeroContainer";
+import GradientButton from "../src/components/button/GradientButton";
+
 // import "swiper/css/bundle";
 // import "./styles.css";
-const workStatic = [
-  {
-    featured_image: workFeaturedImage,
-    featured_title: "KINIMO COSMETICS",
-    gallery_first_title: "The Brief",
-    gallery_first_description:
-      "Meet Kinimo Cosmetics: A Pakistani beauty brand founded in 2019, that focuses on the new age definition of beauty, offering high-quality natural products that inspire confidence and passion in everyone.They reached out to us for content creation, and website development along with SEO and since then our connection has been fruitful.",
-    gallery1: workGallery1,
-    gallery_second_title: "",
-    gallery_second_description: "",
-    gallery2: workGallery2,
-  },
-];
+// const workStatic = [
+//   {
+//     featured_image: workFeaturedImage,
+//     featured_title: "KINIMO COSMETICS",
+//     gallery_first_title: "The Brief",
+//     gallery_first_description:
+//       "Meet Kinimo Cosmetics: A Pakistani beauty brand founded in 2019, that focuses on the new age definition of beauty, offering high-quality natural products that inspire confidence and passion in everyone.They reached out to us for content creation, and website development along with SEO and since then our connection has been fruitful.",
+//     gallery1: workGallery1,
+//     gallery_second_title: "",
+//     gallery_second_description: "",
+//     gallery2: workGallery2,
+//   },
+// ];
 export default function Home() {
   const [work, setWork] = useState([]);
   console.log("Work", work);
@@ -46,13 +47,24 @@ export default function Home() {
     axios
       .get("http://localhost:1337/api/work-kinimos?populate=*")
       .then((res) => {
-        // console.log("Res", res.data.data);
-        setWork(res.data.data);
+        console.log("Res", res.data.data);
+        const sortedWork = [...res.data.data].sort((a, b) => {
+          const dateA = new Date(a.attributes.publishedAt);
+          const dateB = new Date(b.attributes.publishedAt);
+          return dateA - dateB;
+        });
+
+        // Update the state with the sorted array
+        setWork(sortedWork);
+
+        // setWork(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);
       });
   }, []);
+  console.log(work);
+  console.log("work");
   return (
     <React.Fragment>
       <PageWrapper>
@@ -112,39 +124,22 @@ export default function Home() {
                 <span className="gradientText">4 Elements</span>
               </h2>
             </div>
-            {/* <Agency /> */}
+            <Agency />
           </div>
           <Services />
 
           <section className="bgBlack h-auto  ">
             <div className="pagePaddingX pb-12 pt-14 md:pb-28 md:pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-              <div className="flex items-center flex-col md:flex-row componentsMainGap justify-between">
-                <div className="md:w-[50%]">
-                  <div className="md:w-4/5 w-full md:mr-auto">
-                    <Image
-                      width={0}
-                      height={0}
-                      src={mainImage.src}
-                      layout="responsive"
-                      objectFit="cover"
-                      alt="work images"
-                    />
-                  </div>
-                </div>
-                <div className="md:w-[50%] flex items-center">
-                  <div className="md:w-5/6">
-                    <p className="largeHeadingWhite mt:4 md:mt-10">
-                      Collaborating with trending brands
-                    </p>
-                  </div>
-                </div>
+              <div className="isolate componentsMainGap grid grid-cols-1 auto-rows-auto">
+                {work && work.length && (
+                  <Expertise list={work} cssClass="text-white" />
+                )}
               </div>
+              <div className="flex w-full items-center mt-5 justify-center">
+                <GradientButton text="View more" route="/blog" bgBlack={true} />
 
-              {work && work.length ? (
-                <ExpertiseStatic list={workStatic} cssClass="text-white" />
-              ) : (
-                <Expertise list={work} cssClass="text-white" />
-              )}
+                {/* <ExpertiseStatic list={workStatic} cssClass="text-white" /> */}
+              </div>
             </div>
           </section>
 

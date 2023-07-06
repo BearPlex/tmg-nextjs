@@ -4,7 +4,8 @@
   "info": {
     "singularName": "work-kinimo",
     "pluralName": "work-kinimos",
-    "displayName": "work kinimo"
+    "displayName": "work kinimo",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "featured_title": {
       "type": "string"
@@ -31,14 +33,15 @@
       "type": "richtext"
     },
     "gallery1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "gallery_second_title": {
       "type": "string"
@@ -47,14 +50,27 @@
       "type": "richtext"
     },
     "gallery2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "marketing_tag": {
+      "type": "boolean"
+    },
+    "branding_tag": {
+      "type": "boolean"
+    },
+    "website_tag": {
+      "type": "boolean"
+    },
+    "seo_tag": {
+      "type": "boolean"
     }
   }
 }
