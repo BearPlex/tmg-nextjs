@@ -1,18 +1,28 @@
-import jamieImage from "../assets/svg/Jamie-oliver.svg";
-import comptoirImage from "../assets/svg/comptoir-libanais-1.svg";
-import britishRedImage from "../assets/svg/british-red-cross.svg";
-import superyachImage from "../assets/svg/sym.svg";
-import penguineImage from "../assets/svg/penguin.svg";
-import rawImage from "../assets/svg/raw.svg";
-import penhaligonsImage from "../assets/svg/penhaligons.svg";
-import stoliImage from "../assets/svg/stoli.svg";
-import bounceImage from "../assets/svg/bounce.svg";
-import tangerineImage from "../assets/svg/tangerine.svg";
-import tribepadImage from "../assets/svg/tribepad.svg";
-import matchroomImage from "../assets/svg/matchroom.svg";
-import diageoImage from "../assets/svg/diageo.svg";
-import sonovateImage from "../assets/svg/sonovate.svg";
-import saatchiImage from "../assets/svg/saatchi.svg";
+import clent1 from "../assets/svg/clients-1.svg";
+import clent2 from "../assets/svg/clients-2.svg";
+import clent3 from "../assets/svg/clients-3.svg";
+import clent4 from "../assets/svg/clients-4.svg";
+import clent5 from "../assets/svg/clients-5.svg";
+import clent6 from "../assets/svg/clients-6.svg";
+import clent7 from "../assets/svg/clients-7.svg";
+import clent8 from "../assets/svg/clients-8.svg";
+import clent9 from "../assets/svg/clients-9.svg";
+import clent10 from "../assets/svg/clients-10.svg";
+import clent11 from "../assets/svg/clients-11.svg";
+import clent12 from "../assets/svg/clients-12.svg";
+import clent13 from "../assets/svg/clients-13.svg";
+import clent14 from "../assets/svg/clients-14.svg";
+import clent15 from "../assets/svg/clients-15.svg";
+import clent16 from "../assets/svg/clients-16.svg";
+import clent17 from "../assets/svg/clients-17.svg";
+import clent18 from "../assets/svg/clients-18.png";
+import clent19 from "../assets/svg/clients-19.svg";
+import clent20 from "../assets/svg/clients-20.svg";
+import clent21 from "../assets/svg/clients-21.svg";
+import clent22 from "../assets/svg/clients-22.svg";
+import clent23 from "../assets/svg/clients-23.svg";
+import clent24 from "../assets/svg/clients-24.svg";
+import clent25 from "../assets/svg/clients-25.svg";
 import websiteImage from "../assets/images/websites.png";
 import elenaImage from "../assets/images/elena-koycheva.png";
 import blogHeaderImage from "../assets/images/blog-header-template.png";
@@ -27,49 +37,79 @@ import featureSquareImage from "../assets/images/featured-square.png";
 
 export const clients = [
   {
-    img: jamieImage.src,
+    img: clent1.src,
   },
   {
-    img: comptoirImage.src,
+    img: clent2.src,
   },
   {
-    img: britishRedImage.src,
+    img: clent3.src,
   },
   {
-    img: superyachImage.src,
+    img: clent4.src,
   },
   {
-    img: penguineImage.src,
+    img: clent5.src,
   },
   {
-    img: rawImage.src,
+    img: clent6.src,
   },
   {
-    img: penhaligonsImage.src,
+    img: clent7.src,
   },
   {
-    img: stoliImage.src,
+    img: clent8.src,
   },
   {
-    img: bounceImage.src,
+    img: clent9.src,
   },
   {
-    img: tangerineImage.src,
+    img: clent10.src,
   },
   {
-    img: tribepadImage.src,
+    img: clent11.src,
   },
   {
-    img: matchroomImage.src,
+    img: clent12.src,
   },
   {
-    img: diageoImage.src,
+    img: clent13.src,
   },
   {
-    img: sonovateImage.src,
+    img: clent14.src,
   },
   {
-    img: saatchiImage.src,
+    img: clent15.src,
+  },
+  {
+    img: clent16.src,
+  },
+  {
+    img: clent17.src,
+  },
+  {
+    img: clent18.src,
+  },
+  {
+    img: clent19.src,
+  },
+  {
+    img: clent20.src,
+  },
+  {
+    img: clent21.src,
+  },
+  {
+    img: clent22.src,
+  },
+  {
+    img: clent23.src,
+  },
+  {
+    img: clent24.src,
+  },
+  {
+    img: clent25.src,
   },
 ];
 

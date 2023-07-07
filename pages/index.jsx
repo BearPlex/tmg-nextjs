@@ -104,7 +104,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full md:w-1/2 md:relative ">
-                <div className="md:absolute inset-[-100px] left-0 flex items-center justify-center">
+                <div className="md:absolute inset-[-7vw] left-0 flex items-center justify-center">
                   <Image
                     width={1000}
                     height={400}

@@ -6,14 +6,6 @@ import MainCard from "./cardData";
 const Expertise = (props) => {
   const { list, cssClass } = props;
   const router = useRouter();
-  let mobileScreen = false;
-  if (window.innerWidth < 768) {
-    mobileScreen = true;
-    console.log("Window width is less than 768");
-  } else {
-    mobileScreen = false;
-    console.log("Window width is 768 or greater");
-  }
   const pushWork = (id) => {
     router.push(`/work-detail/${id}`);
     // console.log("Id", id);
@@ -23,8 +15,8 @@ const Expertise = (props) => {
   return (
     <>
       <div className="w-full">
-        {!mobileScreen ? (
-          <div className="grid grid-cols-2 componentsMainGap">
+        <div className="w-full hidden md:block">
+          <div className="isolate grid grid-cols-2 componentsMainGap">
             <div className="w-full mb-20 ">
               <div className="md:w-4/5 w-full md:mr-auto mb-32">
                 <Image
@@ -96,7 +88,8 @@ const Expertise = (props) => {
               })}
             </div>
           </div>
-        ) : (
+        </div>
+        <div className="w-full block md:hidden">
           <div className="grid grid-cols-1 componentsMainGap">
             <div className="w-full">
               <div className="md:w-4/5 w-full md:mr-auto mb-32">
@@ -141,7 +134,7 @@ const Expertise = (props) => {
               })}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </>
   );
