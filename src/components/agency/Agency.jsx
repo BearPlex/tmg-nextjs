@@ -104,7 +104,7 @@ const Agency = () => {
       if (!imageContainerRef.current) return;
 
       const containerHeight = imageContainerRef.current.offsetHeight;
-      const newStickyTop = window.pageYOffset;
+      const newStickyTop = window.pageYOffset + 300;
 
       setStickyTop(newStickyTop);
     };

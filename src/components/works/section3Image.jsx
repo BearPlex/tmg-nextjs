@@ -3,6 +3,9 @@ import approch from "../../assets/images/approch1.png";
 import Image from "../Image/Image";
 function section3Image(props) {
   const { work } = props;
+  function convertString(str) {
+    return str.replace(/ /g, "-");
+  }
   // console.log("Approch Data", work);
   return (
     <>
@@ -25,18 +28,18 @@ function section3Image(props) {
 
       <div className="flex justify-center">
         <div className="flex justify-center">
-          {work?.gallery2.data.map((data) => {
+          {/* {work?.gallery2.data.map((data) => {
             return (
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                key={data?.attributes.id}
-                src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
-                className="pb-12"
-              />
-            );
-          })}
+              );
+            })} */}
+          {/* <Image
+            width={500}
+            height={300}
+            alt="attributes"
+            key={data?.attributes.id}
+            src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
+            className="pb-12"
+          /> */}
         </div>
       </div>
     </>

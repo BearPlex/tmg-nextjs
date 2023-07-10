@@ -12,6 +12,9 @@ function section1(props) {
     workDescription2nd,
     work,
   } = props;
+  function convertString(str) {
+    return str.replace(/ /g, "-");
+  }
   // console.log("Work",work)
   // console.log("Work Image",work?.gallery1.data)
   return (
@@ -22,7 +25,12 @@ function section1(props) {
             width={500}
             height={300}
             alt="attributes"
-            src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}
+            src={`https://beta.themediagale.com/public_images/${
+              work?.featured_title && work?.featured_title !== ""
+                ? convertString(work?.featured_title)
+                : "Women-Rise"
+            }.png`}
+            // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}
           />
           {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}/> */}
         </div>
