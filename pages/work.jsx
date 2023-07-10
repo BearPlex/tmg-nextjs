@@ -37,7 +37,7 @@ const workStatic = [
 
 //     try {
 
-//       const res2 = await fetch("http://localhost:1337/api/works?populate=*");
+//       const res2 = await fetch("https://tmg-strapi-w6pu3.ondigitalocean.app/api/works?populate=*");
 //       blogsData = await res2.json();
 
 //   console.log("Blogs",blogsData)
@@ -57,7 +57,9 @@ const Work = () => {
   // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/work-kinimos?populate=*")
+      .get(
+        "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
+      )
       .then((res) => {
         // console.log("Dataaaaaaaaaa", res.data.data);
         setWork(res.data.data);

@@ -22,9 +22,9 @@ function section1(props) {
             width={500}
             height={300}
             alt="attributes"
-            src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}
+            src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}
           />
-          {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`http://localhost:1337${work?.featured_image.data.attributes.url}`}/> */}
+          {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}/> */}
         </div>
         <h1 className="text-center text-[50px] font-bold gradientText">
           {work?.featured_title}{" "}

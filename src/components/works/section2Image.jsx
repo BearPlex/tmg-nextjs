@@ -14,7 +14,7 @@ function section2Image(props) {
                 width={500}
                 height={300}
                 alt="attributes"
-                src={`http://localhost:1337${data?.attributes.url}`}
+                src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
                 className="my-4 md:my-10 "
               />
             </>

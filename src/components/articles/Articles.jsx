@@ -19,7 +19,7 @@ const Articles = () => {
   const router = useRouter();
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/blogs?populate=*")
+      .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
       .then((res) => {
         console.log("Res Blogs", res.data.data);
         setArticles(res.data.data);
@@ -77,7 +77,7 @@ const Articles = () => {
                         <Image
                           width={500}
                           height={300}
-                          src={`http://localhost:1337${article.attributes.blog_featured_image.data.attributes.url}`}
+                          src={`https://tmg-strapi-w6pu3.ondigitalocean.app${article.attributes.blog_featured_image.data.attributes.url}`}
                           alt="blog images"
                           loading="lazy"
                           layout="responsive"

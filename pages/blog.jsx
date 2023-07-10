@@ -29,7 +29,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/blogs?populate=*")
+      .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
       .then((res) => {
         // console.log("Res Blogs", res.data.data);
         setBlogs(res.data.data);

@@ -16,7 +16,7 @@ const Contact = () => {
     <>
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-          <div className="w-[60%] flex flex-row">
+          <div className="w-full flex flex-row">
             <div className="w-[50%]">
               <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
                 new york
@@ -27,8 +27,6 @@ const Contact = () => {
                 New York,
                 <br />
                 U.S.A.
-                {/* <br />
-            EC1M 5PA */}
               </p>
               <p className="mt-4 md:mt-10">
                 <a
@@ -57,9 +55,6 @@ const Contact = () => {
                 >
                   contact@themediagale.com
                 </a>
-                {/* <span className="absolute hidden text-orange_theme-500 smallText font-bold cursor-pointer group-hover:block">
-              Copy to clipboard
-            </span> */}
               </p>
               <div className="flex gap-6 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
                 <a href="#" className="inline-block">

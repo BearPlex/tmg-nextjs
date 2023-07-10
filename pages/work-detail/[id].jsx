@@ -21,7 +21,9 @@ function WorkDetail() {
   // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/work-kinimos/${id}?populate=*`)
+      .get(
+        `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`
+      )
       .then((res) => {
         console.log("Res", res.data.data);
         setWork(res.data.data);
