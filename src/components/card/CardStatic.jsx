@@ -47,7 +47,7 @@ const CardStatic = (props) => {
                         <div className="border border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300">
                             <div className="h-min overflow-hidden">
                                
-                                <Image decoding="async" width={500} height={300} src={`http://localhost:1337${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
+                                <Image decoding="async" width={500} height={300} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
                             </div>
                             <div className="p-9">
                                 {

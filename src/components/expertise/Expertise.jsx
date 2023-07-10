@@ -12,6 +12,9 @@ const Expertise = (props) => {
   };
   console.log(list);
   console.log("list");
+  function convertString(str) {
+    return str.replace(/ /g, "-");
+  }
   return (
     <>
       <div className="w-full">
@@ -29,6 +32,14 @@ const Expertise = (props) => {
                 />
               </div>
               {list.map((item, index) => {
+                // console.log(https://tmg-strapi-w6pu3.ondigitalocean.app/public_images/);
+                console.log("");
+                console.log("");
+                console.log("");
+                console.log(item.attributes?.featured_title);
+                console.log("item.attributes?.featured_title");
+                console.log("");
+                console.log("");
                 return (
                   index % 2 === 0 && (
                     <div
@@ -38,7 +49,10 @@ const Expertise = (props) => {
                     >
                       {console.log("ITEM", item)}
                       <MainCard
-                        imageSrc={`http://localhost:1337${item?.attributes?.featured_image?.data?.attributes?.url}`}
+                        // imageSrc="https://beta.themediagale.com/public_images/women-rise1.png"
+                        imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                          item.attributes?.featured_title
+                        )}.png`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -71,7 +85,9 @@ const Expertise = (props) => {
                     >
                       {console.log("ITEM", item)}
                       <MainCard
-                        imageSrc={`http://localhost:1337${item?.attributes?.featured_image?.data?.attributes?.url}`}
+                        imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                          item.attributes?.featured_title
+                        )}.png`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -118,7 +134,9 @@ const Expertise = (props) => {
                   >
                     {console.log("ITEM", item)}
                     <MainCard
-                      imageSrc={`http://localhost:1337${item?.attributes?.featured_image?.data?.attributes?.url}`}
+                      imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                        item.attributes?.featured_title
+                      )}.png`}
                       featured_title={item.attributes?.featured_title}
                       gallery_first_description={
                         item.attributes?.gallery_first_description

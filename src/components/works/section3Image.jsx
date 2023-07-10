@@ -32,7 +32,7 @@ function section3Image(props) {
                 height={300}
                 alt="attributes"
                 key={data?.attributes.id}
-                src={`http://localhost:1337${data?.attributes.url}`}
+                src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
                 className="pb-12"
               />
             );

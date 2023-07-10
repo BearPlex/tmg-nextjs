@@ -23,7 +23,9 @@ function BlogDetail() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/blogs/${id}?populate=*`)
+      .get(
+        `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs/${id}?populate=*`
+      )
       .then((res) => {
         console.log("Res", res.data.data);
         setWork(res.data.data);
@@ -74,7 +76,7 @@ function BlogDetail() {
             <Image
               width={500}
               height={300}
-              src={`http://localhost:1337${work?.attributes?.blog_featured_image.data.attributes.url}`}
+              src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.attributes?.blog_featured_image.data.attributes.url}`}
               alt="blog image"
               className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl"
             />
@@ -109,7 +111,7 @@ function BlogDetail() {
                     <span className="text-pink-400 text-base">Digital Beacon</span> is a great tool for calculating the environmental impact of your website, analysing the breakdown and learning what measures can be taken to improve it. You can enter any website URL and receive a score rating and breakdown of the areas that are causing the most impact and how much extra C02 is contributing to the atmosphere. We highly recommend everyone do this as a starter.
                 </p>
                 <div>
-                    <Image decoding="async" width={500} height={300} src={`http://localhost:1337${work?.attributes?.blog_featured_image.data.attributes.url}`} alt="blog image" />
+                    <Image decoding="async" width={500} height={300} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.attributes?.blog_featured_image.data.attributes.url}`} alt="blog image" />
                     <p className="text-base">
                         Sustainable web design is the process of designing digital products that put people and the planet first. Tom Greenwood, author of <span className="text-pink-400">Sustainable Web Design</span> explains
                     </p>

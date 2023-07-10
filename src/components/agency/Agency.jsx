@@ -111,7 +111,7 @@ const Agency = () => {
 
     window.addEventListener("scroll", handleScrollLayout);
     return () => window.removeEventListener("scroll", handleScrollLayout);
-  }, [window.pageYOffset, screenYScroll]);
+  }, [screenYScroll]);
 
   return (
     <div
