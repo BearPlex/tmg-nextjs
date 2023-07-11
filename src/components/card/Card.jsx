@@ -7,6 +7,18 @@ const Card = (props) => {
     router.push(`/blog-detail/${id}`);
     // console.log("Id", id);
   };
+  function convertString(str) {
+    if (!str) {
+      return ""; // Return an empty string if the input is undefined or null
+    }
+    const hyphenAdded = str.replace(/ /g, "-");
+    // console.log("");
+    const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
+    console.log(questionMarkRemoved);
+    console.log("questionMarkRemoved");
+    console.log("");
+    return questionMarkRemoved;
+  }
   return (
     <div className="mt-1 md:mt-5 lg:mt-16 flex justify-start flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
       {item.map((blog, index) => (
@@ -24,7 +36,12 @@ const Card = (props) => {
             <Image
               width={0}
               height={0}
-              src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog?.attributes.blog_featured_image.data.attributes.url}`}
+              src={`https://beta.themediagale.com/public_images/blogs/${
+                blog?.attributes.title && blog?.attributes.title !== ""
+                  ? convertString(blog?.attributes.title)
+                  : "Women-Rise"
+              }.png`}
+              // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog?.attributes.blog_featured_image.data.attributes.url}`}
               alt="blog images"
               className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110  w-[364px] h-[240px]"
             />

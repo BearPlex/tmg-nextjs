@@ -182,9 +182,9 @@ const Agency = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 flex bg-red-600" ref={imageContainerRef}>
+          <div className="w-1/2 flex" ref={imageContainerRef}>
             <div
-              className="bg-yellow-600 h-fit"
+              className="h-fit"
               style={{ position: "sticky", top: `${stickyTop}px` }}
               // style={{ position: "sticky", top: `${stickyTop}px` }}
             >

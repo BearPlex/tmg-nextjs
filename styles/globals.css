@@ -721,3 +721,17 @@ footer svg:hover path {
   /* top: 10000px !important; */
   /* top: calc(var(--header-height) + var(--layout-padding)); */
 }
+.swiper-button-prev-custom {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next-custom {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}

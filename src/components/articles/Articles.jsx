@@ -32,6 +32,18 @@ const Articles = () => {
     router.push(`/blog-detail/${id}`);
     // console.log("Id", id);
   };
+  function convertString(str) {
+    if (!str) {
+      return ""; // Return an empty string if the input is undefined or null
+    }
+    const hyphenAdded = str.replace(/ /g, "-");
+    // console.log("");
+    const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
+    console.log(questionMarkRemoved);
+    console.log("questionMarkRemoved");
+    console.log("");
+    return questionMarkRemoved;
+  }
   return (
     <div className="h-auto pagePaddingX pb-7 md:pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
       <div className="mb-9 md:mb-20 headingBlack">Latest Articles</div>
@@ -77,7 +89,13 @@ const Articles = () => {
                         <Image
                           width={500}
                           height={300}
-                          src={`https://tmg-strapi-w6pu3.ondigitalocean.app${article.attributes.blog_featured_image.data.attributes.url}`}
+                          src={`https://beta.themediagale.com/public_images/blogs/${
+                            article.attributes.title &&
+                            article.attributes.title !== ""
+                              ? convertString(article.attributes.title)
+                              : "Women-Rise"
+                          }.png`}
+                          // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${article.attributes.blog_featured_image.data.attributes.url}`}
                           alt="blog images"
                           loading="lazy"
                           layout="responsive"
@@ -103,8 +121,7 @@ const Articles = () => {
         </div>
 
         <div className="flex flex-row pt-7 md:pt-20 ">
-          <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
-            {`<-`}
+          <div className="mr-6 swiper-button-prev-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
               height={300}
@@ -113,8 +130,7 @@ const Articles = () => {
               className="w-[22px]"
             />
           </div>
-          <div className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer ">
-            {`->`}
+          <div className="swiper-button-next-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
               height={300}
