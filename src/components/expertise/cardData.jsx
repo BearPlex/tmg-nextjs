@@ -50,7 +50,7 @@ const MainCard = (props) => {
           >
             {seo_tag ? "SEO" : ""}
           </span>
-          <div className="my-4 headingWhite leading-tight">
+          <div className="my-2 lg:my-4 md:my-4 headingWhite leading-tight">
             {featured_title}
           </div>
           <p className={`paragraphWhite w-full`}>{gallery_first_description}</p>

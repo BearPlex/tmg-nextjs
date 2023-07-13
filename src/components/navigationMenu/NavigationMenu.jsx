@@ -37,7 +37,7 @@ const NavigationMenu = () => {
       <div className=" pagePaddingX pt-[15vh] ">
         <div className="inline-block w-56 cursor-pointer"></div>
         <div className="">
-          <ul className="relative flex items-center justify-between">
+          <ul className="relative flex flex-col md:flex-row items-center justify-between">
             <div className="w-1/2 flex md:justify-center pl-7 md:pl-0 mt-[5vh]">
               <div className="w-1/6">
                 <li className="group" onMouseEnter={() => setIsHovered(true)}>
@@ -92,7 +92,8 @@ const NavigationMenu = () => {
                 </li>
               </div>
             </div>
-            <div className="w-1/2">
+
+            <div className="w-1/2 flex justify-center md:justify-center lg:justify-start pl-7 md:pl-0 mt-[2vh]">
               {(isHovered || mediumscreen) && (
                 <div className="block ml-0 md:ml-8">
                   <ul className="flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
@@ -129,6 +130,8 @@ const NavigationMenu = () => {
           </ul>
         </div>
       </div>
+
+      {/* This is last of navigation  */}
       <div className="w-full pagePaddingX nav-footer fixed bottom-5 flex items-center justify-between">
         <div className="flex items-center gap-0 md:gap-4 contact-wrapper">
           <Link href="#">{twitterSvg()}</Link>

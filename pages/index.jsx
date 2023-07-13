@@ -1,4 +1,5 @@
 /* eslint-disable */
+
 import Header from "../src/components/header/Header";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";
@@ -119,7 +120,7 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="py-9 pt-7 md:py-20 md:pt-16">
+          <div className="py-9 pt-12 md:py-20 md:pt-16">
             <div className="w-full flex items-center justify-center pb-7 md:pb-16">
               <h2 className="md:w-4/5 w-full text-center heading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}

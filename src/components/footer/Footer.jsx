@@ -22,12 +22,14 @@ const Footer = () => {
     <>
       <footer className="relative bg-[#1B1B1B] pt-7 md:pt-20 pb-0 md:pb-12">
         <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
+          {/* This part is done */}
+
           <div className="pagePaddingX text-white 3xl:px-0 3xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
-              <div className=" w-6/12 text-right order-3">
+              <div className=" w-full md:w-6/12 md:text-right text-left order-3">
                 <h4 className="paragraph font-bold text-[#EE2760]">
                   Follow
-                  <div className="flex gap-x-0 md:gap-x-2 justify-end contact-wrapper">
+                  <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end  contact-wrapper">
                     <a href="#" className="inline-block">
                       {twitterSvg()}
                     </a>
@@ -52,7 +54,8 @@ const Footer = () => {
                   Info@themediagale.com
                 </a>
               </div>
-              <div className="w-6/12">
+
+              <div className="w-full md:w-6/12">
                 <div className="flex flex-wrap items-top mb-6">
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
@@ -135,13 +138,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-0 sm:mt-2 md:mt-6 lg:mb-6 mb-0 md:mb-2   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
+
+          <div className="w-full mt-10 sm:mt-2 md:mt-6 lg:mb-6 mb-0 md:mb-2   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
             <Link
               href="/"
-              className="w-full flex justify-end flex-row   md:justify-between md:items-center md:mx-0"
+              className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
               // className="w-full flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center pl-4 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
+              <div className="flex items-center mb-4 md:m-0 pl-4 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
                 {/* <div className="order-2 md:order-1 flex items-center pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32"> */}
                 <div className="h-[45px] w-[90%] bgWhite">
                   <Image
@@ -153,7 +157,7 @@ const Footer = () => {
                   />
                 </div>
               </div>
-              <div className="pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
+              <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
                 {/* <div className=" order-1 md:order-2 pr-10 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32"> */}
                 <div className="w-[180px] md:w-[150px] lg:w-[280px]">
                   <Image

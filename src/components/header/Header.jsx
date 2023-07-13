@@ -1,21 +1,72 @@
-/* eslint-disable */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 import Link from "next/link";
-// import logoIcon from '../../assets/svg/Kota_logo_black.svg';
 import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [isShrunk, setIsShrunk] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setIsShrunk(scrollY > 0);
+  }, [scrollY]);
+
+  useEffect(() => {
+    const handleToggleMenu = () => {
+      setIsScrolling(true);
+    };
+
+    window.addEventListener("scroll", handleToggleMenu);
+
+    return () => {
+      window.removeEventListener("scroll", handleToggleMenu);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScrollEnd = () => {
+      setIsScrolling(false);
+    };
+
+    window.addEventListener("scroll", handleScrollEnd);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollEnd);
+    };
+  }, []);
+
   return (
     <>
-      <div className="fixed w-screen z-50">
+      <div
+        className={`fixed w-screen z-50 transition-all duration-300 ${
+          (isShrunk && !showMenu) || isScrolling ? "bg-white" : "bg-transparent"
+        }`}
+      >
         <div className="w-full">
-          <header className=" 3xl:max-w-7xl 3xl:mx-auto pagePaddingX py-11 3xl:px-0 3xl:pl-0 ">
+          <header
+            className={`3xl:max-w-7xl 3xl:mx-auto pagePaddingX 3xl:pl-0 transition-all duration-300 ${
+              isShrunk
+                ? "py-6 3xl:py-6 lg:py-4 3xl:px-0"
+                : "py-6 3xl:py-11 lg:py-11 3xl:px-0"
+            }`}
+          >
             <nav className="flex items-center justify-between">
               <Link href="/">
-                {/* <a className={showMenu ? "hidden" : "block"}> */}
                 <Image
                   width={500}
                   height={300}
@@ -27,13 +78,12 @@ const Header = () => {
                   src={logoIcon.src}
                   alt="logo"
                 />
-                {/* </a> */}
               </Link>
               <ul className="pl-0 flex item-center gap-[4.5rem] justify-end py-3">
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link
-                      className="paragraph font-sofia-extrabold font-extrabold  blackHeadingText no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
+                      className="paragraph font-sofia-extrabold font-extrabold blackHeadingText no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
                       href="/work"
                     >
                       Work
@@ -67,4 +117,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;

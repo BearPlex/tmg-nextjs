@@ -21,7 +21,7 @@ const Expertise = (props) => {
         <div className="w-full hidden md:block">
           <div className="isolate grid grid-cols-2 componentsMainGap">
             <div className="w-full mb-20 ">
-              <div className="md:w-4/5 w-full md:mr-auto mb-32">
+              <div className="md:w-4/5 w-[50%] lg:w-full   md:mr-auto mb-32">
                 <Image
                   width={0}
                   height={0}
@@ -107,8 +107,8 @@ const Expertise = (props) => {
         </div>
         <div className="w-full block md:hidden">
           <div className="grid grid-cols-1 componentsMainGap">
-            <div className="w-full">
-              <div className="md:w-4/5 w-full md:mr-auto mb-32">
+            <div className="w-full ">
+              <div className="md:w-4/5 w-[70%] lg:w-full md:mr-auto mb-10">
                 <Image
                   width={0}
                   height={0}
@@ -129,7 +129,7 @@ const Expertise = (props) => {
                 return (
                   <div
                     key={index}
-                    className="w-full mb-4 md:mb-20 cursor-pointer"
+                    className="w-full mb-24 lg:mb-4 md:mb-20 cursor-pointer"
                     onClick={() => pushWork(item.id)}
                   >
                     {console.log("ITEM", item)}

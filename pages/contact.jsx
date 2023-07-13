@@ -16,8 +16,8 @@ const Contact = () => {
     <>
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-          <div className="w-full flex flex-row">
-            <div className="w-[50%]">
+          <div className="w-full flex flex-col md:flex-row">
+            <div className="w-full md:w-[50%]">
               <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
                 new york
               </h4>
@@ -71,7 +71,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="w-[50%]">
+            <div className="w-full md:w-[50%] mt-10 md:mt-0">
               <h4 className=" headingBlack mb-2 md:mb-6  uppercase">Lahore</h4>
               <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
                 DHA Phase 5,
@@ -91,7 +91,7 @@ const Contact = () => {
             </a>
           </p> */}
             </div>
-            <div className="w-[40%]">
+            <div className="w-[80%] md:w-[40%] py-10 md:py-0">
               <div className="flex flex-wrap justify-between gap-6 gap-y-8">
                 <div className="w-[45%]">
                   <Input title="First Name" type="text" />

@@ -1,4 +1,6 @@
+"use client";
 /* eslint-disable */
+
 import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
 // import { agency } from '../../helpers/Helpers';
 import agencyImage1 from "../../assets/images/agency-create-1.png";
@@ -6,6 +8,7 @@ import agencyImage2 from "../../assets/images/agency-analyze-2.png";
 import agencyImage3 from "../../assets/images/agency-commuication-3.png";
 import agencyImage4 from "../../assets/images/agency-execute-4.png";
 import Image from "../Image/Image";
+
 let mobileScreen = false;
 if (typeof window !== "undefined" && window.innerWidth < 768) {
   mobileScreen = true;
@@ -71,31 +74,9 @@ const Agency = () => {
   }, [imageSrc]);
   const [scrollY, setScrollY] = useState(-100);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrollY(window.pageYOffset);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
   const [stickyTop, setStickyTop] = useState(0);
   const imageContainerRef = useRef(null);
 
-  // ... other useEffects ...
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (!imageContainerRef.current) return;
-
-  //     const containerHeight = imageContainerRef.current.offsetHeight;
-  //     const newStickyTop = window.pageYOffset + containerHeight / 10;
-
-  //     setStickyTop(newStickyTop);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
   useLayoutEffect(() => {
     if (typeof window !== "undefined" && window.pageYOffset) {
       setScreenYScroll(window.pageYOffset);
@@ -203,9 +184,10 @@ const Agency = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full block md:hidden">
-        <div className="flex w-full flex-col justify-center">
-          <div className="w-full mb-10">
+        <div className="flex w-full flex-col justify-center mb-16">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -219,9 +201,9 @@ const Agency = () => {
           </div>
           <h2
             id="beautyRef"
-            className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6"
           >
-            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
               01
             </sup>{" "}
             Beauty
@@ -231,8 +213,9 @@ const Agency = () => {
             original content.
           </p>
         </div>
-        <div className="flex w-full flex-col justify-center">
-          <div className="w-full mb-10">
+
+        <div className="flex w-full flex-col justify-center mb-16">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -246,9 +229,9 @@ const Agency = () => {
           </div>
           <h2
             id="thoughRef"
-            className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6"
           >
-            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
               02
             </sup>{" "}
             Analyze
@@ -258,8 +241,9 @@ const Agency = () => {
             solutions to everyday business challenges.
           </p>
         </div>
-        <div className="flex w-full flex-col justify-center">
-          <div className="w-full mb-3">
+
+        <div className="flex w-full flex-col justify-center mb-16">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -271,8 +255,8 @@ const Agency = () => {
               objectFit="cover"
             />
           </div>
-          <h2 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6">
-            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
+            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
               03
             </sup>{" "}
             Communicate
@@ -282,8 +266,9 @@ const Agency = () => {
             communication to keep information flow open.{" "}
           </p>
         </div>
-        <div className="flex w-full flex-col justify-center">
-          <div className="w-full mb-3">
+
+        <div className="flex w-full flex-col justify-center mb-16">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -295,8 +280,8 @@ const Agency = () => {
               objectFit="cover"
             />
           </div>
-          <h2 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6">
-            <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
+            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
               04
             </sup>{" "}
             Execute

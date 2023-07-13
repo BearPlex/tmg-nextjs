@@ -110,7 +110,7 @@ const Studio = () => {
             </div>
           </HeroContainer>
           <section className="mt-9 md:mt-20">
-            <div className="relative h-[581px]">
+            <div className="relative h-[200px] md:h-[581px] ">
               <video
                 ref={videoRef}
                 className="absolute top-0 left-0 w-full h-full object-cover"
