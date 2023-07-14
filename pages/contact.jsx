@@ -16,8 +16,8 @@ const Contact = () => {
     <>
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-          <div className="w-full flex flex-col md:flex-row">
-            <div className="w-full md:w-[50%]">
+          <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
+            <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
               <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
                 new york
               </h4>
@@ -39,19 +39,21 @@ const Contact = () => {
               <p className="group mt:4 md:mt-10 relative">
                 <a
                   href="mailto:info@themediagale.com"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   info@themediagale.com
                 </a>
+                <br />
                 <a
                   href="mailto:info@themediagale.com"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   support@themediagale.com
                 </a>
+                <br />
                 <a
                   href="mailto:contacus@themediagale.com"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
                 >
                   contact@themediagale.com
                 </a>
@@ -71,32 +73,72 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-[50%] mt-10 md:mt-0">
-              <h4 className=" headingBlack mb-2 md:mb-6  uppercase">Lahore</h4>
-              <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
-                DHA Phase 5,
-                <br />
-                Lahore,
-                <br />
-                Pakistan
-                {/* <br />
-            NY 10022 */}
-              </p>
-              {/* <p className="mt-4 md:mt-10">
-            <a
-              href="tel:+1 833 502 0267"
-              className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
-            >
-              +1 (917) 970-1353
-            </a>
-          </p> */}
+
+            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex mt-10 md:mt-0">
+              <div className="w-[30%] md:w-[30%]  block md:hidden">
+                <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
+                  new york
+                </h4>
+                <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
+                  Brooklyn,
+                  <br />
+                  New York,
+                  <br />
+                  U.S.A.
+                </p>
+              </div>
+              <div className="w-[30%] md:w-[30%] ">
+                <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
+                  Lahore
+                </h4>
+                <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
+                  <span className="whitespace-nowrap">DHA Phase 5,</span>
+                  <br />
+                  Lahore,
+                  <br />
+                  Pakistan
+                </p>
+              </div>
+              <div className="block md:hidden">
+                <p className="mt-2 md:mt-10">
+                  <a
+                    href="tel:+44(0)20 3951 0562"
+                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
+                  >
+                    +1 (917) 970-1353
+                  </a>
+                </p>
+                <p className="group mt:4 md:mt-10 relative">
+                  <a
+                    href="mailto:info@themediagale.com"
+                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                  >
+                    info@themediagale.com
+                  </a>
+                  <br />
+                  <a
+                    href="mailto:info@themediagale.com"
+                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                  >
+                    support@themediagale.com
+                  </a>
+                  <br />
+                  <a
+                    href="mailto:contacus@themediagale.com"
+                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
+                  >
+                    contact@themediagale.com
+                  </a>
+                </p>
+              </div>
             </div>
-            <div className="w-[80%] md:w-[40%] py-10 md:py-0">
-              <div className="flex flex-wrap justify-between gap-6 gap-y-8">
-                <div className="w-[45%]">
+
+            <div className="w-[100%] md:w-[50%] py-10 md:py-0 md:order-6 order-2">
+              <div className="flex flex-wrap justify-between gap-6 gap-y-8 ">
+                <div className="w-[100%] md:w-[45%]">
                   <Input title="First Name" type="text" />
                 </div>
-                <div className="w-[45%]">
+                <div className="w-[100%] md:w-[45%]">
                   <Input title="Last Name" type="text" />
                 </div>
                 <div className="w-full">
@@ -119,6 +161,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="w-full">
                   <textarea
                     className="w-full px-3 py-2 border placeholder-gray-700::placeholder border-black resize-none h-24"
@@ -165,9 +208,6 @@ const Contact = () => {
                       </li>
                     </ul>
                     <GradientButton text="Submit" route="/" />
-                    {/* <button className="border-2 border-[#F58460] float-right rounded-full min-w-[100px] w-[50%] px-6 py-4 font-bold paragraph text-[#F58460] bgWhite hover:bg-gradient-to-r from-[#f79b60] to-[#ee245f] hover:text-white transition hover:transition-all uppercase">
-                  Submit
-                </button> */}
                   </div>
                 </div>
               </div>

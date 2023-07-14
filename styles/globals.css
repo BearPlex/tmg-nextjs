@@ -735,3 +735,22 @@ footer svg:hover path {
   align-items: center;
   justify-content: center;
 }
+
+.autoplay-video {
+  animation: playVideo 1s linear forwards;
+}
+
+@keyframes playVideo {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
