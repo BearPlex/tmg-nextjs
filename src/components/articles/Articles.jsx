@@ -78,44 +78,77 @@ const Articles = () => {
           >
             {articles.map((article, index) => (
               <SwiperSlide key={index}>
-                <div className="">
-                  <figure className="">
-                    <div
-                      className="border border-black h-full group overflow-hidden hover:bg-pink-400"
-                      onClick={() => pushWork(article.id)}
-                      key={article.id}
-                    >
-                      <div className="h-min overflow-hidden">
-                        <Image
-                          width={500}
-                          height={300}
-                          src={`https://beta.themediagale.com/public_images/blogs/${
-                            article.attributes.title &&
-                            article.attributes.title !== ""
-                              ? convertString(article.attributes.title)
-                              : "Women-Rise"
-                          }.png`}
-                          // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${article.attributes.blog_featured_image.data.attributes.url}`}
-                          alt="blog images"
-                          loading="lazy"
-                          layout="responsive"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="py-9 px-6">
-                        {
-                          <span className="pink-color font-medium text-base uppercase inline-block  group-hover:text-black">
-                            {article.attributes.title}
-                          </span>
-                        }
-                        <div className="largeParagraph mt-4 group-hover:text-white">
-                          {article.attributes.sub_title}
-                        </div>
-                      </div>
+                <div class="mx-auto mt-11 w-80 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300">
+                  <div class="relative h-48">
+                    <div class="h-full w-full overflow-hidden">
+                      <Image
+                        class="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300"
+                        // src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="Product Image"
+                        src={`https://beta.themediagale.com/public_images/blogs/${
+                          article.attributes.title &&
+                          article.attributes.title !== ""
+                            ? convertString(article.attributes.title)
+                            : "Women-Rise"
+                        }.png`}
+                      />
+                      <div class="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>
-                  </figure>
+                    <div class="h-full ">
+                      <p class="text-4xl font-bold dark:text-black group-hover:text-white mt-16">
+                        Migrating To Linear 101
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pt-8">
+                    <p class="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
+                      {article.attributes.title}
+                    </p>
+                    <div class="pt-24">
+                      <p class="pb-4 font-normal text-normal text-gray-500 group-hover:text-white">
+                        {article.attributes.sub_title}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
+              //   <div className="">
+              //     <figure className="">
+              //       <div
+              //         className="border border-black h-full group overflow-hidden hover:bg-pink-400"
+              //         onClick={() => pushWork(article.id)}
+              //         key={article.id}
+              //       >
+              //         <div className="h-min overflow-hidden">
+              //           <Image
+              //             width={500}
+              //             height={300}
+              //             src={`https://beta.themediagale.com/public_images/blogs/${
+              //               article.attributes.title &&
+              //               article.attributes.title !== ""
+              //                 ? convertString(article.attributes.title)
+              //                 : "Women-Rise"
+              //             }.png`}
+              //             // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${article.attributes.blog_featured_image.data.attributes.url}`}
+              //             alt="blog images"
+              //             loading="lazy"
+              //             layout="responsive"
+              //             objectFit="cover"
+              //           />
+              //         </div>
+              //         <div className="py-9 px-6">
+              //           {
+              //             <span className="pink-color font-medium text-base uppercase inline-block  group-hover:text-black">
+              //               {article.attributes.title}
+              //             </span>
+              //           }
+              //           <div className="largeParagraph mt-4 group-hover:text-white">
+              //             {article.attributes.sub_title}
+              //           </div>
+              //         </div>
+              //       </div>
+              //     </figure>
+              //   </div>
             ))}
           </Swiper>
         </div>
