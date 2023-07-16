@@ -24,7 +24,7 @@ const Agency = () => {
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
   const agencyRef = useRef();
   const imageContainerRef = useRef(null);
-  const [scrollY, setScrollY] = useState(100);
+  const [scrollY, setScrollY] = useState(150);
   const [showScroll, setShowScroll] = useState(false);
   useLayoutEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +34,11 @@ const Agency = () => {
   }, [imageSrc]);
   const handleScrollY = () => {
     let element = document.querySelector(".mainContainer");
-    let offsetTop = element.offsetTop;
+    let offsetTop = 0;
+    if (element && element?.offsetTop) {
+      offsetTop = element.offsetTop;
+    }
+
     setScrollY(window.scrollY + scrollY - offsetTop);
   };
   function getDivEnd(element) {
@@ -170,6 +174,8 @@ const Agency = () => {
               className={`h-fit ${showScroll ? "image-scroll-container" : ""}`}
               style={{
                 transform: getTransformValue(scrollY, imageContainerEnd),
+                transition: "transform 0.03s linear",
+                // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
               }}
             >
               <Image
@@ -181,7 +187,7 @@ const Agency = () => {
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
-                className="relative"
+                className="relative transition-transform"
               />
             </div>
           </div>

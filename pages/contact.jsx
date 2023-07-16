@@ -59,16 +59,36 @@ const Contact = () => {
                 </a>
               </p>
               <div className="flex gap-6 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
-                <a href="#" className="inline-block">
+                <a
+                  href="https://twitter.com/bearplexdigital"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block"
+                >
                   {twitterSvg()}
                 </a>
-                <a href="#" className="inline-block">
+                <a
+                  href="https://www.facebook.com/BearPlex/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block"
+                >
                   {instagramSvg()}
                 </a>
-                <a href="#" className="inline-block">
+                <a
+                  href="https://www.facebook.com/BearPlex/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block"
+                >
                   {facebookSvg()}
                 </a>
-                <a href="#" className="inline-block">
+                <a
+                  href="https://www.linkedin.com/company/bearplex/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block"
+                >
                   {linkedinSvg()}
                 </a>
               </div>

@@ -30,16 +30,36 @@ const Footer = () => {
                 <h4 className="paragraph font-bold text-[#EE2760]">
                   Follow
                   <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end  contact-wrapper">
-                    <a href="#" className="inline-block">
+                    <a
+                      href="https://twitter.com/bearplexdigital"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block"
+                    >
                       {twitterSvg()}
                     </a>
-                    <a href="#" className="inline-block">
+                    <a
+                      href="https://www.facebook.com/BearPlex/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block"
+                    >
                       {instagramSvg()}
                     </a>
-                    <a href="#" className="inline-block">
+                    <a
+                      href="https://www.facebook.com/BearPlex/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block"
+                    >
                       {facebookSvg()}
                     </a>
-                    <a href="#" className="inline-block">
+                    <a
+                      href="https://www.linkedin.com/company/bearplex/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block"
+                    >
                       {linkedinSvg()}
                     </a>
                   </div>

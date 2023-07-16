@@ -134,10 +134,38 @@ const NavigationMenu = () => {
       {/* This is last of navigation  */}
       <div className="w-full pagePaddingX nav-footer fixed bottom-5 flex items-center justify-between">
         <div className="flex items-center gap-0 md:gap-4 contact-wrapper">
-          <Link href="#">{twitterSvg()}</Link>
-          <Link href="#">{facebookSvg()}</Link>
-          <Link href="#">{instagramSvg()}</Link>
-          <Link href="#">{linkedinSvg()}</Link>
+          <a
+            href="https://twitter.com/bearplexdigital"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block"
+          >
+            {twitterSvg()}
+          </a>
+          <a
+            href="https://www.facebook.com/BearPlex/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block"
+          >
+            {instagramSvg()}
+          </a>
+          <a
+            href="https://www.facebook.com/BearPlex/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block"
+          >
+            {facebookSvg()}
+          </a>
+          <a
+            href="https://www.linkedin.com/company/bearplex/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block"
+          >
+            {linkedinSvg()}
+          </a>
         </div>
         <div className="flex items-center">
           <h4 className="text-white font-bold largeParagraph md: py-2 md:py-5 pr-2 md:pr-6">
