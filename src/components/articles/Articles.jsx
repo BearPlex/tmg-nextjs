@@ -78,8 +78,8 @@ const Articles = () => {
           >
             {articles.map((article, index) => (
               <SwiperSlide key={index}>
-                <div className="mx-auto mt-11 w-80 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300">
-                  <div className="relative h-48">
+                <div className="mx-auto mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300">
+                  <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">
                       <Image
                         className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300"
@@ -94,18 +94,16 @@ const Articles = () => {
                       />
                       <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>
-                    <div className="h-full ">
-                      <p className="text-4xl font-bold dark:text-black group-hover:text-white mt-16">
-                        {article.attributes.title}
-                      </p>
-                    </div>
                   </div>
                   <div className="pt-8">
                     <p className="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
                       {article.attributes.sub_title}
                     </p>
-                    <div className="pt-24">
-                      <p className="pb-4 font-normal text-normal text-gray-500 group-hover:text-white">
+                    <p className="text-4xl font-bold dark:text-black group-hover:text-white pt-2">
+                      {article.attributes.title}
+                    </p>
+                    <div>
+                      <p className="pb-4 pt-3 font-normal text-normal text-gray-500 group-hover:text-white">
                         {article.attributes.blog_content}
                       </p>
                     </div>
