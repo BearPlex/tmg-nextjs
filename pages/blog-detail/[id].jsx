@@ -34,6 +34,18 @@ function BlogDetail() {
         console.log("Error123", err);
       });
   }, []);
+  function convertString(str) {
+    if (!str) {
+      return ""; // Return an empty string if the input is undefined or null
+    }
+    const hyphenAdded = str.replace(/ /g, "-");
+    // console.log("");
+    const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
+    console.log(questionMarkRemoved);
+    console.log("questionMarkRemoved");
+    console.log("");
+    return questionMarkRemoved;
+  }
   return (
     <>
       <section className="pt-20">
@@ -76,7 +88,12 @@ function BlogDetail() {
             <Image
               width={500}
               height={300}
-              src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.attributes?.blog_featured_image.data.attributes.url}`}
+              src={`https://beta.themediagale.com/public_images/blogs/${
+                work?.attributes?.title && work?.attributes?.title !== ""
+                  ? convertString(work?.attributes?.title)
+                  : "Women-Rise"
+              }.png`}
+              // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.attributes?.blog_featured_image.data.attributes.url}`}
               alt="blog image"
               className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl"
             />

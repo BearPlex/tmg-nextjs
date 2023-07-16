@@ -30,7 +30,7 @@ const Contact = () => {
               </p>
               <p className="mt-4 md:mt-10">
                 <a
-                  href="tel:+44(0)20 3951 0562"
+                  href="tel:+1 (917) 970-1353"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
                 >
                   +1 (917) 970-1353
@@ -38,7 +38,9 @@ const Contact = () => {
               </p>
               <p className="group mt:4 md:mt-10 relative">
                 <a
-                  href="mailto:info@themediagale.com"
+                  href="https://info@themediagale.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   info@themediagale.com
@@ -46,13 +48,18 @@ const Contact = () => {
                 <br />
                 <a
                   href="mailto:info@themediagale.com"
+                  // href="https://twitter.com/bearplexdigital"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   support@themediagale.com
                 </a>
                 <br />
                 <a
-                  href="mailto:contacus@themediagale.com"
+                  href="https://contacus@themediagale.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
                 >
                   contact@themediagale.com
@@ -130,21 +137,21 @@ const Contact = () => {
                 </p>
                 <p className="group mt:4 md:mt-10 relative">
                   <a
-                    href="mailto:info@themediagale.com"
+                    href="https://info@themediagale.com"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                   >
                     info@themediagale.com
                   </a>
                   <br />
                   <a
-                    href="mailto:info@themediagale.com"
+                    href="https://info@themediagale.com"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                   >
                     support@themediagale.com
                   </a>
                   <br />
                   <a
-                    href="mailto:contacus@themediagale.com"
+                    href="https://contacus@themediagale.com"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
                   >
                     contact@themediagale.com

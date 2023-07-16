@@ -20,18 +20,7 @@ import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 const Services = () => {
   const router = useRouter();
-  const pushServiceSocial = () => {
-    router.push("/service/social-media-marketing");
-  };
-  const pushServiceBrand = () => {
-    router.push("/service/brand-management");
-  };
-  const pushServiceSeo = () => {
-    router.push("/service/seo");
-  };
-  const pushServiceDesign = () => {
-    router.push("/service/web-design");
-  };
+
   return (
     <>
       <PageWrapper>
@@ -148,7 +137,6 @@ const Services = () => {
               id="web_design"
               imageSrc={homePageImage.src}
               imageAlt="services images"
-              selectRoute={pushServiceSocial}
             >
               <div>
                 <div className="headingBlack">Social Media Marketing</div>
@@ -156,7 +144,10 @@ const Services = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/service/web-design" />
+                <GradientButton
+                  text="Learn More"
+                  route="/service/social-media-marketing"
+                />
               </div>
             </TextWithImageContainer>
 
@@ -164,7 +155,6 @@ const Services = () => {
               id="web_development"
               imageSrc={developmentImage.src}
               imageAlt="services images"
-              selectRoute={pushServiceBrand}
             >
               <div>
                 <div className="headingBlack">Brand Management</div>
@@ -172,14 +162,16 @@ const Services = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <GradientButton
+                  text="Learn More"
+                  route="/service/brand-management"
+                />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
               id="branding"
               imageSrc={digitalImage.src}
               imageAlt="services images"
-              selectRoute={pushServiceSeo}
             >
               <div>
                 <div className="headingBlack">Search Engine Optimization</div>
@@ -187,14 +179,13 @@ const Services = () => {
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <GradientButton text="Learn More" route="/service/seo" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
               id="digital_marketing"
               imageSrc={marketingImage.src}
               imageAlt="services images"
-              selectRoute={pushServiceDesign}
             >
               <div>
                 <div className="headingBlack">Website Design & Development</div>
@@ -203,7 +194,10 @@ const Services = () => {
                   clear communication to keep information flow open.
                 </p>
                 <div className="mb-10">
-                  <GradientButton text="Learn More" route="/webDevelopment" />
+                  <GradientButton
+                    text="Learn More"
+                    route="/service/web-design"
+                  />
                 </div>
               </div>
             </TextWithImageContainer>

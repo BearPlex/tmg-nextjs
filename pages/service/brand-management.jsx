@@ -188,7 +188,10 @@ function Seo() {
                     accounts and your physical collateral. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-3 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/service/web-design"
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -214,7 +217,7 @@ function Seo() {
                     their desired results.  
                   </p>
                   <div className="flex items-center gap-x-6 mt-3 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton text="Learn More" route="/service/seo" />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -235,7 +238,7 @@ function Seo() {
                     customers and inspires them to action.
                   </p>
                   <div className="flex items-center gap-x-6 mt-3 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton text="Learn More" route="/studio" />
                   </div>
                 </div>
               </TextWithImageContainer>

@@ -59,7 +59,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDesign" />
+                <GradientButton text="Learn More" route="/service/seo" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -73,7 +73,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <GradientButton text="Learn More" route="/services" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -87,7 +87,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/webDevelopment" />
+                <GradientButton text="Learn More" route="/service/web-design" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -102,7 +102,7 @@ const Resources = () => {
                   customized solutions to everyday business challenges.
                 </p>
                 <div className="mb-10">
-                  <GradientButton text="Learn More" route="/webDevelopment" />
+                  <GradientButton text="Learn More" route="/contact" />
                 </div>
               </div>
             </TextWithImageContainer>
