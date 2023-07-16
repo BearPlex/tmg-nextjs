@@ -139,7 +139,7 @@ const Footer = () => {
                       <li className="mb-2">
                         <Link
                           className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                          href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                          href="/"
                         >
                           New York
                         </Link>
@@ -147,7 +147,7 @@ const Footer = () => {
                       <li className="mb-2">
                         <Link
                           className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                          href="https://creative-tim.com/privacy?ref=njs-profile"
+                          href="/"
                         >
                           Lahore
                         </Link>
