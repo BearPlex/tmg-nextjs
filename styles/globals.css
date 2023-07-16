@@ -754,3 +754,6 @@ footer svg:hover path {
     opacity: 1;
   }
 }
+.image-scroll-container {
+  transition: transform 0.1s ease-in;
+}

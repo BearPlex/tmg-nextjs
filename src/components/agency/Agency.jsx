@@ -7,9 +7,12 @@ import agencyImage1 from "../../assets/images/agency-create-1.png";
 import agencyImage2 from "../../assets/images/agency-analyze-2.png";
 import agencyImage3 from "../../assets/images/agency-commuication-3.png";
 import agencyImage4 from "../../assets/images/agency-execute-4.png";
+import debounce from "lodash/debounce";
 import Image from "../Image/Image";
 
 let mobileScreen = false;
+let offsetTop = 0;
+let imageContainerEnd = 0;
 if (typeof window !== "undefined" && window.innerWidth < 768) {
   mobileScreen = true;
   console.log("Window width is less than 768");
@@ -18,86 +21,85 @@ if (typeof window !== "undefined" && window.innerWidth < 768) {
   console.log("Window width is 768 or greater");
 }
 const Agency = () => {
-  const [screenYScroll, setScreenYScroll] = useState(0);
-  // let screenYScroll = 0;
-  // if (typeof window !== "undefined" && window.pageYOffset) {
-  //   setScreenYScroll(window.pageYOffset);
-  // }
-  const agencyRef = useRef();
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
-      mobileScreen = true;
-    } else {
-      mobileScreen = false;
-    }
-    if (!mobileScreen) {
-      const handleScroll = () => {
-        const beautyRef = document?.getElementById("beautyRef");
-        const thoughRef = document?.getElementById("thoughRef");
-        const communicateRef = document?.getElementById("communicateRef");
-        const executeRef = document?.getElementById("executeRef"); // new line
-        let newImageSrc = agencyImage1.src;
-        if (
-          beautyRef?.getBoundingClientRect().top < 0 &&
-          thoughRef?.getBoundingClientRect().top > 0
-        ) {
-          newImageSrc = agencyImage2.src;
-        } else if (
-          thoughRef?.getBoundingClientRect().top < 0 &&
-          communicateRef?.getBoundingClientRect().top > 0
-        ) {
-          newImageSrc = agencyImage3.src;
-        } else if (
-          communicateRef?.getBoundingClientRect().top < 0 &&
-          executeRef?.getBoundingClientRect().top > 0
-        ) {
-          newImageSrc = agencyImage4.src;
-        } else if (executeRef?.getBoundingClientRect().top < 0) {
-          // new condition
-          newImageSrc = agencyImage4.src; // new image for the fourth section
-        }
-
-        if (newImageSrc !== imageSrc) {
-          setImageSrc(newImageSrc);
-        }
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      if (typeof window !== "undefined" && window.pageYOffset) {
-        setScreenYScroll(window.pageYOffset);
-      }
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [imageSrc]);
-  const [scrollY, setScrollY] = useState(-100);
-
-  const [stickyTop, setStickyTop] = useState(0);
+  const agencyRef = useRef();
   const imageContainerRef = useRef(null);
-
+  const [scrollY, setScrollY] = useState(100);
+  const [showScroll, setShowScroll] = useState(false);
   useLayoutEffect(() => {
-    if (typeof window !== "undefined" && window.pageYOffset) {
-      setScreenYScroll(window.pageYOffset);
-    }
-    const handleScrollLayout = () => {
-      if (!imageContainerRef.current) return;
-
-      const containerHeight = imageContainerRef.current.offsetHeight;
-      const newStickyTop = window.pageYOffset + 300;
-
-      setStickyTop(newStickyTop);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
+  }, [imageSrc]);
+  const handleScrollY = () => {
+    let element = document.querySelector(".mainContainer");
+    let offsetTop = element.offsetTop;
+    setScrollY(window.scrollY + scrollY - offsetTop);
+  };
+  function getDivEnd(element) {
+    let offsetTop = element.offsetTop;
+    let offsetHeight = element.offsetHeight;
+    return offsetTop + offsetHeight;
+  }
 
-    window.addEventListener("scroll", handleScrollLayout);
-    return () => window.removeEventListener("scroll", handleScrollLayout);
-  }, [screenYScroll]);
+  const debouncedHandleScroll = debounce(handleScrollY, 0);
 
+  const getTransformValue = (scrollY, imageContainerEnd) => {
+    if (scrollY > 0 && scrollY <= imageContainerEnd) {
+      return `translateY(${scrollY}px)`;
+    }
+    if (scrollY > 0 && scrollY > imageContainerEnd) {
+      return `translateY(${imageContainerEnd}px)`;
+    }
+    return `translateY(0px)`;
+  };
+
+  useEffect(() => {
+    let divElement = document.querySelector(".imageContainer");
+    imageContainerEnd = getDivEnd(divElement) - 480;
+    console.log("The div ends at scroll position: " + imageContainerEnd);
+    window.addEventListener("scroll", debouncedHandleScroll);
+    return () => {
+      window.removeEventListener("scroll", debouncedHandleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    const beautyRef = document?.getElementById("beautyRef");
+    const thoughRef = document?.getElementById("thoughRef");
+    const communicateRef = document?.getElementById("communicateRef");
+    const executeRef = document?.getElementById("executeRef");
+    let newImageSrc = agencyImage1.src;
+
+    const beautyRect = beautyRef?.getBoundingClientRect();
+
+    if (
+      beautyRef?.getBoundingClientRect().top < 0 &&
+      thoughRef?.getBoundingClientRect().top > 0
+    ) {
+      newImageSrc = agencyImage2.src;
+    } else if (
+      thoughRef?.getBoundingClientRect().top < 0 &&
+      communicateRef?.getBoundingClientRect().top > 0
+    ) {
+      newImageSrc = agencyImage3.src;
+    } else if (
+      communicateRef?.getBoundingClientRect().top < 0 &&
+      executeRef?.getBoundingClientRect().top > 0
+    ) {
+      newImageSrc = agencyImage4.src;
+    } else if (executeRef?.getBoundingClientRect().top < 0) {
+      newImageSrc = agencyImage4.src;
+    }
+
+    if (newImageSrc !== imageSrc) {
+      setImageSrc(newImageSrc);
+    }
+  };
   return (
     <div
       ref={agencyRef}
-      className="pagePaddingX pt-7 md:pt-20 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full"
+      className="pagePaddingX pt-7 md:pt-20 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
     >
       <div className="w-full hidden md:block  relative">
         <div className="w-full flex flex-row">
@@ -163,11 +165,12 @@ const Agency = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 flex" ref={imageContainerRef}>
+          <div className="w-1/2 flex imageContainer" ref={imageContainerRef}>
             <div
-              className="h-fit"
-              style={{ position: "sticky", top: `${stickyTop}px` }}
-              // style={{ position: "sticky", top: `${stickyTop}px` }}
+              className={`h-fit ${showScroll ? "image-scroll-container" : ""}`}
+              style={{
+                transform: getTransformValue(scrollY, imageContainerEnd),
+              }}
             >
               <Image
                 width={500}
