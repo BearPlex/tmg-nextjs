@@ -12,9 +12,9 @@ const MainCard = (props) => {
     index,
   } = props;
   return (
-    <div>
+    <div className="mt-11 dark:white group  hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300">
       <div className="group">
-        <div className="relative work-images">
+        <div className="relative group work-images">
           <Image
             width={500}
             height={300}
