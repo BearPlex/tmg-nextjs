@@ -8,6 +8,7 @@ import axios from "axios";
 import Section3Image from "../../src/components/works/section3Image";
 import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
+import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 function WorkDetail() {
   const router = useRouter();
 
@@ -34,19 +35,22 @@ function WorkDetail() {
   }, []);
   return (
     <>
-      <section className="pt-20">
-        <Header />
-        <Section1
-          work={work?.attributes}
-          title1st="KINIMO"
-          title2nd="COSMETICS"
-          workHeading="Execute"
-        />
-        <Section2Image work={work?.attributes} />
-        <Section3Image work={work?.attributes} />
-        <Section4card />
-        <Footer />
-      </section>
+      <PageWrapper>
+        <section className="pt-0 md:pt-20">
+          <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+            <Section1
+              work={work?.attributes}
+              title1st="KINIMO"
+              title2nd="COSMETICS"
+              workHeading="Execute"
+            />
+            <Section2Image work={work?.attributes} />
+            <Section3Image work={work?.attributes} />
+            <Section4card />
+          </div>
+          <Footer />
+        </section>
+      </PageWrapper>
     </>
   );
 }
