@@ -3,7 +3,7 @@ import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 const PrivacyPolicy = () => {
   return (
     <PageWrapper>
-      <div className="pt-0 md:pt-20">
+      <div className="">
         {/* <Header /> */}
         <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
           <div className="">

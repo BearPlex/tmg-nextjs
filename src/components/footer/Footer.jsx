@@ -165,14 +165,16 @@ const Footer = () => {
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
               // className="w-full flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center mb-4 md:m-0 pl-4 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
+              <div className="flex items-center mb-4 md:m-0  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
                 {/* <div className="order-2 md:order-1 flex items-center pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32"> */}
-                <div className="h-[45px] w-[90%] bgWhite">
+                <div className="h-[45px] w-[100%] bgWhite relative top-4">
                   <Image
-                    width={500}
+                    width={600}
                     height={300}
                     className="h-[45px]"
                     alt="group"
+                    layout="response"
+                    objectFit="cover"
                     src={groupBtn.src}
                   />
                 </div>

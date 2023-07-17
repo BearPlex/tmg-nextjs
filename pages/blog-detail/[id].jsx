@@ -51,7 +51,7 @@ function BlogDetail() {
   return (
     <>
       <PageWrapper>
-        <section className="pt-0 md:pt-20">
+        <section className="">
           <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
             <span className="text-pink-400 text-base font-medium tracking-widest">
               {work?.attributes?.date}
