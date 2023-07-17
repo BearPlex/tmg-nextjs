@@ -9,6 +9,19 @@ import { instagramSvg } from "../../helpers/Helpers";
 import { linkedinSvg } from "../../helpers/Helpers";
 import Image from "../Image/Image";
 const NavigationMenu = () => {
+  useEffect(() => {
+    const style = document.createElement("style");
+
+    style.innerHTML = `
+      body::-webkit-scrollbar {
+        display: none;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredOverUL, setIsHoveredOverUL] = useState(false);
   let timer;
@@ -33,14 +46,17 @@ const NavigationMenu = () => {
   }, [isHovered]);
 
   return (
-    <div className="background-gradient z-10 w-full h-full fixed top-0">
+    <div className="background-gradient z-10 w-full h-full fixed top-0 ">
       <div className=" pagePaddingX pt-[15vh] ">
         <div className="inline-block w-56 cursor-pointer"></div>
         <div className="">
-          <ul className="relative flex flex-col md:flex-row items-center justify-between">
-            <div className="w-1/2 flex md:justify-center pl-7 md:pl-0 mt-[5vh]">
-              <div className="w-1/6">
-                <li className="group" onMouseEnter={() => setIsHovered(true)}>
+          <ul className="relative flex flex-col md:flex-row md:items-center md:justify-between">
+            <div className="w-full md:w-1/2 flex md:justify-center pl-7 md:pl-0 mt-[5vh]">
+              <div className="w-full md:w-1/6">
+                <li
+                  className="group mb-3 md:mb-0"
+                  onMouseEnter={() => setIsHovered(true)}
+                >
                   <Link
                     href="/services"
                     className="text-[#FFCBC2] inline-block extraLargeHeading font-bold leading-none  hover:text-white"
@@ -48,6 +64,42 @@ const NavigationMenu = () => {
                     Services
                   </Link>
                 </li>
+                <div className="block md:hidden ml-8">
+                  <ul className="list-disc text-[#FFCBC2] hover:text-white flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
+                    <li>
+                      <Link
+                        href="/service/social-media-marketing"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                      >
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/service/web-design"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                      >
+                        Web Development & Design
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/service/brand-management"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                      >
+                        Branding
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/service/seo"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                      >
+                        SEO
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
                 <li className="group" onMouseEnter={() => setIsHovered(false)}>
                   <Link
                     href="/work"
@@ -95,7 +147,7 @@ const NavigationMenu = () => {
 
             <div className="w-1/2 flex justify-center md:justify-center lg:justify-start pl-7 md:pl-0 mt-[2vh]">
               {(isHovered || mediumscreen) && (
-                <div className="block ml-0 md:ml-8">
+                <div className="hidden md:block ml-0 md:ml-8">
                   <ul className="flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
                     {/* <ul className="absolute w-[250px] md:w-[380px] h-[180px] md:h-[250px] top-[50%] translate-y-[-50%]  left-[35vw] lg:left-[300px] xl:left-[480px] flex flex-col justify-between"> */}
                     {/* <> */}
