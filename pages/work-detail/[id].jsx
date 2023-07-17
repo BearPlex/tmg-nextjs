@@ -36,7 +36,7 @@ function WorkDetail() {
   return (
     <>
       <PageWrapper>
-        <section className="pt-0 md:pt-20">
+        <section className="">
           <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
             <Section1
               work={work?.attributes}
