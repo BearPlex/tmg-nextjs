@@ -12,8 +12,6 @@ import workFeaturedImage from "../../src/assets/images/work-featured-1.png";
 import workGallery1 from "../../src/assets/images/work-gall-1.png";
 import workGallery2 from "../../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../../src/components/expertise/ExpertiseStatic";
-// import "swiper/css/bundle";
-// import "./styles.css";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 const work = [
   {
@@ -37,16 +35,6 @@ function WorkDetail() {
   const props = {
     id,
   };
-  // const [work,setWork]=useState([])
-  // {console.log("Work",blogsData)}
-  // useEffect(()=>{
-  // axios.get(`https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`).then((res)=>{
-  //     console.log("Res",res.data.data)
-  //     setWork(res.data.data)
-  // }).catch((err)=>{
-  //     console.log("Error",err)
-  // })
-  // },[])
   return (
     <>
       <PageWrapper>

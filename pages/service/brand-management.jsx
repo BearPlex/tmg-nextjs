@@ -21,24 +21,18 @@ import TextWithVideoContainer from "../../src/components/containers/TextWithVide
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 function Seo() {
   const [work, setWork] = useState([]);
-  // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
       .get(
         "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
       )
       .then((res) => {
-        console.log("Res", res.data.data);
         const sortedWork = [...res.data.data].sort((a, b) => {
           const dateA = new Date(a.attributes.publishedAt);
           const dateB = new Date(b.attributes.publishedAt);
           return dateA - dateB;
         });
-
-        // Update the state with the sorted array
         setWork(sortedWork);
-
-        // setWork(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);

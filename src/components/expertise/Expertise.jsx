@@ -9,10 +9,7 @@ const Expertise = (props) => {
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/work-detail/${id}`);
-    // console.log("Id", id);
   };
-  console.log(list);
-  console.log("list");
   return (
     <>
       <div className="w-full">
@@ -30,14 +27,6 @@ const Expertise = (props) => {
                 />
               </div>
               {list.map((item, index) => {
-                // console.log(https://tmg-strapi-w6pu3.ondigitalocean.app/public_images/);
-                console.log("");
-                console.log("");
-                console.log("");
-                console.log(item.attributes?.featured_title);
-                console.log("item.attributes?.featured_title");
-                console.log("");
-                console.log("");
                 return (
                   index % 2 === 0 && (
                     <div
@@ -45,10 +34,8 @@ const Expertise = (props) => {
                       className="w-full mb-4 md:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
-                      {console.log("ITEM", item)}
                       <WorkCard
                         backGroundBlack={backGroundBlack}
-                        // imageSrc="https://beta.themediagale.com/public_images/women-rise1.png"
                         imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                           item.attributes?.featured_title
                         )}.png`}
@@ -82,7 +69,6 @@ const Expertise = (props) => {
                       className="w-full mb-4 md:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
-                      {console.log("ITEM", item)}
                       <WorkCard
                         backGroundBlack={backGroundBlack}
                         imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
@@ -132,7 +118,6 @@ const Expertise = (props) => {
                     className="w-full mb-24 lg:mb-4 md:mb-20 cursor-pointer"
                     onClick={() => pushWork(item.id)}
                   >
-                    {console.log("ITEM", item)}
                     <WorkCard
                       backGroundBlack={backGroundBlack}
                       imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(

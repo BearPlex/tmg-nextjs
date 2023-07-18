@@ -429,7 +429,7 @@ export const linkedinSvg = () => (
 // );
 export const convertStringForImage = (str) => {
   if (!str) {
-    return ""; // Return an empty string if the input is undefined or null
+    return "";
   }
   const hyphenAdded = str.replace(/ /g, "-");
   const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");

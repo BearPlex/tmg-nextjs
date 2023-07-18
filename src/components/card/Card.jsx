@@ -7,7 +7,6 @@ const Card = (props) => {
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
-    // console.log("Id", id);
   };
   return (
     <div className="w-full mt-1 md:mt-5 lg:mt-16 flex justify-between flex-wrap 3xl:max-w-7xl 3xl:mx-auto">

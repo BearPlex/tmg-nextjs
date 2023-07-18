@@ -26,7 +26,6 @@ const Expertise = (props) => {
                         className="w-full mb-4 md:mb-20 cursor-pointer"
                         onClick={() => pushWork(item.id)}
                       >
-                        {console.log("ITEM", item)}
                         <WorkCard
                           backGroundBlack={backGroundBlack}
                           // imageSrc="https://beta.themediagale.com/public_images/women-rise1.png"
@@ -58,7 +57,6 @@ const Expertise = (props) => {
                         className="w-full mb-4 md:mb-20 cursor-pointer"
                         onClick={() => pushWork(item.id)}
                       >
-                        {console.log("ITEM", item)}
                         <WorkCard
                           backGroundBlack={backGroundBlack}
                           imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(

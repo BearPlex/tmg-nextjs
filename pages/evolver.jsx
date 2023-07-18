@@ -339,7 +339,6 @@ function evolver() {
               </p>
             </blockquote>
             <figcaption className="mt-4 md:mt-10 flex justify-between gap-x-6">
-              {/* <Image decoding="async" width={500} height={300} className="h-12 w-12 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt=""/> */}
               <div className="smallText leading-6">
                 <div className=" text-gray-900 smallText font-bold">
                   Mounir L.

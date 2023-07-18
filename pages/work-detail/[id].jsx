@@ -19,14 +19,12 @@ function WorkDetail() {
     id,
   };
   const [work, setWork] = useState([]);
-  // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
       .get(
         `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`
       )
       .then((res) => {
-        console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {

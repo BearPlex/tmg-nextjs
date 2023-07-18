@@ -15,13 +15,11 @@ import arrowNext from "../../assets/images/arrowNext.png";
 import { convertStringForImage } from "../../helpers/Helpers";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
-  // {console.log("Work",blogsData)}
   const router = useRouter();
   useEffect(() => {
     axios
       .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
       .then((res) => {
-        console.log("Res Blogs", res.data.data);
         setArticles(res.data.data);
       })
       .catch((err) => {
@@ -30,7 +28,6 @@ const Articles = () => {
   }, []);
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
-    // console.log("Id", id);
   };
 
   return (

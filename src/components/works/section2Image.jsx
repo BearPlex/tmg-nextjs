@@ -3,7 +3,6 @@ import Image from "../Image/Image";
 import { convertStringForImage } from "../../helpers/Helpers";
 function section2Image(props) {
   const { imageGallery1, work } = props;
-  // console.log("Imageeeee", work?.gallery1.data[0].attributes.url);
   return (
     <>
       <div className="flex flex-col justify-center items-center">

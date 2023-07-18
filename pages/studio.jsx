@@ -29,49 +29,13 @@ import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
-// {/* <section className="grid grid-cols-2 px-28 gap-4 pt-12 items-center">
-//           <div className="w-full text-center">
-//               <Image decoding="async" width={500} height={300} src={kotaLogo.src} alt="kota canvas" loading="lazy" className="max-w-full" />
-//           </div>
-//           <div className="w-full">
-//               <h4 className="mb-2 md:mb-6  text-7xl font-bold leading-tight">A boutique team of designers, developers & strategists.</h4>
-//               <p className="text-black font-medium text-[1.16rem]">
-//                   Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation. And then there’s Buddy, the French Bulldog.
-//               </p>
-//           </div>
-//       </section> */}
-// {/* <SwiperSlide>
-//           <div className="">
-//               <figure className="">
-//                   <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
-//                   <figcaption>
-//                       <p className="text-white">ED</p>
-//                       <p className="text-white">— Design Director</p>
-//                   </figcaption>
-//               </figure>
-//           </div>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//       <div className="">
-//               <figure className="">
-//                   <Image decoding="async" width={500} height={300} src={teamMember.src} alt="team member" />
-//                   <figcaption>
-//                       <p className="text-white">ED</p>
-//                       <p className="text-white">— Design Director</p>
-//                   </figcaption>
-//               </figure>
-//           </div>
-//       </SwiperSlide> */}
+
 const Studio = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const memberImages = [member1, member2, member3, member4, member5, member6];
   const handlePlayPause = () => {
     if (videoRef.current) {
-      console.log(isPlaying); // Check the current state
-      console.log("isPlaying"); // Check the current state
-      console.log(videoRef.current.paused);
-      console.log("videoRef.current.paused");
       if (isPlaying) {
         videoRef.current.pause();
       } else {
@@ -139,7 +103,6 @@ const Studio = () => {
                       fill="#fff"
                     ></path>
                   </svg>
-                  {/* Add your Pause SVG icon here, it will be displayed when the video is playing */}
                   <svg
                     className={isPlaying ? "w-10 h-10" : "hidden"}
                     viewBox="0 0 40 40"
@@ -150,39 +113,6 @@ const Studio = () => {
                 </button>
               </div>
             </div>
-
-            {/* <div className="relative h-[581px]">
-              <video
-                className="studio-video h-[581px]"
-                autoPlay="true"
-                loop="true"
-                controls="false"
-                fill="true"
-              >
-                <source src="/video/hp.mp4" type="video/mp4" />
-                <source src="/video/hp.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute top-[50%] left[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                <div className="play-button border-4 border-white rounded-full w-[140px] h-[140px]">
-                  <svg
-                    className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 26.139 37.458"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      id="Path_184"
-                      data-name="Path 184"
-                      d="M-1422.6-322.813v37.458l26.139-19.137Z"
-                      transform="translate(1422.604 322.813)"
-                      fill="#fff"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div> */}
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
@@ -197,9 +127,6 @@ const Studio = () => {
               our clients stay ahead of the competition and get the greatest
               results possible.
             </p>
-            {/* <p className="paragraph mb-4 md:mb-10">
-                    By soaking up culture, sharing new ideas and staying on the pulse of the latest trends, we develop brands, design websites and deliver campaigns that that break the mould, and fight back against boring.
-                </p> */}
             <GradientButton text="View Our Services" route="/services" />
           </div>
 

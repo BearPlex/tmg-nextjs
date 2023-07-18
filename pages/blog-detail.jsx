@@ -11,16 +11,8 @@ const blogDetail = () => {
       </span>
       <div className="headingBlack">Designing more sustainable websites.</div>
       <div>
-        {/* <Image
-          decoding="async"
-          width={500}
-          height={300}
-          src={blogImage.src}
-          className="w-[50px] h-[50px] rounded-full "
-        /> */}
         <span className="text-base text-pink-400 uppercase mt-3">BY IZZY</span>
       </div>
-      {/* <Image decoding="async" width={500} height={300} src="" /> */}
       <div className="max-w-2xl w-full mx-auto">
         <div className="heading text-pink-400">Introduction</div>
         <p className="paragraphBlack pb-7 md:pb-20">

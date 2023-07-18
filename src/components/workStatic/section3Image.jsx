@@ -3,7 +3,6 @@ import approch from "../../assets/images/approch1.png";
 import Image from "../Image/Image";
 function section3Image(props) {
   const { work } = props;
-  // console.log("Approch Data", work);
   return (
     <>
       <div className="flex  flex-col items-center justify-center">

@@ -47,8 +47,6 @@ const Services = () => {
         <span className="block mb-4 md:mb-10 uppercase smallText whiteHeadingText ">
           Our Services
         </span>
-
-        {/* Dektop Show and hide on mobile */}
         <div className="hidden md:block">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <div className="flex flex-col justify-center">
@@ -76,12 +74,6 @@ const Services = () => {
               >
                 Digital Marketing
               </h3>
-              {/* <a
-            href="/services"
-            className="mt-8 border-2 rounded-full w-[200px] h-14 text-white px-6 inline-flex items-center justify-center text-md hover:bgWhite hover:text-fuchsia-500 font-medium"
-          >
-             View All Services
-          </a> */}
             </div>
             <div>
               <div>

@@ -10,8 +10,6 @@ function section1(props) {
     workDescription2nd,
     work,
   } = props;
-  // console.log("Work", work);
-  // console.log("Work Image",work?.gallery1.data)
   return (
     <>
       <section className="max-w-7xl mx-auto">

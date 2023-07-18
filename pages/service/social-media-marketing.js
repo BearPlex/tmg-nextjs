@@ -21,24 +21,18 @@ import TextWithVideoContainer from "../../src/components/containers/TextWithVide
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 function Socialmediamarketing() {
   const [work, setWork] = useState([]);
-  // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
       .get(
         "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
       )
       .then((res) => {
-        console.log("Res", res.data.data);
         const sortedWork = [...res.data.data].sort((a, b) => {
           const dateA = new Date(a.attributes.publishedAt);
           const dateB = new Date(b.attributes.publishedAt);
           return dateA - dateB;
         });
-
-        // Update the state with the sorted array
         setWork(sortedWork);
-
-        // setWork(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -68,33 +62,6 @@ function Socialmediamarketing() {
               </div>
             </div>
           </TextWithVideoContainer>
-          {/* <section>
-            <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
-                <div className="w-full text-center mt:4 md:mt-10 ">
-                  <Image
-                    width={500}
-                    height={300}
-                    src={body.src}
-                    alt="kota canvas"
-                    loading="lazy"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                  <Image
-                    width={500}
-                    height={300}
-                    src={serviceBottle.src}
-                    alt="kota canvas"
-                    loading="lazy"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </section> */}
-
           <section>
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
@@ -326,17 +293,6 @@ function Socialmediamarketing() {
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
-                  {/* <div className="flex items-center gap-x-6 mt-3 md:mt-8">
-                    <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                  <div className="">
-                    <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                    <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                    <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                      Learn <span className="text-pink-500"> More</span>
-                    </p>
-                  </div>
-                </button> 
-                  </div> */}
                 </div>
               </div>
             </div>

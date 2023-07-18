@@ -14,8 +14,6 @@ import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
-// import CardStatic from "../src/components/card/CardStatic";
-// {console.log("Work",blogsData)}
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -31,12 +29,11 @@ const Blog = () => {
     axios
       .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
       .then((res) => {
-        // console.log("Res Blogs", res.data.data);
         setBlogs(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);
-        // setBlogs(blogsStatic)
+        setBlogs(blogsStatic);
       });
   }, []);
   return (
@@ -63,8 +60,6 @@ const Blog = () => {
 
           <div className="pagePaddingX pt-7 md:pt-20 w-full 3xl:max-w-7xl 3xl:mx-auto">
             <a href="" className="relative blog-banner w-full h-full">
-              {/* <Image decoding="async" width={500} height={300} src={bannerImage.src} alt="banner" className="w-full h-full object-cover" />
-                    <br/> */}
               <Image
                 src={bannerImage}
                 alt="banner"

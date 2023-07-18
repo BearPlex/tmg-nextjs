@@ -48,7 +48,6 @@ const Contact = () => {
                 <br />
                 <a
                   href="mailto:info@themediagale.com"
-                  // href="https://twitter.com/bearplexdigital"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"

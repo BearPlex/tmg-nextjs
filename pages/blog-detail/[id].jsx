@@ -30,7 +30,6 @@ function BlogDetail() {
         `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs/${id}?populate=*`
       )
       .then((res) => {
-        console.log("Res", res.data.data);
         setWork(res.data.data);
       })
       .catch((err) => {

@@ -25,9 +25,7 @@ function section1(props) {
                 ? convertStringForImage(work?.featured_title)
                 : "Women-Rise"
             }.png`}
-            // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}
           />
-          {/* <Image decoding="async" width={500} height={300} width={500} height={500} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}/> */}
         </div>
         <h1 className="text-center text-[50px] font-bold gradientText">
           {work?.featured_title}{" "}

@@ -11,8 +11,6 @@ const GradientButton = ({ route, text, bgBlack = false }) => {
       onClick={() => router.push(`${route}`)}
     >
       <span
-        // className="  "
-
         className={`w-full h-full mx-0 my-0 paragraph ${
           bgBlack ? "gradient-span-bgBlack" : "gradient-span"
         }`}

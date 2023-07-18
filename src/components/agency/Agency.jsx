@@ -2,7 +2,6 @@
 /* eslint-disable */
 
 import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
-// import { agency } from '../../helpers/Helpers';
 import agencyImage1 from "../../assets/images/agency-create-1.png";
 import agencyImage2 from "../../assets/images/agency-analyze-2.png";
 import agencyImage3 from "../../assets/images/agency-commuication-3.png";
@@ -15,10 +14,8 @@ let offsetTop = 0;
 let imageContainerEnd = 0;
 if (typeof window !== "undefined" && window.innerWidth < 768) {
   mobileScreen = true;
-  console.log("Window width is less than 768");
 } else {
   mobileScreen = false;
-  console.log("Window width is 768 or greater");
 }
 const Agency = () => {
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
@@ -62,7 +59,6 @@ const Agency = () => {
   useEffect(() => {
     let divElement = document.querySelector(".imageContainer");
     imageContainerEnd = getDivEnd(divElement) - 480;
-    console.log("The div ends at scroll position: " + imageContainerEnd);
     window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
       window.removeEventListener("scroll", debouncedHandleScroll);

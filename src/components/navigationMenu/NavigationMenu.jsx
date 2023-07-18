@@ -1,7 +1,6 @@
 /* eslint-disable */
 import { useState, useEffect } from "react";
 import Link from "next/link";
-// import kotaTransparentImage from '../../assets/svg/Kota_logo_white-1.svg';
 import kotaTransparentImage from "../../assets/images/tmg-logo.png";
 import { SVG_COLORS, twitterSvg } from "../../helpers/Helpers";
 import { facebookSvg } from "../../helpers/Helpers";
@@ -28,22 +27,11 @@ const NavigationMenu = () => {
   let mediumscreen = false;
   if (window.innerWidth < 1024) {
     mediumscreen = true;
-    console.log("Window width is less than 1024");
   } else {
     mediumscreen = false;
-    console.log("Window width is 1024 or greater");
   }
 
-  useEffect(() => {
-    // if (isHovered) {
-    //   timer = setTimeout(() => {
-    //     setIsHovered(false);
-    //   }, 1500);
-    // }
-    // return () => {
-    //   clearTimeout(timer);
-    // };
-  }, [isHovered]);
+  useEffect(() => {}, [isHovered]);
 
   return (
     <div className="background-gradient z-10 w-full h-full fixed top-0 ">
