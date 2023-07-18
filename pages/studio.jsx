@@ -29,6 +29,7 @@ import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
+import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
 
 const Studio = () => {
   const videoRef = useRef(null);
@@ -74,45 +75,10 @@ const Studio = () => {
             </div>
           </HeroContainer>
           <section className="mt-9 md:mt-20">
-            <div className="relative h-[200px] md:h-[581px] ">
-              <video
-                ref={videoRef}
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                loop={true}
-                controls={false}
-              >
-                <source src="/video/hp.mp4" type="video/mp4" />
-                <source src="/video/hp.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <button
-                  className=" play-button border-4 border-white  rounded-full w-[140px] h-[140px] flex items-center justify-center"
-                  onClick={handlePlayPause}
-                >
-                  <svg
-                    className={isPlaying ? "hidden" : "w-10 h-10"}
-                    viewBox="0 0 26.139 37.458"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      id="Path_184"
-                      data-name="Path 184"
-                      d="M-1422.6-322.813v37.458l26.139-19.137Z"
-                      transform="translate(1422.604 322.813)"
-                      fill="#fff"
-                    ></path>
-                  </svg>
-                  <svg
-                    className={isPlaying ? "w-10 h-10" : "hidden"}
-                    viewBox="0 0 40 40"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Your Pause SVG icon paths go here */}
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <TextWithVideoContainer
+            cssClass="md:w-[100%]"
+            childcssClass="hidden"
+            />           
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
@@ -131,7 +97,7 @@ const Studio = () => {
           </div>
 
           <section className="mt-9 md:mt-20 pagePaddingX">
-            <div className="masonry-gallery columns-2 md:columns-3 lg:columns-3">
+            <div className="masonry-gallery columns-1 md:columns-2 lg:columns-3">
               <div className="mb-4">
                 <Image
                   width={500}

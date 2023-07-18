@@ -5,6 +5,8 @@ const TextWithVideoContainer = ({
   videoAlt = "services",
   id = "service",
   children,
+  cssClass,
+  childcssClass,
 }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -48,7 +50,7 @@ const TextWithVideoContainer = ({
           id={id}
           className="flex flex-col md:flex-row componentsMainGap py-0  3xl:py-28 lg:py-14 "
         >
-          <div className="w-full md:w-[50%] h-auto">
+          <div className={`w-full  h-auto ${cssClass}`} >
             <div className="relative h-auto md:h-auto">
               <video
                 id="videoElement"
@@ -80,7 +82,7 @@ const TextWithVideoContainer = ({
               )}
             </div>
           </div>
-          <div className="w-full md:w-[50%]">{children}</div>
+          <div className={`w-full ${childcssClass}`}>{children}</div>
         </section>
       </section>
     </div>

@@ -65,8 +65,9 @@ const Header = () => {
                 : "py-6 3xl:py-11 lg:py-11 3xl:px-0"
             }`}
           >
+            
             <nav className="flex items-center justify-between">
-              <Link href="/">
+              <Link href="/" className="">
                 <Image
                   width={500}
                   height={300}
