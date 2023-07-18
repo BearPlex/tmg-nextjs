@@ -73,6 +73,8 @@ const Articles = () => {
                   <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">
                       <Image
+                        width={500}
+                        height={100}
                         className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
                         alt="Product Image"
                         src={`https://beta.themediagale.com/public_images/blogs/${
@@ -104,11 +106,11 @@ const Articles = () => {
           </Swiper>
         </div>
 
-        <div className="flex flex-row pt-7 md:pt-20 ">
+        <div className="flex flex-row pt-7 md:pt-16 ">
           <div className="mr-6 swiper-button-prev-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
-              height={300}
+              height={100}
               src={arrowBack.src}
               alt="team member"
               className="w-[22px]"
@@ -117,7 +119,7 @@ const Articles = () => {
           <div className="swiper-button-next-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
-              height={300}
+              height={100}
               src={arrowNext.src}
               alt="team member"
               className="w-[22px]"
