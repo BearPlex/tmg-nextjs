@@ -4,7 +4,6 @@ import kotaLogo from "../src/assets/images/tmg-logo.png";
 import { work } from "../src/helpers/Helpers";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Expertise from "../src/components/expertise/Expertise";
 import ExpertiseSmall from "../src/components/expertise/ExpertiseSmall";
 import Footer from "../src/components/footer/Footer";
 import { useEffect, useState } from "react";
@@ -33,7 +32,12 @@ const Work = () => {
         "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
       )
       .then((res) => {
-        setWork(res.data.data);
+        const sortedWork = [...res.data.data].sort((a, b) => {
+          const dateA = new Date(a.attributes.publishedAt);
+          const dateB = new Date(b.attributes.publishedAt);
+          return dateA - dateB;
+        });
+        setWork(sortedWork);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -62,7 +66,7 @@ const Work = () => {
           ) : (
             work.map((item, index) => (
               <TabPanel key={index}>
-                {<Expertise backGroundBlack={false} list={work} />}
+                {<ExpertiseSmall backGroundBlack={false} list={work} />}
               </TabPanel>
             ))
           )}

@@ -28,28 +28,44 @@ const WorkCard = (props) => {
           />
         </div>
 
-        <div className="group-hover:text-pink-400 group-hover:transition-all">
+        <div>
           <span
             key={index}
-            className="inline-block mt-3 md:mt-7 text-pink-400 uppercase paragraph font-medium mr-4 tracking-widest"
+            className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
+              backGroundBlack
+                ? " group-hover:whiteDescriptionText "
+                : "group-hover:blackDescriptionText "
+            } `}
           >
             {marketing_tag ? "Marketing" : ""}
           </span>
           <span
             key={index}
-            className="inline-block mt-3 md:mt-7 text-pink-400 uppercase paragraph font-medium mr-4 tracking-widest"
+            className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
+              backGroundBlack
+                ? " group-hover:whiteDescriptionText "
+                : "group-hover:blackDescriptionText "
+            } `}
           >
             {branding_tag ? "Branding" : ""}
           </span>
           <span
             key={index}
-            className="inline-block mt-3 md:mt-7 text-pink-400 uppercase paragraph font-medium mr-4 tracking-widest"
+            className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
+              backGroundBlack
+                ? " group-hover:whiteDescriptionText "
+                : "group-hover:blackDescriptionText "
+            } `}
           >
             {website_tag ? "Website" : ""}
           </span>
           <span
             key={index}
-            className="inline-block mt-3 md:mt-7 text-pink-400 uppercase paragraph font-medium mr-4 tracking-widest"
+            className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
+              backGroundBlack
+                ? " group-hover:whiteDescriptionText "
+                : "group-hover:blackDescriptionText "
+            } `}
           >
             {seo_tag ? "SEO" : ""}
           </span>

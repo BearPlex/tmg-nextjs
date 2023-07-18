@@ -25,7 +25,12 @@ function WorkDetail() {
         `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`
       )
       .then((res) => {
-        setWork(res.data.data);
+        const sortedWork = [...res.data.data].sort((a, b) => {
+          const dateA = new Date(a.attributes.publishedAt);
+          const dateB = new Date(b.attributes.publishedAt);
+          return dateA - dateB;
+        });
+        setWork(sortedWork);
       })
       .catch((err) => {
         console.log("Error", err);
