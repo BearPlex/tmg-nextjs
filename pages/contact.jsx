@@ -102,7 +102,7 @@ const Contact = () => {
 
             <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex mt-10 md:mt-0">
               <div className="w-[30%] md:w-[30%]  block md:hidden">
-                <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
+                <h4 className=" headingBlack heading mb-2 md:mb-6 uppercase">
                   new york
                 </h4>
                 <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">
@@ -114,7 +114,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="w-[30%] md:w-[30%] ">
-                <h4 className=" headingBlack mb-2 md:mb-6  uppercase">
+                <h4 className=" headingBlack heading mb-2 md:mb-6 uppercase">
                   Lahore
                 </h4>
                 <p className="leading-tight blackDescriptionText smallHeading captilize whitespace-pre-wrap">

@@ -28,7 +28,7 @@ const WorkCard = (props) => {
           />
         </div>
 
-        <div>
+        <div className="relative group group-hover:ml-2 duration-300 transition-in-out">
           <span
             key={index}
             className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
@@ -61,11 +61,11 @@ const WorkCard = (props) => {
           </span>
           <span
             key={index}
-            className={`inline-block mt-3 md:mt-7 text-pink-400  uppercase paragraph font-medium mr-4 tracking-widest  ${
+            className={`inline-block mt-3 md:mt-7 text-pink-400 uppercase paragraph font-medium mr-4 tracking-widest ${
               backGroundBlack
                 ? " group-hover:whiteDescriptionText "
-                : "group-hover:blackDescriptionText "
-            } `}
+                : " group-hover:blackDescriptionText "
+            }`}
           >
             {seo_tag ? "SEO" : ""}
           </span>

@@ -32,7 +32,7 @@ const Card = (props) => {
               <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
             </div>
           </div>
-          <div className="pt-8">
+          <div className="pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
             <p className="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
               {blog.attributes.sub_title}
             </p>
