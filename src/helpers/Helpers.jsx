@@ -427,3 +427,11 @@ export const linkedinSvg = () => (
 //     </g>
 //   </svg>
 // );
+export const convertStringForImage = (str) => {
+  if (!str) {
+    return ""; // Return an empty string if the input is undefined or null
+  }
+  const hyphenAdded = str.replace(/ /g, "-");
+  const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
+  return questionMarkRemoved;
+};

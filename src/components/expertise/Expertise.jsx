@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
 import MainCard from "./cardData";
+import { convertStringForImage } from "../../helpers/Helpers";
 const Expertise = (props) => {
   const { list, cssClass } = props;
   const router = useRouter();
@@ -12,9 +13,6 @@ const Expertise = (props) => {
   };
   console.log(list);
   console.log("list");
-  function convertString(str) {
-    return str.replace(/ /g, "-");
-  }
   return (
     <>
       <div className="w-full">
@@ -50,7 +48,7 @@ const Expertise = (props) => {
                       {console.log("ITEM", item)}
                       <MainCard
                         // imageSrc="https://beta.themediagale.com/public_images/women-rise1.png"
-                        imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                        imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                           item.attributes?.featured_title
                         )}.png`}
                         featured_title={item.attributes?.featured_title}
@@ -85,7 +83,7 @@ const Expertise = (props) => {
                     >
                       {console.log("ITEM", item)}
                       <MainCard
-                        imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                        imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                           item.attributes?.featured_title
                         )}.png`}
                         featured_title={item.attributes?.featured_title}
@@ -134,7 +132,7 @@ const Expertise = (props) => {
                   >
                     {console.log("ITEM", item)}
                     <MainCard
-                      imageSrc={`https://beta.themediagale.com/public_images/${convertString(
+                      imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                         item.attributes?.featured_title
                       )}.png`}
                       featured_title={item.attributes?.featured_title}

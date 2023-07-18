@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
+import { convertStringForImage } from "../../helpers/Helpers";
+
 const Card = (props) => {
   const { item } = props;
   const router = useRouter();
@@ -7,78 +9,45 @@ const Card = (props) => {
     router.push(`/blog-detail/${id}`);
     // console.log("Id", id);
   };
-  function convertString(str) {
-    if (!str) {
-      return ""; // Return an empty string if the input is undefined or null
-    }
-    const hyphenAdded = str.replace(/ /g, "-");
-    // console.log("");
-    const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
-    console.log(questionMarkRemoved);
-    console.log("questionMarkRemoved");
-    console.log("");
-    return questionMarkRemoved;
-  }
   return (
-    <div className="mt-1 md:mt-5 lg:mt-16 flex justify-start flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
+    <div className="w-full mt-1 md:mt-5 lg:mt-16 flex justify-between flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
       {item.map((blog, index) => (
         <div
-          key={index}
-          className="card-wrapper border border-black h-full group overflow-hidden hover:bg-pink-400"
           onClick={() => pushWork(blog.id)}
+          key={blog.id}
+          className="w-full lg:w-[32%] md:w-[48%] h-full mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
         >
-          <div className="h-min overflow-hidden">
-            {/* {console.log(
-              "Bloggggs",
-              blog.attributes.blog_featured_image.data.attributes.url
-            )} */}
-            {/* <Image decoding="async" width={500} height={300} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" /> */}
-            <Image
-              width={0}
-              height={0}
-              src={`https://beta.themediagale.com/public_images/blogs/${
-                blog?.attributes.title && blog?.attributes.title !== ""
-                  ? convertString(blog?.attributes.title)
-                  : "Women-Rise"
-              }.png`}
-              // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog?.attributes.blog_featured_image.data.attributes.url}`}
-              alt="blog images"
-              className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110  w-[364px] h-[240px]"
-            />
+          <div className="relative h-full">
+            <div className="h-full w-full overflow-hidden">
+              <Image
+                className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
+                alt="Product Image"
+                src={`https://beta.themediagale.com/public_images/blogs/${
+                  blog?.attributes.title && blog?.attributes.title !== ""
+                    ? convertStringForImage(blog?.attributes.title)
+                    : "Women-Rise"
+                }.png`}
+                layout="responsive"
+                objectFit="cover"
+              />
+              <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
+            </div>
           </div>
-          <div className="p-9">
-            {
-              // blog?.map((tag, index) =>
-              //     <span className="pink-color mr-3 font-medium text-base uppercase inline-block group-hover:transition-in-out group-hover:delay-150 group-hover:text-black">{tag}</span>
-              // )
-            }
-            <span className="pink-color font-medium text-base uppercase inline-block  group-hover:text-black">
-              {blog.attributes.title}
-            </span>
-            <div className="largeParagraph mt-4 group-hover:text-white">
+          <div className="pt-8">
+            <p className="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
               {blog.attributes.sub_title}
+            </p>
+            <p className="text-4xl font-bold dark:text-black group-hover:text-white pt-2">
+              {blog.attributes.title}
+            </p>
+            <div>
+              <p className="pb-4 pt-3 font-normal text-normal text-gray-500 group-hover:text-white">
+                {blog.attributes.blog_content}
+              </p>
             </div>
           </div>
         </div>
       ))}
-
-      {/*
-{
-                    item.map((blog, index) =>
-                        <div className="border border-black h-full group overflow-hidden hover:bg-pink-400 transition-in-out hover:transition-in-out hover:delay-300">
-                            <div className="h-min overflow-hidden">
-
-                                <Image decoding="async" width={500} height={300} src={`https://tmg-strapi-w6pu3.ondigitalocean.app${blog.attributes.blog_featured_image.data.attributes.url}`} alt="blog images" className="transition-in-out object-cover overflow-hidden scale-100 group-hover:scale-110 group-hover:transition-in-out group-hover:duration-500" />
-                            </div>
-                            <div className="p-9">
-                                {
-                                     <span className="pink-color font-medium text-base uppercase inline-block group-hover:transition-all group-hover:delay-150 group-hover:text-black">{blog.attributes.title}</span>
-                                }
-
-                                <HeadingThree title={blog.attributes.sub_title} cssClass="largeParagraph mt-4 group-hover:text-white transition-all" />
-                            </div>
-                        </div>)
-                } */}
     </div>
   );
 };

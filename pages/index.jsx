@@ -66,8 +66,6 @@ export default function Home() {
         console.log("Error", err);
       });
   }, []);
-  console.log(work);
-  console.log("work");
   return (
     <React.Fragment>
       <PageWrapper>

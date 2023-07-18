@@ -32,7 +32,6 @@ function BlogDetail() {
     id,
   };
   const [work, setWork] = useState([]);
-  // {console.log("Work",blogsData)}
   useEffect(() => {
     axios
       .get(

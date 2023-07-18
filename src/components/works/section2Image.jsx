@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "../Image/Image";
+import { convertStringForImage } from "../../helpers/Helpers";
 function section2Image(props) {
   const { imageGallery1, work } = props;
-  function convertString(str) {
-    return str.replace(/ /g, "-");
-  }
   // console.log("Imageeeee", work?.gallery1.data[0].attributes.url);
   return (
     <>

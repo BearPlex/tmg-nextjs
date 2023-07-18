@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Image from "../Image/Image";
 import React from "react";
-
+import { convertStringForImage } from "../../helpers/Helpers";
 function section1(props) {
   const {
     featureImage,
@@ -12,11 +12,6 @@ function section1(props) {
     workDescription2nd,
     work,
   } = props;
-  function convertString(str) {
-    return str.replace(/ /g, "-");
-  }
-  // console.log("Work",work)
-  // console.log("Work Image",work?.gallery1.data)
   return (
     <>
       <section className="max-w-7xl mx-auto">
@@ -27,7 +22,7 @@ function section1(props) {
             alt="attributes"
             src={`https://beta.themediagale.com/public_images/${
               work?.featured_title && work?.featured_title !== ""
-                ? convertString(work?.featured_title)
+                ? convertStringForImage(work?.featured_title)
                 : "Women-Rise"
             }.png`}
             // src={`https://tmg-strapi-w6pu3.ondigitalocean.app${work?.featured_image.data.attributes.url}`}
