@@ -44,7 +44,6 @@ const Agency = () => {
   }
 
   const debouncedHandleScroll = debounce(handleScrollY, 0);
-  //default
 
   const getTransformValue = (scrollY, imageContainerEnd) => {
     if (scrollY > 0 && scrollY <= imageContainerEnd) {
@@ -59,23 +58,21 @@ const Agency = () => {
     if (scrollY > 0 && scrollY <= imageContainerEnd) {
       if (!fixedImagePostion) {
         setFixedImagePostion(true);
-        console.log("TRUE scrollY <= imageContainerEnd");
       }
     } else if (scrollY > 0 && scrollY > imageContainerEnd) {
       if (fixedImagePostion) {
         setFixedImagePostion(false);
-        console.log("FALSE scrollY > imageContainerEnd");
       }
     } else {
       if (fixedImagePostion) {
         setFixedImagePostion(false);
-        console.log("FALSE else LAST");
       }
     }
   }, [scrollY]);
 
   useEffect(() => {
     let divElement = document.querySelector(".imageContainer");
+    // current IMAGE HEIGHT 480
     imageContainerEnd = getDivEnd(divElement) - 480;
 
     window.addEventListener("scroll", debouncedHandleScroll);
@@ -195,6 +192,7 @@ const Agency = () => {
                       // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
                     }
                   : {
+                      transition: "transform 0.03s linear",
                       // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.1, 1)",
                     }
               }
@@ -208,7 +206,7 @@ const Agency = () => {
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
-                className="relative transition-transform w-full"
+                className="relative transition-transform w-full h-full"
               />
             </div>
           </div>
