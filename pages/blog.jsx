@@ -58,7 +58,7 @@ const Blog = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX pt-7 md:pt-20 w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <div className="pagePaddingX pt-10 md:pt-20 w-full 3xl:max-w-7xl 3xl:mx-auto">
             <a href="" className="relative blog-banner w-full h-full">
               <Image
                 src={bannerImage}
@@ -70,7 +70,7 @@ const Blog = () => {
               />
 
               <div className="absolute left-10 bottom-10">
-                <span className="gradientText inline-block smallText uppercase tracking-[1.5px] font-circular-medium pb-1 md:pb-5">
+                <span className="gradientText inline-block smallText uppercase tracking-[1.5px]   pb-1 md:pb-5">
                   Featured News
                 </span>
                 <h3 className="text-white max-w-[55%] font-sofia-bold largeHeading leading-none">
@@ -80,7 +80,7 @@ const Blog = () => {
             </a>
           </div>
           <div className="mt-4">
-            <Tabs className="py-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper w-full">
+            <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper w-full">
               {/* <TabList>
                              <Tab>All</Tab>
                              <Tab>Expertise</Tab>

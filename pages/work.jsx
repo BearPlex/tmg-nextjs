@@ -60,7 +60,7 @@ const Work = () => {
             </p>
           </div>
         </HeroContainer>
-        <Tabs className="pagePaddingX tabs-wrapper pt-20">
+        <Tabs className="pagePaddingX tabs-wrapper md:pt-20">
           {work == "" ? (
             <ExpertiseStatic backGroundBlack={false} list={workStatic} />
           ) : (

@@ -24,7 +24,7 @@ const CardStatic = (props) => {
             />
           </div>
           <div className="p-9">
-            <span className="pink-color font-medium text-base uppercase inline-block group-hover:text-black">
+            <span className="pink-color font-medium text-base uppercase inline-block group-hover:blackHeading">
               {blog.title}
             </span>
             <div className="largeParagraph mt-4 group-hover:text-white">

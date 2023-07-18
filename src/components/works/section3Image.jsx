@@ -17,7 +17,7 @@ function section3Image(props) {
             </sup>
             {work?.gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="text-text-medium font-medium   blackDescriptionText pl-5">
             {work?.gallery_second_description}
           </p>
         </div>
@@ -35,7 +35,7 @@ function section3Image(props) {
             alt="attributes"
             key={data?.attributes.id}
             src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
-            className="pb-12"
+            className="pb-10"
           /> */}
         </div>
       </div>

@@ -13,7 +13,7 @@ const WorkCard = (props) => {
     backGroundBlack,
   } = props;
   return (
-    <div className="mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
+    <div className="mt-11  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
       <div className="group">
         <div className="relative group work-images overflow-hidden">
           <Image

@@ -76,9 +76,9 @@ const Studio = () => {
           </HeroContainer>
           <section className="mt-9 md:mt-20">
             <TextWithVideoContainer
-            cssClass="md:w-[100%]"
-            childcssClass="hidden"
-            />           
+              cssClass="md:w-[100%]"
+              childcssClass="hidden"
+            />
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
@@ -154,18 +154,19 @@ const Studio = () => {
               </div>
             </div>
           </section>
-          <section className="pt-14 md:pt-36 h-auto bgBlack mt-60 pb-10">
-            <div className="flex items-center pagePaddingX justify-between componentsMainGap pb-7 md:pb-20">
-              <div className="w-[50%]">
+          <section className="pt-14 md:pt-36 h-auto bgBlack md:mt-60 ">
+            <div className="flex flex-col md:flex-row items-center pagePaddingX justify-between componentsMainGap pb-10 md:pb-20">
+              <div className="w-full md:w-[50%]">
                 <Image
                   width={500}
                   height={300}
                   src={mainImage.src}
-                  className="w-96"
                   alt="work images"
+                  layout="responsive"
+                  objectFit="cover"
                 />
               </div>
-              <div className="w-[50%] flex justify-center">
+              <div className="w-full md:w-[50%] flex justify-center">
                 <div className="largeHeading whiteHeadingText leading-relaxed">
                   Our team is 360 degree working in every aspect of digital
                   marketing.
@@ -173,7 +174,7 @@ const Studio = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-auto items-center">
+            <div className="flex flex-col h-auto">
               <div className="w-full pagePaddingX ">
                 <Swiper
                   slidesPerView={1}
@@ -211,7 +212,8 @@ const Studio = () => {
                             height={300}
                             src={member.src}
                             alt="team member"
-                            className="w-[313px] h-[440px]"
+                            layout="responsive"
+                            objectFit="cover"
                           />
                         </figure>
                       </div>
@@ -220,7 +222,7 @@ const Studio = () => {
                 </Swiper>
               </div>
 
-              <div className="flex flex-row items-end w-full pt-7 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
+              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
                 <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
                   <Image
                     width={500}

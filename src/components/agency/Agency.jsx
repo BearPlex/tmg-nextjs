@@ -130,7 +130,7 @@ const Agency = () => {
                 </sup>{" "}
                 Beauty
               </h2>
-              <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
                 We think outside the box and push boundaries to create fresh and
                 original content.
               </p>
@@ -145,7 +145,7 @@ const Agency = () => {
                 </sup>{" "}
                 Analyze
               </h2>
-              <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
                 Analyzing the market and consumer data helps us provide
                 customized solutions to everyday business challenges.
               </p>
@@ -160,7 +160,7 @@ const Agency = () => {
                 </sup>{" "}
                 Communicate
               </h2>
-              <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
                 Through personal and digital mediums, we provide fast and clear
                 communication to keep information flow open.{" "}
               </p>
@@ -175,7 +175,7 @@ const Agency = () => {
                 </sup>{" "}
                 Execute
               </h2>
-              <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
                 We execute our ideas into actions through strategies to make
                 every business a winning story.
               </p>
@@ -183,7 +183,7 @@ const Agency = () => {
           </div>
           <div className="w-1/2 flex imageContainer" ref={imageContainerRef}>
             <div
-              className={`h-fit ${fixedImagePostion ? "fixed top-[30%]" : ""}`}
+              className={`h-fit  ${fixedImagePostion ? "fixed top-[30%]" : ""}`}
               style={
                 !fixedImagePostion
                   ? {
@@ -192,6 +192,7 @@ const Agency = () => {
                       // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
                     }
                   : {
+                      // top: getTransformValue(scrollY, imageContainerEnd),
                       transition: "transform 0.03s linear",
                       // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.1, 1)",
                     }
@@ -214,7 +215,7 @@ const Agency = () => {
       </div>
 
       <div className="w-full block md:hidden">
-        <div className="flex w-full flex-col justify-center mb-16">
+        <div className="flex w-full flex-col justify-center mb-8 md:mb-16">
           <div className="w-full mb-4">
             <Image
               width={500}
@@ -229,26 +230,23 @@ const Agency = () => {
           </div>
           <h2
             id="beautyRef"
-            className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative pl-6"
           >
-            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
-              01
-            </sup>{" "}
             Beauty
           </h2>
-          <p className="paragraph mb-15 font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
             We think outside the box and push boundaries to create fresh and
             original content.
           </p>
         </div>
 
-        <div className="flex w-full flex-col justify-center mb-16">
+        <div className="flex w-full flex-col justify-center mb-8 md:mb-16">
           <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
               id="imageRef"
-              src={agencyImage2}
+              src={agencyImage2.src}
               alt="agency images"
               loading="lazy"
               layout="responsive"
@@ -257,21 +255,18 @@ const Agency = () => {
           </div>
           <h2
             id="thoughRef"
-            className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative pl-6"
           >
-            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
-              02
-            </sup>{" "}
             Analyze
           </h2>
-          <p className="paragraph mb-15 font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
             Analyzing the market and consumer data helps us provide customized
             solutions to everyday business challenges.
           </p>
         </div>
 
-        <div className="flex w-full flex-col justify-center mb-16">
-          <div className="w-full mb-4">
+        <div className="flex w-full flex-col justify-center mb-8 md:mb-16">
+          <div className="w-full">
             <Image
               width={500}
               height={300}
@@ -284,19 +279,16 @@ const Agency = () => {
             />
           </div>
           <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
-            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
-              03
-            </sup>{" "}
             Communicate
           </h2>
-          <p className="paragraph mb-15 font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
             Through personal and digital mediums, we provide fast and clear
             communication to keep information flow open.{" "}
           </p>
         </div>
 
-        <div className="flex w-full flex-col justify-center mb-16">
-          <div className="w-full mb-4">
+        <div className="flex w-full flex-col justify-center mb-5 md:mb-16">
+          <div className="w-full">
             <Image
               width={500}
               height={300}
@@ -309,12 +301,9 @@ const Agency = () => {
             />
           </div>
           <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
-            <sup className=" text-pink-400 font-medium inline-block absolute top-3 left-0">
-              04
-            </sup>{" "}
             Execute
           </h2>
-          <p className="paragraph mb-15 font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
             We execute our ideas into actions through strategies to make every
             business a winning story.
           </p>

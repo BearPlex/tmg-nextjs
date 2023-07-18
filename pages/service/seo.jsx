@@ -67,7 +67,7 @@ function BrandManagement() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-10 md:py-20 w-full">
+            <div className="bgWhite py-6 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -97,7 +97,7 @@ function BrandManagement() {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-12 sm:py-28 md:py-40">
+            <div className="background-gradient py-10 sm:py-28 md:py-40">
               <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -249,14 +249,14 @@ function BrandManagement() {
                   <ExpertiseSmall
                     backGroundBlack={false}
                     list={work}
-                    cssClass="text-black"
+                    cssClass="blackHeading"
                   />
                 </TabPanel>
               ))}
             </Tabs>
           </section>
 
-          <section className="background-gradient pb-16 md:pb-0">
+          <section className="background-gradient pb-10 md:pb-0">
             <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
               <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 ">
                 <div className="w-full md:w-1/2">
@@ -269,7 +269,7 @@ function BrandManagement() {
                   />
                 </div>
                 <div className="pagePaddingX w-full md:w-1/2  ">
-                  <h1 className="mt-2 md:mt-10 largeHeading whiteHeadingText">
+                  <h1 className="mt-5 md:mt-10 largeHeading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">

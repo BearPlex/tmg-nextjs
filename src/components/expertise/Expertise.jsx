@@ -94,7 +94,7 @@ const Expertise = (props) => {
         <div className="w-full block md:hidden">
           <div className="grid grid-cols-1 componentsMainGap">
             <div className="w-full ">
-              <div className="w-full lg:w-full md:mr-auto mb-10 my-5">
+              <div className="w-full lg:w-full md:mr-auto md:mb-10 my-3 md:my-5">
                 <Image
                   width={0}
                   height={0}
@@ -106,7 +106,7 @@ const Expertise = (props) => {
               </div>
             </div>
             <div className="w-full items-center">
-              <div className="w-full mb-20 flex justify-center items-center">
+              <div className="w-full mb-10 md:mb-20 flex justify-center items-center">
                 <p className="largeHeadingWhite">
                   Collaborating with trending brands
                 </p>
@@ -115,7 +115,7 @@ const Expertise = (props) => {
                 return (
                   <div
                     key={index}
-                    className="w-full mb-24 lg:mb-4 md:mb-20 cursor-pointer"
+                    className="w-full mb-10 md:mb-16 lg:mb-20 cursor-pointer"
                     onClick={() => pushWork(item.id)}
                   >
                     <WorkCard

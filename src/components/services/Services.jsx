@@ -110,7 +110,7 @@ const Services = () => {
                 className="w-[100%] py-4"
               />
 
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
+              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
                 Delivering effective digital strategies & eye-catching online
                 marketing campaigns that earn attention, spark emotion &
                 increase conversions.
@@ -131,7 +131,7 @@ const Services = () => {
                 className="w-[100%] py-4"
               />
 
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
+              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
                 Campaigns that earn attention, spark emotion & increase
                 conversions.
               </p>
@@ -151,7 +151,7 @@ const Services = () => {
                 className="w-[100%] py-4"
               />
 
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
+              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
                 Eye-catching online marketing campaigns that earn attention,
                 spark emotion & increase conversions.
               </p>

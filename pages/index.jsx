@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="py-9 pt-12 md:py-20 md:pt-16">
+          <div className="py-9 pt-12 md:py-0 md:pt-16">
             <div className="w-full flex items-center justify-center pb-7 md:pb-16">
               <h2 className="md:w-4/5 w-full text-center heading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
@@ -110,7 +110,7 @@ export default function Home() {
           <Services />
 
           <section className="bgBlack h-auto  ">
-            <div className="pagePaddingX pb-12 pt-14 md:pb-28 md:pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+            <div className="pagePaddingX pb-10 pt-14 md:pb-28 md:pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
               <div className="isolate componentsMainGap grid grid-cols-1 auto-rows-auto">
                 {work && work.length && (
                   <Expertise

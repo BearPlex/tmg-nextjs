@@ -279,7 +279,7 @@
     @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0;
   }
   .componentsMainGap {
-    @apply gap-10 lg:gap-14 3xl:gap-20;
+    @apply gap-6 lg:gap-14 3xl:gap-20;
   }
   /* MARGIN PADDING END */
 }

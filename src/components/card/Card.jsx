@@ -14,7 +14,7 @@ const Card = (props) => {
         <div
           onClick={() => pushWork(blog.id)}
           key={blog.id}
-          className="w-full lg:w-[32%] md:w-[48%] h-full mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
+          className="w-full lg:w-[32%] md:w-[48%] h-full mt-11  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
         >
           <div className="relative h-full">
             <div className="h-full w-full overflow-hidden">
@@ -32,11 +32,11 @@ const Card = (props) => {
               <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
             </div>
           </div>
-          <div className="pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-            <p className="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
+          <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
+            <p className="text-base  text-[#EE2760] text-[#EE2760] group-hover:blackHeading">
               {blog.attributes.sub_title}
             </p>
-            <p className="text-4xl font-bold dark:text-black group-hover:text-white pt-2">
+            <p className="text-4xl font-bold  blackHeading group-hover:text-white pt-2">
               {blog.attributes.title}
             </p>
             <div>

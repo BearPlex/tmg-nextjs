@@ -53,7 +53,7 @@ function BlogDetail() {
           <br />
           <p>{blogsStatic[0].sub_title}</p>
 
-          <div className="w-full  mb-9 md:mb-20"></div>
+          <div className="w-full  mb-6 md:mb-20"></div>
           <div className="w-full my-4 md:my-10 xl:-ml-3">
             <Image
               width={500}

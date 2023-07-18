@@ -31,8 +31,8 @@ const Articles = () => {
   };
 
   return (
-    <div className="h-auto pagePaddingX pb-7 md:pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-      <div className="mb-9 md:mb-20 headingBlack">Latest Articles</div>
+    <div className="h-auto pagePaddingX pb-10 md:pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+      <div className="mb-6 md:mb-20 headingBlack">Latest Articles</div>
       <div className="">
         <div className="h-auto w-full">
           <Swiper
@@ -68,7 +68,7 @@ const Articles = () => {
                 <div
                   onClick={() => pushWork(article.id)}
                   key={article.id}
-                  className="mx-auto mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
+                  className="mx-auto mt-11  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
                 >
                   <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">
@@ -87,11 +87,11 @@ const Articles = () => {
                       <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>
                   </div>
-                  <div className="pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-                    <p className="text-base dark:text-[#EE2760] text-[#EE2760] group-hover:text-black">
+                  <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
+                    <p className="text-base  text-[#EE2760] text-[#EE2760] group-hover:blackHeading">
                       {article.attributes.sub_title}
                     </p>
-                    <p className="text-4xl font-bold dark:text-black group-hover:text-white pt-2">
+                    <p className="text-4xl font-bold blackHeading group-hover:text-white pt-2">
                       {article.attributes.title}
                     </p>
                     <div>
@@ -107,22 +107,22 @@ const Articles = () => {
         </div>
 
         <div className="flex flex-row pt-7 md:pt-16 ">
-          <div className="mr-6 swiper-button-prev-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
+          <div className="mr-6 swiper-button-prev-custom h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
               height={100}
               src={arrowBack.src}
               alt="team member"
-              className="w-[22px]"
+              className="w-[18px] md:w-[22px]"
             />
           </div>
-          <div className="swiper-button-next-custom h-[70px] w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
+          <div className="swiper-button-next-custom h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
             <Image
               width={500}
               height={100}
               src={arrowNext.src}
               alt="team member"
-              className="w-[22px]"
+              className="w-[18px] md:w-[22px]"
             />
           </div>
         </div>

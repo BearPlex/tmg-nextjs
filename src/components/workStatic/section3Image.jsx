@@ -16,7 +16,7 @@ function section3Image(props) {
             </sup>
             {work[0].gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+          <p className="text-text-medium font-medium   blackDescriptionText pl-5">
             {work[0].gallery_second_description}
           </p>
         </div>
@@ -29,7 +29,7 @@ function section3Image(props) {
             height={300}
             alt="galary"
             src={work[0]?.gallery2.src}
-            className="pb-12"
+            className="pb-10"
           />
         </div>
       </div>

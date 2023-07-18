@@ -81,9 +81,9 @@ const Expertise = (props) => {
           </div>
         </div>
         <div className="w-full block md:hidden">
-          <div className="grid grid-cols-1 componentsMainGap">
+          <div className="grid grid-cols-1 pt-10">
             <div className="w-full ">
-              <div className="w-full mt-16 xl2Heading lg:w-full md:mr-auto text-[#EE2760]">
+              <div className="w-full mt-0 md:mt-16 xl2Heading lg:w-full md:mr-auto text-[#EE2760]">
                 Featured Projects
               </div>
             </div>
@@ -93,7 +93,7 @@ const Expertise = (props) => {
                   return (
                     <div
                       key={index}
-                      className="w-full mb-24 lg:mb-4 md:mb-20 cursor-pointer"
+                      className="w-full mb-10 md:mb-16 lg:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
                       <WorkCard

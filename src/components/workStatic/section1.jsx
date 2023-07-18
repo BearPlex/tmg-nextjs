@@ -35,7 +35,7 @@ function section1(props) {
               </sup>{" "}
               {work[0].gallery_first_title}
             </h2>
-            <p className="text-text-medium font-medium font-circular-medium blackDescriptionText pl-5">
+            <p className="text-text-medium font-medium   blackDescriptionText pl-5">
               {work[0].gallery_first_description}
             </p>
           </div>

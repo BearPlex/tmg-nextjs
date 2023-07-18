@@ -10,7 +10,7 @@ function section4card() {
             <h1 className="text-[50px] text-white font-bold mx-10 lg:mx-40 my:5 md:my-12">
               Results
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mx-10 lg:mx-40 justify-center items-center pb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mx-10 lg:mx-40 justify-center items-center pb-10">
               <div className=" rounded-lg shadow-lg bg-[#D17172]  py-5 md:py-14 px-4">
                 <Image
                   width={500}
@@ -59,7 +59,7 @@ function section4card() {
                 </div>
               </div>
             </div>
-            <h1 className="mx-10 lg:mx-40 py-12 text-white">
+            <h1 className="mx-10 lg:mx-40 py-10 text-white">
               Data collected every 3 months.
             </h1>
           </div>

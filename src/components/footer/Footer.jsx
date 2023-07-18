@@ -20,16 +20,16 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="relative bg-[#1B1B1B] pt-7 md:pt-20 pb-0 md:pb-12">
+      <footer className="relative bg-[#1B1B1B] pt-7 md:pt-20 pb-0 md:pb-10">
         <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
           {/* This part is done */}
 
           <div className="pagePaddingX text-white 3xl:px-0 3xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
-              <div className=" w-full md:w-6/12 md:text-right text-left order-3">
+              <div className=" w-full md:w-6/12 md:text-right text-left order-3 mb-6 md:mb-0">
                 <h4 className="paragraph font-bold text-[#EE2760]">
                   Follow
-                  <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end  contact-wrapper">
+                  <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
                     <a
                       href="https://twitter.com/bearplexdigital"
                       target="_blank"
