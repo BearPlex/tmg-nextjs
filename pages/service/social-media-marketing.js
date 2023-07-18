@@ -42,7 +42,11 @@ function Socialmediamarketing() {
     <>
       <PageWrapper>
         <section className="w-full">
-          <TextWithVideoContainer>
+          <TextWithVideoContainer
+           cssClass="md:w-[50%]"
+           childcssClass="md:w-[50%]"
+          >
+            
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  heading blackDescriptionText  ">
                 Performance Driven{" "}
