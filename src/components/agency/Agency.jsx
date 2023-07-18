@@ -1,7 +1,6 @@
-"use client";
 /* eslint-disable */
-
-import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
+"use client";
+import React, { useEffect, useState, useRef } from "react";
 import agencyImage1 from "../../assets/images/agency-create-1.png";
 import agencyImage2 from "../../assets/images/agency-analyze-2.png";
 import agencyImage3 from "../../assets/images/agency-commuication-3.png";
@@ -22,8 +21,8 @@ const Agency = () => {
   const agencyRef = useRef();
   const imageContainerRef = useRef(null);
   const [scrollY, setScrollY] = useState(150);
-  const [showScroll, setShowScroll] = useState(false);
-  useLayoutEffect(() => {
+  const [fixedImagePostion, setFixedImagePostion] = useState(false);
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -45,6 +44,7 @@ const Agency = () => {
   }
 
   const debouncedHandleScroll = debounce(handleScrollY, 0);
+  //default
 
   const getTransformValue = (scrollY, imageContainerEnd) => {
     if (scrollY > 0 && scrollY <= imageContainerEnd) {
@@ -55,10 +55,29 @@ const Agency = () => {
     }
     return `translateY(0px)`;
   };
+  useEffect(() => {
+    if (scrollY > 0 && scrollY <= imageContainerEnd) {
+      if (!fixedImagePostion) {
+        setFixedImagePostion(true);
+        console.log("TRUE scrollY <= imageContainerEnd");
+      }
+    } else if (scrollY > 0 && scrollY > imageContainerEnd) {
+      if (fixedImagePostion) {
+        setFixedImagePostion(false);
+        console.log("FALSE scrollY > imageContainerEnd");
+      }
+    } else {
+      if (fixedImagePostion) {
+        setFixedImagePostion(false);
+        console.log("FALSE else LAST");
+      }
+    }
+  }, [scrollY]);
 
   useEffect(() => {
     let divElement = document.querySelector(".imageContainer");
     imageContainerEnd = getDivEnd(divElement) - 480;
+
     window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
       window.removeEventListener("scroll", debouncedHandleScroll);
@@ -167,12 +186,18 @@ const Agency = () => {
           </div>
           <div className="w-1/2 flex imageContainer" ref={imageContainerRef}>
             <div
-              className={`h-fit ${showScroll ? "image-scroll-container" : ""}`}
-              style={{
-                transform: getTransformValue(scrollY, imageContainerEnd),
-                transition: "transform 0.03s linear",
-                // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
-              }}
+              className={`h-fit ${fixedImagePostion ? "fixed top-[30%]" : ""}`}
+              style={
+                !fixedImagePostion
+                  ? {
+                      transform: getTransformValue(scrollY, imageContainerEnd),
+                      transition: "transform 0.03s linear",
+                      // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
+                    }
+                  : {
+                      // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.1, 1)",
+                    }
+              }
             >
               <Image
                 width={500}
@@ -183,7 +208,7 @@ const Agency = () => {
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
-                className="relative transition-transform"
+                className="relative transition-transform w-full"
               />
             </div>
           </div>

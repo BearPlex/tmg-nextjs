@@ -251,7 +251,7 @@ function Socialmediamarketing() {
           </section>
 
           <section>
-            <Tabs className="  tabs-wrapper">
+            <Tabs className=" pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index}>
                   {" "}
