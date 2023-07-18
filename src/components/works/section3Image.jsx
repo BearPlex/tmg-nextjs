@@ -1,12 +1,9 @@
 import React from "react";
 import approch from "../../assets/images/approch1.png";
 import Image from "../Image/Image";
+import { convertStringForImage } from "../../helpers/Helpers";
 function section3Image(props) {
   const { work } = props;
-  function convertString(str) {
-    return str.replace(/ /g, "-");
-  }
-  // console.log("Approch Data", work);
   return (
     <>
       <div className="flex  flex-col items-center justify-center">

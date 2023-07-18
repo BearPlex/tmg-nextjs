@@ -6,6 +6,7 @@ import { work } from "../src/helpers/Helpers";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Expertise from "../src/components/expertise/Expertise";
+import ExpertiseSmall from "../src/components/expertise/ExpertiseSmall";
 import Footer from "../src/components/footer/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -85,7 +86,7 @@ const Work = () => {
             </p>
           </div>
         </HeroContainer>
-        <Tabs className="pagePaddingX tabs-wrapper bgBlack pt-20">
+        <Tabs className="pagePaddingX tabs-wrapper pt-20">
           <TabList>
             {
               // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
@@ -93,10 +94,12 @@ const Work = () => {
             }
           </TabList>
           {work == "" ? (
-            <ExpertiseStatic list={workStatic} />
+            <ExpertiseStatic backGroundBlack={false} list={workStatic} />
           ) : (
             work.map((item, index) => (
-              <TabPanel key={index}>{<Expertise list={work} />}</TabPanel>
+              <TabPanel key={index}>
+                {<Expertise backGroundBlack={false} list={work} />}
+              </TabPanel>
             ))
           )}
         </Tabs>

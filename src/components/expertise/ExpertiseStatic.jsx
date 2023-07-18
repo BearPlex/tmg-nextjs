@@ -8,8 +8,8 @@ const ExpertiseStatic = (props) => {
   const router = useRouter();
 
   const pushWork = (id) => {
-    router.push(`/work-detail-static/1`);
-    // console.log("Id",id)
+    // router.push(`/work-detail-static/1`);
+    console.log("Id", id);
   };
   // console.log("Expertise Static Called");
   useEffect(() => {

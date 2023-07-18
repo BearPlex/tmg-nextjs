@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../Image/Image";
-const MainCard = (props) => {
+const WorkCard = (props) => {
   const {
     imageSrc,
     featured_title,
@@ -10,14 +10,16 @@ const MainCard = (props) => {
     marketing_tag,
     seo_tag,
     index,
+    backGroundBlack,
   } = props;
   return (
-    <div className="mt-11 dark:white group  hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300">
+    <div className="mt-11 dark:white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
       <div className="group">
-        <div className="relative group work-images">
+        <div className="relative group work-images overflow-hidden">
           <Image
             width={500}
             height={300}
+            className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
             src={imageSrc}
             alt="work images"
             loading="lazy"
@@ -25,6 +27,7 @@ const MainCard = (props) => {
             objectFit="cover"
           />
         </div>
+
         <div className="group-hover:text-pink-400 group-hover:transition-all">
           <span
             key={index}
@@ -50,14 +53,24 @@ const MainCard = (props) => {
           >
             {seo_tag ? "SEO" : ""}
           </span>
-          <div className="my-2 lg:my-4 md:my-4 headingWhite leading-tight">
+          <div
+            className={`my-2 lg:my-4 md:my-4 ${
+              backGroundBlack ? " headingWhite " : " headingBlack "
+            } leading-tight`}
+          >
             {featured_title}
           </div>
-          <p className={`paragraphWhite w-full`}>{gallery_first_description}</p>
+          <p
+            className={`w-full ${
+              backGroundBlack ? " paragraphWhite " : " paragraphBlack "
+            }`}
+          >
+            {gallery_first_description}
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default MainCard;
+export default WorkCard;

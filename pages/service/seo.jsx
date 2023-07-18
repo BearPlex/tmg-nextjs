@@ -11,7 +11,6 @@ import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
@@ -19,6 +18,7 @@ import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
+import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 function BrandManagement() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -29,7 +29,16 @@ function BrandManagement() {
       )
       .then((res) => {
         console.log("Res", res.data.data);
-        setWork(res.data.data);
+        const sortedWork = [...res.data.data].sort((a, b) => {
+          const dateA = new Date(a.attributes.publishedAt);
+          const dateB = new Date(b.attributes.publishedAt);
+          return dateA - dateB;
+        });
+
+        // Update the state with the sorted array
+        setWork(sortedWork);
+
+        // setWork(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -62,33 +71,6 @@ function BrandManagement() {
               </div>
             </div>
           </TextWithVideoContainer>
-          {/* <section>
-            <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 componentsMainGap pagePaddingX pt-12 items-center">
-                <div className="w-full text-center mt:4 md:mt-10 xl:mt-10">
-                  <Image
-                    width={500}
-                    height={300}
-                    src={brand1.src}
-                    alt="kota canvas"
-                    loading="lazy"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                  <Image
-                    width={500}
-                    height={300}
-                    src={brand2.src}
-                    alt="kota canvas"
-                    loading="lazy"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </section> */}
-
           <section>
             <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
@@ -265,18 +247,15 @@ function BrandManagement() {
             </div>
           </section>
 
-          <section>
-            <Tabs className="  tabs-wrapper">
-              <TabList>
-                {
-                  // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
-                  // work.map((item, index) => <Tab key={index}>Hello</Tab>)
-                }
-              </TabList>
+          <section className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+            <Tabs className="tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index}>
-                  {" "}
-                  <Expertise list={work} cssClass="text-black" />
+                  <ExpertiseSmall
+                    backGroundBlack={false}
+                    list={work}
+                    cssClass="text-black"
+                  />
                 </TabPanel>
               ))}
             </Tabs>
@@ -310,17 +289,6 @@ function BrandManagement() {
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
-                  {/* <div className="flex items-center gap-x-6 mt-3 md:mt-8">
-                    <button className="relative w-48  h-14 mt-12 rounded-full overflow-hidden">
-                  <div className="">
-                    <div className="absolute inset-0  border-2 border-pink-500 border-t-0 border-l-0 rounded-full py-3"></div>
-                    <div className="absolute inset-0 border-2  border-orange-500 border-b-0 border-r-0 rounded-full"></div>
-                    <p className="absolute inset-0 flex items-center justify-center font-medium text-orange-500 ">
-                      Learn <span className="text-pink-500"> More</span>
-                    </p>
-                  </div>
-                </button> 
-                  </div> */}
                 </div>
               </div>
             </div>

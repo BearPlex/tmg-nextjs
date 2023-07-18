@@ -11,7 +11,6 @@ import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Expertise from "../../src/components/expertise/Expertise";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
@@ -19,6 +18,7 @@ import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
+import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 function Socialmediamarketing() {
   const [work, setWork] = useState([]);
   // {console.log("Work",blogsData)}
@@ -28,8 +28,17 @@ function Socialmediamarketing() {
         "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
       )
       .then((res) => {
-        // console.log("Res", res.data.data);
-        setWork(res.data.data);
+        console.log("Res", res.data.data);
+        const sortedWork = [...res.data.data].sort((a, b) => {
+          const dateA = new Date(a.attributes.publishedAt);
+          const dateB = new Date(b.attributes.publishedAt);
+          return dateA - dateB;
+        });
+
+        // Update the state with the sorted array
+        setWork(sortedWork);
+
+        // setWork(res.data.data);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -133,36 +142,39 @@ function Socialmediamarketing() {
                     </dd>
                   </div>
                   <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
-                <div>
-                <div className="largeHeadingWhite">Experience</div>
+                    <div>
+                      <div className="largeHeadingWhite">Experience</div>
                       <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
                         We’ve worked with brands from a huge range of industries
                         to showcase their differences through strategic design
                         that positions them perfectly. 
                       </div>
-                </div>
-                     
-<div>
-<div className=" largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">Strategy</div>
+                    </div>
+
+                    <div>
+                      <div className=" largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">
+                        Strategy
+                      </div>
                       <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
                         With our certified team, we ensure to create effective
                         cost saving strategies that help campaigns perform well
                         so you can focus more on counting sales.
                       </div>
-</div>
-                  
-                
-                  <div>
-                  <div className="largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">Creativity</div>
+                    </div>
+
+                    <div>
+                      <div className="largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">
+                        Creativity
+                      </div>
                       <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
                         Guided by your vision and values, our branding services
                         will bring your business to life with artistic flair and
                         attention to detail, to create a brand that is unique
                         and memorable.
                       </div>
-                  </div>
-                   <div>
-                   <div className="largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">
+                    </div>
+                    <div>
+                      <div className="largeHeadingWhite mt-6 sm:mt-6 lg:mt-0 md:mt-0">
                         Sustainability
                       </div>
                       <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
@@ -170,9 +182,7 @@ function Socialmediamarketing() {
                         consumer mind stays on top with consistent artistic
                         content to increase engagement and recall value.
                       </div>
-                   </div>
-                     
-                   
+                    </div>
                   </div>
                 </dl>
               </div>
@@ -275,16 +285,14 @@ function Socialmediamarketing() {
 
           <section>
             <Tabs className="  tabs-wrapper">
-              <TabList>
-                {
-                  // work.filter(x => x.hasOwnProperty('tabTitle')).map((item, index) => <Tab key={index}>{item.tabTitle}</Tab>)
-                  // work.map((item, index) => <Tab key={index}>Hello</Tab>)
-                }
-              </TabList>
               {work.map((item, index) => (
                 <TabPanel key={index}>
                   {" "}
-                  <Expertise list={work} cssClass="text-black" />
+                  <ExpertiseSmall
+                    backgroundBlack={false}
+                    list={work}
+                    cssClass="text-black"
+                  />
                 </TabPanel>
               ))}
             </Tabs>

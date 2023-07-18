@@ -51,16 +51,6 @@ const Services = () => {
                 activeNavClass="is-active"
               >
                 <div className="flex flex-wrap gap-y-8 justify-between w-full md:max-w-[85%] mt-5">
-                  {/* <Link href="/webDevelopment">
-                <a className="w-1/2 font-medium paragraphBlack inline-block">
-                  Learn More
-                </a>
-              </Link>
-              <Link href="/webDevelopment">
-                <a className="w-1/2 font-medium paragraphBlack inline-block">
-                  Learn More
-                </a>
-              </Link> */}
                   <a
                     href="#web_design"
                     className="w-1/2 font-medium paragraphBlack inline-block"
@@ -102,26 +92,6 @@ const Services = () => {
                     />
                     Website Design & Dev.
                   </a>
-                  {/* <a
-                  href="#e_commerce"
-                  className="w-1/2 smallText font-medium paragraphBlack inline-block"
-                >
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className="text-pink-400 smallText mr-3"
-                  />
-                  E-Commerce
-                </a>
-                <a
-                  href="#wordpress"
-                  className="w-1/2 smallText font-medium paragraphBlack inline-block"
-                >
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className="text-pink-400 smallText mr-3"
-                  />
-                  WordPress
-                </a> */}
                 </div>
               </ScrollspyNav>
               <div className="mt-4 md:mt-10">
@@ -209,52 +179,3 @@ const Services = () => {
   );
 };
 export default Services;
-
-//   {/* <section
-//   id="e_commerce"
-//   className="flex items-center justify-between py-10 md:py-28"
-// >
-//   <div className="w-[40%]">
-//     <HeadingThree cssClass="text-[5rem]" title="E-Commerce" />
-//     <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
-//       Reinvent your online store with an expert team who know what it
-//       takes to turn clicks into customers and keep them coming back.
-//     </p>
-//     <Link href="/webDevelopment">
-//       <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-//         Learn More
-//       </a>
-//     </Link>
-//   </div>
-//   <div className="w-[55%]">
-//     <Image decoding="async" width={500} height={300}
-//       src={eCommerceImage.src}
-//       alt="services images"
-//       className="w-full h-100 shadow-2xl rounded-lg"
-//     />
-//   </div>
-// </section> */}
-//   {/* <section
-//   id="wordpress"
-//   className="flex items-center justify-between py-10 md:py-28"
-// >
-//   <div className="w-[40%]">
-//     <HeadingThree cssClass="text-[5rem]" title="WordPress" />
-//     <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraph text-black">
-//       Our approach decouples WordPress CMS from the front end
-//       technology to tighten security and improve overall speed.
-//     </p>
-//     <Link href="/webDevelopment">
-//       <a className="text-pink-400 font-medium text-md py-4 px-8 rounded-full  uppercase hover:bg-pink-400 border-2 border-pink-400 hover:text-white hover:transition-all">
-//         Learn More
-//       </a>
-//     </Link>
-//   </div>
-//   <div className="w-[55%]">
-//     <Image decoding="async" width={500} height={300}
-//       src={wordPressImage.src}
-//       alt="services images"
-//       className="w-full h-100 shadow-2xl rounded-lg"
-//     />
-//   </div>
-// </section> */}

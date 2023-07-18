@@ -2,10 +2,10 @@
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
-import MainCard from "./cardData";
+import WorkCard from "../card/WorkCard";
 import { convertStringForImage } from "../../helpers/Helpers";
 const Expertise = (props) => {
-  const { list, cssClass } = props;
+  const { list, cssClass, backGroundBlack } = props;
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/work-detail/${id}`);
@@ -46,7 +46,8 @@ const Expertise = (props) => {
                       onClick={() => pushWork(item.id)}
                     >
                       {console.log("ITEM", item)}
-                      <MainCard
+                      <WorkCard
+                        backGroundBlack={backGroundBlack}
                         // imageSrc="https://beta.themediagale.com/public_images/women-rise1.png"
                         imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                           item.attributes?.featured_title
@@ -82,7 +83,8 @@ const Expertise = (props) => {
                       onClick={() => pushWork(item.id)}
                     >
                       {console.log("ITEM", item)}
-                      <MainCard
+                      <WorkCard
+                        backGroundBlack={backGroundBlack}
                         imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                           item.attributes?.featured_title
                         )}.png`}
@@ -106,7 +108,7 @@ const Expertise = (props) => {
         <div className="w-full block md:hidden">
           <div className="grid grid-cols-1 componentsMainGap">
             <div className="w-full ">
-              <div className="md:w-4/5 w-[70%] lg:w-full md:mr-auto mb-10">
+              <div className="w-full lg:w-full md:mr-auto mb-10 my-5">
                 <Image
                   width={0}
                   height={0}
@@ -131,7 +133,8 @@ const Expertise = (props) => {
                     onClick={() => pushWork(item.id)}
                   >
                     {console.log("ITEM", item)}
-                    <MainCard
+                    <WorkCard
+                      backGroundBlack={backGroundBlack}
                       imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                         item.attributes?.featured_title
                       )}.png`}

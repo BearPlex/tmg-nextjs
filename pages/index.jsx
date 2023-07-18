@@ -133,7 +133,11 @@ export default function Home() {
             <div className="pagePaddingX pb-12 pt-14 md:pb-28 md:pt-36 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
               <div className="isolate componentsMainGap grid grid-cols-1 auto-rows-auto">
                 {work && work.length && (
-                  <Expertise list={work} cssClass="text-white" />
+                  <Expertise
+                    backGroundBlack={true}
+                    list={work}
+                    cssClass="text-white"
+                  />
                 )}
               </div>
               <div className="flex w-full items-center mt-5 justify-center">
