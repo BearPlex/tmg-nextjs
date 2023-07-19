@@ -75,6 +75,9 @@
   .fontBold {
     font-family: "Sofia Pro Bold", sans-serif;
   }
+  .xl2Bold {
+    font-weight: 900 !important;
+  }
   .blackHeadingText {
     color: #1b1b1b !important;
   }
@@ -402,7 +405,28 @@ body {
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
 }
-
+.gradientHoverBlack {
+  background: #1b1b1b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 1s ease-in-out;
+}
+.gradientHoverBlack:hover {
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientHoverWhite {
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 1s ease-in-out;
+}
+.gradientHoverWhite:hover {
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* .gradient-button-bgBlack:hover {
   color: white;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);

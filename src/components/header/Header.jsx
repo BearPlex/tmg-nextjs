@@ -65,7 +65,6 @@ const Header = () => {
                 : "py-6 3xl:py-11 lg:py-11 3xl:px-0"
             }`}
           >
-            
             <nav className="flex items-center justify-between">
               <Link href="/" className="">
                 <Image
@@ -83,21 +82,19 @@ const Header = () => {
               <ul className="pl-0 flex item-center gap-[4.5rem] justify-end py-3">
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
-                    <Link
-                      className="paragraph font-sofia-extrabold font-extrabold blackHeadingText no-underline mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
-                      href="/work"
-                    >
-                      Work
+                    <Link href="/work">
+                      <div className="blackHeadingText gradientHoverBlack xl2Bold text20">
+                        Work
+                      </div>
                     </Link>
                   </li>
                 </div>
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
-                    <Link
-                      className="paragraph font-sofia-extrabold blackHeadingText no-underline font-extrabold mix-blend-multiply hover:text-orange_theme-400 hover:transition-all"
-                      href="/contact"
-                    >
-                      Contact
+                    <Link href="/contact">
+                      <div className="blackHeadingText gradientHoverBlack xl2Bold text20 ">
+                        Contact
+                      </div>
                     </Link>
                   </li>
                 </div>

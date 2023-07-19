@@ -71,7 +71,9 @@ const Footer = () => {
                   href="mailto:Info@themediagale.com"
                   className="mb-2 whiteHeadingText smallHeading font-bold"
                 >
-                  Info@themediagale.com
+                  <span className="gradientHoverWhite xl2Bold smallHeading  pb-0">
+                    Info@themediagale.com
+                  </span>
                 </a>
               </div>
 
@@ -80,51 +82,45 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <Link
-                          href="/"
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                        >
-                          Home
+                        <Link href="/" className=" md:pb-3">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Home
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
-                          href="/work"
-                        >
-                          Work
+                        <Link className=" md:pb-3 " href="/work">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Work
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
-                          href="/services"
-                        >
-                          Services
+                        <Link className=" md:pb-3 " href="/services">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Services
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
-                          href="/blog"
-                        >
-                          Blog
+                        <Link className=" md:pb-3 " href="/blog">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Blog
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                          href="/contact"
-                        >
-                          Contact
+                        <Link className=" md:pb-3" href="/contact">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Contact
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3 "
-                          href="/privacy-policy"
-                        >
-                          Privacy Policy
+                        <Link className=" md:pb-3 " href="/privacy-policy">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Privacy Policy
+                          </span>
                         </Link>
                       </li>
                     </ul>
@@ -132,24 +128,22 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <span className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3">
+                        <span className="gradientHoverWhite xl2Bold text20   md:pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                          href="/"
-                        >
-                          New York
+                        <Link className=" md:pb-3" href="/">
+                          <span className="gradientHoverWhite xl2Bold text20 ">
+                            New York
+                          </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link
-                          className="block uppercase text-blueGray-500 paragraph font-extrabold pb-0 md:pb-3"
-                          href="/"
-                        >
-                          Lahore
+                        <Link className=" md:pb-3" href="/">
+                          <span className="gradientHoverWhite xl2Bold text20 ">
+                            Lahore
+                          </span>
                         </Link>
                       </li>
                     </ul>
