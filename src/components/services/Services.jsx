@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import designDevelopmentImage from "../../assets/images/design-development.png";
 import digitalImage from "../../assets/images/digital.png";
 import marketingImage from "../../assets/images/marketing.png";
@@ -8,6 +8,8 @@ import Image from "../Image/Image";
 
 const Services = () => {
   const [type, setType] = useState("design");
+  const [imgSrc, setImgSrc] = useState(designDevelopmentImage.src);
+  const [opacity, setOpacity] = useState(1);
 
   const servicesData = {
     design: {
@@ -27,20 +29,14 @@ const Services = () => {
     },
   };
 
-  const handleGetImages = () => {
-    switch (type) {
-      case "design":
-        return servicesData.design;
-
-      case "branding":
-        return servicesData.branding;
-      case "digital":
-        return servicesData.digital;
-      default:
-        return servicesData.design;
-    }
+  const changeImage = (newType) => {
+    setOpacity(0); // Start to fade out
+    setTimeout(() => {
+      setType(newType); // After 500ms, change the type
+      setImgSrc(servicesData[newType].img); // set the new image source
+      setOpacity(1); // Start to fade in
+    }, 500);
   };
-
   return (
     <section className="background-gradient">
       <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
@@ -51,43 +47,43 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <div className="flex flex-col justify-center">
               <h3
-                className={`mb-2 md:mb-6    cursor-pointer transition-opacity xl2Heading ${
+                className={`mb-2 md:mb-6    cursor-pointer duration-300 transition-in-out xl2Heading ${
                   type === "design" ? " whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
-                onClick={() => setType("design")}
+                onClick={() => changeImage("design")}
               >
                 Web Design & Development
               </h3>
               <h3
-                className={`mb-2 md:mb-6   font-bold cursor-pointer transition-opacity xl2Heading ${
+                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out xl2Heading ${
                   type === "branding" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
-                onClick={() => setType("branding")}
+                onClick={() => changeImage("branding")}
               >
                 Branding
               </h3>
               <h3
-                className={`mb-2 md:mb-6  font-bold cursor-pointer transition-opacity xl2Heading ${
+                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out xl2Heading ${
                   type === "digital" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
-                onClick={() => setType("digital")}
+                onClick={() => changeImage("digital")}
               >
                 Digital Marketing
               </h3>
             </div>
-            <div>
+            <div style={{ transition: "ease-in-out 0.3s", opacity }}>
               <div>
                 <Image
                   width={100}
                   height={300}
-                  src={`${handleGetImages().img}`}
+                  src={imgSrc}
                   alt="images"
                   loading="lazy"
-                  className="w-[100%]"
+                  className="w-[100%] "
                 />
               </div>
               <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
-                {handleGetImages().detail}
+                {servicesData[type].detail}
               </p>
             </div>
           </div>
