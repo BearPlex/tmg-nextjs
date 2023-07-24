@@ -623,7 +623,7 @@ footer svg:hover path {
   font-family: "Sofia Pro Bold";
 }
 .file-upload::before {
-  content: "Upload File [pdf, jpeg, docx, ppt";
+  content: "Upload File pdf, jpeg, docx, ppt";
   position: absolute;
   top: -6px;
   color: #4a5568;

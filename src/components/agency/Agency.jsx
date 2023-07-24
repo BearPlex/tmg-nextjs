@@ -125,9 +125,9 @@ const Agency = () => {
                 id="beautyRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
                   01
-                </sup>{" "}
+                </sup>{" "} */}
                 Beauty
               </h2>
               <p className="text-text-medium font-medium   blackDescriptionText pl-5">
@@ -140,9 +140,9 @@ const Agency = () => {
                 id="thoughRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
                   02
-                </sup>{" "}
+                </sup>{" "} */}
                 Analyze
               </h2>
               <p className="text-text-medium font-medium   blackDescriptionText pl-5">
@@ -155,9 +155,9 @@ const Agency = () => {
                 id="communicateRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
                   03
-                </sup>{" "}
+                </sup>{" "} */}
                 Communicate
               </h2>
               <p className="text-text-medium font-medium   blackDescriptionText pl-5">
@@ -170,9 +170,9 @@ const Agency = () => {
                 id="executeRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
                   04
-                </sup>{" "}
+                </sup>{" "} */}
                 Execute
               </h2>
               <p className="text-text-medium font-medium   blackDescriptionText pl-5">

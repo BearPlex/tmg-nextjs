@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <section className="background-gradient">
       <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
-        <span className="block mb-4 md:mb-10 uppercase smallText whiteHeadingText ">
+        <span className="block mb-4 md:mb-10 uppercase smallHeading whiteHeadingText ">
           Our Services
         </span>
         <div className="hidden md:block">

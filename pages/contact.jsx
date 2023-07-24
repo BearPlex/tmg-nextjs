@@ -210,7 +210,7 @@ const Contact = () => {
                           className="paragraph leading-none  font-medium blackDescriptionText"
                         >
                           Im happy to receive a seriously cool monthly
-                          newsletter from KOTA.
+                          newsletter from TMG.
                         </label>
                       </li>
                     </ul>
@@ -228,7 +228,7 @@ const Contact = () => {
                           htmlFor="flexRadioDefault20"
                           className="paragraph font-medium blackDescriptionText leading-4"
                         >
-                          I understand that KOTA will securely hold my data in
+                          I understand that TMG will securely hold my data in
                           accordance with their privacy policy.
                         </label>
                       </li>
