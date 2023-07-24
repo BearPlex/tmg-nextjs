@@ -40,7 +40,7 @@ const NavigationMenu = () => {
         <div className="">
           <ul className="relative flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="w-full md:w-1/2 flex md:justify-center pl-7 md:pl-0 mt-[5vh]">
-              <div className="w-full md:w-1/6">
+              <div className="w-full h-auto md:w-1/6">
                 <li
                   className="group mb-3 md:mb-0"
                   onMouseEnter={() => setIsHovered(true)}
@@ -52,8 +52,8 @@ const NavigationMenu = () => {
                     Services
                   </Link>
                 </li>
-                <div className="block md:hidden ml-8">
-                  <ul className="list-disc text-[#FFCBC2] hover:text-white flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
+                <div className="block md:hidden ml-8 h-auto">
+                  <ul className="list-disc text-[#FFCBC2] hover:text-white flex flex-col items-start justify-between">
                     <li>
                       <Link
                         href="/service/social-media-marketing"

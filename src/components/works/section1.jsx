@@ -14,7 +14,7 @@ function section1(props) {
   } = props;
   return (
     <>
-      <section className="max-w-7xl mx-auto">
+      <section className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
         <div className="flex justify-center mt-9 md:mt-20">
           <Image
             width={500}
@@ -27,11 +27,11 @@ function section1(props) {
             }.png`}
           />
         </div>
-        <h1 className="text-center text-[50px] font-bold gradientText">
+        <h1 className="text-center largeHeading font-bold gradientText">
           {work?.featured_title}{" "}
         </h1>
         <div className="flex justify-center">
-          <div className="pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
+          <div className="pb-20 md:pb-40 lg:pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
             <h2
               id="beautyRef"
               className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"

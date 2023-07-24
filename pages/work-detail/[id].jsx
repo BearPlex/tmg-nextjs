@@ -40,7 +40,7 @@ function WorkDetail() {
     <>
       <PageWrapper>
         <section className="">
-          <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+          <div>
             <Section1
               work={work?.attributes}
               title1st="KINIMO"

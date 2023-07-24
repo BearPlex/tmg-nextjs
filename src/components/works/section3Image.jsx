@@ -7,7 +7,7 @@ function section3Image(props) {
   return (
     <>
       <div className="flex  flex-col items-center justify-center">
-        <div className="pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
+        <div className="pb-20 md:pb-40 lg:pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
           <h2
             id="beautyRef"
             className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"

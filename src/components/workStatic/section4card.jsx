@@ -5,9 +5,9 @@ function section4card() {
   return (
     <>
       <section className="background-gradient ">
-        <div className="max-w-7xl mx-auto">
+        <div className="">
           <div className="  py-8 h-auto md:h-auto ">
-            <h1 className="text-[50px] text-white font-bold mx-10 lg:mx-40 my:5 md:my-12">
+            <h1 className="largeHeading text-white font-bold mx-10 lg:mx-40 my-5 md:my-12">
               Results
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mx-10 lg:mx-40 justify-center items-center pb-10">
@@ -20,7 +20,7 @@ function section4card() {
                   className="w-12 object-cover rounded-t-lg relative top-5"
                 />
                 <div className="p-4">
-                  <h2 className="text-[50px] leading-[70px] font-bold mb-2 text-white">
+                  <h2 className="largeHeading leading-[70px] font-bold mb-2 text-white">
                     99.95%
                   </h2>
                   <p className="text-white">Increase in conversions</p>
@@ -36,7 +36,7 @@ function section4card() {
                   className="w-12 object-cover rounded-t-lg relative top-5"
                 />
                 <div className="p-4">
-                  <h2 className="text-[50px] text-white font-bold mb-2">
+                  <h2 className="largeHeading text-white font-bold mb-2">
                     99.95%{" "}
                   </h2>
                   <p className="text-white">Increase in avg. session</p>
@@ -53,7 +53,7 @@ function section4card() {
                   className="w-12 object-cover rounded-t-lg relative top-5"
                 />
                 <div className="p-4">
-                  <h2 className="text-[50px]  font-bold mb-2 text-white">
+                  <h2 className="largeHeading  font-bold mb-2 text-white">
                     99.95%
                   </h2>
                   <p className="text-white">Decrease in Bounce Rate</p>
