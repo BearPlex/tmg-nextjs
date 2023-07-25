@@ -74,7 +74,7 @@ const Agency = () => {
     let divElement = document.querySelector(".imageContainer");
     let imageElement = document.querySelector(".imageWrapper");
     imageHeight = imageRef.current.offsetHeight;
-    imageContainerEnd = getDivEnd(divElement) - imageHeight - 100;
+    imageContainerEnd = getDivEnd(divElement) - imageHeight - 120;
     window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
       window.removeEventListener("scroll", debouncedHandleScroll);
@@ -209,7 +209,7 @@ const Agency = () => {
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
-                  className="transition-transform w-[100%] shadow-xl shadow-black rounded-[45px]"
+                  className="transition-transform w-[100%] imageShadow imageRounded"
                 />
               </div>
             </div>
@@ -229,15 +229,16 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
+              className="imageShadow imageRounded"
             />
           </div>
           <h2
             id="beautyRef"
-            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative"
           >
             Beauty
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText">
             We think outside the box and push boundaries to create fresh and
             original content.
           </p>
@@ -254,22 +255,23 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
+              className="imageShadow imageRounded"
             />
           </div>
           <h2
             id="thoughRef"
-            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative pl-6"
+            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative"
           >
             Analyze
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText">
             Analyzing the market and consumer data helps us provide customized
             solutions to everyday business challenges.
           </p>
         </div>
 
         <div className="flex w-full flex-col justify-center mb-8 md:mb-16">
-          <div className="w-full">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -279,19 +281,20 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
+              className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
+          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative">
             Communicate
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText">
             Through personal and digital mediums, we provide fast and clear
             communication to keep information flow open.{" "}
           </p>
         </div>
 
         <div className="flex w-full flex-col justify-center mb-5 md:mb-16">
-          <div className="w-full">
+          <div className="w-full mb-4">
             <Image
               width={500}
               height={300}
@@ -301,12 +304,13 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
+              className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative pl-6">
+          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative">
             Execute
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText pl-5">
+          <p className="paragraph mb-15 font-medium   blackDescriptionText">
             We execute our ideas into actions through strategies to make every
             business a winning story.
           </p>

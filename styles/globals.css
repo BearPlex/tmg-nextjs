@@ -285,6 +285,14 @@
     @apply gap-6 lg:gap-14 3xl:gap-20;
   }
   /* MARGIN PADDING END */
+  /* IMAGE START */
+  .imageShadow {
+    @apply shadow-lg shadow-black;
+  }
+  .imageRounded {
+    @apply rounded-[25px] sm:rounded-[35px];
+  }
+  /* IMAGE END */
 }
 
 html,
