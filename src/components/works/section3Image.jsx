@@ -4,39 +4,36 @@ import Image from "../Image/Image";
 import { convertStringForImage } from "../../helpers/Helpers";
 function section3Image(props) {
   const { work } = props;
+  console.log(work?.gallery_second_title);
+  console.log("work?.gallery_second_title");
   return (
     <>
-      <div className="flex  flex-col items-center justify-center">
-        <div className="pb-20 md:pb-40 lg:pb-60 max-w-[80%] mt-1 md:mt-5 lg:mt-16">
-          <h2
-            id="beautyRef"
-            className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
-          >
-            {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
-              02
-            </sup> */}
+      <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto w-full flex flex-col">
+        <div className="flex justify-center">
+          <div className="flex justify-center">
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              loading="lazy"
+              layout="responsive"
+              objectFit="cover"
+              src={`https://beta.themediagale.com/public_images/${
+                work?.gallery_second_title && work?.gallery_second_title !== ""
+                  ? convertStringForImage(work?.gallery_second_title)
+                  : "Women-Rise"
+              }.png`}
+              className="pb-10"
+            />
+          </div>
+        </div>
+        <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16">
+          <h2 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6">
             {work?.gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+          <p className="text-text-medium font-medium blackDescriptionText pl-5 whitespace-pre">
             {work?.gallery_second_description}
           </p>
-        </div>
-      </div>
-
-      <div className="flex justify-center">
-        <div className="flex justify-center">
-          {/* {work?.gallery2.data.map((data) => {
-            return (
-              );
-            })} */}
-          {/* <Image
-            width={500}
-            height={300}
-            alt="attributes"
-            key={data?.attributes.id}
-            src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
-            className="pb-10"
-          /> */}
         </div>
       </div>
     </>

@@ -95,7 +95,7 @@ const Blog = () => {
                 </TabPanel>
               ) : (
                 blogs.map((item, index) => (
-                  <TabPanel key={index}>
+                  <TabPanel key={index + 100}>
                     <Card item={blogs} />
                   </TabPanel>
                 ))

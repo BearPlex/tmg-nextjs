@@ -25,15 +25,10 @@ function WorkDetail() {
         `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`
       )
       .then((res) => {
-        const sortedWork = [...res.data.data].sort((a, b) => {
-          const dateA = new Date(a.attributes.publishedAt);
-          const dateB = new Date(b.attributes.publishedAt);
-          return dateA - dateB;
-        });
-        setWork(sortedWork);
+        setWork(res.data.data);
       })
       .catch((err) => {
-        console.log("Error", err);
+        console.log("Error123", err);
       });
   }, []);
   return (
@@ -47,9 +42,9 @@ function WorkDetail() {
               title2nd="COSMETICS"
               workHeading="Execute"
             />
-            <Section2Image work={work?.attributes} />
+            {/* <Section2Image work={work?.attributes} /> */}
             <Section3Image work={work?.attributes} />
-            <Section4card />
+            {/* <Section4card /> */}
           </div>
           <Footer />
         </section>

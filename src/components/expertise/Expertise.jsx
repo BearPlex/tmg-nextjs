@@ -30,7 +30,7 @@ const Expertise = (props) => {
                 return (
                   index % 2 === 0 && (
                     <div
-                      key={index}
+                      key={index + 1400}
                       className="w-full mb-4 md:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
@@ -47,7 +47,7 @@ const Expertise = (props) => {
                         branding_tag={item?.attributes?.branding_tag}
                         marketing_tag={item?.attributes?.marketing_tag}
                         seo_tag={item?.attributes?.seo_tag}
-                        index={index}
+                        index={index + 1500}
                         bfBlack={false}
                       />
                     </div>
@@ -65,7 +65,7 @@ const Expertise = (props) => {
                 return (
                   index % 2 !== 0 && (
                     <div
-                      key={index}
+                      key={index + 1600}
                       className="w-full mb-4 md:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
@@ -82,7 +82,7 @@ const Expertise = (props) => {
                         branding_tag={item?.attributes?.branding_tag}
                         marketing_tag={item?.attributes?.marketing_tag}
                         seo_tag={item?.attributes?.seo_tag}
-                        index={index}
+                        index={index + 1700}
                       />
                     </div>
                   )
@@ -114,7 +114,7 @@ const Expertise = (props) => {
               {list.map((item, index) => {
                 return (
                   <div
-                    key={index}
+                    key={index + 1800}
                     className="w-full mb-10 md:mb-16 lg:mb-20 cursor-pointer"
                     onClick={() => pushWork(item.id)}
                   >
@@ -131,7 +131,7 @@ const Expertise = (props) => {
                       branding_tag={item?.attributes?.branding_tag}
                       marketing_tag={item?.attributes?.marketing_tag}
                       seo_tag={item?.attributes?.seo_tag}
-                      index={index}
+                      index={index + 1900}
                     />
                   </div>
                 );

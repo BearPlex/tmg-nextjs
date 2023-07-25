@@ -64,7 +64,7 @@ const Articles = () => {
             className="swiper"
           >
             {articles.map((article, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index + 700}>
                 <div
                   onClick={() => pushWork(article.id)}
                   key={article.id}

@@ -10,7 +10,7 @@ const CardStatic = (props) => {
     <div className="mt-1 md:mt-5 lg:mt-16 flex justify-start flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
       {item.map((blog, index) => (
         <div
-          key={index}
+          key={index + 800}
           className="card-wrapper border border-black h-full group overflow-hidden hover:bg-pink-400 w-[30%]"
           onClick={() => pushWork(blog.id)}
         >

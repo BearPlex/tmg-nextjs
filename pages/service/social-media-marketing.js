@@ -256,7 +256,7 @@ function Socialmediamarketing() {
           <section>
             <Tabs className=" pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto tabs-wrapper">
               {work.map((item, index) => (
-                <TabPanel key={index}>
+                <TabPanel key={index + 600}>
                   {" "}
                   <ExpertiseSmall
                     backgroundBlack={false}

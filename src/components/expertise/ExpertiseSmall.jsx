@@ -22,7 +22,7 @@ const Expertise = (props) => {
                   return (
                     index === 1 && (
                       <div
-                        key={index}
+                        key={index + 2000}
                         className="w-full mb-4 md:mb-20 cursor-pointer"
                         onClick={() => pushWork(item.id)}
                       >
@@ -40,7 +40,7 @@ const Expertise = (props) => {
                           branding_tag={item?.attributes?.branding_tag}
                           marketing_tag={item?.attributes?.marketing_tag}
                           seo_tag={item?.attributes?.seo_tag}
-                          index={index}
+                          index={index + 2100}
                           bfBlack={false}
                         />
                       </div>
@@ -53,7 +53,7 @@ const Expertise = (props) => {
                   return (
                     index == 0 && (
                       <div
-                        key={index}
+                        key={index + 2200}
                         className="w-full mb-4 md:mb-20 cursor-pointer"
                         onClick={() => pushWork(item.id)}
                       >
@@ -70,7 +70,7 @@ const Expertise = (props) => {
                           branding_tag={item?.attributes?.branding_tag}
                           marketing_tag={item?.attributes?.marketing_tag}
                           seo_tag={item?.attributes?.seo_tag}
-                          index={index}
+                          index={index + 2300}
                         />
                       </div>
                     )
@@ -92,7 +92,7 @@ const Expertise = (props) => {
                 if (index <= 1) {
                   return (
                     <div
-                      key={index}
+                      key={index + 2400}
                       className="w-full mb-10 md:mb-16 lg:mb-20 cursor-pointer"
                       onClick={() => pushWork(item.id)}
                     >
@@ -109,7 +109,7 @@ const Expertise = (props) => {
                         branding_tag={item?.attributes?.branding_tag}
                         marketing_tag={item?.attributes?.marketing_tag}
                         seo_tag={item?.attributes?.seo_tag}
-                        index={index}
+                        index={index + 2500}
                       />
                     </div>
                   );

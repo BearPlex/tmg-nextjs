@@ -246,7 +246,7 @@ function WebDesign() {
           <section className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
             <Tabs className="tabs-wrapper">
               {work.map((item, index) => (
-                <TabPanel key={index}>
+                <TabPanel key={index + 500}>
                   <ExpertiseSmall
                     backGroundBlack={false}
                     list={work}

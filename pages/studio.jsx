@@ -204,7 +204,7 @@ const Studio = () => {
                   className="swiper"
                 >
                   {memberImages.map((member, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index + 200}>
                       <div className="">
                         <figure className="">
                           <Image

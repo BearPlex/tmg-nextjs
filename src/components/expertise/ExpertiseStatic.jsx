@@ -15,7 +15,7 @@ const ExpertiseStatic = (props) => {
         <div className="flex mt-4 md:mt-14 items-center justify-between flex-wrap">
           {list.map((item, index) => (
             <div
-              key={index}
+              key={index + 2600}
               className="w-[100%] my-16 cursor-pointer"
               onClick={() => pushWork(item.id)}
             >

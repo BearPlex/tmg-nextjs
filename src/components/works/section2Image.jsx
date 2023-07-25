@@ -6,20 +6,17 @@ function section2Image(props) {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        {work?.gallery1?.data?.map((data) => {
-          return (
-            <>
-              <div key={data?.attributes?.id}>{data?.attributes?.url}</div>
-              {/* <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`https://tmg-strapi-w6pu3.ondigitalocean.app${data?.attributes.url}`}
-                className="my-4 md:my-10 "
-              /> */}
-            </>
-          );
-        })}
+        <Image
+          width={500}
+          height={300}
+          alt="attributes"
+          src={`https://beta.themediagale.com/public_images/${
+            work?.gallery_second_title && work?.gallery_second_title !== ""
+              ? convertStringForImage(work?.gallery_second_title)
+              : "Women-Rise"
+          }.png`}
+          className="pb-10"
+        />
       </div>
     </>
   );

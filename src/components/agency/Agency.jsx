@@ -25,11 +25,6 @@ const Agency = () => {
   const agencyRef = useRef();
   const imageContainerRef = useRef(null);
   const imageRef = useRef(null);
-  console.log("");
-  console.log("agency");
-  console.log(scrollY);
-  console.log("scrollY");
-  console.log("");
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {

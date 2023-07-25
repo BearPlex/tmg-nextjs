@@ -10,7 +10,7 @@ const Clients = () => {
       <div className="pt-7 md:pt-20 flex item-center flex-wrap">
         {clients.map((item, index) => (
           <div
-            key={index}
+            key={index + 1300}
             className="w-1/2 md:w-1/3 lg:w-1/5 p-2 md:p-4 inline-flex justify-center"
           >
             <Image
