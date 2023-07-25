@@ -1,16 +1,17 @@
 /* eslint-disable */
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import agencyImage1 from "../../assets/images/agency-create-1.png";
-import agencyImage2 from "../../assets/images/agency-analyze-2.png";
-import agencyImage3 from "../../assets/images/agency-commuication-3.png";
-import agencyImage4 from "../../assets/images/agency-execute-4.png";
+import agencyImage1 from "../../assets/images/agency-create.png";
+import agencyImage2 from "../../assets/images/agency-analyze.png";
+import agencyImage3 from "../../assets/images/agency-commuication.png";
+import agencyImage4 from "../../assets/images/agency-execute.png";
 import debounce from "lodash/debounce";
 import Image from "../Image/Image";
 
 let mobileScreen = false;
 let offsetTop = 0;
 let imageContainerEnd = 0;
+let imageHeight = 0;
 if (typeof window !== "undefined" && window.innerWidth < 768) {
   mobileScreen = true;
 } else {
@@ -18,10 +19,12 @@ if (typeof window !== "undefined" && window.innerWidth < 768) {
 }
 const Agency = () => {
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
+  const [scrollY, setScrollY] = useState(100);
+  const [fixedImagePostion, setFixedImagePostion] = useState(false);
+  const [windowHeight, setWindowHeight] = useState(0);
   const agencyRef = useRef();
   const imageContainerRef = useRef(null);
-  const [scrollY, setScrollY] = useState(150);
-  const [fixedImagePostion, setFixedImagePostion] = useState(false);
+  const imageRef = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -37,14 +40,12 @@ const Agency = () => {
 
     setScrollY(window.scrollY + scrollY - offsetTop);
   };
+  const debouncedHandleScroll = debounce(handleScrollY, 0);
   function getDivEnd(element) {
     let offsetTop = element.offsetTop;
     let offsetHeight = element.offsetHeight;
     return offsetTop + offsetHeight;
   }
-
-  const debouncedHandleScroll = debounce(handleScrollY, 0);
-
   const getTransformValue = (scrollY, imageContainerEnd) => {
     if (scrollY > 0 && scrollY <= imageContainerEnd) {
       return `translateY(${scrollY}px)`;
@@ -69,12 +70,11 @@ const Agency = () => {
       }
     }
   }, [scrollY]);
-
   useEffect(() => {
     let divElement = document.querySelector(".imageContainer");
-    // current IMAGE HEIGHT 480
-    imageContainerEnd = getDivEnd(divElement) - 480;
-
+    let imageElement = document.querySelector(".imageWrapper");
+    imageHeight = imageRef.current.offsetHeight;
+    imageContainerEnd = getDivEnd(divElement) - imageHeight - 100;
     window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
       window.removeEventListener("scroll", debouncedHandleScroll);
@@ -86,9 +86,7 @@ const Agency = () => {
     const communicateRef = document?.getElementById("communicateRef");
     const executeRef = document?.getElementById("executeRef");
     let newImageSrc = agencyImage1.src;
-
     const beautyRect = beautyRef?.getBoundingClientRect();
-
     if (
       beautyRef?.getBoundingClientRect().top < 0 &&
       thoughRef?.getBoundingClientRect().top > 0
@@ -107,7 +105,6 @@ const Agency = () => {
     } else if (executeRef?.getBoundingClientRect().top < 0) {
       newImageSrc = agencyImage4.src;
     }
-
     if (newImageSrc !== imageSrc) {
       setImageSrc(newImageSrc);
     }
@@ -183,7 +180,11 @@ const Agency = () => {
           </div>
           <div className="w-1/2 flex imageContainer" ref={imageContainerRef}>
             <div
-              className={`h-fit  ${fixedImagePostion ? "fixed top-[30%]" : ""}`}
+              className={`h-fit  ${
+                fixedImagePostion
+                  ? "image-scroll-wrapper image-scroll-width"
+                  : "image-scroll-width"
+              }`}
               style={
                 !fixedImagePostion
                   ? {
@@ -198,17 +199,19 @@ const Agency = () => {
                     }
               }
             >
-              <Image
-                width={500}
-                height={300}
-                id="imageRef"
-                src={imageSrc}
-                alt="agency images"
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-                className="relative transition-transform w-full h-full"
-              />
+              <div className="imageWrapper" ref={imageRef}>
+                <Image
+                  width={500}
+                  height={300}
+                  id="imageRef"
+                  src={imageSrc}
+                  alt="agency images"
+                  loading="lazy"
+                  layout="responsive"
+                  // objectFit="cover"
+                  className="transition-transform w-[100%]"
+                />
+              </div>
             </div>
           </div>
         </div>

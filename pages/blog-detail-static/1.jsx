@@ -3,14 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../../src/components/header/Header";
 import Section1 from "../../src/components/works/section1";
-import ScreenShot from "../../src/assets/images/kinimo-ss1.png";
 import Section2Image from "../../src/components/works/section2Image";
 import axios from "axios";
 import Section3Image from "../../src/components/works/section3Image";
 import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
 import blog1 from "../../src/assets/images/blog-1.png";
-import ReactMark from "react-markdown";
 import Image from "../../src/components/Image/Image";
 const blogsStatic = [
   {

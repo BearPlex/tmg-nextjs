@@ -50,45 +50,45 @@ const Services = () => {
                 ]}
                 activeNavClass="is-active"
               >
-                <div className="flex flex-wrap gap-y-8 justify-between w-full md:max-w-[85%] mt-5">
+                <div className="flex flex-wrap gap-y-4 sm:gap-y-8 justify-between w-full mt-5">
                   <a
                     href="#web_design"
-                    className="w-1/2 font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[47%] font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 smallText mr-3"
+                      className="text-pink-400 smallText mr-1"
                     />
                     Social Media Marketing
                   </a>
 
                   <a
                     href="#web_development"
-                    className="w-1/2 font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[53%] font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 smallText mr-3"
+                      className="text-pink-400 smallText mr-1"
                     />
                     Search Engine Optimization
                   </a>
                   <a
                     href="#branding"
-                    className="w-1/2 font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[47%] font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 smallText mr-3"
+                      className="text-pink-400 smallText mr-1"
                     />
                     Brand Management
                   </a>
                   <a
                     href="#digital_marketing"
-                    className="w-1/2 font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[53%] font-medium paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="text-pink-400 smallText mr-3"
+                      className="text-pink-400 smallText mr-1"
                     />
                     Website Design & Dev.
                   </a>
