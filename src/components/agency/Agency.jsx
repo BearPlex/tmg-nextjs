@@ -208,8 +208,8 @@ const Agency = () => {
                   alt="agency images"
                   loading="lazy"
                   layout="responsive"
-                  // objectFit="cover"
-                  className="transition-transform w-[100%]"
+                  objectFit="cover"
+                  className="transition-transform w-[100%] shadow-xl shadow-black rounded-[45px]"
                 />
               </div>
             </div>
