@@ -18,8 +18,8 @@ const Contact = () => {
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
-              <h4 className="headingBlack heading mb-2 md:mb-6">NEW YORK</h4>
-              <p className="blackDescriptionText smallHeading">
+              <h4 className="headingBlack text36 mb-2 md:mb-6">NEW YORK</h4>
+              <p className="blackDescriptionText font-sofia-bold text24">
                 Brooklyn,
                 <br />
                 New York,
@@ -100,8 +100,8 @@ const Contact = () => {
 
             <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex mt-10 md:mt-0">
               <div className="w-[30%] md:w-[30%] block md:hidden">
-                <h4 className="headingBlack heading mb-2 md:mb-6">NEW YORK</h4>
-                <p className="blackDescriptionText smallHeading">
+                <h4 className="headingBlack text36 mb-2 md:mb-6">NEW YORK</h4>
+                <p className="blackDescriptionText font-sofia-bold text24">
                   Brooklyn,
                   <br />
                   New York,
@@ -110,8 +110,8 @@ const Contact = () => {
                 </p>
               </div>
               <div className="w-[30%] md:w-[30%]">
-                <h4 className="headingBlack heading mb-2 md:mb-6">LAHORE</h4>
-                <p className="blackDescriptionText smallHeading whitespace-nowrap">
+                <h4 className="headingBlack text36 mb-2 md:mb-6">LAHORE</h4>
+                <p className="blackDescriptionText font-sofia-bold text24 whitespace-nowrap">
                   DHA Phase 5,
                   <br />
                   Lahore,
