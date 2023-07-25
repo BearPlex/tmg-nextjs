@@ -78,7 +78,7 @@ const Services = () => {
                   height={300}
                   src={imgSrc}
                   alt="images"
-                  loading="lazy"
+                  // loading="lazy"
                   className="w-[100%] "
                 />
               </div>
