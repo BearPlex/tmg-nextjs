@@ -2,7 +2,7 @@ import Image from "../Image/Image";
 import group from "../../assets/images/Group.png";
 const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
   return (
-    <section className="w-full md:h-[55vh] 3xl:max-w-7xl 3xl:mx-auto">
+    <section className="w-full md:h-[55vh] 3xl:max-w-7xl 3xl:mx-auto z-50">
       <div className="h-full flex items-center pagePaddingX">
         <div className="w-full flex items-center componentsMainGap flex-col md:flex-row">
           <div className="text-center w-full h-auto">
@@ -14,7 +14,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
-              className="max-w-full"
+              className="max-w-full max-h-[60vh]"
             />
             {landingPage && (
               <div className="hidden md:block">

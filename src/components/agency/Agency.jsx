@@ -25,6 +25,11 @@ const Agency = () => {
   const agencyRef = useRef();
   const imageContainerRef = useRef(null);
   const imageRef = useRef(null);
+  console.log("");
+  console.log("agency");
+  console.log(scrollY);
+  console.log("scrollY");
+  console.log("");
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -47,16 +52,19 @@ const Agency = () => {
     return offsetTop + offsetHeight;
   }
   const getTransformValue = (scrollY, imageContainerEnd) => {
-    if (scrollY > 0 && scrollY <= imageContainerEnd) {
+    if (scrollY > 100 && scrollY <= imageContainerEnd) {
       return `translateY(${scrollY}px)`;
     }
-    if (scrollY > 0 && scrollY > imageContainerEnd) {
+    if (scrollY > 100 && scrollY > imageContainerEnd) {
       return `translateY(${imageContainerEnd}px)`;
     }
     return `translateY(0px)`;
   };
   useEffect(() => {
-    if (scrollY > 0 && scrollY <= imageContainerEnd) {
+    if (scrollY > 100 && scrollY <= imageContainerEnd) {
+      if (!fixedImagePostion && !window && !window?.scrollY) {
+        setFixedImagePostion(false);
+      }
       if (!fixedImagePostion) {
         setFixedImagePostion(true);
       }

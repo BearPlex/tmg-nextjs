@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/Blog-pic.png";
+import blogImage from "../src/assets/images/Blog-pic.png";
 import bannerImage from "../src/assets/images/header-image-1.png";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 // import {blogs} from "../src/helpers/Helpers";
@@ -40,7 +40,7 @@ const Blog = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={kotaLogo.src}>
+          <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
                 News, insights, and creative culture from TMG.

@@ -290,7 +290,7 @@
     @apply shadow-lg shadow-black;
   }
   .imageRounded {
-    @apply rounded-[25px] sm:rounded-[35px];
+    @apply rounded-[25px] sm:rounded-[40px];
   }
   /* IMAGE END */
 }
@@ -797,6 +797,7 @@ footer svg:hover path {
   position: fixed;
   top: 30%;
   /* @apply pl-0 2xl:pl-32; */
+  z-index: 1;
   /* @apply pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pl-32; */
 }
 .image-scroll-width {
