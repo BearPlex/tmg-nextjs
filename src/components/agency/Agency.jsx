@@ -209,7 +209,7 @@ const Agency = () => {
                   id="imageRef"
                   src={imageSrc}
                   alt="agency images"
-                  loading="lazy"
+                  // loading="lazy"
                   layout="responsive"
                   objectFit="cover"
                   className="transition-transform w-[100%] imageShadow imageRounded"
