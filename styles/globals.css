@@ -387,13 +387,7 @@ body {
   border: transparent !important;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%); */
-  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: #fff;
-  /* border-image: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) 5; */
-
-  /* -webkit-text-fill-color: transparent; */
-  /* background: white; */
   @media (max-width: 1023px) {
     height: 40px;
     min-width: 200px;
@@ -415,7 +409,6 @@ body {
   display: inline-block;
   color: transparent;
   border-color: #ee2760;
-  /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
 }
 .gradient-button::before {
   content: "";
@@ -435,16 +428,13 @@ body {
 .gradient-button:hover {
   color: white;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-  /* border-color: transparent; */
   transition: all 0.3s ease-in-out !important;
 }
 .gradient-button-bgBlack {
   position: relative;
   display: inline-block;
-  /* color: transparent; */
   border-color: transparent;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-  /* border-color: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
 }
 .gradientHoverBlack {
   background: #1b1b1b;
@@ -468,11 +458,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* .gradient-button-bgBlack:hover {
-  color: white;
-  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-  transition: all 0.3s ease-in-out !important;
-} */
 
 #menuToggle {
   overflow: hidden;

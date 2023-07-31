@@ -33,6 +33,7 @@ const Expertise = (props) => {
                             item.attributes?.featured_title
                           )}.png`}
                           featured_title={item.attributes?.featured_title}
+                          cardText={item.attributes?.cardText}
                           gallery_first_description={
                             item.attributes?.gallery_first_description
                           }
@@ -66,6 +67,7 @@ const Expertise = (props) => {
                           gallery_first_description={
                             item.attributes?.gallery_first_description
                           }
+                          cardText={item.attributes?.cardText}
                           website_tag={item?.attributes?.website_tag}
                           branding_tag={item?.attributes?.branding_tag}
                           marketing_tag={item?.attributes?.marketing_tag}
@@ -105,6 +107,7 @@ const Expertise = (props) => {
                         gallery_first_description={
                           item.attributes?.gallery_first_description
                         }
+                        cardText={item.attributes?.cardText}
                         website_tag={item?.attributes?.website_tag}
                         branding_tag={item?.attributes?.branding_tag}
                         marketing_tag={item?.attributes?.marketing_tag}

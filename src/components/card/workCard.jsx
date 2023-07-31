@@ -8,6 +8,7 @@ const WorkCard = (props) => {
     website_tag,
     branding_tag,
     marketing_tag,
+    cardText,
     seo_tag,
     index,
     backGroundBlack,
@@ -81,7 +82,7 @@ const WorkCard = (props) => {
               backGroundBlack ? " paragraphWhite " : " paragraphBlack "
             }`}
           >
-            {gallery_first_description}
+            {cardText}
           </p>
         </div>
       </div>

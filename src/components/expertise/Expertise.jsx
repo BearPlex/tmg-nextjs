@@ -43,6 +43,7 @@ const Expertise = (props) => {
                         gallery_first_description={
                           item.attributes?.gallery_first_description
                         }
+                        cardText={item.attributes?.cardText}
                         website_tag={item?.attributes?.website_tag}
                         branding_tag={item?.attributes?.branding_tag}
                         marketing_tag={item?.attributes?.marketing_tag}
@@ -80,6 +81,7 @@ const Expertise = (props) => {
                         }
                         website_tag={item?.attributes?.website_tag}
                         branding_tag={item?.attributes?.branding_tag}
+                        cardText={item.attributes?.cardText}
                         marketing_tag={item?.attributes?.marketing_tag}
                         seo_tag={item?.attributes?.seo_tag}
                         index={index + 1700}
@@ -123,6 +125,7 @@ const Expertise = (props) => {
                       imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
                         item.attributes?.featured_title
                       )}.png`}
+                      cardText={item.attributes?.cardText}
                       featured_title={item.attributes?.featured_title}
                       gallery_first_description={
                         item.attributes?.gallery_first_description

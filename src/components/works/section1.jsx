@@ -12,8 +12,8 @@ function section1(props) {
             width={500}
             height={300}
             alt="attributes"
-            src={`https://beta.themediagale.com/public_images/${
-              work?.featured_title && work?.featured_title !== ""
+            src={`https://beta.themediagale.com/public_images/work/${
+              work?.image1 && work?.featured_title !== ""
                 ? convertStringForImage(work?.featured_title)
                 : "Women-Rise"
             }.png`}
