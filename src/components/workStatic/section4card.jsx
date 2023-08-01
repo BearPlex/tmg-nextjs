@@ -11,7 +11,7 @@ function section4card() {
               Results
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mx-10 lg:mx-40 justify-center items-center pb-10">
-              <div className=" rounded-lg shadow-lg bg-[#D17172]  py-5 md:py-14 px-4">
+              <div className=" imageRounded shadow-lg bg-[#D17172]  py-5 md:py-14 px-4">
                 <Image
                   width={500}
                   height={300}
@@ -27,7 +27,7 @@ function section4card() {
                 </div>
               </div>
 
-              <div className=" rounded-lg shadow-lg bg-[#D17172] py-5 md:py-14 px-4">
+              <div className=" imageRounded shadow-lg bg-[#D17172] py-5 md:py-14 px-4">
                 <Image
                   width={500}
                   height={300}
@@ -43,7 +43,7 @@ function section4card() {
                 </div>
               </div>
 
-              <div className=" rounded-lg shadow-lg bg-[#D17172] py-5 md:py-14 px-4">
+              <div className=" imageRounded shadow-lg bg-[#D17172] py-5 md:py-14 px-4">
                 <Image
                   decoding="async"
                   width={500}

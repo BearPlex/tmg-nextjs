@@ -19,7 +19,7 @@ const TextWithImageContainer = ({
         >
           <section
             id={id}
-            className="rounded-lg flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 md:py28 cursor-pointer"
+            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 py-0 md:py-16 cursor-pointer"
             onClick={selectRoute ? selectRoute : null}
           >
             <div className="w-full md:w-[50%] order-2 md:order-1">
@@ -35,7 +35,7 @@ const TextWithImageContainer = ({
                 objectFit="cover"
                 className={`${
                   blackContainer ? "" : "md:shadow-2xl"
-                } w-full h-auto rounded-lg`}
+                } w-full h-auto imageRounded`}
               />
             </div>
           </section>
@@ -48,7 +48,7 @@ const TextWithImageContainer = ({
         >
           <section
             id={id}
-            className="rounded-lg flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 md:py28 cursor-pointer"
+            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 py-0 md:py-16 cursor-pointer"
             onClick={selectRoute ? selectRoute : null}
           >
             <div className="w-full md:w-[50%] order-1">
@@ -61,7 +61,7 @@ const TextWithImageContainer = ({
                 objectFit="cover"
                 className={`${
                   blackContainer ? "" : "md:shadow-2xl"
-                } w-full h-auto rounded-lg`}
+                } w-full h-auto imageRounded`}
               />
             </div>
             <div className="w-full md:w-[50%] order-2">{children}</div>

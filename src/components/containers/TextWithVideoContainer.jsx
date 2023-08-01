@@ -50,12 +50,12 @@ const TextWithVideoContainer = ({
           id={id}
           className="flex flex-col md:flex-row componentsMainGap py-0  3xl:py-28 lg:py-14 "
         >
-          <div className={`w-full  h-auto ${cssClass}`} >
+          <div className={`w-full  h-auto ${cssClass}`}>
             <div className="relative h-auto md:h-auto">
               <video
                 id="videoElement"
                 ref={videoRef}
-                className="object-cover h-fit rounded-lg"
+                className="object-cover h-fit imageRounded"
                 autoPlay={true}
                 muted={true}
                 playsInline={true}

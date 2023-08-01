@@ -172,7 +172,9 @@ const Services = () => {
               </div>
             </TextWithImageContainer>
           </div>
-          <Footer />
+          <div className="mt-4 md:mt-10">
+            <Footer />
+          </div>
         </section>
       </PageWrapper>
     </>

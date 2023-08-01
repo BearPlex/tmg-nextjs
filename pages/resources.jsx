@@ -108,7 +108,9 @@ const Resources = () => {
             </TextWithImageContainer>
           </div>
         </section>
-        <Footer />
+        <div className="mt-4 md:mt-10">
+          <Footer />
+        </div>
       </PageWrapper>
     </>
   );
