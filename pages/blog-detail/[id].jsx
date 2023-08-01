@@ -34,10 +34,123 @@ function BlogDetail() {
       .catch((err) => {
         console.log("Error123", err);
       });
-  }, []);
+  }, [id]);
   return (
     <>
       <PageWrapper>
+        <div className="3xl:max-w-7xl 3xl:mx-auto">
+          <section className="pagePaddingX">
+            {/* <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText pt-20 md:pt-30 lg:pt-40"> */}
+            <span className="text-pink-400 text-base font-medium tracking-widest">
+              {work?.attributes?.date}
+            </span>
+
+            <div className="headingBlack">{work?.attributes?.title}</div>
+            <br />
+            <p>{work?.attributes?.sub_title}</p>
+            {/* </h1> */}
+            <div className="flex justify-center mt-9 md:mt-20">
+              <Image
+                width={500}
+                height={300}
+                alt="attributes"
+                src={`https://beta.themediagale.com/public_images/work/${
+                  work?.attributes?.image1 && work?.attributes?.image1 !== ""
+                    ? work?.attributes?.image1
+                    : "Women_Rise_1"
+                }.png`}
+                loading="lazy"
+                layout="responsive"
+                objectFit="cover"
+              />
+            </div>
+            <div className="flex w-full">
+              <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16 w-full">
+                <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
+                  Introduction
+                </h2>
+                <p className="font-medium whitespace-pre-wrap blackDescriptionText pl-5 w-full">
+                  {work?.attributes?.blog_content}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="flex items-center justify-center flex-col gap-10 md:gap-16">
+            <div className="max-w-[70%]">
+              <Image
+                width={500}
+                height={1000}
+                alt="attributes"
+                src={`https://beta.themediagale.com/public_images/work/${
+                  work?.attributes?.image2 && work?.attributes?.image2 !== ""
+                    ? work?.attributes?.image2
+                    : "Women_Rise_1"
+                }.png`}
+                loading="lazy"
+                layout="responsive"
+                objectFit="cover"
+              />
+            </div>
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              src={`https://beta.themediagale.com/public_images/work/${
+                work?.attributes?.image3 && work?.attributes?.image3 !== ""
+                  ? work?.attributes?.image3
+                  : "Women_Rise_1"
+              }.png`}
+              loading="lazy"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </section>
+          <div className="pagePaddingX w-full flex flex-col">
+            <div className="py-20 md:py-40 lg:py-60">
+              <h2 className="heading mb-5 font-bold blackHeading whitespace-pre-wrap leading-none relative pl-6">
+                {work?.attributes?.bog_heading_second}
+              </h2>
+              <p className="text-text-medium font-medium blackDescriptionText whitespace-pre-wrap pl-5">
+                {work?.attributes?.blog_content_second}
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center mt-4 md:mt-10">
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              src={`https://beta.themediagale.com/public_images/work/${
+                work?.attributes?.image4 && work?.attributes?.image4 !== ""
+                  ? work?.attributes?.image4
+                  : "Women_Rise_1"
+              }.png`}
+              loading="lazy"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+          <div className="flex justify-center my-4 md:my-10">
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              src={`https://beta.themediagale.com/public_images/work/${
+                work?.attributes?.image5 && work?.attributes?.image5 !== ""
+                  ? work?.attributes?.image5
+                  : "Women_Rise_1"
+              }.png`}
+              loading="lazy"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+        <Section4card />
+        <Footer />
+      </PageWrapper>
+      {/* <PageWrapper>
         <section className="">
           <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
             <span className="text-pink-400 text-base font-medium tracking-widest">
@@ -81,7 +194,7 @@ function BlogDetail() {
             </div>
           </div>
         </section>
-      </PageWrapper>
+      </PageWrapper> */}
     </>
   );
 }

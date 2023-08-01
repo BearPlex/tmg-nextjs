@@ -33,7 +33,7 @@ const Card = (props) => {
             </div>
           </div>
           <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-            <p className="text-base  text-[#EE2760] text-[#EE2760] group-hover:blackHeading">
+            <p className="text-base  text-[#EE2760] group-hover:blackHeading">
               {blog.attributes.sub_title}
             </p>
             <p className="text-4xl font-bold  blackHeading group-hover:text-white pt-2">
@@ -41,7 +41,7 @@ const Card = (props) => {
             </p>
             <div>
               <p className="pb-4 pt-3 font-normal text-normal text-gray-500 group-hover:text-white">
-                {blog.attributes.blog_content}
+                {blog.attributes.cardText}
               </p>
             </div>
           </div>
