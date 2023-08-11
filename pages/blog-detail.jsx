@@ -6,7 +6,7 @@ import Image from "../src/components/Image/Image";
 const blogDetail = () => {
   return (
     <div className="pt-7 md:pt-20 px-28">
-      <span className="text-pink-400 smallText font-medium tracking-widest">
+      <span className="text-pink-400 smallText tracking-widest">
         05ht August 2022
       </span>
       <div className="headingBlack">Designing more sustainable websites.</div>

@@ -39,7 +39,7 @@ function WorkDetail() {
       <PageWrapper>
         <div className="3xl:max-w-7xl 3xl:mx-auto">
           <section className="pagePaddingX">
-            <div className="flex justify-center mt-9 md:mt-20">
+            <div className="flex justify-center mt-9 md:mt-20 ">
               <Image
                 width={500}
                 height={300}
@@ -62,7 +62,7 @@ function WorkDetail() {
                 <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
                   The Brief
                 </h2>
-                <p className="font-medium whitespace-pre-wrap blackDescriptionText pl-5 w-full">
+                <p className="whitespace-pre-wrap blackDescriptionText pl-5 w-full paragraph">
                   {work?.attributes?.gallery_first_description}
                 </p>
               </div>
@@ -104,7 +104,7 @@ function WorkDetail() {
               <h2 className="heading mb-5 font-bold blackHeading whitespace-pre-wrap leading-none relative pl-6">
                 {work?.attributes?.gallery_second_title}
               </h2>
-              <p className="text-text-medium font-medium blackDescriptionText whitespace-pre-wrap pl-5">
+              <p className="blackDescriptionText pl-5 paragraph">
                 {work?.attributes?.gallery_second_description}
               </p>
             </div>

@@ -128,19 +128,19 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <span className="gradientHoverWhite xl2Bold text20   md:pb-3">
+                        <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-2">
-                        <Link className=" md:pb-3" href="/">
+                        <Link className=" md:pb-3" href="/contact">
                           <span className="gradientHoverWhite xl2Bold text20 ">
                             New York
                           </span>
                         </Link>
                       </li>
                       <li className="mb-2">
-                        <Link className=" md:pb-3" href="/">
+                        <Link className=" md:pb-3" href="/contact">
                           <span className="gradientHoverWhite xl2Bold text20 ">
                             Lahore
                           </span>

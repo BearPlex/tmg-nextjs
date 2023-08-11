@@ -31,7 +31,7 @@ function section3Image(props) {
           <h2 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6">
             {work?.gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium blackDescriptionText pl-5 whitespace-pre">
+          <p className="paragraph blackDescriptionText pl-5 whitespace-pre">
             {work?.gallery_second_description}
           </p>
         </div>

@@ -55,7 +55,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">SEO Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -69,7 +69,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">PPC Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium text-style">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -83,7 +83,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Design Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium paragraphBlack">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -97,7 +97,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Content Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 font-medium text-style">
+                <p className="mt-2 mb-4 md:mt-8 md:mb-14 text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>

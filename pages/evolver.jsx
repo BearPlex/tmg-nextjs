@@ -110,7 +110,7 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal smallText blackDescriptionText ">
+                  <p className="font-poppins-regular smallText blackDescriptionText ">
                   One-time payment SAVE 20%
                   </p>
         
@@ -120,7 +120,7 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal smallText blackDescriptionText ">
+                  <p className="font-poppins-regular smallText blackDescriptionText ">
                   20-DAY Money back guarantee for first - time orders
                   </p>
         
@@ -130,7 +130,7 @@ function evolver() {
                           <Image decoding="async" width={500} height={300} src="https://evolvere-repo.s3.us-west-2.amazonaws.com/assets/equilibrium/Featured%20icon%20(4).svg" alt=""/>
         
                         
-                  <p className="font-normal smallText blackDescriptionText ">
+                  <p className="font-poppins-regular smallText blackDescriptionText ">
                   Subscribe & Save + Free Shipping
 
                   </p>
@@ -153,7 +153,7 @@ function evolver() {
                 brain. Take 2-3 capsules per day.
               </p>
               <div className="mt-0 md:mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-normal text-base blackDescriptionText flex justify-between items-center">
+                <div className="font-poppins-regular text-base blackDescriptionText flex justify-between items-center">
                   Subscribe &amp; save 25% + free shipping:
                   <input
                     type="radio"
@@ -170,7 +170,7 @@ function evolver() {
                 </div>
               </div>
               <div className="mt-0 md:mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-normal text-base blackDescriptionText flex justify-between">
+                <div className="font-poppins-regular text-base blackDescriptionText flex justify-between">
                   One-time purchase:
                   <input
                     type="radio"
@@ -208,7 +208,7 @@ function evolver() {
                           role="tooltip"
                           className="z-20 w-64 absolute transition duration-150 ease-in-out left-0 mt-40 shadow-lg bg-[#FFFFFF] p-4 rounded-[25px] tooltip hidden"
                         >
-                          <p className="font-medium paragra pb-1">
+                          <p className="paragraph pb-1">
                             How subscription works?
                           </p>
                           <p className="paragraph leading-4 blackDescriptionText pb-0 md:pb-3">
@@ -221,7 +221,7 @@ function evolver() {
                             applies on first purchase.
                           </p>
                         </div>
-                        <div className="font-normal smallText blackDescriptionText whitespace-nowrap cursor-pointer">
+                        <div className="font-poppins-regular smallText blackDescriptionText whitespace-nowrap cursor-pointer">
                           Subscription Details
                         </div>
                       </a>
@@ -247,7 +247,7 @@ function evolver() {
                   alt="evolvere-repo"
                 />
 
-                <p className="font-normal smallText blackDescriptionText ">
+                <p className="font-poppins-regular smallText blackDescriptionText ">
                   20-day Money Back Guarantee on First Purchase
                 </p>
               </div>

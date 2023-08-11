@@ -41,13 +41,15 @@ function BlogDetail() {
         <div className="3xl:max-w-7xl 3xl:mx-auto">
           <section className="pagePaddingX">
             {/* <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText pt-20 md:pt-30 lg:pt-40"> */}
-            <span className="text-pink-400 text-base font-medium tracking-widest">
+            <span className="text-pink-400 text-base tracking-widest">
               {work?.attributes?.date}
             </span>
 
             <div className="headingBlack">{work?.attributes?.title}</div>
             <br />
-            <p>{work?.attributes?.sub_title}</p>
+            <p className="blackDescriptionText paragraph">
+              {work?.attributes?.sub_title}
+            </p>
             {/* </h1> */}
             <div className="flex justify-center mt-9 md:mt-20">
               <Image
@@ -69,7 +71,7 @@ function BlogDetail() {
                 <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
                   Introduction
                 </h2>
-                <p className="font-medium whitespace-pre-wrap blackDescriptionText pl-5 w-full">
+                <p className="whitespace-pre-wrap blackDescriptionText pl-5 w-full paragraph">
                   {work?.attributes?.blog_content}
                 </p>
               </div>
@@ -111,7 +113,7 @@ function BlogDetail() {
               <h2 className="heading mb-5 font-bold blackHeading whitespace-pre-wrap leading-none relative pl-6">
                 {work?.attributes?.bog_heading_second}
               </h2>
-              <p className="text-text-medium font-medium blackDescriptionText whitespace-pre-wrap pl-5">
+              <p className="blackDescriptionText pl-5 paragraph">
                 {work?.attributes?.blog_content_second}
               </p>
             </div>
@@ -153,7 +155,7 @@ function BlogDetail() {
       {/* <PageWrapper>
         <section className="">
           <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
-            <span className="text-pink-400 text-base font-medium tracking-widest">
+            <span className="text-pink-400 text-base tracking-widest">
               {work?.attributes?.date}
             </span>
 

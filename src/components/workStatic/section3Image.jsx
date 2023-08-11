@@ -11,12 +11,12 @@ function section3Image(props) {
             id="beautyRef"
             className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
           >
-            {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
+            {/* <sup className="smallText text-pink-400   inline-block absolute top-3 left-0">
               02
             </sup> */}
             {work[0].gallery_second_title}
           </h2>
-          <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+          <p className="paragraph blackDescriptionText pl-5">
             {work[0].gallery_second_description}
           </p>
         </div>

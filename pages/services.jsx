@@ -53,7 +53,7 @@ const Services = () => {
                 <div className="flex flex-wrap gap-y-4 sm:gap-y-8 justify-between w-full mt-5">
                   <a
                     href="#web_design"
-                    className="w-full sm:w-[47%] font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[47%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -64,7 +64,7 @@ const Services = () => {
 
                   <a
                     href="#web_development"
-                    className="w-full sm:w-[53%] font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[53%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -74,7 +74,7 @@ const Services = () => {
                   </a>
                   <a
                     href="#branding"
-                    className="w-full sm:w-[47%] font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[47%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -84,7 +84,7 @@ const Services = () => {
                   </a>
                   <a
                     href="#digital_marketing"
-                    className="w-full sm:w-[53%] font-medium paragraphBlack inline-block"
+                    className="w-full sm:w-[53%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}

@@ -40,7 +40,7 @@ const Card = (props) => {
               {blog.attributes.title}
             </p>
             <div>
-              <p className="pb-4 pt-3 font-normal text-normal text-gray-500 group-hover:text-white">
+              <p className="pb-4 pt-3 font-poppins-regular paragraph blackDescriptionText group-hover:text-white">
                 {blog.attributes.cardText}
               </p>
             </div>

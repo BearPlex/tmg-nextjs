@@ -19,7 +19,9 @@ if (typeof window !== "undefined" && window.innerWidth < 768) {
 }
 const Agency = () => {
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
-  const [scrollY, setScrollY] = useState(100);
+  const [imageOpacity, setImageOpacity] = useState(1);
+
+  const [scrollY, setScrollY] = useState(10);
   const [fixedImagePostion, setFixedImagePostion] = useState(false);
   const [windowHeight, setWindowHeight] = useState(0);
   const agencyRef = useRef();
@@ -47,16 +49,16 @@ const Agency = () => {
     return offsetTop + offsetHeight;
   }
   const getTransformValue = (scrollY, imageContainerEnd) => {
-    if (scrollY > 100 && scrollY <= imageContainerEnd) {
+    if (scrollY > 10 && scrollY <= imageContainerEnd) {
       return `translateY(${scrollY}px)`;
     }
-    if (scrollY > 100 && scrollY > imageContainerEnd) {
+    if (scrollY > 10 && scrollY > imageContainerEnd) {
       return `translateY(${imageContainerEnd}px)`;
     }
     return `translateY(0px)`;
   };
   useEffect(() => {
-    if (scrollY > 100 && scrollY <= imageContainerEnd) {
+    if (scrollY > 10 && scrollY <= imageContainerEnd) {
       if (!fixedImagePostion && !window && !window?.scrollY) {
         setFixedImagePostion(false);
       }
@@ -73,11 +75,16 @@ const Agency = () => {
       }
     }
   }, [scrollY]);
+
   useEffect(() => {
     let divElement = document.querySelector(".imageContainer");
     let imageElement = document.querySelector(".imageWrapper");
     imageHeight = imageRef.current.offsetHeight;
-    imageContainerEnd = getDivEnd(divElement) - imageHeight - 120;
+    const viewportHeight = window.innerHeight;
+    const offset = 0.2 * viewportHeight;
+    imageContainerEnd = getDivEnd(divElement) - imageHeight - offset;
+
+    // imageContainerEnd = getDivEnd(divElement) - imageHeight - 120;
     window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
       window.removeEventListener("scroll", debouncedHandleScroll);
@@ -109,7 +116,11 @@ const Agency = () => {
       newImageSrc = agencyImage4.src;
     }
     if (newImageSrc !== imageSrc) {
-      setImageSrc(newImageSrc);
+      setImageOpacity(0);
+      setTimeout(() => {
+        setImageSrc(newImageSrc);
+        setImageOpacity(1);
+      }, 300);
     }
   };
   return (
@@ -120,17 +131,14 @@ const Agency = () => {
       <div className="w-full hidden md:block  relative">
         <div className="w-full flex flex-row">
           <div className="w-1/2">
-            <div className="flex h-[50vh] w-full flex-col justify-center">
+            <div className="flex h-[40vh] w-full flex-col justify-start">
               <h2
                 id="beautyRef"
-                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6 mt-44"
               >
-                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
-                  01
-                </sup>{" "} */}
                 Beauty
               </h2>
-              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText pl-5">
                 We think outside the box and push boundaries to create fresh and
                 original content.
               </p>
@@ -140,12 +148,9 @@ const Agency = () => {
                 id="thoughRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
-                  02
-                </sup>{" "} */}
                 Analyze
               </h2>
-              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText pl-5">
                 Analyzing the market and consumer data helps us provide
                 customized solutions to everyday business challenges.
               </p>
@@ -155,12 +160,9 @@ const Agency = () => {
                 id="communicateRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
-                  03
-                </sup>{" "} */}
                 Communicate
               </h2>
-              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText pl-5">
                 Through personal and digital mediums, we provide fast and clear
                 communication to keep information flow open.{" "}
               </p>
@@ -170,12 +172,9 @@ const Agency = () => {
                 id="executeRef"
                 className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
               >
-                {/* <sup className="smallText text-pink-400 font-medium inline-block absolute top-3 left-0">
-                  04
-                </sup>{" "} */}
                 Execute
               </h2>
-              <p className="text-text-medium font-medium   blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText pl-5">
                 We execute our ideas into actions through strategies to make
                 every business a winning story.
               </p>
@@ -185,20 +184,19 @@ const Agency = () => {
             <div
               className={`h-fit  ${
                 fixedImagePostion
-                  ? "image-scroll-wrapper image-scroll-width"
-                  : "image-scroll-width"
+                  ? "image-scroll-wrapper image-scroll-width imageTransitionEffect"
+                  : "image-scroll-width imageTransitionEffect"
               }`}
               style={
                 !fixedImagePostion
                   ? {
                       transform: getTransformValue(scrollY, imageContainerEnd),
-                      transition: "transform 0.03s linear",
-                      // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
+                      // transition: "transform 0.3s linear",
+                      transition:
+                        "transform 0.1s cubic-bezier(0.4, 0, 0.01, 1)",
                     }
                   : {
-                      // top: getTransformValue(scrollY, imageContainerEnd),
-                      transition: "transform 0.03s linear",
-                      // transition: "transform 0.1s cubic-bezier(0.4, 0, 0.1, 1)",
+                      transition: "transform 0.3s cubic-bezier(0.4, 0, 0.1, 1)",
                     }
               }
             >
@@ -210,9 +208,10 @@ const Agency = () => {
                   src={imageSrc}
                   alt="agency images"
                   // loading="lazy"
+                  style={{ opacity: imageOpacity }}
                   layout="responsive"
                   objectFit="cover"
-                  className="transition-transform w-[100%] imageShadow imageRounded"
+                  className="imageTransitionEffect w-[100%] imageShadow imageRounded"
                 />
               </div>
             </div>
@@ -237,11 +236,11 @@ const Agency = () => {
           </div>
           <h2
             id="beautyRef"
-            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative"
+            className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative"
           >
             Beauty
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText">
+          <p className="paragraph mb-15 blackDescriptionText">
             We think outside the box and push boundaries to create fresh and
             original content.
           </p>
@@ -263,11 +262,11 @@ const Agency = () => {
           </div>
           <h2
             id="thoughRef"
-            className="heading mb-2 pt-2 font-bold blackDescriptionText leading-none relative"
+            className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative"
           >
             Analyze
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText">
+          <p className="paragraph mb-15 blackDescriptionText">
             Analyzing the market and consumer data helps us provide customized
             solutions to everyday business challenges.
           </p>
@@ -287,10 +286,10 @@ const Agency = () => {
               className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative">
+          <h2 className="heading mb-2 font-bold blackHeadingText leading-none relative">
             Communicate
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText">
+          <p className="paragraph mb-15 blackDescriptionText">
             Through personal and digital mediums, we provide fast and clear
             communication to keep information flow open.{" "}
           </p>
@@ -310,10 +309,10 @@ const Agency = () => {
               className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackDescriptionText leading-none relative">
+          <h2 className="heading mb-2 font-bold blackHeadingText leading-none relative">
             Execute
           </h2>
-          <p className="paragraph mb-15 font-medium   blackDescriptionText">
+          <p className="paragraph mb-15 blackDescriptionText">
             We execute our ideas into actions through strategies to make every
             business a winning story.
           </p>

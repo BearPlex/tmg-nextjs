@@ -27,7 +27,7 @@ function section1(props) {
             <h2 className="heading mb-5 font-bold blackDescriptionText leading-none pl-6">
               {work?.gallery_first_title}
             </h2>
-            <p className="font-medium whitespace-pre blackDescriptionText pl-5 w-full">
+            <p className="paragraph whitespace-pre blackDescriptionText pl-5 w-full">
               {work?.gallery_first_description}
             </p>
           </div>

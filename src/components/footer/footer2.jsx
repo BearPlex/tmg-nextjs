@@ -21,7 +21,7 @@ function footer2() {
               <h2 className="text-base font-semibold leading-7 text-[#299C84]">
                 Contact Us
               </h2>
-              <p className="my-6 smallHeading sm:text-5xl text-gray-200 mx-auto text-center">
+              <p className="my-6 smallHeading sm:text-5xl paragraph blackDescriptionText mx-auto text-center">
                 You have Got This far Ready to Get Started?
               </p>
 
@@ -131,7 +131,7 @@ function footer2() {
                   Terms of Service
                 </Link>
               </div>
-              <h1 className="mt-8 leading-[24px] text-[#848484] font-normal md:order-1 md:mt-0">
+              <h1 className="mt-8 leading-[24px] text-[#848484] font-poppins-regular md:order-1 md:mt-0">
                 &copy; 2023 NuVision, Inc. All Rights Reserved.
               </h1>
             </div>

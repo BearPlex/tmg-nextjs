@@ -19,6 +19,8 @@ module.exports = {
         "circular-bold": "Circular Std Bold",
         "sofia-regular": "Sofia Sans",
         "sofia-bold": "Sofia Pro Bold",
+        "poppins-regular": "Poppins",
+        "poppins-bold": "Poppins Bold",
       },
       fontSize: {
         "primary-size": "5rem",

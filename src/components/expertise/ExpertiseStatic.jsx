@@ -33,9 +33,7 @@ const ExpertiseStatic = (props) => {
                   <div className="my-4 transition group-hover:text-pink-400 group-hover:transition-all">
                     {item.featured_title}
                   </div>
-                  <p
-                    className={`${cssClass} paragraph font-medium max-w-[90%]`}
-                  >
+                  <p className={`${cssClass} paragraph max-w-[90%]`}>
                     {item.gallery_first_description}
                   </p>
                 </div>

@@ -201,7 +201,7 @@ const Contact = () => {
                       <li className="ml-8">
                         <label
                           htmlFor="flexRadioDefault10"
-                          className="paragraph leading-none  font-medium blackDescriptionText"
+                          className="paragraph leading-none blackDescriptionText"
                         >
                           Im happy to receive a seriously cool monthly
                           newsletter from TMG.
@@ -220,7 +220,7 @@ const Contact = () => {
                       <li className="ml-8">
                         <label
                           htmlFor="flexRadioDefault20"
-                          className="paragraph font-medium blackDescriptionText leading-4"
+                          className="paragraph blackDescriptionText leading-4"
                         >
                           I understand that TMG will securely hold my data in
                           accordance with their privacy policy.
