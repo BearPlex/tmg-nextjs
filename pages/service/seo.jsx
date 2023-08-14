@@ -84,7 +84,7 @@ function BrandManagement() {
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
-                      <br />
+                      <div className="mt-1" />
                       Our SEO packages include content marketing, local seo,
                       technical audits, social media presence, link building,
                       guest posting and on site optimization which is expert-led
@@ -295,7 +295,7 @@ function BrandManagement() {
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <br />
+                    <div className="mt-1" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.

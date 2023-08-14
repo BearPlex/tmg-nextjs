@@ -18,6 +18,7 @@ import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
+import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
 const Services = () => {
   const router = useRouter();
 
@@ -25,7 +26,11 @@ const Services = () => {
     <>
       <PageWrapper>
         <section>
-          <HeroContainer imageSrc={kotaLogo.src}>
+          {/* <HeroContainer imageSrc={kotaLogo.src}> */}
+          <TextWithVideoContainer
+            cssClass="md:w-[50%]"
+            childcssClass="md:w-[50%]"
+          >
             <div className="w-full">
               <p className="mb-2 md:mb-6 mt-6 paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
@@ -107,7 +112,7 @@ const Services = () => {
                 />
               </div>
             </div>
-          </HeroContainer>
+          </TextWithVideoContainer>
           <div className="pagePaddingX py-8 md:py-10">
             <TextWithImageContainer
               id="web_design"
@@ -169,7 +174,7 @@ const Services = () => {
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
-                <div className="mb-10">
+                <div className="">
                   <GradientButton
                     text="Learn More"
                     route="/service/web-design"

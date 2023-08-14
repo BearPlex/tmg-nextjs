@@ -46,7 +46,7 @@ function BlogDetail() {
             </span>
 
             <div className="headingBlack">{work?.attributes?.title}</div>
-            <br />
+            <div className="mt-1" />
             <p className="blackDescriptionText paragraph">
               {work?.attributes?.sub_title}
             </p>
@@ -160,7 +160,7 @@ function BlogDetail() {
             </span>
 
             <div className="headingBlack">{work?.attributes?.title}</div>
-            <br />
+            <div className="mt-1" />
             <p>{work?.attributes?.sub_title}</p>
             <div className="w-full  mb-6 md:mb-20"></div>
             <div className="w-full my-4 md:my-10 xl:-ml-3">

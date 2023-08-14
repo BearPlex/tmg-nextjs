@@ -21,9 +21,9 @@ const Contact = () => {
               <h4 className="blackHeading text36 mb-2 md:mb-6">New York</h4>
               <p className="blackDescriptionText font-bold paragraph">
                 Brooklyn,
-                <br />
+                <div className="mt-1" />
                 New York,
-                <br />
+                <div className="mt-1" />
                 U.S.A.
               </p>
               <p className="mt-6 md:mt-10">
@@ -43,7 +43,7 @@ const Contact = () => {
                 >
                   info@themediagale.com
                 </a>
-                <br />
+                <div className="mt-1" />
                 <a
                   href="mailto:support@themediagale.com"
                   target="_blank"
@@ -52,7 +52,7 @@ const Contact = () => {
                 >
                   support@themediagale.com
                 </a>
-                <br />
+                <div className="mt-1" />
                 <a
                   href="mailto:contact@themediagale.com"
                   target="_blank"
@@ -113,9 +113,9 @@ const Contact = () => {
                   </p>
                   <p className="hidden md:block">
                     DHA Phase 5,
-                    <br />
+                    <div className="mt-1" />
                     Lahore,
-                    <br />
+                    <div className="mt-1" />
                     Pakistan.
                   </p>
                 </p>
@@ -138,7 +138,7 @@ const Contact = () => {
                   >
                     info@themediagale.com
                   </a>
-                  <br />
+                  <div className="mt-1" />
                   <a
                     href="mailto:support@themediagale.com"
                     target="_blank"
@@ -147,7 +147,7 @@ const Contact = () => {
                   >
                     support@themediagale.com
                   </a>
-                  <br />
+                  <div className="mt-1" />
                   <a
                     href="mailto:contact@themediagale.com"
                     target="_blank"

@@ -128,13 +128,13 @@ const Agency = () => {
       ref={agencyRef}
       className="pagePaddingX my-8 md:my-10 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
     >
-      <div className="w-full hidden md:block  relative">
+      <div className="w-full hidden md:block  relative mt-10">
         <div className="w-full flex flex-row">
           <div className="w-1/2">
-            <div className="flex h-[40vh] w-full flex-col justify-start">
+            <div className="flex h-[70vh] w-full flex-col justify-start">
               <h2
                 id="beautyRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6 mt-44"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6 mt-[8vw]"
               >
                 Beauty
               </h2>

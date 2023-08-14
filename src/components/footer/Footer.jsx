@@ -167,7 +167,7 @@ const Footer = () => {
                     <Image
                       width={50}
                       height={40}
-                      className="h-[45px] mr-4 ml-4"
+                      className="h-[9vw] md:h-[90px] w-[100px]"
                       alt="group"
                       layout="response"
                       objectFit="cover"
@@ -176,7 +176,7 @@ const Footer = () => {
                     <Image
                       width={90}
                       height={50}
-                      className="h-[50px] mr-4"
+                      className="h-[9vw] md:h-[90px] w-[140px] md:w-[200px]"
                       alt="group"
                       layout="response"
                       objectFit="cover"
@@ -185,7 +185,7 @@ const Footer = () => {
                     <Image
                       width={50}
                       height={50}
-                      className="h-[45px] mr-4"
+                      className="h-[9vw] md:h-[90px] w-[100px]"
                       alt="group"
                       layout="response"
                       objectFit="cover"
@@ -194,7 +194,7 @@ const Footer = () => {
                     <Image
                       width={50}
                       height={50}
-                      className="h-[45px] mr-4"
+                      className="h-[9vw] md:h-[90px] w-[100px]"
                       alt="group"
                       layout="response"
                       objectFit="cover"
@@ -203,7 +203,7 @@ const Footer = () => {
                     <Image
                       width={50}
                       height={50}
-                      className="h-[45px] mr-4"
+                      className="h-[9vw] md:h-[90px] w-[100px]"
                       alt="group"
                       layout="response"
                       objectFit="cover"

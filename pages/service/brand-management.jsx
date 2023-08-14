@@ -73,12 +73,12 @@ function Seo() {
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. 
-                      <br />
+                      <div className="mt-1" />
                       From brand positioning, logo design, design collaterals,
                       and packaging, we collaborate closely with your team to
                       ensure your branding embraces the essence of your
                       business.
-                      <br />
+                      <div className="mt-1" />
                       Our branding packages include{" "}
                       <span className="gradientText">
                         {" "}
@@ -157,7 +157,7 @@ function Seo() {
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
                     competition and helps you build a loyal customer base.
-                    <br />
+                    <div className="mt-1" />
                     Your brand image should be consistent and should stand out
                     across all channels - from your website to your social media
                     accounts and your physical collateral. 
@@ -187,7 +187,7 @@ function Seo() {
                     social presence, businesses need to have an effective brand
                     strategy that helps them dig their feet further into the
                     existing industry and stick around for longer. 
-                    <br />
+                    <div className="mt-1" />
                     We create customized branding solutions  which are designed
                     to help businesses reach their target audience and achieve
                     their desired results.  
@@ -290,7 +290,7 @@ function Seo() {
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <br />
+                    <div className="mt-1" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
