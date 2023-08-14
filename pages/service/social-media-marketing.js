@@ -47,7 +47,7 @@ function Socialmediamarketing() {
             childcssClass="md:w-[50%]"
           >
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  largeHeadingBlack">
+              <h4 className="mb-2 md:mb-6  headingBlack">
                 Performance Driven{" "}
                 <span className="gradientText ">Digital Marketing</span>{" "}
                 Services

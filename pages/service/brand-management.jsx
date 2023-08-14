@@ -44,7 +44,7 @@ function Seo() {
         <setcion className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 heading blackDescriptionText">
+              <h4 className="mb-2 md:mb-6 headingBlack">
                 <span className="gradientText">Brand Identity</span> And
                 Creative Management Services
               </h4>

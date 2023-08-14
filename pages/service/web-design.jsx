@@ -44,7 +44,7 @@ function WebDesign() {
         <section className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6   heading blackDescriptionText">
+              <h4 className="mb-2 md:mb-6 headingBlack">
                 Highly <span className="gradientText "> Optimized </span>
                 Converting Websites 
               </h4>

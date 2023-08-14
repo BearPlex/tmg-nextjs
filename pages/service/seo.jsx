@@ -45,7 +45,7 @@ function BrandManagement() {
         <section className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  heading blackDescriptionText ">
+              <h4 className="mb-2 md:mb-6  headingBlack ">
                 Performance Driven <span className="gradientText">SEO</span>{" "}
                 Services
               </h4>
