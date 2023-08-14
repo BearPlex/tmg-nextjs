@@ -88,8 +88,15 @@ const Footer = () => {
                     <ul className="list-unstyled">
                       <li className="mb-0 md:mb-2">
                         <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
-                          Home
+                          Explore
                         </span>
+                      </li>
+                      <li className="mb-0 md:mb-2">
+                        <Link className=" md:pb-3 " href="/">
+                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                            Home
+                          </span>
+                        </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/work">
@@ -123,7 +130,7 @@ const Footer = () => {
                   </div>
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
-                      <li className="mt-6 mb-0 md:mb-2">
+                      <li className="mt-6 md:mt-0 mb-0 md:mb-2">
                         <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
                           Offices
                         </span>

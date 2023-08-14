@@ -47,7 +47,7 @@ function Socialmediamarketing() {
             childcssClass="md:w-[50%]"
           >
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  heading blackDescriptionText  ">
+              <h4 className="mb-2 md:mb-6  largeHeadingBlack">
                 Performance Driven{" "}
                 <span className="gradientText ">Digital Marketing</span>{" "}
                 Services
@@ -57,7 +57,7 @@ function Socialmediamarketing() {
                 experts ensure that all the leads turn into a{" "}
                 <span className="gradientText ">profitable conversion.</span>{" "}
               </p>
-              <div className="mt-4 md:mt-10">
+              <div className="mt-6 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -66,11 +66,11 @@ function Socialmediamarketing() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-6 md:py-20 w-full">
+            <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
-                    <h1 className="blackDescriptionText largeHeading">
+                  <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                    <h1 className="largeHeadingBlack">
                       High Performance
                       <span className="gradientText">
                         {" "}
@@ -103,7 +103,7 @@ function Socialmediamarketing() {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-10 sm:py-28 md:py-40">
+            <div className="background-gradient py-10 md:py-20">
               <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -160,7 +160,7 @@ function Socialmediamarketing() {
           </section>
 
           <section>
-            <div className="bgBlack w-full">
+            <div className="bgBlack w-full py-8 md:py-10">
               <TextWithImageContainer
                 imageSrc={book.src}
                 imageAlt="book"
@@ -168,7 +168,7 @@ function Socialmediamarketing() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText ">
+                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText ">
                     Creative Campaigns
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -193,7 +193,7 @@ function Socialmediamarketing() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Emails & Workflows
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -219,7 +219,7 @@ function Socialmediamarketing() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Social Media Management
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -245,7 +245,7 @@ function Socialmediamarketing() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">

@@ -24,7 +24,7 @@ const Resources = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  heading font-bold leading-tight">
+              <h4 className="mb-2 md:mb-6  mt-10 heading font-bold leading-tight">
                 Dedicated Resource{" "}
                 <span className="gradientText">Allocation</span>
               </h4>
@@ -38,7 +38,7 @@ const Resources = () => {
                   brand a success story.
                 </span>{" "}
               </p>
-              <div className="mt-4 md:mt-10">
+              <div className="mt-6 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -47,7 +47,7 @@ const Resources = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX">
+          <div className="pagePaddingX pt-8 md:pt-10">
             <TextWithImageContainer
               id="web_design"
               imageSrc={homePageImage.src}
@@ -55,7 +55,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">SEO Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -69,7 +69,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">PPC Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 text-style">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -83,7 +83,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Design Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -97,7 +97,7 @@ const Resources = () => {
             >
               <div>
                 <div className="headingBlack">Content Resource</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 text-style">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 text-style">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -108,7 +108,7 @@ const Resources = () => {
             </TextWithImageContainer>
           </div>
         </section>
-        <div className="mt-4 md:mt-10">
+        <div className="mt-6 md:mt-10">
           <Footer />
         </div>
       </PageWrapper>

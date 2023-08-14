@@ -27,7 +27,7 @@ function evolver() {
 
       <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">Boost your productivity today.</h2>
       <p className="mx-auto mt-0 md:mt-2 lg:mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-      <div className="mt-4 md:mt-10 flex items-center justify-center gap-x-6">
+      <div className="mt-6 md:mt-10 flex items-center justify-center gap-x-6">
         <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 smallText font-semibold blackDescriptionText shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
         <a href="#" className="smallText font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
       </div>
@@ -328,7 +328,7 @@ function evolver() {
                 />
               </svg>
             </div>
-            <blockquote className="mt-4 md:mt-10 paragraph font-semibold leading-8 tracking-tight text-gray-900 sm:largeParagraph sm:leading-9">
+            <blockquote className="mt-6 md:mt-10 paragraph font-semibold leading-8 tracking-tight text-gray-900 sm:largeParagraph sm:leading-9">
               <p>
                 “I’ve taken Adderall when I was in college and this is the best
                 clean supplement you take every single day that enhances your
@@ -338,7 +338,7 @@ function evolver() {
                 bold claim here”
               </p>
             </blockquote>
-            <figcaption className="mt-4 md:mt-10 flex justify-between gap-x-6">
+            <figcaption className="mt-6 md:mt-10 flex justify-between gap-x-6">
               <div className="smallText leading-6">
                 <div className=" text-gray-900 smallText font-bold">
                   Mounir L.

@@ -85,7 +85,7 @@ const Expertise = (props) => {
                     </div>
                   </div>
                 ) : (
-                  <div className="w-full flex flex-row justify-end items-end mb-20 h-full componentsMainGap">
+                  <div className="w-full flex flex-row justify-end items-end my-8 md:my-10 h-full componentsMainGap">
                     <div className="w-[50%] h-full text-[#EE2760] flex-col">
                       <div className="my-16 w-[50%] xl2Heading">
                         Featured Projects

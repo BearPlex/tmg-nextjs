@@ -5,7 +5,7 @@ import Image from "../src/components/Image/Image";
 
 const blogDetail = () => {
   return (
-    <div className="pt-7 md:pt-20 px-28">
+    <div className="my-8 md:my-10 px-28">
       <span className="text-pink-400 smallText tracking-widest">
         05ht August 2022
       </span>

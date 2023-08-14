@@ -27,7 +27,7 @@ const Services = () => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <p className="mb-2 md:mb-6  paragraphBlack">
+              <p className="mb-2 md:mb-6 mt-6 paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
                 by solid strategy, we assist our clients in building a magnetic
                 online presence to transform every click into a conversion.
@@ -59,7 +59,9 @@ const Services = () => {
                       icon={faAngleRight}
                       className="text-pink-400 smallText mr-1"
                     />
-                    Social Media Marketing
+                    <span className="gradientHoverBlack">
+                      Social Media Marketing
+                    </span>
                   </a>
 
                   <a
@@ -70,7 +72,9 @@ const Services = () => {
                       icon={faAngleRight}
                       className="text-pink-400 smallText mr-1"
                     />
-                    Search Engine Optimization
+                    <span className="gradientHoverBlack">
+                      Search Engine Optimization
+                    </span>
                   </a>
                   <a
                     href="#branding"
@@ -80,7 +84,7 @@ const Services = () => {
                       icon={faAngleRight}
                       className="text-pink-400 smallText mr-1"
                     />
-                    Brand Management
+                    <span className="gradientHoverBlack">Brand Management</span>
                   </a>
                   <a
                     href="#digital_marketing"
@@ -90,11 +94,13 @@ const Services = () => {
                       icon={faAngleRight}
                       className="text-pink-400 smallText mr-1"
                     />
-                    Website Design & Dev.
+                    <span className="gradientHoverBlack">
+                      Website Design & Dev.
+                    </span>
                   </a>
                 </div>
               </ScrollspyNav>
-              <div className="mt-4 md:mt-10">
+              <div className="mt-6 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -102,7 +108,7 @@ const Services = () => {
               </div>
             </div>
           </HeroContainer>
-          <div className="pagePaddingX">
+          <div className="pagePaddingX py-8 md:py-10">
             <TextWithImageContainer
               id="web_design"
               imageSrc={homePageImage.src}
@@ -110,7 +116,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Social Media Marketing</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -128,7 +134,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Brand Management</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
@@ -145,7 +151,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Search Engine Optimization</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
@@ -159,7 +165,7 @@ const Services = () => {
             >
               <div>
                 <div className="headingBlack">Website Design & Development</div>
-                <p className="mt-2 mb-4 md:mt-8 md:mb-14 paragraphBlack">
+                <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Through personal and digital mediums, we provide fast and
                   clear communication to keep information flow open.
                 </p>
@@ -172,7 +178,7 @@ const Services = () => {
               </div>
             </TextWithImageContainer>
           </div>
-          <div className="mt-4 md:mt-10">
+          <div className="mt-6 md:mt-10">
             <Footer />
           </div>
         </section>

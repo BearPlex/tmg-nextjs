@@ -125,7 +125,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
           <Clients />
           <Articles />
           <Footer />

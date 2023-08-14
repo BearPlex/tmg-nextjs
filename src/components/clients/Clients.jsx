@@ -7,7 +7,7 @@ const Clients = () => {
       <div className="heading blackHeadingText">
         Our <span className="gradientText">Happy Clients</span>
       </div>
-      <div className="pt-7 md:pt-20 flex item-center flex-wrap">
+      <div className="flex item-center flex-wrap">
         {clients.map((item, index) => (
           <div
             key={index + 1300}

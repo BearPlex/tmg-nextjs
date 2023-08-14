@@ -49,7 +49,7 @@ const Blog = () => {
                 Because it should never just be work, it should be
                 <span className="gradientText"> a work of art</span>{" "}
               </p>
-              <div className="mt-4 md:mt-10">
+              <div className="mt-6 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"

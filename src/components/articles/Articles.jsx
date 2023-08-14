@@ -68,7 +68,7 @@ const Articles = () => {
                 <div
                   onClick={() => pushWork(article.id)}
                   key={article.id}
-                  className="mx-auto mt-11  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
+                  className="mx-auto mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
                 >
                   <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">

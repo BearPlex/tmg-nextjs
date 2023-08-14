@@ -118,7 +118,7 @@ function BlogDetail() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center mt-4 md:mt-10">
+          <div className="flex justify-center mt-6 md:mt-10">
             <Image
               width={500}
               height={300}

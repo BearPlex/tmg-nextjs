@@ -8,12 +8,12 @@ import React, { useRef, useState } from "react";
 import kotaLogo from "../src/assets/images/agency.png";
 import arrowBack from "../src/assets/images/arrowBack.png";
 import arrowNext from "../src/assets/images/arrowNext.png";
-import galleryImage1 from "../src/assets/images/studio1-1.png";
-import galleryImage2 from "../src/assets/images/studio2-1.png";
-import galleryImage3 from "../src/assets/images/studio3-1.png";
-import galleryImage4 from "../src/assets/images/studio4b.png";
-import galleryImage5 from "../src/assets/images/studio5-1.png";
-import galleryImage6 from "../src/assets/images/studio6.png";
+import galleryImage1 from "../src/assets/images/agency-staff-1.png";
+import galleryImage2 from "../src/assets/images/agency-staff-2.png";
+import galleryImage3 from "../src/assets/images/agency-staff-3.png";
+import galleryImage4 from "../src/assets/images/agency-staff-4.png";
+import galleryImage5 from "../src/assets/images/agency-staff-5.png";
+
 // import mainImage from "../src/assets/svg/home_work_logo.svg";
 import mainImage from "../src/assets/images/team.png";
 import teamMember from "../src/assets/images/james-h.png";
@@ -52,7 +52,7 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  headingBlack font-bold leading-tight capitalize">
+              <h4 className="mb-2 md:mb-6 mt-6 headingBlack font-bold leading-tight capitalize">
                 Lets make your{" "}
                 <span className="gradientText"> digital dreams a reality.</span>
               </h4>
@@ -66,7 +66,7 @@ const Studio = () => {
                   inspire action and drive growth.
                 </span>{" "}
               </p>
-              <div className="mt-4 md:mt-10">
+              <div className="mt-6 md:mt-10">
                 <GradientButton
                   text="Book Free Consultation Today"
                   route="/contact"
@@ -74,18 +74,18 @@ const Studio = () => {
               </div>
             </div>
           </HeroContainer>
-          <section className="mt-9 md:mt-20">
+          <section className="mt-10 py-10">
             <TextWithVideoContainer
               cssClass="md:w-[100%]"
               childcssClass="hidden"
             />
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
-            <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight relative top-10">
+            <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>
-            <p className=" mb-5 text-center mt-14 max-w-4xl paragraphBlack ">
+            <p className=" mb-8 text-center mt-14 max-w-4xl paragraphBlack ">
               With a team of smart and passionate professionals, our agency
               specializes in all elements of digital marketing, from social
               media management to search engine optimization. We are always on
@@ -96,70 +96,75 @@ const Studio = () => {
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="mt-9 md:mt-20 pagePaddingX">
-            <div className="masonry-gallery columns-1 md:columns-2 lg:columns-3">
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage1"
-                  className="h-full object-cover w-full"
-                  src={galleryImage1.src}
-                />
+          <section className="py-10 md:py-20 pagePaddingX">
+            <div className="flex h-full w-full flex-col gap-y-4">
+              <div className="flex h-full w-full flex-col md:flex-row gap-x-0 gap-y-4 md:gap-x-4">
+                <div className="">
+                  <Image
+                    width={500}
+                    height={200}
+                    alt="galleryImage1"
+                    className="h-full object-cover w-full"
+                    layout="responsive"
+                    objectFit="cover"
+                    src={galleryImage1.src}
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    width={500}
+                    height={200}
+                    alt="galleryImage4"
+                    className="h-full object-cover w-full"
+                    layout="responsive"
+                    objectFit="cover"
+                    src={galleryImage2.src}
+                  />
+                </div>
               </div>
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage4"
-                  className="h-full object-cover w-full"
-                  src={galleryImage4.src}
-                />
-              </div>
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage2"
-                  className="h-full object-cover w-full"
-                  src={galleryImage2.src}
-                />
-              </div>
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage5"
-                  className="h-full object-cover w-full"
-                  src={galleryImage5.src}
-                />
-              </div>
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage3"
-                  className="h-full object-cover w-full"
-                  src={galleryImage3.src}
-                />
-              </div>
-              <div className="mb-4">
-                <Image
-                  width={500}
-                  height={300}
-                  alt="galleryImage2"
-                  className="h-full object-cover w-full"
-                  src={galleryImage2.src}
-                />
+              <div className="flex h-full w-full flex-col md:flex-row gap-x-0 gap-y-4 md:gap-x-4">
+                <div className="">
+                  <Image
+                    width={500}
+                    height={200}
+                    alt="galleryImage2"
+                    className="h-full object-cover w-full"
+                    layout="responsive"
+                    objectFit="cover"
+                    src={galleryImage3.src}
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    width={500}
+                    height={200}
+                    alt="galleryImage5"
+                    className="h-full object-cover w-full"
+                    layout="responsive"
+                    objectFit="cover"
+                    src={galleryImage4.src}
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    width={500}
+                    height={200}
+                    alt="galleryImage3"
+                    className="h-full object-cover w-full"
+                    layout="responsive"
+                    objectFit="cover"
+                    src={galleryImage5.src}
+                  />
+                </div>
               </div>
             </div>
           </section>
-          <section className="pt-14 md:pt-36 h-auto bgBlack md:mt-60 ">
+          <section className="h-auto bgBlack py-8 md:py-20">
             <div className="flex flex-col md:flex-row items-center pagePaddingX justify-between componentsMainGap pb-10 md:pb-20">
               <div className="w-full md:w-[50%]">
                 <Image
                   width={500}
-                  height={300}
+                  height={200}
                   src={mainImage.src}
                   alt="work images"
                   layout="responsive"
@@ -167,7 +172,7 @@ const Studio = () => {
                 />
               </div>
               <div className="w-full md:w-[50%] flex justify-center">
-                <div className="largeHeading whiteHeadingText leading-relaxed">
+                <div className="largeHeading whiteHeadingText leading-relaxed text-center my-8">
                   Our team is 360 degree working in every aspect of digital
                   marketing.
                 </div>

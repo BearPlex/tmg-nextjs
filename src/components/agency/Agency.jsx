@@ -126,7 +126,7 @@ const Agency = () => {
   return (
     <div
       ref={agencyRef}
-      className="pagePaddingX pt-7 md:pt-20 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
+      className="pagePaddingX my-8 md:my-10 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
     >
       <div className="w-full hidden md:block  relative">
         <div className="w-full flex flex-row">

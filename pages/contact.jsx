@@ -26,7 +26,7 @@ const Contact = () => {
                 <br />
                 U.S.A.
               </p>
-              <p className="mt-4 md:mt-10">
+              <p className="mt-6 md:mt-10">
                 <a
                   href="tel:+1 (917) 970-1353"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"

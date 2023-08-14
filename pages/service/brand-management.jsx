@@ -60,11 +60,11 @@ function Seo() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-6 md:py-20 w-full">
+            <div className="bgWhite py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
-                    <h1 className="blackDescriptionText largeHeading">
+                  <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                    <h1 className="largeHeadingBlack">
                       Specialized branding services that
                       <span className="gradientText"> Creates Trust</span>{" "}
                     </h1>
@@ -94,7 +94,7 @@ function Seo() {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-10 sm:py-28 md:py-40">
+            <div className="background-gradient py-10 md:py-20">
               <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -142,7 +142,7 @@ function Seo() {
           </section>
 
           <section>
-            <div className="bgBlack w-full">
+            <div className="bgBlack w-full py-8 md:py-10">
               <TextWithImageContainer
                 imageSrc={book.src}
                 imageAlt="book"
@@ -150,7 +150,7 @@ function Seo() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Brand Image
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -178,7 +178,7 @@ function Seo() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Social Presence
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -208,7 +208,7 @@ function Seo() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Tone of Voice{" "}
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
@@ -233,7 +233,7 @@ function Seo() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-4 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
