@@ -168,7 +168,11 @@ function BrandManagement() {
                     Creating GMB Profile.
                   </p>
                   <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -191,7 +195,11 @@ function BrandManagement() {
                     authority and website credibility on Google.
                   </p>
                   <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -213,7 +221,11 @@ function BrandManagement() {
                     content is being seen by the right people.
                   </p>
                   <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -235,7 +247,11 @@ function BrandManagement() {
                     traffic without spending another dime on it. 
                   </p>
                   <div className=" flex items-center gap-x-6 pt-3 md:pt-10 mb-10 md:mb-16">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>

@@ -178,7 +178,11 @@ function Socialmediamarketing() {
                     your target market. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -200,7 +204,11 @@ function Socialmediamarketing() {
                     and workflow management. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -222,7 +230,11 @@ function Socialmediamarketing() {
                     planning to creating content and community management.  
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -246,7 +258,11 @@ function Socialmediamarketing() {
                     visibility.
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>

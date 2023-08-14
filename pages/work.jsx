@@ -66,7 +66,13 @@ const Work = () => {
           ) : (
             work.map((item, index) => (
               <TabPanel key={index + 300}>
-                {<ExpertiseSmall backGroundBlack={false} list={work} />}
+                {
+                  <ExpertiseSmall
+                    showAllProjects={true}
+                    backGroundBlack={false}
+                    list={work}
+                  />
+                }
               </TabPanel>
             ))
           )}

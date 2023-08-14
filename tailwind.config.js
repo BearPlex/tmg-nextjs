@@ -21,6 +21,7 @@ module.exports = {
         "sofia-bold": "Sofia Pro Bold",
         "poppins-regular": "Poppins",
         "poppins-bold": "Poppins Bold",
+        "poppins-extra-bold": "Poppins ExtraBold",
       },
       fontSize: {
         "primary-size": "5rem",

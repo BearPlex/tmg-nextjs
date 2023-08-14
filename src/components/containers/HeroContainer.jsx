@@ -80,7 +80,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
                     objectFit="cover"
                     className="max-w-full max-h-[60vh] image-effect"
                   />
-                  <div className="hidden md:block">
+                  <div className="">
                     <Image
                       width={500}
                       height={300}

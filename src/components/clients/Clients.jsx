@@ -13,15 +13,37 @@ const Clients = () => {
             key={index + 1300}
             className="w-1/2 md:w-1/3 lg:w-1/5 p-2 md:p-4 inline-flex justify-center"
           >
-            <Image
-              decoding="async"
-              width={500}
-              height={30}
-              src={item.img}
-              alt="clients"
-              loading="lazy"
-              className="w-2/3"
-            />
+            {index === 10 || index === 12 ? (
+              <Image
+                decoding="async"
+                width={50}
+                height={50}
+                src={item.img}
+                alt="clients"
+                loading="lazy"
+                className="w-1/2"
+              />
+            ) : index === 14 ? (
+              <Image
+                decoding="async"
+                width={50}
+                height={50}
+                src={item.img}
+                alt="clients"
+                loading="lazy"
+                className="w-1/3"
+              />
+            ) : (
+              <Image
+                decoding="async"
+                width={50}
+                height={50}
+                src={item.img}
+                alt="clients"
+                loading="lazy"
+                className="w-2/3"
+              />
+            )}
           </div>
         ))}
       </div>

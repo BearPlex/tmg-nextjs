@@ -164,6 +164,7 @@ function Seo() {
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
+                      bgBlack={true}
                       text="Learn More"
                       route="/service/web-design"
                     />
@@ -192,7 +193,11 @@ function Seo() {
                     their desired results.  
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/service/seo" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/service/seo"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -213,7 +218,11 @@ function Seo() {
                     customers and inspires them to action.
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/studio" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/studio"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -235,7 +244,11 @@ function Seo() {
                     traffic without spending another dime on it. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>

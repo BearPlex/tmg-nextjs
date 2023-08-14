@@ -18,8 +18,8 @@ const Contact = () => {
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
-              <h4 className="blackHeading text36 mb-2 md:mb-6">NEW YORK</h4>
-              <p className="blackDescriptionText font-sofia-bold text24">
+              <h4 className="blackHeading text36 mb-2 md:mb-6">New York</h4>
+              <p className="blackDescriptionText font-bold paragraph">
                 Brooklyn,
                 <br />
                 New York,
@@ -36,7 +36,7 @@ const Contact = () => {
               </p>
               <p className="group mt:4 md:mt-10 relative">
                 <a
-                  href="https://info@themediagale.com"
+                  href="mailto:info@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
@@ -45,7 +45,7 @@ const Contact = () => {
                 </a>
                 <br />
                 <a
-                  href="mailto:info@themediagale.com"
+                  href="mailto:support@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
@@ -54,7 +54,7 @@ const Contact = () => {
                 </a>
                 <br />
                 <a
-                  href="https://contacus@themediagale.com"
+                  href="mailto:contact@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
@@ -62,7 +62,7 @@ const Contact = () => {
                   contact@themediagale.com
                 </a>
               </p>
-              <div className="flex gap-6 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
+              <div className="flex gap-4 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
                 <a
                   href="https://twitter.com/bearplexdigital"
                   target="_blank"
@@ -98,25 +98,26 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex mt-10 md:mt-0">
+            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col mt-10 md:mt-0">
               <div className="w-[30%] md:w-[30%] block md:hidden">
-                <h4 className="blackHeading text36 mb-2 md:mb-6">NEW YORK</h4>
-                <p className="blackDescriptionText font-sofia-bold text24">
-                  Brooklyn,
-                  <br />
-                  New York,
-                  <br />
-                  U.S.A.
+                <h4 className="blackHeading text36 mb-2 md:mb-6">New York</h4>
+                <p className="blackDescriptionText font-bold paragraph flex flex-col mb-4 whitespace-nowrap">
+                  Brooklyn, New York, U.S.A.
                 </p>
               </div>
-              <div className="w-[30%] md:w-[30%]">
-                <h4 className="blackHeading text36 mb-2 md:mb-6">LAHORE</h4>
-                <p className="blackDescriptionText font-sofia-bold text24 whitespace-nowrap">
-                  DHA Phase 5,
-                  <br />
-                  Lahore,
-                  <br />
-                  Pakistan
+              <div className="w-[30%] md:w-[30%] mb-4 md:mb-0">
+                <h4 className="blackHeading text36 mb-2 md:mb-6">Lahore</h4>
+                <p className="blackDescriptionText font-bold paragraph whitespace-nowrap">
+                  <p className="block md:hidden">
+                    DHA Phase 5, Lahore, Pakistan
+                  </p>
+                  <p className="hidden md:block">
+                    DHA Phase 5,
+                    <br />
+                    Lahore,
+                    <br />
+                    Pakistan.
+                  </p>
                 </p>
               </div>
               <div className="block md:hidden">
@@ -130,21 +131,27 @@ const Contact = () => {
                 </p>
                 <p className="group mt:4 md:mt-10 relative">
                   <a
-                    href="https://info@themediagale.com"
+                    href="mailto:info@themediagale.com"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                   >
                     info@themediagale.com
                   </a>
                   <br />
                   <a
-                    href="https://info@themediagale.com"
+                    href="mailto:support@themediagale.com"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                   >
                     support@themediagale.com
                   </a>
                   <br />
                   <a
-                    href="https://contacus@themediagale.com"
+                    href="mailto:contact@themediagale.com"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
                   >
                     contact@themediagale.com

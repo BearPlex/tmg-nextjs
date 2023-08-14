@@ -110,72 +110,39 @@
   .whiteDescriptionText {
     color: #f8f8f8 !important;
   }
-  /* .text72 {
-    @apply text-[28px] sm:text-[36px] md:text-[50px] lg:text-[72px] font-poppins-bold font-bold leading-[70px];
-  }
 
-  .text60 {
-    @apply text-[24px] sm:text-[24px] md:text-[40px] lg:text-[60px] font-poppins-bold font-bold leading-[70px];
-  }
-
-  .text50 {
-    @apply text-[24px] sm:text-[28px] md:text-[36px] lg:text-[50px] font-extrabold font-poppins-bold leading-[70px];
-  }
-
-  .text48 {
-    @apply text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] font-poppins-bold leading-[70px];
-  }
-
-  .text36 {
-    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-bold font-poppins-bold leading-[44px];
-  }
-
-  .text24 {
-    @apply text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-semibold font-poppins-regular leading-[24px];
-    word-spacing: 0.15rem;
-  }
-
-  .text20 {
-    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-poppins-regular leading-[27px];
-    word-spacing: 0.15rem;
-  }
-
-  .text16 {
-    @apply text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-poppins-regular leading-[20px];
-    word-spacing: 0.1rem;
-  } */
   .text72 {
-    @apply text-[28px] sm:text-[36px] md:text-[50px] lg:text-[72px] font-poppins-bold font-bold leading-[34px] sm:leading-[44px] md:leading-[60px] lg:leading-[86px];
+    @apply text-[28px] sm:text-[36px] md:text-[50px] lg:text-[72px] font-poppins-bold font-extrabold leading-[42px] sm:leading-[52px] md:leading-[68px] lg:leading-[94px];
   }
 
   .text60 {
-    @apply text-[24px] sm:text-[24px] md:text-[40px] lg:text-[60px] font-poppins-bold font-bold leading-[30px] sm:leading-[30px] md:leading-[48px] lg:leading-[72px];
+    @apply text-[24px] sm:text-[24px] md:text-[40px] lg:text-[60px] font-poppins-bold font-extrabold leading-[38px] sm:leading-[38px] md:leading-[54px] lg:leading-[80px];
   }
 
   .text50 {
-    @apply text-[24px] sm:text-[28px] md:text-[36px] lg:text-[50px] font-extrabold font-poppins-bold leading-[30px] sm:leading-[34px] md:leading-[43px] lg:leading-[60px];
+    @apply text-[24px] sm:text-[28px] md:text-[36px] lg:text-[50px] font-extrabold font-poppins-bold leading-[36px] sm:leading-[40px] md:leading-[49px] lg:leading-[66px];
   }
 
   .text48 {
-    @apply text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] font-poppins-bold leading-[27px] sm:leading-[31px] md:leading-[41px] lg:leading-[58px];
+    @apply text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] font-extrabold font-poppins-bold leading-[33px] sm:leading-[37px] md:leading-[47px] lg:leading-[64px];
   }
 
   .text36 {
-    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-bold font-poppins-bold leading-[24px] sm:leading-[29px] md:leading-[34px] lg:leading-[43px];
+    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-extrabold font-poppins-bold leading-[28px] sm:leading-[33px] md:leading-[40px] lg:leading-[49px];
   }
 
   .text24 {
-    @apply text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-semibold font-poppins-regular leading-[17px] sm:leading-[23px] md:leading-[28px] lg:leading-[36px];
+    @apply text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-semibold font-poppins-regular leading-[21px] sm:leading-[27px] md:leading-[32px] lg:leading-[40px];
     word-spacing: 0.15rem;
   }
 
   .text20 {
-    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-poppins-regular leading-[17px] sm:leading-[20px] md:leading-[24px] lg:leading-[30px];
+    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-poppins-regular leading-[21px] sm:leading-[24px] md:leading-[28px] lg:leading-[34px];
     word-spacing: 0.15rem;
   }
 
   .text16 {
-    @apply text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-poppins-regular leading-[14px] sm:leading-[17px] md:leading-[20px] lg:leading-[24px];
+    @apply text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-poppins-regular leading-[18px] sm:leading-[21px] md:leading-[24px] lg:leading-[28px];
     word-spacing: 0.1rem;
   }
 
@@ -397,6 +364,17 @@ body {
   transition: transform 0.3s ease-in-out;
 } */
 
+.gradientHoverBlack:hover {
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientHoverWhite:hover {
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (min-width: 768px) {
   .gradient-span:hover {
     background: white;
@@ -409,18 +387,6 @@ body {
     color: white;
     background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
     transition: all 0.3s ease-in-out !important;
-  }
-
-  .gradientHoverBlack:hover {
-    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .gradientHoverWhite:hover {
-    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .scale-text-on-hover:hover span {

@@ -168,7 +168,11 @@ function WebDesign() {
                     business and let us handle the entire "How to" process. 
                   </p>
                   <div className="flex items-center gap-x-6  mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -192,7 +196,11 @@ function WebDesign() {
                     assistance with the CMS implementation process.
                   </p>
                   <div className="flex items-center gap-x-6  mt-5 md:mt-8">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -215,7 +223,11 @@ function WebDesign() {
                     business and let us handle the entire "How to" process. 
                   </p>
                   <div className="flex items-center gap-x-6 mt-5 md:mt-8 ">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
@@ -237,7 +249,11 @@ function WebDesign() {
                     traffic without spending another dime on it.  
                   </p>
                   <div className="flex items-center gap-x-6  mt-5 md:mt-8 mb-10 md:mb-16">
-                    <GradientButton text="Learn More" route="/" />
+                    <GradientButton
+                      text="Learn More"
+                      route="/"
+                      bgBlack={true}
+                    />
                   </div>
                 </div>
               </TextWithImageContainer>
