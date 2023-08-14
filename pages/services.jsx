@@ -50,7 +50,7 @@ const Services = () => {
                 ]}
                 activeNavClass="is-active"
               >
-                <div className="flex flex-wrap gap-y-4 sm:gap-y-8 justify-between w-full mt-5">
+                <div className="flex flex-wrap gap-y-2 sm:gap-y-6 justify-between w-full mt-5">
                   <a
                     href="#web_design"
                     className="w-full sm:w-[47%] paragraphBlack inline-block"

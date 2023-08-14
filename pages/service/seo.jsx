@@ -75,7 +75,7 @@ function BrandManagement() {
                       Content strategy that
                       <span className="gradientText">
                         {" "}
-                        increases visibility
+                        Increases Visibility
                       </span>{" "}
                     </h1>
                   </div>
@@ -167,13 +167,13 @@ function BrandManagement() {
                     which include Meta Title and Descriptions, Title Tags and
                     Creating GMB Profile.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
+                  {/* <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -194,13 +194,13 @@ function BrandManagement() {
                     Media Presence and Removing Toxic Links to help increase
                     authority and website credibility on Google.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
+                  {/* <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -220,13 +220,13 @@ function BrandManagement() {
                     you target specific keywords and topics to ensure that your
                     content is being seen by the right people.
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
+                  {/* <div className=" flex items-center gap-x-6 pt-3 md:pt-10">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -246,13 +246,13 @@ function BrandManagement() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className=" flex items-center gap-x-6 pt-3 md:pt-10 mb-10 md:mb-16">
+                  {/* <div className=" flex items-center gap-x-6 pt-3 md:pt-10 mb-10 md:mb-16">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
             </div>

@@ -77,7 +77,7 @@ function WebDesign() {
                       Modern designs that
                       <span className="gradientText">
                         {" "}
-                        creates identity
+                        Creates Identity
                       </span>{" "}
                     </h1>
                   </div>
@@ -85,6 +85,7 @@ function WebDesign() {
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.
+                      <br />
                       Everything from using attractive visuals, to writing
                       compelling content and delivering a top-notch user
                       experience holds its importance. We conduct brainstorming
@@ -167,13 +168,13 @@ function WebDesign() {
                     where you can simply focus on managing the inventory part of
                     business and let us handle the entire "How to" process. 
                   </p>
-                  <div className="flex items-center gap-x-6  mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6  mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -195,13 +196,13 @@ function WebDesign() {
                     untapped markets. We provide accurate guidance and hands-on
                     assistance with the CMS implementation process.
                   </p>
-                  <div className="flex items-center gap-x-6  mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6  mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -222,13 +223,13 @@ function WebDesign() {
                     where you can simply focus on managing the service part of
                     business and let us handle the entire "How to" process. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8 ">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8 ">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
-                    />
-                  </div>
+                    /> 
+                  </div>*/}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -248,13 +249,13 @@ function WebDesign() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it.  
                   </p>
-                  <div className="flex items-center gap-x-6  mt-5 md:mt-8 mb-10 md:mb-16">
+                  {/* <div className="flex items-center gap-x-6  mt-5 md:mt-8 mb-10 md:mb-16">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
             </div>

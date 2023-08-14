@@ -121,7 +121,7 @@ export default function Home() {
                 )}
               </div>
               <div className="flex w-full items-center mt-5 justify-center">
-                <GradientButton text="View more" route="/blog" bgBlack={true} />
+                <GradientButton text="View more" route="/work" bgBlack={true} />
               </div>
             </div>
           </section>

@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col mt-10 md:mt-0">
+            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col ">
               <div className="w-[30%] md:w-[30%] block md:hidden">
                 <h4 className="blackHeading text36 mb-2 md:mb-6">New York</h4>
                 <p className="blackDescriptionText font-bold paragraph flex flex-col mb-4 whitespace-nowrap">

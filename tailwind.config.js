@@ -32,10 +32,6 @@ module.exports = {
       screens: {
         "3xl": "2200px",
       },
-
-      // transition: {
-      //     'transition-in-out': 'all 0.3s ease-in-out'
-      // }
     },
   },
   plugins: [],

@@ -66,7 +66,7 @@ function Seo() {
                   <div className="mt-1 md:mt-5 lg:mt-16 sm:mt-24 lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="blackDescriptionText largeHeading">
                       Specialized branding services that
-                      <span className="gradientText"> creates trust</span>{" "}
+                      <span className="gradientText"> Creates Trust</span>{" "}
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
@@ -162,13 +162,13 @@ function Seo() {
                     across all channels - from your website to your social media
                     accounts and your physical collateral. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       bgBlack={true}
                       text="Learn More"
                       route="/service/web-design"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -192,13 +192,13 @@ function Seo() {
                     to help businesses reach their target audience and achieve
                     their desired results.  
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/service/seo"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -217,13 +217,13 @@ function Seo() {
                     with your team to devise a tone that resonates with your
                     customers and inspires them to action.
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/studio"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -243,13 +243,13 @@ function Seo() {
                     results to you, that would help your business get authentic
                     traffic without spending another dime on it. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
             </div>

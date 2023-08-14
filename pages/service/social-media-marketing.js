@@ -74,8 +74,8 @@ function Socialmediamarketing() {
                       High Performance
                       <span className="gradientText">
                         {" "}
-                        breakthrough{" "}
-                        <span className="gradientText">campaigns</span>
+                        Breakthrough{" "}
+                        <span className="gradientText">Campaigns</span>
                       </span>{" "}
                     </h1>
                   </div>
@@ -177,13 +177,13 @@ function Socialmediamarketing() {
                     impact that truly reflects your brand and resonates with
                     your target market. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -203,13 +203,13 @@ function Socialmediamarketing() {
                     from the layout and design to the messaging, call to action
                     and workflow management. 
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -229,13 +229,13 @@ function Socialmediamarketing() {
                     handle everything from building social media strategy and
                     planning to creating content and community management.  
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
               <TextWithImageContainer
@@ -257,13 +257,13 @@ function Socialmediamarketing() {
                     increase in traffic - helping your business get more
                     visibility.
                   </p>
-                  <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
+                  {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8 mb-10 md:mb-16">
                     <GradientButton
                       text="Learn More"
                       route="/"
                       bgBlack={true}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </TextWithImageContainer>
             </div>

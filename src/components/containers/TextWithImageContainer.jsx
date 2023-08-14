@@ -34,7 +34,7 @@ const TextWithImageContainer = ({
                 layout="responsive"
                 objectFit="cover"
                 className={`${
-                  blackContainer ? "" : "md:shadow-2xl"
+                  blackContainer ? "" : "md:shadow-xl"
                 } w-full h-auto imageRounded`}
               />
             </div>
@@ -60,7 +60,7 @@ const TextWithImageContainer = ({
                 layout="responsive"
                 objectFit="cover"
                 className={`${
-                  blackContainer ? "" : "md:shadow-2xl"
+                  blackContainer ? "" : "md:shadow-xl"
                 } w-full h-auto imageRounded`}
               />
             </div>
