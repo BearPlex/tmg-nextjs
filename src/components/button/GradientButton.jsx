@@ -6,7 +6,9 @@ const GradientButton = ({ route, text, bgBlack = false }) => {
   return (
     <button
       className={`rounded-full uppercase ${
-        bgBlack ? "gradient-button-bgBlack" : "gradient-button border-2 "
+        bgBlack
+          ? "gradient-button-bgBlack scale-text-on-hover"
+          : "gradient-button border-2 "
       }`}
       onClick={() => router.push(`${route}`)}
     >

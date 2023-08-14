@@ -134,7 +134,7 @@ const Agency = () => {
             <div className="flex h-[40vh] w-full flex-col justify-start">
               <h2
                 id="beautyRef"
-                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6 mt-44"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6 mt-44"
               >
                 Beauty
               </h2>
@@ -146,7 +146,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="thoughRef"
-                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
               >
                 Analyze
               </h2>
@@ -158,7 +158,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="communicateRef"
-                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
               >
                 Communicate
               </h2>
@@ -170,7 +170,7 @@ const Agency = () => {
             <div className="flex h-[80vh] w-full flex-col justify-center">
               <h2
                 id="executeRef"
-                className="heading mb-5 font-bold blackDescriptionText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
               >
                 Execute
               </h2>
@@ -286,7 +286,7 @@ const Agency = () => {
               className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackHeadingText leading-none relative">
+          <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">
             Communicate
           </h2>
           <p className="paragraph mb-15 blackDescriptionText">
@@ -309,7 +309,7 @@ const Agency = () => {
               className="imageShadow imageRounded"
             />
           </div>
-          <h2 className="heading mb-2 font-bold blackHeadingText leading-none relative">
+          <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">
             Execute
           </h2>
           <p className="paragraph mb-15 blackDescriptionText">

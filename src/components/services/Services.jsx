@@ -8,22 +8,26 @@ import Image from "../Image/Image";
 
 const Services = () => {
   const [type, setType] = useState("design");
+  const [link, setLink] = useState("/service/web-design");
   const [imgSrc, setImgSrc] = useState(designDevelopmentImage.src);
   const [opacity, setOpacity] = useState(1);
 
   const servicesData = {
     design: {
       img: designDevelopmentImage.src,
+      link: "/service/web-design",
       detail:
         "Delivering effective digital strategies & eye-catching online marketing campaigns that earn attention, spark emotion & increase conversions.",
     },
     branding: {
       img: digitalImage.src,
+      link: "/service/brand-management",
       detail:
         "Campaigns that earn attention, spark emotion & increase conversions.",
     },
     digital: {
       img: marketingImage.src,
+      link: "/service/social-media-marketing",
       detail:
         "Eye-catching online marketing campaigns that earn attention, spark emotion & increase conversions.",
     },
@@ -34,6 +38,7 @@ const Services = () => {
     setTimeout(() => {
       setType(newType); // After 500ms, change the type
       setImgSrc(servicesData[newType].img); // set the new image source
+      setLink(servicesData[newType].link); // set the new image source
       setOpacity(1); // Start to fade in
     }, 500);
   };
@@ -72,16 +77,17 @@ const Services = () => {
               </h3>
             </div>
             <div style={{ transition: "ease-in-out 0.3s", opacity }}>
-              <div>
-                <Image
-                  width={100}
-                  height={300}
-                  src={imgSrc}
-                  alt="images"
-                  // loading="lazy"
-                  className="w-[100%] "
-                />
-              </div>
+              <Link href={link}>
+                <div>
+                  <Image
+                    width={100}
+                    height={300}
+                    src={imgSrc}
+                    alt="images"
+                    className="w-[100%] "
+                  />
+                </div>
+              </Link>
               <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
                 {servicesData[type].detail}
               </p>
@@ -92,66 +98,73 @@ const Services = () => {
         {/* Mobile Show and hide on desktop */}
         <div className="block md:hidden lg:hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6">
-            <div className="flex flex-col justify-center">
-              <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
-                Web Design & Development
-              </h3>
+            <Link href="/service/web-design" className="cursor-pointer">
+              <div className="flex flex-col justify-center">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
+                  Web Design & Development
+                </h3>
 
-              <Image
-                width={100}
-                height={300}
-                src={designDevelopmentImage}
-                alt="images"
-                loading="lazy"
-                className="w-[100%] py-4"
-              />
+                <Image
+                  width={100}
+                  height={300}
+                  src={designDevelopmentImage}
+                  alt="images"
+                  loading="lazy"
+                  className="w-[100%] py-4"
+                />
 
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
-                Delivering effective digital strategies & eye-catching online
-                marketing campaigns that earn attention, spark emotion &
-                increase conversions.
-              </p>
-            </div>
+                <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
+                  Delivering effective digital strategies & eye-catching online
+                  marketing campaigns that earn attention, spark emotion &
+                  increase conversions.
+                </p>
+              </div>
+            </Link>
+            <Link href="/service/brand-management" className="cursor-pointer">
+              <div className="flex flex-col justify-center">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
+                  Branding
+                </h3>
 
-            <div className="flex flex-col justify-center">
-              <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
-                Branding
-              </h3>
+                <Image
+                  width={100}
+                  height={300}
+                  src={digitalImage}
+                  alt="images"
+                  loading="lazy"
+                  className="w-[100%] py-4"
+                />
 
-              <Image
-                width={100}
-                height={300}
-                src={digitalImage}
-                alt="images"
-                loading="lazy"
-                className="w-[100%] py-4"
-              />
+                <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
+                  Campaigns that earn attention, spark emotion & increase
+                  conversions.
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/service/social-media-marketing"
+              className="cursor-pointer"
+            >
+              <div className="flex flex-col justify-center">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
+                  Digital Marketing
+                </h3>
 
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
-                Campaigns that earn attention, spark emotion & increase
-                conversions.
-              </p>
-            </div>
+                <Image
+                  width={100}
+                  height={300}
+                  src={marketingImage}
+                  alt="images"
+                  loading="lazy"
+                  className="w-[100%] py-4"
+                />
 
-            <div className="flex flex-col justify-center">
-              <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity xl2Heading  whiteHeadingText">
-                Digital Marketing
-              </h3>
-
-              <Image
-                width={100}
-                height={300}
-                src={marketingImage}
-                alt="images"
-                loading="lazy"
-                className="w-[100%] py-4"
-              />
-
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
-                Eye-catching online marketing campaigns that earn attention,
-                spark emotion & increase conversions.
-              </p>
-            </div>
+                <p className="paragraphWhite mt:4 md:mt-10 leading-loose">
+                  Eye-catching online marketing campaigns that earn attention,
+                  spark emotion & increase conversions.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

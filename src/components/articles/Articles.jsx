@@ -91,7 +91,7 @@ const Articles = () => {
                     <p className="text-base  text-[#EE2760] group-hover:blackHeading">
                       {article.attributes.sub_title}
                     </p>
-                    <p className="text-4xl font-bold blackHeading group-hover:text-white pt-2">
+                    <p className="heading font-bold blackHeading group-hover:text-white pt-2">
                       {article.attributes.title}
                     </p>
                     <div>

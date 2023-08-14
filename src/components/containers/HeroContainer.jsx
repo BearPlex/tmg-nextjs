@@ -67,52 +67,6 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
         <div className="w-full flex items-center componentsMainGap flex-col md:flex-row">
           <div className="text-center w-full h-auto">
             {landingPage ? (
-              // <div>
-              //   <Image
-              //     width={0}
-              //     height={0}
-              //     src={imageSrc}
-              //     alt="kota canvas"
-              //     loading="lazy"
-              //     layout="responsive"
-              //     objectFit="cover"
-              //     className="max-w-full max-h-[60vh]"
-              //   />
-              //   <div className="hidden md:block">
-              //     <Image
-              //       width={500}
-              //       height={300}
-              //       src={group.src}
-              //       alt="the drum logo"
-              //       loading="lazy"
-              //       className="w-[90%] object-contain"
-              //     />
-              //   </div>
-              // </div>
-              // <div className="hover-container">
-              //   <div className="content">
-              //     <Image
-              //       width={0}
-              //       height={0}
-              //       src={imageSrc}
-              //       alt="kota canvas"
-              //       loading="lazy"
-              //       layout="responsive"
-              //       objectFit="cover"
-              //       className="max-w-full max-h-[60vh]"
-              //     />
-              //     <div className="hidden md:block">
-              //       <Image
-              //         width={500}
-              //         height={300}
-              //         src={group.src}
-              //         alt="the drum logo"
-              //         loading="lazy"
-              //         className="w-[90%] object-contain"
-              //       />
-              //     </div>
-              //   </div>
-              // </div>
               <div className="hover-container">
                 <div className="content">
                   <div className="lens"></div>

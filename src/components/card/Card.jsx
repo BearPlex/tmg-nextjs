@@ -36,7 +36,7 @@ const Card = (props) => {
             <p className="text-base  text-[#EE2760] group-hover:blackHeading">
               {blog.attributes.sub_title}
             </p>
-            <p className="text-4xl font-bold  blackHeading group-hover:text-white pt-2">
+            <p className="heading font-bold  blackHeading group-hover:text-white pt-2">
               {blog.attributes.title}
             </p>
             <div>

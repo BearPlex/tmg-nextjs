@@ -110,7 +110,7 @@
   .whiteDescriptionText {
     color: #f8f8f8 !important;
   }
-  .text72 {
+  /* .text72 {
     @apply text-[28px] sm:text-[36px] md:text-[50px] lg:text-[72px] font-poppins-bold font-bold leading-[70px];
   }
 
@@ -132,14 +132,51 @@
 
   .text24 {
     @apply text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-semibold font-poppins-regular leading-[24px];
+    word-spacing: 0.15rem;
   }
 
   .text20 {
     @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-poppins-regular leading-[27px];
+    word-spacing: 0.15rem;
   }
 
   .text16 {
     @apply text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-poppins-regular leading-[20px];
+    word-spacing: 0.1rem;
+  } */
+  .text72 {
+    @apply text-[28px] sm:text-[36px] md:text-[50px] lg:text-[72px] font-poppins-bold font-bold leading-[34px] sm:leading-[44px] md:leading-[60px] lg:leading-[86px];
+  }
+
+  .text60 {
+    @apply text-[24px] sm:text-[24px] md:text-[40px] lg:text-[60px] font-poppins-bold font-bold leading-[30px] sm:leading-[30px] md:leading-[48px] lg:leading-[72px];
+  }
+
+  .text50 {
+    @apply text-[24px] sm:text-[28px] md:text-[36px] lg:text-[50px] font-extrabold font-poppins-bold leading-[30px] sm:leading-[34px] md:leading-[43px] lg:leading-[60px];
+  }
+
+  .text48 {
+    @apply text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] font-poppins-bold leading-[27px] sm:leading-[31px] md:leading-[41px] lg:leading-[58px];
+  }
+
+  .text36 {
+    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-bold font-poppins-bold leading-[24px] sm:leading-[29px] md:leading-[34px] lg:leading-[43px];
+  }
+
+  .text24 {
+    @apply text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-semibold font-poppins-regular leading-[17px] sm:leading-[23px] md:leading-[28px] lg:leading-[36px];
+    word-spacing: 0.15rem;
+  }
+
+  .text20 {
+    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-poppins-regular leading-[17px] sm:leading-[20px] md:leading-[24px] lg:leading-[30px];
+    word-spacing: 0.15rem;
+  }
+
+  .text16 {
+    @apply text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-poppins-regular leading-[14px] sm:leading-[17px] md:leading-[20px] lg:leading-[24px];
+    word-spacing: 0.1rem;
   }
 
   .gradientText {
@@ -245,6 +282,7 @@ body {
   height: 55px;
   min-width: 250px;
   padding: 0px 15px;
+  font-weight: 700;
   text-align: center;
   display: flex;
   align-items: center;
@@ -268,12 +306,12 @@ body {
     padding: 0px 10px;
   }
 }
-.gradient-span:hover {
+/* .gradient-span:hover {
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
-}
+} */
 .gradient-span-bgBlack {
   height: 55px;
   min-width: 250px;
@@ -321,11 +359,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.gradient-button:hover {
+/* .gradient-button:hover {
   color: white;
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   transition: all 0.3s ease-in-out !important;
-}
+} */
 .gradient-button-bgBlack {
   position: relative;
   display: inline-block;
@@ -338,21 +376,57 @@ body {
   -webkit-text-fill-color: transparent;
   transition: background 1s ease-in-out;
 }
-.gradientHoverBlack:hover {
+/* .gradientHoverBlack:hover {
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 .gradientHoverWhite {
   background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background 1s ease-in-out;
 }
-.gradientHoverWhite:hover {
+/* .gradientHoverWhite:hover {
   background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+/* .scale-text-on-hover:hover span {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+} */
+
+@media (min-width: 768px) {
+  .gradient-span:hover {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .gradient-button:hover {
+    color: white;
+    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  .gradientHoverBlack:hover {
+    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradientHoverWhite:hover {
+    background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .scale-text-on-hover:hover span {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 #menuToggle {

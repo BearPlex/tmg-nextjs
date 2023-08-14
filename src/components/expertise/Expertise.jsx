@@ -109,7 +109,7 @@ const Expertise = (props) => {
             </div>
             <div className="w-full items-center">
               <div className="w-full mb-10 md:mb-20 flex justify-center items-center">
-                <p className="largeHeadingWhite">
+                <p className="largeHeadingWhite text-center">
                   Collaborating with trending brands
                 </p>
               </div>

@@ -52,11 +52,11 @@ export default function Home() {
         <div>
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
             <div className="w-full">
-              <h1 className="heading  blackHeading">
+              <h1 className="heading blackHeading">
                 Transforming Businesses into
                 <span className="gradientText heading"> Brands</span>{" "}
               </h1>
-              <p className="paragraph blackDescriptionText ">
+              <p className="paragraph blackDescriptionText mt-0 md:mt-2 lg:mt-6">
                 We offer 360-degree marketing solutions such as PPC
                 Advertisement, Search Engine Optimization and Web Development
                 Services. Our team is technically and professionally equipped to

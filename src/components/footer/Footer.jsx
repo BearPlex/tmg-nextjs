@@ -10,6 +10,11 @@ import groupBtn from "../../assets/images/Group.png";
 import tmg from "../../assets/images/tmg-log.png";
 import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
+import clutrhLogo from "../../assets/svg/clutrh-logo.svg";
+import shopifyLogo from "../../assets/svg/shopify-logo.svg";
+import sortListLogo from "../../assets/svg/sort-list-logo.svg";
+import pashaLogo from "../../assets/svg/PASHA-Logo.svg";
+import psebLogo from "../../assets/svg/PSEB-logo.svg";
 import {
   facebookSvg,
   instagramSvg,
@@ -64,8 +69,8 @@ const Footer = () => {
                     </a>
                   </div>
                 </h4>
-                <h5 className="paragraph mt-0 mb-2 whiteHeadingText font-bold">
-                  Sign Up to our news letter
+                <h5 className="paragraph mt-0 mb-2 whiteHeadingText font-bold hidden md:block">
+                  Send us an email
                 </h5>
                 <a
                   href="mailto:Info@themediagale.com"
@@ -81,42 +86,33 @@ const Footer = () => {
                 <div className="flex flex-wrap items-top mb-6">
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
-                      <li className="mb-2">
-                        <Link href="/" className=" md:pb-3">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
-                            Home
-                          </span>
-                        </Link>
+                      <li className="mb-0 md:mb-2">
+                        <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
+                          Home
+                        </span>
                       </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/work">
                           <span className="gradientHoverWhite xl2Bold text20  pb-0">
                             Work
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/services">
                           <span className="gradientHoverWhite xl2Bold text20  pb-0">
                             Services
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/blog">
                           <span className="gradientHoverWhite xl2Bold text20  pb-0">
                             Blog
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-2">
-                        <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
-                            Contact
-                          </span>
-                        </Link>
-                      </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/privacy-policy">
                           <span className="gradientHoverWhite xl2Bold text20  pb-0">
                             Privacy Policy
@@ -127,19 +123,19 @@ const Footer = () => {
                   </div>
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
-                      <li className="mb-2">
+                      <li className="mt-6 mb-0 md:mb-2">
                         <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
                           Offices
                         </span>
                       </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
                           <span className="gradientHoverWhite xl2Bold text20 ">
                             New York
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-2">
+                      <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
                           <span className="gradientHoverWhite xl2Bold text20 ">
                             Lahore
@@ -158,17 +154,55 @@ const Footer = () => {
               href="/"
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center mb-4 md:m-0  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
-                <div className="h-[45px] w-[100%] bgWhite relative top-4">
-                  <Image
-                    width={600}
-                    height={300}
-                    className="h-[45px]"
-                    alt="group"
-                    layout="response"
-                    objectFit="cover"
-                    src={groupBtn.src}
-                  />
+              <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
+                <div className="h-full w-[100vw] md:w-[100%] bgWhite isolate">
+                  <div className="bgWhite flex flex-row items-center justify-between">
+                    <Image
+                      width={50}
+                      height={40}
+                      className="h-[45px] mr-4 ml-4"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={sortListLogo.src}
+                    />
+                    <Image
+                      width={90}
+                      height={50}
+                      className="h-[50px] mr-4"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={shopifyLogo.src}
+                    />
+                    <Image
+                      width={50}
+                      height={50}
+                      className="h-[45px] mr-4"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={clutrhLogo.src}
+                    />
+                    <Image
+                      width={50}
+                      height={50}
+                      className="h-[45px] mr-4"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={psebLogo.src}
+                    />
+                    <Image
+                      width={50}
+                      height={50}
+                      className="h-[45px] mr-4"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={pashaLogo.src}
+                    />
+                  </div>
                 </div>
               </div>
               <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
