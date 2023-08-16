@@ -85,13 +85,13 @@ function Socialmediamarketing() {
                       slow delicate process. It takes multiple testing, creative
                       input and high performing campaign structures to ensure
                       better conversions.
-                      <div className="mt-1" />
+                      <span className="mt-1 nextLineSpan" />
                       We specialize in performance marketing campaigns using
                       content and audience building strategies that support our
                       campaigns to perform well. With our in-house team of
                       experienced and certified marketers, we ensure that your
                       advertisement is well remembered.
-                      <div className="mt-1" />
+                      <span className="mt-1 nextLineSpan" />
                       As a direct partnership or white labeled solutions, The
                       MediaGale ensures to enhance visibility, drive deeper
                       engagement and generate better quality conversions from
@@ -307,7 +307,7 @@ function Socialmediamarketing() {
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <div className="mt-1" />
+                    <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.

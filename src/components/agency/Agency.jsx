@@ -21,7 +21,7 @@ const Agency = () => {
   const [imageSrc, setImageSrc] = useState(agencyImage1.src);
   const [imageOpacity, setImageOpacity] = useState(1);
 
-  const [scrollY, setScrollY] = useState(10);
+  const [scrollY, setScrollY] = useState(90);
   const [fixedImagePostion, setFixedImagePostion] = useState(false);
   const [windowHeight, setWindowHeight] = useState(0);
   const agencyRef = useRef();
@@ -49,16 +49,16 @@ const Agency = () => {
     return offsetTop + offsetHeight;
   }
   const getTransformValue = (scrollY, imageContainerEnd) => {
-    if (scrollY > 10 && scrollY <= imageContainerEnd) {
+    if (scrollY > 90 && scrollY <= imageContainerEnd) {
       return `translateY(${scrollY}px)`;
     }
-    if (scrollY > 10 && scrollY > imageContainerEnd) {
+    if (scrollY > 90 && scrollY > imageContainerEnd) {
       return `translateY(${imageContainerEnd}px)`;
     }
     return `translateY(0px)`;
   };
   useEffect(() => {
-    if (scrollY > 10 && scrollY <= imageContainerEnd) {
+    if (scrollY > 90 && scrollY <= imageContainerEnd) {
       if (!fixedImagePostion && !window && !window?.scrollY) {
         setFixedImagePostion(false);
       }
@@ -129,7 +129,7 @@ const Agency = () => {
       className="pagePaddingX my-8 md:my-10 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
     >
       <div className="w-full hidden md:block  relative mt-10">
-        <div className="w-full flex flex-row">
+        <div className="w-full flex flex-row relative top-[90px]">
           <div className="w-1/2">
             <div className="flex h-[70vh] w-full flex-col justify-start">
               <h2

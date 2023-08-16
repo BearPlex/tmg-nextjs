@@ -82,7 +82,7 @@ const Studio = () => {
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight">
-              Innovators by heart, <div className="mt-1" />
+              Innovators by heart, <span className="mt-1 nextLineSpan" />
               <span className="gradientText">Creators</span> by mind.
             </h1>
             <p className=" mb-8 text-center mt-14 max-w-4xl paragraphBlack ">

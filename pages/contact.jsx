@@ -8,6 +8,7 @@ import {
   linkedinSvg,
   twitterSvg,
 } from "../src/helpers/Helpers";
+import ContactFormIframe from "../src/components/iframe/ContactFormIframe";
 import Footer from "../src/components/footer/Footer";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
@@ -21,9 +22,9 @@ const Contact = () => {
               <h4 className="blackHeading text36 mb-2 md:mb-6">New York</h4>
               <p className="blackDescriptionText font-bold paragraph">
                 Brooklyn,
-                <div className="mt-1" />
+                <span className="mt-1 nextLineSpan" />
                 New York,
-                <div className="mt-1" />
+                <span className="mt-1 nextLineSpan" />
                 U.S.A.
               </p>
               <p className="mt-6 md:mt-10">
@@ -43,7 +44,7 @@ const Contact = () => {
                 >
                   info@themediagale.com
                 </a>
-                <div className="mt-1" />
+                <span className="mt-1 nextLineSpan" />
                 <a
                   href="mailto:support@themediagale.com"
                   target="_blank"
@@ -52,7 +53,7 @@ const Contact = () => {
                 >
                   support@themediagale.com
                 </a>
-                <div className="mt-1" />
+                <span className="mt-1 nextLineSpan" />
                 <a
                   href="mailto:contact@themediagale.com"
                   target="_blank"
@@ -113,9 +114,9 @@ const Contact = () => {
                   </p>
                   <p className="hidden md:block">
                     DHA Phase 5,
-                    <div className="mt-1" />
+                    <span className="mt-1 nextLineSpan" />
                     Lahore,
-                    <div className="mt-1" />
+                    <span className="mt-1 nextLineSpan" />
                     Pakistan.
                   </p>
                 </p>
@@ -138,7 +139,7 @@ const Contact = () => {
                   >
                     info@themediagale.com
                   </a>
-                  <div className="mt-1" />
+                  <span className="mt-1 nextLineSpan" />
                   <a
                     href="mailto:support@themediagale.com"
                     target="_blank"
@@ -147,7 +148,7 @@ const Contact = () => {
                   >
                     support@themediagale.com
                   </a>
-                  <div className="mt-1" />
+                  <span className="mt-1 nextLineSpan" />
                   <a
                     href="mailto:contact@themediagale.com"
                     target="_blank"
@@ -161,7 +162,8 @@ const Contact = () => {
             </div>
 
             <div className="w-[100%] md:w-[50%] py-10 md:py-0 md:order-6 order-2">
-              <div className="flex flex-wrap justify-between gap-6 gap-y-8 ">
+              <ContactFormIframe />
+              {/* <div className="flex flex-wrap justify-between gap-6 gap-y-8 ">
                 <div className="w-[100%] md:w-[45%]">
                   <Input title="First Name" type="text" />
                 </div>
@@ -237,7 +239,7 @@ const Contact = () => {
                     <GradientButton text="Submit" route="/" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

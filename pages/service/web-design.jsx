@@ -54,7 +54,7 @@ function WebDesign() {
                 scale and seamlessness. Our team of certified developers with
                 years of experience in multiple niches know what would stand out
                 at the end of the day. 
-                <div className="mt-1" />
+                <span className="mt-1 nextLineSpan" />
                 We strongly keep up with the latest trends in the development
                 world, so you can be sure that your website will always be up to
                 date and functional. Our team also works closely with you to
@@ -85,7 +85,7 @@ function WebDesign() {
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.
-                      <div className="mt-1" />
+                      <span className="mt-1 nextLineSpan" />
                       Everything from using attractive visuals, to writing
                       compelling content and delivering a top-notch user
                       experience holds its importance. We conduct brainstorming
@@ -297,7 +297,7 @@ function WebDesign() {
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.
-                    <div className="mt-1" />
+                    <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
