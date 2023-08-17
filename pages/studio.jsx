@@ -224,23 +224,29 @@ const Studio = () => {
                 </Swiper>
               </div>
 
-              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32">
-                <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer">
+              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 select-none">
+                <div
+                  onClick={() => {}}
+                  className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer"
+                >
                   <Image
                     width={500}
                     height={300}
                     src={arrowBack.src}
                     alt="team member"
-                    className="w-[22px]"
+                    className="w-[22px] cursor-pointer"
                   />
                 </div>
-                <div className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer ">
+                <div
+                  onClick={() => {}}
+                  className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer "
+                >
                   <Image
                     width={500}
                     height={300}
                     src={arrowNext.src}
                     alt="team member"
-                    className="w-[22px]"
+                    className="w-[22px] cursor-pointer"
                   />
                 </div>
               </div>

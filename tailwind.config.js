@@ -14,14 +14,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        "circular-regular": "Circular Std Regular",
-        "circular-medium": "Circular Std Medium",
-        "circular-bold": "Circular Std Bold",
-        "sofia-regular": "Sofia Sans",
-        "sofia-bold": "Sofia Pro Bold",
-        "poppins-regular": "Poppins",
-        "poppins-bold": "Poppins Bold",
-        "poppins-extra-bold": "Poppins ExtraBold",
+        sans: ["Poppins", "ui-sans-serif", "system-ui"],
       },
       fontSize: {
         "primary-size": "5rem",

@@ -131,7 +131,7 @@ function footer2() {
                   Terms of Service
                 </Link>
               </div>
-              <h1 className="mt-8 leading-[24px] text-[#848484] font-poppins-regular md:order-1 md:mt-0">
+              <h1 className="mt-8 leading-[24px] text-[#848484] font-sans md:order-1 md:mt-0">
                 &copy; 2023 NuVision, Inc. All Rights Reserved.
               </h1>
             </div>
