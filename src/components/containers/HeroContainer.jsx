@@ -2,35 +2,35 @@ import { useEffect } from "react";
 import Image from "../Image/Image";
 import group from "../../assets/images/Group.png";
 const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
-  useEffect(() => {
-    if (!landingPage) return; // Only apply for landing page
-    const container = document.querySelector(".hover-container");
-    const image = document.querySelector(".image-effect");
+  // useEffect(() => {
+  //   if (!landingPage) return; // Only apply for landing page
+  //   const container = document.querySelector(".hover-container");
+  //   const image = document.querySelector(".image-effect");
 
-    const handleMouseMove = (e) => {
-      const rect = container.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width;
-      const y = (e.clientY - rect.top) / rect.height;
+  //   const handleMouseMove = (e) => {
+  //     const rect = container.getBoundingClientRect();
+  //     const x = (e.clientX - rect.left) / rect.width;
+  //     const y = (e.clientY - rect.top) / rect.height;
 
       // Adjust zoom level as desired
-      const zoom = 1.2;
+    //   const zoom = 1.2;
 
-      image.style.transform = `scale(${zoom}) translate(${(x - 0.5) * 10}%, ${
-        (y - 0.5) * 10
-      }%)`;
-    };
+    //   image.style.transform = `scale(${zoom}) translate(${(x - 0.5) * 10}%, ${
+    //     (y - 0.5) * 10
+    //   }%)`;
+    // };
 
-    const handleMouseLeave = () => {
-      image.style.transform = "scale(1)";
-    };
+    // const handleMouseLeave = () => {
+    //   image.style.transform = "scale(1)";
+    // };
 
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("mouseleave", handleMouseLeave);
+    // container.addEventListener("mousemove", handleMouseMove);
+    // container.addEventListener("mouseleave", handleMouseLeave);
 
-    return () => {
-      container.removeEventListener("mousemove", handleMouseMove);
-      container.removeEventListener("mouseleave", handleMouseLeave);
-    };
+    // return () => {
+    //   container.removeEventListener("mousemove", handleMouseMove);
+    //   container.removeEventListener("mouseleave", handleMouseLeave);
+    // };
     // const container = document.querySelector(".hover-container");
     // const content = document.querySelector(".content");
 
@@ -60,10 +60,10 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
     //   container.removeEventListener("mousemove", handleMouseMove);
     //   container.removeEventListener("mouseleave", handleMouseLeave);
     // };
-  }, [landingPage]);
+  // }, [landingPage]);
   return (
     <section
-      className={`w-full 3xl:max-w-7xl 3xl:mx-auto z-50 ${
+      className={`w-full max-w-7xl mx-auto z-50 ${
         landingPage ? "md:h-[70vh]" : "md:h-[55vh]"
       }`}
     >
@@ -82,9 +82,9 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
                     loading="lazy"
                     layout="responsive"
                     objectFit="cover"
-                    className="max-w-full max-h-[60vh] image-effect"
+                    className="max-w-full max-h-[45vh] object-contain image-animation"
                   />
-                  <div className="">
+                  {/* <div className="">
                     <Image
                       width={500}
                       height={300}
@@ -93,7 +93,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
                       loading="lazy"
                       className="w-[90%] object-contain"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ) : (

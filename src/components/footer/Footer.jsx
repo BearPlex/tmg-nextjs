@@ -12,7 +12,7 @@ import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
 import clutrhLogo from "../../assets/svg/clutrh-logo.svg";
 import shopifyLogo from "../../assets/svg/shopify-logo.svg";
-import sortListLogo from "../../assets/svg/sort-list-logo.svg";
+import footerLogos from "../../assets/images/footer-logos.png";
 import pashaLogo from "../../assets/svg/PASHA-Logo.svg";
 import psebLogo from "../../assets/svg/PSEB-logo.svg";
 import {
@@ -69,15 +69,15 @@ const Footer = () => {
                     </a>
                   </div>
                 </h4>
-                <h5 className="paragraph mt-0 mb-2 whiteHeadingText font-bold hidden md:block">
-                  Send us an email
+                <h5 className="paragraph mt-8 mb-1 whiteHeadingText font-bold hidden md:block">
+                  Shoot us an email
                 </h5>
                 <a
                   href="mailto:Info@themediagale.com"
                   className="mb-2 whiteHeadingText smallHeading font-bold"
                 >
-                  <span className="gradientHoverWhite xl2Bold smallHeading  pb-0">
-                    Info@themediagale.com
+                  <span className="gradientHoverWhite text-base font-medium   ">
+                    info@themediagale.com
                   </span>
                 </a>
               </div>
@@ -87,41 +87,41 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
                       <li className="mb-0 md:mb-2">
-                        <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
+                        <span className="text-[#EE2760] font-semibold text-base   md:pb-3">
                           Explore
                         </span>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
                             Home
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/work">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
                             Work
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/services">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
                             Services
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/blog">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
                             Blog
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/privacy-policy">
-                          <span className="gradientHoverWhite xl2Bold text20  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
                             Privacy Policy
                           </span>
                         </Link>
@@ -131,20 +131,20 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
                       <li className="mt-6 md:mt-0 mb-0 md:mb-2">
-                        <span className="text-[#EE2760] xl2Bold text20   md:pb-3">
+                        <span className="text-[#EE2760] font-semibold text-base   md:pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text20 ">
+                          <span className="gradientHoverWhite xl2Bold text-base ">
                             New York
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text20 ">
+                          <span className="gradientHoverWhite xl2Bold text-base ">
                             Lahore
                           </span>
                         </Link>
@@ -158,70 +158,35 @@ const Footer = () => {
 
           <div className="w-full mt-10 sm:mt-2 md:mt-6 lg:mb-6 mb-0 md:mb-2   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
             <Link
-              href="/"
+              href="/contact"
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
             >
               <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
-                <div className="h-full w-[100vw] md:w-[100%] bgWhite isolate">
-                  <div className="bgWhite flex flex-row items-center justify-between">
+                <div className="h-full w-[100vw] md:w-[100%] isolate">
+                  <div className=" flex flex-row items-center justify-between">
                     <Image
                       width={50}
                       height={40}
-                      className="h-[9vw] md:h-[90px] w-[100px]"
+                      className="h-[9vw] md:h-[90px] w-auto rounded-md"
                       alt="group"
                       layout="response"
-                      objectFit="cover"
-                      src={sortListLogo.src}
+                      objectFit="contain"
+                      src={footerLogos.src}
                     />
-                    <Image
-                      width={90}
-                      height={50}
-                      className="h-[9vw] md:h-[90px] w-[140px] md:w-[200px]"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={shopifyLogo.src}
-                    />
-                    <Image
-                      width={50}
-                      height={50}
-                      className="h-[9vw] md:h-[90px] w-[100px]"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={clutrhLogo.src}
-                    />
-                    <Image
-                      width={50}
-                      height={50}
-                      className="h-[9vw] md:h-[90px] w-[100px]"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={psebLogo.src}
-                    />
-                    <Image
-                      width={50}
-                      height={50}
-                      className="h-[9vw] md:h-[90px] w-[100px]"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={pashaLogo.src}
-                    />
+                    
                   </div>
                 </div>
               </div>
               <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
-                <div className="w-[180px] md:w-[150px] lg:w-[280px]">
+                <div className="">
                   <Image
                     width={0}
                     height={0}
                     src={logoIcon.src}
                     alt="tmg"
                     layout="responsive"
-                    objectFit="cover"
-                    className="h-[59px] w-[180px] md:w-[150px] lg:w-[280px] cursor-pointer"
+                    objectFit="contain"
+                    className=" cursor-pointer"
                   />
                 </div>
               </div>

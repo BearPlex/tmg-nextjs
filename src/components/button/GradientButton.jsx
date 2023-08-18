@@ -5,7 +5,7 @@ const GradientButton = ({ route, text, bgBlack = false }) => {
   const router = useRouter();
   return (
     <button
-      className={`rounded-full uppercase ${
+      className={`rounded-full  uppercase ${
         bgBlack
           ? "gradient-button-bgBlack scale-text-on-hover"
           : "gradient-button border-2 "

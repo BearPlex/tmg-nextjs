@@ -126,7 +126,7 @@ const Agency = () => {
   return (
     <div
       ref={agencyRef}
-      className="pagePaddingX my-8 md:my-10 flex items-start justify-between relative 3xl:max-w-7xl 3xl:mx-auto h-full mainContainer"
+      className="pagePaddingX my-8 md:my-10 flex items-start justify-between relative max-w-7xl mx-auto h-full mainContainer"
     >
       <div className="w-full hidden md:block  relative mt-10">
         <div className="w-full flex flex-row relative top-[90px]">
@@ -211,7 +211,7 @@ const Agency = () => {
                   style={{ opacity: imageOpacity }}
                   layout="responsive"
                   objectFit="cover"
-                  className="imageTransitionEffect w-[100%] imageShadow imageRounded"
+                  className="imageTransitionEffect w-[100%]  imageRounded object-cover"
                 />
               </div>
             </div>
@@ -231,7 +231,7 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
-              className="imageShadow imageRounded"
+              className=" imageRounded image-animation"
             />
           </div>
           <h2
@@ -257,7 +257,7 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
-              className="imageShadow imageRounded"
+              className=" imageRounded image-animation"
             />
           </div>
           <h2
@@ -283,7 +283,7 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
-              className="imageShadow imageRounded"
+              className=" imageRounded image-animation"
             />
           </div>
           <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">
@@ -306,7 +306,7 @@ const Agency = () => {
               loading="lazy"
               layout="responsive"
               objectFit="cover"
-              className="imageShadow imageRounded"
+              className=" imageRounded image-animation"
             />
           </div>
           <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">

@@ -43,8 +43,8 @@ const Services = () => {
     }, 500);
   };
   return (
-    <section className="background-gradient">
-      <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+    <section className="background-gradient ">
+      <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28  3xl:px-0 3xl:pl-0 max-w-7xl mx-auto">
         <span className="block mb-4 md:mb-10 uppercase smallHeading whiteHeadingText ">
           Our Services
         </span>
@@ -52,7 +52,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <div className="flex flex-col justify-center">
               <h3
-                className={`mb-2 md:mb-6    cursor-pointer duration-300 transition-in-out xl2Heading ${
+                className={`mb-2 md:mb-6    cursor-pointer duration-300 transition-in-out heading ${
                   type === "design" ? " whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("design")}
@@ -60,7 +60,7 @@ const Services = () => {
                 Web Design & Development
               </h3>
               <h3
-                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out xl2Heading ${
+                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out heading ${
                   type === "branding" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("branding")}
@@ -68,7 +68,7 @@ const Services = () => {
                 Branding
               </h3>
               <h3
-                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out xl2Heading ${
+                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out heading ${
                   type === "digital" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("digital")}
@@ -96,7 +96,7 @@ const Services = () => {
         </div>
 
         {/* Mobile Show and hide on desktop */}
-        <div className="block md:hidden lg:hidden">
+        <div className="block md:hidden lg:hidden ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6">
             <Link href="/service/web-design" className="cursor-pointer">
               <div className="flex flex-col justify-center">

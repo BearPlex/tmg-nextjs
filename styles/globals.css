@@ -93,7 +93,7 @@
     font-family: "Poppins", sans-serif;
   }
   .xl2Bold {
-    font-weight: 900 !important;
+    font-weight: 400 !important;
   }
   .blackHeadingText {
     color: #1b1b1b !important;
@@ -102,14 +102,14 @@
     color: #1b1b1b;
   }
   .blackDescriptionText {
-    color: #454545 !important;
+    color: #171717 !important;
   }
   .whiteHeadingText {
     color: #ffffff !important;
   }
   .whiteDescriptionText {
     /* color: #e0e0e0 !important; */
-    color: #f8f8f8 !important;
+    color: #e7e7e7 !important;
   }
 
   .text72 {
@@ -165,22 +165,22 @@
     @apply font-sans text36;
   }
   .smallHeading {
-    @apply font-sans text24;
+    @apply font-sans text-base sm:text-xl;
   }
   .largeParagraph {
     @apply font text24;
   }
   .paragraph {
-    @apply font font-sans text20;
+    @apply font font-sans sm:text-base text-sm;
   }
   .smallText {
     @apply font text16;
   }
   .largeHeadingBlack {
-    @apply blackHeadingText largeHeading;
+    @apply blackHeadingText heading;
   }
   .largeHeadingWhite {
-    @apply whiteHeadingText largeHeading;
+    @apply whiteHeadingText heading;
   }
   .extraLargeHeadingWhite {
     @apply extraLargeHeading whiteHeadingText;
@@ -213,7 +213,7 @@
   /* BACKGROUND COLOR END */
   /* MARGIN PADDING START */
   .pagePaddingX {
-    @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0;
+    @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0 ;
   }
   .componentsMainGap {
     @apply gap-10 lg:gap-14 3xl:gap-20;
@@ -764,4 +764,10 @@ footer svg:hover path {
 .image-effect {
   transition: transform 0.3s ease;
   will-change: transform;
+}
+
+/* Hamad Pervaiz */
+
+.image-animation{
+  @apply duration-300 ease-in-out transition hover:opacity-80 hover:-translate-y-1;
 }

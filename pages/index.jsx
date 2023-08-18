@@ -3,7 +3,7 @@
 import Header from "../src/components/header/Header";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";
-import kotaLogo from "../src/assets/images/tmg-logo.png";
+import kotaLogo from "../src/assets/images/hero-image-3x.png";
 import clutchLogo from "../src/assets/images/Clutch_grey@2x.png";
 import awardLogo from "../src/assets/images/awward_grey@2x.png";
 import cssDesignLogo from "../src/assets/images/css-design-awards.png";
@@ -68,8 +68,8 @@ export default function Home() {
             </div>
           </HeroContainer>
 
-          <section className="w-full bgWhite overflow-x-hidden">
-            <div className="flex flex-col md:flex-row componentsMainGap pagePaddingX pt-0 md:pt-10 sm:pb-32 lg:py-40 3xl:max-w-7xl 3xl:mx-auto">
+          <section className="w-full bgWhite overflow-x-hidden max-w-7xl mx-auto ">
+            <div className="flex flex-col md:flex-row componentsMainGap pagePaddingX pt-0 md:pt-10 sm:pb-32 lg:py-40 ">
               <div className="w-full md:w-1/2 md:h-[500px] flex flex-col justify-center">
                 <h1 className="heading  blackHeading mt-10 md:mt-0">
                   Providing Exponential
@@ -91,15 +91,15 @@ export default function Home() {
                     height={400}
                     src={hero.src}
                     alt="App screenshot"
-                    className="w-full h-full ring-1 ring-gray-900/10"
+                    className="w-full h-full ring-1 ring-gray-900/10 object-cover image-animation rounded-xl sm:rounded-none"
                   />
                 </div>
               </div>
             </div>
           </section>
 
-          <div className="py-9 pt-12 md:py-0 md:pt-16">
-            <div className="w-full flex items-center justify-center pb-7 md:pb-16">
+          <div className="py-9 pt-12 md:py-0 md:pt-16 max-w-7xl mx-auto">
+            <div className="w-full flex items-center justify-center pb-7 md:pb-16 pagePaddingX">
               <h2 className="md:w-4/5 w-full text-center heading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>

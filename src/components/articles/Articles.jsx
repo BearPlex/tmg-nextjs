@@ -68,7 +68,7 @@ const Articles = () => {
                 <div
                   onClick={() => pushWork(article.id)}
                   key={article.id}
-                  className="mx-auto mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
+                  className="mx-auto mt-10  white group cursor-pointer hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
                 >
                   <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">
@@ -88,10 +88,10 @@ const Articles = () => {
                     </div>
                   </div>
                   <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-                    <p className="text-base  text-[#EE2760] group-hover:blackHeading">
+                    <p className="paragraph  text-[#EE2760] group-hover:blackHeading">
                       {article.attributes.sub_title}
                     </p>
-                    <p className="heading font-bold blackHeading group-hover:text-white pt-2">
+                    <p className="smallHeading font-bold blackHeading group-hover:text-white pt-2">
                       {article.attributes.title}
                     </p>
                     <div>
