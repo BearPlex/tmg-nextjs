@@ -62,7 +62,11 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
     // };
   }, [landingPage]);
   return (
-    <section className="w-full md:h-[55vh] 3xl:max-w-7xl 3xl:mx-auto z-50">
+    <section
+      className={`w-full 3xl:max-w-7xl 3xl:mx-auto z-50 ${
+        landingPage ? "md:h-[70vh]" : "md:h-[55vh]"
+      }`}
+    >
       <div className="h-full flex items-center pagePaddingX">
         <div className="w-full flex items-center componentsMainGap flex-col md:flex-row">
           <div className="text-center w-full h-auto">
