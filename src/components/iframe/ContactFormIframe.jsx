@@ -132,7 +132,7 @@ function ContactFormIframe() {
         id="JotFormIFrame-232262656435457"
         title="TMG - Contact Form"
         allowtransparency="true"
-        allowfullscreen="true"
+        allowFullScreen={true}
         allow="geolocation; microphone; camera"
         src="https://form.jotform.com/232262656435457"
         frameborder="0"
