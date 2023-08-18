@@ -15,7 +15,7 @@ const TextWithImageContainer = ({
         <section
           className={`${
             blackContainer ? "pagePaddingX" : ""
-          } w-full 3xl:max-w-7xl 3xl:mx-auto`}
+          } max-w-7xl mx-auto`}
         >
           <section
             id={id}
@@ -33,7 +33,7 @@ const TextWithImageContainer = ({
                 alt={imageAlt}
                 layout="responsive"
                 objectFit="cover"
-                className={`${
+                className={`image-animation ${
                   blackContainer ? "" : ""
                 } w-full h-auto imageRounded`}
               />
@@ -44,7 +44,7 @@ const TextWithImageContainer = ({
         <section
           className={`${
             blackContainer ? "pagePaddingX" : ""
-          } w-full 3xl:max-w-7xl 3xl:mx-auto`}
+          } max-w-7xl mx-auto`}
         >
           <section
             id={id}
@@ -59,7 +59,7 @@ const TextWithImageContainer = ({
                 alt={imageAlt}
                 layout="responsive"
                 objectFit="cover"
-                className={`${
+                className={`image-animation ${
                   blackContainer ? "" : ""
                 } w-full h-auto imageRounded`}
               />

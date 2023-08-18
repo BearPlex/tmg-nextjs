@@ -21,7 +21,7 @@ const Clients = () => {
                 src={item.img}
                 alt="clients"
                 loading="lazy"
-                className="w-1/2 object-contain"
+                className="w-1/2 object-contain image-animation"
               />
             ) : index === 14 ? (
               <Image
@@ -31,7 +31,7 @@ const Clients = () => {
                 src={item.img}
                 alt="clients"
                 loading="lazy"
-                className="w-1/3 object-contain"
+                className="w-1/3 object-contain image-animation"
               />
             ) : (
               <Image
@@ -41,7 +41,7 @@ const Clients = () => {
                 src={item.img}
                 alt="clients"
                 loading="lazy"
-                className="w-2/3 object-contain"
+                className="w-2/3 object-contain image-animation"
               />
             )}
           </div>

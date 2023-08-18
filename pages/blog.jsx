@@ -43,7 +43,9 @@ const Blog = () => {
           <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
-                News, insights, and creative culture from TMG.
+                News, insights, and 
+                <span className="gradientText"> creative culture </span>
+                 from TMG.
               </h4>
               <p className="paragraphBlack">
                 Because it should never just be work, it should be
@@ -58,7 +60,7 @@ const Blog = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX pt-10 md:pt-20 w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <div className="pagePaddingX pt-10 md:pt-20 max-w-7xl mx-auto">
             <a href="" className="relative blog-banner w-full h-full">
               <Image
                 src={bannerImage}
@@ -67,6 +69,7 @@ const Blog = () => {
                 height={550}
                 layout="responsive"
                 objectFit="cover"
+                className="rounded-xl"
               />
 
               <div className="absolute left-10 bottom-10">
@@ -80,7 +83,7 @@ const Blog = () => {
             </a>
           </div>
           <div className="mt-4">
-            <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper w-full">
+            <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper max-w-7xl mx-auto" >
               {/* <TabList>
                              <Tab>All</Tab>
                              <Tab>Expertise</Tab>

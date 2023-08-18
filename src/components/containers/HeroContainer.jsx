@@ -105,7 +105,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
-                className="max-w-full max-h-[60vh]"
+                className="max-w-full  image-animation object-contain"
               />
             )}
           </div>

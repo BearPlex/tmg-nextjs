@@ -28,8 +28,8 @@ const Services = () => {
         <section>
           {/* <HeroContainer imageSrc={kotaLogo.src}> */}
           <TextWithVideoContainer
-            cssClass="md:w-[50%]"
-            childcssClass="md:w-[50%]"
+            cssClass=""
+            childcssClass=""
           >
             <div className="w-full">
               <p className="mb-2 md:mb-6 mt-6 paragraphBlack">

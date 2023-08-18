@@ -19,6 +19,9 @@ import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
+import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
+
+
 function BrandManagement() {
   const [work, setWork] = useState([]);
   useEffect(() => {
@@ -68,7 +71,7 @@ function BrandManagement() {
           </TextWithVideoContainer>
           <section>
             <div className="bgWhite py-10 md:py-20 w-full">
-              <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="largeHeadingBlack">
@@ -98,7 +101,7 @@ function BrandManagement() {
           </section>
           <section>
             <div className="background-gradient py-10 md:py-20">
-              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
                     <dd className="relative  extraLargeHeadingWhite">
@@ -272,20 +275,20 @@ function BrandManagement() {
             </Tabs>
           </section>
 
-          <section className="background-gradient pb-10 md:pb-0">
-            <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
-              <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 ">
+          <section className="background-gradient py-28">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center mx-auto">
                 <div className="w-full md:w-1/2">
                   <Image
                     width={500}
                     height={300}
-                    src={hand.src}
-                    alt="hand"
-                    className="w-[658px] h-[836px] drop-shadow-xl"
+                    src={staffAugmentationImage.src}
+                    alt="Staff Augmentation - The MediaGale"
+                    className=" h-auto object-contain image-animation"
                   />
                 </div>
-                <div className="pagePaddingX w-full md:w-1/2  ">
-                  <h1 className="mt-5 md:mt-10 largeHeading whiteHeadingText">
+                <div className="pagePaddingX mt-12 sm:mt-0 w-full md:w-1/2">
+                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
@@ -294,7 +297,7 @@ function BrandManagement() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.
+                    fit your job requirement.<br></br><br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

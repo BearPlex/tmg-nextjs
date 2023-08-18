@@ -12,7 +12,7 @@ const Expertise = (props) => {
   };
   return (
     <>
-      <div className="w-full">
+      <div className="max-w-7xl mx-auto">
         <div className="w-full hidden md:block">
           <div className="isolate items-end  ">
             <div className="">

@@ -45,7 +45,7 @@ const TextWithVideoContainer = ({
 
   return (
     <div>
-      <section className="w-full 3xl:max-w-7xl 3xl:mx-auto componentsMainGap pagePaddingX">
+      <section className="max-w-7xl mx-auto  componentsMainGap pagePaddingX">
         <section
           id={id}
           className="flex flex-col md:flex-row componentsMainGap py-0  3xl:py-28 lg:py-14 "
@@ -55,11 +55,11 @@ const TextWithVideoContainer = ({
               <video
                 id="videoElement"
                 ref={videoRef}
-                className="object-cover h-fit imageRounded"
+                className="object-cover h-fit imageRounded hover:opacity-90 transition duration-300 ease-in-out"
                 autoPlay={true}
                 muted={true}
                 playsInline={true}
-                src="/video/hp.mp4"
+                src="/video/themediagale-video.mp4"
               />
 
               {isPlaying ? null : (

@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
 import React, { useRef, useState } from "react";
 
-import kotaLogo from "../src/assets/images/agency.png";
+import agencyHero from "../src/assets/images/agency-hero.png";
 import arrowBack from "../src/assets/images/arrowBack.png";
 import arrowNext from "../src/assets/images/arrowNext.png";
 import galleryImage1 from "../src/assets/images/agency-staff-1.png";
@@ -50,11 +50,11 @@ const Studio = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={kotaLogo.src}>
+          <HeroContainer imageSrc={agencyHero.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 mt-6 headingBlack font-bold leading-tight capitalize">
-                Lets make your{" "}
-                <span className="gradientText"> digital dreams a reality.</span>
+              <h4 className="mb-2 md:mb-6 mt-6 headingBlack font-bold leading-tight  ">
+                Lets Make Your Digital Dreams{" "}
+                <span className="gradientText"> a Reality.</span>
               </h4>
               <p className="paragraphBlack">
                 We create the best customer experiences across your brands
@@ -104,7 +104,7 @@ const Studio = () => {
                     width={500}
                     height={200}
                     alt="galleryImage1"
-                    className="h-full object-cover w-full"
+                    className="h-full object-cover w-full image-animation rounded-md"
                     layout="responsive"
                     objectFit="cover"
                     src={galleryImage1.src}
@@ -115,7 +115,7 @@ const Studio = () => {
                     width={500}
                     height={200}
                     alt="galleryImage4"
-                    className="h-full object-cover w-full"
+                    className="h-full object-cover w-full image-animation rounded-md"
                     layout="responsive"
                     objectFit="cover"
                     src={galleryImage2.src}
@@ -128,7 +128,7 @@ const Studio = () => {
                     width={500}
                     height={200}
                     alt="galleryImage2"
-                    className="h-full object-cover w-full"
+                    className="h-full object-cover w-full image-animation rounded-md"
                     layout="responsive"
                     objectFit="cover"
                     src={galleryImage3.src}
@@ -139,7 +139,7 @@ const Studio = () => {
                     width={500}
                     height={200}
                     alt="galleryImage5"
-                    className="h-full object-cover w-full"
+                    className="h-full object-cover w-full image-animation rounded-md"
                     layout="responsive"
                     objectFit="cover"
                     src={galleryImage4.src}
@@ -150,7 +150,7 @@ const Studio = () => {
                     width={500}
                     height={200}
                     alt="galleryImage3"
-                    className="h-full object-cover w-full"
+                    className="h-full object-cover w-full image-animation rounded-md"
                     layout="responsive"
                     objectFit="cover"
                     src={galleryImage5.src}
@@ -172,7 +172,7 @@ const Studio = () => {
                 />
               </div>
               <div className="w-full md:w-[50%] flex justify-center">
-                <div className="largeHeading whiteHeadingText leading-relaxed text-center my-8">
+                <div className="heading whiteHeadingText leading-relaxed text-left my-8">
                   Our team is 360 degree working in every aspect of digital
                   marketing.
                 </div>
@@ -208,7 +208,7 @@ const Studio = () => {
                   {memberImages.map((member, index) => (
                     <SwiperSlide key={index + 200}>
                       <div className="">
-                        <figure className="">
+                        <figure className="image-animation">
                           <Image
                             width={500}
                             height={300}
@@ -227,7 +227,7 @@ const Studio = () => {
               <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 select-none">
                 <div
                   onClick={() => {}}
-                  className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer"
+                  className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
                 >
                   <Image
                     width={500}
@@ -239,7 +239,7 @@ const Studio = () => {
                 </div>
                 <div
                   onClick={() => {}}
-                  className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer "
+                  className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
                 >
                   <Image
                     width={500}

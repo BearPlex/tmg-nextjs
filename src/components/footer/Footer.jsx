@@ -36,7 +36,7 @@ const Footer = () => {
                   Follow
                   <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
                     <a
-                      href="https://twitter.com/bearplexdigital"
+                      href="https://twitter.com/themediagale"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-block"
@@ -44,7 +44,7 @@ const Footer = () => {
                       {twitterSvg()}
                     </a>
                     <a
-                      href="https://www.facebook.com/BearPlex/"
+                      href="https://instagram.com/themediagale/"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-block"
@@ -52,7 +52,7 @@ const Footer = () => {
                       {instagramSvg()}
                     </a>
                     <a
-                      href="https://www.facebook.com/BearPlex/"
+                      href="https://www.facebook.com/themediagale/"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-block"
@@ -60,7 +60,7 @@ const Footer = () => {
                       {facebookSvg()}
                     </a>
                     <a
-                      href="https://www.linkedin.com/company/bearplex/"
+                      href="https://www.linkedin.com/company/themediagale/"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-block"
@@ -76,7 +76,7 @@ const Footer = () => {
                   href="mailto:Info@themediagale.com"
                   className="mb-2 whiteHeadingText smallHeading font-bold"
                 >
-                  <span className="gradientHoverWhite text-base font-medium   ">
+                  <span className="gradientHoverWhite text-sm sm:text-base font-medium   ">
                     info@themediagale.com
                   </span>
                 </a>
@@ -87,41 +87,41 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
                       <li className="mb-0 md:mb-2">
-                        <span className="text-[#EE2760] font-semibold text-base   md:pb-3">
+                        <span className="text-[#EE2760] font-semibold text-sm sm:text-base   md:pb-3">
                           Explore
                         </span>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/">
-                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
                             Home
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/work">
-                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
                             Work
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/services">
-                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
                             Services
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/blog">
-                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
                             Blog
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3 " href="/privacy-policy">
-                          <span className="gradientHoverWhite xl2Bold text-base  pb-0">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
                             Privacy Policy
                           </span>
                         </Link>
@@ -131,20 +131,20 @@ const Footer = () => {
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
                       <li className="mt-6 md:mt-0 mb-0 md:mb-2">
-                        <span className="text-[#EE2760] font-semibold text-base   md:pb-3">
+                        <span className="text-[#EE2760] font-semibold text-sm sm:text-base   md:pb-3">
                           Offices
                         </span>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text-base ">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base ">
                             New York
                           </span>
                         </Link>
                       </li>
                       <li className="mb-0 md:mb-2">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text-base ">
+                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base ">
                             Lahore
                           </span>
                         </Link>
@@ -163,11 +163,11 @@ const Footer = () => {
             >
               <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
                 <div className="h-full w-[100vw] md:w-[100%] isolate">
-                  <div className=" flex flex-row items-center justify-between">
+                  <div className=" sm:bg-transparent bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
                       width={50}
                       height={40}
-                      className="h-[9vw] md:h-[90px] w-auto rounded-md"
+                      className="h-[9vw] md:h-[70px] w-full object-contain sm:w-auto rounded-none sm:rounded-md ease-in-out duration-300 transition hover:-translate-y-1"
                       alt="group"
                       layout="response"
                       objectFit="contain"
@@ -178,7 +178,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
-                <div className="">
+                <div className="w-[150px]">
                   <Image
                     width={0}
                     height={0}
@@ -186,7 +186,7 @@ const Footer = () => {
                     alt="tmg"
                     layout="responsive"
                     objectFit="contain"
-                    className=" cursor-pointer"
+                    className="h-12 w-12 cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
                   />
                 </div>
               </div>

@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import kotaLogo from "../../src/assets/images/Blog-pic.png";
 import serviceBottle from "../../src/assets/images/service-bottle.png";
 import body from "../../src/assets/images/body-img.png";
-import book from "../../src/assets/images/social2-img.png";
+import book from "../../src/assets/images/smm-01.png";
 import mobile3 from "../../src/assets/images/social1-img.png";
 import mobile2 from "../../src/assets/images/mobile1.png";
 import tmg from "../../src/assets/images/TMG-pic.png";
-import hand from "../../src/assets/images/hand.png";
+import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
 import Header from "../../src/components/header/Header";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -41,7 +41,7 @@ function Socialmediamarketing() {
   return (
     <>
       <PageWrapper>
-        <section className="w-full">
+        <section className=" w-full">
           <TextWithVideoContainer
             cssClass="md:w-[50%]"
             childcssClass="md:w-[50%]"
@@ -66,7 +66,7 @@ function Socialmediamarketing() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-10 md:py-20 w-full">
+            <div className="bgWhite py-10 md:py-20 max-w-7xl mx-auto">
               <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -82,17 +82,17 @@ function Socialmediamarketing() {
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Getting noticed and remembered by the right audience is a
-                      slow delicate process. It takes multiple testing, creative
+                      slow <span className="gradientText"><b>delicate process</b></span>. It takes multiple testing, creative
                       input and high performing campaign structures to ensure
-                      better conversions.
+                      better conversions.<br></br><br></br>
                       <span className="mt-1 nextLineSpan" />
                       We specialize in performance marketing campaigns using
                       content and audience building strategies that support our
-                      campaigns to perform well. With our in-house team of
+                      campaigns to perform well. With our <span className="gradientText"><b>in-house team</b></span> of
                       experienced and certified marketers, we ensure that your
-                      advertisement is well remembered.
+                      advertisement is well remembered.<br></br><br></br>
                       <span className="mt-1 nextLineSpan" />
-                      As a direct partnership or white labeled solutions, The
+                      As a direct partnership or <span className="gradientText"><b>white labeled solutions</b></span>, The
                       MediaGale ensures to enhance visibility, drive deeper
                       engagement and generate better quality conversions from
                       social and search engine platforms.
@@ -104,7 +104,7 @@ function Socialmediamarketing() {
           </section>
           <section>
             <div className="background-gradient py-10 md:py-20">
-              <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
                     <dd className="relative  extraLargeHeadingWhite">
@@ -284,20 +284,20 @@ function Socialmediamarketing() {
             </Tabs>
           </section>
 
-          <section className="background-gradient pb-10 md:pb-0">
-            <div className="w-full">
+          <section className="background-gradient py-28">
+            <div className="max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 3xl:mx-auto">
-                <div className="w-full md:w-1/2">
+                <div className="w-1/2">
                   <Image
                     width={500}
                     height={300}
-                    src={hand.src}
-                    alt="hand"
-                    className="w-[658px] h-[836px] drop-shadow-xl"
+                    src={staffAugmentationImage.src}
+                    alt="Staff Augmentation - The MediaGale"
+                    className=" h-auto object-contain"
                   />
                 </div>
-                <div className="pagePaddingX w-full md:w-1/2  ">
-                  <h1 className="mt-5 md:mt-10 largeHeading whiteHeadingText">
+                <div className="pagePaddingX w-1/2">
+                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
                   <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
@@ -306,7 +306,7 @@ function Socialmediamarketing() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.
+                    fit your job requirement.<br></br><br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

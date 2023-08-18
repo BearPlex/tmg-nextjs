@@ -136,7 +136,7 @@ const NavigationMenu = () => {
             <div className="w-1/2 flex justify-center md:justify-center lg:justify-start pl-7 md:pl-0 mt-[2vh]">
               {(isHovered || mediumscreen) && (
                 <div className="hidden md:block ml-0 md:ml-8">
-                  <ul className="flex flex-col items-start justify-between h-[110px] lg:h-[250px]">
+                  <ul className="flex flex-col items-start justify-between h-[90px] lg:h-[170px]">
                     {/* <ul className="absolute w-[250px] md:w-[380px] h-[180px] md:h-[250px] top-[50%] translate-y-[-50%]  left-[35vw] lg:left-[300px] xl:left-[480px] flex flex-col justify-between"> */}
                     {/* <> */}
                     <Link
@@ -175,7 +175,7 @@ const NavigationMenu = () => {
       <div className="w-full pagePaddingX nav-footer fixed bottom-5 flex items-center justify-between">
         <div className="flex items-center gap-0 md:gap-4 contact-wrapper">
           <a
-            href="https://twitter.com/bearplexdigital"
+            href="https://twitter.com/themediagale"
             target="_blank"
             rel="noreferrer"
             className="inline-block"
@@ -183,7 +183,7 @@ const NavigationMenu = () => {
             {twitterSvg()}
           </a>
           <a
-            href="https://www.facebook.com/BearPlex/"
+            href="https://instagram.com/themediagale/"
             target="_blank"
             rel="noreferrer"
             className="inline-block"
@@ -191,7 +191,7 @@ const NavigationMenu = () => {
             {instagramSvg()}
           </a>
           <a
-            href="https://www.facebook.com/BearPlex/"
+            href="https://www.facebook.com/themediagale/"
             target="_blank"
             rel="noreferrer"
             className="inline-block"
@@ -199,7 +199,7 @@ const NavigationMenu = () => {
             {facebookSvg()}
           </a>
           <a
-            href="https://www.linkedin.com/company/bearplex/"
+            href="https://www.linkedin.com/company/themediagale/"
             target="_blank"
             rel="noreferrer"
             className="inline-block"
@@ -212,7 +212,7 @@ const NavigationMenu = () => {
             Let's get cracking
           </h4>
           <button className="transparentBgColor ml-0 sm:ml-2 md:ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-2 md:py-4 px-3 md:px-6 rounded-full">
-            <span className="paragraph">Start Your project</span>
+            <Link href="/contact"><span  className="paragraph">Start Your project</span></Link>
           </button>
         </div>
       </div>

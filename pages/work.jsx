@@ -49,7 +49,8 @@ const Work = () => {
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
             <h4 className="mb-2 md:mb-6  headingBlack leading-tight">
-              We are experts in bringing brands to life digitally.
+              We are experts in bringing brands to life 
+              <span className="gradientText"> digitally.</span>
             </h4>
             <p className="paragraphBlack">
               TMG is a progressive and insightful design agency, technically and

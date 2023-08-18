@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/resource-word.png";
+import kotaLogo from "../src/assets/images/resources-hero.png";
 import Link from "next/link";
 import homePageImage from "../src/assets/images/seo-resource.png";
 import developmentImage from "../src/assets/images/ppc-resource.png";
@@ -47,7 +47,7 @@ const Resources = () => {
             </div>
           </HeroContainer>
 
-          <div className="pagePaddingX pt-8 md:pt-10">
+          <div className="pagePaddingX pt-8 md:pt-10 max-w-7xl mx-auto">
             <TextWithImageContainer
               id="web_design"
               imageSrc={homePageImage.src}
@@ -59,7 +59,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/service/seo" />
+                <GradientButton text="Get a Quote" route="/contact" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -73,7 +73,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/services" />
+                <GradientButton text="Get a Quote" route="/contact" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -87,7 +87,7 @@ const Resources = () => {
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
                 </p>
-                <GradientButton text="Learn More" route="/service/web-design" />
+                <GradientButton text="Get a Quote" route="/contact" />
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -102,7 +102,7 @@ const Resources = () => {
                   customized solutions to everyday business challenges.
                 </p>
                 <div className="mb-10">
-                  <GradientButton text="Learn More" route="/contact" />
+                  <GradientButton text="Get a Quote" route="/contact" />
                 </div>
               </div>
             </TextWithImageContainer>
