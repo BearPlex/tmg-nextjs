@@ -59,10 +59,10 @@ const Header = () => {
       >
         <div className="w-full">
           <header
-            className={`3xl:max-w-7xl 3xl:mx-auto pagePaddingX 3xl:pl-0 transition-all duration-300 ${
+            className={`max-w-7xl mx-auto pagePaddingX 2xl:pl-0 transition-all duration-300 ${
               isShrunk && !showMenu
-                ? "py-6 3xl:py-6 lg:py-4 3xl:px-0"
-                : "py-6 3xl:py-11 lg:py-11 3xl:px-0"
+                ? "py-6 2xl:py-6 lg:py-4 2xl:px-0"
+                : "py-6 2xl:py-11 lg:py-11 2xl:px-0"
             }`}
           >
             <nav className="flex items-center justify-between">

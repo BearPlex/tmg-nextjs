@@ -127,7 +127,7 @@ function ContactFormIframe() {
   }, []);
 
   return (
-    <div>
+    <div className="IFrameMainContainer">
       <iframe
         id="JotFormIFrame-232262656435457"
         title="TMG - Contact Form"

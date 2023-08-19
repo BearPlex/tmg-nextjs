@@ -38,7 +38,7 @@ function BlogDetail() {
   return (
     <>
       <PageWrapper>
-        <div className="3xl:max-w-7xl 3xl:mx-auto">
+        <div className="max-w-7xl mx-auto">
           <section className="pagePaddingX">
             {/* <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText pt-20 md:pt-30 lg:pt-40"> */}
             <span className="text-pink-400 text-base tracking-widest">
@@ -154,7 +154,7 @@ function BlogDetail() {
       </PageWrapper>
       {/* <PageWrapper>
         <section className="">
-          <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+          <div className="pagePaddingX max-w-7xl mx-auto">
             <span className="text-pink-400 text-base tracking-widest">
               {work?.attributes?.date}
             </span>

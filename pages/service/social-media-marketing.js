@@ -67,7 +67,7 @@ function Socialmediamarketing() {
           </TextWithVideoContainer>
           <section>
             <div className="bgWhite py-10 md:py-20 max-w-7xl mx-auto">
-              <div className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+              <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
                     <h1 className="largeHeadingBlack">
@@ -82,20 +82,32 @@ function Socialmediamarketing() {
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Getting noticed and remembered by the right audience is a
-                      slow <span className="gradientText"><b>delicate process</b></span>. It takes multiple testing, creative
-                      input and high performing campaign structures to ensure
-                      better conversions.<br></br><br></br>
+                      slow{" "}
+                      <span className="gradientText">
+                        <b>delicate process</b>
+                      </span>
+                      . It takes multiple testing, creative input and high
+                      performing campaign structures to ensure better
+                      conversions.<br></br>
+                      <br></br>
                       <span className="mt-1 nextLineSpan" />
                       We specialize in performance marketing campaigns using
                       content and audience building strategies that support our
-                      campaigns to perform well. With our <span className="gradientText"><b>in-house team</b></span> of
-                      experienced and certified marketers, we ensure that your
-                      advertisement is well remembered.<br></br><br></br>
+                      campaigns to perform well. With our{" "}
+                      <span className="gradientText">
+                        <b>in-house team</b>
+                      </span>{" "}
+                      of experienced and certified marketers, we ensure that
+                      your advertisement is well remembered.<br></br>
+                      <br></br>
                       <span className="mt-1 nextLineSpan" />
-                      As a direct partnership or <span className="gradientText"><b>white labeled solutions</b></span>, The
-                      MediaGale ensures to enhance visibility, drive deeper
-                      engagement and generate better quality conversions from
-                      social and search engine platforms.
+                      As a direct partnership or{" "}
+                      <span className="gradientText">
+                        <b>white labeled solutions</b>
+                      </span>
+                      , The MediaGale ensures to enhance visibility, drive
+                      deeper engagement and generate better quality conversions
+                      from social and search engine platforms.
                     </p>
                   </div>
                 </div>
@@ -270,7 +282,7 @@ function Socialmediamarketing() {
           </section>
 
           <section>
-            <Tabs className=" pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto tabs-wrapper">
+            <Tabs className=" pagePaddingX w-full max-w-7xl mx-auto tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index + 600}>
                   {" "}
@@ -286,7 +298,7 @@ function Socialmediamarketing() {
 
           <section className="background-gradient py-28">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center 3xl:px-0 3xl:pl-0 3xl:mx-auto">
+              <div className="flex flex-col md:flex-row items-center 2xl:px-0 2xl:pl-0">
                 <div className="w-1/2">
                   <Image
                     width={500}
@@ -306,7 +318,8 @@ function Socialmediamarketing() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.<br></br><br></br>
+                    fit your job requirement.<br></br>
+                    <br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

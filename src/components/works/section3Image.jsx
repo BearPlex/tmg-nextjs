@@ -8,7 +8,7 @@ function section3Image(props) {
   console.log("work?.gallery_second_title");
   return (
     <>
-      <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto w-full flex flex-col">
+      <div className="pagePaddingX max-w-7xl mx-auto w-full flex flex-col">
         <div className="flex justify-center">
           <div className="flex justify-center">
             <Image

@@ -23,7 +23,7 @@ module.exports = {
         "text-medium": "1.375rem",
       },
       screens: {
-        "3xl": "2200px",
+        "3xl": "1700px",
       },
     },
   },

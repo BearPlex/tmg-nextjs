@@ -213,10 +213,10 @@
   /* BACKGROUND COLOR END */
   /* MARGIN PADDING START */
   .pagePaddingX {
-    @apply px-4 md:px-10 lg:px-14 xl:px-20 2xl:px-32 3xl:px-0 ;
+    @apply px-4 md:px-10 lg:px-14 2xl:px-0;
   }
   .componentsMainGap {
-    @apply gap-10 lg:gap-14 3xl:gap-20;
+    @apply gap-10 lg:gap-14 2xl:gap-20;
   }
   /* MARGIN PADDING END */
   /* IMAGE START */
@@ -734,9 +734,14 @@ footer svg:hover path {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .image-scroll-width {
-  width: 42.8vw;
-  @apply pl-10 3xl:pl-11;
-  @media (min-width: 2200px) {
+  @apply pl-10 2xl:pl-11;
+  @media (min-width: 100px) {
+    width: 45vw;
+  }
+  @media (min-width: 1306px) {
+    width: 44vw;
+  }
+  @media (min-width: 1537px) {
     width: 640px;
   }
 }
@@ -768,6 +773,6 @@ footer svg:hover path {
 
 /* Hamad Pervaiz */
 
-.image-animation{
+.image-animation {
   @apply duration-300 ease-in-out transition hover:opacity-80 hover:-translate-y-1;
 }

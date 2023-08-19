@@ -12,7 +12,7 @@ function section1(props) {
   } = props;
   return (
     <>
-      <section className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+      <section className="pagePaddingX max-w-7xl mx-auto">
         <div className="flex justify-center mt-9 md:mt-20">
           <Image
             width={500}

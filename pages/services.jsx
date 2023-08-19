@@ -27,10 +27,7 @@ const Services = () => {
       <PageWrapper>
         <section>
           {/* <HeroContainer imageSrc={kotaLogo.src}> */}
-          <TextWithVideoContainer
-            cssClass=""
-            childcssClass=""
-          >
+          <TextWithVideoContainer cssClass="" childcssClass="">
             <div className="w-full">
               <p className="mb-2 md:mb-6 mt-6 paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
@@ -113,7 +110,7 @@ const Services = () => {
               </div>
             </div>
           </TextWithVideoContainer>
-          <div className="pagePaddingX py-8 md:py-10">
+          <div className="max-w-7xl mx-auto pagePaddingX  py-8 md:py-10">
             <TextWithImageContainer
               id="web_design"
               imageSrc={homePageImage.src}

@@ -3,7 +3,7 @@ import Image from "../Image/Image";
 
 const Clients = () => {
   return (
-    <div className="pagePaddingX py-10 md:py-28 text-center 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+    <div className="pagePaddingX py-10 md:py-28 text-center max-w-7xl mx-auto 2xl:px-0 2xl:pl-0">
       <div className="heading blackHeadingText">
         Our <span className="gradientText">Happy Clients</span>
       </div>

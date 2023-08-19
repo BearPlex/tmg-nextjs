@@ -49,7 +49,7 @@ const Work = () => {
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
             <h4 className="mb-2 md:mb-6  headingBlack leading-tight">
-              We are experts in bringing brands to life 
+              We are experts in bringing brands to life
               <span className="gradientText"> digitally.</span>
             </h4>
             <p className="paragraphBlack">
@@ -61,7 +61,7 @@ const Work = () => {
             </p>
           </div>
         </HeroContainer>
-        <Tabs className="pagePaddingX tabs-wrapper md:pt-20">
+        <Tabs className="pagePaddingX tabs-wrapper md:pt-20 max-w-7xl mx-auto">
           {work == "" ? (
             <ExpertiseStatic backGroundBlack={false} list={workStatic} />
           ) : (

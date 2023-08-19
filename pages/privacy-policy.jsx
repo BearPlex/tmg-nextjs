@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <PageWrapper>
       <div className="">
         {/* <Header /> */}
-        <div className="pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+        <div className="pagePaddingX max-w-7xl mx-auto">
           <div className="">
             <div className="heading text-pink-500">Privacy Notice</div>
             <p className="paragraphBlack">

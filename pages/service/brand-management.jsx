@@ -21,7 +21,6 @@ import TextWithVideoContainer from "../../src/components/containers/TextWithVide
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
 
-
 function Seo() {
   const [work, setWork] = useState([]);
   useEffect(() => {
@@ -75,12 +74,14 @@ function Seo() {
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
-                      a story that keeps the audience engaged. <br></br><br></br>
+                      a story that keeps the audience engaged. <br></br>
+                      <br></br>
                       <span className="mt-1 nextLineSpan" />
                       From brand positioning, logo design, design collaterals,
                       and packaging, we collaborate closely with your team to
                       ensure your branding embraces the essence of your
-                      business.<br></br><br></br>
+                      business.<br></br>
+                      <br></br>
                       <span className="mt-1 nextLineSpan" />
                       Our branding packages include{" "}
                       <span className="gradientText">
@@ -257,7 +258,7 @@ function Seo() {
               </TextWithImageContainer>
             </div>
           </section>
-          <section className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <section className="pagePaddingX w-full max-w-7xl mx-auto">
             <Tabs className="tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index + 400}>
@@ -292,7 +293,8 @@ function Seo() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.<br></br><br></br>
+                    fit your job requirement.<br></br>
+                    <br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

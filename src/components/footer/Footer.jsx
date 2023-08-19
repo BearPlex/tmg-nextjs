@@ -26,10 +26,10 @@ const Footer = () => {
   return (
     <>
       <footer className="relative bg-[#1B1B1B] pt-7 md:pt-20 pb-0 md:pb-10">
-        <div className="w-full 3xl:max-w-7xl 3xl:mx-auto">
+        <div className="w-full max-w-7xl mx-auto">
           {/* This part is done */}
 
-          <div className="pagePaddingX text-white 3xl:px-0 3xl:pl-0">
+          <div className="pagePaddingX text-white 2xl:px-0 2xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className=" w-full md:w-6/12 md:text-right text-left order-3 mb-6 md:mb-0">
                 <h4 className="paragraph font-bold text-[#EE2760]">
@@ -161,7 +161,8 @@ const Footer = () => {
               href="/contact"
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 3xl:pl-0">
+              {/* EXAMPLE 7XL */}
+              <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-0">
                 <div className="h-full w-[100vw] md:w-[100%] isolate">
                   <div className=" sm:bg-transparent bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
@@ -173,11 +174,10 @@ const Footer = () => {
                       objectFit="contain"
                       src={footerLogos.src}
                     />
-                    
                   </div>
                 </div>
               </div>
-              <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-32 3xl:pr-0">
+              <div className="pl-4 md:pl-0  mb-6 md:m-0 pr-4 md:pr-10 lg:pr-14 xl:pr-20 2xl:pr-0">
                 <div className="w-[150px]">
                   <Image
                     width={0}

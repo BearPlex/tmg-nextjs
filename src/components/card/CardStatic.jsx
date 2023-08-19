@@ -7,7 +7,7 @@ const CardStatic = (props) => {
     router.push(`/blog-detail-static/1`);
   };
   return (
-    <div className="my-10 md:my-20 flex justify-start flex-wrap 3xl:max-w-7xl 3xl:mx-auto">
+    <div className="my-10 md:my-20 flex justify-start flex-wrap max-w-7xl mx-auto">
       {item.map((blog, index) => (
         <div
           key={index + 800}

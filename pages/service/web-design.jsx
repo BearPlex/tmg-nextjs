@@ -56,7 +56,6 @@ function WebDesign() {
                 scale and seamlessness. Our team of certified developers with
                 years of experience in multiple niches know what would stand out
                 at the end of the day. 
-                
               </p>
               <GradientButton
                 text="Book free Consultation Today "
@@ -81,7 +80,8 @@ function WebDesign() {
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
-                      visitors, and can even increase conversion rates.<br></br><br></br>
+                      visitors, and can even increase conversion rates.<br></br>
+                      <br></br>
                       <span className="mt-1 nextLineSpan" />
                       Everything from using attractive visuals, to writing
                       compelling content and delivering a top-notch user
@@ -257,7 +257,7 @@ function WebDesign() {
               </TextWithImageContainer>
             </div>
           </section>
-          <section className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <section className="pagePaddingX w-full max-w-7xl mx-auto">
             <Tabs className="tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index + 500}>
@@ -293,7 +293,8 @@ function WebDesign() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.<br></br><br></br>
+                    fit your job requirement.<br></br>
+                    <br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

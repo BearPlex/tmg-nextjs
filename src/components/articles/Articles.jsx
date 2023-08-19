@@ -31,7 +31,7 @@ const Articles = () => {
   };
 
   return (
-    <div className="h-auto pagePaddingX pb-10 md:pb-20 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+    <div className="h-auto pagePaddingX pb-10 md:pb-20 max-w-7xl mx-auto 2xl:px-0 2xl:pl-0 select-none">
       <div className="mb-6 md:mb-20 headingBlack">Latest Articles</div>
       <div className="">
         <div className="h-auto w-full">

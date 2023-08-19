@@ -262,7 +262,7 @@ function evolver() {
 
       {/* Testmonials Section */}
 
-      <section className="bgWhite px-6 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto">
+      <section className="bgWhite px-6 pagePaddingX max-w-7xl mx-auto">
         <div className="flex justify-between componentsMainGap">
           <figure className="">
             <p className="sr-only">5 out of 5 stars</p>

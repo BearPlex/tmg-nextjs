@@ -21,7 +21,6 @@ import TextWithVideoContainer from "../../src/components/containers/TextWithVide
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
 
-
 function BrandManagement() {
   const [work, setWork] = useState([]);
   useEffect(() => {
@@ -261,7 +260,7 @@ function BrandManagement() {
             </div>
           </section>
 
-          <section className="pagePaddingX w-full 3xl:max-w-7xl 3xl:mx-auto">
+          <section className="pagePaddingX w-full max-w-7xl mx-auto">
             <Tabs className="tabs-wrapper">
               {work.map((item, index) => (
                 <TabPanel key={index + 400}>
@@ -297,7 +296,8 @@ function BrandManagement() {
                     customer experiences - from your website and marketing
                     materials to the way you interact with your customers.
                     That's why we offer dedicated resources based on needs that
-                    fit your job requirement.<br></br><br></br>
+                    fit your job requirement.<br></br>
+                    <br></br>
                     <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement

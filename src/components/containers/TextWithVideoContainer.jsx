@@ -48,7 +48,7 @@ const TextWithVideoContainer = ({
       <section className="max-w-7xl mx-auto  componentsMainGap pagePaddingX">
         <section
           id={id}
-          className="flex flex-col md:flex-row componentsMainGap py-0  3xl:py-28 lg:py-14 "
+          className="flex flex-col md:flex-row componentsMainGap py-0  2xl:py-28 lg:py-14 "
         >
           <div className={`w-full  h-auto ${cssClass}`}>
             <div className="relative h-auto md:h-auto">

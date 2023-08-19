@@ -96,7 +96,7 @@ const Studio = () => {
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="py-10 md:py-20 pagePaddingX">
+          <section className="py-10 md:py-20 pagePaddingX max-w-7xl mx-auto">
             <div className="flex h-full w-full flex-col gap-y-4">
               <div className="flex h-full w-full flex-col md:flex-row gap-x-0 gap-y-4 md:gap-x-4">
                 <div className="">
@@ -160,7 +160,7 @@ const Studio = () => {
             </div>
           </section>
           <section className="h-auto bgBlack py-8 md:py-20">
-            <div className="flex flex-col md:flex-row items-center pagePaddingX justify-between componentsMainGap pb-10 md:pb-20">
+            <div className="flex flex-col md:flex-row items-center pagePaddingX justify-between componentsMainGap pb-10 md:pb-20 max-w-7xl mx-auto">
               <div className="w-full md:w-[50%]">
                 <Image
                   width={500}
@@ -179,7 +179,7 @@ const Studio = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-auto">
+            <div className="flex flex-col h-auto max-w-7xl mx-auto">
               <div className="w-full pagePaddingX ">
                 <Swiper
                   slidesPerView={1}

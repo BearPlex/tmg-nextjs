@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <>
       <PageWrapper>
-        <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX 3xl:max-w-7xl 3xl:mx-auto 3xl:px-0 3xl:pl-0">
+        <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto 2xl:px-0 2xl:pl-0">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
               <h4 className="gradientText text36 mb-2 md:mb-6">New York</h4>
@@ -106,8 +106,10 @@ const Contact = () => {
                   Brooklyn, New York, U.S.A.
                 </p>
               </div>
-              <div className="w-[30%] md:w-[30%] mb-4 md:mb-0">
-                <h4 className="gradientText heading mb-2 md:mb-6">Lahore</h4>
+              <div className=" mb-4 md:mb-0">
+                <h4 className="gradientText heading mb-2 md:mb-6 w-full">
+                  Lahore
+                </h4>
                 <p className="blackDescriptionText font-semibold paragraph whitespace-nowrap">
                   <p className="block md:hidden">
                     DHA Phase 5, Lahore, Pakistan
@@ -139,7 +141,7 @@ const Contact = () => {
                   >
                     info@themediagale.com
                   </a>
-                  <span className="mt-1 nextLineSpan" />
+                  <br />
                   <a
                     href="mailto:support@themediagale.com"
                     target="_blank"
@@ -148,7 +150,7 @@ const Contact = () => {
                   >
                     support@themediagale.com
                   </a>
-                  <span className="mt-1 nextLineSpan" />
+                  <br />
                   <a
                     href="mailto:contact@themediagale.com"
                     target="_blank"
@@ -161,7 +163,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="w-[100%] md:w-[50%] py-10 md:py-0 md:order-6 order-2">
+            <div className="w-[100%] md:w-[50%] md:py-0 md:order-6 order-2">
               <ContactFormIframe />
             </div>
           </div>

@@ -14,6 +14,7 @@ import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
+import { convertStringForImage } from "../src/helpers/Helpers";
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -43,9 +44,9 @@ const Blog = () => {
           <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
-                News, insights, and 
+                News, insights, and
                 <span className="gradientText"> creative culture </span>
-                 from TMG.
+                from TMG.
               </h4>
               <p className="paragraphBlack">
                 Because it should never just be work, it should be
@@ -59,31 +60,40 @@ const Blog = () => {
               </div>
             </div>
           </HeroContainer>
+          {blogs && blogs.length && (
+            <div className="pagePaddingX pt-10 md:pt-20 max-w-7xl mx-auto">
+              <a href="" className="relative blog-banner w-full h-full">
+                <Image
+                  src={`https://beta.themediagale.com/public_images/blogs/${
+                    blogs[0]?.attributes.title &&
+                    blogs[0]?.attributes?.title !== ""
+                      ? convertStringForImage(blogs[0]?.attributes?.title)
+                      : "Women-Rise"
+                  }.png`}
+                  // src={bannerImage}
+                  alt="banner"
+                  width={1300}
+                  height={550}
+                  layout="responsive"
+                  objectFit="cover"
+                  className="rounded-xl"
+                />
 
-          <div className="pagePaddingX pt-10 md:pt-20 max-w-7xl mx-auto">
-            <a href="" className="relative blog-banner w-full h-full">
-              <Image
-                src={bannerImage}
-                alt="banner"
-                width={1300}
-                height={550}
-                layout="responsive"
-                objectFit="cover"
-                className="rounded-xl"
-              />
+                <div className="absolute left-10 bottom-10">
+                  <span className="gradientText inline-block smallText uppercase tracking-[1.5px]   pb-1 md:pb-5">
+                    Featured News
+                  </span>
+                  <h3 className="text-white max-w-7xl font-sofia-bold largeHeading leading-none">
+                    {/* 5 examples of great E-Commerce product pages. */}
+                    {blogs[0]?.attributes?.title}
+                  </h3>
+                </div>
+              </a>
+            </div>
+          )}
 
-              <div className="absolute left-10 bottom-10">
-                <span className="gradientText inline-block smallText uppercase tracking-[1.5px]   pb-1 md:pb-5">
-                  Featured News
-                </span>
-                <h3 className="text-white max-w-[55%] font-sofia-bold largeHeading leading-none">
-                  5 examples of great E-Commerce product pages.
-                </h3>
-              </div>
-            </a>
-          </div>
           <div className="mt-4">
-            <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper max-w-7xl mx-auto" >
+            <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper max-w-7xl mx-auto">
               {/* <TabList>
                              <Tab>All</Tab>
                              <Tab>Expertise</Tab>
