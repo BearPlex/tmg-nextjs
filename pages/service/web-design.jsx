@@ -65,7 +65,7 @@ function WebDesign() {
           </TextWithVideoContainer>
 
           <section>
-            <div className="bgWhite py-10 md:py-20 w-full">
+            <div className="bgWhite mt-10 py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -78,7 +78,7 @@ function WebDesign() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.<br></br>
                       <br></br>
@@ -162,7 +162,7 @@ function WebDesign() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Ecommerce Websites
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing an e-Commerce website, it
                     is time to let us take the lead and assist you in providing
                     a seamless online shopping experience to your customers. We
@@ -189,7 +189,7 @@ function WebDesign() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Software As A Service
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer Software-as-a-Service to clients in order to help
                     them utilize resources more efficiently and make
                     well-informed business decisions. Through better strategic
@@ -217,7 +217,7 @@ function WebDesign() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Business Websites{" "}
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing a business website, it is
                     time to let us take the lead and assist you in providing a
                     seamless browsing experience to your leads. We offer
@@ -244,7 +244,7 @@ function WebDesign() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     What else?
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -290,7 +290,7 @@ function WebDesign() {
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

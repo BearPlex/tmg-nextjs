@@ -66,7 +66,7 @@ function Socialmediamarketing() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-10 md:py-20 max-w-7xl mx-auto">
+            <div className="bgWhite mt-10 py-10 md:py-20 max-w-7xl mx-auto">
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -80,7 +80,7 @@ function Socialmediamarketing() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Getting noticed and remembered by the right audience is a
                       slow{" "}
                       <span className="gradientText">
@@ -179,7 +179,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText ">
                     Creative Campaigns
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     From creating modern design content to animated videos, we
                     create high performing campaigns to create a long lasting
                     impact that truly reflects your brand and resonates with
@@ -204,7 +204,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Emails & Workflows
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     At TMG, our creative and design team work together to
                     deliver email campaigns that are both visually appealing and
                     highly effective. We pay close attention to every detail,
@@ -230,7 +230,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Social Media Management
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer a comprehensive suite of social media management
                     services that are designed to help businesses connect with
                     their customers and build a strong online presence. We
@@ -256,7 +256,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As a 360 digital agency, we also specialize in search engine
                     optimization which keeps our clients ahead of the
                     competition. To help you reach a wide organic audience, our
@@ -306,7 +306,7 @@ function Socialmediamarketing() {
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="w-full max-w-7xl mx-auto">
           {/* This part is done */}
 
-          <div className="pagePaddingX text-white 2xl:px-0 2xl:pl-0">
+          <div className="pagePaddingX text-white xl:px-0 xl:pl-0">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className=" w-full md:w-6/12 md:text-right text-left order-3 mb-6 md:mb-0">
                 <h4 className="paragraph font-bold text-[#EE2760]">

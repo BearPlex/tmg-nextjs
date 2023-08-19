@@ -69,7 +69,7 @@ function BrandManagement() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-10 md:py-20 w-full">
+            <div className="bgWhite mt-10 py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -82,7 +82,7 @@ function BrandManagement() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       We provide On Page and Off Page solutions that help
                       increase your website search rank so you do not need to
                       pay a dime for traffic.
@@ -170,7 +170,7 @@ function BrandManagement() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     On Page SEO 
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     While search engine rankings are driven from link building
                     campaigns, ongoing on-page optimization of your website
                     hosting, code, content is foundational when it comes to user
@@ -197,7 +197,7 @@ function BrandManagement() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Off Page SEO
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     Link Building and Content Marketing is essential to scale
                     your website and to drive meaningful traffic to perform
                     action. Our package includes Content Marketing, Link
@@ -224,7 +224,7 @@ function BrandManagement() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Content Optimization {" "}
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     TMG provides content optimization services to help make your
                     content more effective, and improve quality, making it more
                     informative and engaging for your audience. We can also help
@@ -250,7 +250,7 @@ function BrandManagement() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText ">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText ">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -297,7 +297,7 @@ function BrandManagement() {
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

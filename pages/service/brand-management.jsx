@@ -62,7 +62,7 @@ function Seo() {
             </div>
           </TextWithVideoContainer>
           <section>
-            <div className="bgWhite py-10 md:py-20 w-full">
+            <div className="bgWhite mt-10 py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
@@ -72,7 +72,7 @@ function Seo() {
                     </h1>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
-                    <p className="mt-0 md:mt-2 lg:mt-6 paragraph  blackDescriptionText">
+                    <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. <br></br>
                       <br></br>
@@ -163,7 +163,7 @@ function Seo() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Brand Image
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
                     competition and helps you build a loyal customer base.
@@ -192,7 +192,7 @@ function Seo() {
                   <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Social Presence
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     The internet has massively impacted the way businesses
                     operate and reach their customer base. To build a strong
                     social presence, businesses need to have an effective brand
@@ -223,7 +223,7 @@ function Seo() {
                   <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Tone of Voice{" "}
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     A unique tone of voice helps brands build trust and become
                     memorable in the minds of their audience. We’ll collaborate
                     with your team to devise a tone that resonates with your
@@ -248,7 +248,7 @@ function Seo() {
                   <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteDescriptionText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
                     and depend on the market research so we can showcase the
@@ -293,7 +293,7 @@ function Seo() {
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
-                  <p className="mt-0 md:mt-2 lg:mt-6 paragraph whiteHeadingText">
+                  <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a
                     customer experiences - from your website and marketing

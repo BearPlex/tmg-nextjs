@@ -44,7 +44,7 @@ const Services = () => {
   };
   return (
     <section className="background-gradient ">
-      <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28  2xl:px-0 2xl:pl-0 max-w-7xl mx-auto">
+      <div className="w-full  pagePaddingX componentsMainGap py-10 md:py-28  xl:px-0 xl:pl-0 max-w-7xl mx-auto">
         <span className="block mb-4 md:mb-10 uppercase smallHeading whiteHeadingText ">
           Our Services
         </span>
@@ -52,7 +52,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <div className="flex flex-col justify-center">
               <h3
-                className={`mb-2 md:mb-6    cursor-pointer duration-300 transition-in-out heading ${
+                className={`mb-2 md:mb-6    cursor-pointer duration-300 transition-in-out extraLargeHeading ${
                   type === "design" ? " whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("design")}
@@ -60,7 +60,7 @@ const Services = () => {
                 Web Design & Development
               </h3>
               <h3
-                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out heading ${
+                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out extraLargeHeading ${
                   type === "branding" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("branding")}
@@ -68,7 +68,7 @@ const Services = () => {
                 Branding
               </h3>
               <h3
-                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out heading ${
+                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out extraLargeHeading ${
                   type === "digital" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("digital")}
