@@ -82,7 +82,6 @@ function WebDesign() {
                       A well-designed website will have a lasting impression on
                       visitors, and can even increase conversion rates.<br></br>
                       <br></br>
-                      <span className="mt-1 nextLineSpan" />
                       Everything from using attractive visuals, to writing
                       compelling content and delivering a top-notch user
                       experience holds its importance. We conduct brainstorming
@@ -271,19 +270,17 @@ function WebDesign() {
             </Tabs>
           </section>
 
-          <section className="background-gradient py-28">
+          <section className="background-gradient py-8 md:py-20">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center mx-auto">
-                <div className="w-full md:w-1/2">
-                  <Image
-                    width={500}
-                    height={300}
-                    src={staffAugmentationImage.src}
-                    alt="Staff Augmentation - The MediaGale"
-                    className=" h-auto object-contain image-animation"
-                  />
-                </div>
-                <div className="pagePaddingX mt-12 sm:mt-0 w-full md:w-1/2">
+              <TextWithImageContainer
+                imageSrc={staffAugmentationImage.src}
+                imageAlt="Staff Augmentation - The MediaGale"
+                blackContainer={true}
+                width={500}
+                height={300}
+                imageRight={false}
+              >
+                <div className="">
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
@@ -295,13 +292,12 @@ function WebDesign() {
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.<br></br>
                     <br></br>
-                    <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
           <div className="mt-0">

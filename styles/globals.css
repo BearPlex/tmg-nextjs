@@ -181,7 +181,7 @@
   /* BACKGROUND COLOR END */
   /* MARGIN PADDING START */
   .pagePaddingX {
-    @apply px-4 md:px-10 lg:px-14 2xl:px-0;
+    @apply px-4 md:px-10 lg:px-14 xl:px-0;
   }
   .componentsMainGap {
     @apply gap-10 lg:gap-14 2xl:gap-20;

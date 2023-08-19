@@ -47,8 +47,7 @@ function BlogDetail() {
       <section className="pt-7 md:pt-20 ">
         <Header />
         <div className="my-8 md:my-10  px-10 md:px-28">
-          <div className="headingBlack">{blogsStatic[0].title}</div>
-          <span className="mt-1 nextLineSpan" />
+          <div className="headingBlack mb-3">{blogsStatic[0].title}</div>
           <p>{blogsStatic[0].sub_title}</p>
 
           <div className="w-full  mb-6 md:mb-20"></div>

@@ -44,7 +44,7 @@ const Contact = () => {
                 >
                   info@themediagale.com
                 </a>
-                <span className="mt-1 nextLineSpan" />
+                <br />
                 <a
                   href="mailto:support@themediagale.com"
                   target="_blank"
@@ -53,7 +53,7 @@ const Contact = () => {
                 >
                   support@themediagale.com
                 </a>
-                <span className="mt-1 nextLineSpan" />
+                <br />
                 <a
                   href="mailto:contact@themediagale.com"
                   target="_blank"

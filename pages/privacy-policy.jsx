@@ -11,9 +11,11 @@ const PrivacyPolicy = () => {
             <p className="paragraphBlack">
               This is the privacy notice of Kota Creative Ltd. In this document,
               “we”, “our”, or “us” refer to Kota Creative Ltd.
-              <span className="mt-1 nextLineSpan" />
+              <br />
+              <br />
               We are company number 08825077 registered in London.
-              <span className="mt-1 nextLineSpan" />
+              <br />
+              <br />
               Our registered office is at 74 Great Eastern St.
             </p>
             <div className="my-5">
@@ -92,11 +94,13 @@ const PrivacyPolicy = () => {
                 The law requires us to determine under which of six defined
                 bases we process different categories of your personal
                 information, and to notify you of the basis for each category.
-                <span className="mt-1 nextLineSpan" />
+                <br />
+                <br />
                 If a basis on which we process your personal information is no
                 longer relevant then we shall immediately stop processing your
                 data.
-                <span className="mt-1 nextLineSpan" />
+                <br />
+                <br />
                 If the basis changes then if required by law we shall notify you
                 of the change and of any new basis under which we have
                 determined that we can continue to process your information.

@@ -76,13 +76,11 @@ function Seo() {
                       Every brand must have a distinctive design, coherence and
                       a story that keeps the audience engaged. <br></br>
                       <br></br>
-                      <span className="mt-1 nextLineSpan" />
                       From brand positioning, logo design, design collaterals,
                       and packaging, we collaborate closely with your team to
                       ensure your branding embraces the essence of your
                       business.<br></br>
                       <br></br>
-                      <span className="mt-1 nextLineSpan" />
                       Our branding packages include{" "}
                       <span className="gradientText">
                         {" "}
@@ -161,7 +159,8 @@ function Seo() {
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
                     competition and helps you build a loyal customer base.
-                    <span className="mt-1 nextLineSpan" />
+                    <br />
+                    <br />
                     Your brand image should be consistent and should stand out
                     across all channels - from your website to your social media
                     accounts and your physical collateral. 
@@ -191,7 +190,8 @@ function Seo() {
                     social presence, businesses need to have an effective brand
                     strategy that helps them dig their feet further into the
                     existing industry and stick around for longer. 
-                    <span className="mt-1 nextLineSpan" />
+                    <br />
+                    <br />
                     We create customized branding solutions  which are designed
                     to help businesses reach their target audience and achieve
                     their desired results.  
@@ -271,19 +271,17 @@ function Seo() {
               ))}
             </Tabs>
           </section>
-          <section className="background-gradient py-28">
+          <section className="background-gradient py-8 md:py-20">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center mx-auto">
-                <div className="w-full md:w-1/2">
-                  <Image
-                    width={500}
-                    height={300}
-                    src={staffAugmentationImage.src}
-                    alt="Staff Augmentation - The MediaGale"
-                    className=" h-auto object-contain image-animation"
-                  />
-                </div>
-                <div className="pagePaddingX mt-12 sm:mt-0 w-full md:w-1/2">
+              <TextWithImageContainer
+                imageSrc={staffAugmentationImage.src}
+                imageAlt="Staff Augmentation - The MediaGale"
+                blackContainer={true}
+                width={500}
+                height={300}
+                imageRight={false}
+              >
+                <div className="">
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
@@ -295,13 +293,12 @@ function Seo() {
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.<br></br>
                     <br></br>
-                    <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
           <div className="mt-0">

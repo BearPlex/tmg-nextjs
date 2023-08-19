@@ -78,7 +78,8 @@ export default function Home() {
                 <p className="mt-0 md:mt-2 lg:mt-6 paragraph blackDescriptionText">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
-                  <span className="mt-1 nextLineSpan" />
+                  <br />
+                  <br />
                   With user-centric designs, result oriented designing tools,
                   and in-house built features, we help increase sales and add
                   value to your Business and e-Commerce ventures.

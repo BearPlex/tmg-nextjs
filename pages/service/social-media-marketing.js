@@ -90,7 +90,6 @@ function Socialmediamarketing() {
                       performing campaign structures to ensure better
                       conversions.<br></br>
                       <br></br>
-                      <span className="mt-1 nextLineSpan" />
                       We specialize in performance marketing campaigns using
                       content and audience building strategies that support our
                       campaigns to perform well. With our{" "}
@@ -100,7 +99,6 @@ function Socialmediamarketing() {
                       of experienced and certified marketers, we ensure that
                       your advertisement is well remembered.<br></br>
                       <br></br>
-                      <span className="mt-1 nextLineSpan" />
                       As a direct partnership or{" "}
                       <span className="gradientText">
                         <b>white labeled solutions</b>
@@ -296,19 +294,17 @@ function Socialmediamarketing() {
             </Tabs>
           </section>
 
-          <section className="background-gradient py-28">
+          <section className="background-gradient py-8 md:py-20">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center 2xl:px-0 2xl:pl-0">
-                <div className="w-1/2">
-                  <Image
-                    width={500}
-                    height={300}
-                    src={staffAugmentationImage.src}
-                    alt="Staff Augmentation - The MediaGale"
-                    className=" h-auto object-contain"
-                  />
-                </div>
-                <div className="pagePaddingX w-1/2">
+              <TextWithImageContainer
+                imageSrc={staffAugmentationImage.src}
+                imageAlt="Staff Augmentation - The MediaGale"
+                blackContainer={true}
+                width={500}
+                height={300}
+                imageRight={false}
+              >
+                <div className="">
                   <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
                   </h1>
@@ -320,13 +316,12 @@ function Socialmediamarketing() {
                     That's why we offer dedicated resources based on needs that
                     fit your job requirement.<br></br>
                     <br></br>
-                    <span className="mt-1 nextLineSpan" />
                     From Website Developers, Content Creators and Managers to
                     SEO Experts - we make sure that your daily work requirement
                     is fulfilled remotely.
                   </p>
                 </div>
-              </div>
+              </TextWithImageContainer>
             </div>
           </section>
           <div className="mt-0">

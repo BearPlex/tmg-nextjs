@@ -82,7 +82,7 @@ const Studio = () => {
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
             <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight">
-              Innovators by heart, <span className="mt-1 nextLineSpan" />
+              Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>
             <p className=" mb-8 text-center mt-14 max-w-4xl paragraphBlack ">
@@ -224,7 +224,7 @@ const Studio = () => {
                 </Swiper>
               </div>
 
-              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-20 2xl:pl-32 select-none">
+              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-0 select-none">
                 <div
                   onClick={() => {}}
                   className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
