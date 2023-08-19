@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto 2xl:px-0 2xl:pl-0">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
-              <h4 className="gradientText text36 mb-2 md:mb-6">New York</h4>
+              <h4 className="gradientText heading mb-2 md:mb-6">New York</h4>
               <p className="blackDescriptionText font-semibold paragraph">
                 Brooklyn,
                 <br />
