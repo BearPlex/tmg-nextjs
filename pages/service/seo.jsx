@@ -108,41 +108,49 @@ function BrandManagement() {
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div className="flex flex-col md:flex-row componentsMainGap">
+                  <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <dt className="largeHeadingWhite">Expert Analysis</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                      <div className="largeHeadingWhite">Expert Analysis</div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
                         We make sure to analyze the market competition
                         landscape.This helps us form accurate predictions about
                         how we are going to rank your business on Google
                         rankings.
-                      </dd>
-
-                      <dt className=" largeHeadingWhite xl:mt-10">
-                        Smart Audit
-                      </dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
-                        We make sure to diagnose your website so we know what we
-                        are operating. This helps us drive a result oriented
-                        strategy that eliminates loose ends on your website and
-                        performs better.
-                      </dd>
+                      </div>
                     </div>
+
                     <div>
-                      <dt className="largeHeadingWhite ">Keyword Search</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Keyword Search
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         We do a comprehensive keyword search relevant to your
                         business and shortlist top traffic driving search terms
                         with less competition. This helps us to map and optimize
                         the website.
-                      </dd>
-                      <dt className="largeHeadingWhite  xl:mt-4">Growth</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      </div>
+                    </div>
+                    <div>
+                      <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Smart Audit
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                        We make sure to diagnose your website so we know what we
+                        are operating.  This helps us drive a result oriented
+                        strategy that eliminates loose ends on your website and
+                        performs better. 
+                      </div>
+                    </div>
+                    <div>
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Growth
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         We aim to strive for growth oriented results. With our
                         expert-led optimisation, we ensure that your website
                         ranks on the highest search result with the right
                         targeting.
-                      </dd>
+                      </div>
                     </div>
                   </div>
                 </dl>

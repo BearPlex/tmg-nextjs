@@ -103,40 +103,46 @@ function WebDesign() {
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div className="flex flex-col md:flex-row componentsMainGap">
+                  <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <dt className="largeHeadingWhite">Development</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                      <div className="largeHeadingWhite">Development</div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
                         User-centric designs, practical and result-oriented
                         marketing tools, and in-house built features are among
-                        our exponential services we provide.
-                      </dd>
-
-                      <dt className=" largeHeadingWhite xl:mt-10">
-                        Maintenance
-                      </dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
-                        We ensure to keep your backend updated after the
-                        completion of the project and provide instantaneous
-                        online support whenever you or your business requires.
-                      </dd>
+                        our exponential services we provide. 
+                      </div>
                     </div>
+
                     <div>
-                      <dt className="largeHeadingWhite ">Technology</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Technology
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         We are extremely versed in technology upgrades. By
                         utilizing the latest tools and following best practices,
                         we deliver high-quality results.
-                      </dd>
-                      <dt className="largeHeadingWhite  xl:mt-4">
+                      </div>
+                    </div>
+                    <div>
+                      <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Maintenance
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                        We ensure to keep your backend updated after the
+                        completion of the project and provide instantaneous
+                        online support whenever you or your business requires. 
+                      </div>
+                    </div>
+                    <div>
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Functionality
-                      </dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         A visually appealing and high functional website with
                         regular updates can help your business grab the
                         attention of visitors globally. We are open to provide
                         custom functionality based solutions as per the need.
-                      </dd>
+                      </div>
                     </div>
                   </div>
                 </dl>

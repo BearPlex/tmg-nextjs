@@ -9,7 +9,7 @@ const Card = (props) => {
     router.push(`/blog-detail/${id}`);
   };
   return (
-    <div className="w-full my-10 md:my-20 flex gap-5 flex-wrap max-w-7xl mx-auto">
+    <div className="w-full my-10 md:my-20 flex md:gap-4 xl:gap-6 flex-wrap max-w-7xl mx-auto">
       {item.map((blog, index) => {
         if (index > 0) {
           return (

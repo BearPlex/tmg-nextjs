@@ -104,38 +104,46 @@ function Seo() {
                       What makes us sooo good at it?
                     </dd>
                   </div>
-                  <div className="flex flex-col md:flex-row componentsMainGap">
+                  <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <dt className="largeHeadingWhite">Experience</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
+                      <div className="largeHeadingWhite">Experience</div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
                         We’ve worked with brands from a huge range of industries
                         to showcase their differences through strategic design
                         that positions them perfectly. 
-                      </dd>
-
-                      <dt className=" largeHeadingWhite xl:mt-10">Strategy</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
-                        With our certified team, we ensure to create effective
-                        cost saving strategies that help campaigns perform well
-                        so you can focus more on counting sales.
-                      </dd>
+                      </div>
                     </div>
+
                     <div>
-                      <dt className="largeHeadingWhite ">Creativity</dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Creativity
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         Guided by your vision and values, our branding services
                         will bring your business to life with artistic flair and
                         attention to detail, to create a brand that is unique
                         and memorable.
-                      </dd>
-                      <dt className="largeHeadingWhite  xl:mt-4">
+                      </div>
+                    </div>
+                    <div>
+                      <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Strategy
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                        With our certified team, we ensure to create effective
+                        cost saving strategies that help campaigns perform well
+                        so you can focus more on counting sales.
+                      </div>
+                    </div>
+                    <div>
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Sustainability
-                      </dt>
-                      <dd className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         We ensure that the image that has been forged to the
                         consumer mind stays on top with consistent artistic
                         content to increase engagement and recall value.
-                      </dd>
+                      </div>
                     </div>
                   </div>
                 </dl>

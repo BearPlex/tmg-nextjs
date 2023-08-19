@@ -43,18 +43,17 @@ const Services = () => {
               </p>
               <ScrollspyNav
                 scrollTargetIds={[
-                  "web_design",
                   "web_development",
                   "branding",
                   "digital_marketing",
-                  // "e_commerce",
+                  "seo",
                   // "wordpress",
                 ]}
                 activeNavClass="is-active"
               >
                 <div className="flex flex-wrap gap-y-2 sm:gap-y-6 justify-between w-full mt-5">
                   <a
-                    href="#web_design"
+                    href="#digital_marketing"
                     className="w-full sm:w-[47%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
@@ -67,7 +66,7 @@ const Services = () => {
                   </a>
 
                   <a
-                    href="#web_development"
+                    href="#seo"
                     className="w-full sm:w-[53%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
@@ -89,7 +88,7 @@ const Services = () => {
                     <span className="gradientHoverBlack">Brand Management</span>
                   </a>
                   <a
-                    href="#digital_marketing"
+                    href="#web_development"
                     className="w-full sm:w-[53%] paragraphBlack inline-block"
                   >
                     <FontAwesomeIcon
@@ -112,7 +111,7 @@ const Services = () => {
           </TextWithVideoContainer>
           <div className="max-w-7xl mx-auto pagePaddingX  py-8 md:py-10">
             <TextWithImageContainer
-              id="web_design"
+              id="digital_marketing"
               imageSrc={homePageImage.src}
               imageAlt="services images"
             >
@@ -130,7 +129,7 @@ const Services = () => {
             </TextWithImageContainer>
 
             <TextWithImageContainer
-              id="web_development"
+              id="branding"
               imageSrc={developmentImage.src}
               imageAlt="services images"
             >
@@ -147,7 +146,7 @@ const Services = () => {
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
-              id="branding"
+              id="seo"
               imageSrc={digitalImage.src}
               imageAlt="services images"
             >
@@ -161,7 +160,7 @@ const Services = () => {
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
-              id="digital_marketing"
+              id="web_development"
               imageSrc={marketingImage.src}
               imageAlt="services images"
             >

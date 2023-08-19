@@ -123,44 +123,42 @@ function Socialmediamarketing() {
                   </div>
                   <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <div className="largeHeadingWhite">Experience</div>
-                      <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite  ">
-                        We’ve worked with brands from a huge range of industries
-                        to showcase their differences through strategic design
-                        that positions them perfectly. 
+                      <div className="largeHeadingWhite">Creative Visuals</div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
+                        The extensive experience and creative flair of our
+                        designers ensures that each creative is unique to its
+                        essence and well perceived from the audience.
                       </div>
                     </div>
 
                     <div>
+                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                        Audience Selection
+                      </div>
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                        As your digital partners, we analyze the customer data
+                        to get a firm grip on your customer’s likes & dislikes.
+                        This helps our campaign deliver high results.
+                      </div>
+                    </div>
+                    <div>
                       <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Strategy
                       </div>
-                      <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
                         With our certified team, we ensure to create effective
                         cost saving strategies that help campaigns perform well
                         so you can focus more on counting sales.
                       </div>
                     </div>
-
                     <div>
                       <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
-                        Creativity
+                        Optimization
                       </div>
-                      <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
-                        Guided by your vision and values, our branding services
-                        will bring your business to life with artistic flair and
-                        attention to detail, to create a brand that is unique
-                        and memorable.
-                      </div>
-                    </div>
-                    <div>
-                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
-                        Sustainability
-                      </div>
-                      <div className="mt-0 md:mt-2 lg:mt-6 smallTextWhite ">
-                        We ensure that the image that has been forged to the
-                        consumer mind stays on top with consistent artistic
-                        content to increase engagement and recall value.
+                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                        We optimize campaigns based on data and multiple ads
+                        testing. This leads to better CTA, CPA and provides a
+                        higher ROAS on the campaigns.
                       </div>
                     </div>
                   </div>
