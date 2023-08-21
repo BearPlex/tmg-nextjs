@@ -27,8 +27,8 @@ const LatestBlogElement = () => {
       });
   }, []);
   const pushWork = (id) => {
-    // router.push(`/blog-detail/${id}`);
-    router.push(`/blog-detail/7`);
+    router.push(`/blog-detail/${id}`);
+    // router.push(`/blog-detail/7`);
   };
 
   return (

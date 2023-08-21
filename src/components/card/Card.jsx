@@ -14,7 +14,7 @@ const Card = (props) => {
         if (index > 0) {
           return (
             <div
-              onClick={() => pushWork(blog.id)}
+              onClick={() => pushWork(blog?.attributes?.slug)}
               key={blog.id}
               className="w-full lg:w-[32%] md:w-[48%] h-full mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 cursor-pointer"
             >

@@ -22,7 +22,6 @@ import {
 import ReactMark from "react-markdown";
 function BlogDetail() {
   const router = useRouter();
-
   const {
     query: { id },
   } = router;
@@ -31,17 +30,31 @@ function BlogDetail() {
   };
   const [work, setWork] = useState([]);
   useEffect(() => {
-    axios
-      .get(
-        `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs/${id}?populate=*`
-      )
-      .then((res) => {
-        setWork(res.data.data);
-      })
-      .catch((err) => {
-        console.log("Error", err);
-      });
+    if (!router.isReady) return;
+    if (id) fetchData();
   }, [id]);
+  const fetchData = () => {
+    console.log("fetchData CALLED");
+    try {
+      axios
+        .get(`https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*`)
+        .then((res) => {
+          // setWork(res.data.data);
+          const allWorks = res.data.data;
+          const matchingWork = allWorks.find(
+            (workItem) => workItem.attributes.slug === id
+          );
+
+          if (matchingWork) {
+            setWork(matchingWork);
+          } else {
+            console.error(`No work found for slug ${id}`);
+          }
+        });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
   return (
     <>
       <PageWrapper>
