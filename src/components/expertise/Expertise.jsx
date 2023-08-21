@@ -32,7 +32,7 @@ const Expertise = (props) => {
                     <div
                       key={index + 1400}
                       className="w-full mb-4 md:mb-20 cursor-pointer"
-                      onClick={() => pushWork(item.id)}
+                      onClick={() => pushWork(item?.attributes?.slug)}
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
@@ -68,7 +68,7 @@ const Expertise = (props) => {
                     <div
                       key={index + 1600}
                       className="w-full mb-4 md:mb-20 cursor-pointer"
-                      onClick={() => pushWork(item.id)}
+                      onClick={() => pushWork(item?.attributes?.slug)}
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
@@ -118,7 +118,7 @@ const Expertise = (props) => {
                   <div
                     key={index + 1800}
                     className="w-full mb-10 md:mb-16 lg:mb-20 cursor-pointer"
-                    onClick={() => pushWork(item.id)}
+                    onClick={() => pushWork(item?.attributes?.slug)}
                   >
                     <WorkCard
                       backGroundBlack={backGroundBlack}

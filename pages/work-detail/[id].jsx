@@ -10,9 +10,9 @@ import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import Image from "../../src/components/Image/Image";
+
 function WorkDetail() {
   const router = useRouter();
-
   const {
     query: { id },
   } = router;
@@ -21,17 +21,33 @@ function WorkDetail() {
   };
   const [work, setWork] = useState([]);
   useEffect(() => {
-    axios
-      .get(
-        `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos/${id}?populate=*`
-      )
-      .then((res) => {
-        setWork(res.data.data);
-      })
-      .catch((err) => {
-        console.log("Error123", err);
-      });
+    if (!router.isReady) return;
+    if (id) fetchData();
   }, [id]);
+  const fetchData = () => {
+    console.log("fetchData CALLED");
+    try {
+      axios
+        .get(
+          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*`
+        )
+        .then((res) => {
+          // setWork(res.data.data);
+          const allWorks = res.data.data;
+          const matchingWork = allWorks.find(
+            (workItem) => workItem.attributes.slug === id
+          );
+
+          if (matchingWork) {
+            setWork(matchingWork);
+          } else {
+            console.error(`No work found for slug ${id}`);
+          }
+        });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
   console.log(work);
   console.log("work FROM WORK-DETAILS");
   return (
@@ -60,7 +76,10 @@ function WorkDetail() {
             <div className="flex w-full">
               <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16 w-full">
                 <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
-                  <span className="gradientText text-sm align-top font-medium">01  </span>The Brief
+                  <span className="gradientText text-sm align-top font-medium">
+                    01{" "}
+                  </span>
+                  The Brief
                 </h2>
                 <p className="whitespace-pre-wrap blackDescriptionText pl-5 w-full paragraph">
                   {work?.attributes?.gallery_first_description}
