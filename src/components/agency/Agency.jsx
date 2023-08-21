@@ -134,11 +134,11 @@ const Agency = () => {
             <div className="flex h-[70vh] w-full flex-col justify-start">
               <h2
                 id="beautyRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6 mt-[8vw]"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative mt-[8vw]"
               >
                 Beauty
               </h2>
-              <p className="paragraph blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText">
                 We think outside the box and push boundaries to create fresh and
                 original content.
               </p>
@@ -146,11 +146,11 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="thoughRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative"
               >
                 Analyze
               </h2>
-              <p className="paragraph blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText">
                 Analyzing the market and consumer data helps us provide
                 customized solutions to everyday business challenges.
               </p>
@@ -158,11 +158,11 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="communicateRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative"
               >
                 Communicate
               </h2>
-              <p className="paragraph blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText">
                 Through personal and digital mediums, we provide fast and clear
                 communication to keep information flow open.{" "}
               </p>
@@ -170,11 +170,11 @@ const Agency = () => {
             <div className="flex h-[80vh] w-full flex-col justify-center">
               <h2
                 id="executeRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative pl-6"
+                className="heading mb-5 font-bold blackHeadingText leading-none relative"
               >
                 Execute
               </h2>
-              <p className="paragraph blackDescriptionText pl-5">
+              <p className="paragraph blackDescriptionText">
                 We execute our ideas into actions through strategies to make
                 every business a winning story.
               </p>

@@ -744,3 +744,7 @@ footer svg:hover path {
 .image-animation {
   @apply duration-300 ease-in-out transition hover:opacity-80 hover:-translate-y-1;
 }
+.left-border {
+  border-left: 2px solid #ee2760; /* You can adjust the '4px' to whatever thickness you want */
+  padding-left: 2vw; /* Optional padding to make sure content doesn't stick to the border */
+}

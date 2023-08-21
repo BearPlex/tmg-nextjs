@@ -13,7 +13,7 @@ import SwiperCore, { Navigation } from "swiper";
 import arrowBack from "../../assets/images/arrowBack.png";
 import arrowNext from "../../assets/images/arrowNext.png";
 import { convertStringForImage } from "../../helpers/Helpers";
-const Articles = () => {
+const LatestBlogElement = () => {
   const [articles, setArticles] = useState([]);
   const router = useRouter();
   useEffect(() => {
@@ -27,12 +27,12 @@ const Articles = () => {
       });
   }, []);
   const pushWork = (id) => {
+    // router.push(`/blog-detail/${id}`);
     router.push(`/blog-detail/7`);
   };
 
   return (
     <div className="h-auto pagePaddingX pb-10 md:pb-20 max-w-7xl mx-auto xl:px-0 xl:pl-0 select-none">
-      <div className="mb-6 md:mb-20 headingBlack">Latest Articles</div>
       <div className="">
         <div className="h-auto w-full">
           <Swiper
@@ -84,13 +84,37 @@ const Articles = () => {
                             : "Women-Rise"
                         }.png`}
                       />
-                      <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
+                    </div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        left: "0",
+                        width: "100%",
+                        height: "30%",
+                        background: "rgba(255, 255, 255, 0.30)",
+                        backdropFilter: "blur(12px)",
+                      }}
+                      className="flex items-center justify-center px-4"
+                    >
+                      <div className="w-full flex flex-row justify-between">
+                        <div className="flex flex-col">
+                          <p className="text-white">
+                            {article.attributes.authorName}
+                          </p>
+                          <p className="text-white">
+                            {article.attributes.dateAdded}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-white">
+                            {article.attributes.authorJobTitle}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-                    <p className="paragraph  text-[#EE2760] group-hover:blackHeading">
-                      {article.attributes.sub_title}
-                    </p>
                     <p className="smallHeading font-bold blackHeading group-hover:text-white pt-2">
                       {article.attributes.title}
                     </p>
@@ -127,10 +151,7 @@ const Articles = () => {
           </div>
         </div>
       </div>
-      <div className="text-center w-full mt-10 md:mt-28">
-        <GradientButton text="View All Blog Posts" route="/blog" />
-      </div>
     </div>
   );
 };
-export default Articles;
+export default LatestBlogElement;

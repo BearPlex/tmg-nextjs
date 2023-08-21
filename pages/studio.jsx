@@ -19,12 +19,21 @@ import mainImage from "../src/assets/images/team.png";
 import teamMember from "../src/assets/images/james-h.png";
 import Clients from "../src/components/clients/Clients";
 import Footer from "../src/components/footer/Footer";
-import member1 from "../src/assets/images/member1.png";
-import member2 from "../src/assets/images/member2.png";
-import member3 from "../src/assets/images/member3.png";
-import member4 from "../src/assets/images/member4.png";
-import member5 from "../src/assets/images/member5.png";
-import member6 from "../src/assets/images/member6.png";
+import member1 from "../src/assets/images/studio-employees-1.png";
+import member2 from "../src/assets/images/studio-employees-2.png";
+import member3 from "../src/assets/images/studio-employees-3.png";
+import member4 from "../src/assets/images/studio-employees-4.png";
+import member5 from "../src/assets/images/studio-employees-5.png";
+import member6 from "../src/assets/images/studio-employees-6.png";
+import member7 from "../src/assets/images/studio-employees-7.png";
+import member8 from "../src/assets/images/studio-employees-8.png";
+import member9 from "../src/assets/images/studio-employees-9.png";
+import member10 from "../src/assets/images/studio-employees-10.png";
+import member11 from "../src/assets/images/studio-employees-11.png";
+import member12 from "../src/assets/images/studio-employees-12.png";
+import member13 from "../src/assets/images/studio-employees-13.png";
+import member14 from "../src/assets/images/studio-employees-14.png";
+import member15 from "../src/assets/images/studio-employees-15.png";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
@@ -34,7 +43,23 @@ import TextWithVideoContainer from "../src/components/containers/TextWithVideoCo
 const Studio = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const memberImages = [member1, member2, member3, member4, member5, member6];
+  const memberImages = [
+    member1,
+    member2,
+    member3,
+    member4,
+    member5,
+    member6,
+    member7,
+    member8,
+    member9,
+    member10,
+    member11,
+    member12,
+    member13,
+    member14,
+    member15,
+  ];
   const handlePlayPause = () => {
     if (videoRef.current) {
       if (isPlaying) {

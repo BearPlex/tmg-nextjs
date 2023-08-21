@@ -7,10 +7,17 @@ import Section2Image from "../../src/components/works/section2Image";
 import axios from "axios";
 import Section3Image from "../../src/components/works/section3Image";
 import Section4card from "../../src/components/works/section4card";
+import copySvg from "../../src/assets/svg/copySvg.svg";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import { convertStringForImage } from "../../src/helpers/Helpers";
+import LatestBlogElement from "../../src/components/articles/LatestBlogElement";
+import {
+  facebookSvg,
+  linkedinSvg,
+  twitterSvg,
+} from "../../src/helpers/Helpers";
 
 import ReactMark from "react-markdown";
 function BlogDetail() {
@@ -32,170 +39,236 @@ function BlogDetail() {
         setWork(res.data.data);
       })
       .catch((err) => {
-        console.log("Error123", err);
+        console.log("Error", err);
       });
   }, [id]);
   return (
     <>
       <PageWrapper>
-        <div className="max-w-7xl mx-auto">
-          <section className="pagePaddingX">
-            {/* <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText pt-20 md:pt-30 lg:pt-40"> */}
-            <span className="text-pink-400 text-base tracking-widest">
-              {work?.attributes?.date}
-            </span>
-
-            <div className="headingBlack mb-3">{work?.attributes?.title}</div>
-            <p className="blackDescriptionText paragraph">
-              {work?.attributes?.sub_title}
-            </p>
-            {/* </h1> */}
-            <div className="flex justify-center mt-9 md:mt-20">
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${
-                  work?.attributes?.image1 && work?.attributes?.image1 !== ""
-                    ? work?.attributes?.image1
-                    : "Women_Rise_1"
-                }.png`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
+        <div className="w-full">
+          <section className="max-w-7xl mx-auto pagePaddingX">
+            <div className="text-pink-400 text-base tracking-widest">
+              Published {work?.attributes?.dateAdded}
             </div>
-            <div className="flex w-full">
-              <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16 w-full">
-                <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
-                  Introduction
-                </h2>
-                <p className="whitespace-pre-wrap blackDescriptionText pl-5 w-full paragraph">
-                  {work?.attributes?.blog_content}
-                </p>
+            <div className="headingBlack">{work?.attributes?.title}</div>
+            <div className="paragraphBlack mt-2">
+              {work?.attributes?.blogMainContent1}
+            </div>
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              src={`https://beta.themediagale.com/public_images/work/${
+                work?.attributes?.image1 && work?.attributes?.image1 !== ""
+                  ? work?.attributes?.image1
+                  : "Women_Rise_1"
+              }.png`}
+              loading="lazy"
+              layout="responsive"
+              objectFit="cover"
+              className="w-full"
+            />
+            <div className="max-w-full">
+              <div className="max-w-[70%] mx-auto">
+                <div>{work?.attributes?.blogMainContent2}</div>
+                <div className="headingBlack mt-8 md:mt-10">
+                  {work?.attributes?.introductionHeading}
+                </div>
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.introductionContent1}
+                </div>
+                <Image
+                  width={500}
+                  height={300}
+                  alt="attributes"
+                  src={`https://beta.themediagale.com/public_images/work/${
+                    work?.attributes?.image2 && work?.attributes?.image2 !== ""
+                      ? work?.attributes?.image2
+                      : "Women_Rise_1"
+                  }.png`}
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+                <div className="left-border">
+                  <div className="headingBlack mt-8 md:mt-10">
+                    {work?.attributes?.quote}
+                  </div>
+                  <div className="paragraphBlack mt-2">
+                    - {work?.attributes?.quoteAuthor}
+                  </div>
+                </div>
+                <div className="paragraphBlack mt-8 md:mt-10">
+                  {work?.attributes?.introductionContent2}
+                </div>
+                <div className="smallHeading mt-8 md:mt-10">
+                  {work?.attributes?.subheading1}
+                </div>
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent1Part1}
+                </div>
+                {work?.attributes?.image3 &&
+                  work?.attributes?.image3 !== "" && (
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="attributes"
+                      src={`https://beta.themediagale.com/public_images/work/${
+                        work?.attributes?.image3 &&
+                        work?.attributes?.image3 !== ""
+                          ? work?.attributes?.image3
+                          : "Women_Rise_1"
+                      }.png`}
+                      loading="lazy"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  )}
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent1Part2}
+                </div>
+                <div className="smallHeading mt-8 md:mt-10">
+                  {work?.attributes?.subheading2}
+                </div>
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent2Part1}
+                </div>
+                {work?.attributes?.image4 &&
+                  work?.attributes?.image4 !== "" && (
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="attributes"
+                      src={`https://beta.themediagale.com/public_images/work/${
+                        work?.attributes?.image4 &&
+                        work?.attributes?.image4 !== ""
+                          ? work?.attributes?.image4
+                          : "Women_Rise_1"
+                      }.png`}
+                      loading="lazy"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  )}
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent2Part2}
+                </div>
+                <div className="smallHeading mt-8 md:mt-10">
+                  {work?.attributes?.subheading3}
+                </div>
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent3Part1}
+                </div>
+                {work?.attributes?.image5 &&
+                  work?.attributes?.image5 !== "" && (
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="attributes"
+                      src={`https://beta.themediagale.com/public_images/work/${
+                        work?.attributes?.image5 &&
+                        work?.attributes?.image5 !== ""
+                          ? work?.attributes?.image5
+                          : "Women_Rise_1"
+                      }.png`}
+                      loading="lazy"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  )}
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.subheadingContent3Part2}
+                </div>
+                <div className="headingBlack mt-8 md:mt-10">
+                  {work?.attributes?.conclusionHeading}
+                </div>
+                <div className="paragraphBlack mt-2">
+                  {work?.attributes?.conclusionContent}
+                </div>
+                <div className="mt-8 md:mt-10 authorCard flex flex-row w-full justify-between">
+                  <div className="flex flex-row items-center">
+                    <div className="flex items-center h-[70px] w-[70px] mr-4">
+                      <Image
+                        width={500}
+                        height={300}
+                        alt="attributes"
+                        src={`https://beta.themediagale.com/public_images/work/${
+                          work?.attributes?.authorImage &&
+                          work?.attributes?.authorImage !== ""
+                            ? work?.attributes?.authorImage
+                            : "Women_Rise_1"
+                        }.png`}
+                        loading="lazy"
+                        className="rounded-[50%]"
+                        layout="responsive"
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="flex flex-col isolate">
+                      <div>{work?.attributes?.authorName}</div>
+                      <div>{work?.attributes?.authorJobTitle}</div>
+                    </div>
+                  </div>
+                  <div className="flex flex-row justify-end items-center">
+                    <button
+                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
+                      onClick={() => {
+                        console.log(`${work?.attributes?.authorLink}`);
+                      }}
+                    >
+                      <Image
+                        src={copySvg.src}
+                        alt="copy link"
+                        className="h-[20px] w-[20px] mr-2"
+                      />{" "}
+                      <span className="paragraphBlack">Copy Link</span>
+                    </button>
+                    <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
+                      <a
+                        href={`https://twitter.com/${work?.attributes?.authorLinkTwitter}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block"
+                      >
+                        {twitterSvg()}
+                      </a>
+                      <a
+                        href={`https://www.facebook.com/${work?.attributes?.authorLinkFacebook}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block"
+                      >
+                        {facebookSvg()}
+                      </a>
+                      <a
+                        href={`https://www.linkedin.com/${work?.attributes?.authorLinkLinkedin}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block"
+                      >
+                        {linkedinSvg()}
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
-
-          <section className="flex items-center justify-center flex-col gap-10 md:gap-16">
-            <div className="max-w-[70%]">
-              <Image
-                width={500}
-                height={1000}
-                alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${
-                  work?.attributes?.image2 && work?.attributes?.image2 !== ""
-                    ? work?.attributes?.image2
-                    : "Women_Rise_1"
-                }.png`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
+            <div className="w-full my-10 md:my-20">
+              <div className="flex flex-col items-center justify-between">
+                <div className="headingBlack">
+                  Latest <span className="gradientText">Blog</span> Post
+                </div>
+                <div className="paragraphBlack mt-2">
+                  Tool and strategies modern teams need to help their companies
+                  grow.
+                </div>
+              </div>
+              <LatestBlogElement />
             </div>
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image3 && work?.attributes?.image3 !== ""
-                  ? work?.attributes?.image3
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
           </section>
-          <div className="pagePaddingX w-full flex flex-col">
-            <div className="py-20 md:py-40 lg:py-60">
-              <h2 className="heading mb-5 font-bold blackHeading whitespace-pre-wrap leading-none relative pl-6">
-                {work?.attributes?.bog_heading_second}
-              </h2>
-              <p className="blackDescriptionText pl-5 paragraph">
-                {work?.attributes?.blog_content_second}
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center mt-6 md:mt-10">
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image4 && work?.attributes?.image4 !== ""
-                  ? work?.attributes?.image4
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
-          </div>
-          <div className="flex justify-center my-4 md:my-10">
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image5 && work?.attributes?.image5 !== ""
-                  ? work?.attributes?.image5
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
-          </div>
+          <Footer />
         </div>
-        <Section4card />
-        <Footer />
       </PageWrapper>
-      {/* <PageWrapper>
-        <section className="">
-          <div className="pagePaddingX max-w-7xl mx-auto">
-            <span className="text-pink-400 text-base tracking-widest">
-              {work?.attributes?.date}
-            </span>
-
-            <div className="headingBlack">{work?.attributes?.title}</div>
-            <br />
-            <p>{work?.attributes?.sub_title}</p>
-            <div className="w-full  mb-6 md:mb-20"></div>
-            <div className="w-full my-4 md:my-10 xl:-ml-3">
-              <Image
-                width={500}
-                height={300}
-                src={`https://beta.themediagale.com/public_images/blogs/${
-                  work?.attributes?.title && work?.attributes?.title !== ""
-                    ? convertStringForImage(work?.attributes?.title)
-                    : "Women-Rise"
-                }.png`}
-                alt="blog image"
-                className="  rounded-3xl    w-5/6  h-[550px] object-cover  mx-auto  max-w-7xl"
-              />
-            </div>
-            <div className="max-w-2xl w-full mx-auto">
-              <div className="text-orange_theme-400">Introduction.</div>
-              <p className="blackDescriptionText pb-7 md:pb-20  mt-3">
-                Did you know that if the internet was a country, it would be the
-                worlds 7th biggest polluter, emitting 1.6 billion annual tons in
-                greenhouse gas emissions? As a planet, we are currently facing
-                unprecedented levels of climate change, and the internet plays a
-                sizeable part in this problem. From websites to
-                cryptocurrencies, it consumes large amounts of electricity in
-                data centres, telecom networks, and end-user devices. Find out
-                how web technology can still be efficient with low-carbon
-                digital products and services.
-              </p>
-
-              <ReactMark className="blackDescriptionText pb-7 md:pb-20">
-                {work?.attributes?.blog_content}
-              </ReactMark>
-            </div>
-          </div>
-        </section>
-      </PageWrapper> */}
     </>
   );
 }
