@@ -37,7 +37,9 @@ function BlogDetail() {
     console.log("fetchData CALLED");
     try {
       axios
-        .get(`https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*`)
+        .get(
+          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?filters[slug][$eq]=${id}`
+        )
         .then((res) => {
           // setWork(res.data.data);
           const allWorks = res.data.data;
@@ -67,20 +69,18 @@ function BlogDetail() {
             <div className="paragraphBlack mt-2">
               {work?.attributes?.blogMainContent1}
             </div>
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image1 && work?.attributes?.image1 !== ""
-                  ? work?.attributes?.image1
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-              className="w-full"
-            />
+            {work?.attributes?.image1 && work?.attributes?.image1 !== "" && (
+              <Image
+                width={500}
+                height={300}
+                alt="attributes"
+                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image1}.png`}
+                loading="lazy"
+                layout="responsive"
+                objectFit="cover"
+                className="w-full"
+              />
+            )}
             <div className="max-w-full">
               <div className="max-w-[70%] mx-auto">
                 <div>{work?.attributes?.blogMainContent2}</div>
@@ -90,19 +90,18 @@ function BlogDetail() {
                 <div className="paragraphBlack mt-2">
                   {work?.attributes?.introductionContent1}
                 </div>
-                <Image
-                  width={500}
-                  height={300}
-                  alt="attributes"
-                  src={`https://beta.themediagale.com/public_images/work/${
-                    work?.attributes?.image2 && work?.attributes?.image2 !== ""
-                      ? work?.attributes?.image2
-                      : "Women_Rise_1"
-                  }.png`}
-                  loading="lazy"
-                  layout="responsive"
-                  objectFit="cover"
-                />
+                {work?.attributes?.image2 &&
+                  work?.attributes?.image2 !== "" && (
+                    <Image
+                      width={500}
+                      height={300}
+                      alt="attributes"
+                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image2}.png`}
+                      loading="lazy"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  )}
                 <div className="left-border">
                   <div className="headingBlack mt-8 md:mt-10">
                     {work?.attributes?.quote}
@@ -126,12 +125,7 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${
-                        work?.attributes?.image3 &&
-                        work?.attributes?.image3 !== ""
-                          ? work?.attributes?.image3
-                          : "Women_Rise_1"
-                      }.png`}
+                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image3}.png`}
                       loading="lazy"
                       layout="responsive"
                       objectFit="cover"
@@ -152,12 +146,7 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${
-                        work?.attributes?.image4 &&
-                        work?.attributes?.image4 !== ""
-                          ? work?.attributes?.image4
-                          : "Women_Rise_1"
-                      }.png`}
+                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image4}.png`}
                       loading="lazy"
                       layout="responsive"
                       objectFit="cover"
@@ -178,12 +167,7 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${
-                        work?.attributes?.image5 &&
-                        work?.attributes?.image5 !== ""
-                          ? work?.attributes?.image5
-                          : "Women_Rise_1"
-                      }.png`}
+                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image5}.png`}
                       loading="lazy"
                       layout="responsive"
                       objectFit="cover"
@@ -201,21 +185,19 @@ function BlogDetail() {
                 <div className="mt-8 md:mt-10 authorCard flex flex-row w-full justify-between">
                   <div className="flex flex-row items-center">
                     <div className="flex items-center h-[70px] w-[70px] mr-4">
-                      <Image
-                        width={500}
-                        height={300}
-                        alt="attributes"
-                        src={`https://beta.themediagale.com/public_images/work/${
-                          work?.attributes?.authorImage &&
-                          work?.attributes?.authorImage !== ""
-                            ? work?.attributes?.authorImage
-                            : "Women_Rise_1"
-                        }.png`}
-                        loading="lazy"
-                        className="rounded-[50%]"
-                        layout="responsive"
-                        objectFit="cover"
-                      />
+                      {work?.attributes?.authorImage &&
+                        work?.attributes?.authorImage !== "" && (
+                          <Image
+                            width={500}
+                            height={300}
+                            alt="attributes"
+                            src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.authorImage}.png`}
+                            loading="lazy"
+                            className="rounded-[50%]"
+                            layout="responsive"
+                            objectFit="cover"
+                          />
+                        )}
                     </div>
                     <div className="flex flex-col isolate">
                       <div>{work?.attributes?.authorName}</div>
@@ -223,11 +205,12 @@ function BlogDetail() {
                     </div>
                   </div>
                   <div className="flex flex-row justify-end items-center">
-                    <button
+                    <a
                       className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
-                      onClick={() => {
-                        console.log(`${work?.attributes?.authorLink}`);
-                      }}
+                      href={`${work?.attributes?.authorLink}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block"
                     >
                       <Image
                         src={copySvg.src}
@@ -235,7 +218,7 @@ function BlogDetail() {
                         className="h-[20px] w-[20px] mr-2"
                       />{" "}
                       <span className="paragraphBlack">Copy Link</span>
-                    </button>
+                    </a>
                     <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
                       <a
                         href={`https://twitter.com/${work?.attributes?.authorLinkTwitter}`}

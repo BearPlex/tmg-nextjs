@@ -29,7 +29,7 @@ function WorkDetail() {
     try {
       axios
         .get(
-          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*`
+          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?filters[slug][$eq]=${id}`
         )
         .then((res) => {
           // setWork(res.data.data);
@@ -56,19 +56,17 @@ function WorkDetail() {
         <div className="max-w-7xl mx-auto">
           <section className="pagePaddingX">
             <div className="flex justify-center mt-9 md:mt-20 ">
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${
-                  work?.attributes?.image1 && work?.attributes?.image1 !== ""
-                    ? work?.attributes?.image1
-                    : "Women_Rise_1"
-                }.png`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
+              {work?.attributes?.image1 && work?.attributes?.image1 !== "" && (
+                <Image
+                  width={500}
+                  height={300}
+                  alt="attributes"
+                  src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image1}.png`}
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              )}
             </div>
             <h1 className="mt-3 md:mt-0 text-center largeHeading font-bold gradientText lg:pt-40">
               {work?.attributes?.featured_title}{" "}
@@ -90,33 +88,29 @@ function WorkDetail() {
 
           <section className="flex items-center justify-center flex-col gap-10 md:gap-16">
             <div className="max-w-[70%]">
+              {work?.attributes?.image2 && work?.attributes?.image2 !== "" && (
+                <Image
+                  width={500}
+                  height={1000}
+                  alt="attributes"
+                  src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image2}.png`}
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              )}
+            </div>
+            {work?.attributes?.image3 && work?.attributes?.image3 !== "" && (
               <Image
                 width={500}
-                height={1000}
+                height={300}
                 alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${
-                  work?.attributes?.image2 && work?.attributes?.image2 !== ""
-                    ? work?.attributes?.image2
-                    : "Women_Rise_1"
-                }.png`}
+                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image3}.png`}
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
               />
-            </div>
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image3 && work?.attributes?.image3 !== ""
-                  ? work?.attributes?.image3
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
+            )}
           </section>
           <div className="pagePaddingX w-full flex flex-col">
             <div className="py-20 md:py-40 lg:py-60">
@@ -129,34 +123,30 @@ function WorkDetail() {
             </div>
           </div>
           <div className="flex justify-center mt-6 md:mt-10">
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image4 && work?.attributes?.image4 !== ""
-                  ? work?.attributes?.image4
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
+            {work?.attributes?.image4 && work?.attributes?.image4 !== "" && (
+              <Image
+                width={500}
+                height={300}
+                alt="attributes"
+                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image4}.png`}
+                loading="lazy"
+                layout="responsive"
+                objectFit="cover"
+              />
+            )}
           </div>
           <div className="flex justify-center my-4 md:my-10">
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              src={`https://beta.themediagale.com/public_images/work/${
-                work?.attributes?.image5 && work?.attributes?.image5 !== ""
-                  ? work?.attributes?.image5
-                  : "Women_Rise_1"
-              }.png`}
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-            />
+            {work?.attributes?.image5 && work?.attributes?.image5 !== "" && (
+              <Image
+                width={500}
+                height={300}
+                alt="attributes"
+                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image5}.png`}
+                loading="lazy"
+                layout="responsive"
+                objectFit="cover"
+              />
+            )}
           </div>
         </div>
         <Section4card />

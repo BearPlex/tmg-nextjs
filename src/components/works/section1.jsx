@@ -8,16 +8,18 @@ function section1(props) {
     <>
       <section className="pagePaddingX max-w-7xl mx-auto">
         <div className="flex justify-center mt-9 md:mt-20">
-          <Image
-            width={500}
-            height={300}
-            alt="attributes"
-            src={`https://beta.themediagale.com/public_images/work/${
-              work?.image1 && work?.featured_title !== ""
-                ? convertStringForImage(work?.featured_title)
-                : "Women-Rise"
-            }.png`}
-          />
+          {work?.image1 && work?.featured_title !== "" && (
+            <Image
+              width={500}
+              height={300}
+              alt="attributes"
+              layout="responsive"
+              objectFit="cover"
+              src={`https://beta.themediagale.com/public_images/work/${convertStringForImage(
+                work?.featured_title
+              )}.png`}
+            />
+          )}
         </div>
         <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText">
           {work?.featured_title}{" "}

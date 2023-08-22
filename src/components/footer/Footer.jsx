@@ -170,7 +170,7 @@ const Footer = () => {
                       className="h-[9vw] md:h-[70px] w-full object-contain sm:w-auto rounded-none sm:rounded-md ease-in-out duration-300 transition hover:-translate-y-1"
                       alt="group"
                       layout="response"
-                      objectFit="contain"
+                      objectFit="cover"
                       src={footerLogos.src}
                     />
                   </div>
@@ -184,7 +184,7 @@ const Footer = () => {
                     src={logoIcon.src}
                     alt="tmg"
                     layout="responsive"
-                    objectFit="contain"
+                    objectFit="cover"
                     className="h-12 w-12 cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
                   />
                 </div>

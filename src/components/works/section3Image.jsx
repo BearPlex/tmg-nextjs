@@ -11,20 +11,21 @@ function section3Image(props) {
       <div className="pagePaddingX max-w-7xl mx-auto w-full flex flex-col">
         <div className="flex justify-center">
           <div className="flex justify-center">
-            <Image
-              width={500}
-              height={300}
-              alt="attributes"
-              loading="lazy"
-              layout="responsive"
-              objectFit="cover"
-              src={`https://beta.themediagale.com/public_images/${
-                work?.gallery_second_title && work?.gallery_second_title !== ""
-                  ? convertStringForImage(work?.gallery_second_title)
-                  : "Women-Rise"
-              }.png`}
-              className="pb-10"
-            />
+            {work?.gallery_second_title &&
+              work?.gallery_second_title !== "" && (
+                <Image
+                  width={500}
+                  height={300}
+                  alt="attributes"
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                  src={`https://beta.themediagale.com/public_images/${convertStringForImage(
+                    work?.gallery_second_title
+                  )}.png`}
+                  className="pb-10"
+                />
+              )}
           </div>
         </div>
         <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16">
