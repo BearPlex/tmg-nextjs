@@ -99,14 +99,14 @@ function WebDesign() {
               <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
-                    <dd className="relative  extraLargeHeadingWhite">
+                    <dd className="relative  largeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <div className="largeHeadingWhite">Development</div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
+                      <div className="headingWhite">Development</div>
+                      <div className="mt-2 lg:mt-6  paragraphWhite">
                         User-centric designs, practical and result-oriented
                         marketing tools, and in-house built features are among
                         our exponential services we provide. 
@@ -114,30 +114,30 @@ function WebDesign() {
                     </div>
 
                     <div>
-                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className="headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Technology
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         We are extremely versed in technology upgrades. By
                         utilizing the latest tools and following best practices,
                         we deliver high-quality results.
                       </div>
                     </div>
                     <div>
-                      <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className=" headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Maintenance
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         We ensure to keep your backend updated after the
                         completion of the project and provide instantaneous
                         online support whenever you or your business requires. 
                       </div>
                     </div>
                     <div>
-                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className="headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Functionality
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         A visually appealing and high functional website with
                         regular updates can help your business grab the
                         attention of visitors globally. We are open to provide

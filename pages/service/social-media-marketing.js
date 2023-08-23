@@ -117,14 +117,14 @@ function Socialmediamarketing() {
               <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
-                    <dd className="relative  extraLargeHeadingWhite">
+                    <dd className="relative  largeHeadingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
                   <div className="grid grid-cols-1  md:grid-cols-2 lg:gap-14 md:gap-10 sm-:gap-0">
                     <div>
-                      <div className="largeHeadingWhite">Creative Visuals</div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite  ">
+                      <div className="headingWhite">Creative Visuals</div>
+                      <div className="mt-2 lg:mt-6  paragraphWhite">
                         The extensive experience and creative flair of our
                         designers ensures that each creative is unique to its
                         essence and well perceived from the audience.
@@ -132,30 +132,30 @@ function Socialmediamarketing() {
                     </div>
 
                     <div>
-                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className="headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Audience Selection
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         As your digital partners, we analyze the customer data
                         to get a firm grip on your customer’s likes & dislikes.
                         This helps our campaign deliver high results.
                       </div>
                     </div>
                     <div>
-                      <div className=" largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className=" headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Strategy
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         With our certified team, we ensure to create effective
                         cost saving strategies that help campaigns perform well
                         so you can focus more on counting sales.
                       </div>
                     </div>
                     <div>
-                      <div className="largeHeadingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
+                      <div className="headingWhite mt-3 sm:mt-3 lg:mt-0 md:mt-0">
                         Optimization
                       </div>
-                      <div className="mt-2 lg:mt-6 smallTextWhite ">
+                      <div className="mt-2 lg:mt-6 paragraphWhite ">
                         We optimize campaigns based on data and multiple ads
                         testing. This leads to better CTA, CPA and provides a
                         higher ROAS on the campaigns.
