@@ -12,6 +12,7 @@ import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
 import clutrhLogo from "../../assets/svg/clutrh-logo.svg";
 import shopifyLogo from "../../assets/svg/shopify-logo.svg";
+import sortListLogo from "../../assets/svg/sort-list-logo.svg";
 import footerLogos from "../../assets/images/footer-logos.png";
 import pashaLogo from "../../assets/svg/PASHA-Logo.svg";
 import psebLogo from "../../assets/svg/PSEB-logo.svg";
@@ -76,7 +77,7 @@ const Footer = () => {
                   href="mailto:Info@themediagale.com"
                   className="mb-3 whiteHeadingText smallHeading font-bold"
                 >
-                  <span className="gradientHoverWhite smallHeading font-extrabold   ">
+                  <span className="gradientHoverWhite smallHeading font-bold   ">
                     info@themediagale.com
                   </span>
                 </a>
@@ -116,6 +117,13 @@ const Footer = () => {
                         <Link className=" md:pb-3 " href="/blog">
                           <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Blog
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="mb-0 md:mb-3">
+                        <Link className=" md:pb-3 " href="/contact">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
+                            Contact
                           </span>
                         </Link>
                       </li>
@@ -161,9 +169,9 @@ const Footer = () => {
               href="/contact"
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
             >
-              <div className="flex items-center  md:pl-10 lg:pl-14 xl:pl-0">
-                <div className="h-full w-[100vw] md:w-[100%] isolate">
-                  <div className=" sm:bg-transparent bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
+              <div className="flex items-center  md:pl-8 lg:pl-12 xl:pl-0">
+                <div className="h-full w-[100vw] md:w-[80%] isolate">
+                  {/* <div className=" sm:bg-transparent pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
                       width={50}
                       height={40}
@@ -172,6 +180,53 @@ const Footer = () => {
                       layout="response"
                       objectFit="cover"
                       src={footerLogos.src}
+                    />
+                  </div> */}
+                  <div className="lg:-ml-10 -ml-0 flex flex-row items-center justify-between">
+                    <Image
+                      width={200}
+                      height={200}
+                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={sortListLogo.src}
+                    />
+                    <Image
+                      width={200}
+                      height={200}
+                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={shopifyLogo.src}
+                    />
+                    <Image
+                      width={200}
+                      height={200}
+                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={clutrhLogo.src}
+                    />
+                    <Image
+                      width={200}
+                      height={200}
+                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={psebLogo.src}
+                    />
+                    <Image
+                      width={200}
+                      height={200}
+                      className="h-[3rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
+                      alt="group"
+                      layout="response"
+                      objectFit="cover"
+                      src={pashaLogo.src}
                     />
                   </div>
                 </div>

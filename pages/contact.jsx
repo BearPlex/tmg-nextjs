@@ -19,7 +19,9 @@ const Contact = () => {
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto xl:px-0 xl:pl-0">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
-              <h4 className="gradientText heading mb-2 md:mb-6">New York</h4>
+              <h4 className="gradientText smallHeading font-extrabold mb-2 md:mb-6">
+                New York
+              </h4>
               <p className="blackDescriptionText font-bold paragraph">
                 Brooklyn,
                 <br />
@@ -27,10 +29,10 @@ const Contact = () => {
                 <br />
                 U.S.A.
               </p>
-              <p className="mt-6 md:mt-10">
+              <p className="mt-10 md:mt-32">
                 <a
                   href="tel:+1 (917) 970-1353"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
+                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all"
                 >
                   +1 (917) 970-1353
                 </a>
@@ -40,7 +42,7 @@ const Contact = () => {
                   href="mailto:info@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
                 >
                   info@themediagale.com
                 </a>
@@ -49,7 +51,7 @@ const Contact = () => {
                   href="mailto:support@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
                 >
                   support@themediagale.com
                 </a>
@@ -58,7 +60,7 @@ const Contact = () => {
                   href="mailto:contact@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
+                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400 transition-all py-1"
                 >
                   contact@themediagale.com
                 </a>
@@ -101,13 +103,15 @@ const Contact = () => {
 
             <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col ">
               <div className="w-full md:w-[30%] block md:hidden">
-                <h4 className="gradientText heading mb-2 md:mb-6">New York</h4>
+                <h4 className="gradientText smallHeading font-extrabold mb-2 md:mb-6">
+                  New York
+                </h4>
                 <p className="blackDescriptionText font-bold paragraph flex flex-col mb-4 whitespace-nowrap">
                   Brooklyn, New York, U.S.A.
                 </p>
               </div>
               <div className=" mb-4 md:mb-0">
-                <h4 className="gradientText heading mb-2 md:mb-6 w-full">
+                <h4 className="gradientText smallHeading font-extrabold mb-2 md:mb-6 w-full">
                   Lahore
                 </h4>
                 <p className="blackDescriptionText font-bold paragraph whitespace-nowrap">
@@ -127,7 +131,7 @@ const Contact = () => {
                 <p className="mt-2 md:mt-10 mb-4">
                   <a
                     href="tel:+44(0)20 3951 0562"
-                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
+                    className="inline-block text-orange_theme-500 font-bold smallHeading font-bold hover:text-orange_theme-400  transition-all"
                   >
                     +1 (917) 970-1353
                   </a>
@@ -137,7 +141,7 @@ const Contact = () => {
                     href="mailto:info@themediagale.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                    className="inline-block text-orange_theme-500 font-bold smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
                   >
                     info@themediagale.com
                   </a>
@@ -146,7 +150,7 @@ const Contact = () => {
                     href="mailto:support@themediagale.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
+                    className="inline-block text-orange_theme-500 font-bold smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
                   >
                     support@themediagale.com
                   </a>
@@ -155,7 +159,7 @@ const Contact = () => {
                     href="mailto:contact@themediagale.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
+                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400 transition-all py-1"
                   >
                     contact@themediagale.com
                   </a>
