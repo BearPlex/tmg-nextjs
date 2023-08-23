@@ -71,8 +71,8 @@ const WorkCard = (props) => {
             {seo_tag ? "SEO" : ""}
           </span>
           <div
-            className={`my-2 lg:my-4 md:my-4 ${
-              backGroundBlack ? " headingWhite " : " headingBlack "
+            className={`my-2 lg:my-4 md:my-4 smallHeading font-bold ${
+              backGroundBlack ? " whiteHeadingText " : " blackHeadingText "
             } leading-tight`}
           >
             {featured_title}

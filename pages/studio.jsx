@@ -106,7 +106,7 @@ const Studio = () => {
             />
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
-            <h1 className=" headingBlack text-center font-sofia-bold font-bold leading-tight">
+            <h1 className=" extraLargeHeading text-center font-sofia-bold font-bold leading-tight">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>

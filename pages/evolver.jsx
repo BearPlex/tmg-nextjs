@@ -153,7 +153,7 @@ function evolver() {
                 brain. Take 2-3 capsules per day.
               </p>
               <div className="mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#FFFFFF] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-poppins-regular text-base blackDescriptionText flex justify-between items-center">
+                <div className="paragraph blackDescriptionText flex justify-between items-center">
                   Subscribe &amp; save 25% + free shipping:
                   <input
                     type="radio"
@@ -170,7 +170,7 @@ function evolver() {
                 </div>
               </div>
               <div className="mt-2 lg:mt-6 relative flex py-3 flex-col bg-[#F9FAFB] border border-[#12ABC9] px-3  rounded-2xl">
-                <div className="font-poppins-regular text-base blackDescriptionText flex justify-between">
+                <div className="paragraph blackDescriptionText flex justify-between">
                   One-time purchase:
                   <input
                     type="radio"
@@ -221,7 +221,7 @@ function evolver() {
                             applies on first purchase.
                           </p>
                         </div>
-                        <div className="font-poppins-regular smallText blackDescriptionText whitespace-nowrap cursor-pointer">
+                        <div className="smallText blackDescriptionText whitespace-nowrap cursor-pointer">
                           Subscription Details
                         </div>
                       </a>

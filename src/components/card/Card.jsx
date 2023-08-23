@@ -40,11 +40,11 @@ const Card = (props) => {
                 <p className="text-base  text-[#EE2760] group-hover:blackHeading">
                   {blog.attributes.sub_title}
                 </p>
-                <p className="smallHeading font-semibold  blackHeading group-hover:text-white pt-2">
+                <p className="smallHeading font-bold  blackHeading group-hover:text-white pt-2">
                   {blog.attributes.title}
                 </p>
                 <div>
-                  <p className="pb-4 pt-3 font-poppins-regular paragraph blackDescriptionText group-hover:text-white">
+                  <p className="pb-4 pt-3 paragraph blackDescriptionText group-hover:text-white">
                     {blog.attributes.cardText}
                   </p>
                 </div>

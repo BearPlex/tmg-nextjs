@@ -119,7 +119,7 @@ const LatestBlogElement = () => {
                       {article.attributes.title}
                     </p>
                     <div>
-                      <p className="pb-4 pt-3 font-poppins-regular paragraph blackDescriptionText group-hover:text-white">
+                      <p className="pb-4 pt-3 paragraph blackDescriptionText group-hover:text-white">
                         {article.attributes.cardText}
                       </p>
                     </div>

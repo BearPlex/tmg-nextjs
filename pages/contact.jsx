@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
               <h4 className="gradientText heading mb-2 md:mb-6">New York</h4>
-              <p className="blackDescriptionText font-semibold paragraph">
+              <p className="blackDescriptionText font-bold paragraph">
                 Brooklyn,
                 <br />
                 New York,
@@ -30,7 +30,7 @@ const Contact = () => {
               <p className="mt-6 md:mt-10">
                 <a
                   href="tel:+1 (917) 970-1353"
-                  className="inline-block text-orange_theme-500 font-bold smallParagraph hover:text-orange_theme-400  transition-all"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
                 >
                   +1 (917) 970-1353
                 </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                   href="mailto:info@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold smallParagraph hover:text-orange_theme-400  transition-all py-1"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   info@themediagale.com
                 </a>
@@ -49,7 +49,7 @@ const Contact = () => {
                   href="mailto:support@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold smallParagraph hover:text-orange_theme-400  transition-all py-1"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all py-1"
                 >
                   support@themediagale.com
                 </a>
@@ -58,7 +58,7 @@ const Contact = () => {
                   href="mailto:contact@themediagale.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-orange_theme-500 font-bold smallParagraph hover:text-orange_theme-400 transition-all py-1"
+                  className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400 transition-all py-1"
                 >
                   contact@themediagale.com
                 </a>
@@ -100,9 +100,9 @@ const Contact = () => {
             </div>
 
             <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col ">
-              <div className="w-[30%] md:w-[30%] block md:hidden">
+              <div className="w-full md:w-[30%] block md:hidden">
                 <h4 className="gradientText heading mb-2 md:mb-6">New York</h4>
-                <p className="blackDescriptionText font-semibold paragraph flex flex-col mb-4 whitespace-nowrap">
+                <p className="blackDescriptionText font-bold paragraph flex flex-col mb-4 whitespace-nowrap">
                   Brooklyn, New York, U.S.A.
                 </p>
               </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                 <h4 className="gradientText heading mb-2 md:mb-6 w-full">
                   Lahore
                 </h4>
-                <p className="blackDescriptionText font-semibold paragraph whitespace-nowrap">
+                <p className="blackDescriptionText font-bold paragraph whitespace-nowrap">
                   <p className="block md:hidden">
                     DHA Phase 5, Lahore, Pakistan
                   </p>
@@ -124,7 +124,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="block md:hidden">
-                <p className="mt-2 md:mt-10">
+                <p className="mt-2 md:mt-10 mb-4">
                   <a
                     href="tel:+44(0)20 3951 0562"
                     className="inline-block text-orange_theme-500 font-bold largeParagraph hover:text-orange_theme-400  transition-all"
@@ -132,7 +132,7 @@ const Contact = () => {
                     +1 (917) 970-1353
                   </a>
                 </p>
-                <p className="group mt:4 md:mt-10 relative">
+                <p className="group mt:4 md:mt-10 mb-8 md:mb-10 relative">
                   <a
                     href="mailto:info@themediagale.com"
                     target="_blank"
