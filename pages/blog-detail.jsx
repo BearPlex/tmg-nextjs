@@ -11,7 +11,7 @@ const blogDetail = () => {
       </span>
       <div className="headingBlack">Designing more sustainable websites.</div>
       <div>
-        <span className="text-base text-pink-400 uppercase mt-3">BY IZZY</span>
+        <span className="paragraph text-pink-400 uppercase mt-3">BY IZZY</span>
       </div>
       <div className="max-w-2xl w-full mx-auto">
         <div className="heading text-pink-400">Introduction</div>

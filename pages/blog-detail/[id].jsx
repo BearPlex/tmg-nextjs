@@ -62,7 +62,7 @@ function BlogDetail() {
       <PageWrapper>
         <div className="w-full">
           <section className="max-w-7xl mx-auto pagePaddingX">
-            <div className="text-pink-400 text-base tracking-widest">
+            <div className="text-pink-400 paragraph tracking-widest">
               Published {work?.attributes?.dateAdded}
             </div>
             <div className="headingBlack">{work?.attributes?.title}</div>

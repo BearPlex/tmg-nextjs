@@ -159,6 +159,8 @@
 html,
 body {
   background: #ffffff;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease-in-out;
 }
 .pink-color {
   color: rgb(247, 78, 161);
