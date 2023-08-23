@@ -1,43 +1,4 @@
 @font-face {
-  font-family: "Circular Std Bold";
-  src: url("../src/assets/fonts/CircularStd-Bold.eot");
-  src: url("../src/assets/fonts/CircularStd-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../src/assets/fonts/CircularStd-Bold.woff2") format("woff2"),
-    url("../src/assets/fonts/CircularStd-Bold.woff") format("woff"),
-    url("../src/assets/fonts/CircularStd-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Circular Std Regular";
-  src: url("../src/assets/fonts/CircularSpotifyText-Light.eot");
-  src: url("../src/assets/fonts/CircularSpotifyText-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../src/assets/fonts/CircularSpotifyText-Light.woff2") format("woff2"),
-    url("../src/assets/fonts/CircularSpotifyText-Light.woff") format("woff"),
-    url("../src/assets/fonts/CircularSpotifyText-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Circular Std Medium";
-  src: url("../src/assets/fonts/CircularStd-Medium.eot");
-  src: url("../src/assets/fonts/CircularStd-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../src/assets/fonts/CircularStd-Medium.woff2") format("woff2"),
-    url("../src/assets/fonts/CircularStd-Medium.woff") format("woff"),
-    url("../src/assets/fonts/CircularStd-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Sofia Pro Bold";
   src: url("../src/assets/fonts/SofiaPro-Bold.eot");
   src: url("../src/assets/fonts/SofiaPro-Bold.eot?#iefix")
@@ -117,27 +78,25 @@
     -webkit-text-fill-color: transparent;
   }
   .xl2Heading {
-    @apply font-sans text-4xl sm:text-5xl font-bold;
+    @apply font-sans text-7xl sm:text-8xl font-extrabold;
   }
   .extraLargeHeading {
-    @apply font-sans text-3xl sm:text-4xl font-bold;
+    @apply font-sans text-6xl sm:text-7xl font-extrabold;
   }
   .largeHeading {
-    @apply font-sans text-2xl sm:text-3xl font-bold;
+    @apply font-sans text-6xl sm:text-7xl font-extrabold;
   }
   .heading {
-    @apply font-sans text-xl sm:text-2xl font-bold;
+    @apply font-sans text-5xl sm:text-6xl font-extrabold;
   }
   .smallHeading {
-    @apply font-sans text-base sm:text-xl font-semibold;
+    @apply font-sans text-2xl sm:text-3xl font-semibold;
   }
   .largeParagraph {
-    @apply font text-xl sm:text-2xl font-semibold;
-    word-spacing: 0.15rem;
+    @apply font text-2xl sm:text-3xl font-semibold;
   }
   .paragraph {
-    @apply font font-sans text-sm sm:text-base;
-    word-spacing: 0.15rem;
+    @apply font font-sans text-xl sm:text-2xl font-semibold;
   }
   .smallText {
     @apply font text-xs sm:text-sm;
@@ -145,10 +104,10 @@
   }
 
   .largeHeadingBlack {
-    @apply blackHeadingText heading;
+    @apply blackHeadingText largeHeading;
   }
   .largeHeadingWhite {
-    @apply whiteHeadingText heading;
+    @apply whiteHeadingText largeHeading;
   }
   .extraLargeHeadingWhite {
     @apply extraLargeHeading whiteHeadingText;
@@ -470,17 +429,8 @@ footer svg:hover path {
 }
 
 .contact-wrapper svg {
-  width: 45px;
-  height: 45px;
-  @media (max-width: 1023px) {
-    width: 40px;
-    height: 40px;
-  }
-
-  @media (max-width: 767px) {
-    width: 30px;
-    height: 30px;
-  }
+  width: 4rem;
+  height: 4rem;
 }
 
 .contact-wrapper svg:hover g,

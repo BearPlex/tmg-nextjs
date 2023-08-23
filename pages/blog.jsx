@@ -44,13 +44,13 @@ const Blog = () => {
           <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
-                News, insights, and
-                <span className="gradientText"> creative culture </span>
+                News, Insights, and
+                <span className="gradientText"> Creative Culture </span>
                 from TMG.
               </h4>
               <p className="paragraphBlack">
                 Because it should never just be work, it should be
-                <span className="gradientText"> a work of art</span>{" "}
+                <span className="gradientText"> a Work of Art</span>{" "}
               </p>
               <div className="mt-6 md:mt-10">
                 <GradientButton
@@ -80,7 +80,7 @@ const Blog = () => {
                 />
 
                 <div className="absolute left-10 bottom-10">
-                  <span className="gradientText inline-block smallText uppercase tracking-[1.5px]   pb-1 md:pb-5">
+                  <span className="gradientText inline-block smallText tracking-[1.5px] pb-1 md:pb-5">
                     Featured News
                   </span>
                   <h3 className="text-white max-w-7xl font-sofia-bold largeHeading leading-none">

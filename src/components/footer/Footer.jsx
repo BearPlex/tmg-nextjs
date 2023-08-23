@@ -69,14 +69,14 @@ const Footer = () => {
                     </a>
                   </div>
                 </h4>
-                <h5 className="paragraph mt-8 mb-1 whiteHeadingText font-bold hidden md:block">
+                <h5 className="paragraph mt-8 mb-2 whiteHeadingText font-bold hidden md:block">
                   Shoot us an email
                 </h5>
                 <a
                   href="mailto:Info@themediagale.com"
-                  className="mb-2 whiteHeadingText smallHeading font-bold"
+                  className="mb-3 whiteHeadingText smallHeading font-bold"
                 >
-                  <span className="gradientHoverWhite text-sm sm:text-base font-medium   ">
+                  <span className="gradientHoverWhite smallHeading font-extrabold   ">
                     info@themediagale.com
                   </span>
                 </a>
@@ -86,42 +86,42 @@ const Footer = () => {
                 <div className="flex flex-wrap items-top mb-6">
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
-                      <li className="mb-0 md:mb-2">
-                        <span className="text-[#EE2760] font-semibold text-sm sm:text-base   md:pb-3">
+                      <li className="mb-0 md:mb-3">
+                        <span className="text-[#EE2760] font-extrabold paragraph md:pb-3">
                           Explore
                         </span>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3 " href="/">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Home
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3 " href="/work">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Work
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3 " href="/services">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Services
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3 " href="/blog">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Blog
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-6">
                         <Link className=" md:pb-3 " href="/privacy-policy">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base  pb-0">
+                          <span className="gradientHoverWhite font-extrabold paragraph pb-0">
                             Privacy Policy
                           </span>
                         </Link>
@@ -130,21 +130,21 @@ const Footer = () => {
                   </div>
                   <div className="w-full lg:w-6/12 xl:relative xl:right-16">
                     <ul className="list-unstyled">
-                      <li className="mt-6 md:mt-0 mb-0 md:mb-2">
-                        <span className="text-[#EE2760] font-semibold text-sm sm:text-base   md:pb-3">
+                      <li className="mt-6 md:mt-0 mb-0 md:mb-3">
+                        <span className="text-[#EE2760] font-extrabold paragraph md:pb-3">
                           Offices
                         </span>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base ">
+                          <span className="gradientHoverWhite font-extrabold paragraph">
                             New York
                           </span>
                         </Link>
                       </li>
-                      <li className="mb-0 md:mb-2">
+                      <li className="mb-0 md:mb-3">
                         <Link className=" md:pb-3" href="/contact">
-                          <span className="gradientHoverWhite xl2Bold text-sm sm:text-base ">
+                          <span className="gradientHoverWhite font-extrabold paragraph ">
                             Lahore
                           </span>
                         </Link>
