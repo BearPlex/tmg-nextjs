@@ -700,3 +700,16 @@ footer svg:hover path {
   border-left: 2px solid #ee2760; /* You can adjust the '4px' to whatever thickness you want */
   padding-left: 2vw; /* Optional padding to make sure content doesn't stick to the border */
 }
+
+.roundedBImageCover {
+  border-bottom-left-radius: 29px !important;
+  border-bottom-right-radius: 29px !important;
+}
+
+@media (min-width: 640px) {
+  /* this is the default breakpoint for `sm:` in Tailwind */
+  .roundedBImageCover {
+    border-bottom-left-radius: 36px !important;
+    border-bottom-right-radius: 36px !important;
+  }
+}

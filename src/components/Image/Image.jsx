@@ -29,6 +29,9 @@ const ImageComponent = ({
   height = 500,
   src,
   className,
+  decoding = "async",
+  loading = "lazy",
+  priority = false,
   ...otherProps
 }) => {
   return (
@@ -39,8 +42,9 @@ const ImageComponent = ({
         height={height ? height : "500"}
         src={src}
         className={`${className}`}
-        decoding="async"
-        loading="lazy"
+        decoding={decoding}
+        loading={loading}
+        priority={priority}
         {...otherProps}
       />
     </ErrorBoundary>
