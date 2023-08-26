@@ -615,6 +615,20 @@ footer svg:hover path {
   align-items: center;
   justify-content: center;
 }
+.swiper-button-prev-custom-1 {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next-custom-1 {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
 
 .autoplay-video {
   animation: playVideo 1s linear forwards;
@@ -713,3 +727,8 @@ footer svg:hover path {
     border-bottom-right-radius: 36px !important;
   }
 }
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+} */

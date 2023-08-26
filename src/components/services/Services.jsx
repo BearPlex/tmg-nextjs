@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import designDevelopmentImage from "../../assets/images/design-development.png";

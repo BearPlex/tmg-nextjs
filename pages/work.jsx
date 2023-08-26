@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/tmg-logo.png";
 import { work } from "../src/helpers/Helpers";

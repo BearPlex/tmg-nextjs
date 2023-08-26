@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Header from "../src/components/header/Header";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Header from "../src/components/header/Header";
 import blogImage from "../src/assets/images/Blog-pic.png";
 import bannerImage from "../src/assets/images/header-image-1.png";

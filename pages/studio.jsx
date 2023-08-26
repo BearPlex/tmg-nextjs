@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -6,13 +5,6 @@ import SwiperCore, { Navigation } from "swiper";
 import React, { useRef, useState } from "react";
 
 import agencyHero from "../src/assets/images/agency-hero.png";
-
-import galleryImage1 from "../src/assets/images/agency-staff-1.png";
-import galleryImage2 from "../src/assets/images/agency-staff-2.png";
-import galleryImage3 from "../src/assets/images/agency-staff-3.png";
-import galleryImage4 from "../src/assets/images/agency-staff-4.png";
-import galleryImage5 from "../src/assets/images/agency-staff-5.png";
-
 // import mainImage from "../src/assets/svg/home_work_logo.svg";
 import mainImage from "../src/assets/images/team.png";
 import teamMember from "../src/assets/images/james-h.png";
@@ -24,6 +16,7 @@ import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
 import EmployeeCards from "../src/components/Employees/EmployeeCards";
+import Employees from "../src/components/Employees/Employees";
 
 const Studio = () => {
   const videoRef = useRef(null);
@@ -89,69 +82,7 @@ const Studio = () => {
             <GradientButton text="View Our Services" route="/services" />
           </div>
 
-          <section className="py-10 md:py-20 pagePaddingX max-w-7xl mx-auto">
-            <div className="flex h-full w-full flex-col gap-y-4">
-              <div className="flex h-full w-full flex-col md:flex-row gap-x-0 gap-y-4 md:gap-x-4">
-                <div className="">
-                  <Image
-                    width={500}
-                    height={200}
-                    alt="galleryImage1"
-                    className="h-full object-cover w-full image-animation rounded-md"
-                    layout="responsive"
-                    objectFit="cover"
-                    src={galleryImage1.src}
-                  />
-                </div>
-                <div className="">
-                  <Image
-                    width={500}
-                    height={200}
-                    alt="galleryImage4"
-                    className="h-full object-cover w-full image-animation rounded-md"
-                    layout="responsive"
-                    objectFit="cover"
-                    src={galleryImage2.src}
-                  />
-                </div>
-              </div>
-              <div className="flex h-full w-full flex-col md:flex-row gap-x-0 gap-y-4 md:gap-x-4">
-                <div className="">
-                  <Image
-                    width={500}
-                    height={200}
-                    alt="galleryImage2"
-                    className="h-full object-cover w-full image-animation rounded-md"
-                    layout="responsive"
-                    objectFit="cover"
-                    src={galleryImage3.src}
-                  />
-                </div>
-                <div className="">
-                  <Image
-                    width={500}
-                    height={200}
-                    alt="galleryImage5"
-                    className="h-full object-cover w-full image-animation rounded-md"
-                    layout="responsive"
-                    objectFit="cover"
-                    src={galleryImage4.src}
-                  />
-                </div>
-                <div className="">
-                  <Image
-                    width={500}
-                    height={200}
-                    alt="galleryImage3"
-                    className="h-full object-cover w-full image-animation rounded-md"
-                    layout="responsive"
-                    objectFit="cover"
-                    src={galleryImage5.src}
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+          <Employees />
           <section className="h-auto bgBlack py-8 md:py-20">
             <div className="flex flex-col md:flex-row items-center pagePaddingX justify-between componentsMainGap pb-10 md:pb-20 max-w-7xl mx-auto">
               <div className="w-full md:w-[50%]">
@@ -173,79 +104,6 @@ const Studio = () => {
             </div>
 
             <EmployeeCards />
-
-            {/* <div className="flex flex-col h-auto max-w-7xl mx-auto">
-              <div className="w-full pagePaddingX ">
-                <Swiper
-                  slidesPerView={1}
-                  spaceBetween={30}
-                  centeredSlides={false}
-                  initialSlide={0}
-                  navigation={true}
-                  navigation={{
-                    nextEl: ".swiper-button-next-custom",
-                    prevEl: ".swiper-button-prev-custom",
-                  }}
-                  breakpoints={{
-                    640: {
-                      slidesPerView: 1,
-                    },
-                    768: {
-                      slidesPerView: 2,
-                    },
-                    1280: {
-                      slidesPerView: 4,
-                    },
-                  }}
-                  modules={[Navigation]}
-                  className="swiper"
-                >
-                  {memberImages.map((member, index) => (
-                    <SwiperSlide key={index + 200}>
-                      <div className="">
-                        <figure className="image-animation">
-                          <Image
-                            width={500}
-                            height={300}
-                            src={member.src}
-                            alt="team member"
-                            layout="responsive"
-                            objectFit="cover"
-                          />
-                        </figure>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-
-              <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-0 select-none">
-                <div
-                  onClick={() => {}}
-                  className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
-                >
-                  <Image
-                    width={500}
-                    height={300}
-                    src={arrowBack.src}
-                    alt="team member"
-                    className="w-[22px] cursor-pointer"
-                  />
-                </div>
-                <div
-                  onClick={() => {}}
-                  className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
-                >
-                  <Image
-                    width={500}
-                    height={300}
-                    src={arrowNext.src}
-                    alt="team member"
-                    className="w-[22px] cursor-pointer"
-                  />
-                </div>
-              </div>
-            </div> */}
           </section>
         </section>
         <Clients />

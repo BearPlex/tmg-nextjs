@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Header from "../src/components/header/Header";
 import kotaLogo from "../src/assets/images/resources-hero.png";
 import Link from "next/link";

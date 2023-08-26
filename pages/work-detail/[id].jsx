@@ -22,34 +22,32 @@ function WorkDetail() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     if (!router.isReady) return;
-    if (id) fetchData();
-  }, [id]);
-  const fetchData = () => {
-    console.log("fetchData CALLED");
-    try {
-      axios
-        .get(
-          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?filters[slug][$eq]=${id}`
-        )
-        .then((res) => {
-          // setWork(res.data.data);
-          const allWorks = res.data.data;
-          const matchingWork = allWorks.find(
-            (workItem) => workItem.attributes.slug === id
-          );
+    const fetchData = () => {
+      try {
+        axios
+          .get(
+            `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?filters[slug][$eq]=${id}`
+          )
+          .then((res) => {
+            // setWork(res.data.data);
+            const allWorks = res.data.data;
+            const matchingWork = allWorks.find(
+              (workItem) => workItem.attributes.slug === id
+            );
 
-          if (matchingWork) {
-            setWork(matchingWork);
-          } else {
-            console.error(`No work found for slug ${id}`);
-          }
-        });
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-  console.log(work);
-  console.log("work FROM WORK-DETAILS");
+            if (matchingWork) {
+              setWork(matchingWork);
+            } else {
+              console.error(`No work found for slug ${id}`);
+            }
+          });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    if (id) fetchData();
+  }, [id, router.isReady]);
+
   return (
     <>
       <PageWrapper>

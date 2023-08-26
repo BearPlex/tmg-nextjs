@@ -4,8 +4,6 @@ import Image from "../Image/Image";
 import { convertStringForImage } from "../../helpers/Helpers";
 function section3Image(props) {
   const { work } = props;
-  console.log(work?.gallery_second_title);
-  console.log("work?.gallery_second_title");
   return (
     <>
       <div className="pagePaddingX max-w-7xl mx-auto w-full flex flex-col">

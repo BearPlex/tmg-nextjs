@@ -1,4 +1,3 @@
-/* eslint-disable */
 import blogImage from "../src/assets/images/blog-img.png";
 import Footer from "../src/components/footer/Footer";
 import Image from "../src/components/Image/Image";

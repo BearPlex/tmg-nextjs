@@ -7,6 +7,12 @@ import SwiperCore, { Navigation } from "swiper";
 import Image from "../../components/Image/Image";
 import arrowBack from "../../assets/images/arrowBack.png";
 import arrowNext from "../../assets/images/arrowNext.png";
+import galleryImage1 from "../../assets/images/agency-staff-1.png";
+import galleryImage2 from "../../assets/images/agency-staff-2.png";
+import galleryImage3 from "../../assets/images/agency-staff-3.png";
+import galleryImage4 from "../../assets/images/agency-staff-4.png";
+import galleryImage5 from "../../assets/images/agency-staff-5.png";
+
 const EmployeeCards = () => {
   const [card, setCard] = useState([]);
   useEffect(() => {
@@ -19,22 +25,20 @@ const EmployeeCards = () => {
           return a.attributes.cardNumber - b.attributes.cardNumber;
         });
         setCard(sortedImages);
-        console.log(sortedImages);
-        console.log("sortedImages");
       })
       .catch((err) => {
         console.log("Error", err);
       });
   }, []);
   return (
-    <div className="flex flex-col h-auto max-w-7xl mx-auto">
+    <div className="flex flex-col h-auto max-w-7xl mx-auto select-none">
       <div className="w-full pagePaddingX ">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           centeredSlides={false}
           initialSlide={0}
-          navigation={true}
+          // navigation={true}
           navigation={{
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
@@ -42,6 +46,7 @@ const EmployeeCards = () => {
           breakpoints={{
             640: {
               slidesPerView: 1,
+              centeredSlides: true,
             },
             768: {
               slidesPerView: 2,
@@ -101,9 +106,6 @@ const EmployeeCards = () => {
                       </div>
                     </div>
                   </div>
-                  {/* {console.log(member?.attributes?.image)} */}
-                  {/* BACKGROUND COLOR */}
-                  {/* #7a91e1 */}
                 </figure>
               </div>
             </SwiperSlide>
@@ -112,10 +114,7 @@ const EmployeeCards = () => {
       </div>
 
       <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-0 select-none">
-        <div
-          onClick={() => {}}
-          className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
-        >
+        <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
           <Image
             width={500}
             height={300}
@@ -124,10 +123,7 @@ const EmployeeCards = () => {
             className="w-[22px] cursor-pointer"
           />
         </div>
-        <div
-          onClick={() => {}}
-          className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation"
-        >
+        <div className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
           <Image
             width={500}
             height={300}

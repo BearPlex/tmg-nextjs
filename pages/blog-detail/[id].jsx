@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../../src/components/header/Header";
@@ -31,32 +30,32 @@ function BlogDetail() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     if (!router.isReady) return;
-    if (id) fetchData();
-  }, [id]);
-  const fetchData = () => {
-    console.log("fetchData CALLED");
-    try {
-      axios
-        .get(
-          `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?filters[slug][$eq]=${id}`
-        )
-        .then((res) => {
-          // setWork(res.data.data);
-          const allWorks = res.data.data;
-          const matchingWork = allWorks.find(
-            (workItem) => workItem.attributes.slug === id
-          );
+    const fetchData = () => {
+      try {
+        axios
+          .get(
+            `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?filters[slug][$eq]=${id}`
+          )
+          .then((res) => {
+            // setWork(res.data.data);
+            const allWorks = res.data.data;
+            const matchingWork = allWorks.find(
+              (workItem) => workItem.attributes.slug === id
+            );
 
-          if (matchingWork) {
-            setWork(matchingWork);
-          } else {
-            console.error(`No work found for slug ${id}`);
-          }
-        });
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+            if (matchingWork) {
+              setWork(matchingWork);
+            } else {
+              console.error(`No work found for slug ${id}`);
+            }
+          });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    if (id) fetchData();
+  }, [id, router.isReady]);
+
   return (
     <>
       <PageWrapper>
@@ -206,11 +205,10 @@ function BlogDetail() {
                   </div>
                   <div className="flex flex-row justify-end items-center">
                     <a
-                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
+                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px] inline-block"
                       href={`${work?.attributes?.authorLink}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-block"
                     >
                       <Image
                         src={copySvg.src}

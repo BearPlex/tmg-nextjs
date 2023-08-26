@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { articles } from "../../helpers/Helpers";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -41,7 +40,7 @@ const Articles = () => {
             spaceBetween={20}
             centeredSlides={false}
             initialSlide={0}
-            navigation={true}
+            // navigation={true}
             navigation={{
               nextEl: ".swiper-button-next-custom",
               prevEl: ".swiper-button-prev-custom",
