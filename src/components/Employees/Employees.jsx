@@ -192,7 +192,7 @@ const Employees = () => {
         </div>
       </div>
       <div className="flex flex-row pt-7 md:pt-16 ">
-        <div className="mr-6 swiper-button-prev-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack ">
+        <div className="mr-6 swiper-button-prev-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack image-animation">
           <Image
             width={500}
             height={100}
@@ -201,7 +201,7 @@ const Employees = () => {
             className="w-[18px] md:w-[22px]"
           />
         </div>
-        <div className="swiper-button-next-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
+        <div className="swiper-button-next-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack image-animation">
           <Image
             width={500}
             height={100}

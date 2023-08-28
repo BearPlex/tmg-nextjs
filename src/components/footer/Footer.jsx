@@ -171,7 +171,7 @@ const Footer = () => {
             >
               <div className="flex items-center  md:pl-8 lg:pl-12 xl:pl-0">
                 <div className="h-full w-[100vw] md:w-[80%] isolate">
-                  <div className=" sm:bg-bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
+                  <div className=" sm:bg-bg-white rounded-none sm:rounded-md pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
                       width={50}
                       height={40}
