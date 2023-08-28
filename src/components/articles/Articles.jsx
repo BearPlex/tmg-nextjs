@@ -32,7 +32,9 @@ const Articles = () => {
 
   return (
     <div className="h-auto pagePaddingX pb-10 md:pb-20 max-w-7xl mx-auto xl:px-0 xl:pl-0 select-none">
-      <div className="mb-6 md:mb-20 headingBlack">Latest Articles</div>
+      <div className="mb-6 md:mb-20 largeHeading blackHeadingText">
+        Latest Articles
+      </div>
       <div className="">
         <div className="h-auto w-full">
           <Swiper

@@ -170,63 +170,15 @@ const Footer = () => {
               className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
             >
               <div className="flex items-center  md:pl-8 lg:pl-12 xl:pl-0">
-                <div className="h-full w-[100vw] md:w-[80%] isolate">
-                  {/* <div className=" sm:bg-transparent pb-12 sm:pb-0 flex flex-row items-center justify-between">
+                <div className="h-full w-[100vw] md:w-[100%] isolate">
+                  <div className=" sm:bg-bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
                       width={50}
                       height={40}
-                      className="h-[9vw] md:h-[70px] w-full object-contain sm:w-auto rounded-none sm:rounded-md ease-in-out duration-300 transition hover:-translate-y-1"
+                      className="h-[9vw] md:h-[70px] w-full object-contain rounded-none sm:rounded-md ease-in-out duration-300 transition hover:-translate-y-1"
                       alt="group"
-                      layout="response"
                       objectFit="cover"
                       src={footerLogos.src}
-                    />
-                  </div> */}
-                  <div className="lg:-ml-10 -ml-0 flex flex-row items-center justify-between">
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={sortListLogo.src}
-                    />
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={shopifyLogo.src}
-                    />
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={clutrhLogo.src}
-                    />
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-[4rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={psebLogo.src}
-                    />
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-[3rem] cursor-pointer ease-in-out duration-300 transition hover:-translate-y-1"
-                      alt="group"
-                      layout="response"
-                      objectFit="cover"
-                      src={pashaLogo.src}
                     />
                   </div>
                 </div>

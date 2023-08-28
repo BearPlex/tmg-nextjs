@@ -99,7 +99,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6">
             <Link href="/service/web-design" className="cursor-pointer">
               <div className="flex flex-col justify-center">
-                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity extraLargeHeading  whiteHeadingText">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity heading md:extraLargeHeading  whiteHeadingText">
                   Web Design & Development
                 </h3>
 
@@ -121,7 +121,7 @@ const Services = () => {
             </Link>
             <Link href="/service/brand-management" className="cursor-pointer">
               <div className="flex flex-col justify-center">
-                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity extraLargeHeading  whiteHeadingText">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity heading md:extraLargeHeading  whiteHeadingText">
                   Branding
                 </h3>
 
@@ -145,7 +145,7 @@ const Services = () => {
               className="cursor-pointer"
             >
               <div className="flex flex-col justify-center">
-                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity extraLargeHeading  whiteHeadingText">
+                <h3 className="mb-2 md:mb-6 cursor-pointer transition-opacity heading md:extraLargeHeading  whiteHeadingText">
                   Digital Marketing
                 </h3>
 

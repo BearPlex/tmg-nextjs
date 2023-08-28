@@ -4,7 +4,7 @@ import Image from "../Image/Image";
 const Clients = () => {
   return (
     <div className="pagePaddingX py-10 md:py-28 text-center max-w-7xl mx-auto xl:px-0 xl:pl-0">
-      <div className="heading blackHeadingText">
+      <div className="largeHeading blackHeadingText">
         Our <span className="gradientText">Happy Clients</span>
       </div>
       <div className="flex item-center flex-wrap">

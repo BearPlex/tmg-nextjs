@@ -53,9 +53,10 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed w-screen z-50 transition-all duration-300 ${
-          (isShrunk && !showMenu) || isScrolling ? "bg-white" : "bg-transparent"
-        }`}
+        className={`fixed w-screen z-50 transition-all duration-300`}
+        // className={`fixed w-screen z-50 transition-all duration-300 ${
+        //   (isShrunk && !showMenu) || isScrolling ? "bg-white" : "bg-transparent"
+        // }`}
       >
         <div className="w-full">
           <header
@@ -66,24 +67,29 @@ const Header = () => {
             }`}
           >
             <nav className="flex items-center justify-between">
-              <Link href="/" className="">
-                <Image
-                  width={500}
-                  height={300}
-                  className={
-                    showMenu
-                      ? "inline-block w-40 cursor-pointer"
-                      : "w-36 cursor-pointer"
-                  }
-                  src={logoIcon.src}
-                  alt="logo"
-                />
-              </Link>
+              {showMenu ? (
+                <Link href="/" className="">
+                  <Image
+                    width={500}
+                    height={300}
+                    className={
+                      showMenu
+                        ? "inline-block w-40 cursor-pointer"
+                        : "w-36 cursor-pointer"
+                    }
+                    src={logoIcon.src}
+                    alt="logo"
+                  />
+                </Link>
+              ) : (
+                <div></div>
+              )}
+
               <ul className="pl-0 flex item-center gap-[4.5rem] justify-end py-3">
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/work">
-                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl">
+                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl test">
                         Work
                       </div>
                     </Link>
@@ -92,7 +98,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/contact">
-                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl">
+                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl test">
                         Contact
                       </div>
                     </Link>
