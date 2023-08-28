@@ -164,13 +164,13 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full mt-10 sm:mt-2 md:mt-6 lg:mb-6 mb-0 md:mb-2   flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
+          <div className="w-full mt-10 sm:mt-2 md:mt-6 lg:mb-6 mb-0 md:mb-2 flex justify-end  md:flex-row flex-col  md:justify-between md:items-center md:mx-0">
             <Link
               href="/contact"
-              className="w-full flex justify-end flex-col-reverse md:flex-row   md:justify-between md:items-center md:mx-0"
+              className="w-full flex justify-end flex-col-reverse md:flex-row md:justify-between md:items-center md:mx-0"
             >
               <div className="flex items-center  md:pl-8 lg:pl-12 xl:pl-0">
-                <div className="h-full w-[100vw] md:w-[100%] isolate">
+                <div className="h-full w-[100vw] md:w-[80%] isolate">
                   <div className=" sm:bg-bg-white pb-12 sm:pb-0 flex flex-row items-center justify-between">
                     <Image
                       width={50}

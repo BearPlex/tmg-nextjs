@@ -162,6 +162,21 @@ body {
   scroll-behavior: smooth;
   transition: scroll-behavior 0.5s ease-in-out;
 }
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+.scrollbar-track {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.5s 0.5s ease-out;
+  transition: opacity 0.5s 0.5s ease-out;
+}
+
 .pink-color {
   color: rgb(247, 78, 161);
 }
