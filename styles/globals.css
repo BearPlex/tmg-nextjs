@@ -384,38 +384,6 @@ body {
   background: #fff !important;
   opacity: 0;
 }
-
-/* footer svg g {
-  stroke: rgb(255, 255, 255);
-  fill: transparent;
-  transition: stroke 0.2s ease-in-out 0s;
-}
-footer svg path {
-  fill: rgb(255, 255, 255);
-  transition: fill 0.2s ease-in-out 0s;
-}
-footer svg:hover g {
-  stroke: rgb(247, 78, 161);
-  transition: fill 0.2s ease-in-out 0s;
-}
-footer svg:hover path {
-  fill: rgb(247, 78, 161);
-  transition: fill 0.2s ease-in-out 0s;
-} */
-
-/* .contact-wrapper svg {
-  width: 45px;
-  height: 45px;
-}
-.contact-wrapper svg:hover g {
-  fill: #ee2760;
-  transition: stroke 0.2s ease-in-out 0s;
-}
-
-.contact-wrapper svg:hover path {
-  fill: rgb(255, 255, 255);
-  transition: fill 0.2s ease-in-out 0s;
-} */
 footer svg g,
 footer svg path {
   fill: #fff;
@@ -732,3 +700,14 @@ footer svg:hover path {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 } */
+
+.gridContainerHeight {
+  height: 700px;
+  @media (max-width: 1280px) {
+    height: 35vh;
+  }
+
+  @media (max-width: 986px) {
+    height: 30vh;
+  }
+}

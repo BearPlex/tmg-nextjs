@@ -32,10 +32,12 @@ const ImageComponent = ({
   decoding = "async",
   loading = "lazy",
   priority = false,
+  layout = "intrinsic",
   ...otherProps
 }) => {
   return (
     <ErrorBoundary>
+      {/* {layout !== "intrinsic" ? : } */}
       <Image
         alt={alt}
         width={width ? width : "500"}
@@ -44,6 +46,7 @@ const ImageComponent = ({
         className={`${className}`}
         decoding={decoding}
         loading={loading}
+        layout={layout}
         priority={priority}
         {...otherProps}
       />

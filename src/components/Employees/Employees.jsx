@@ -98,12 +98,12 @@ const Employees = () => {
                   <SwiperSlide key={i + 99800}>
                     <Image
                       width={500}
-                      height={300}
+                      height={513}
                       src={`https://beta.themediagale.com/public_images/employee/${member?.attributes?.image}.png`}
-                      layout="responsive"
+                      layout="fixed"
                       loading="eager"
                       decoding="sync"
-                      className="w-full max-h-96"
+                      className="w-full object-cover h-[513px]"
                       alt={member?.attributes?.imageAlt}
                       objectFit="cover"
                     />
@@ -130,7 +130,7 @@ const Employees = () => {
             {imageBatch.map((memberGroup, index) => (
               <SwiperSlide key={index + 99900}>
                 <div>
-                  <div className="grid grid-rows-2 grid-cols-3 gap-4">
+                  <div className="grid grid-rows-2 grid-cols-3 gap-4 gridContainerHeight">
                     {memberGroup.map((member, i) => {
                       let gridStyles = {};
 
@@ -165,17 +165,21 @@ const Employees = () => {
                       }
 
                       return (
-                        <div key={i + 99700} style={gridStyles}>
+                        <div
+                          className="overflow-hidden"
+                          key={i + 99700}
+                          style={gridStyles}
+                        >
                           <Image
-                            width={500}
-                            height={300}
+                            width={416}
+                            height={330}
                             src={`https://beta.themediagale.com/public_images/employee/${member?.attributes?.image}.png`}
                             layout="responsive"
                             loading="eager"
                             decoding="sync"
-                            className="w-full max-h-96"
+                            className="w-full overflow-hidden"
                             alt={member?.attributes?.imageAlt}
-                            objectFit="cover"
+                            objectFit="contain"
                           />
                         </div>
                       );
@@ -188,7 +192,7 @@ const Employees = () => {
         </div>
       </div>
       <div className="flex flex-row pt-7 md:pt-16 ">
-        <div className="mr-6 swiper-button-prev-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack">
+        <div className="mr-6 swiper-button-prev-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack ">
           <Image
             width={500}
             height={100}
