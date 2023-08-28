@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <>
       <PageWrapper>
-        <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto xl:px-0 xl:pl-0">
+        <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto">
           <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
             <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
               <h4 className="gradientText text-5xl font-extrabold mb-2 md:mb-6">

@@ -31,7 +31,7 @@ const LatestBlogElement = () => {
   };
 
   return (
-    <div className="h-auto pagePaddingX pb-10 md:pb-20 max-w-7xl mx-auto xl:px-0 xl:pl-0 select-none">
+    <div className="h-auto pagePaddingX pb-10 md:pb-20 max-w-7xl mx-auto select-none">
       <div className="">
         <div className="h-auto w-full">
           <Swiper

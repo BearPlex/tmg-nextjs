@@ -109,7 +109,7 @@ export default function Home() {
           <Services />
 
           <section className="bgBlack h-auto  ">
-            <div className="pagePaddingX pb-10 pt-14 md:pb-28 md:pt-36 max-w-7xl mx-auto xl:px-0 xl:pl-0">
+            <div className="pagePaddingX pb-10 pt-14 md:pb-28 md:pt-36 max-w-7xl mx-auto">
               <div className="isolate componentsMainGap grid grid-cols-1 auto-rows-auto">
                 {work && work.length && (
                   <Expertise

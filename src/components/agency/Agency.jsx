@@ -180,7 +180,7 @@ const Agency = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 flex imageContainer" ref={imageContainerRef}>
+          <div className="flex imageContainer" ref={imageContainerRef}>
             <div
               className={`h-fit  ${
                 fixedImagePostion
@@ -210,8 +210,8 @@ const Agency = () => {
                   // loading="lazy"
                   style={{ opacity: imageOpacity }}
                   layout="responsive"
-                  objectFit="cover"
-                  className="imageTransitionEffect w-[100%]  imageRounded object-cover"
+                  objectFit="fit"
+                  className="imageTransitionEffect  imageRounded object-cover"
                 />
               </div>
             </div>
