@@ -81,7 +81,7 @@ const Agency = () => {
     let imageElement = document.querySelector(".imageWrapper");
     imageHeight = imageRef.current.offsetHeight;
     const viewportHeight = window.innerHeight;
-    const offset = 0.2 * viewportHeight;
+    const offset = 0.3 * viewportHeight;
     imageContainerEnd = getDivEnd(divElement) - imageHeight - offset;
 
     // imageContainerEnd = getDivEnd(divElement) - imageHeight - 120;
@@ -117,10 +117,10 @@ const Agency = () => {
     }
     if (newImageSrc !== imageSrc) {
       setImageOpacity(0);
-      setTimeout(() => {
-        setImageSrc(newImageSrc);
-        setImageOpacity(1);
-      }, 300);
+      // setTimeout(() => {
+      setImageSrc(newImageSrc);
+      setImageOpacity(1);
+      // }, 200);
     }
   };
   return (
@@ -146,7 +146,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="thoughRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
               >
                 Analyze
               </h2>
@@ -158,7 +158,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="communicateRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
               >
                 Communicate
               </h2>
@@ -167,10 +167,10 @@ const Agency = () => {
                 communication to keep information flow open.{" "}
               </p>
             </div>
-            <div className="flex h-[80vh] w-full flex-col justify-center">
+            <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="executeRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
               >
                 Execute
               </h2>

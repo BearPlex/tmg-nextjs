@@ -87,7 +87,7 @@
     @apply font-sans text-4xl md:text-5xl lg:text-6xl font-extrabold;
   }
   .heading {
-    @apply font-sans text-3xl md:text-4xl lg:text-5xl font-bold;
+    @apply font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold;
   }
   .smallHeading {
     @apply font-sans text-2xl sm:text-3xl font-semibold;
@@ -648,7 +648,9 @@ footer svg:hover path {
   /* @apply pr-0 md:pr-0 lg:pr-0 xl:pr-10 2xl:pl-32; */
 }
 .imageTransitionEffect {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  will-change: transform;
+  /* transition: transform 100ms ease; */
+  transform: 0.1s cubic-bezier(0.4, 0, 0.01, 1);
 }
 .image-scroll-width {
   /* @apply pl-10 2xl:pl-11; */

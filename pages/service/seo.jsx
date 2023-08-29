@@ -72,7 +72,7 @@ function BrandManagement() {
             <div className="bgWhite mt-10 py-10 md:py-20 w-full">
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
-                  <div className="mt-0 md:mt-10  lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow">
+                  <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
                     <h1 className="largeHeadingBlack">
                       Content strategy that
                       <span className="gradientText">
