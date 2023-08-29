@@ -72,6 +72,8 @@ const Header = () => {
                   <Image
                     width={500}
                     height={300}
+                    loading="eager"
+                    decoding="sycn"
                     className={
                       showMenu
                         ? "inline-block w-40 cursor-pointer"
@@ -89,7 +91,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/work">
-                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl test">
+                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-xl test">
                         Work
                       </div>
                     </Link>
@@ -98,7 +100,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/contact">
-                      <div className="blackHeadingText gradientHoverBlack font-bold text-xl test">
+                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-xl test">
                         Contact
                       </div>
                     </Link>

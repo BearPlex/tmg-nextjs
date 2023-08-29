@@ -38,7 +38,7 @@ const Studio = () => {
         <section className="w-full">
           <HeroContainer imageSrc={agencyHero.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 mt-6 headingBlack font-bold leading-tight  ">
+              <h4 className="mb-2 md:mb-6 mt-6 headingBlack">
                 Lets Make Your Digital Dreams{" "}
                 <span className="gradientText"> a Reality.</span>
               </h4>
@@ -67,7 +67,7 @@ const Studio = () => {
             />
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
-            <h1 className=" extraLargeHeading text-center font-sofia-bold font-bold leading-tight">
+            <h1 className=" extraLargeHeading text-center">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
             </h1>

@@ -73,7 +73,7 @@ const WorkCard = (props) => {
           <div
             className={`my-2 lg:my-4 md:my-4 smallHeading font-bold ${
               backGroundBlack ? " whiteHeadingText " : " blackHeadingText "
-            } leading-tight`}
+            }`}
           >
             {featured_title}
           </div>

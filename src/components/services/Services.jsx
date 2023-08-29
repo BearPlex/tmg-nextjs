@@ -59,7 +59,7 @@ const Services = () => {
                 Web Design & Development
               </h3>
               <h3
-                className={`mb-2 md:mb-6   font-bold cursor-pointer duration-300 transition-in-out extraLargeHeading ${
+                className={`mb-2 md:mb-6 cursor-pointer duration-300 transition-in-out extraLargeHeading ${
                   type === "branding" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("branding")}
@@ -67,7 +67,7 @@ const Services = () => {
                 Branding
               </h3>
               <h3
-                className={`mb-2 md:mb-6  font-bold cursor-pointer duration-300 transition-in-out extraLargeHeading ${
+                className={`mb-2 md:mb-6 cursor-pointer duration-300 transition-in-out extraLargeHeading ${
                   type === "digital" ? "whiteHeadingText" : "text-[#FFCBC2]"
                 }`}
                 onClick={() => changeImage("digital")}

@@ -128,7 +128,7 @@ function BlogDetail() {
                 <div className="paragraphBlack mt-2">
                   {work?.attributes?.subheadingContent1Part2}
                 </div>
-                <div className="smallHeading font-bold mt-8 md:mt-10">
+                <div className="smallHeading mt-8 md:mt-10">
                   {work?.attributes?.subheading2}
                 </div>
                 <div className="paragraphBlack mt-2">
@@ -149,7 +149,7 @@ function BlogDetail() {
                 <div className="paragraphBlack mt-2">
                   {work?.attributes?.subheadingContent2Part2}
                 </div>
-                <div className="smallHeading font-bold mt-8 md:mt-10">
+                <div className="smallHeading mt-8 md:mt-10">
                   {work?.attributes?.subheading3}
                 </div>
                 <div className="paragraphBlack mt-2">

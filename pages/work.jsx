@@ -47,7 +47,7 @@ const Work = () => {
       <PageWrapper>
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
-            <h4 className="mb-2 md:mb-6  headingBlack leading-tight">
+            <h4 className="mb-2 md:mb-6  headingBlack">
               We are experts in bringing brands to life
               <span className="gradientText"> Digitally.</span>
             </h4>

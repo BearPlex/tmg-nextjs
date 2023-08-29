@@ -13,6 +13,7 @@ import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
+import { useRouter } from "next/router";
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -23,6 +24,7 @@ const blogsStatic = [
   },
 ];
 const Blog = () => {
+  const router = useRouter();
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
@@ -35,6 +37,10 @@ const Blog = () => {
         setBlogs(blogsStatic);
       });
   }, []);
+  const pushWork = (id) => {
+    router.push(`/blog-detail/${id}`);
+    // router.push(`/blog-detail/7`);
+  };
   return (
     <>
       <PageWrapper>
@@ -60,7 +66,10 @@ const Blog = () => {
           </HeroContainer>
           {blogs && blogs.length && (
             <div className="pagePaddingX pt-10 md:pt-20 max-w-7xl mx-auto">
-              <a href="" className="relative blog-banner w-full h-full">
+              <div
+                onClick={() => pushWork(blogs[0]?.attributes?.slug)}
+                className="relative blog-banner w-full h-full cursor-pointer"
+              >
                 <Image
                   src={`https://beta.themediagale.com/public_images/blogs/${blogs[0]?.attributes.cardImage}.png`}
                   // src={bannerImage}
@@ -73,7 +82,7 @@ const Blog = () => {
                 />
 
                 <div className="absolute left-10 bottom-10">
-                  <span className="gradientText inline-block smallText tracking-[1.5px] pb-1 md:pb-5">
+                  <span className="gradientText inline-block smallText font-semibold tracking-[1.5px] pb-1 md:pb-5">
                     Featured News
                   </span>
                   <h3 className="text-white max-w-7xl font-sofia-bold largeHeading leading-none">
@@ -81,7 +90,7 @@ const Blog = () => {
                     {blogs[0]?.attributes?.title}
                   </h3>
                 </div>
-              </a>
+              </div>
             </div>
           )}
 

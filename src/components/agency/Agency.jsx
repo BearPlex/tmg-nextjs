@@ -134,7 +134,7 @@ const Agency = () => {
             <div className="flex h-[70vh] w-full flex-col justify-start">
               <h2
                 id="beautyRef"
-                className="heading mb-5 font-bold blackHeadingText leading-none relative mt-[8vw]"
+                className="heading mb-5 blackHeadingText leading-none relative mt-[8vw]"
               >
                 Beauty
               </h2>
@@ -146,7 +146,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="thoughRef"
-                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 blackHeadingText leading-none relative"
               >
                 Analyze
               </h2>
@@ -158,7 +158,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="communicateRef"
-                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 blackHeadingText leading-none relative"
               >
                 Communicate
               </h2>
@@ -170,7 +170,7 @@ const Agency = () => {
             <div className="flex h-[100vh] w-full flex-col justify-center">
               <h2
                 id="executeRef"
-                className="heading mb-5 mt-10 font-bold blackHeadingText leading-none relative"
+                className="heading mb-5 mt-10 blackHeadingText leading-none relative"
               >
                 Execute
               </h2>
@@ -207,7 +207,8 @@ const Agency = () => {
                   id="imageRef"
                   src={imageSrc}
                   alt="agency images"
-                  // loading="lazy"
+                  loading="eager"
+                  decoding="sync"
                   style={{ opacity: imageOpacity }}
                   layout="responsive"
                   objectFit="fit"
@@ -228,7 +229,8 @@ const Agency = () => {
               id="imageRef"
               src={agencyImage1}
               alt="agency images"
-              loading="lazy"
+              loading="eager"
+              decoding="sync"
               layout="responsive"
               objectFit="cover"
               className=" imageRounded image-animation"
@@ -236,7 +238,7 @@ const Agency = () => {
           </div>
           <h2
             id="beautyRef"
-            className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative"
+            className="heading mb-2 pt-2 blackHeadingText leading-none relative"
           >
             Beauty
           </h2>
@@ -254,7 +256,8 @@ const Agency = () => {
               id="imageRef"
               src={agencyImage2.src}
               alt="agency images"
-              loading="lazy"
+              loading="eager"
+              decoding="sync"
               layout="responsive"
               objectFit="cover"
               className=" imageRounded image-animation"
@@ -262,7 +265,7 @@ const Agency = () => {
           </div>
           <h2
             id="thoughRef"
-            className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative"
+            className="heading mb-2 pt-2 blackHeadingText leading-none relative"
           >
             Analyze
           </h2>
@@ -280,13 +283,14 @@ const Agency = () => {
               id="imageRef"
               src={agencyImage3}
               alt="agency images"
-              loading="lazy"
+              loading="eager"
+              decoding="sync"
               layout="responsive"
               objectFit="cover"
               className=" imageRounded image-animation"
             />
           </div>
-          <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">
+          <h2 className="heading mb-2 pt-2 blackHeadingText leading-none relative">
             Communicate
           </h2>
           <p className="paragraph mb-15 blackDescriptionText">
@@ -303,13 +307,14 @@ const Agency = () => {
               id="imageRef"
               src={agencyImage4}
               alt="agency images"
-              loading="lazy"
+              loading="eager"
+              decoding="sync"
               layout="responsive"
               objectFit="cover"
               className=" imageRounded image-animation"
             />
           </div>
-          <h2 className="heading mb-2 pt-2 font-bold blackHeadingText leading-none relative">
+          <h2 className="heading mb-2 pt-2 blackHeadingText leading-none relative">
             Execute
           </h2>
           <p className="paragraph mb-15 blackDescriptionText">

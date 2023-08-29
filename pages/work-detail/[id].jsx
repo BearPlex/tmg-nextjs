@@ -63,12 +63,12 @@ function WorkDetail() {
                 />
               )}
             </div>
-            <h1 className="mt-3 md:mt-0 text-center largeHeading font-bold gradientText lg:pt-40">
+            <h1 className="mt-3 md:mt-0 text-center largeHeading gradientText lg:pt-40">
               {work?.attributes?.featured_title}{" "}
             </h1>
             <div className="flex w-full">
               <div className="pb-20 md:pb-40 lg:pb-60 mt-1 md:mt-5 lg:mt-16 w-full">
-                <h2 className="heading mb-5 font-bold blackHeading leading-none pl-6">
+                <h2 className="heading mb-5 blackHeading leading-none pl-6">
                   <span className="gradientText text-sm align-top font-medium">
                     01{" "}
                   </span>
@@ -109,7 +109,7 @@ function WorkDetail() {
           </section>
           <div className="pagePaddingX w-full flex flex-col">
             <div className="py-20 md:py-40 lg:py-60">
-              <h2 className="heading mb-5 font-bold blackHeading whitespace-pre-wrap leading-none relative pl-6">
+              <h2 className="heading mb-5 blackHeading whitespace-pre-wrap leading-none relative pl-6">
                 {work?.attributes?.gallery_second_title}
               </h2>
               <p className="blackDescriptionText pl-5 paragraph">
