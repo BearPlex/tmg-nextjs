@@ -91,7 +91,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/work">
-                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-xl test">
+                      <div className="blackHeadingText gradientText font-extrabold text-2xl test">
                         Work
                       </div>
                     </Link>
@@ -100,7 +100,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/contact">
-                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-xl test">
+                      <div className="blackHeadingText gradientText font-extrabold text-2xl test">
                         Contact
                       </div>
                     </Link>

@@ -359,10 +359,10 @@ body {
 
 #menuToggle span {
   width: 35px;
-  height: 3px;
+  height: 4px;
   margin-bottom: 6px;
   /* color: #1b1b1b !important; */
-  background: #1b1b1b !important;
+  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important;
   border-radius: 1px;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
