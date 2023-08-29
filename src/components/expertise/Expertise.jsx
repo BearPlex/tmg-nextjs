@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
 import WorkCard from "../card/WorkCard";
-import { convertStringForImage } from "../../helpers/Helpers";
 const Expertise = (props) => {
   const { list, cssClass, backGroundBlack } = props;
   const router = useRouter();
@@ -35,9 +34,7 @@ const Expertise = (props) => {
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
-                        imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
-                          item.attributes?.featured_title
-                        )}.png`}
+                        imageSrc={`https://beta.themediagale.com/public_images/work/${item.attributes?.cardImage}.png`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -71,9 +68,7 @@ const Expertise = (props) => {
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
-                        imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
-                          item.attributes?.featured_title
-                        )}.png`}
+                        imageSrc={`https://beta.themediagale.com/public_images/work/${item.attributes?.cardImage}.png`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -121,9 +116,7 @@ const Expertise = (props) => {
                   >
                     <WorkCard
                       backGroundBlack={backGroundBlack}
-                      imageSrc={`https://beta.themediagale.com/public_images/${convertStringForImage(
-                        item.attributes?.featured_title
-                      )}.png`}
+                      imageSrc={`https://beta.themediagale.com/public_images/work/${item.attributes?.cardImage}.png`}
                       cardText={item.attributes?.cardText}
                       featured_title={item.attributes?.featured_title}
                       gallery_first_description={

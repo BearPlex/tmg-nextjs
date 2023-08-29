@@ -13,6 +13,13 @@ import workGallery1 from "../../src/assets/images/work-gall-1.png";
 import workGallery2 from "../../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../../src/components/expertise/ExpertiseStatic";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+
+//
+
+// FOUND BUT IN STATIC
+
+//
+
 const work = [
   {
     featured_image: workFeaturedImage,

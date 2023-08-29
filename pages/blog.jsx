@@ -13,7 +13,6 @@ import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
-import { convertStringForImage } from "../src/helpers/Helpers";
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -63,12 +62,7 @@ const Blog = () => {
             <div className="pagePaddingX pt-10 md:pt-20 max-w-7xl mx-auto">
               <a href="" className="relative blog-banner w-full h-full">
                 <Image
-                  src={`https://beta.themediagale.com/public_images/blogs/${
-                    blogs[0]?.attributes.title &&
-                    blogs[0]?.attributes?.title !== ""
-                      ? convertStringForImage(blogs[0]?.attributes?.title)
-                      : "Women-Rise"
-                  }.png`}
+                  src={`https://beta.themediagale.com/public_images/blogs/${blogs[0]?.attributes.cardImage}.png`}
                   // src={bannerImage}
                   alt="banner"
                   width={1300}

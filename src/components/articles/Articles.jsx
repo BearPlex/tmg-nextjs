@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
 import arrowBack from "../../assets/images/arrowBack.png";
 import arrowNext from "../../assets/images/arrowNext.png";
-import { convertStringForImage } from "../../helpers/Helpers";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const router = useRouter();
@@ -79,12 +78,7 @@ const Articles = () => {
                         height={100}
                         className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
                         alt="Product Image"
-                        src={`https://beta.themediagale.com/public_images/blogs/${
-                          article.attributes.title &&
-                          article.attributes.title !== ""
-                            ? convertStringForImage(article.attributes.title)
-                            : "Women-Rise"
-                        }.png`}
+                        src={`https://beta.themediagale.com/public_images/blogs/${article.attributes.cardImage}.png`}
                       />
                       <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>

@@ -1,9 +1,10 @@
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
-import { convertStringForImage } from "../../helpers/Helpers";
 
 const Card = (props) => {
   const { item } = props;
+  console.log(item);
+  console.log("item");
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
@@ -23,11 +24,7 @@ const Card = (props) => {
                   <Image
                     className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
                     alt="Product Image"
-                    src={`https://beta.themediagale.com/public_images/blogs/${
-                      blog?.attributes.title && blog?.attributes.title !== ""
-                        ? convertStringForImage(blog?.attributes.title)
-                        : "Women-Rise"
-                    }.png`}
+                    src={`https://beta.themediagale.com/public_images/blogs/${blog?.attributes.cardImage}.png`}
                     height={150}
                     width={150}
                     layout="responsive"
