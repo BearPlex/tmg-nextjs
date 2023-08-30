@@ -362,7 +362,8 @@ body {
   height: 4px;
   margin-bottom: 6px;
   /* color: #1b1b1b !important; */
-  background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important;
+  /* background: linear-gradient(91.87deg, #f79b60 0%, #ee245f 100%) !important; */
+  background: #1b1b1b !important;
   border-radius: 1px;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
@@ -416,6 +417,9 @@ footer svg:hover path {
 .contact-wrapper svg {
   width: 4rem;
   height: 4rem;
+}
+.contact-wrapper-menu svg {
+  @apply w-[3rem] lg:w-[4rem] h-[3rem] lg:h-[4rem];
 }
 
 .contact-wrapper svg:hover g,

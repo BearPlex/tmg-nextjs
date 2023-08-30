@@ -36,7 +36,7 @@ const NavigationMenu = () => {
   return (
     <div className="background-gradient z-10 w-full h-full fixed top-0 ">
       <div className="flex flex-col justify-between h-full">
-        <div className=" pagePaddingX pt-[15vh] ">
+        <div className=" pagePaddingX pt-[6vh] lg:pt-[15vh]">
           <div className="inline-block w-56 cursor-pointer"></div>
           <div className="">
             <ul className="relative flex flex-col md:flex-row md:items-center md:justify-between">
@@ -188,7 +188,7 @@ const NavigationMenu = () => {
         </div>
         <div className="max-w-7xl mb-5 mx-auto pagePaddingX w-full">
           <div className="w-full nav-footer flex items-center justify-between ">
-            <div className="flex items-center gap-0 md:gap-4 contact-wrapper">
+            <div className="flex items-center gap-0 lg:gap-4 contact-wrapper-menu">
               <a
                 href="https://twitter.com/themediagale"
                 target="_blank"
@@ -223,12 +223,14 @@ const NavigationMenu = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <h4 className="text-white font-bold largeParagraph md: py-2 md:py-5 pr-2 md:pr-6">
+              <h4 className="text-white text-center font-bold paragraph md:largeParagraph py-2 md:py-5 pl-2 pr-2 lg:pr-6 lg:pl-6">
                 Let's get cracking
               </h4>
               <button className="hover:-translate-y-2 ease-in-out transition duration-300 transparentBgColor ml-0 sm:ml-2 md:ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-2 md:py-4 px-3 md:px-6 rounded-full">
                 <Link href="/contact">
-                  <span className="paragraph">Start Your project</span>
+                  <span className="font-bold smallText md:paragraph">
+                    Start Your project
+                  </span>
                 </Link>
               </button>
             </div>

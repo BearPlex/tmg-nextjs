@@ -53,17 +53,17 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed w-screen z-50 transition-all duration-300`}
-        // className={`fixed w-screen z-50 transition-all duration-300 ${
-        //   (isShrunk && !showMenu) || isScrolling ? "bg-white" : "bg-transparent"
-        // }`}
+        // className={`fixed w-screen z-50 transition-all duration-300`}
+        className={`fixed w-screen z-50 transition-all duration-300 ${
+          (isShrunk && !showMenu) || isScrolling ? "bg-white" : "bg-transparent"
+        }`}
       >
         <div className="w-full">
           <header
             className={`max-w-7xl mx-auto pagePaddingX xl:pl-10 transition-all duration-300 ${
               isShrunk && !showMenu
-                ? "py-6 2xl:py-6 lg:py-4 xl:px-10"
-                : "py-6 2xl:py-11 lg:py-11 xl:px-10"
+                ? "py-2 lg:py-4 xl:px-10"
+                : "py-6 lg:py-11 xl:px-10"
             }`}
           >
             <nav className="flex items-center justify-between">
@@ -76,7 +76,7 @@ const Header = () => {
                     decoding="sycn"
                     className={
                       showMenu
-                        ? "inline-block w-40 cursor-pointer"
+                        ? "inline-block w-32 lg:w-40 cursor-pointer"
                         : "w-36 cursor-pointer"
                     }
                     src={logoIcon.src}
@@ -91,7 +91,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/work">
-                      <div className="blackHeadingText gradientText font-extrabold text-2xl test">
+                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-2xl test">
                         Work
                       </div>
                     </Link>
@@ -100,7 +100,7 @@ const Header = () => {
                 <div className="hidden md:block">
                   <li className={showMenu ? "hidden" : "block"}>
                     <Link href="/contact">
-                      <div className="blackHeadingText gradientText font-extrabold text-2xl test">
+                      <div className="blackHeadingText gradientHoverBlack font-extrabold text-2xl test">
                         Contact
                       </div>
                     </Link>
