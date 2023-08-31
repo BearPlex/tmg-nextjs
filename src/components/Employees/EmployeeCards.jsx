@@ -49,7 +49,7 @@ const EmployeeCards = () => {
               centeredSlides: true,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
             1280: {
               slidesPerView: 4,
@@ -61,7 +61,7 @@ const EmployeeCards = () => {
           {card.map((member, index) => (
             <SwiperSlide key={index + 200}>
               <div className="">
-                <figure className="image-animation h-[80%]">
+                <figure className="image-animation h-[100%]">
                   <div
                     key={member.id}
                     className="mx-auto mt-10 imageRounded white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
@@ -69,15 +69,15 @@ const EmployeeCards = () => {
                     <div className="relative h-full">
                       <div className="h-full w-full overflow-hidden">
                         <Image
-                          width={500}
-                          height={300}
+                          width={400}
+                          height={100}
                           src={`https://beta.themediagale.com/public_images/employeeCard/${member?.attributes?.image}.png`}
                           layout="responsive"
                           loading="eager"
                           decoding="sync"
-                          className="w-full"
+                          className="w-full overflow-hidden"
                           alt={member?.attributes?.imageAlt}
-                          objectFit="cover"
+                          objectFit="fill"
                         />
                         <div
                           style={{
@@ -92,12 +92,12 @@ const EmployeeCards = () => {
                         >
                           <div className="w-full flex flex-col justify-between">
                             <div className="">
-                              <p className="text-white text-[16px]">
+                              <p className="text-white mb-4 md:mb-1 text-[20px] md:text-[13px] lg:text-[16px]">
                                 {member?.attributes?.employeeName}
                               </p>
                             </div>
                             <div>
-                              <p className="text-white text-[16px]">
+                              <p className="text-white  text-[20px] md:text-[13px] lg:text-[16px]">
                                 {member?.attributes?.employeeDesignation}
                               </p>
                             </div>
