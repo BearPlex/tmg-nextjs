@@ -84,7 +84,7 @@ const Articles = () => {
                     </div>
                   </div>
                   <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">
-                    <p className="paragraph  text-[#EE2760] group-hover:blackHeading">
+                    <p className="smallText tracking-widest uppercase text-[#EE2760] group-hover:blackHeading">
                       {article.attributes.sub_title}
                     </p>
                     <p className="smallHeading font-bold blackHeading group-hover:text-white pt-2">

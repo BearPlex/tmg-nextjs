@@ -1,14 +1,23 @@
 import { useState, useEffect } from "react";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import logoIcon from "../../assets/images/tmg-logo.png";
+import logoIconWhite from "../../assets/svg/logoWhite.svg";
 
 const Header = () => {
+  const router = useRouter();
   const [showMenu, setShowMenu] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [isShrunk, setIsShrunk] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(false);
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    setIsHomePage(router.pathname !== "/");
+  }, [router.isReady, router.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,7 +76,7 @@ const Header = () => {
             }`}
           >
             <nav className="flex items-center justify-between">
-              {showMenu ? (
+              {showMenu || isHomePage ? (
                 <Link href="/" className="">
                   <Image
                     width={500}
@@ -79,7 +88,7 @@ const Header = () => {
                         ? "inline-block w-32 lg:w-40 cursor-pointer"
                         : "w-36 cursor-pointer"
                     }
-                    src={logoIcon.src}
+                    src={showMenu ? logoIconWhite.src : logoIcon.src}
                     alt="logo"
                   />
                 </Link>

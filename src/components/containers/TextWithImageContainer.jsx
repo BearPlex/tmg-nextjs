@@ -19,7 +19,7 @@ const TextWithImageContainer = ({
         >
           <section
             id={id}
-            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap py-8 md:py-10"
+            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 py-8 md:py-32"
             onClick={selectRoute ? selectRoute : null}
           >
             <div className="w-full md:w-[50%] order-2 md:order-1">
@@ -48,7 +48,7 @@ const TextWithImageContainer = ({
         >
           <section
             id={id}
-            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 py-10 md:py-20"
+            className="imageRounded flex flex-col md:flex-row items-center justify-between componentsMainGap pt-10 py-8 md:py-32"
             onClick={selectRoute ? selectRoute : null}
           >
             <div className="w-full md:w-[50%] order-1">

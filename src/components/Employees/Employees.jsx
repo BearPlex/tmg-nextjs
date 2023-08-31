@@ -191,7 +191,7 @@ const Employees = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex flex-row pt-7 md:pt-16 ">
+      <div className="flex flex-row pt-4 md:pt-10 ">
         <div className="mr-6 swiper-button-prev-custom-1 h-[50px] w-[50px] md:h-[70px] md:w-[70px] rounded-full cursor-pointer gradient-button-bgBlack image-animation">
           <Image
             width={500}

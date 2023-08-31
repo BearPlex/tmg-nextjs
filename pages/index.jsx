@@ -10,7 +10,7 @@ import Clients from "../src/components/clients/Clients";
 import Articles from "../src/components/articles/Articles";
 import Footer from "../src/components/footer/Footer";
 import Expertise from "../src/components/expertise/Expertise";
-import Agency from "../src/components/agency/Agency";
+import ScrollingImage from "../src/components/ScrollingImage/ScrollingImage";
 import { work } from "../src/helpers/Helpers";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -50,9 +50,12 @@ export default function Home() {
         <div>
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
             <div className="w-full">
-              <h1 className="heading blackHeading">
+              <h1 className="heading blackHeading text-7xl">
                 Transforming Businesses into
-                <span className="gradientText heading"> Brands</span>{" "}
+                <span className="gradientText heading text-7xl">
+                  {" "}
+                  Brands
+                </span>{" "}
               </h1>
               <p className="paragraph blackDescriptionText mt-2 lg:mt-6">
                 We offer 360-degree marketing solutions such as PPC
@@ -73,7 +76,7 @@ export default function Home() {
                   Providing Exponential
                   <span className="gradientText heading"> User Experience</span>
                 </h1>
-                <p className="mt-2 lg:mt-6 paragraph blackDescriptionText">
+                <p className="mt-2 lg:mt-6 paragraph blackDescriptionText y">
                   Let’s face it, first impressions matter. Why waste and settle
                   for something less?
                   <br />
@@ -99,12 +102,12 @@ export default function Home() {
 
           <div className="py-9 pt-12 md:py-0 md:pt-16 max-w-7xl mx-auto">
             <div className="w-full flex items-center justify-center pb-7 md:pb-16 pagePaddingX">
-              <h2 className="md:w-4/5 w-full text-center largeHeading  blackHeading">
+              <h2 className="w-full text-left largeHeading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>
               </h2>
             </div>
-            <Agency />
+            <ScrollingImage />
           </div>
           <Services />
 

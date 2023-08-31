@@ -87,7 +87,7 @@ const Services = () => {
                   />
                 </div>
               </Link>
-              <p className="paragraphWhite mt:4 md:mt-10 leading-loose min-h-[120px]">
+              <p className="paragraphWhite mt:4 md:mt-10 leading-relaxed min-h-[120px]">
                 {servicesData[type].detail}
               </p>
             </div>

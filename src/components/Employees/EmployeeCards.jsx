@@ -61,10 +61,10 @@ const EmployeeCards = () => {
           {card.map((member, index) => (
             <SwiperSlide key={index + 200}>
               <div className="">
-                <figure className="image-animation">
+                <figure className="image-animation h-[80%]">
                   <div
                     key={member.id}
-                    className="mx-auto mt-10 imageRounded white group cursor-pointer hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
+                    className="mx-auto mt-10 imageRounded white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
                   >
                     <div className="relative h-full">
                       <div className="h-full w-full overflow-hidden">
@@ -113,23 +113,23 @@ const EmployeeCards = () => {
         </Swiper>
       </div>
 
-      <div className="flex flex-row items-end w-full mb-10 pt-10 md:pt-20 pl-10 md:pl-10 lg:pl-14 xl:pl-10 select-none">
-        <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
+      <div className="flex flex-row items-end w-full mb-10 pt-5 md:pt-10 pl-4 md:pl-10 lg:pl-14 xl:pl-10 select-none">
+        <div className="mr-6 swiper-button-prev-custom flex items-center justify-center bg-transparent h-[50px] w-[50px] md:h-[70px] md:w-[70px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
           <Image
             width={500}
             height={300}
             src={arrowBack.src}
             alt="team member"
-            className="w-[22px] cursor-pointer"
+            className="w-[18px] md:w-[22px]"
           />
         </div>
-        <div className="swiper-button-next-custom flex items-center justify-center bg-transparent w-[90px] h-[90px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
+        <div className="swiper-button-next-custom flex items-center justify-center bg-transparent h-[50px] w-[50px] md:h-[70px] md:w-[70px] border-[2px] border-[#EE2760] rounded-full cursor-pointer image-animation">
           <Image
             width={500}
             height={300}
             src={arrowNext.src}
             alt="team member"
-            className="w-[22px] cursor-pointer"
+            className="w-[18px] md:w-[22px]"
           />
         </div>
       </div>

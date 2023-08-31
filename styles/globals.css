@@ -57,10 +57,10 @@
     font-weight: 400 !important;
   }
   .blackHeadingText {
-    color: #1b1b1b !important;
+    color: #373737 !important;
   }
   .blackHeading {
-    color: #1b1b1b;
+    color: #373737;
   }
   .blackDescriptionText {
     color: #171717 !important;
@@ -78,25 +78,25 @@
     -webkit-text-fill-color: transparent;
   }
   .xl2Heading {
-    @apply font-sans text-5xl md:text-6xl lg:text-7xl font-extrabold;
+    @apply font-sans text-6xl md:text-7xl lg:text-8xl font-extrabold;
   }
   .extraLargeHeading {
-    @apply font-sans text-4xl md:text-5xl lg:text-6xl font-extrabold;
+    @apply font-sans text-5xl md:text-6xl lg:text-7xl font-extrabold;
   }
   .largeHeading {
-    @apply font-sans text-4xl md:text-5xl lg:text-6xl font-extrabold;
+    @apply font-sans text-5xl md:text-6xl lg:text-7xl font-extrabold;
   }
   .heading {
-    @apply font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold;
+    @apply font-sans text-3xl md:text-4xl lg:text-6xl font-extrabold;
   }
   .smallHeading {
     @apply font-sans text-2xl sm:text-3xl font-semibold;
   }
   .largeParagraph {
-    @apply font text-xl sm:text-2xl font-semibold;
+    @apply font text-2xl sm:text-3xl font-semibold;
   }
   .paragraph {
-    @apply font font-sans text-sm md:text-lg lg:text-xl font-semibold;
+    @apply font font-sans text-sm md:text-lg lg:text-2xl font-normal;
   }
   .smallText {
     @apply font text-xs sm:text-sm;
@@ -723,12 +723,12 @@ footer svg:hover path {
 } */
 
 .gridContainerHeight {
-  height: 700px;
+  height: 600px;
   @media (max-width: 1280px) {
-    height: 35vh;
+    height: 500px;
   }
 
   @media (max-width: 986px) {
-    height: 30vh;
+    height: 450px;
   }
 }

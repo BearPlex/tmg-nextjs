@@ -73,18 +73,18 @@ const NavigationMenu = () => {
                       </li>
                       <li>
                         <Link
-                          href="/service/brand-management"
+                          href="/service/seo"
                           className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
-                          Branding
+                          Search Engine Optimization
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/service/seo"
+                          href="/service/brand-management"
                           className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
-                          SEO
+                          Branding & Desigin
                         </Link>
                       </li>
                     </ul>
@@ -106,10 +106,10 @@ const NavigationMenu = () => {
                     onMouseEnter={() => setIsHovered(false)}
                   >
                     <Link
-                      href="/studio"
+                      href="/agency"
                       className="inline-block font-bold extraLargeHeading pt-3 leading-none text-[#FFCBC2] hover:text-white"
                     >
-                      Studio
+                      Agency
                     </Link>
                     <div className="hidden group-hover:block"></div>
                   </li>
@@ -157,27 +157,27 @@ const NavigationMenu = () => {
                       {/* <> */}
                       <Link
                         href="/service/social-media-marketing"
-                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
                         Social Media Marketing
                       </Link>
                       <Link
                         href="/service/web-design"
-                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
                         Web Development & Design
                       </Link>
                       <Link
-                        href="/service/brand-management"
-                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                        href="/service/seo"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
-                        Branding
+                        Search Engine Optimization
                       </Link>
                       <Link
-                        href="/service/seo"
-                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                        href="/service/brand-management"
+                        className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
-                        SEO
+                        Branding & Desigin
                       </Link>
                     </ul>
                   </div>

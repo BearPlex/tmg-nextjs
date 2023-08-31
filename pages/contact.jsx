@@ -47,23 +47,6 @@ const Contact = () => {
                   info@themediagale.com
                 </a>
                 <br />
-                <a
-                  href="mailto:support@themediagale.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
-                >
-                  support@themediagale.com
-                </a>
-                <br />
-                <a
-                  href="mailto:contact@themediagale.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400 transition-all py-1"
-                >
-                  contact@themediagale.com
-                </a>
               </p>
               <div className="flex gap-4 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
                 <a
@@ -111,7 +94,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className=" mb-4 md:mb-0">
-                <h4 className="gradientText text-5xl font-extrabold mb-2 md:mb-6 w-full">
+                <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6 w-full">
                   Lahore
                 </h4>
                 <div className="blackDescriptionText font-bold text-2xl whitespace-nowrap">
@@ -146,23 +129,6 @@ const Contact = () => {
                     info@themediagale.com
                   </a>
                   <br />
-                  <a
-                    href="mailto:support@themediagale.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
-                  >
-                    support@themediagale.com
-                  </a>
-                  <br />
-                  <a
-                    href="mailto:contact@themediagale.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400 transition-all py-1"
-                  >
-                    contact@themediagale.com
-                  </a>
                 </p>
               </div>
             </div>

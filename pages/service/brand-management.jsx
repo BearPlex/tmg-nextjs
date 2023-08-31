@@ -232,7 +232,7 @@ function Seo() {
                   {/* <div className="flex items-center gap-x-6 mt-5 md:mt-8">
                     <GradientButton
                       text="Learn More"
-                      route="/studio"
+                      route="/agency"
                       bgBlack={true}
                     />
                   </div> */}

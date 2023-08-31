@@ -7,7 +7,7 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
   return (
     <section
       className={`w-full max-w-7xl mx-auto z-50 ${
-        landingPage ? "md:h-[65vh]" : "md:h-[55vh]"
+        landingPage ? "md:h-[75vh]" : "md:h-[55vh]"
       }`}
     >
       <div className="h-full flex items-center pagePaddingX">
@@ -66,9 +66,9 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
               width={500}
               height={300}
               src={clientLogos.src}
-              alt="the drum logo"
+              alt="TMG Certifications"
               loading="lazy"
-              className="relative  w-[60%] object-contain -top-10 image-animation"
+              className="relative  w-[50%] object-contain -top-20 image-animation"
             />
           </div>
         )}

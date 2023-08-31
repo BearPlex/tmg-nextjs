@@ -12,7 +12,6 @@ import Footer from "../src/components/footer/Footer";
 import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { useRouter } from "next/router";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
@@ -20,8 +19,6 @@ import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
 const Services = () => {
-  const router = useRouter();
-
   return (
     <>
       <PageWrapper>
@@ -54,7 +51,7 @@ const Services = () => {
                 <div className="flex flex-wrap gap-y-2 sm:gap-y-6 justify-between w-full mt-5">
                   <a
                     href="#digital_marketing"
-                    className="w-full sm:w-[47%] paragraphBlack inline-block"
+                    className="w-full sm:w-[50%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -64,10 +61,21 @@ const Services = () => {
                       Social Media Marketing
                     </span>
                   </a>
-
+                  <a
+                    href="#web_development"
+                    className="w-full sm:w-[50%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] inline-block"
+                  >
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-pink-400 smallText mr-1"
+                    />
+                    <span className="gradientHoverBlack">
+                      Web Development & Design
+                    </span>
+                  </a>
                   <a
                     href="#seo"
-                    className="w-full sm:w-[53%] paragraphBlack inline-block"
+                    className="w-full sm:w-[50%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -79,24 +87,14 @@ const Services = () => {
                   </a>
                   <a
                     href="#branding"
-                    className="w-full sm:w-[47%] paragraphBlack inline-block"
-                  >
-                    <FontAwesomeIcon
-                      icon={faAngleRight}
-                      className="text-pink-400 smallText mr-1"
-                    />
-                    <span className="gradientHoverBlack">Brand Management</span>
-                  </a>
-                  <a
-                    href="#web_development"
-                    className="w-full sm:w-[53%] paragraphBlack inline-block"
+                    className="w-full sm:w-[50%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] inline-block"
                   >
                     <FontAwesomeIcon
                       icon={faAngleRight}
                       className="text-pink-400 smallText mr-1"
                     />
                     <span className="gradientHoverBlack">
-                      Website Design & Dev.
+                      Branding & Desigin
                     </span>
                   </a>
                 </div>
@@ -127,22 +125,23 @@ const Services = () => {
                 />
               </div>
             </TextWithImageContainer>
-
             <TextWithImageContainer
-              id="branding"
-              imageSrc={developmentImage.src}
+              id="web_development"
+              imageSrc={marketingImage.src}
               imageAlt="services images"
             >
               <div>
-                <div className="headingBlack">Brand Management</div>
+                <div className="headingBlack">Web Development & Design</div>
                 <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
-                  Analyzing the market and consumer data helps us provide
-                  customized solutions to everyday business challenges.
+                  Through personal and digital mediums, we provide fast and
+                  clear communication to keep information flow open.
                 </p>
-                <GradientButton
-                  text="Learn More"
-                  route="/service/brand-management"
-                />
+                <div className="">
+                  <GradientButton
+                    text="Learn More"
+                    route="/service/web-design"
+                  />
+                </div>
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
@@ -160,22 +159,20 @@ const Services = () => {
               </div>
             </TextWithImageContainer>
             <TextWithImageContainer
-              id="web_development"
-              imageSrc={marketingImage.src}
+              id="branding"
+              imageSrc={developmentImage.src}
               imageAlt="services images"
             >
               <div>
-                <div className="headingBlack">Website Design & Development</div>
+                <div className="headingBlack">Branding & Desigin</div>
                 <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
-                  Through personal and digital mediums, we provide fast and
-                  clear communication to keep information flow open.
+                  Analyzing the market and consumer data helps us provide
+                  customized solutions to everyday business challenges.
                 </p>
-                <div className="">
-                  <GradientButton
-                    text="Learn More"
-                    route="/service/web-design"
-                  />
-                </div>
+                <GradientButton
+                  text="Learn More"
+                  route="/service/brand-management"
+                />
               </div>
             </TextWithImageContainer>
           </div>
