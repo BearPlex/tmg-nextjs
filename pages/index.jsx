@@ -50,9 +50,9 @@ export default function Home() {
         <div>
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
             <div className="w-full">
-              <h1 className="heading blackHeading text-7xl">
+              <h1 className="heading blackHeading md:text-7xl">
                 Transforming Businesses into
-                <span className="gradientText heading text-7xl">
+                <span className="gradientText heading md:text-7xl">
                   {" "}
                   Brands
                 </span>{" "}
