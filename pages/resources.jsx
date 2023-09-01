@@ -8,7 +8,6 @@ import marketingImage from "../src/assets/images/content-resource.png";
 import eCommerceImage from "../src/assets/images/e-commerce.png";
 import wordPressImage from "../src/assets/images/wordpress-4.png";
 import Footer from "../src/components/footer/Footer";
-import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "../src/components/Image/Image";

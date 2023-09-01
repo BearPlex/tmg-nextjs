@@ -58,7 +58,7 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/social-media-marketing"
-                          className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                          className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Social Media Marketing
                         </Link>
@@ -66,7 +66,7 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/web-design"
-                          className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                          className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Web Development & Design
                         </Link>
@@ -74,7 +74,7 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/seo"
-                          className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                          className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Search Engine Optimization
                         </Link>
@@ -82,7 +82,7 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/brand-management"
-                          className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
+                          className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Branding & Desigin
                         </Link>
@@ -223,7 +223,7 @@ const NavigationMenu = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <h4 className="text-white text-center font-bold paragraph md:largeParagraph py-2 md:py-5 pl-2 pr-2 lg:pr-6 lg:pl-6">
+              <h4 className="hidden md:block text-white text-center font-bold paragraph md:largeParagraph py-2 md:py-5 pl-2 pr-2 lg:pr-6 lg:pl-6">
                 Let's get cracking
               </h4>
               <button className="hover:-translate-y-2 ease-in-out transition duration-300 transparentBgColor ml-0 sm:ml-2 md:ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-2 md:py-4 px-3 md:px-6 rounded-full">

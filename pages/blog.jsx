@@ -96,24 +96,14 @@ const Blog = () => {
 
           <div className="mt-4">
             <Tabs className="pb-10 md:py20 pagePaddingX tabs-wrapper blog-tabs-wrapper max-w-7xl mx-auto">
-              {/* <TabList>
-                             <Tab>All</Tab>
-                             <Tab>Expertise</Tab>
-                             <Tab>Inspiration</Tab>
-                             <Tab>Our Work</Tab>
-                             <Tab>Studio</Tab>
-                    </TabList> */}
-              {blogs == "" ? (
-                <TabPanel>
-                  {" "}
-                  <CardStatic item={blogsStatic} />
-                </TabPanel>
-              ) : (
-                blogs.map((item, index) => (
-                  <TabPanel key={index + 100}>
-                    <Card item={blogs} />
-                  </TabPanel>
-                ))
+              {blogs.length > 0 && blogs && (
+                <div>
+                  {blogs.map((item, index) => (
+                    <TabPanel key={index + 100}>
+                      <Card item={blogs} />
+                    </TabPanel>
+                  ))}
+                </div>
               )}
             </Tabs>
           </div>

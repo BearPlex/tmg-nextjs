@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
 import WorkCard from "../card/WorkCard";
-const Expertise = (props) => {
+const ExpertiseSmall = (props) => {
   const { list, cssClass, backGroundBlack, showAllProjects = false } = props;
   const router = useRouter();
   const pushWork = (id) => {
@@ -166,7 +166,7 @@ const Expertise = (props) => {
                       >
                         <WorkCard
                           backGroundBlack={backGroundBlack}
-                          imageSrc={`https://beta.themediagale.com/public_images/${item.attributes?.cardImage}.png`}
+                          imageSrc={`https://beta.themediagale.com/public_images/work/${item.attributes?.cardImage}.png`}
                           featured_title={item.attributes?.featured_title}
                           gallery_first_description={
                             item.attributes?.gallery_first_description
@@ -194,7 +194,7 @@ const Expertise = (props) => {
                         >
                           <WorkCard
                             backGroundBlack={backGroundBlack}
-                            imageSrc={`https://beta.themediagale.com/public_images/${item.attributes?.cardImage}.png`}
+                            imageSrc={`https://beta.themediagale.com/public_images/work/${item.attributes?.cardImage}.png`}
                             featured_title={item.attributes?.featured_title}
                             gallery_first_description={
                               item.attributes?.gallery_first_description
@@ -219,4 +219,4 @@ const Expertise = (props) => {
     </>
   );
 };
-export default Expertise;
+export default ExpertiseSmall;

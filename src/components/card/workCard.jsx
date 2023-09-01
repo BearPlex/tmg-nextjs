@@ -17,16 +17,19 @@ const WorkCard = (props) => {
     <div className="mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
       <div className="group">
         <div className="relative group work-images overflow-hidden">
-          <Image
-            width={500}
-            height={300}
-            className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
-            src={imageSrc}
-            alt="work images"
-            loading="lazy"
-            layout="responsive"
-            objectFit="cover"
-          />
+          {imageSrc && imageSrc !== "" && (
+            <Image
+              width={500}
+              height={300}
+              className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
+              src={imageSrc}
+              alt="work images"
+              loading="lazy"
+              decoding="async"
+              layout="responsive"
+              objectFit="cover"
+            />
+          )}
         </div>
 
         <div className="relative group group-hover:ml-2 duration-300 transition-in-out pb-1">

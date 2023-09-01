@@ -12,8 +12,6 @@ import {
   linkedinSvg,
   twitterSvg,
 } from "../../src/helpers/Helpers";
-
-import ReactMark from "react-markdown";
 function BlogDetail() {
   const router = useRouter();
   const {

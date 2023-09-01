@@ -61,20 +61,20 @@ const Work = () => {
           </div>
         </HeroContainer>
         <Tabs className="pagePaddingX tabs-wrapper md:pt-20 max-w-7xl mx-auto">
-          {work == "" ? (
-            <ExpertiseStatic backGroundBlack={false} list={workStatic} />
-          ) : (
-            work.map((item, index) => (
-              <TabPanel key={index + 300}>
-                {
-                  <ExpertiseSmall
-                    showAllProjects={true}
-                    backGroundBlack={false}
-                    list={work}
-                  />
-                }
-              </TabPanel>
-            ))
+          {work && work.length > 0 && (
+            <div>
+              {work.map((item, index) => (
+                <TabPanel key={index + 300}>
+                  {
+                    <ExpertiseSmall
+                      showAllProjects={true}
+                      backGroundBlack={false}
+                      list={work}
+                    />
+                  }
+                </TabPanel>
+              ))}
+            </div>
           )}
         </Tabs>
         <Footer />
