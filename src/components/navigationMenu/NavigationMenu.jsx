@@ -36,7 +36,7 @@ const NavigationMenu = () => {
   return (
     <div className="background-gradient z-10 w-full h-full fixed top-0 ">
       <div className="flex flex-col justify-between h-full">
-        <div className=" pagePaddingX pt-[6vh] lg:pt-[15vh]">
+        <div className=" pagePaddingX pt-[4vh] lg:pt-[7vh]">
           <div className="inline-block w-56 cursor-pointer"></div>
           <div className="">
             <ul className="relative flex flex-col md:flex-row md:items-center md:justify-between">
@@ -84,7 +84,7 @@ const NavigationMenu = () => {
                           href="/service/brand-management"
                           className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
-                          Branding & Desigin
+                          Branding & Design
                         </Link>
                       </li>
                     </ul>
@@ -177,7 +177,7 @@ const NavigationMenu = () => {
                         href="/service/brand-management"
                         className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
-                        Branding & Desigin
+                        Branding & Design
                       </Link>
                     </ul>
                   </div>

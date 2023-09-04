@@ -94,7 +94,7 @@ const Services = () => {
                       className="text-pink-400 smallText mr-1"
                     />
                     <span className="gradientHoverBlack">
-                      Branding & Desigin
+                      Branding & Design
                     </span>
                   </a>
                 </div>
@@ -164,7 +164,7 @@ const Services = () => {
               imageAlt="services images"
             >
               <div>
-                <div className="headingBlack">Branding & Desigin</div>
+                <div className="headingBlack">Branding & Design</div>
                 <p className="mt-2 mb-6 md:mt-8 md:mb-14 paragraphBlack">
                   Analyzing the market and consumer data helps us provide
                   customized solutions to everyday business challenges.
