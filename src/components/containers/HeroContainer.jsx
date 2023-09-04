@@ -63,7 +63,7 @@ const HeroContainer = ({
                     blog
                       ? "max-w-[40%] md:max-w-[40%]"
                       : agenct
-                      ? "max-w-[60%] md:max-w-[70%]"
+                      ? "max-w-[70%] md:max-w-[70%]"
                       : "max-w-[100%]"
                   } image-animation object-contain`}
                 />
