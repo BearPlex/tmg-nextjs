@@ -17,38 +17,43 @@ const Contact = () => {
     <>
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto">
-          <div className="w-[100%] flex flex-col md:flex-row md:w-[100%]">
-            <div className="w-[30%] md:w-[30%] md:order-2 order-6 hidden md:block">
-              <h4 className="gradientText text-5xl font-extrabold mb-2 md:mb-6">
+          <div className="w-[100%] flex flex-col md:flex-row">
+            <div className="w-[100%] md:w-[30%] mt-8 md:mt-0 order-2 md:order-1">
+              <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
                 New York
               </h4>
-              <p className="blackDescriptionText text-2xl font-bold">
-                Brooklyn,
-                <br />
-                New York,
-                <br />
-                U.S.A.
-              </p>
-              <p className="mt-10 md:mt-32">
-                <a
-                  href="tel:+1 (917) 970-1353"
-                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all"
-                >
-                  +1 (917) 970-1353
-                </a>
-              </p>
-              <p className="group mt:4 md:mt-10 relative">
-                <a
-                  href="mailto:info@themediagale.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
-                >
-                  info@themediagale.com
-                </a>
-                <br />
-              </p>
-              <div className="flex gap-4 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760]">
+              <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
+                <p className="block md:hidden">Brooklyn, New York, U.S.A.</p>
+                <p className="hidden md:block">
+                  Brooklyn,
+                  <br />
+                  New York,
+                  <br />
+                  U.S.A.
+                </p>
+              </div>
+              <div>
+                <p className="mt-10 md:mt-32">
+                  <a
+                    href="tel:+1 (917) 970-1353"
+                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all"
+                  >
+                    +1 (917) 970-1353
+                  </a>
+                </p>
+                <p className="group mt:4 md:mt-10 relative">
+                  <a
+                    href="mailto:info@themediagale.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
+                  >
+                    info@themediagale.com
+                  </a>
+                  <br />
+                </p>
+              </div>
+              <div className="hidden md:block gap-4 mt-9 md:mt-20 justify-start contact-wrapper text-[#EE2760] whitespace-nowrap">
                 <a
                   href="https://twitter.com/themediagale"
                   target="_blank"
@@ -83,58 +88,28 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-
-            <div className="md:order-4 order-4 w-[100%] md:w-[30%] flex flex-col ">
-              <div className="w-full md:w-[30%] block md:hidden">
-                <h4 className="gradientText smallHeading font-extrabold mb-2 md:mb-6">
-                  New York
-                </h4>
-                <p className="blackDescriptionText font-bold text-2xl flex flex-col mb-4 whitespace-nowrap">
-                  Brooklyn, New York, U.S.A.
-                </p>
-              </div>
-              <div className=" mb-4 md:mb-0">
-                <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6 w-full">
-                  Lahore
-                </h4>
-                <div className="blackDescriptionText font-bold text-2xl whitespace-nowrap">
-                  <p className="block md:hidden">
-                    DHA Phase 5, Lahore, Pakistan
-                  </p>
-                  <p className="hidden md:block">
-                    DHA Phase 5,
-                    <br />
-                    Lahore,
-                    <br />
-                    Pakistan.
-                  </p>
-                </div>
-              </div>
-              <div className="block md:hidden">
-                <p className="mt-2 md:mt-10 mb-4">
-                  <a
-                    href="tel:+44(0)20 3951 0562"
-                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all"
-                  >
-                    +1 (917) 970-1353
-                  </a>
-                </p>
-                <p className="group mt:4 md:mt-10 mb-8 md:mb-10 relative">
-                  <a
-                    href="mailto:info@themediagale.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block text-orange_theme-500 smallHeading font-bold hover:text-orange_theme-400  transition-all py-1"
-                  >
-                    info@themediagale.com
-                  </a>
+            <div className="w-[100%] md:w-[30%] order-1 md:order-2">
+              <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
+                Lahore
+              </h4>
+              <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
+                <p className="block md:hidden">DHA Phase 5, Lahore, Pakistan</p>
+                <p className="hidden md:block">
+                  DHA Phase 5,
                   <br />
+                  Lahore,
+                  <br />
+                  Pakistan.
                 </p>
               </div>
             </div>
-
-            <div className="w-[100%] md:w-[50%] md:py-0 md:order-6 order-2">
-              <ContactFormIframe />
+            <div className="w-[100%] md:w-[50%] md:py-0 order-3 ">
+              <div>
+                <div className="block md:hidden my-10 md:my-0 gradientText heading">
+                  Shoot us an Email
+                </div>
+                <ContactFormIframe />
+              </div>
             </div>
           </div>
         </div>

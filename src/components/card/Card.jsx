@@ -3,8 +3,6 @@ import Image from "../Image/Image";
 
 const Card = (props) => {
   const { item } = props;
-  console.log(item);
-  console.log("item");
   const router = useRouter();
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);

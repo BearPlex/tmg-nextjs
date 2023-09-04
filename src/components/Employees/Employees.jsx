@@ -66,8 +66,6 @@ const Employees = () => {
         const sortedImages = [...res.data.data].sort((a, b) => {
           return a.attributes.imageNumber - b.attributes.imageNumber;
         });
-        console.log(sortedImages);
-        console.log("sortedImages");
         setCard(sortedImages);
         setImageBatch(calculateImageLayout(sortedImages));
       })

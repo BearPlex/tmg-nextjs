@@ -2,7 +2,6 @@ import Header from "../src/components/header/Header";
 import blogImage from "../src/assets/images/Blog-pic.png";
 import bannerImage from "../src/assets/images/header-image-1.png";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-// import {blogs} from "../src/helpers/Helpers";
 import Card from "../src/components/card/Card";
 import CardStatic from "../src/components/card/CardStatic";
 import Footer from "../src/components/footer/Footer";
@@ -45,7 +44,7 @@ const Blog = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={blogImage.src}>
+          <HeroContainer imageSrc={blogImage.src} blog={true}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
                 News, Insights, and

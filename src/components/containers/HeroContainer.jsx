@@ -3,7 +3,13 @@ import Image from "../Image/Image";
 import group from "../../assets/images/Group.png";
 import clientLogos from "../../assets/images/footer-logos.png";
 import TmgLogo from "../../assets/images/hero-image-3x.png";
-const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
+const HeroContainer = ({
+  landingPage = false,
+  imageSrc,
+  blog = false,
+  agenct = false,
+  children,
+}) => {
   return (
     <section
       className={`w-full max-w-7xl mx-auto z-50 ${
@@ -44,16 +50,24 @@ const HeroContainer = ({ landingPage = false, imageSrc, children }) => {
                 </div>
               </div>
             ) : (
-              <Image
-                width={0}
-                height={0}
-                src={imageSrc}
-                alt="kota canvas"
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-                className="max-w-full  image-animation object-contain"
-              />
+              <div className="w-full flex items-center justify-center">
+                <Image
+                  width={0}
+                  height={0}
+                  src={imageSrc}
+                  alt="kota canvas"
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                  className={`${
+                    blog
+                      ? "max-w-[40%] md:max-w-[40%]"
+                      : agenct
+                      ? "max-w-[60%] md:max-w-[70%]"
+                      : "max-w-[100%]"
+                  } image-animation object-contain`}
+                />
+              </div>
             )}
           </div>
           <div className="w-full">{children}</div>
