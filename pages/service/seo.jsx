@@ -73,7 +73,7 @@ function BrandManagement() {
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
-                    <h1 className="largeHeadingBlack">
+                    <h1 className="headingBlack">
                       Content strategy that
                       <span className="gradientText">
                         {" "}
@@ -104,7 +104,7 @@ function BrandManagement() {
               <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
-                    <dd className="relative  largeHeadingWhite">
+                    <dd className="relative headingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>

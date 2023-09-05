@@ -99,7 +99,7 @@ function WebDesign() {
               <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
-                    <dd className="relative  largeHeadingWhite">
+                    <dd className="relative headingWhite">
                       What makes us sooo good at it?
                     </dd>
                   </div>
