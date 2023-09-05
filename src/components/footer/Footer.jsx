@@ -84,7 +84,7 @@ const Footer = () => {
               </div>
 
               <div className="w-full md:w-6/12">
-                <div className="flex flex-wrap items-top mb-6">
+                <div className="flex flex-row items-top mb-6">
                   <div className="w-full lg:w-6/12 ml-auto">
                     <ul className="list-unstyled">
                       <li className="mb-0 md:mb-3">
@@ -136,9 +136,9 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="w-full lg:w-6/12 xl:relative xl:right-16">
+                  <div className="w-full lg:w-6/12 flex justify-start">
                     <ul className="list-unstyled">
-                      <li className="mt-6 md:mt-0 mb-0 md:mb-3">
+                      <li className="mt-0 mb-0 md:mb-3">
                         <span className="text-[#EE2760] font-extrabold paragraph md:pb-3">
                           Offices
                         </span>

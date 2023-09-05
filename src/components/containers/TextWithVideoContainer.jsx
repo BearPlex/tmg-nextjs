@@ -55,7 +55,7 @@ const TextWithVideoContainer = ({
               <video
                 id="videoElement"
                 ref={videoRef}
-                className="object-cover h-fit imageRounded hover:opacity-90 transition duration-300 ease-in-out"
+                className="object-cover max-h-[40vh] sm:max-h-[55vh] md:max-h-fit imageRounded hover:opacity-90 transition duration-300 ease-in-out"
                 autoPlay={true}
                 muted={true}
                 playsInline={true}
@@ -65,7 +65,7 @@ const TextWithVideoContainer = ({
               {isPlaying ? null : (
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <svg
-                    className="w-16 h-16 text-white cursor-pointer"
+                    className="w-12 h-12 md:w-16 md:h-16 text-white cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"

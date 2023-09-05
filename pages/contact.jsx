@@ -20,16 +20,16 @@ const Contact = () => {
           <div className="w-[100%] flex flex-col md:flex-row">
             <div className="w-[100%] md:w-[30%] mt-8 md:mt-0 order-2 md:order-1">
               <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
-                New York
+                U.S.A.
               </h4>
               <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">NY, U.S.A.</p>
+                <p className="block md:hidden">New York, NY.</p>
                 <p className="hidden md:block">
                   {/* Brooklyn,
                   <br /> */}
-                  NY,
+                  New York,
                   <br />
-                  U.S.A.
+                  NY.
                 </p>
               </div>
               <div>
@@ -90,16 +90,14 @@ const Contact = () => {
             </div>
             <div className="w-[100%] md:w-[30%] order-1 md:order-2">
               <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
-                Lahore
+                Pakistan
               </h4>
               <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">DHA Phase 5, Lahore, Pakistan</p>
+                <p className="block md:hidden">DHA Phase 5, Lahore</p>
                 <p className="hidden md:block">
                   DHA Phase 5,
                   <br />
-                  Lahore,
-                  <br />
-                  Pakistan.
+                  Lahore.
                 </p>
               </div>
             </div>
