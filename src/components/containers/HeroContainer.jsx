@@ -23,7 +23,6 @@ const HeroContainer = ({
             {landingPage ? (
               <div className="">
                 <div className="content">
-                  {/* <div className="lens"></div> */}
                   <div className="hidden md:block">
                     <Image
                       width={0}
@@ -33,7 +32,7 @@ const HeroContainer = ({
                       loading="lazy"
                       layout="responsive"
                       objectFit="cover"
-                      className="max-w-full max-h-[45vh] object-contain image-animation"
+                      className="max-w-full max-h-[45vh] object-contain image-animation -top-5"
                     />
                   </div>
                   <div className="block md:hidden">
@@ -49,6 +48,18 @@ const HeroContainer = ({
                     />
                   </div>
                 </div>
+                {landingPage && (
+                  <div className="hidden md:block">
+                    <Image
+                      width={500}
+                      height={300}
+                      src={clientLogos.src}
+                      alt="TMG Certifications"
+                      loading="lazy"
+                      className="relative w-full object-contain -bottom-[6.4rem] image-animation"
+                    />
+                  </div>
+                )}
               </div>
             ) : (
               <div className="w-full flex items-center justify-center">

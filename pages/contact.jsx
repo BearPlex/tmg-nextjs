@@ -90,7 +90,7 @@ const Contact = () => {
             </div>
             <div className="w-[100%] md:w-[30%] order-1 md:order-2">
               <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
-                Pakistan
+                Pakistan.
               </h4>
               <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
                 <p className="block md:hidden">DHA Phase 5, Lahore.</p>

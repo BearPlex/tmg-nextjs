@@ -18,8 +18,8 @@ const ExpertiseSmall = (props) => {
                 {showAllProjects ? (
                   <div className="isolate grid grid-cols-2 componentsMainGap">
                     <div className="w-full items-center">
-                      <div className="my-16 text-[#EE2760] w-[50%] largeHeading">
-                        Featured Projects
+                      <div className="my-16 text-[#EE2760] w-[100%] largeHeading">
+                        Our Happy Clients
                       </div>
                       {list.map((item, index) => {
                         return (
@@ -81,8 +81,8 @@ const ExpertiseSmall = (props) => {
                 ) : (
                   <div className="w-full flex flex-row justify-end items-end my-8 md:my-10 h-full componentsMainGap">
                     <div className="w-[50%] h-full text-[#EE2760] flex-col">
-                      <div className="my-16 w-[50%] largeHeading">
-                        Featured Projects
+                      <div className="my-16 w-[100%] largeHeading">
+                        Our Happy Clients
                       </div>
                       {list.map((item, index) => {
                         return (
@@ -151,7 +151,7 @@ const ExpertiseSmall = (props) => {
           <div className="grid grid-cols-1 pt-10">
             <div className="w-full ">
               <div className="w-full mt-0 md:mt-16 largeHeading lg:w-full md:mr-auto text-[#EE2760]">
-                Featured Projects
+                Our Happy Clients
               </div>
             </div>
             <div className="w-full items-center">
