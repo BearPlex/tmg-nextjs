@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/services-logo.png";
+import servicesPic from "../src/assets/images/SERVICES.png";
 import Link from "next/link";
 import homePageImage from "../src/assets/images/social-media-marketing.png";
 import developmentImage from "../src/assets/images/brand-management.png";
@@ -23,8 +23,7 @@ const Services = () => {
     <>
       <PageWrapper>
         <section>
-          {/* <HeroContainer imageSrc={kotaLogo.src}> */}
-          <TextWithVideoContainer cssClass="" childcssClass="">
+          <HeroContainer imageSrc={servicesPic.src}>
             <div className="w-full">
               <p className="mb-2 md:mb-6 mt-6 paragraphBlack">
                 Fusing astounding visuals with compelling content while backed
@@ -106,7 +105,7 @@ const Services = () => {
                 />
               </div>
             </div>
-          </TextWithVideoContainer>
+          </HeroContainer>
           <div className="max-w-7xl mx-auto pagePaddingX  py-8 md:py-10">
             <TextWithImageContainer
               id="digital_marketing"

@@ -418,6 +418,9 @@ footer svg:hover path {
   width: 4rem;
   height: 4rem;
 }
+.contact-wrapper-blog svg {
+  @apply w-[3rem] lg:w-[4rem] h-[3rem] lg:h-[4rem];
+}
 .contact-wrapper-menu svg {
   @apply w-[3rem] lg:w-[4rem] h-[3rem] lg:h-[4rem];
 }

@@ -102,7 +102,7 @@ export default function Home() {
 
           <div className="py-9 pt-12 md:py-0 md:pt-16 max-w-7xl mx-auto">
             <div className="w-full flex items-center justify-center pb-7 md:pb-16 pagePaddingX">
-              <h2 className="w-full text-left largeHeading  blackHeading">
+              <h2 className="w-full text-center largeHeading  blackHeading">
                 Our team bootstraps the growth of your business using these{" "}
                 <span className="gradientText">4 Elements</span>
               </h2>

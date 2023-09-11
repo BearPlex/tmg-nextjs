@@ -53,8 +53,8 @@ const Expertise = (props) => {
               })}
             </div>
             <div className="w-full items-center">
-              <div className="md:w-5/6 mt-10 md:mt-[18vw] xl:mt-[23vw] 2xl:mt-[250px] md:mb-[10vw] xl:mb-[15vw] 2xl:mb-[300px]">
-                <p className="largeHeadingWhite">
+              <div className="md:w-full mt-10 md:mt-[18vw] xl:mt-[23vw] 2xl:mt-[250px] md:mb-[10vw] xl:mb-[15vw] 2xl:mb-[300px]">
+                <p className="headingWhite lg:text-5xl">
                   Collaborating with trending brands
                 </p>
               </div>

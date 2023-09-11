@@ -36,7 +36,7 @@ const Studio = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={agencyHero.src} agenct={true}>
+          <HeroContainer imageSrc={agencyHero.src} agency={true}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6 mt-6 headingBlack">
                 Lets Make Your Digital Dreams{" "}
@@ -96,7 +96,7 @@ const Studio = () => {
                 />
               </div>
               <div className="w-full md:w-[50%] flex justify-center">
-                <div className="heading whiteHeadingText leading-relaxed text-left my-8">
+                <div className="heading whiteHeadingText leading-relaxed text-center my-8">
                   Our team is 360 degree working in every aspect of digital
                   marketing.
                 </div>

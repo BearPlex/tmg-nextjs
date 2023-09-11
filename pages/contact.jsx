@@ -23,13 +23,13 @@ const Contact = () => {
                 U.S.A.
               </h4>
               <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">New York, NY.</p>
+                <p className="block md:hidden">NY, New York.</p>
                 <p className="hidden md:block">
                   {/* Brooklyn,
                   <br /> */}
-                  New York,
+                  NY,
                   <br />
-                  NY.
+                  New York.
                 </p>
               </div>
               <div>
@@ -93,7 +93,7 @@ const Contact = () => {
                 Pakistan
               </h4>
               <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">DHA Phase 5, Lahore</p>
+                <p className="block md:hidden">DHA Phase 5, Lahore.</p>
                 <p className="hidden md:block">
                   DHA Phase 5,
                   <br />

@@ -136,7 +136,7 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="w-full lg:w-6/12 flex justify-end sm:justify-start">
+                  <div className="w-full lg:w-6/12 flex justify-start">
                     <ul className="list-unstyled">
                       <li className="mt-0 mb-0 md:mb-3">
                         <span className="text-[#EE2760] font-extrabold paragraph md:pb-3">

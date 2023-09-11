@@ -54,11 +54,11 @@ function BlogDetail() {
       <PageWrapper>
         <div className="w-full">
           <section className="max-w-7xl mx-auto pagePaddingX">
-            <div className="text-pink-400 paragraph tracking-widest">
+            <div className="text-pink-400 paragraph tracking-widest mb-3">
               Published {work?.attributes?.dateAdded}
             </div>
             <div className="headingBlack">{work?.attributes?.title}</div>
-            <div className="paragraphBlack mt-2">
+            <div className="paragraphBlack mt-3">
               {work?.attributes?.blogMainContent1}
             </div>
             {work?.attributes?.image1 && work?.attributes?.image1 !== "" && (
@@ -66,17 +66,17 @@ function BlogDetail() {
                 width={500}
                 height={300}
                 alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image1}.png`}
+                src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image1}.png`}
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
-                className="w-full"
+                className="w-full my-8 md:my-16"
               />
             )}
             <div className="max-w-full">
-              <div className="max-w-[70%] mx-auto">
+              <div className="max-w-full md:max-w-[70%] mx-auto">
                 <div>{work?.attributes?.blogMainContent2}</div>
-                <div className="headingBlack mt-8 md:mt-10">
+                <div className="headingBlack  mt-8 md:mt-10">
                   {work?.attributes?.introductionHeading}
                 </div>
                 <div className="paragraphBlack mt-2">
@@ -88,9 +88,10 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image2}.png`}
+                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image2}.png`}
                       loading="lazy"
                       layout="responsive"
+                      className="w-full my-8 md:my-16"
                       objectFit="cover"
                     />
                   )}
@@ -117,9 +118,10 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image3}.png`}
+                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image3}.png`}
                       loading="lazy"
                       layout="responsive"
+                      className="w-full my-8 md:my-16"
                       objectFit="cover"
                     />
                   )}
@@ -138,9 +140,10 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image4}.png`}
+                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image4}.png`}
                       loading="lazy"
                       layout="responsive"
+                      className="w-full my-8 md:my-16"
                       objectFit="cover"
                     />
                   )}
@@ -159,9 +162,10 @@ function BlogDetail() {
                       width={500}
                       height={300}
                       alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image5}.png`}
+                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image5}.png`}
                       loading="lazy"
                       layout="responsive"
+                      className="w-full my-8 md:my-16"
                       objectFit="cover"
                     />
                   )}
@@ -174,20 +178,21 @@ function BlogDetail() {
                 <div className="paragraphBlack mt-2">
                   {work?.attributes?.conclusionContent}
                 </div>
-                <div className="mt-8 md:mt-10 authorCard flex flex-row w-full justify-between">
-                  <div className="flex flex-row items-center">
-                    <div className="flex items-center h-[70px] w-[70px] mr-4">
+                <div className="mt-8 md:mt-10 flex flex-col md:flex-row w-full justify-between">
+                  <div className="flex flex-row items-center mb-5 md:mb-0">
+                    <div className="flex items-center h-[60px] md:h-[70px] w-[60px] md:w-[70px] mr-4 overflow-hidden rounded-[50%]">
                       {work?.attributes?.authorImage &&
                         work?.attributes?.authorImage !== "" && (
                           <Image
-                            width={500}
-                            height={300}
+                            width={70}
+                            height={70}
                             alt="attributes"
-                            src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.authorImage}.png`}
+                            src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.authorImage}.png`}
                             loading="lazy"
-                            className="rounded-[50%]"
+                            className="w-full h-full"
                             layout="responsive"
-                            objectFit="cover"
+                            objectFit="fit"
+                            // objectFit="cover"
                           />
                         )}
                     </div>
@@ -196,9 +201,9 @@ function BlogDetail() {
                       <div>{work?.attributes?.authorJobTitle}</div>
                     </div>
                   </div>
-                  <div className="flex flex-row justify-end items-center">
+                  <div className="flex flex-row justify-between md:justify-end items-center">
                     <a
-                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px] inline-block"
+                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
                       href={`${work?.attributes?.authorLink}`}
                       target="_blank"
                       rel="noreferrer"
@@ -210,7 +215,7 @@ function BlogDetail() {
                       />{" "}
                       <span className="paragraphBlack">Copy Link</span>
                     </a>
-                    <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
+                    <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper-blog">
                       <a
                         href={`https://twitter.com/${work?.attributes?.authorLinkTwitter}`}
                         target="_blank"
