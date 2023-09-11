@@ -1,5 +1,5 @@
 import Header from "../src/components/header/Header";
-import kotaLogo from "../src/assets/images/tmg-logo.png";
+import kotaLogo from "../src/assets/images/Work-pic.png";
 import { work } from "../src/helpers/Helpers";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";

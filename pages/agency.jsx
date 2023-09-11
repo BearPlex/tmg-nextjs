@@ -36,7 +36,7 @@ const Studio = () => {
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={agencyHero.src} agency={true}>
+          <HeroContainer imageSrc={agencyHero.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6 mt-6 headingBlack">
                 Lets Make Your Digital Dreams{" "}

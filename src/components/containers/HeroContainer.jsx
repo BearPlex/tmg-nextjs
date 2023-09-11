@@ -71,13 +71,7 @@ const HeroContainer = ({
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
-                  className={`${
-                    blog
-                      ? "max-w-[45%] md:max-w-[53%]"
-                      : agency
-                      ? "max-w-[80%] md:max-w-[83%]"
-                      : "max-w-[100%]"
-                  } image-animation object-contain`}
+                  className="max-w-[100%] image-animation object-contain"
                 />
               </div>
             )}

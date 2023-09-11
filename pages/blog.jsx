@@ -38,13 +38,12 @@ const Blog = () => {
   }, []);
   const pushWork = (id) => {
     router.push(`/blog-detail/${id}`);
-    // router.push(`/blog-detail/7`);
   };
   return (
     <>
       <PageWrapper>
         <section className="w-full">
-          <HeroContainer imageSrc={blogImage.src} blog={true}>
+          <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
               <h4 className="mb-2 md:mb-6  headingBlack ">
                 News, Insights, and
