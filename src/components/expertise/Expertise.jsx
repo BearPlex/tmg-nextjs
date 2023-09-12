@@ -2,7 +2,7 @@
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
-import WorkCard from "../card/WorkCard";
+import WorkCard from "../card/workCard";
 const Expertise = (props) => {
   const { list, cssClass, backGroundBlack } = props;
   const router = useRouter();
