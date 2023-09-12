@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="flex flex-wrap text-left lg:text-left">
               <div className=" w-full md:w-6/12 md:text-right text-left order-3 mb-6 md:mb-0">
                 <h4 className="paragraph font-bold text-[#EE2760]">
-                  Follow
+                  Connect
                   <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper">
                     <a
                       href="https://twitter.com/themediagale"

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
 import mainImage from "../../assets/svg/home_work_logo.svg";
