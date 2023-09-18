@@ -23,7 +23,7 @@ function WorkDetail() {
       try {
         axios
           .get(
-            `https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?filters[slug][$eq]=${id}`
+            `https://app.themediagale.com/api/work-kinimos?filters[slug][$eq]=${id}&populate=*`
           )
           .then((res) => {
             // setWork(res.data.data);
@@ -56,7 +56,7 @@ function WorkDetail() {
                   width={500}
                   height={300}
                   alt="attributes"
-                  src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image1}.png`}
+                  src={`${work?.attributes?.image1?.data.attributes.url}`}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
@@ -88,7 +88,7 @@ function WorkDetail() {
                   width={500}
                   height={1000}
                   alt="attributes"
-                  src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image2}.png`}
+                  src={`${work?.attributes?.image2?.data.attributes.url}`}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
@@ -100,7 +100,7 @@ function WorkDetail() {
                 width={500}
                 height={300}
                 alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image3}.png`}
+                src={`${work?.attributes?.image3?.data.attributes.url}`}
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
@@ -123,7 +123,7 @@ function WorkDetail() {
                 width={500}
                 height={300}
                 alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image4}.png`}
+                src={`${work?.attributes?.image4?.data.attributes.url}`}
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"
@@ -136,7 +136,7 @@ function WorkDetail() {
                 width={500}
                 height={300}
                 alt="attributes"
-                src={`https://beta.themediagale.com/public_images/work/${work?.attributes?.image5}.png`}
+                src={`${work?.attributes?.image5?.data.attributes.url}`}
                 loading="lazy"
                 layout="responsive"
                 objectFit="cover"

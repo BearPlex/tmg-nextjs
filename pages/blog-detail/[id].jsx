@@ -7,6 +7,7 @@ import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import LatestBlogElement from "../../src/components/articles/LatestBlogElement";
+import ReactMarkdown from "../../src/components/ReactMarkdown/ReactMarkdown";
 import {
   facebookSvg,
   linkedinSvg,
@@ -27,7 +28,7 @@ function BlogDetail() {
       try {
         axios
           .get(
-            `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?filters[slug][$eq]=${id}`
+            `https://app.themediagale.com/api/blogs?filters[slug][$eq]=${id}&populate=*`
           )
           .then((res) => {
             // setWork(res.data.data);
@@ -58,43 +59,10 @@ function BlogDetail() {
               Published {work?.attributes?.dateAdded}
             </div>
             <div className="headingBlack">{work?.attributes?.title}</div>
-            <div className="paragraphBlack mt-3">
-              {work?.attributes?.blogMainContent1}
-            </div>
-            {work?.attributes?.image1 && work?.attributes?.image1 !== "" && (
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image1}.png`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-                className="w-full my-8 md:my-16"
-              />
-            )}
+            <ReactMarkdown data={work?.attributes?.blogData} />
             <div className="max-w-full">
               <div className="max-w-full md:max-w-[70%] mx-auto">
-                <div>{work?.attributes?.blogMainContent2}</div>
-                <div className="headingBlack  mt-8 md:mt-10">
-                  {work?.attributes?.introductionHeading}
-                </div>
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.introductionContent1}
-                </div>
-                {work?.attributes?.image2 &&
-                  work?.attributes?.image2 !== "" && (
-                    <Image
-                      width={500}
-                      height={300}
-                      alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image2}.png`}
-                      loading="lazy"
-                      layout="responsive"
-                      className="w-full my-8 md:my-16"
-                      objectFit="cover"
-                    />
-                  )}
+                <ReactMarkdown data={work?.attributes?.blogData2} />
                 <div className="left-border">
                   <div className="headingBlack mt-8 md:mt-10">
                     {work?.attributes?.quote}
@@ -103,81 +71,7 @@ function BlogDetail() {
                     - {work?.attributes?.quoteAuthor}
                   </div>
                 </div>
-                <div className="paragraphBlack mt-8 md:mt-10">
-                  {work?.attributes?.introductionContent2}
-                </div>
-                <div className="smallHeading mt-8 md:mt-10">
-                  {work?.attributes?.subheading1}
-                </div>
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent1Part1}
-                </div>
-                {work?.attributes?.image3 &&
-                  work?.attributes?.image3 !== "" && (
-                    <Image
-                      width={500}
-                      height={300}
-                      alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image3}.png`}
-                      loading="lazy"
-                      layout="responsive"
-                      className="w-full my-8 md:my-16"
-                      objectFit="cover"
-                    />
-                  )}
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent1Part2}
-                </div>
-                <div className="smallHeading mt-8 md:mt-10">
-                  {work?.attributes?.subheading2}
-                </div>
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent2Part1}
-                </div>
-                {work?.attributes?.image4 &&
-                  work?.attributes?.image4 !== "" && (
-                    <Image
-                      width={500}
-                      height={300}
-                      alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image4}.png`}
-                      loading="lazy"
-                      layout="responsive"
-                      className="w-full my-8 md:my-16"
-                      objectFit="cover"
-                    />
-                  )}
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent2Part2}
-                </div>
-                <div className="smallHeading mt-8 md:mt-10">
-                  {work?.attributes?.subheading3}
-                </div>
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent3Part1}
-                </div>
-                {work?.attributes?.image5 &&
-                  work?.attributes?.image5 !== "" && (
-                    <Image
-                      width={500}
-                      height={300}
-                      alt="attributes"
-                      src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.image5}.png`}
-                      loading="lazy"
-                      layout="responsive"
-                      className="w-full my-8 md:my-16"
-                      objectFit="cover"
-                    />
-                  )}
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.subheadingContent3Part2}
-                </div>
-                <div className="headingBlack mt-8 md:mt-10">
-                  {work?.attributes?.conclusionHeading}
-                </div>
-                <div className="paragraphBlack mt-2">
-                  {work?.attributes?.conclusionContent}
-                </div>
+                <ReactMarkdown data={work?.attributes?.blogData3} />
                 <div className="mt-8 md:mt-10 flex flex-col md:flex-row w-full justify-between">
                   <div className="flex flex-row items-center mb-5 md:mb-0">
                     <div className="flex items-center h-[60px] md:h-[70px] w-[60px] md:w-[70px] mr-4 overflow-hidden rounded-[50%]">
@@ -187,7 +81,7 @@ function BlogDetail() {
                             width={70}
                             height={70}
                             alt="attributes"
-                            src={`https://beta.themediagale.com/public_images/blogs/${work?.attributes?.authorImage}.png`}
+                            src={`${work?.attributes?.authorImage.data.attributes.url}`}
                             loading="lazy"
                             className="w-full h-full"
                             layout="responsive"

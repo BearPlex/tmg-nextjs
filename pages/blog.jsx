@@ -27,7 +27,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
+      .get("https://app.themediagale.com/api/blogs?populate=*")
       .then((res) => {
         setBlogs(res.data.data);
       })
@@ -69,7 +69,7 @@ const Blog = () => {
                 className="relative blog-banner w-full h-full cursor-pointer"
               >
                 <Image
-                  src={`https://beta.themediagale.com/public_images/blogs/${blogs[0]?.attributes.cardImage}.png`}
+                  src={blogs[0]?.attributes?.cardImage?.data?.attributes?.url}
                   // src={bannerImage}
                   alt="banner"
                   width={1300}

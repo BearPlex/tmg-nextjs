@@ -17,9 +17,7 @@ const EmployeeCards = () => {
   const [card, setCard] = useState([]);
   useEffect(() => {
     axios
-      .get(
-        "https://tmg-strapi-w6pu3.ondigitalocean.app/api/employee-cards?populate=*"
-      )
+      .get("https://app.themediagale.com/api/employee-cards?populate=*")
       .then((res) => {
         const sortedImages = [...res.data.data].sort((a, b) => {
           return a.attributes.cardNumber - b.attributes.cardNumber;
@@ -71,7 +69,7 @@ const EmployeeCards = () => {
                         <Image
                           width={400}
                           height={100}
-                          src={`https://beta.themediagale.com/public_images/employeeCard/${member?.attributes?.image}.png`}
+                          src={member?.attributes?.image.data.attributes.url}
                           layout="responsive"
                           loading="eager"
                           decoding="sync"

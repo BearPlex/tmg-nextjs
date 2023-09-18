@@ -28,9 +28,7 @@ function BlogDetail() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get(
-        `https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs/${id}?populate=*`
-      )
+      .get(`https://app.themediagale.com/api/blogs/${id}?populate=*`)
       .then((res) => {
         setWork(res.data.data);
       })

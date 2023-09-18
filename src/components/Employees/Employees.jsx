@@ -59,9 +59,7 @@ const Employees = () => {
   }
   useEffect(() => {
     axios
-      .get(
-        "https://tmg-strapi-w6pu3.ondigitalocean.app/api/employees?populate=*"
-      )
+      .get("https://app.themediagale.com/api/employees?populate=*")
       .then((res) => {
         const sortedImages = [...res.data.data].sort((a, b) => {
           return a.attributes.imageNumber - b.attributes.imageNumber;
@@ -97,7 +95,7 @@ const Employees = () => {
                     <Image
                       width={500}
                       height={513}
-                      src={`https://beta.themediagale.com/public_images/employee/${member?.attributes?.image}.png`}
+                      src={member?.attributes?.image.data.attributes.url}
                       layout="fixed"
                       loading="eager"
                       decoding="sync"
@@ -171,7 +169,7 @@ const Employees = () => {
                           <Image
                             width={416}
                             height={330}
-                            src={`https://beta.themediagale.com/public_images/employee/${member?.attributes?.image}.png`}
+                            src={member?.attributes?.image.data.attributes.url}
                             layout="responsive"
                             loading="eager"
                             decoding="sync"

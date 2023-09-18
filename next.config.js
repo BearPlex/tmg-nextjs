@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     // domains: ["seal-app-fizgj.ondigitalocean.app"], // Add your domain here
     // domains: ["localhost"],
-    domains: ["https://beta.themediagale.com/public_images"],
+    domains: ["https://odus-themediagale.s3.us-west-2.amazonaws.com"],
   },
 };
 
@@ -13,7 +13,7 @@ module.exports = nextConfig;
 module.exports = {
   images: {
     unoptimized: true,
-    domains: ["https://beta.themediagale.com/public_images"],
+    domains: ["https://odus-themediagale.s3.us-west-2.amazonaws.com"],
     loader: "imgix",
     path: "",
   },

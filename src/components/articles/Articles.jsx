@@ -16,7 +16,7 @@ const Articles = () => {
   const router = useRouter();
   useEffect(() => {
     axios
-      .get("https://tmg-strapi-w6pu3.ondigitalocean.app/api/blogs?populate=*")
+      .get("https://app.themediagale.com/api/blogs?populate=*")
       .then((res) => {
         setArticles(res.data.data);
       })
@@ -78,7 +78,7 @@ const Articles = () => {
                         height={100}
                         className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
                         alt="Product Image"
-                        src={`https://beta.themediagale.com/public_images/blogs/${article.attributes.cardImage}.png`}
+                        src={article.attributes.cardImage.data.attributes.url}
                       />
                       <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>

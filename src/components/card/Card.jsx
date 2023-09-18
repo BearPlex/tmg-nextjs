@@ -22,7 +22,7 @@ const Card = (props) => {
                   <Image
                     className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
                     alt="Product Image"
-                    src={`https://beta.themediagale.com/public_images/blogs/${blog?.attributes.cardImage}.png`}
+                    src={blog?.attributes.cardImage.data.attributes.url}
                     height={150}
                     width={150}
                     layout="responsive"

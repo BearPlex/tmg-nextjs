@@ -25,9 +25,7 @@ function Seo() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get(
-        "https://tmg-strapi-w6pu3.ondigitalocean.app/api/work-kinimos?populate=*"
-      )
+      .get("https://app.themediagale.com/api/work-kinimos?populate=*")
       .then((res) => {
         const sortedWork = [...res.data.data].sort((a, b) => {
           const dateA = new Date(a.attributes.publishedAt);
