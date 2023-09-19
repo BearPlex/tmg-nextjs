@@ -735,3 +735,21 @@ footer svg:hover path {
     height: 450px;
   }
 }
+ol.custom-counter {
+  counter-reset: list-counter;
+  list-style: none;
+}
+
+li.custom-list-item {
+  position: relative;
+  counter-increment: list-counter;
+  margin-left: 1.5rem;
+}
+
+li.custom-list-item:before {
+  content: counter(list-counter) ". ";
+  position: absolute;
+  left: -1.5rem; /* Adjust as needed for spacing */
+  color: #333; /* Adjust color as needed */
+  font-weight: normal;
+}

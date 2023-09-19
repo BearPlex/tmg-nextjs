@@ -9,16 +9,30 @@ const ReactMarkdownComponent = ({ data }) => {
     xl: "1280px",
   };
   const CustomH1 = ({ children }) => (
-    <h1 className="largeHeading blackHeading mt-8 mb-8">{children}</h1>
+    <h1 className="largeHeading blackHeading mt-10 mb-10">{children}</h1>
   );
   const CustomH2 = ({ children }) => (
-    <h2 className="heading blackHeading mt-6 mb-6">{children}</h2>
+    <h2 className="heading blackHeading mt-8 mb-8">{children}</h2>
   );
   const CustomH3 = ({ children }) => (
-    <h2 className="smallHeading blackHeading  mt-4 mb-4">{children}</h2>
+    <h2 className="smallHeading blackHeading font-bold mt-6 mb-6">
+      {children}
+    </h2>
   );
+  const CustomOL = ({ children }) => (
+    <ol className="custom-counter paragraph blackDescriptionText">
+      {children}
+    </ol>
+  );
+
+  const CustomLI = ({ children }) => (
+    <li className="custom-list-item paragraph blackDescriptionText">
+      {children}
+    </li>
+  );
+
   const CustomP = ({ children }) => (
-    <p className="paragraph blackDescriptionText">{children}</p>
+    <p className="paragraph blackDescriptionText mt-4 mb-4">{children}</p>
   );
   const CustomImage = ({ src, alt }) => (
     <div className="mt-16 mb-16">
@@ -37,6 +51,8 @@ const ReactMarkdownComponent = ({ data }) => {
     h3: CustomH3,
     p: CustomP,
     img: CustomImage,
+    ol: CustomOL,
+    li: CustomLI,
   };
   return (
     <div>

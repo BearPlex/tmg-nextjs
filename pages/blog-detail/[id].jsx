@@ -63,7 +63,7 @@ function BlogDetail() {
             <div className="max-w-full">
               <div className="max-w-full md:max-w-[70%] mx-auto">
                 <ReactMarkdown data={work?.attributes?.blogData2} />
-                <div className="left-border">
+                <div className="left-border mb-8 md:mb-16">
                   <div className="headingBlack mt-8 md:mt-10">
                     {work?.attributes?.quote}
                   </div>
@@ -72,7 +72,7 @@ function BlogDetail() {
                   </div>
                 </div>
                 <ReactMarkdown data={work?.attributes?.blogData3} />
-                <div className="mt-8 md:mt-10 flex flex-col md:flex-row w-full justify-between">
+                <div className="mt-10 md:mt-16 flex flex-col md:flex-row w-full justify-between">
                   <div className="flex flex-row items-center mb-5 md:mb-0">
                     <div className="flex items-center h-[60px] md:h-[70px] w-[60px] md:w-[70px] mr-4 overflow-hidden rounded-[50%]">
                       {work?.attributes?.authorImage &&
