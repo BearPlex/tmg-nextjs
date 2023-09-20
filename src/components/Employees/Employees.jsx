@@ -95,7 +95,7 @@ const Employees = () => {
                     <Image
                       width={500}
                       height={513}
-                      src={member?.attributes?.image.data.attributes.url}
+                      src={member?.attributes?.image?.data?.attributes?.url}
                       layout="fixed"
                       loading="eager"
                       decoding="sync"
@@ -169,7 +169,9 @@ const Employees = () => {
                           <Image
                             width={416}
                             height={330}
-                            src={member?.attributes?.image.data.attributes.url}
+                            src={
+                              member?.attributes?.image?.data?.attributes?.url
+                            }
                             layout="responsive"
                             loading="eager"
                             decoding="sync"

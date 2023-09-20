@@ -19,11 +19,11 @@ const ReactMarkdownComponent = ({ data }) => {
       {children}
     </h2>
   );
-  const CustomOL = ({ children }) => (
-    <ol className="custom-counter paragraph blackDescriptionText">
-      {children}
-    </ol>
-  );
+  // const CustomOL = ({ children }) => (
+  //   <ol className="custom-counter paragraph blackDescriptionText">
+  //     {children}
+  //   </ol>
+  // );
 
   const CustomLI = ({ children }) => (
     <li className="custom-list-item paragraph blackDescriptionText">
@@ -31,20 +31,42 @@ const ReactMarkdownComponent = ({ data }) => {
     </li>
   );
 
+  // const CustomUL = ({ children }) => <ul className="custom-ul">{children}</ul>;
+  const CustomOL = ({ children }) => (
+    <ol className="custom-counter paragraph blackDescriptionText">
+      {children}
+    </ol>
+  );
+
+  const CustomUL = ({ children }) => (
+    <ul className="custom-ul paragraph blackDescriptionText">{children}</ul>
+  );
+
   const CustomP = ({ children }) => (
     <p className="paragraph blackDescriptionText mt-4 mb-4">{children}</p>
   );
   const CustomImage = ({ src, alt }) => (
-    <div className="mt-16 mb-16">
+    <span className="isolate">
       <Image
         src={src}
         alt={alt}
         width={10}
         height={10}
-        className="aspect-[16/10] w-full object-cover"
+        className="aspect-[16/10] w-full object-cover mt-16 mb-16"
       />
-    </div>
+    </span>
   );
+  const CustomLink = ({ href, children }) => (
+    <a
+      href={href}
+      className="custom-link paragraph"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+
   const renderers = {
     h1: CustomH1,
     h2: CustomH2,
@@ -53,6 +75,8 @@ const ReactMarkdownComponent = ({ data }) => {
     img: CustomImage,
     ol: CustomOL,
     li: CustomLI,
+    ul: CustomUL,
+    a: CustomLink,
   };
   return (
     <div>

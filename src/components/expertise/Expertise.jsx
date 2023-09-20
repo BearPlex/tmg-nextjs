@@ -35,7 +35,7 @@ const Expertise = (props) => {
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
-                        imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                        imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -69,7 +69,7 @@ const Expertise = (props) => {
                     >
                       <WorkCard
                         backGroundBlack={backGroundBlack}
-                        imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                        imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -117,7 +117,7 @@ const Expertise = (props) => {
                   >
                     <WorkCard
                       backGroundBlack={backGroundBlack}
-                      imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                      imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                       cardText={item.attributes?.cardText}
                       featured_title={item.attributes?.featured_title}
                       gallery_first_description={

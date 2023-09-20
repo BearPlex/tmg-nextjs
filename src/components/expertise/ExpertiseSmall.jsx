@@ -32,7 +32,7 @@ const ExpertiseSmall = (props) => {
                             >
                               <WorkCard
                                 backGroundBlack={backGroundBlack}
-                                imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                                imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                                 featured_title={item.attributes?.featured_title}
                                 gallery_first_description={
                                   item.attributes?.gallery_first_description
@@ -60,7 +60,7 @@ const ExpertiseSmall = (props) => {
                             >
                               <WorkCard
                                 backGroundBlack={backGroundBlack}
-                                imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                                imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                                 featured_title={item.attributes?.featured_title}
                                 gallery_first_description={
                                   item.attributes?.gallery_first_description
@@ -95,7 +95,7 @@ const ExpertiseSmall = (props) => {
                             >
                               <WorkCard
                                 backGroundBlack={backGroundBlack}
-                                imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                                imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                                 featured_title={item.attributes?.featured_title}
                                 cardText={item.attributes?.cardText}
                                 gallery_first_description={
@@ -124,7 +124,7 @@ const ExpertiseSmall = (props) => {
                             >
                               <WorkCard
                                 backGroundBlack={backGroundBlack}
-                                imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                                imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                                 featured_title={item.attributes?.featured_title}
                                 gallery_first_description={
                                   item.attributes?.gallery_first_description
@@ -166,7 +166,7 @@ const ExpertiseSmall = (props) => {
                       >
                         <WorkCard
                           backGroundBlack={backGroundBlack}
-                          imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                          imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                           featured_title={item.attributes?.featured_title}
                           gallery_first_description={
                             item.attributes?.gallery_first_description
@@ -194,7 +194,7 @@ const ExpertiseSmall = (props) => {
                         >
                           <WorkCard
                             backGroundBlack={backGroundBlack}
-                            imageSrc={`${item.attributes?.cardImage.data.attributes.url}`}
+                            imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
                             featured_title={item.attributes?.featured_title}
                             gallery_first_description={
                               item.attributes?.gallery_first_description

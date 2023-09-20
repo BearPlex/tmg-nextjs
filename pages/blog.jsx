@@ -68,16 +68,22 @@ const Blog = () => {
                 onClick={() => pushWork(blogs[0]?.attributes?.slug)}
                 className="relative blog-banner w-full h-full cursor-pointer"
               >
-                <Image
-                  src={blogs[0]?.attributes?.cardImage?.data?.attributes?.url}
-                  // src={bannerImage}
-                  alt="banner"
-                  width={1300}
-                  height={550}
-                  layout="responsive"
-                  objectFit="cover"
-                  className="rounded-xl"
-                />
+                {blogs[0]?.attributes?.cardImage &&
+                  blogs[0]?.attributes?.cardImage?.data?.attributes?.url !==
+                    "" && (
+                    <Image
+                      src={
+                        blogs[0]?.attributes?.cardImage?.data?.attributes?.url
+                      }
+                      // src={bannerImage}
+                      alt="banner"
+                      width={1300}
+                      height={550}
+                      layout="responsive"
+                      objectFit="cover"
+                      className="rounded-xl"
+                    />
+                  )}
 
                 <div className="absolute left-10 bottom-10">
                   <span className="gradientText inline-block smallText font-semibold tracking-[1.5px] pb-1 md:pb-5">

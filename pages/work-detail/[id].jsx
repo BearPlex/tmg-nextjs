@@ -51,17 +51,18 @@ function WorkDetail() {
         <div className="max-w-7xl mx-auto">
           <section className="pagePaddingX">
             <div className="flex justify-center mt-9 md:mt-20 ">
-              {work?.attributes?.image1 && work?.attributes?.image1 !== "" && (
-                <Image
-                  width={500}
-                  height={300}
-                  alt="attributes"
-                  src={`${work?.attributes?.image1?.data.attributes.url}`}
-                  loading="lazy"
-                  layout="responsive"
-                  objectFit="cover"
-                />
-              )}
+              {work?.attributes?.image1 &&
+                work?.attributes?.image1?.data?.attributes?.url !== "" && (
+                  <Image
+                    width={500}
+                    height={300}
+                    alt="attributes"
+                    src={`${work?.attributes?.image1?.data?.attributes?.url}`}
+                    loading="lazy"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                )}
             </div>
             <h1 className="mt-3 md:mt-0 text-center largeHeading gradientText lg:pt-40">
               {work?.attributes?.featured_title}{" "}
@@ -83,29 +84,31 @@ function WorkDetail() {
 
           <section className="flex items-center justify-center flex-col gap-10 md:gap-16">
             <div className="max-w-[70%]">
-              {work?.attributes?.image2 && work?.attributes?.image2 !== "" && (
+              {work?.attributes?.image2 &&
+                work?.attributes?.image2?.data?.attributes?.url !== "" && (
+                  <Image
+                    width={500}
+                    height={1000}
+                    alt="attributes"
+                    src={`${work?.attributes?.image2?.data?.attributes?.url}`}
+                    loading="lazy"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                )}
+            </div>
+            {work?.attributes?.image3 &&
+              work?.attributes?.image3?.data?.attributes?.url !== "" && (
                 <Image
                   width={500}
-                  height={1000}
+                  height={300}
                   alt="attributes"
-                  src={`${work?.attributes?.image2?.data.attributes.url}`}
+                  src={`${work?.attributes?.image3?.data?.attributes?.url}`}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
                 />
               )}
-            </div>
-            {work?.attributes?.image3 && work?.attributes?.image3 !== "" && (
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`${work?.attributes?.image3?.data.attributes.url}`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
-            )}
           </section>
           <div className="pagePaddingX w-full flex flex-col">
             <div className="py-20 md:py-40 lg:py-60">
@@ -118,30 +121,32 @@ function WorkDetail() {
             </div>
           </div>
           <div className="flex justify-center mt-6 md:mt-10">
-            {work?.attributes?.image4 && work?.attributes?.image4 !== "" && (
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`${work?.attributes?.image4?.data.attributes.url}`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
-            )}
+            {work?.attributes?.image4 &&
+              work?.attributes?.image4?.data?.attributes?.url !== "" && (
+                <Image
+                  width={500}
+                  height={300}
+                  alt="attributes"
+                  src={`${work?.attributes?.image4?.data?.attributes?.url}`}
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              )}
           </div>
           <div className="flex justify-center my-4 md:my-10">
-            {work?.attributes?.image5 && work?.attributes?.image5 !== "" && (
-              <Image
-                width={500}
-                height={300}
-                alt="attributes"
-                src={`${work?.attributes?.image5?.data.attributes.url}`}
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-              />
-            )}
+            {work?.attributes?.image5 &&
+              work?.attributes?.image5?.data?.attributes?.url !== "" && (
+                <Image
+                  width={500}
+                  height={300}
+                  alt="attributes"
+                  src={`${work?.attributes?.image5?.data?.attributes?.url}`}
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              )}
           </div>
         </div>
         <Section4card />

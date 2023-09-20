@@ -19,15 +19,19 @@ const Card = (props) => {
             >
               <div className="relative h-full">
                 <div className="h-full w-full overflow-hidden">
-                  <Image
-                    className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
-                    alt="Product Image"
-                    src={blog?.attributes.cardImage.data.attributes.url}
-                    height={150}
-                    width={150}
-                    layout="responsive"
-                    objectFit="cover"
-                  />
+                  {blog?.attributes.cardImage &&
+                    blog?.attributes.cardImage?.data?.attributes?.url !==
+                      "" && (
+                      <Image
+                        className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
+                        alt="Product Image"
+                        src={blog?.attributes.cardImage?.data?.attributes?.url}
+                        height={150}
+                        width={150}
+                        layout="responsive"
+                        objectFit="cover"
+                      />
+                    )}
                   <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                 </div>
               </div>

@@ -735,21 +735,51 @@ footer svg:hover path {
     height: 450px;
   }
 }
-ol.custom-counter {
+.custom-counter {
   counter-reset: list-counter;
   list-style: none;
 }
 
-li.custom-list-item {
+.custom-counter .custom-list-item {
   position: relative;
   counter-increment: list-counter;
   margin-left: 1.5rem;
 }
 
-li.custom-list-item:before {
+.custom-counter .custom-list-item:before {
   content: counter(list-counter) ". ";
   position: absolute;
-  left: -1.5rem; /* Adjust as needed for spacing */
-  color: #333; /* Adjust color as needed */
+  left: -1.5rem;
+  color: #333;
   font-weight: normal;
+}
+
+.custom-ul {
+  list-style: none;
+}
+
+.custom-ul .custom-list-item {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.custom-ul .custom-list-item:before {
+  content: "• ";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 900;
+  left: -1.5rem;
+  color: #333;
+  font-weight: normal;
+}
+a.custom-link {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a.custom-link:hover {
+  color: darkblue;
+  text-decoration: underline;
 }

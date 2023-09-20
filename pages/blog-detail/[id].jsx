@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Header from "../../src/components/header/Header";
 import axios from "axios";
 import copySvg from "../../src/assets/svg/copySvg.svg";
@@ -13,45 +14,55 @@ import {
   linkedinSvg,
   twitterSvg,
 } from "../../src/helpers/Helpers";
-function BlogDetail() {
-  const router = useRouter();
-  const {
-    query: { id },
-  } = router;
-  const props = {
-    id,
-  };
-  const [work, setWork] = useState([]);
-  useEffect(() => {
-    if (!router.isReady) return;
-    const fetchData = () => {
-      try {
-        axios
-          .get(
-            `https://app.themediagale.com/api/blogs?filters[slug][$eq]=${id}&populate=*`
-          )
-          .then((res) => {
-            // setWork(res.data.data);
-            const allWorks = res.data.data;
-            const matchingWork = allWorks.find(
-              (workItem) => workItem.attributes.slug === id
-            );
+function BlogDetail({ work }) {
+  // const router = useRouter();
+  // const {
+  //   query: { id },
+  // } = router;
+  // const props = {
+  //   id,
+  // };
+  // const [work, setWork] = useState([]);
+  // useEffect(() => {
+  //   if (!router.isReady) return;
+  //   const fetchData = () => {
+  //     try {
+  //       axios
+  //         .get(
+  //           `https://app.themediagale.com/api/blogs?filters[slug][$eq]=${id}&populate=*`
+  //         )
+  //         .then((res) => {
+  //           // setWork(res.data.data);
+  //           const allWorks = res.data.data;
+  //           const matchingWork = allWorks.find(
+  //             (workItem) => workItem.attributes.slug === id
+  //           );
 
-            if (matchingWork) {
-              setWork(matchingWork);
-            } else {
-              console.error(`No work found for slug ${id}`);
-            }
-          });
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    if (id) fetchData();
-  }, [id, router.isReady]);
+  //           if (matchingWork) {
+  //             setWork(matchingWork);
+  //           } else {
+  //             console.error(`No work found for slug ${id}`);
+  //           }
+  //         });
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
+  //   if (id) fetchData();
+  // }, [id, router.isReady]);
 
   return (
     <>
+      <Head>
+        <title>{work?.attributes?.title}</title>
+        <meta name="description" content={work?.attributes?.cardText} />
+        <meta property="og:title" content={work?.attributes?.title} />
+        <meta property="og:description" content={work?.attributes?.cardText} />
+        <meta
+          property="og:image"
+          content={work?.attributes?.cardImage?.data?.attributes?.url}
+        />
+      </Head>
       <PageWrapper>
         <div className="w-full">
           <section className="max-w-7xl mx-auto pagePaddingX">
@@ -76,12 +87,13 @@ function BlogDetail() {
                   <div className="flex flex-row items-center mb-5 md:mb-0">
                     <div className="flex items-center h-[60px] md:h-[70px] w-[60px] md:w-[70px] mr-4 overflow-hidden rounded-[50%]">
                       {work?.attributes?.authorImage &&
-                        work?.attributes?.authorImage !== "" && (
+                        work?.attributes?.authorImage?.data?.attributes?.url !==
+                          "" && (
                           <Image
                             width={70}
                             height={70}
                             alt="attributes"
-                            src={`${work?.attributes?.authorImage.data.attributes.url}`}
+                            src={`${work?.attributes?.authorImage?.data?.attributes?.url}`}
                             loading="lazy"
                             className="w-full h-full"
                             layout="responsive"
@@ -157,6 +169,24 @@ function BlogDetail() {
       </PageWrapper>
     </>
   );
+}
+export async function getServerSideProps(context) {
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/blogs?filters[slug][$eq]=${context.params.id}&populate=*`
+    );
+    const allWorks = res.data.data;
+    const matchingWork = allWorks.find(
+      (workItem) => workItem.attributes.slug === context.params.id
+    );
+    console.log(matchingWork);
+    console.log("matchingWork SERVER");
+    return { props: { work: matchingWork } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // If there's an error, you can return an empty object or handle this in some other way.
+    return { props: { work: {} } };
+  }
 }
 
 export default BlogDetail;

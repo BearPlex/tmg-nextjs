@@ -66,17 +66,23 @@ const EmployeeCards = () => {
                   >
                     <div className="relative h-full">
                       <div className="h-full w-full overflow-hidden">
-                        <Image
-                          width={400}
-                          height={100}
-                          src={member?.attributes?.image.data.attributes.url}
-                          layout="responsive"
-                          loading="eager"
-                          decoding="sync"
-                          className="w-full overflow-hidden"
-                          alt={member?.attributes?.imageAlt}
-                          objectFit="fill"
-                        />
+                        {member?.attributes?.image &&
+                          member?.attributes?.image?.data?.attributes?.url !==
+                            "" && (
+                            <Image
+                              width={400}
+                              height={100}
+                              src={
+                                member?.attributes?.image?.data?.attributes?.url
+                              }
+                              layout="responsive"
+                              loading="eager"
+                              decoding="sync"
+                              className="w-full overflow-hidden"
+                              alt={member?.attributes?.imageAlt}
+                              objectFit="fill"
+                            />
+                          )}
                         <div
                           style={{
                             position: "absolute",

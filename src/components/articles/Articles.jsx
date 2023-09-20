@@ -73,13 +73,20 @@ const Articles = () => {
                 >
                   <div className="relative h-full">
                     <div className="h-full w-full overflow-hidden">
-                      <Image
-                        width={500}
-                        height={100}
-                        className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
-                        alt="Product Image"
-                        src={article.attributes.cardImage.data.attributes.url}
-                      />
+                      {article?.attributes?.cardImage &&
+                        article?.attributes?.cardImage?.data?.attributes
+                          ?.url !== "" && (
+                          <Image
+                            width={500}
+                            height={100}
+                            className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
+                            alt="Product Image"
+                            src={
+                              article.attributes.cardImage?.data?.attributes
+                                ?.url
+                            }
+                          />
+                        )}
                       <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
                     </div>
                   </div>
