@@ -56,7 +56,12 @@ function WorkDetail() {
                   <Image
                     width={500}
                     height={300}
-                    alt="attributes"
+                    alt={
+                      work?.attributes?.image1Alt &&
+                      work?.attributes?.image1Alt !== ""
+                        ? work?.attributes?.image1Alt
+                        : "work image"
+                    }
                     src={`${work?.attributes?.image1?.data?.attributes?.url}`}
                     loading="lazy"
                     layout="responsive"
@@ -89,7 +94,12 @@ function WorkDetail() {
                   <Image
                     width={500}
                     height={1000}
-                    alt="attributes"
+                    alt={
+                      work?.attributes?.image2Alt &&
+                      work?.attributes?.image2Alt !== ""
+                        ? work?.attributes?.image2Alt
+                        : "work image"
+                    }
                     src={`${work?.attributes?.image2?.data?.attributes?.url}`}
                     loading="lazy"
                     layout="responsive"
@@ -102,7 +112,12 @@ function WorkDetail() {
                 <Image
                   width={500}
                   height={300}
-                  alt="attributes"
+                  alt={
+                    work?.attributes?.image3Alt &&
+                    work?.attributes?.image3Alt !== ""
+                      ? work?.attributes?.image3Alt
+                      : "work image"
+                  }
                   src={`${work?.attributes?.image3?.data?.attributes?.url}`}
                   loading="lazy"
                   layout="responsive"
@@ -126,7 +141,12 @@ function WorkDetail() {
                 <Image
                   width={500}
                   height={300}
-                  alt="attributes"
+                  alt={
+                    work?.attributes?.image4Alt &&
+                    work?.attributes?.image4Alt !== ""
+                      ? work?.attributes?.image4Alt
+                      : "work image"
+                  }
                   src={`${work?.attributes?.image4?.data?.attributes?.url}`}
                   loading="lazy"
                   layout="responsive"
@@ -140,7 +160,12 @@ function WorkDetail() {
                 <Image
                   width={500}
                   height={300}
-                  alt="attributes"
+                  alt={
+                    work?.attributes?.image5Alt &&
+                    work?.attributes?.image5Alt !== ""
+                      ? work?.attributes?.image5Alt
+                      : "work image"
+                  }
                   src={`${work?.attributes?.image5?.data?.attributes?.url}`}
                   loading="lazy"
                   layout="responsive"

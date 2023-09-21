@@ -12,6 +12,7 @@ const WorkCard = (props) => {
     seo_tag,
     index,
     backGroundBlack,
+    alt,
   } = props;
   return (
     <div className="mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
@@ -23,7 +24,7 @@ const WorkCard = (props) => {
               height={300}
               className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
               src={imageSrc}
-              alt="work images"
+              alt={alt}
               loading="lazy"
               decoding="async"
               layout="responsive"

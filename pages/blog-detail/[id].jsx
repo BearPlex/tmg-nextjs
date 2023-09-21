@@ -92,7 +92,12 @@ function BlogDetail({ work }) {
                           <Image
                             width={70}
                             height={70}
-                            alt="attributes"
+                            alt={
+                              work?.attributes?.authorImageAlt &&
+                              work?.attributes?.authorImageAlt !== ""
+                                ? work?.attributes?.authorImageAlt
+                                : "author image"
+                            }
                             src={`${work?.attributes?.authorImage?.data?.attributes?.url}`}
                             loading="lazy"
                             className="w-full h-full"

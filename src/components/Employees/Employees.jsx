@@ -100,7 +100,12 @@ const Employees = () => {
                       loading="eager"
                       decoding="sync"
                       className="w-full object-cover h-[513px]"
-                      alt={member?.attributes?.imageAlt}
+                      alt={
+                        member?.attributes?.imageAlt &&
+                        member?.attributes?.imageAlt !== ""
+                          ? member?.attributes?.imageAlt
+                          : "employee"
+                      }
                       objectFit="cover"
                     />
                   </SwiperSlide>
@@ -176,7 +181,12 @@ const Employees = () => {
                             loading="eager"
                             decoding="sync"
                             className="w-full overflow-hidden"
-                            alt={member?.attributes?.imageAlt}
+                            alt={
+                              member?.attributes?.imageAlt &&
+                              member?.attributes?.imageAlt !== ""
+                                ? member?.attributes?.imageAlt
+                                : "employee"
+                            }
                             objectFit="contain"
                           />
                         </div>

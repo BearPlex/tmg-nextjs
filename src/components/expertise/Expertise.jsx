@@ -36,6 +36,12 @@ const Expertise = (props) => {
                       <WorkCard
                         backGroundBlack={backGroundBlack}
                         imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
+                        alt={
+                          item.attributes?.cardImageAlt &&
+                          item.attributes?.cardImageAlt !== ""
+                            ? `${item.attributes?.cardImageAlt}`
+                            : "workImage"
+                        }
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -70,6 +76,12 @@ const Expertise = (props) => {
                       <WorkCard
                         backGroundBlack={backGroundBlack}
                         imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
+                        alt={
+                          item.attributes?.cardImageAlt &&
+                          item.attributes?.cardImageAlt !== ""
+                            ? `${item.attributes?.cardImageAlt}`
+                            : "workImage"
+                        }
                         featured_title={item.attributes?.featured_title}
                         gallery_first_description={
                           item.attributes?.gallery_first_description
@@ -118,6 +130,12 @@ const Expertise = (props) => {
                     <WorkCard
                       backGroundBlack={backGroundBlack}
                       imageSrc={`${item.attributes?.cardImage?.data?.attributes?.url}`}
+                      alt={
+                        item.attributes?.cardImageAlt &&
+                        item.attributes?.cardImageAlt !== ""
+                          ? `${item.attributes?.cardImageAlt}`
+                          : "workImage"
+                      }
                       cardText={item.attributes?.cardText}
                       featured_title={item.attributes?.featured_title}
                       gallery_first_description={

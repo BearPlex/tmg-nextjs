@@ -28,7 +28,12 @@ const Card = (props) => {
                         src={blog?.attributes.cardImage?.data?.attributes?.url}
                         height={150}
                         width={150}
-                        layout="responsive"
+                        alt={
+                          blog?.attributes?.cardImageAlt &&
+                          blog?.attributes?.cardImageAlt !== ""
+                            ? blog?.attributes?.cardImageAlt
+                            : "image"
+                        }
                         objectFit="cover"
                       />
                     )}

@@ -75,8 +75,12 @@ const Blog = () => {
                       src={
                         blogs[0]?.attributes?.cardImage?.data?.attributes?.url
                       }
-                      // src={bannerImage}
-                      alt="banner"
+                      alt={
+                        blogs[0]?.attributes?.cardImageAlt &&
+                        blogs[0]?.attributes?.cardImageAlt !== ""
+                          ? blogs[0]?.attributes?.cardImageAlt
+                          : "blog image"
+                      }
                       width={1300}
                       height={550}
                       layout="responsive"

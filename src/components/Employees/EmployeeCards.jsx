@@ -79,7 +79,12 @@ const EmployeeCards = () => {
                               loading="eager"
                               decoding="sync"
                               className="w-full overflow-hidden"
-                              alt={member?.attributes?.imageAlt}
+                              alt={
+                                member?.attributes?.imageAlt &&
+                                member?.attributes?.imageAlt !== ""
+                                  ? member?.attributes?.imageAlt
+                                  : "image"
+                              }
                               objectFit="fill"
                             />
                           )}
