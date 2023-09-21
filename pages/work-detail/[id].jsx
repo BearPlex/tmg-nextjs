@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Header from "../../src/components/header/Header";
 import ScreenShot from "../../src/assets/images/kinimo-ss1.png";
 import axios from "axios";
@@ -8,45 +9,19 @@ import Footer from "../../src/components/footer/Footer";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import Image from "../../src/components/Image/Image";
 
-function WorkDetail() {
-  const router = useRouter();
-  const {
-    query: { id },
-  } = router;
-  const props = {
-    id,
-  };
-  const [work, setWork] = useState([]);
-  useEffect(() => {
-    if (!router.isReady) return;
-    const fetchData = () => {
-      try {
-        axios
-          .get(
-            `https://app.themediagale.com/api/work-kinimos?filters[slug][$eq]=${id}&populate=*`
-          )
-          .then((res) => {
-            // setWork(res.data.data);
-            const allWorks = res.data.data;
-            const matchingWork = allWorks.find(
-              (workItem) => workItem.attributes.slug === id
-            );
-
-            if (matchingWork) {
-              setWork(matchingWork);
-            } else {
-              console.error(`No work found for slug ${id}`);
-            }
-          });
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    if (id) fetchData();
-  }, [id, router.isReady]);
-
+function WorkDetail({ work }) {
   return (
     <>
+      <Head>
+        <title>{work?.attributes?.title}</title>
+        <meta name="description" content={work?.attributes?.cardText} />
+        <meta property="og:title" content={work?.attributes?.title} />
+        <meta property="og:description" content={work?.attributes?.cardText} />
+        <meta
+          property="og:image"
+          content={work?.attributes?.cardImage?.data?.attributes?.url}
+        />
+      </Head>
       <PageWrapper>
         <div className="max-w-7xl mx-auto">
           <section className="pagePaddingX">
@@ -179,6 +154,25 @@ function WorkDetail() {
       </PageWrapper>
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/work-kinimos?filters[slug][$eq]=${context.params.id}&populate=*`
+    );
+    const allWorks = res.data.data;
+    const matchingWork = allWorks.find(
+      (workItem) => workItem.attributes.slug === context.params.id
+    );
+    console.log(matchingWork);
+    console.log("matchingWork SERVER");
+    return { props: { work: matchingWork } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // If there's an error, you can return an empty object or handle this in some other way.
+    return { props: { work: {} } };
+  }
 }
 
 export default WorkDetail;

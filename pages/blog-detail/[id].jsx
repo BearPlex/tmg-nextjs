@@ -15,42 +15,6 @@ import {
   twitterSvg,
 } from "../../src/helpers/Helpers";
 function BlogDetail({ work }) {
-  // const router = useRouter();
-  // const {
-  //   query: { id },
-  // } = router;
-  // const props = {
-  //   id,
-  // };
-  // const [work, setWork] = useState([]);
-  // useEffect(() => {
-  //   if (!router.isReady) return;
-  //   const fetchData = () => {
-  //     try {
-  //       axios
-  //         .get(
-  //           `https://app.themediagale.com/api/blogs?filters[slug][$eq]=${id}&populate=*`
-  //         )
-  //         .then((res) => {
-  //           // setWork(res.data.data);
-  //           const allWorks = res.data.data;
-  //           const matchingWork = allWorks.find(
-  //             (workItem) => workItem.attributes.slug === id
-  //           );
-
-  //           if (matchingWork) {
-  //             setWork(matchingWork);
-  //           } else {
-  //             console.error(`No work found for slug ${id}`);
-  //           }
-  //         });
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-  //   if (id) fetchData();
-  // }, [id, router.isReady]);
-
   return (
     <>
       <Head>
