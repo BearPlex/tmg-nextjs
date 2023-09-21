@@ -24,7 +24,7 @@ class ErrorBoundary extends React.Component {
 }
 
 const ImageComponent = ({
-  alt,
+  alt = "Image",
   width = 500,
   height = 500,
   src,
