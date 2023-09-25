@@ -8,9 +8,9 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <Script>
-          {`
+      <Head></Head>
+      <Script>
+        {`
             (function(w,d,s,l,i){
               w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
               var f=d.getElementsByTagName(s)[0],
@@ -20,8 +20,7 @@ function MyApp({ Component, pageProps }) {
               f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-NP537VKZ');
           `}
-        </Script>
-      </Head>
+      </Script>
       <Component {...pageProps} />;
     </>
   );
