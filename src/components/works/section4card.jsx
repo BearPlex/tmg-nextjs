@@ -7,7 +7,11 @@ import arrowUp from "../../assets/images/arrow-up.png";
 
 //
 
-function section4card() {
+function section4card({
+  conversionRate = 99.99,
+  sessionRate = 99.99,
+  bounceRate = 99.99,
+}) {
   return (
     <>
       <section className="background-gradient ">
@@ -30,7 +34,7 @@ function section4card() {
                 />
                 <div className="p-4">
                   <h2 className="largeHeading leading-[70px] font-bold mb-2 text-white">
-                    99.95%
+                    {conversionRate}%
                   </h2>
                   <p className="text-white">Increase in conversions</p>
                 </div>
@@ -46,7 +50,7 @@ function section4card() {
                 />
                 <div className="p-4">
                   <h2 className="largeHeading text-white font-bold mb-2">
-                    99.95%{" "}
+                    {sessionRate}%{" "}
                   </h2>
                   <p className="text-white">Increase in avg. session</p>
                 </div>
@@ -62,7 +66,7 @@ function section4card() {
                 />
                 <div className="p-4">
                   <h2 className="largeHeading  font-bold mb-2 text-white">
-                    99.95%
+                    {bounceRate}%
                   </h2>
                   <p className="text-white">Decrease in Bounce Rate</p>
                 </div>

@@ -7,21 +7,13 @@ import axios from "axios";
 import Section4card from "../../src/components/works/section4card";
 import Footer from "../../src/components/footer/Footer";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import Image from "../../src/components/Image/Image";
 
 function WorkDetail({ work }) {
   return (
     <>
-      <Head>
-        <title>{work?.attributes?.title}</title>
-        <meta name="description" content={work?.attributes?.cardText} />
-        <meta property="og:title" content={work?.attributes?.title} />
-        <meta property="og:description" content={work?.attributes?.cardText} />
-        <meta
-          property="og:image"
-          content={work?.attributes?.cardImage?.data?.attributes?.url}
-        />
-      </Head>
+      <SEOHeader metadata={work?.attributes?.headerData} />
       <PageWrapper>
         <div className="max-w-7xl mx-auto">
           <section className="pagePaddingX">
@@ -149,7 +141,11 @@ function WorkDetail({ work }) {
               )}
           </div>
         </div>
-        <Section4card />
+        <Section4card
+          conversionRate={work?.attributes?.conversionRate}
+          sessionRate={work?.attributes?.sessionRate}
+          bounceRate={work?.attributes?.bounceRate}
+        />
         <Footer />
       </PageWrapper>
     </>
@@ -165,8 +161,6 @@ export async function getServerSideProps(context) {
     const matchingWork = allWorks.find(
       (workItem) => workItem.attributes.slug === context.params.id
     );
-    console.log(matchingWork);
-    console.log("matchingWork SERVER");
     return { props: { work: matchingWork } };
   } catch (error) {
     console.error("Error fetching data:", error);

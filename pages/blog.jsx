@@ -29,7 +29,11 @@ const Blog = () => {
     axios
       .get("https://app.themediagale.com/api/blogs?populate=*")
       .then((res) => {
-        setBlogs(res.data.data);
+        const sortedBlogs = res.data.data.sort(
+          (a, b) =>
+            new Date(b.attributes.dateAdded) - new Date(a.attributes.dateAdded)
+        );
+        setBlogs(sortedBlogs);
       })
       .catch((err) => {
         console.log("Error", err);

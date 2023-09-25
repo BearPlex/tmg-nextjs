@@ -18,7 +18,11 @@ const Articles = () => {
     axios
       .get("https://app.themediagale.com/api/blogs?populate=*")
       .then((res) => {
-        setArticles(res.data.data);
+        const sortedBlogs = res.data.data.sort(
+          (a, b) =>
+            new Date(b.attributes.dateAdded) - new Date(a.attributes.dateAdded)
+        );
+        setArticles(sortedBlogs);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -64,7 +68,7 @@ const Articles = () => {
             modules={[Navigation]}
             className="swiper"
           >
-            {articles.map((article, index) => (
+            {articles?.map((article, index) => (
               <SwiperSlide key={index + 700}>
                 <div
                   onClick={() => pushWork(article?.attributes?.slug)}
@@ -80,14 +84,19 @@ const Articles = () => {
                             width={500}
                             height={100}
                             className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
-                            alt="Product Image"
+                            alt={
+                              article?.attributes?.cardImageAlt &&
+                              article?.attributes?.cardImageAlt !== ""
+                                ? article?.attributes?.cardImageAlt
+                                : "Product Image"
+                            }
                             src={
                               article.attributes.cardImage?.data?.attributes
                                 ?.url
                             }
                           />
                         )}
-                      <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div>
+                      {/* <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div> */}
                     </div>
                   </div>
                   <div className="pt-6  md:pt-8 relative group group-hover:ml-2 duration-300 transition-in-out">

@@ -18,12 +18,12 @@ const Card = (props) => {
               className="w-full lg:w-[32%] md:w-[48%] h-full mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 cursor-pointer"
             >
               <div className="relative h-full">
-                <div className="h-full w-full overflow-hidden">
+                <div className="h-full w-full overflow-hidden rounded-xl">
                   {blog?.attributes.cardImage &&
                     blog?.attributes.cardImage?.data?.attributes?.url !==
                       "" && (
                       <Image
-                        className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
+                        className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
                         src={blog?.attributes.cardImage?.data?.attributes?.url}
                         height={150}
                         width={150}
