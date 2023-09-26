@@ -82,14 +82,15 @@ const PrivacyPolicy = () => {
                 {" "}
                 The MediaGale follows a standard procedure of using log files.
                 These files log visitors when they visit websites. All hosting
-                companies do this and a part of hosting services' analytics. The
-                information collected by log files include internet protocol
-                (IP) addresses, browser type, Internet Service Provider (ISP),
-                date and time stamp, referring/exit pages, and possibly the
-                number of clicks. These are not linked to any information that
-                is personally identifiable. The purpose of the information is
-                for analyzing trends, administering the site, tracking users'
-                movement on the website, and gathering demographic information.
+                companies do this and a part of hosting services&apos;
+                analytics. The information collected by log files include
+                internet protocol (IP) addresses, browser type, Internet Service
+                Provider (ISP), date and time stamp, referring/exit pages, and
+                possibly the number of clicks. These are not linked to any
+                information that is personally identifiable. The purpose of the
+                information is for analyzing trends, administering the site,
+                tracking users&apos; movement on the website, and gathering
+                demographic information.
               </p>
               <div className="py-3" />
 
@@ -98,11 +99,11 @@ const PrivacyPolicy = () => {
               </div>
               <p className="paragraphBlack">
                 Like any other website, The MediaGale uses "cookies". These
-                cookies are used to store information including visitors'
+                cookies are used to store information including visitors&apos;
                 preferences, and the pages on the website that the visitor
                 accessed or visited. The information is used to optimize the
-                users' experience by customizing our web page content based on
-                visitors' browser type and/or other information.
+                users&apos; experience by customizing our web page content based
+                on visitors&apos; browser type and/or other information.
               </p>
               <div className="py-3" />
 
@@ -138,7 +139,7 @@ const PrivacyPolicy = () => {
                 Third-party ad servers or ad networks uses technologies like
                 cookies, JavaScript, or Web Beacons that are used in their
                 respective advertisements and links that appear on The
-                MediaGale, which are sent directly to users' browser. They
+                MediaGale, which are sent directly to users&apos; browser. They
                 automatically receive your IP address when this occurs. These
                 technologies are used to measure the effectiveness of their
                 advertising campaigns and/or to personalize the advertising
@@ -153,7 +154,7 @@ const PrivacyPolicy = () => {
                 Third Party Privacy Policies
               </div>
               <p className="paragraphBlack">
-                The MediaGale's Privacy Policy does not apply to other
+                The MediaGale&apos;s Privacy Policy does not apply to other
                 advertisers or websites. Thus, we are advising you to consult
                 the respective Privacy Policies of these third-party ad servers
                 for more detailed information. It may include their practices
@@ -162,7 +163,7 @@ const PrivacyPolicy = () => {
                 You can choose to disable cookies through your individual
                 browser options. To know more detailed information about cookie
                 management with specific web browsers, it can be found at the
-                browsers' respective websites.
+                browsers&apos; respective websites.
               </p>
               <div className="py-3" />
 
@@ -173,15 +174,15 @@ const PrivacyPolicy = () => {
                 Under the CCPA, among other rights, California consumers have
                 the right to:
                 <div className="py-3" />
-                Request that a business that collects a consumer's personal data
-                disclose the categories and specific pieces of personal data
-                that a business has collected about consumers.
+                Request that a business that collects a consumer&apos;s personal
+                data disclose the categories and specific pieces of personal
+                data that a business has collected about consumers.
                 <div className="py-3" />
                 Request that a business delete any personal data about the
                 consumer that a business has collected.
                 <div className="py-3" />
-                Request that a business that sells a consumer's personal data,
-                not sell the consumer's personal data.
+                Request that a business that sells a consumer&apos;s personal
+                data, not sell the consumer&apos;s personal data.
                 <div className="py-3" />
                 If you make a request, we have one month to respond to you. If
                 you would like to exercise any of these rights, please contact
@@ -227,7 +228,7 @@ const PrivacyPolicy = () => {
               <div className="py-3" />
 
               <div className="smallHeading text-pink-500 py-4">
-                Children's Information
+                Children&apos;s Information
               </div>
               <p className="paragraphBlack">
                 Another part of our priority is adding protection for children
