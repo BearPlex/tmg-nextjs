@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Footer from "../src/components/footer/Footer";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 const PrivacyPolicy = () => {
