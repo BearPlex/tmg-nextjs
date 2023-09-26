@@ -707,12 +707,20 @@ footer svg:hover path {
   padding-left: 2vw; /* Optional padding to make sure content doesn't stick to the border */
 }
 
+.roundedBImage {
+  border-radius: 29px !important;
+  border-radius: 29px !important;
+}
 .roundedBImageCover {
   border-bottom-left-radius: 29px !important;
   border-bottom-right-radius: 29px !important;
 }
 
 @media (min-width: 640px) {
+  .roundedBImage {
+    border-radius: 36px !important;
+    border-radius: 36px !important;
+  }
   /* this is the default breakpoint for `sm:` in Tailwind */
   .roundedBImageCover {
     border-bottom-left-radius: 36px !important;

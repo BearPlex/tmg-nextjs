@@ -34,9 +34,9 @@ function section4card({
                 />
                 <div className="p-4">
                   <h2 className="largeHeading leading-[70px] font-bold mb-2 text-white">
-                    {conversionRate}%
+                    {conversionRate?.rate}%
                   </h2>
-                  <p className="text-white">Increase in conversions</p>
+                  <p className="text-white">{conversionRate?.name}</p>
                 </div>
               </div>
 
@@ -50,9 +50,9 @@ function section4card({
                 />
                 <div className="p-4">
                   <h2 className="largeHeading text-white font-bold mb-2">
-                    {sessionRate}%{" "}
+                    {sessionRate?.rate}%{" "}
                   </h2>
-                  <p className="text-white">Increase in avg. session</p>
+                  <p className="text-white">{sessionRate?.name}</p>
                 </div>
               </div>
 
@@ -66,9 +66,9 @@ function section4card({
                 />
                 <div className="p-4">
                   <h2 className="largeHeading  font-bold mb-2 text-white">
-                    {bounceRate}%
+                    {bounceRate?.rate}%
                   </h2>
-                  <p className="text-white">Decrease in Bounce Rate</p>
+                  <p className="text-white">{bounceRate?.name}</p>
                 </div>
               </div>
             </div>

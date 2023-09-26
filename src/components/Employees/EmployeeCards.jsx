@@ -65,7 +65,7 @@ const EmployeeCards = () => {
                     className="mx-auto mt-10 imageRounded white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300"
                   >
                     <div className="relative h-full">
-                      <div className="h-full w-full overflow-hidden">
+                      <div className="h-full w-full overflow-hidden roundedBImage">
                         {member?.attributes?.image &&
                           member?.attributes?.image?.data?.attributes?.url !==
                             "" && (
@@ -78,7 +78,7 @@ const EmployeeCards = () => {
                               layout="responsive"
                               loading="eager"
                               decoding="sync"
-                              className="w-full overflow-hidden"
+                              className="w-full overflow-hidden roundedBImage"
                               alt={
                                 member?.attributes?.imageAlt &&
                                 member?.attributes?.imageAlt !== ""

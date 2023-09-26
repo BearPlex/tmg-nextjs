@@ -142,9 +142,9 @@ function WorkDetail({ work }) {
           </div>
         </div>
         <Section4card
-          conversionRate={work?.attributes?.conversionRate}
-          sessionRate={work?.attributes?.sessionRate}
-          bounceRate={work?.attributes?.bounceRate}
+          conversionRate={work?.attributes?.rate1}
+          sessionRate={work?.attributes?.rate2}
+          bounceRate={work?.attributes?.rate3}
         />
         <Footer />
       </PageWrapper>
