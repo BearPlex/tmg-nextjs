@@ -25,6 +25,24 @@ function formatDate(dateString) {
 }
 
 function BlogDetail({ work }) {
+  const copyToClipboard = (text) => {
+    console.log(text);
+    console.log("text");
+    console.log("copyToClipboard CALLED");
+    const textarea = document.createElement("textarea");
+    textarea.textContent = text;
+    textarea.style.position = "absolute";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand("copy"); // Successful copy
+    } catch (err) {
+      console.error("Unable to copy", err); // Unsuccessful copy
+    }
+    document.body.removeChild(textarea);
+  };
+
   return (
     <>
       <SEOHeader metadata={work?.attributes?.headerData} />
@@ -77,19 +95,19 @@ function BlogDetail({ work }) {
                     </div>
                   </div>
                   <div className="flex flex-row justify-between md:justify-end items-center">
-                    <a
+                    <div
                       className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
-                      href={`${work?.attributes?.authorLink}`}
-                      target="_blank"
-                      rel="noreferrer"
+                      onClick={() =>
+                        copyToClipboard(work?.attributes?.authorLink)
+                      }
                     >
                       <Image
                         src={copySvg.src}
                         alt="copy link"
                         className="h-[20px] w-[20px] mr-2"
-                      />{" "}
+                      />
                       <span className="paragraphBlack">Copy Link</span>
-                    </a>
+                    </div>
                     <div className="flex gap-x-0 md:gap-x-2 justify-start md:justify-end contact-wrapper-blog">
                       <a
                         href={`https://twitter.com/${work?.attributes?.authorLinkTwitter}`}
