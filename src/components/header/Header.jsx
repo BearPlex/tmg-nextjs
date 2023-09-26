@@ -118,7 +118,7 @@ const Header = () => {
                 </div>
                 <li>
                   <div id="menuToggle" onChange={() => setShowMenu(!showMenu)}>
-                    <input type="checkbox" checked={showMenu} />
+                    <input type="checkbox" checked={showMenu} readOnly={true} />
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>

@@ -157,9 +157,9 @@ function WebDesign() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Ecommerce Websites
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing an e-Commerce website, it
                     is time to let us take the lead and assist you in providing
@@ -184,9 +184,9 @@ function WebDesign() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Software As A Service
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer Software-as-a-Service to clients in order to help
                     them utilize resources more efficiently and make
@@ -212,9 +212,9 @@ function WebDesign() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Business Websites{" "}
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     If you're considering developing a business website, it is
                     time to let us take the lead and assist you in providing a
@@ -239,9 +239,9 @@ function WebDesign() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     What else?
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
@@ -285,9 +285,9 @@ function WebDesign() {
                 imageRight={false}
               >
                 <div className="">
-                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a

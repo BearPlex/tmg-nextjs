@@ -158,9 +158,9 @@ function Seo() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Brand Image
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     Building a brand image is one of the most important aspects
                     of any business. It is what sets your company apart from the
@@ -187,9 +187,9 @@ function Seo() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Social Presence
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     The internet has massively impacted the way businesses
                     operate and reach their customer base. To build a strong
@@ -218,9 +218,9 @@ function Seo() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Tone of Voice{" "}
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     A unique tone of voice helps brands build trust and become
                     memorable in the minds of their audience. We’ll collaborate
@@ -243,9 +243,9 @@ function Seo() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
@@ -288,9 +288,9 @@ function Seo() {
                 imageRight={false}
               >
                 <div className="">
-                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a

@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
                 We use the information we collect in various ways, including to:
               </p>
 
-              <ul class="custom-dot-list paragraphBlack my-3">
+              <ul className="custom-dot-list paragraphBlack my-3">
                 <li>Provide, operate, and maintain our website</li>
                 <li>Improve, personalize, and expand our website</li>
                 <li>Understand and analyze how you use our website</li>

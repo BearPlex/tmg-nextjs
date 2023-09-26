@@ -174,9 +174,9 @@ function Socialmediamarketing() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText ">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText ">
                     Creative Campaigns
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     From creating modern design content to animated videos, we
                     create high performing campaigns to create a long lasting
@@ -199,9 +199,9 @@ function Socialmediamarketing() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Emails & Workflows
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     At TMG, our creative and design team work together to
                     deliver email campaigns that are both visually appealing and
@@ -225,9 +225,9 @@ function Socialmediamarketing() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     Social Media Management
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     We offer a comprehensive suite of social media management
                     services that are designed to help businesses connect with
@@ -251,9 +251,9 @@ function Socialmediamarketing() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 max-w-lg heading whiteHeadingText">
                     What Else?
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     As a 360 digital agency, we also specialize in search engine
                     optimization which keeps our clients ahead of the
@@ -301,9 +301,9 @@ function Socialmediamarketing() {
                 imageRight={false}
               >
                 <div className="">
-                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a

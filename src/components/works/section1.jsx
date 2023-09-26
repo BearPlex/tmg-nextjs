@@ -20,9 +20,9 @@ function section1(props) {
             />
           )}
         </div>
-        <h1 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText">
+        <h2 className="mt-3 md:mt-10 text-center largeHeading font-bold gradientText">
           {work?.featured_title}{" "}
-        </h1>
+        </h2>
         <div className="flex w-full">
           <div className="pb-10 md:pb-20 lg:pb-30 mt-1 md:mt-5 lg:mt-16 w-full">
             <h2 className="heading mb-5 font-bold blackDescriptionText leading-none pl-6">

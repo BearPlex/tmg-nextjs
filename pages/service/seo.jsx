@@ -165,9 +165,9 @@ function BrandManagement() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     On Page SEO 
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     While search engine rankings are driven from link building
                     campaigns, ongoing on-page optimization of your website
@@ -192,9 +192,9 @@ function BrandManagement() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Off Page SEO
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     Link Building and Content Marketing is essential to scale
                     your website and to drive meaningful traffic to perform
@@ -219,9 +219,9 @@ function BrandManagement() {
                 imageRight={true}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     Content Optimization {" "}
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText">
                     TMG provides content optimization services to help make your
                     content more effective, and improve quality, making it more
@@ -245,9 +245,9 @@ function BrandManagement() {
                 imageRight={false}
               >
                 <div>
-                  <h1 className="mt-6 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-6 md:mt-10 heading whiteHeadingText">
                     What Else?
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteDescriptionText ">
                     As your dedicated SEO agency, we go a step further than just
                     make your website perform well. We strategize with reasoning
@@ -292,9 +292,9 @@ function BrandManagement() {
                 imageRight={false}
               >
                 <div className="">
-                  <h1 className="mt-5 md:mt-10 heading whiteHeadingText">
+                  <h2 className="mt-5 md:mt-10 heading whiteHeadingText">
                     Dedicated Resource Allocation
-                  </h1>
+                  </h2>
                   <p className="mt-2 lg:mt-6 paragraph whiteHeadingText">
                     At TMG, we understand that your brand is much more than just
                     a logo or a name. It is the overall look and feel that a

@@ -7,9 +7,9 @@ function section4card() {
       <section className="background-gradient ">
         <div className="">
           <div className="  py-8 h-auto md:h-auto ">
-            <h1 className="largeHeading text-white font-bold mx-10 lg:mx-40 my-5 md:my-12">
+            <h2 className="largeHeading text-white font-bold mx-10 lg:mx-40 my-5 md:my-12">
               Results
-            </h1>
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mx-10 lg:mx-40 justify-center items-center pb-10">
               <div className=" imageRounded shadow-lg bg-[#D17172]  py-5 md:py-14 px-4">
                 <Image
@@ -60,9 +60,9 @@ function section4card() {
                 </div>
               </div>
             </div>
-            <h1 className="mx-10 lg:mx-40 py-5 md:py-14 text-white">
+            <h2 className="mx-10 lg:mx-40 py-5 md:py-14 text-white">
               Data collected every 3 months.
-            </h1>
+            </h2>
           </div>
         </div>
       </section>
