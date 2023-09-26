@@ -58,6 +58,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScrollEnd);
     };
   }, []);
+  useEffect(() => {}, [showMenu]);
 
   return (
     <>
@@ -116,8 +117,8 @@ const Header = () => {
                   </li>
                 </div>
                 <li>
-                  <div id="menuToggle" onClick={() => setShowMenu(!showMenu)}>
-                    <input type="checkbox" />
+                  <div id="menuToggle" onChange={() => setShowMenu(!showMenu)}>
+                    <input type="checkbox" checked={showMenu} />
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
@@ -128,7 +129,7 @@ const Header = () => {
           </header>
         </div>
       </div>
-      {showMenu && <NavigationMenu />}
+      {showMenu && <NavigationMenu setShowMenu={setShowMenu} />}
     </>
   );
 };

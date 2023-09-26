@@ -7,7 +7,7 @@ import { facebookSvg } from "../../helpers/Helpers";
 import { instagramSvg } from "../../helpers/Helpers";
 import { linkedinSvg } from "../../helpers/Helpers";
 import Image from "../Image/Image";
-const NavigationMenu = () => {
+const NavigationMenu = ({ setShowMenu }) => {
   useEffect(() => {
     const style = document.createElement("style");
 
@@ -48,6 +48,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/services"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="text-[#FFCBC2] inline-block extraLargeHeading font-bold leading-none  hover:text-white"
                     >
                       Services
@@ -58,6 +63,11 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/social-media-marketing"
+                          onClick={() => {
+                            setTimeout(() => {
+                              setShowMenu(false);
+                            }, 300);
+                          }}
                           className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Social Media Marketing
@@ -66,6 +76,11 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/web-design"
+                          onClick={() => {
+                            setTimeout(() => {
+                              setShowMenu(false);
+                            }, 300);
+                          }}
                           className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Web Development & Design
@@ -74,6 +89,11 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/seo"
+                          onClick={() => {
+                            setTimeout(() => {
+                              setShowMenu(false);
+                            }, 300);
+                          }}
                           className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Search Engine Optimization
@@ -82,6 +102,11 @@ const NavigationMenu = () => {
                       <li>
                         <Link
                           href="/service/brand-management"
+                          onClick={() => {
+                            setTimeout(() => {
+                              setShowMenu(false);
+                            }, 300);
+                          }}
                           className="px-0 md:px-4 text-left text-xl sm:smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white"
                         >
                           Branding & Design
@@ -95,6 +120,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/work"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="text-[#FFCBC2] hover:text-white inline-block extraLargeHeading pt-3 font-bold leading-none"
                     >
                       Work
@@ -107,6 +137,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/agency"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="inline-block font-bold extraLargeHeading pt-3 leading-none text-[#FFCBC2] hover:text-white"
                     >
                       Agency
@@ -119,6 +154,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/blog"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="inline-block font-bold extraLargeHeading pt-3 leading-none text-[#FFCBC2] hover:text-white"
                     >
                       Blog
@@ -130,6 +170,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/contact"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="inline-block font-bold extraLargeHeading pt-3 leading-none text-[#FFCBC2] hover:text-white"
                     >
                       Contact
@@ -141,6 +186,11 @@ const NavigationMenu = () => {
                   >
                     <Link
                       href="/resources"
+                      onClick={() => {
+                        setTimeout(() => {
+                          setShowMenu(false);
+                        }, 300);
+                      }}
                       className="text-[#FFCBC2] hover:text-white inline-block extraLargeHeading pt-3 font-bold leading-none"
                     >
                       Resources
@@ -156,24 +206,44 @@ const NavigationMenu = () => {
                       {/* <ul className="absolute w-[250px] md:w-[380px] h-[180px] md:h-[250px] top-[50%] translate-y-[-50%]  left-[35vw] lg:left-[300px] xl:left-[480px] flex flex-col justify-between"> */}
                       {/* <> */}
                       <Link
+                        onClick={() => {
+                          setTimeout(() => {
+                            setShowMenu(false);
+                          }, 300);
+                        }}
                         href="/service/social-media-marketing"
                         className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
                         Social Media Marketing
                       </Link>
                       <Link
+                        onClick={() => {
+                          setTimeout(() => {
+                            setShowMenu(false);
+                          }, 300);
+                        }}
                         href="/service/web-design"
                         className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
                         Web Development & Design
                       </Link>
                       <Link
+                        onClick={() => {
+                          setTimeout(() => {
+                            setShowMenu(false);
+                          }, 300);
+                        }}
                         href="/service/seo"
                         className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
                         Search Engine Optimization
                       </Link>
                       <Link
+                        onClick={() => {
+                          setTimeout(() => {
+                            setShowMenu(false);
+                          }, 300);
+                        }}
                         href="/service/brand-management"
                         className="px-0 md:px-4 text-left smallHeading inline-block font-bold text-[#FFCBC2] hover:text-white mb-4"
                       >
@@ -227,7 +297,14 @@ const NavigationMenu = () => {
                 Let's get cracking
               </h4>
               <button className="hover:-translate-y-2 ease-in-out transition duration-300 transparentBgColor ml-0 sm:ml-2 md:ml-6 uppercase hover:bgWhite hover:text-orange_theme-400 text-white font-bold py-2 md:py-4 px-3 md:px-6 rounded-full">
-                <Link href="/contact">
+                <Link
+                  href="/contact"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShowMenu(false);
+                    }, 300);
+                  }}
+                >
                   <span className="font-bold smallText md:paragraph">
                     Start Your project
                   </span>

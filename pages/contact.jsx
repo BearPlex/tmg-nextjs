@@ -22,14 +22,16 @@ const Contact = () => {
               <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
                 U.S.A.
               </h4>
-              <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">NY, New York.</p>
-                <p className="hidden md:block">
-                  {/* Brooklyn,
-                  <br /> */}
-                  NY,
+              <div className="blackDescriptionText font-bold text-xl md:text-2xl">
+                <p className="block md:hidden">
+                  447 Broadway, 2nd FL #202, New York, NY 10013.
+                </p>
+                <p className="hidden md:block whitespace-nowrap">
+                  447 Broadway,
                   <br />
-                  New York.
+                  2nd FL #202,
+                  <br />
+                  New York, NY 10013.
                 </p>
               </div>
               <div>
@@ -92,12 +94,16 @@ const Contact = () => {
               <h4 className="gradientText smallHeading  md:text-5xl font-extrabold mb-2 md:mb-6">
                 Pakistan.
               </h4>
-              <div className="blackDescriptionText font-bold text-xl md:text-2xl whitespace-nowrap">
-                <p className="block md:hidden">DHA Phase 5, Lahore.</p>
-                <p className="hidden md:block">
-                  DHA Phase 5,
+              <div className="blackDescriptionText font-bold text-xl md:text-2xl">
+                <p className="block md:hidden">
+                  House 562 Sector A Askari 11 Lahore, 54000.
+                </p>
+                <p className="hidden md:block whitespace-nowrap">
+                  House 562,
                   <br />
-                  Lahore.
+                  Sector A Askari 11,
+                  <br />
+                  Lahore, 54000.
                 </p>
               </div>
             </div>
