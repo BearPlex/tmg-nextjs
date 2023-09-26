@@ -783,3 +783,25 @@ a.custom-link:hover {
   color: darkblue;
   text-decoration: underline;
 }
+
+.custom-dot-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-dot-list li {
+  position: relative;
+  padding-left: 2rem; /* adjust based on your design needs */
+}
+
+.custom-dot-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px; /* adjust for size */
+  height: 8px; /* adjust for size */
+  border-radius: 50%;
+  background-color: black; /* adjust for color */
+}
