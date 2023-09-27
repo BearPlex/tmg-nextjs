@@ -43,7 +43,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-// function MyApp({ Component, pageProps }) {
-
-// should i add this inside _document or _app in next js
