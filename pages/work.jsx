@@ -9,9 +9,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import workFeaturedImage from "../src/assets/images/work-featured-1.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import Image from "../src/components/Image/Image";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
+
 const workStatic = [
   {
     featured_image: workFeaturedImage,
@@ -23,7 +25,7 @@ const workStatic = [
     gallery_second_description: "",
   },
 ];
-const Work = () => {
+const Work = ({ metaData }) => {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
@@ -42,6 +44,7 @@ const Work = () => {
   }, []);
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
@@ -81,3 +84,21 @@ const Work = () => {
   );
 };
 export default Work;
+
+export async function getServerSideProps(context) {
+  const DoNotChange = "Work";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

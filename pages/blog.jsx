@@ -9,6 +9,7 @@ import blog1 from "../src/assets/images/blog-1.png";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
@@ -22,7 +23,7 @@ const blogsStatic = [
     blog_content: "",
   },
 ];
-const Blog = () => {
+const Blog = ({ metaData }) => {
   const router = useRouter();
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
@@ -45,6 +46,7 @@ const Blog = () => {
   };
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section className="w-full">
           <HeroContainer imageSrc={blogImage.src}>
@@ -126,3 +128,20 @@ const Blog = () => {
   );
 };
 export default Blog;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Blog";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

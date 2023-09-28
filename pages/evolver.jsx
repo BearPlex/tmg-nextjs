@@ -5,37 +5,13 @@ import logo from "../src/assets/images/circle-logo.png";
 import testimonial from "../src/assets/images/testimonial1.png";
 import prev from "../src/assets/images/prev-button.png";
 import next from "../src/assets/images/next-button.png";
+import axios from "axios";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import Image from "../src/components/Image/Image";
-function evolver() {
+function evolver({ metaData }) {
   return (
     <>
-      {/* <div className="bgWhite">
-  <div className="  ">
-  
-    <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-   
-<svg viewBox="0 0 1024 1024" className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 gradient" aria-hidden="true">
-  <circle cx="512" cy="512" r="512" className="fill-current text-transparent" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
-  <defs>
-    <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-      <stop stop-color="#7775D6" />
-      <stop offset="1" stop-color="#E935C1" />
-    </radialGradient>
-  </defs>
-</svg>
-
-
-      <h2 className="mx-auto max-w-2xl smallHeading font-bold tracking-tight text-white sm:heading">Boost your productivity today.</h2>
-      <p className="mx-auto mt-2 lg:mt-6 max-w-xl smallText leading-8 blackDescriptionText">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-      <div className="mt-6 md:mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" className="rounded-md bgWhite px-3.5 py-2.5 smallText font-semibold blackDescriptionText shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-        <a href="#" className="smallText font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
-      </div>
-     
-    </div>
-  </div>
-</div> */}
-
+      <SEOHeader metadata={metaData} />
       <main className="py-14  bg-gradient-to-b from-blue-900 to-black">
         <div className=" overflow-hidden  px-6 py-24 text-center  sm:px-16">
           <div className="flex justify-center pb-10">
@@ -376,3 +352,20 @@ function evolver() {
 }
 
 export default evolver;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Evolver";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

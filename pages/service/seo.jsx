@@ -10,6 +10,7 @@ import TextWithImageContainer from "../../src/components/containers/TextWithImag
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
 import GradientButton from "../../src/components/button/GradientButton";
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
+import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import Image from "../../src/components/Image/Image";
 
 import staffAugmentationImage from "../../public/webp/staff-augmentation.5366d6f6.webp";
@@ -18,7 +19,7 @@ import mobile3 from "../../public/webp/off-seo.3b219f1f.webp";
 import mobile2 from "../../public/webp/content-opt.1e285979.webp";
 import tmg from "../../public/webp/tmg.e74e1631.webp";
 
-function BrandManagement() {
+function BrandManagement({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
@@ -38,6 +39,7 @@ function BrandManagement() {
   }, []);
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section className="w-full">
           <TextWithVideoContainer>
@@ -318,3 +320,20 @@ function BrandManagement() {
 }
 
 export default BrandManagement;
+export async function getServerSideProps(context) {
+  const DoNotChange = "SEO";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

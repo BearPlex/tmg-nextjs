@@ -10,15 +10,18 @@ import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import ScrollspyNav from "react-scrollspy-nav";
+import axios from "axios";
 import Image from "../src/components/Image/Image";
 import homePageImage from "../public/webp/social-media-marketing.8dfe3a17.webp";
 import developmentImage from "../public/webp/brand-management.2f1a3d14.webp";
 import digitalImage from "../public/webp/seo.854f12df.webp";
 import marketingImage from "../public/webp/tmg.e74e1631.webp";
-const Services = () => {
+const Services = ({ metaData }) => {
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section>
           <HeroContainer imageSrc={servicesPic.src}>
@@ -182,3 +185,20 @@ const Services = () => {
   );
 };
 export default Services;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Services";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

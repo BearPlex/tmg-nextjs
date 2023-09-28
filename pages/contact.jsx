@@ -1,7 +1,5 @@
 import Header from "../src/components/header/Header";
 import Input from "../src/components/input/Input";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileZipper } from "@fortawesome/free-solid-svg-icons";
 import {
   facebookSvg,
   instagramSvg,
@@ -12,9 +10,12 @@ import ContactFormIframe from "../src/components/iframe/ContactFormIframe";
 import Footer from "../src/components/footer/Footer";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
-const Contact = () => {
+import axios from "axios";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
+const Contact = ({ metaData }) => {
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <div className="flex gap-x-5 justify-between mb-4 md:mb-10 pagePaddingX max-w-7xl mx-auto">
           <div className="w-[100%] flex flex-col md:flex-row">
@@ -123,3 +124,20 @@ const Contact = () => {
   );
 };
 export default Contact;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Contact";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

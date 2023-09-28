@@ -8,16 +8,17 @@ import marketingImage from "../src/assets/images/content-resource.png";
 import eCommerceImage from "../src/assets/images/e-commerce.png";
 import wordPressImage from "../src/assets/images/wordpress-4.png";
 import Footer from "../src/components/footer/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
+import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
-const Resources = () => {
+const Resources = ({ metaData }) => {
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
@@ -114,3 +115,20 @@ const Resources = () => {
   );
 };
 export default Resources;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Resources";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

@@ -9,8 +9,8 @@ import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
+import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import Image from "../../src/components/Image/Image";
-
 import staffAugmentationImage from "../../public/webp/staff-augmentation.5366d6f6.webp";
 import book from "../../public/webp/design1.7396c58e.webp";
 import mobile3 from "../../public/webp/design2.e2144eed.webp";
@@ -19,7 +19,7 @@ import tmg from "../../public/webp/tmg.e74e1631.webp";
 
 import "react-tabs/style/react-tabs.css";
 
-function WebDesign() {
+function WebDesign({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
@@ -38,6 +38,7 @@ function WebDesign() {
   }, []);
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section className="w-full">
           <TextWithVideoContainer>
@@ -312,3 +313,20 @@ function WebDesign() {
 }
 
 export default WebDesign;
+export async function getServerSideProps(context) {
+  const DoNotChange = "WebDesign";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

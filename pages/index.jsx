@@ -20,11 +20,12 @@ import workGallery1 from "../src/assets/images/work-gall-1.png";
 import workGallery2 from "../src/assets/images/work-gall-2.png";
 import ExpertiseStatic from "../src/components/expertise/ExpertiseStatic";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import Image from "../src/components/Image/Image";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import GradientButton from "../src/components/button/GradientButton";
 
-export default function Home() {
+export default function Home({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
@@ -44,6 +45,7 @@ export default function Home() {
   }, []);
   return (
     <React.Fragment>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <div>
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
@@ -132,4 +134,21 @@ export default function Home() {
       </PageWrapper>
     </React.Fragment>
   );
+}
+export async function getServerSideProps(context) {
+  const DoNotChange = "Home";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
 }

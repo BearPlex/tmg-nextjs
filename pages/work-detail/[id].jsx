@@ -164,7 +164,6 @@ export async function getServerSideProps(context) {
     return { props: { work: matchingWork } };
   } catch (error) {
     console.error("Error fetching data:", error);
-    // If there's an error, you can return an empty object or handle this in some other way.
     return { props: { work: {} } };
   }
 }

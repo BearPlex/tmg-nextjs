@@ -10,6 +10,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
+import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import Image from "../../src/components/Image/Image";
 
 import book from "../../public/webp/smm-01.133077c4.webp";
@@ -17,7 +18,7 @@ import mobile3 from "../../public/webp/social1-img.36ef78a9.webp";
 import mobile2 from "../../src/assets/images/SSM-staffing.png";
 import tmg from "../../public/webp/tmg.e74e1631.webp";
 import staffAugmentationImage from "../../public/webp/staff-augmentation.5366d6f6.webp";
-function Socialmediamarketing() {
+function Socialmediamarketing({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
@@ -36,6 +37,7 @@ function Socialmediamarketing() {
   }, []);
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section className=" w-full">
           <TextWithVideoContainer
@@ -328,3 +330,20 @@ function Socialmediamarketing() {
 }
 
 export default Socialmediamarketing;
+export async function getServerSideProps(context) {
+  const DoNotChange = "SocialMediaMarketing";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

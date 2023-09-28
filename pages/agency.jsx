@@ -3,13 +3,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
 import React, { useRef, useState } from "react";
-
+import SEOHeader from "../src/components/MetaData/SEOHeader";
 import agencyHero from "../src/assets/images/agency-hero.png";
-// import mainImage from "../src/assets/svg/home_work_logo.svg";
 import mainImage from "../src/assets/images/team.png";
 import teamMember from "../src/assets/images/james-h.png";
 import Clients from "../src/components/clients/Clients";
 import Footer from "../src/components/footer/Footer";
+import axios from "axios";
 import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
@@ -18,7 +18,7 @@ import TextWithVideoContainer from "../src/components/containers/TextWithVideoCo
 import EmployeeCards from "../src/components/Employees/EmployeeCards";
 import Employees from "../src/components/Employees/Employees";
 
-const Studio = () => {
+const Studio = ({ metaData }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const handlePlayPause = () => {
@@ -34,6 +34,7 @@ const Studio = () => {
 
   return (
     <>
+      <SEOHeader metadata={metaData} />
       <PageWrapper>
         <section className="w-full">
           <HeroContainer imageSrc={agencyHero.src}>
@@ -113,3 +114,20 @@ const Studio = () => {
   );
 };
 export default Studio;
+export async function getServerSideProps(context) {
+  const DoNotChange = "Agency";
+  try {
+    const res = await axios.get(
+      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+    );
+    const metaData =
+      res.data.data && res.data.data?.length > 0
+        ? res.data.data[0]?.attributes?.metaData
+        : {};
+    console.log(metaData);
+    return { props: { metaData: metaData } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { metaData: {} } };
+  }
+}

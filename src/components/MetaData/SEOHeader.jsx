@@ -33,7 +33,7 @@ function SEOHeader({ metadata }) {
 
       {/* Other meta tags */}
       <meta name="author" content={metadata?.author} />
-      <meta name="keywords" content={metadata?.keywords.join(", ")} />
+      <meta name="keywords" content={metadata?.keywords?.join(", ")} />
       <link rel="canonical" href={metadata?.canonical} />
       <link rel="icon" type="image/png" href={metadata?.favicon} />
     </Head>
