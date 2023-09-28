@@ -1,12 +1,12 @@
 /* eslint-disable */
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import agencyImage1 from "../../assets/images/agency-create.png";
-import agencyImage2 from "../../assets/images/agency-analyze.png";
-import agencyImage3 from "../../assets/images/agency-commuication.png";
-import agencyImage4 from "../../assets/images/agency-execute.png";
 import debounce from "lodash/debounce";
 import Image from "../Image/Image";
+import agencyImage1 from "../../assets/images/agency-create.png";
+import agencyImage2 from "../../../public/webp/agency-analyze.9945b0af.webp";
+import agencyImage3 from "../../../public/webp/agency-commuication.0886a8f5.webp";
+import agencyImage4 from "../../../public/webp/agency-execute.e75b99c3.webp";
 
 let mobileScreen = false;
 let offsetTop = 0;

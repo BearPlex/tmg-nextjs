@@ -1,24 +1,22 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
-import kotaLogo from "../../src/assets/images/Blog-pic.png";
-import serviceBottle from "../../src/assets/images/service-bottle.png";
-import body from "../../src/assets/images/body-img.png";
-import book from "../../src/assets/images/smm-01.png";
-import mobile3 from "../../src/assets/images/social1-img.png";
-import mobile2 from "../../src/assets/images/mobile1.png";
-import tmg from "../../src/assets/images/TMG-pic.png";
-import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
+import GradientButton from "../../src/components/button/GradientButton";
+import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
+import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
+import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
+import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
 import Header from "../../src/components/header/Header";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
 import Image from "../../src/components/Image/Image";
-import GradientButton from "../../src/components/button/GradientButton";
-import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
-import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
-import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
-import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
+
+import book from "../../public/webp/smm-01.133077c4.webp";
+import mobile3 from "../../public/webp/social1-img.36ef78a9.webp";
+import mobile2 from "../../src/assets/images/SSM-staffing.png";
+import tmg from "../../public/webp/tmg.e74e1631.webp";
+import staffAugmentationImage from "../../public/webp/staff-augmentation.5366d6f6.webp";
 function Socialmediamarketing() {
   const [work, setWork] = useState([]);
   useEffect(() => {

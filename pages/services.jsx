@@ -2,22 +2,20 @@
 import Header from "../src/components/header/Header";
 import servicesPic from "../src/assets/images/SERVICES.png";
 import Link from "next/link";
-import homePageImage from "../src/assets/images/social-media-marketing.png";
-import developmentImage from "../src/assets/images/brand-management.png";
-import digitalImage from "../src/assets/images/seo.png";
-import marketingImage from "../src/assets/images/tmg.png";
-import eCommerceImage from "../src/assets/images/e-commerce.png";
-import wordPressImage from "../src/assets/images/wordpress-4.png";
 import Footer from "../src/components/footer/Footer";
-import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import TextWithImageContainer from "../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../src/components/containers/TextWithVideoContainer";
+import ScrollspyNav from "react-scrollspy-nav";
+import Image from "../src/components/Image/Image";
+import homePageImage from "../public/webp/social-media-marketing.8dfe3a17.webp";
+import developmentImage from "../public/webp/brand-management.2f1a3d14.webp";
+import digitalImage from "../public/webp/seo.854f12df.webp";
+import marketingImage from "../public/webp/tmg.e74e1631.webp";
 const Services = () => {
   return (
     <>

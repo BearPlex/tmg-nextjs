@@ -1,7 +1,7 @@
 import Header from "../src/components/header/Header";
 import danLogo from "../src/assets/images/dan_grey@2x.png";
 import drumLogo from "../src/assets/images/the-drum-logo.png";
-import kotaLogo from "../src/assets/images/tmg-logo.png";
+import kotaLogo from "../public/webp/tmg-logo.82b8a7c1.webp";
 import clutchLogo from "../src/assets/images/Clutch_grey@2x.png";
 import awardLogo from "../src/assets/images/awward_grey@2x.png";
 import cssDesignLogo from "../src/assets/images/css-design-awards.png";
@@ -14,7 +14,7 @@ import ScrollingImage from "../src/components/ScrollingImage/ScrollingImage";
 import { work } from "../src/helpers/Helpers";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import hero from "../src/assets/images/hero-1.png";
+import hero from "../public/webp/hero-1.a07c081b.webp";
 import workFeaturedImage from "../src/assets/images/work-featured-1.png";
 import workGallery1 from "../src/assets/images/work-gall-1.png";
 import workGallery2 from "../src/assets/images/work-gall-2.png";

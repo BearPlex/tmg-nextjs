@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import designDevelopmentImage from "../../assets/images/design-development.png";
+import designDevelopmentImage from "../../../public/webp/design-development.a0ffc3d7.webp";
 import digitalImage from "../../assets/images/digital.png";
 import marketingImage from "../../assets/images/marketing.png";
 import Image from "../Image/Image";

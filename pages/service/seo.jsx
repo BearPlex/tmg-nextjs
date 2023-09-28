@@ -1,25 +1,22 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
-import kotaLogo from "../../src/assets/images/Blog-pic.png";
-import brand1 from "../../src/assets/images/brand1.png";
-import brand2 from "../../src/assets/images/brand2.png";
-import book from "../../src/assets/images/on-seo.png";
-import mobile3 from "../../src/assets/images/off-seo.png";
-import mobile2 from "../../src/assets/images/content-opt.png";
-import tmg from "../../src/assets/images/TMG-pic.png";
-import hand from "../../src/assets/images/hand.png";
 import Header from "../../src/components/header/Header";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import Footer from "../../src/components/footer/Footer";
-import Image from "../../src/components/Image/Image";
-import GradientButton from "../../src/components/button/GradientButton";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import TextWithImageContainer from "../../src/components/containers/TextWithImageContainer";
 import TextWithVideoContainer from "../../src/components/containers/TextWithVideoContainer";
+import GradientButton from "../../src/components/button/GradientButton";
 import ExpertiseSmall from "../../src/components/expertise/ExpertiseSmall";
-import staffAugmentationImage from "../../src/assets/images/staff-augmentation.png";
+import Image from "../../src/components/Image/Image";
+
+import staffAugmentationImage from "../../public/webp/staff-augmentation.5366d6f6.webp";
+import book from "../../public/webp/on-seo.1a3fb23f.webp";
+import mobile3 from "../../public/webp/off-seo.3b219f1f.webp";
+import mobile2 from "../../public/webp/content-opt.1e285979.webp";
+import tmg from "../../public/webp/tmg.e74e1631.webp";
 
 function BrandManagement() {
   const [work, setWork] = useState([]);

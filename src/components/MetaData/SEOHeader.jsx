@@ -5,7 +5,12 @@ function SEOHeader({ metadata }) {
     <Head>
       <meta charSet={metadata?.charset} />
       <meta name="viewport" content={metadata?.viewport} />
-      <meta httpEquiv="X-UA-Compatible" content={metadata["X-UA-Compatible"]} />
+      {metadata && metadata?.["X-UA-Compatible"] && (
+        <meta
+          httpEquiv="X-UA-Compatible"
+          content={metadata["X-UA-Compatible"]}
+        />
+      )}
       <meta name="description" content={metadata?.description} />
       <title>{metadata.title}</title>
 

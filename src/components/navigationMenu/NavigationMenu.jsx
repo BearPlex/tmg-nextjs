@@ -1,7 +1,6 @@
 /* eslint-disable */
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import kotaTransparentImage from "../../assets/images/tmg-logo.png";
 import { SVG_COLORS, twitterSvg } from "../../helpers/Helpers";
 import { facebookSvg } from "../../helpers/Helpers";
 import { instagramSvg } from "../../helpers/Helpers";

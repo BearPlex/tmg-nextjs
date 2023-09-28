@@ -1,21 +1,8 @@
 /* eslint-disable */
 import Link from "next/link";
-import danImage from "../../assets/images/dan-global-logo@2x.jpg";
-import drumImage from "../../assets/images/the-drum-logo.jpg";
-import clutchImage from "../../assets/images/glutch@2x.jpg";
-import awardsImage from "../../assets/images/awwwards-logo@2x.jpg";
-import designImage from "../../assets/images/css-design-awards-white.jpg";
-import kotaTransparentImage from "../../assets/svg/Kota_logo_white-1.svg";
-import groupBtn from "../../assets/images/Group.png";
-import tmg from "../../assets/images/tmg-log.png";
 import Image from "../Image/Image";
-import logoIcon from "../../assets/images/tmg-logo.png";
-import clutrhLogo from "../../assets/svg/clutrh-logo.svg";
-import shopifyLogo from "../../assets/svg/shopify-logo.svg";
-import sortListLogo from "../../assets/svg/sort-list-logo.svg";
-import footerLogos from "../../assets/images/footer-logos.png";
-import pashaLogo from "../../assets/svg/PASHA-Logo.svg";
-import psebLogo from "../../assets/svg/PSEB-logo.svg";
+import logoIcon from "../../../public/webp/tmg-logo.82b8a7c1.webp";
+import footerLogos from "../../../public/webp/footer-logos.fb9a26d3.webp";
 import {
   facebookSvg,
   instagramSvg,

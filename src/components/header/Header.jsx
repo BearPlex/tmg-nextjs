@@ -3,7 +3,7 @@ import NavigationMenu from "../navigationMenu/NavigationMenu";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
-import logoIcon from "../../assets/images/tmg-logo.png";
+import logoIcon from "../../../public/webp/tmg-logo.82b8a7c1.webp";
 import logoIconWhite from "../../assets/svg/logoWhite.svg";
 
 const Header = () => {

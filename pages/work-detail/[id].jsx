@@ -97,7 +97,7 @@ function WorkDetail({ work }) {
               <h2 className="heading mb-5 blackHeading whitespace-pre-wrap leading-none relative pl-6">
                 {work?.attributes?.gallery_second_title}
               </h2>
-              <p className="blackDescriptionText pl-5 paragraph">
+              <p className="blackDescriptionText pl-5 paragraph whitespace-pre-wrap">
                 {work?.attributes?.gallery_second_description}
               </p>
             </div>
