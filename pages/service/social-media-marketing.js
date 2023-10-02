@@ -45,11 +45,10 @@ function Socialmediamarketing({ metaData }) {
             childcssClass="md:w-[50%]"
           >
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  headingBlack">
-                Performance Driven{" "}
-                <span className="gradientText ">Digital Marketing</span>{" "}
-                Services
-              </h4>
+              <h1 className="mb-2 md:mb-6  headingBlack">
+                Social Media Marketing{" "}
+                <span className="gradientText ">Agency</span>
+              </h1>
               <p className="paragraph blackDescriptionText">
                 With proven game changing results, our award winning performance
                 experts ensure that all the leads turn into a{" "}
@@ -68,14 +67,14 @@ function Socialmediamarketing({ metaData }) {
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
-                    <h1 className="headingBlack">
+                    <h2 className="headingBlack">
                       High Performance
                       <span className="gradientText">
                         {" "}
                         Breakthrough{" "}
                         <span className="gradientText">Campaigns</span>
                       </span>{" "}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">

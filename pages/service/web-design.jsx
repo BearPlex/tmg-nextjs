@@ -43,10 +43,12 @@ function WebDesign({ metaData }) {
         <section className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 headingBlack">
-                Highly <span className="gradientText "> Optimized </span>
-                Converting Websites 
-              </h4>
+              <h1 className="mb-2 md:mb-6 headingBlack">
+                Top Rated{" "}
+                <span className="gradientText ">
+                  Website Development Company
+                </span>
+              </h1>
               <p className="paragraph blackDescriptionText mb-6 md:mb-8">
                 We have been helping our partners in creating responsive and
                 eye-catching websites that leave every viewer in awe of their
@@ -66,13 +68,13 @@ function WebDesign({ metaData }) {
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
-                    <h1 className="heading blackHeadingText">
+                    <h2 className="heading blackHeadingText">
                       Modern designs that
                       <span className="gradientText">
                         {" "}
                         Creates Identity
                       </span>{" "}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">

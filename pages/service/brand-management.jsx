@@ -44,10 +44,12 @@ function Seo({ metaData }) {
         <setcion className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 headingBlack">
-                <span className="gradientText">Brand Identity</span> And
-                Creative Management Services
-              </h4>
+              <h1 className="mb-2 md:mb-6 headingBlack">
+                Top{" "}
+                <span className="gradientText">
+                  Graphic Design and Management Agency
+                </span>
+              </h1>
               <p className="paragraph blackDescriptionText mb-6">
                 TMG combines strategic directions with creative designs to
                 ensure{" "}
@@ -64,10 +66,10 @@ function Seo({ metaData }) {
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
-                    <h1 className="headingBlack">
+                    <h2 className="headingBlack">
                       Specialized branding services that
                       <span className="gradientText"> Creates Trust</span>{" "}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">

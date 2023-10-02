@@ -51,10 +51,10 @@ export default function Home({ metaData }) {
           <HeroContainer imageSrc={kotaLogo} landingPage={true}>
             <div className="w-full">
               <h1 className="heading blackHeading md:text-7xl">
-                Transforming Businesses into
+                Full Service
                 <span className="gradientText heading md:text-7xl">
                   {" "}
-                  Brands
+                  Digital Marketing Agency
                 </span>{" "}
               </h1>
               <p className="paragraph blackDescriptionText mt-2 lg:mt-6">

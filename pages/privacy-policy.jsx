@@ -12,9 +12,9 @@ const PrivacyPolicy = ({ metaData }) => {
           {/* <Header /> */}
           <div className="pagePaddingX max-w-7xl mx-auto">
             <div className="mb-14">
-              <div className="heading text-pink-500 mb-8">
-                Privacy Policy for The MediaGale
-              </div>
+              <h1 className="heading text-pink-500 mb-8">
+                Privacy Policy and Guidelines
+              </h1>
               <p className="paragraphBlack">
                 At The MediaGale, accessible from https://themediagale.com/, one
                 of our main priorities is the privacy of our visitors. This

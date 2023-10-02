@@ -39,10 +39,12 @@ const Studio = ({ metaData }) => {
         <section className="w-full">
           <HeroContainer imageSrc={agencyHero.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6 mt-6 headingBlack">
-                Lets Make Your Digital Dreams{" "}
-                <span className="gradientText"> a Reality.</span>
-              </h4>
+              <h1 className="mb-2 md:mb-6 mt-6 headingBlack">
+                Top{" "}
+                <span className="gradientText">
+                  Rated Digital Marketing Agency
+                </span>
+              </h1>
               <p className="paragraphBlack">
                 We create the best customer experiences across your brands
                 journey, transforming the way brands connect with their
@@ -68,10 +70,10 @@ const Studio = ({ metaData }) => {
             />
           </section>
           <div className="flex mt:4 md:mt-10 justify-center flex-col items-center">
-            <h1 className=" extraLargeHeading text-center blackHeadingText">
+            <h2 className=" extraLargeHeading text-center blackHeadingText">
               Innovators by heart, <br />
               <span className="gradientText">Creators</span> by mind.
-            </h1>
+            </h2>
             <p className=" mb-8 text-center mt-14 max-w-4xl paragraphBlack ">
               With a team of smart and passionate professionals, our agency
               specializes in all elements of digital marketing, from social

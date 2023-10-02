@@ -44,10 +44,10 @@ function BrandManagement({ metaData }) {
         <section className="w-full">
           <TextWithVideoContainer>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  headingBlack ">
-                Performance Driven <span className="gradientText">SEO</span>{" "}
-                Services
-              </h4>
+              <h1 className="mb-2 md:mb-6  headingBlack ">
+                Best SEO Company for{" "}
+                <span className="gradientText">Shopify and Wordpress</span>{" "}
+              </h1>
               <p className="paragraph blackDescriptionText">
                 A highly optimized website is essential for a business to
                 generate new leads and sales on the internet. However, to
@@ -70,13 +70,13 @@ function BrandManagement({ metaData }) {
               <div className="pagePaddingX w-full max-w-7xl mx-auto">
                 <div className="w-full py-4 sm:py-10 flex flex-col items-center md:flex-row componentsMainGap md:py-10">
                   <div className="lg:flex-shrink-0 w-full md:w-1/2 lg:flex-grow justify-between">
-                    <h1 className="headingBlack">
+                    <h2 className="headingBlack">
                       Content strategy that
                       <span className="gradientText">
                         {" "}
                         Increases Visibility
                       </span>{" "}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="lg:flex-auto w-full md:w-1/2">
                     <p className="mt-2 lg:mt-6 paragraph  blackDescriptionText">

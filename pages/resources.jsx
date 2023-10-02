@@ -23,10 +23,10 @@ const Resources = ({ metaData }) => {
         <section>
           <HeroContainer imageSrc={kotaLogo.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  mt-10 headingBlack">
-                Dedicated Resource{" "}
-                <span className="gradientText">Allocation</span>
-              </h4>
+              <h1 className="mb-2 md:mb-6  mt-10 headingBlack">
+                Resource Outsourcing{" "}
+                <span className="gradientText">Services</span>
+              </h1>
               <p className="paragraphBlack">
                 We offer 360-degree marketing solutions such as PPC
                 Advertisement, Search Engine Optimisation and Web Development

@@ -51,11 +51,10 @@ const Blog = ({ metaData }) => {
         <section className="w-full">
           <HeroContainer imageSrc={blogImage.src}>
             <div className="w-full">
-              <h4 className="mb-2 md:mb-6  headingBlack ">
-                News, Insights, and
-                <span className="gradientText"> Creative Culture </span>
-                from TMG.
-              </h4>
+              <h1 className="mb-2 md:mb-6  headingBlack ">
+                Trending
+                <span className="gradientText"> Blogs and Articles</span>
+              </h1>
               <p className="paragraphBlack">
                 Because it should never just be work, it should be
                 <span className="gradientText"> a Work of Art</span>{" "}

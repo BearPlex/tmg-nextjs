@@ -48,10 +48,10 @@ const Work = ({ metaData }) => {
       <PageWrapper>
         <HeroContainer imageSrc={kotaLogo.src}>
           <div className="w-full">
-            <h4 className="mb-2 md:mb-6  headingBlack">
-              We are experts in bringing brands to life
-              <span className="gradientText"> Digitally.</span>
-            </h4>
+            <h1 className="mb-2 md:mb-6  headingBlack">
+              Work
+              <span className="gradientText"> Portfolio and Achievements</span>
+            </h1>
             <p className="paragraphBlack">
               TMG is a progressive and insightful design agency, technically and
               creatively skilled to translate your brand into its best digital
