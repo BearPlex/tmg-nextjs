@@ -93,7 +93,7 @@ function BlogDetail({ work }) {
                   </div>
                   <div className="flex flex-row justify-between md:justify-end items-center">
                     <div
-                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px]"
+                      className="border border-[#D0D5DD] rounded-sm px-4 flex flex-row items-center h-[40px] cursor-pointer"
                       onClick={() =>
                         copyToClipboard(work?.attributes?.authorLink)
                       }
