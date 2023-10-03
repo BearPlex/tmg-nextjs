@@ -26,9 +26,6 @@ function formatDate(dateString) {
 
 function BlogDetail({ work }) {
   const copyToClipboard = (text) => {
-    console.log(text);
-    console.log("text");
-    console.log("copyToClipboard CALLED");
     const textarea = document.createElement("textarea");
     textarea.textContent = text;
     textarea.style.position = "absolute";

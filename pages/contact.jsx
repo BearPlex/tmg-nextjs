@@ -134,7 +134,6 @@ export async function getServerSideProps(context) {
       res.data.data && res.data.data?.length > 0
         ? res.data.data[0]?.attributes?.metaData
         : {};
-    console.log(metaData);
     return { props: { metaData: metaData } };
   } catch (error) {
     console.error("Error fetching data:", error);
