@@ -13,14 +13,25 @@ function SEOHeader({ metadata }) {
       )}
       <meta name="description" content={metadata?.description} />
       <title>{metadata.title}</title>
-
       {/* Open Graph tags */}
       <meta property="og:title" content={metadata?.og?.title} />
       <meta property="og:description" content={metadata?.og?.description} />
       <meta property="og:type" content={metadata?.og?.type} />
       <meta property="og:url" content={metadata?.og?.url} />
       <meta property="og:image" content={metadata?.og?.image} />
-
+      {/* logo size */}
+      <meta property="og:image:width" content="600" />
+      <meta property="og:image:height" content="315" />
+      <style>{`
+          @media (max-width: 768px) {
+            meta[property="og:image:width"] {
+              content: 300px;
+            }
+            meta[property="og:image:height"] {
+              content: 157.5px;
+            }
+          }
+        `}</style>
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={metadata?.twitter?.card} />
       <meta name="twitter:site" content={metadata?.twitter?.site} />
@@ -30,7 +41,6 @@ function SEOHeader({ metadata }) {
         content={metadata?.twitter?.description}
       />
       <meta name="twitter:image" content={metadata?.twitter?.image} />
-
       {/* Other meta tags */}
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
