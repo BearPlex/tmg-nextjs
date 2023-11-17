@@ -12,7 +12,7 @@ import galleryImage2 from "../../assets/images/agency-staff-2.png";
 import galleryImage3 from "../../assets/images/agency-staff-3.png";
 import galleryImage4 from "../../assets/images/agency-staff-4.png";
 import galleryImage5 from "../../assets/images/agency-staff-5.png";
-
+import { generateImageUrl } from "../../helpers/Helpers";
 const Employees = () => {
   const [card, setCard] = useState([]);
   const [imageBatch, setImageBatch] = useState([]);
@@ -95,7 +95,9 @@ const Employees = () => {
                     <Image
                       width={500}
                       height={513}
-                      src={member?.attributes?.image?.data?.attributes?.url}
+                      src={generateImageUrl(
+                        member?.attributes?.image?.data?.attributes?.url
+                      )}
                       layout="fixed"
                       loading="eager"
                       decoding="sync"
@@ -174,9 +176,9 @@ const Employees = () => {
                           <Image
                             width={416}
                             height={330}
-                            src={
+                            src={generateImageUrl(
                               member?.attributes?.image?.data?.attributes?.url
-                            }
+                            )}
                             layout="responsive"
                             loading="eager"
                             decoding="sync"

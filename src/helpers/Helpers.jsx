@@ -375,58 +375,6 @@ export const linkedinSvg = () => (
     ></path>
   </svg>
 );
-// export const linkedinSvg = () => (
-//   <svg
-//     height="80"
-//     width="80"
-//     viewBox="0 0 47 48"
-//     xmlns="http://www.w3.org/2000/svg"
-//   >
-//     <g id="Group_385" data-name="Group 385" transform="translate(-360 -664)">
-//       <g
-//         id="Ellipse_5"
-//         data-name="Ellipse 5"
-//         transform="translate(360 664)"
-//         fill="transparent"
-//         stroke="#878787"
-//         strokeWidth="1"
-//       ></g>
-//       <path
-//         id="Path_162"
-//         data-name="Path 162"
-//         d="m1133.061 2728.41v7.152h-4.146v-6.673c0-1.676-.6-2.82-2.1-2.82a2.268 2.268 0 0 0 -2.127 1.517 2.833 2.833 0 0 0 -.138 1.011v6.965h-4.15s.056-11.3 0-12.473h4.147v1.768l-.027.04h.027v-.04a4.118 4.118 0 0 1 3.738-2.061c2.73.004 4.776 1.783 4.776 5.614zm-17-11.333a2.161 2.161 0 1 0 -.055 4.311h.028a2.162 2.162 0 1 0 .027-4.311zm-2.1 18.485h4.146v-12.473h-4.146z"
-//         fill="#878787"
-//         transform="translate(-1099.396 -2704.053)"
-//       ></path>
-//     </g>
-//   </svg>
-// );
-// export const linkedinSvg = () => (
-//   <svg
-//     height="80"
-//     width="80"
-//     viewBox="0 0 47 48"
-//     xmlns="http://www.w3.org/2000/svg"
-//   >
-//     <g id="Group_385" data-name="Group 385" transform="translate(-360 -664)">
-//       <g
-//         id="Ellipse_5"
-//         data-name="Ellipse 5"
-//         transform="translate(360 664)"
-//         fill="#fff"
-//         stroke="#878787"
-//         strokeWidth="1"
-//       ></g>
-//       <path
-//         id="Path_162"
-//         data-name="Path 162"
-//         d="m1133.061 2728.41v7.152h-4.146v-6.673c0-1.676-.6-2.82-2.1-2.82a2.268 2.268 0 0 0 -2.127 1.517 2.833 2.833 0 0 0 -.138 1.011v6.965h-4.15s.056-11.3 0-12.473h4.147v1.768l-.027.04h.027v-.04a4.118 4.118 0 0 1 3.738-2.061c2.73.004 4.776 1.783 4.776 5.614zm-17-11.333a2.161 2.161 0 1 0 -.055 4.311h.028a2.162 2.162 0 1 0 .027-4.311zm-2.1 18.485h4.146v-12.473h-4.146z"
-//         fill="#878787"
-//         transform="translate(-1099.396 -2704.053)"
-//       ></path>
-//     </g>
-//   </svg>
-// );
 export const convertStringForImage = (str) => {
   if (!str) {
     return "";
@@ -435,3 +383,13 @@ export const convertStringForImage = (str) => {
   const questionMarkRemoved = hyphenAdded.replace(/\?/g, "");
   return questionMarkRemoved;
 };
+export function generateImageUrl(originalUrl) {
+  const hash = originalUrl.split("/").pop().split(".")[0];
+  const ext = originalUrl.split(".").pop();
+
+  // Creating the new URL
+  const newUrl = `https://cdn.themediagale.com/${hash}.${ext}`;
+  console.log(newUrl);
+  console.log("newUrl from HELPER");
+  return newUrl;
+}

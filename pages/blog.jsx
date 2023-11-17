@@ -14,6 +14,7 @@ import Image from "../src/components/Image/Image";
 import GradientButton from "../src/components/button/GradientButton";
 import HeroContainer from "../src/components/containers/HeroContainer";
 import { useRouter } from "next/router";
+import { generateImageUrl } from "../src/helpers/Helpers";
 const blogsStatic = [
   {
     title: "Migrating to Linear 101",
@@ -77,9 +78,9 @@ const Blog = ({ metaData }) => {
                   blogs[0]?.attributes?.cardImage?.data?.attributes?.url !==
                     "" && (
                     <Image
-                      src={
+                      src={generateImageUrl(
                         blogs[0]?.attributes?.cardImage?.data?.attributes?.url
-                      }
+                      )}
                       alt={
                         blogs[0]?.attributes?.cardImageAlt &&
                         blogs[0]?.attributes?.cardImageAlt !== ""

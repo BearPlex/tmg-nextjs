@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../Image/Image";
+import { generateImageUrl } from "../../helpers/Helpers";
 const WorkCard = (props) => {
   const {
     imageSrc,
@@ -23,7 +24,7 @@ const WorkCard = (props) => {
               width={500}
               height={300}
               className="object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110"
-              src={imageSrc}
+              src={generateImageUrl(imageSrc)}
               alt={alt}
               loading="lazy"
               decoding="async"

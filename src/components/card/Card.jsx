@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "../Image/Image";
-
+import { generateImageUrl } from "../../helpers/Helpers";
 const Card = (props) => {
   const { item } = props;
   const router = useRouter();
@@ -24,7 +24,9 @@ const Card = (props) => {
                       "" && (
                       <Image
                         className="h-full w-full object-cover object-center  group-hover:opacity-50 duration-300 transition-in-out overflow-hidden scale-100 group-hover:scale-110 rounded-xl"
-                        src={blog?.attributes.cardImage?.data?.attributes?.url}
+                        src={generateImageUrl(
+                          blog?.attributes.cardImage?.data?.attributes?.url
+                        )}
                         height={150}
                         width={150}
                         alt={

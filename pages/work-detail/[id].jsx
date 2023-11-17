@@ -9,6 +9,7 @@ import Footer from "../../src/components/footer/Footer";
 import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import Image from "../../src/components/Image/Image";
+import { generateImageUrl } from "../../src/helpers/Helpers";
 
 function WorkDetail({ work }) {
   return (
@@ -29,7 +30,9 @@ function WorkDetail({ work }) {
                         ? work?.attributes?.image1Alt
                         : "work image"
                     }
-                    src={`${work?.attributes?.image1?.data?.attributes?.url}`}
+                    src={generateImageUrl(
+                      work?.attributes?.image1?.data?.attributes?.url
+                    )}
                     loading="lazy"
                     layout="responsive"
                     objectFit="cover"
@@ -67,7 +70,9 @@ function WorkDetail({ work }) {
                         ? work?.attributes?.image2Alt
                         : "work image"
                     }
-                    src={`${work?.attributes?.image2?.data?.attributes?.url}`}
+                    src={generateImageUrl(
+                      work?.attributes?.image2?.data?.attributes?.url
+                    )}
                     loading="lazy"
                     layout="responsive"
                     objectFit="cover"
@@ -85,7 +90,9 @@ function WorkDetail({ work }) {
                       ? work?.attributes?.image3Alt
                       : "work image"
                   }
-                  src={`${work?.attributes?.image3?.data?.attributes?.url}`}
+                  src={generateImageUrl(
+                    work?.attributes?.image3?.data?.attributes?.url
+                  )}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
@@ -114,7 +121,9 @@ function WorkDetail({ work }) {
                       ? work?.attributes?.image4Alt
                       : "work image"
                   }
-                  src={`${work?.attributes?.image4?.data?.attributes?.url}`}
+                  src={generateImageUrl(
+                    work?.attributes?.image4?.data?.attributes?.url
+                  )}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"
@@ -133,7 +142,9 @@ function WorkDetail({ work }) {
                       ? work?.attributes?.image5Alt
                       : "work image"
                   }
-                  src={`${work?.attributes?.image5?.data?.attributes?.url}`}
+                  src={generateImageUrl(
+                    work?.attributes?.image5?.data?.attributes?.url
+                  )}
                   loading="lazy"
                   layout="responsive"
                   objectFit="cover"

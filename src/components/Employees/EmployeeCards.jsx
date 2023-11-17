@@ -12,6 +12,7 @@ import galleryImage2 from "../../assets/images/agency-staff-2.png";
 import galleryImage3 from "../../assets/images/agency-staff-3.png";
 import galleryImage4 from "../../assets/images/agency-staff-4.png";
 import galleryImage5 from "../../assets/images/agency-staff-5.png";
+import { generateImageUrl } from "../../helpers/Helpers";
 
 const EmployeeCards = () => {
   const [card, setCard] = useState([]);
@@ -72,9 +73,9 @@ const EmployeeCards = () => {
                             <Image
                               width={400}
                               height={100}
-                              src={
+                              src={generateImageUrl(
                                 member?.attributes?.image?.data?.attributes?.url
-                              }
+                              )}
                               layout="responsive"
                               loading="eager"
                               decoding="sync"

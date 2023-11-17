@@ -12,7 +12,7 @@ function SEOHeader({ metadata }) {
         />
       )}
       <meta name="description" content={metadata?.description} />
-      <title>{metadata.title}</title>
+      <title>{metadata?.title}</title>
       {/* Open Graph tags */}
       <meta property="og:title" content={metadata?.og?.title} />
       <meta property="og:description" content={metadata?.og?.description} />

@@ -10,6 +10,7 @@ import PageWrapper from "../../src/components/PageWrapper/PageWrapper";
 import LatestBlogElement from "../../src/components/articles/LatestBlogElement";
 import SEOHeader from "../../src/components/MetaData/SEOHeader";
 import ReactMarkdown from "../../src/components/ReactMarkdown/ReactMarkdown";
+import { generateImageUrl } from "../../src/helpers/Helpers";
 import {
   facebookSvg,
   linkedinSvg,
@@ -78,7 +79,12 @@ function BlogDetail({ work }) {
                                 ? work?.attributes?.authorImageAlt
                                 : "author image"
                             }
-                            src={`${work?.attributes?.authorImage?.data?.attributes?.url}`}
+                            src={generateImageUrl(
+                              work?.attributes?.authorImage?.data?.attributes
+                                ?.hash,
+                              work?.attributes?.authorImage?.data?.attributes
+                                ?.ext
+                            )}
                             loading="lazy"
                             className="w-full h-full"
                             layout="responsive"
