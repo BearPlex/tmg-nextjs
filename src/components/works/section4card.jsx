@@ -14,7 +14,7 @@ function section4card({
 }) {
   return (
     <>
-      <section className="background-gradient ">
+      <section className="background-gradient-new ">
         <div className="">
           <div className="py-8 h-auto md:h-auto pagePaddingX max-w-7xl mx-auto">
             <h2 className="largeHeading text-white font-bold my-5 md:my-12">

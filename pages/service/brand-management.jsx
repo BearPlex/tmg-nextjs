@@ -96,7 +96,7 @@ function Seo({ metaData }) {
             </div>
           </section>
           <section>
-            <div className="background-gradient py-10 md:py-20">
+            <div className="background-gradient-new py-10 md:py-20">
               <div className="pagePaddingX max-w-7xl mx-auto">
                 <dl className="flex flex-col lg:flex-row componentsMainGap">
                   <div className="mx-auto items-center">
@@ -279,7 +279,7 @@ function Seo({ metaData }) {
               ))}
             </Tabs>
           </section>
-          <section className="background-gradient py-8 md:py-20">
+          <section className="background-gradient-new py-8 md:py-20">
             <div className="max-w-7xl mx-auto">
               <TextWithImageContainer
                 imageSrc={staffAugmentationImage.src}

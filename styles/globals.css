@@ -176,6 +176,14 @@ body {
   -webkit-transition: opacity 0.5s 0.5s ease-out;
   transition: opacity 0.5s 0.5s ease-out;
 }
+.background-gradient-new {
+  background: linear-gradient(
+    to bottom right,
+    rgba(247, 185, 98, 1) 0%,
+    rgba(200, 101, 159, 1) 95%,
+    rgba(241, 36, 89, 1) 100%
+  );
+}
 
 .pink-color {
   color: rgb(247, 78, 161);

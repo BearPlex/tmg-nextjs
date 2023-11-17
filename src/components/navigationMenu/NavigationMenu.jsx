@@ -33,7 +33,7 @@ const NavigationMenu = ({ setShowMenu }) => {
   useEffect(() => {}, [isHovered]);
 
   return (
-    <div className="background-gradient z-10 w-full h-full fixed top-0 ">
+    <div className="background-gradient-new z-10 w-full h-full fixed top-0 ">
       <div className="flex flex-col justify-between h-full">
         <div className=" pagePaddingX pt-[4vh] lg:pt-[7vh]">
           <div className="inline-block w-56 cursor-pointer"></div>
