@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
 import arrowBack from "../../assets/images/arrowBack.png";
 import arrowNext from "../../assets/images/arrowNext.png";
+import { generateImageUrl } from "../../helpers/Helpers";
 const LatestBlogElement = () => {
   const [articles, setArticles] = useState([]);
   const router = useRouter();
@@ -87,10 +88,10 @@ const LatestBlogElement = () => {
                                 ? article?.attributes?.cardImageAlt
                                 : "Product Image"
                             }
-                            src={
+                            src={generateImageUrl(
                               article?.attributes?.cardImage?.data?.attributes
                                 ?.url
-                            }
+                            )}
                           />
                         )}
                     </div>

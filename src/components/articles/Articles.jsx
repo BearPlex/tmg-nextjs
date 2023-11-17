@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import SwiperCore, { Navigation } from "swiper";
 import arrowBack from "../../assets/images/arrowBack.png";
 import arrowNext from "../../assets/images/arrowNext.png";
+import { generateImageUrl } from "../../helpers/Helpers";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const router = useRouter();
@@ -90,10 +91,10 @@ const Articles = () => {
                                 ? article?.attributes?.cardImageAlt
                                 : "Product Image"
                             }
-                            src={
+                            src={generateImageUrl(
                               article.attributes.cardImage?.data?.attributes
                                 ?.url
-                            }
+                            )}
                           />
                         )}
                       {/* <div className="absolute inset-0 bg-[#EE245F] opacity-0 group-hover:bg:opacity-50 duration-300 bg-transparent"></div> */}

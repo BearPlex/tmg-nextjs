@@ -81,9 +81,7 @@ function BlogDetail({ work }) {
                             }
                             src={generateImageUrl(
                               work?.attributes?.authorImage?.data?.attributes
-                                ?.hash,
-                              work?.attributes?.authorImage?.data?.attributes
-                                ?.ext
+                                ?.url
                             )}
                             loading="lazy"
                             className="w-full h-full"
