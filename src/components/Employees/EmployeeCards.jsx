@@ -17,7 +17,7 @@ const EmployeeCards = () => {
   const [card, setCard] = useState([]);
   useEffect(() => {
     axios
-      .get("https://app.themediagale.com/api/employee-cards?populate=*")
+      .get("https://portal.themediagale.com/api/employee-cards?populate=*")
       .then((res) => {
         const sortedImages = [...res.data.data].sort((a, b) => {
           return a.attributes.cardNumber - b.attributes.cardNumber;

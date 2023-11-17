@@ -29,7 +29,7 @@ export default function Home({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get("https://app.themediagale.com/api/work-kinimos?populate=*")
+      .get("https://portal.themediagale.com/api/work-kinimos?populate=*")
       .then((res) => {
         const sortedWork = [...res.data.data].sort((a, b) => {
           const dateA = new Date(a.attributes.publishedAt);
@@ -139,7 +139,7 @@ export async function getServerSideProps(context) {
   const DoNotChange = "Home";
   try {
     const res = await axios.get(
-      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+      `https://portal.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
     );
     const metaData =
       res.data.data && res.data.data?.length > 0

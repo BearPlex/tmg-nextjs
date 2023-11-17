@@ -356,7 +356,7 @@ export async function getServerSideProps(context) {
   const DoNotChange = "Evolver";
   try {
     const res = await axios.get(
-      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+      `https://portal.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
     );
     const metaData =
       res.data.data && res.data.data?.length > 0

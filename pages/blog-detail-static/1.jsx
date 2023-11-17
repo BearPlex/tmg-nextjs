@@ -28,7 +28,7 @@ function BlogDetail() {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://app.themediagale.com/api/blogs/${id}?populate=*`)
+      .get(`https://portal.themediagale.com/api/blogs/${id}?populate=*`)
       .then((res) => {
         setWork(res.data.data);
       })

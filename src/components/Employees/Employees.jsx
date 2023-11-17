@@ -59,7 +59,7 @@ const Employees = () => {
   }
   useEffect(() => {
     axios
-      .get("https://app.themediagale.com/api/employees?populate=*")
+      .get("https://portal.themediagale.com/api/employees?populate=*")
       .then((res) => {
         const sortedImages = [...res.data.data].sort((a, b) => {
           return a.attributes.imageNumber - b.attributes.imageNumber;

@@ -155,7 +155,7 @@ function WorkDetail({ work }) {
 export async function getServerSideProps(context) {
   try {
     const res = await axios.get(
-      `https://app.themediagale.com/api/work-kinimos?filters[slug][$eq]=${context.params.id}&populate=*`
+      `https://portal.themediagale.com/api/work-kinimos?filters[slug][$eq]=${context.params.id}&populate=*`
     );
     const allWorks = res.data.data;
     const matchingWork = allWorks.find(

@@ -28,7 +28,7 @@ const Blog = ({ metaData }) => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get("https://app.themediagale.com/api/blogs?populate=*")
+      .get("https://portal.themediagale.com/api/blogs?populate=*")
       .then((res) => {
         const sortedBlogs = res.data.data.sort(
           (a, b) =>
@@ -131,7 +131,7 @@ export async function getServerSideProps(context) {
   const DoNotChange = "Blog";
   try {
     const res = await axios.get(
-      `https://app.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+      `https://portal.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
     );
     const metaData =
       res.data.data && res.data.data?.length > 0

@@ -16,7 +16,7 @@ const Articles = () => {
   const router = useRouter();
   useEffect(() => {
     axios
-      .get("https://app.themediagale.com/api/blogs?populate=*")
+      .get("https://portal.themediagale.com/api/blogs?populate=*")
       .then((res) => {
         const sortedBlogs = res.data.data.sort(
           (a, b) =>
