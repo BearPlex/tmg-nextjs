@@ -189,7 +189,8 @@ export async function getServerSideProps(context) {
   const DoNotChange = "Services";
   try {
     const res = await axios.get(
-      `https://portal.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`
+      `https://portal.themediagale.com/api/static-pages-metas?filters[DoNotChange][$eq]=${DoNotChange}&populate=*`,
+      { timeout: 8000 }
     );
     const metaData =
       res.data.data && res.data.data?.length > 0
