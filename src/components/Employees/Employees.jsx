@@ -57,6 +57,7 @@ const Employees = () => {
 
     return allBatches;
   }
+  // testing
   useEffect(() => {
     axios
       .get("https://portal.themediagale.com/api/employees?populate=*")

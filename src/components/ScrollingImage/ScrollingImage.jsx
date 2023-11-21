@@ -136,7 +136,7 @@ const Agency = () => {
                 id="beautyRef"
                 className="heading mb-5 blackHeadingText leading-none relative mt-[8vw]"
               >
-                Beauty
+                Create
               </h2>
               <p className="paragraph blackDescriptionText">
                 We think outside the box and push boundaries to create fresh and
@@ -240,7 +240,7 @@ const Agency = () => {
             id="beautyRef"
             className="heading mb-2 pt-2 blackHeadingText leading-none relative"
           >
-            Beauty
+            Create
           </h2>
           <p className="paragraph mb-15 blackDescriptionText">
             We think outside the box and push boundaries to create fresh and

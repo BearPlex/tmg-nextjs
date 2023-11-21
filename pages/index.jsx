@@ -29,14 +29,11 @@ export default function Home({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get("https://portal.themediagale.com/api/work-kinimos?populate=*")
+      .get(
+        "https://portal.themediagale.com/api/work-kinimos?populate=*&pagination[pageSize]=8&sort[0]=publishedAt:asc"
+      )
       .then((res) => {
-        const sortedWork = [...res.data.data].sort((a, b) => {
-          const dateA = new Date(a.attributes.publishedAt);
-          const dateB = new Date(b.attributes.publishedAt);
-          return dateA - dateB;
-        });
-
+        const sortedWork = [...res.data.data];
         setWork(sortedWork);
       })
       .catch((err) => {

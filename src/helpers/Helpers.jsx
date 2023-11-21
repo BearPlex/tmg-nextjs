@@ -386,10 +386,6 @@ export const convertStringForImage = (str) => {
 export function generateImageUrl(originalUrl) {
   const hash = originalUrl.split("/").pop().split(".")[0];
   const ext = originalUrl.split(".").pop();
-
-  // Creating the new URL
   const newUrl = `https://cdn.themediagale.com/${hash}.${ext}`;
-  console.log(newUrl);
-  console.log("newUrl from HELPER");
   return newUrl;
 }
