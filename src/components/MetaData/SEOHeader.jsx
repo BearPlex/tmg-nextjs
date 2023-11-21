@@ -11,6 +11,7 @@ function SEOHeader({ metadata }) {
           content={metadata["X-UA-Compatible"]}
         />
       )}
+
       <meta name="description" content={metadata?.description} />
       <title>{metadata?.title}</title>
       {/* Open Graph tags */}
@@ -22,7 +23,7 @@ function SEOHeader({ metadata }) {
       {/* logo size */}
       <meta property="og:image:width" content="600" />
       <meta property="og:image:height" content="315" />
-      <style>{`
+      {/* <style>{`
           @media (max-width: 768px) {
             meta[property="og:image:width"] {
               content: 300px;
@@ -31,7 +32,7 @@ function SEOHeader({ metadata }) {
               content: 157.5px;
             }
           }
-        `}</style>
+        `}</style> */}
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={metadata?.twitter?.card} />
       <meta name="twitter:site" content={metadata?.twitter?.site} />
