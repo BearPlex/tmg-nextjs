@@ -29,7 +29,9 @@ const Blog = ({ metaData }) => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get("https://portal.themediagale.com/api/blogs?populate=*")
+      .get(
+        "https://portal.themediagale.com/api/blogs?populate=*&pagination[pageSize]=1000"
+      )
       .then((res) => {
         const sortedBlogs = res.data.data.sort(
           (a, b) =>

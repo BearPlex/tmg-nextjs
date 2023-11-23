@@ -23,7 +23,9 @@ function BrandManagement({ metaData }) {
   const [work, setWork] = useState([]);
   useEffect(() => {
     axios
-      .get("https://portal.themediagale.com/api/work-kinimos?populate=*")
+      .get(
+        "https://portal.themediagale.com/api/work-kinimos?populate=*&pagination[pageSize]=1000"
+      )
       .then((res) => {
         const sortedWork = [...res.data.data].sort((a, b) => {
           const dateA = new Date(a.attributes.publishedAt);
