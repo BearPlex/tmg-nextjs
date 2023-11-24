@@ -50,7 +50,9 @@ function BlogDetail({ work }) {
             <div className="text-pink-400 paragraph tracking-widest mb-3">
               Published {formatDate(work?.attributes?.dateAdded)}
             </div>
-            <div className="headingBlack">{work?.attributes?.title}</div>
+            <div className="headingBlack lg:leading-[3.9rem]">
+              {work?.attributes?.title}
+            </div>
             <ReactMarkdown data={work?.attributes?.blogData} />
             <div className="max-w-full">
               <div className="max-w-full md:max-w-[70%] mx-auto">
