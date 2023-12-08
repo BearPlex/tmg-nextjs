@@ -4,7 +4,7 @@ function SEOHeader({ metadata }) {
   return (
     <Head>
       <meta charSet={metadata?.charset} />
-      <meta name="viewport" content={metadata?.viewport} />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       {metadata && metadata?.["X-UA-Compatible"] && (
         <meta
           httpEquiv="X-UA-Compatible"
@@ -21,13 +21,13 @@ function SEOHeader({ metadata }) {
       <meta property="og:url" content={metadata?.og?.url} />
       <meta
         property="og:image"
-        content="https://cdn.themediagale.com/tmg_logoo_xsmall_399068ed0a.png"
+        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
       <meta property="og:image:width" content="100" />
       <meta property="og:image:height" content="55" />
-      <style>{`
+      {/* <style>{`
           @media (max-width: 768px) {
             meta[property="og:image:width"] {
               content: 100px;
@@ -36,7 +36,7 @@ function SEOHeader({ metadata }) {
               content: 31px;
             }
           }
-        `}</style>
+        `}</style> */}
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={metadata?.twitter?.card} />
       <meta name="twitter:site" content={metadata?.twitter?.site} />
@@ -47,7 +47,7 @@ function SEOHeader({ metadata }) {
       />
       <meta
         name="twitter:image"
-        content='"https://cdn.themediagale.com/tmg_logoo_xsmall_399068ed0a.png"'
+        content='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
       />
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
