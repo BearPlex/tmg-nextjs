@@ -4,13 +4,13 @@ function SEOHeader({ metadata }) {
   return (
     <Head>
       <meta charSet={metadata?.charset} />
-      <meta name="viewport" content="width=device-width, initial-scale=0.2" />
       {metadata && metadata?.["X-UA-Compatible"] && (
         <meta
           httpEquiv="X-UA-Compatible"
           content={metadata["X-UA-Compatible"]}
         />
       )}
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
       <meta name="description" content={metadata?.description} />
       <title>{metadata?.title}</title>
@@ -23,10 +23,25 @@ function SEOHeader({ metadata }) {
         property="og:image"
         content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
+      <meta property="og:locale" content="en_US" />
+      <meta
+        property="og:image:url"
+        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+      />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
+      <meta
+        property="og:image:url"
+        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+      />
+      <meta property="og:image:width" content="1800" />
+      <meta property="og:image:height" content="1600" />
       {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
-      <meta property="og:image:width" content="100" />
-      <meta property="og:image:height" content="55" />
+      <meta property="og:image:alt" content="HELLO WORLD" />
+
+      {/* <meta property="og:image:width" content="100px" />
+      <meta property="og:image:height" content="55px" /> */}
       {/* <style>{`
           @media (max-width: 768px) {
             meta[property="og:image:width"] {
@@ -37,6 +52,14 @@ function SEOHeader({ metadata }) {
             }
           }
         `}</style> */}
+      {/* <style>{`
+          meta[property="og:image:width"] {
+              content: 100px !important;
+            }
+            meta[property="og:image:height"] {
+              content: 31px !important;
+            }
+          `}</style> */}
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={metadata?.twitter?.card} />
       <meta name="twitter:site" content={metadata?.twitter?.site} />
