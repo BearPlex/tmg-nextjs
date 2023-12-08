@@ -30,22 +30,22 @@ function SEOHeader({ metadata }) {
         content="https://themediagale.com/tmg-logoo.png"
         // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
-      <meta property="og:image:width" content="800" />
-      <meta property="og:image:height" content="600" />
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:height" content="300" />
       <meta
         property="og:image:url"
         content="https://themediagale.com/tmg-logoo.png"
         // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
-      <meta property="og:image:width" content="1800" />
-      <meta property="og:image:height" content="1600" />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="200" />
       {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
       <meta property="og:image:alt" content="HELLO WORLD" />
 
       {/* <meta property="og:image:width" content="100px" />
       <meta property="og:image:height" content="55px" /> */}
-      {/* <style>{`
+      <style>{`
           @media (max-width: 768px) {
             meta[property="og:image:width"] {
               content: 100px;
@@ -54,7 +54,7 @@ function SEOHeader({ metadata }) {
               content: 31px;
             }
           }
-        `}</style> */}
+        `}</style>
       {/* <style>{`
           meta[property="og:image:width"] {
               content: 100px !important;
