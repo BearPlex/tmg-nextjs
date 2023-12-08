@@ -25,7 +25,7 @@ function SEOHeader({ metadata }) {
       />
       {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
-      {/* <meta property="og:image:width" content="400" />
+      <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="215" />
       <style>{`
           @media (max-width: 768px) {
@@ -36,7 +36,7 @@ function SEOHeader({ metadata }) {
               content: 127.5px;
             }
           }
-        `}</style> */}
+        `}</style>
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={metadata?.twitter?.card} />
       <meta name="twitter:site" content={metadata?.twitter?.site} />
@@ -54,12 +54,12 @@ function SEOHeader({ metadata }) {
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
       <link rel="canonical" href={metadata?.canonical} />
-      <link
+      {/* <link
         rel="icon"
         type="image/png"
         href='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
-      />
-      {/* <link rel="icon" type="image/png" href={metadata?.favicon} /> */}
+      /> */}
+      <link rel="icon" type="image/png" href={metadata?.favicon} />
     </Head>
   );
 }
