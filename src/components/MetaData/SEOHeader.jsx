@@ -45,12 +45,21 @@ function SEOHeader({ metadata }) {
         name="twitter:description"
         content={metadata?.twitter?.description}
       />
-      <meta name="twitter:image" content={metadata?.twitter?.image} />
+      <meta
+        name="twitter:image"
+        content='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
+      />
+      {/* <meta name="twitter:image" content={metadata?.twitter?.image} /> */}
       {/* Other meta tags */}
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
       <link rel="canonical" href={metadata?.canonical} />
-      <link rel="icon" type="image/png" href={metadata?.favicon} />
+      <link
+        rel="icon"
+        type="image/png"
+        href='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
+      />
+      {/* <link rel="icon" type="image/png" href={metadata?.favicon} /> */}
     </Head>
   );
 }
