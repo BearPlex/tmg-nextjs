@@ -21,7 +21,7 @@ function SEOHeader({ metadata }) {
       <meta property="og:url" content={metadata?.og?.url} />
       <meta
         property="og:image"
-        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+        content="https://cdn.themediagale.com/tmg_logoo_small_7f3754aa17.png"
       />
       {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
@@ -47,7 +47,7 @@ function SEOHeader({ metadata }) {
       />
       <meta
         name="twitter:image"
-        content='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
+        content='"https://cdn.themediagale.com/tmg_logoo_small_7f3754aa17.png"'
       />
       {/* <meta name="twitter:image" content={metadata?.twitter?.image} /> */}
       {/* Other meta tags */}
@@ -57,7 +57,7 @@ function SEOHeader({ metadata }) {
       {/* <link
         rel="icon"
         type="image/png"
-        href='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
+        href='"https://cdn.themediagale.com/tmg_logoo_small_7f3754aa17.png"'
       /> */}
       <link rel="icon" type="image/png" href={metadata?.favicon} />
     </Head>
