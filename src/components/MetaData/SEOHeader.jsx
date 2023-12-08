@@ -19,17 +19,21 @@ function SEOHeader({ metadata }) {
       <meta property="og:description" content={metadata?.og?.description} />
       <meta property="og:type" content={metadata?.og?.type} />
       <meta property="og:url" content={metadata?.og?.url} />
-      <meta property="og:image" content={metadata?.og?.image} />
+      <meta
+        property="og:image"
+        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+      />
+      {/* <meta property="og:image" content={metadata?.og?.image} /> */}
       {/* logo size */}
-      <meta property="og:image:width" content="600" />
-      <meta property="og:image:height" content="315" />
-      {/* <style>{`
+      {/* <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="215" />
+      <style>{`
           @media (max-width: 768px) {
             meta[property="og:image:width"] {
-              content: 300px;
+              content: 200px;
             }
             meta[property="og:image:height"] {
-              content: 157.5px;
+              content: 127.5px;
             }
           }
         `}</style> */}
