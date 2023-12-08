@@ -21,18 +21,21 @@ function SEOHeader({ metadata }) {
       <meta property="og:url" content={metadata?.og?.url} />
       <meta
         property="og:image"
-        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+        content="https://themediagale.com/tmg-logoo.png"
+        // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:locale" content="en_US" />
       <meta
         property="og:image:url"
-        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+        content="https://themediagale.com/tmg-logoo.png"
+        // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="600" />
       <meta
         property="og:image:url"
-        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
+        content="https://themediagale.com/tmg-logoo.png"
+        // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:image:width" content="1800" />
       <meta property="og:image:height" content="1600" />
@@ -70,7 +73,7 @@ function SEOHeader({ metadata }) {
       />
       <meta
         name="twitter:image"
-        content='"https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"'
+        content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
