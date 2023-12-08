@@ -10,7 +10,7 @@ function SEOHeader({ metadata }) {
           content={metadata["X-UA-Compatible"]}
         />
       )}
-      <meta name="viewport" content="initial-scale=0.1, width=device-width" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
       <meta name="description" content={metadata?.description} />
       <title>{metadata?.title}</title>
@@ -21,20 +21,20 @@ function SEOHeader({ metadata }) {
       <meta property="og:url" content={metadata?.og?.url} />
       <meta
         property="og:image"
-        content="https://themediagale.com/tmg-logoo.png"
+        content="https://themediagale.com/tmg-logoo.jpg"
         // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:locale" content="en_US" />
       <meta
         property="og:image:url"
-        content="https://themediagale.com/tmg-logoo.png"
+        content="https://themediagale.com/tmg-logoo.jpg"
         // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:image:width" content="500" />
       <meta property="og:image:height" content="300" />
       <meta
         property="og:image:url"
-        content="https://themediagale.com/tmg-logoo.png"
+        content="https://themediagale.com/tmg-logoo.jpg"
         // content="https://cdn.themediagale.com/tmg_logoo_04c97ab77c.png"
       />
       <meta property="og:image:width" content="300" />
