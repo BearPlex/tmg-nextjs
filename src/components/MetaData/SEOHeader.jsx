@@ -10,7 +10,7 @@ function SEOHeader({ metadata }) {
           content={metadata["X-UA-Compatible"]}
         />
       )}
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="viewport" content="initial-scale=0.1, width=device-width" />
 
       <meta name="description" content={metadata?.description} />
       <title>{metadata?.title}</title>
@@ -74,8 +74,8 @@ function SEOHeader({ metadata }) {
       />
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />
-      <link rel="canonical" href={metadata?.canonical} />
-      <link rel="icon" type="image/png" href={metadata?.favicon} />
+      {/* <link rel="canonical" href={metadata?.canonical} /> */}
+      {/* <link rel="icon" type="image/png" href={metadata?.favicon} /> */}
     </Head>
   );
 }
