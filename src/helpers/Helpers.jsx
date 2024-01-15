@@ -384,6 +384,16 @@ export const convertStringForImage = (str) => {
   return questionMarkRemoved;
 };
 export function generateImageUrl(originalUrl) {
+  if (
+    typeof originalUrl !== "string" ||
+    originalUrl.length < 1 ||
+    !originalUrl.includes("/") ||
+    !originalUrl.includes(".")
+  ) {
+    return null;
+  }
+  console.log(originalUrl);
+  console.log("originalUrl");
   const hash = originalUrl.split("/").pop().split(".")[0];
   const ext = originalUrl.split(".").pop();
   const newUrl = `https://cdn.themediagale.com/${hash}.${ext}`;

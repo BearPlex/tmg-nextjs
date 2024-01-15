@@ -82,7 +82,9 @@ const Articles = () => {
                     <div className="h-full w-full overflow-hidden">
                       {article?.attributes?.cardImage &&
                         article?.attributes?.cardImage?.data?.attributes
-                          ?.url !== "" && (
+                          ?.url !== "" &&
+                        article?.attributes?.cardImage?.data?.attributes?.url !=
+                          null && (
                           <Image
                             width={500}
                             height={100}

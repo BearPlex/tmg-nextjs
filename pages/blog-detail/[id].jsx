@@ -71,7 +71,9 @@ function BlogDetail({ work }) {
                     <div className="flex items-center h-[60px] md:h-[70px] w-[60px] md:w-[70px] mr-4 overflow-hidden rounded-[50%]">
                       {work?.attributes?.authorImage &&
                         work?.attributes?.authorImage?.data?.attributes?.url !==
-                          "" && (
+                          "" &&
+                        work?.attributes?.authorImage?.data?.attributes?.url !=
+                          null && (
                           <Image
                             width={70}
                             height={70}

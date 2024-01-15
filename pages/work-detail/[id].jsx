@@ -20,7 +20,8 @@ function WorkDetail({ work }) {
           <section className="pagePaddingX">
             <div className="flex justify-center mt-9 md:mt-20 ">
               {work?.attributes?.image1 &&
-                work?.attributes?.image1?.data?.attributes?.url !== "" && (
+                work?.attributes?.image1?.data?.attributes?.url !== "" &&
+                work?.attributes?.image1?.data?.attributes?.url != null && (
                   <Image
                     width={500}
                     height={300}
@@ -60,7 +61,8 @@ function WorkDetail({ work }) {
           <section className="flex items-center justify-center flex-col gap-10 md:gap-16">
             <div className="max-w-[70%]">
               {work?.attributes?.image2 &&
-                work?.attributes?.image2?.data?.attributes?.url !== "" && (
+                work?.attributes?.image2?.data?.attributes?.url !== "" &&
+                work?.attributes?.image2?.data?.attributes?.url != null && (
                   <Image
                     width={500}
                     height={1000}
@@ -80,7 +82,8 @@ function WorkDetail({ work }) {
                 )}
             </div>
             {work?.attributes?.image3 &&
-              work?.attributes?.image3?.data?.attributes?.url !== "" && (
+              work?.attributes?.image3?.data?.attributes?.url !== "" &&
+              work?.attributes?.image3?.data?.attributes?.url != null && (
                 <Image
                   width={500}
                   height={300}
@@ -111,7 +114,8 @@ function WorkDetail({ work }) {
           </div>
           <div className="flex justify-center mt-6 md:mt-10">
             {work?.attributes?.image4 &&
-              work?.attributes?.image4?.data?.attributes?.url !== "" && (
+              work?.attributes?.image4?.data?.attributes?.url !== "" &&
+              work?.attributes?.image4?.data?.attributes?.url != null && (
                 <Image
                   width={500}
                   height={300}
@@ -132,7 +136,8 @@ function WorkDetail({ work }) {
           </div>
           <div className="flex justify-center my-4 md:my-10">
             {work?.attributes?.image5 &&
-              work?.attributes?.image5?.data?.attributes?.url !== "" && (
+              work?.attributes?.image5?.data?.attributes?.url !== "" &&
+              work?.attributes?.image5?.data?.attributes?.url != null && (
                 <Image
                   width={500}
                   height={300}

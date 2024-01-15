@@ -81,12 +81,12 @@ function SEOHeader({ metadata }) {
       <meta
         name="twitter:image"
         // content="https://themediagale.com/tmg-logoo.jpg"
-        content="https://cdn.themediagale.com/tmg_logoo_79f08d71ec.jpg"
+        content="https://themediagale.com/tmg-logoo.jpg"
       />
       <meta
         name="linkedin:image"
         // content="https://themediagale.com/tmg-logoo.jpg"
-        content="https://cdn.themediagale.com/tmg_logoo_79f08d71ec.jpg"
+        content="https://themediagale.com/tmg-logoo.jpg"
       />
       <meta name="author" content={metadata?.author} />
       <meta name="keywords" content={metadata?.keywords?.join(", ")} />

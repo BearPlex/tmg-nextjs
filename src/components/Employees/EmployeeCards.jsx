@@ -69,7 +69,9 @@ const EmployeeCards = () => {
                       <div className="h-full w-full overflow-hidden roundedBImage">
                         {member?.attributes?.image &&
                           member?.attributes?.image?.data?.attributes?.url !==
-                            "" && (
+                            "" &&
+                          member?.attributes?.image?.data?.attributes?.url !=
+                            null && (
                             <Image
                               width={400}
                               height={100}

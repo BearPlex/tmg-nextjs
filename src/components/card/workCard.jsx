@@ -19,7 +19,7 @@ const WorkCard = (props) => {
     <div className="mt-10  white group hover:bg-[#EE245F] bg-opacity-0 hover:bg-opacity-50 relative bg-transparent duration-300 overflow-hidden">
       <div className="group">
         <div className="relative group work-images overflow-hidden">
-          {imageSrc && imageSrc !== "" && (
+          {imageSrc && imageSrc !== "" && imageSrc != null && (
             <Image
               width={500}
               height={300}
