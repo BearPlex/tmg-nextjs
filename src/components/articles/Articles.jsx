@@ -1,4 +1,3 @@
-import { articles } from "../../helpers/Helpers";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";

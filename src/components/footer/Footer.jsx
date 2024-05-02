@@ -8,6 +8,7 @@ import {
   instagramSvg,
   linkedinSvg,
   twitterSvg,
+  whatsappSvg,
 } from "../../helpers/Helpers";
 
 const Footer = () => {
@@ -54,6 +55,14 @@ const Footer = () => {
                       className="inline-block"
                     >
                       {linkedinSvg()}
+                    </a>
+                    <a
+                      href="https://wa.me/19179701353"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block "
+                    >
+                      {whatsappSvg()}
                     </a>
                   </div>
                 </h4>

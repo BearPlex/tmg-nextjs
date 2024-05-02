@@ -5,6 +5,7 @@ import {
   instagramSvg,
   linkedinSvg,
   twitterSvg,
+  whatsappSvg,
 } from "../src/helpers/Helpers";
 import ContactFormIframe from "../src/components/iframe/ContactFormIframe";
 import Footer from "../src/components/footer/Footer";
@@ -12,6 +13,7 @@ import GradientButton from "../src/components/button/GradientButton";
 import PageWrapper from "../src/components/PageWrapper/PageWrapper";
 import axios from "axios";
 import SEOHeader from "../src/components/MetaData/SEOHeader";
+import Image from "../src/components/Image/Image";
 const Contact = ({ metaData }) => {
   return (
     <>
@@ -88,6 +90,14 @@ const Contact = ({ metaData }) => {
                   className="inline-block"
                 >
                   {linkedinSvg()}
+                </a>
+                <a
+                  href="https://wa.me/19179701353"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block "
+                >
+                  {whatsappSvg()}
                 </a>
               </div>
             </div>
